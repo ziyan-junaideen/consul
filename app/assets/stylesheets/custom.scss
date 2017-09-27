@@ -14,6 +14,34 @@
   color: $brand;
 }
 
+.poll-question-answers {
+
+  .button {
+    margin-right: $line-height / 4;
+    min-width: 1rem;
+
+    &.answered {
+      background: #f4f8ec;
+      border: 2px solid #92ba48;
+      color: $text;
+      position: relative;
+
+      &::after {
+        background: #92ba48;
+        border-radius: rem-calc(20);
+        content: '\6c';
+        color: #fff;
+        font-family: "icons" !important;
+        font-size: rem-calc(12);
+        padding: $line-height / 4;
+        position: absolute;
+        right: -6px;
+        top: -6px;
+      }
+    }
+  }
+}
+
 //Alvaro
 .button {
 
