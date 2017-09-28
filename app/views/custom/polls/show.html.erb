@@ -1,0 +1,162 @@
+<% provide :title do %><%= @poll.name %><% end %>
+
+<div class="polls-show">
+  <div class="expanded no-margin-top dark-heading polls-show-header">
+    <div class="row">
+      <div class="small-12 medium-9 column padding">
+        <%= back_link_to polls_path %>
+
+        <h2><%= @poll.name %></h2>
+        <ul class="no-bullet margin-top tags">
+          <% @poll.geozones.each do |g| %>
+            <li class="inline-block"><span><%= g.name %></span></li>
+          <% end %>
+        </ul>
+
+        <%= render "callout" %>
+      </div>
+      <div class="small-12 medium-3 column">
+        <div class="info">
+          <p>
+            <span class="title">
+              <strong><%= t("polls.show.dates_title") %></strong>
+            </span>
+            <br>
+            <%= poll_dates(@poll) %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="myAlertPolls" class="row primary callout"></div>
+  <div class="row margin-top">
+    <div class="small-12 medium-9 column" id="fatherOfAllAnswer">
+      <% @questions.each do |question| %>
+        <%= render 'polls/questions/question', question: question %>
+      <% end %>
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+      document.onload
+      {
+          var myAlert = document.getElementById("myAlertPolls");
+          var parr;
+          var childON = new Array();
+          var childActive = new Array();
+          var fatherOfAllAnswerArrayChildren = document.getElementById("fatherOfAllAnswer").children;
+          var alertError = 0;
+          var codError = 1;
+
+          if(document.getElementById('parrMyAlert'))
+          {
+              parr = document.getElementById('parrMyAlert');
+              myAlert.removeChild(parr);
+          }
+          parr = document.createElement("p");
+          parr.id = "parrMyAlert";
+          myAlert.appendChild(parr);
+
+          <% @questions.each do |question| %>
+            var childrens = document.getElementById("<%= dom_id(question) %>_answers").children;
+            childActive = childrens[0].children;
+            for(j = 0; j < childActive.length; j++)
+            {
+                if(childActive[j].className == "button answered")
+                {
+                    childON.push(childActive[j]);
+                    codError = 0;
+                }
+            }
+          <% end %>
+
+          if(childON.length != childActive.length)
+          {
+              codError = 2;
+              parr.innerHTML =
+                  "<b style='color:red;'>Su votación no está correctamente cumplimentada.</b><br>" +
+                  "<span style='color:red;'>" +
+                  "No se pueden tener propuestas sin contestar." +
+                  "</span>";
+          } else {
+              codError = 3;
+          }
+
+          for(i = 0; i < childON.length -1; i++)
+          {
+              for (z = i+1; z < childON.length; z++)
+              {
+                if (childON[i].innerHTML == childON[z].innerHTML)
+                {
+                    if(alertError == 0)
+                    {
+                        alertError++;
+                        codError = 2;
+                        parr.innerHTML =
+                            "<b style='color:red;'>Su votación no está correctamente cumplimentada.</b><br>" +
+                            "<span style='color:red;'>" +
+                            "Debe seleccionar un valor distinto en cada pregunta. Corrija los valores repetidos:" +
+                            "<br><span id='resumenAnswer'></span></span>";
+
+                        if(codError == 2)
+                        {
+                            parr.innerHTML = parr.innerHTML + "<br>" +
+                                "<span style='color:red;'>" +
+                                "No se pueden tener propuestas sin contestar." +
+                                "</span>"
+                        }
+                    }
+                }
+              }
+
+              var idFather1 = childON[i].parentElement.parentElement.parentElement.id;
+
+              for(num = 0; num < fatherOfAllAnswerArrayChildren.length; num++)
+              {
+                  if(fatherOfAllAnswerArrayChildren[num].id == idFather1)
+                  {
+                      document.getElementById("resumenAnswer").innerHTML =
+                          document.getElementById("resumenAnswer").innerHTML +
+                          "Propuesta " + (num + 1) + " => " + childON[i].innerHTML;
+                  }
+
+              }
+          }
+
+          if(codError == 3)
+          {
+              parr.innerHTML = "<b style='color:green;'>Su votación es válida. Ha votado está priorización:" +
+                  "<br><span id='resumenAnswer'></span></b>";
+
+              var idFather1 = childON[i].parentElement.parentElement.parentElement.id;
+
+              for(num = 0; num < fatherOfAllAnswerArrayChildren.length; num++)
+              {
+                  if(fatherOfAllAnswerArrayChildren[num].id == idFather1)
+                  {
+                      document.getElementById("resumenAnswer").innerHTML =
+                          document.getElementById("resumenAnswer").innerHTML +
+                          "Propuesta " + (num + 1) + " => " + childON[i].innerHTML;
+                  }
+
+              }
+          }
+
+          if(codError == 1)
+          {
+              parr.innerHTML =
+                  "<b>Recuerde: <br>Para que la votación sea válida, " +
+                  "debe asignar un valor distinto en cada propuesta y no " +
+                  "dejar ninguna propuesta sin contestar.</b>";
+          }
+      }
+    </script>
+
+    <aside class="small-12 medium-3 column">
+      <%= render partial: 'shared/social_share', locals: {
+        share_title: t("proposals.show.share"),
+        title: @poll.name,
+        url: poll_url
+      } %>
+    </aside>
+  </div>
+</div>
