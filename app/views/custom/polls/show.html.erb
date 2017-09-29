@@ -28,7 +28,7 @@
       </div>
     </div>
   </div>
-  <div id="myAlertPolls" class="row primary callout"></div>
+  <div id="myAlertPolls"></div>
   <div class="row margin-top">
     <div class="small-12 medium-9 column" id="fatherOfAllAnswer">
       <% @questions.each do |question| %>
@@ -36,121 +36,237 @@
       <% end %>
     </div>
 
-    <script type="text/javascript" charset="utf-8">
-      document.onload
-      {
-          var myAlert = document.getElementById("myAlertPolls");
-          var parr;
-          var childON = new Array();
-          var childActive = new Array();
-          var fatherOfAllAnswerArrayChildren = document.getElementById("fatherOfAllAnswer").children;
-          var alertError = 0;
-          var codError = 1;
+    <!--SCRIPT DE AVISOS DE VOTACIONES-->
 
-          if(document.getElementById('parrMyAlert'))
+        <script type="text/javascript" charset="utf-8">
+          document.onload
           {
-              parr = document.getElementById('parrMyAlert');
-              myAlert.removeChild(parr);
-          }
-          parr = document.createElement("p");
-          parr.id = "parrMyAlert";
-          myAlert.appendChild(parr);
+              var myAlert = document.getElementById("myAlertPolls"); // DIV container
+              myAlert.className = "row primary callout";
+              // <p> contenedor del texto
+              var parr = document.createElement("p");
+              parr.id = "parrMyAlert";
+              myAlert.appendChild(parr);
 
-          <% @questions.each do |question| %>
-            var childrens = document.getElementById("<%= dom_id(question) %>_answers").children;
-            childActive = childrens[0].children;
-            for(j = 0; j < childActive.length; j++)
-            {
-                if(childActive[j].className == "button answered")
-                {
-                    childON.push(childActive[j]);
-                    codError = 0;
+              var arrayChildChoosen = new Array();                   // Array con los elementos activos al votar
+              var arrayChildAnswer;                                // Array con los elementos de la propuesta
+              //Array con todas las propuestas, usado para saber el numero de propuestas
+              var arrayChildrenOf_FatherOfAllAnswer =
+                  document.getElementById("fatherOfAllAnswer").children;
+              var arrayContElementChoosen;                           // Array que usaremos para verificar que
+                                                                     // no haya propuestas sin responder
+                                                                     // ni propuestas con respuesta repetida,
+                                                                     // tambien sera usada para comprobar si el usario
+                                                                     // recien se ha metido en la votacion
+
+              var alertError = 0;                                    // Variable para evitar la duplicidad de mensajes de error que no queremos que se dupliquen
+
+              //typeMessage = 0 => Comenzando votacion
+              //typeMessage = 1 => Error duplicados
+              //typeMessage = 2 => Aviso votaciones sin contestar
+              //typeMessage = 3 => Tienes los dos errores anteriores
+              //typeMessage = 4 => No error
+              var typeMessage = 0;
+
+              //Boolean de los estados de los mensajes
+              //El boolean del typeMessage 3 se crea usando el isMessage1 y isMessage2
+              //isMessage 0 es del typeMessage 0, isMessage 1 es del typeMessage 1, el 2 lo mismo respectivamente
+              //y isMessage 3 corresponde typeMessage 4
+              var isMessage0 = true;
+              var isMessage1 = false;
+              var isMessage2 = false;
+              var isMessage3 = false;
+
+              var isClearArrayContElementChoosen = false;            //Boolean para limpiar solo una vez el array
+
+              //Recorremos las propuestas y
+              //de cada propuesta sin posibles respuestas
+              //Y compruebo si alguna ha sido seleccionada
+
+              <% @questions.each do |question| %>
+
+                var childrens = document.getElementById("<%= dom_id(question) %>_answers").children;
+                arrayChildAnswer = childrens[0].children;
+
+                if(isClearArrayContElementChoosen == false) {
+                    arrayContElementChoosen = new Array(arrayChildAnswer.length);
+                    arrayContElementChoosen.fill(0);
+                    isClearArrayContElementChoosen = true;
                 }
-            }
-          <% end %>
 
-          if(childON.length != childActive.length)
-          {
-              codError = 2;
-              parr.innerHTML =
-                  "<b style='color:red;'>Su votación no está correctamente cumplimentada.</b><br>" +
-                  "<span style='color:red;'>" +
-                  "No se pueden tener propuestas sin contestar." +
-                  "</span>";
-          } else {
-              codError = 3;
-          }
-
-          for(i = 0; i < childON.length -1; i++)
-          {
-              for (z = i+1; z < childON.length; z++)
-              {
-                if (childON[i].innerHTML == childON[z].innerHTML)
+                for(i = 0; i < arrayChildAnswer.length; i++)
                 {
-                    if(alertError == 0)
+                    if(arrayChildAnswer[i].className == "button answered")
                     {
-                        alertError++;
-                        codError = 2;
-                        parr.innerHTML =
-                            "<b style='color:red;'>Su votación no está correctamente cumplimentada.</b><br>" +
-                            "<span style='color:red;'>" +
-                            "Debe seleccionar un valor distinto en cada pregunta. Corrija los valores repetidos:" +
-                            "<br><span id='resumenAnswer'></span></span>";
-
-                        if(codError == 2)
-                        {
-                            parr.innerHTML = parr.innerHTML + "<br>" +
-                                "<span style='color:red;'>" +
-                                "No se pueden tener propuestas sin contestar." +
-                                "</span>"
-                        }
+                        arrayChildChoosen.push(arrayChildAnswer[i]);
+                        arrayContElementChoosen[i] = arrayContElementChoosen[i] + 1;
                     }
                 }
+
+              <% end %>
+
+              //Comprobamos que el mensaje no sea el isMessage0
+              //Lo hacemos separado para no entrar en conflicto
+              //con el error de elementos vacios
+              if(isMessage0 == true) {
+                  for (j1 = 0; j1 < arrayContElementChoosen.length; j1++) {
+                      if (arrayContElementChoosen[j1] > 0) {
+                          isMessage0 = false;
+                          break;
+                      }
+                  }
               }
 
-              var idFather1 = childON[i].parentElement.parentElement.parentElement.id;
+              //Comprobamos el tipo de mensaje a mostrar
+              if(isMessage0 == false) {
+                  for (j2 = 0; j2 < arrayContElementChoosen.length; j2++) {
 
-              for(num = 0; num < fatherOfAllAnswerArrayChildren.length; num++)
+                      //Si no hay errores, el typeMessage es 4
+                      if (arrayContElementChoosen[j2] == 1 &&
+                          isMessage1 == false && isMessage2 == false) {
+                          typeMessage = 4;
+                          isMessage3 = true;
+                      }
+
+
+                      //Si tienes duplicados el tipo de mensaje es 1
+                      if (arrayContElementChoosen[j2] > 1 &&
+                          isMessage2 == false) {
+                          typeMessage = 1;
+                          isMessage1 = true;
+                          isMessage3 = false;
+                      }
+                      //Si tienes duplicados y vacios el tipo de mensaje es 3
+                      else if (arrayContElementChoosen[j2] > 1 &&
+                          isMessage2 == true) {
+                          typeMessage = 3;
+                          isMessage1 = true;
+                          isMessage3 = false;
+                          break;
+                      }
+
+
+                      //Si tienes vacios el tipo de mensaje es 2
+                      if (arrayContElementChoosen[j2] == 0 &&
+                          isMessage1 == false) {
+                          typeMessage = 2;
+                          isMessage2 = true;
+                          isMessage3 = false;
+                      }
+                      //Si tienes duplicados y vacios el tipo de mensaje es 3
+                      else if (arrayContElementChoosen[j2] == 0 &&
+                          isMessage1 == true) {
+                          typeMessage = 3;
+                          isMessage2 = true;
+                          isMessage3 = false;
+                          break;
+                      }
+                  }
+              }
+
+              //ESCRIBIMOS EL MENSAJE
+              if(typeMessage == 0)
               {
-                  if(fatherOfAllAnswerArrayChildren[num].id == idFather1)
+                  parr.innerHTML =
+                      "<b>Recuerde: <br>Para que la votación sea válida, " +
+                      "debe asignar un valor distinto en cada propuesta y no " +
+                      "dejar ninguna propuesta sin contestar.</b>";
+              }
+
+              if(typeMessage == 1 || typeMessage == 2 || typeMessage == 3)
+              {
+                  if(typeMessage == 2 || typeMessage == 3)
+                      parr.innerHTML= "<b>Recuerde: <br>Para que la votación sea válida, " +
+                      "debe asignar un valor distinto en cada propuesta y no " +
+                      "dejar ninguna propuesta sin contestar.</b><br>";
+
+                  switch (typeMessage)
                   {
-                      document.getElementById("resumenAnswer").innerHTML =
-                          document.getElementById("resumenAnswer").innerHTML +
-                          "Propuesta " + (num + 1) + " => " + childON[i].innerHTML;
+                      case 1,3:
+                          parr.innerHTML += "<b style='color:red;'>Su votación no está correctamente cumplimentada.</b><br><span style='color:red;'>" +
+                              "Debe seleccionar un valor distinto en cada pregunta. " +
+                              "Corrija los errores:" +
+                              "</span>";
+                          break;
+                      case 2:
+                          break;
+                  }
+              }
+              alert(arrayContElementChoosen);
+              alert(typeMessage);
+  /*
+              if(propuestasComenzadas == true && childSelection.length != childActive.length)
+              {
+
+                  parr.innerHTML =
+                      "<b style='color:red;'>Su votación no está correctamente cumplimentada.</b><br>" +
+                      "<span style='color:red;'>" +
+                      "No se pueden tener propuestas sin contestar." +
+                      "</span>";
+              }
+
+              for(i = 0; i < childON.length -1; i++)
+              {
+                  for (z = i+1; z < childON.length; z++)
+                  {
+                      if (childON[i].innerHTML == childON[z].innerHTML)
+                      {
+                          if(alertError == 0)
+                          {
+                              alertError++;
+                              codError = 2;
+                              parr.innerHTML =
+                                  "<b style='color:red;'>Su votación no está correctamente cumplimentada.</b><br>" +
+                                  "<span style='color:red;'>" +
+                                  "Debe seleccionar un valor distinto en cada pregunta. Corrija los valores repetidos:" +
+                                  "<br><span id='resumenAnswer'></span></span>";
+
+                              if(codError == 2)
+                              {
+                                  parr.innerHTML = parr.innerHTML + "<br>" +
+                                      "<span style='color:red;'>" +
+                                      "No se pueden tener propuestas sin contestar." +
+                                      "</span>"
+                              }
+                          }
+                      }
                   }
 
-              }
-          }
+                  var idFather1 = childON[i].parentElement.parentElement.parentElement.id;
 
-          if(codError == 3)
-          {
-              parr.innerHTML = "<b style='color:green;'>Su votación es válida. Ha votado está priorización:" +
-                  "<br><span id='resumenAnswer'></span></b>";
-
-              var idFather1 = childON[i].parentElement.parentElement.parentElement.id;
-
-              for(num = 0; num < fatherOfAllAnswerArrayChildren.length; num++)
-              {
-                  if(fatherOfAllAnswerArrayChildren[num].id == idFather1)
+                  for(num = 0; num < fatherOfAllAnswerArrayChildren.length; num++)
                   {
-                      document.getElementById("resumenAnswer").innerHTML =
-                          document.getElementById("resumenAnswer").innerHTML +
-                          "Propuesta " + (num + 1) + " => " + childON[i].innerHTML;
-                  }
+                      if(fatherOfAllAnswerArrayChildren[num].id == idFather1)
+                      {
+                          document.getElementById("resumenAnswer").innerHTML =
+                              document.getElementById("resumenAnswer").innerHTML +
+                              "Propuesta " + (num + 1) + " => " + childON[i].innerHTML;
+                      }
 
+                  }
+              }
+*/
+              //No terminado
+              if(typeMessage == 4)
+              {
+                  parr.innerHTML = "<b style='color:#21610B;'>Su votación es válida. Ha votado está priorización:" +
+                      "<br><span id='summaryAnswer'></span></b>";
+
+                  var idFather = arrayChildChoosen[i].parentElement.parentElement.parentElement.id;
+/*
+                  for(num = 0; num < arrayChildrenOf_FatherOfAllAnswer.length; num++)
+                  {
+                      if(arrayChildrenOf_FatherOfAllAnswer[num].id == idFather)
+                      {
+                          document.getElementById("resumenAnswer").innerHTML =
+                              document.getElementById("resumenAnswer").innerHTML +
+                              "Propuesta " + (num + 1) + " => " + arrayChildChoosen[i].innerHTML;
+                      }
+
+                  }*/
               }
           }
-
-          if(codError == 1)
-          {
-              parr.innerHTML =
-                  "<b>Recuerde: <br>Para que la votación sea válida, " +
-                  "debe asignar un valor distinto en cada propuesta y no " +
-                  "dejar ninguna propuesta sin contestar.</b>";
-          }
-      }
-    </script>
-
+      </script>
     <aside class="small-12 medium-3 column">
       <%= render partial: 'shared/social_share', locals: {
         share_title: t("proposals.show.share"),
