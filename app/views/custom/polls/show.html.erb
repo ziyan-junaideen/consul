@@ -59,8 +59,6 @@
                                                                      // tambien sera usada para comprobar si el usario
                                                                      // recien se ha metido en la votacion
 
-              var alertError = 0;                                    // Variable para evitar la duplicidad de mensajes de error que no queremos que se dupliquen
-
               //typeMessage = 0 => Comenzando votacion
               //typeMessage = 1 => Error duplicados
               //typeMessage = 2 => Aviso votaciones sin contestar
@@ -186,86 +184,97 @@
                           parr.innerHTML += "<b style='color:red;'>Su votación no está correctamente cumplimentada.</b><br><span style='color:red;'>" +
                               "Debe seleccionar un valor distinto en cada pregunta. " +
                               "Corrija los errores:" +
-                              "</span>";
+                              "</span>" +
+                              "<br><span style='display: inline-block; line-height: 1.2rem;' class='callout margin-top' id='summaryAnswer'></span>";
+
+                          var arrayChildChoosenOrdenado = ordenAnswer(arrayChildChoosen);
+                          //Seleccionamos el bisabuelo de la elemento seleccionado, el padre del padre del padre
+                          //Basicamente es el el primer div de la propuesta
+                          for(zy = 0; zy < arrayChildChoosenOrdenado.length; zy++)
+                          {
+                              var idFather = arrayChildChoosenOrdenado[zy].parentElement.parentElement.parentElement.id;
+                              for(num2 = 0; num2 < arrayChildrenOf_FatherOfAllAnswer.length; num2++)
+                              {
+                                  if(arrayChildrenOf_FatherOfAllAnswer[num2].id == idFather)
+                                  {
+                                      //Estas dos lineas son usadas para acceder al titulo de la propuesta
+                                      var arrayChildrensGrandfather = arrayChildChoosenOrdenado[zy].parentElement.parentElement.parentElement.children;
+                                      var titleQuestion = arrayChildrensGrandfather[0].children;
+
+                                      document.getElementById("summaryAnswer").innerHTML =
+                                          document.getElementById("summaryAnswer").innerHTML +
+                                          "<i style='color:red;'>" + arrayChildChoosenOrdenado[zy].innerHTML + ": " + titleQuestion[0].innerHTML + "</i><br>";
+                                      break;
+                                  }
+                              }
+                          }
+
                           break;
                       case 2:
                           break;
                   }
               }
-              alert(arrayContElementChoosen);
-              alert(typeMessage);
-  /*
-              if(propuestasComenzadas == true && childSelection.length != childActive.length)
-              {
 
-                  parr.innerHTML =
-                      "<b style='color:red;'>Su votación no está correctamente cumplimentada.</b><br>" +
-                      "<span style='color:red;'>" +
-                      "No se pueden tener propuestas sin contestar." +
-                      "</span>";
-              }
-
-              for(i = 0; i < childON.length -1; i++)
-              {
-                  for (z = i+1; z < childON.length; z++)
-                  {
-                      if (childON[i].innerHTML == childON[z].innerHTML)
-                      {
-                          if(alertError == 0)
-                          {
-                              alertError++;
-                              codError = 2;
-                              parr.innerHTML =
-                                  "<b style='color:red;'>Su votación no está correctamente cumplimentada.</b><br>" +
-                                  "<span style='color:red;'>" +
-                                  "Debe seleccionar un valor distinto en cada pregunta. Corrija los valores repetidos:" +
-                                  "<br><span id='resumenAnswer'></span></span>";
-
-                              if(codError == 2)
-                              {
-                                  parr.innerHTML = parr.innerHTML + "<br>" +
-                                      "<span style='color:red;'>" +
-                                      "No se pueden tener propuestas sin contestar." +
-                                      "</span>"
-                              }
-                          }
-                      }
-                  }
-
-                  var idFather1 = childON[i].parentElement.parentElement.parentElement.id;
-
-                  for(num = 0; num < fatherOfAllAnswerArrayChildren.length; num++)
-                  {
-                      if(fatherOfAllAnswerArrayChildren[num].id == idFather1)
-                      {
-                          document.getElementById("resumenAnswer").innerHTML =
-                              document.getElementById("resumenAnswer").innerHTML +
-                              "Propuesta " + (num + 1) + " => " + childON[i].innerHTML;
-                      }
-
-                  }
-              }
-*/
-              //No terminado
               if(typeMessage == 4)
               {
                   parr.innerHTML = "<b style='color:#21610B;'>Su votación es válida. Ha votado está priorización:" +
-                      "<br><span id='summaryAnswer'></span></b>";
+                      "</b><br><span style='display: inline-block; line-height: 1.2rem;' class='callout margin-top' id='summaryAnswer'></span>";
 
-                  var idFather = arrayChildChoosen[i].parentElement.parentElement.parentElement.id;
-/*
-                  for(num = 0; num < arrayChildrenOf_FatherOfAllAnswer.length; num++)
+                  var arrayChildChoosenOrdenado = ordenAnswer(arrayChildChoosen);
+
+                  //Seleccionamos el bisabuelo de la elemento seleccionado, el padre del padre del padre
+                  //Basicamente es el el primer div de la propuesta
+                  for(z = 0; z < arrayChildChoosenOrdenado.length; z++)
                   {
-                      if(arrayChildrenOf_FatherOfAllAnswer[num].id == idFather)
-                      {
-                          document.getElementById("resumenAnswer").innerHTML =
-                              document.getElementById("resumenAnswer").innerHTML +
-                              "Propuesta " + (num + 1) + " => " + arrayChildChoosen[i].innerHTML;
-                      }
+                      var idFather = arrayChildChoosenOrdenado[z].parentElement.parentElement.parentElement.id;
 
-                  }*/
+                      for(num = 0; num < arrayChildrenOf_FatherOfAllAnswer.length; num++)
+                      {
+                          if(arrayChildrenOf_FatherOfAllAnswer[num].id == idFather)
+                          {
+                              //Estas dos lineas son usadas para acceder al titulo de la propuesta
+                              var arrayChildrensGrandfather = arrayChildChoosenOrdenado[z].parentElement.parentElement.parentElement.children;
+                              var titleQuestion = arrayChildrensGrandfather[0].children;
+
+                              document.getElementById("summaryAnswer").innerHTML =
+                                  document.getElementById("summaryAnswer").innerHTML +
+                                  "<i style='color:#21610B;'>" + arrayChildChoosenOrdenado[z].innerHTML + ": " + titleQuestion[0].innerHTML + "</i><br>";
+                              break;
+                          }
+                      }
+                  }
               }
           }
+
+          function ordenAnswer(arrayElement)
+          {
+              var arrayOrden = new Array();
+              var arrayElementosOrdenadoFinal = new Array();
+
+              for(ind = 0; ind < arrayElement.length; ind++)
+              {
+                  arrayOrden.push(parseInt(arrayElement[ind].innerHTML));
+              }
+              //Ordenamos el arrayOrden, que ahora mismo no esta ordenado
+              arrayOrden.sort( comparar );
+
+              for(ind2 = 0; ind2 < arrayOrden.length; ind2++)
+              {
+                  for(ind3 = 0; ind3 < arrayElement.length; ind3++)
+                  {
+                      if(arrayOrden[ind2] == parseInt(arrayElement[ind3].innerHTML))
+                      {
+                          arrayElementosOrdenadoFinal.push(arrayElement[ind3]);
+                          break;
+                      }
+                  }
+              }
+
+              return arrayElementosOrdenadoFinal;
+          }
+
+          function comparar ( a, b ){ return a - b; }
+
       </script>
     <aside class="small-12 medium-3 column">
       <%= render partial: 'shared/social_share', locals: {
