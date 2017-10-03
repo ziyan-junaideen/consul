@@ -1,8 +1,5 @@
 class Poll
   class Voter < ActiveRecord::Base
-
-    VALID_ORIGINS = %w{ web booth }
-
     belongs_to :poll
     belongs_to :user
     belongs_to :geozone
@@ -13,12 +10,8 @@ class Poll
     validates :user_id, presence: true
 
     validates :document_number, presence: true, uniqueness: { scope: [:poll_id, :document_type], message: :has_voted }
-    validates :origin, inclusion: { in: VALID_ORIGINS }
 
     before_validation :set_demographic_info, :set_document_info
-
-    scope :web,   -> { where(origin: 'web') }
-    scope :booth, -> { where(origin: 'booth') }
 
     def set_demographic_info
       return if user.blank?

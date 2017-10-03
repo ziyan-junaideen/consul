@@ -3,7 +3,9 @@ class Poll
     belongs_to :officer
     belongs_to :booth_assignment
     has_many :partial_results
-    has_many :recounts
+    has_many :white_results
+    has_many :null_results
+    has_many :total_results
     has_many :voters
 
     validates :officer_id, presence: true
