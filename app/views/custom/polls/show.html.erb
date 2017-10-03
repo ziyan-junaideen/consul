@@ -248,32 +248,20 @@
 
           function ordenAnswer(arrayElement)
           {
-              var arrayOrden = new Array();
               var arrayElementosOrdenadoFinal = new Array();
 
-              for(ind = 0; ind < arrayElement.length; ind++)
-              {
-                  arrayOrden.push(parseInt(arrayElement[ind].innerHTML));
-              }
-              //Ordenamos el arrayOrden, que ahora mismo no esta ordenado
-              arrayOrden.sort( comparar );
-
-              for(ind2 = 0; ind2 < arrayOrden.length; ind2++)
+              for(ind2 = 0; ind2 < arrayElement.length; ind2++)
               {
                   for(ind3 = 0; ind3 < arrayElement.length; ind3++)
                   {
-                      if(arrayOrden[ind2] == parseInt(arrayElement[ind3].innerHTML))
+                      if(ind2 == parseInt(arrayElement[ind3].innerHTML))
                       {
                           arrayElementosOrdenadoFinal.push(arrayElement[ind3]);
-                          break;
                       }
                   }
               }
-
               return arrayElementosOrdenadoFinal;
           }
-
-          function comparar ( a, b ){ return a - b; }
 
       </script>
     <aside class="small-12 medium-3 column">
