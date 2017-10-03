@@ -52,6 +52,12 @@ FactoryGirl.define do
     trait :verified do
       verified_at Time.current
     end
+
+    trait :in_census do
+      document_number "12345678Z"
+      document_type "1"
+      verified_at Time.current
+    end
   end
 
   factory :identity do
@@ -525,6 +531,7 @@ FactoryGirl.define do
   factory :poll_voter, class: 'Poll::Voter' do
     poll
     association :user, :level_two
+    origin "web"
 
     trait :from_booth do
       association :booth_assignment, factory: :poll_booth_assignment
@@ -565,6 +572,11 @@ FactoryGirl.define do
   end
 
   factory :poll_total_result, class: 'Poll::TotalResult' do
+    association :author, factory: :user
+    origin { 'web' }
+  end
+
+  factory :poll_recount, class: 'Poll::Recount' do
     association :author, factory: :user
     origin { 'web' }
   end
@@ -821,7 +833,7 @@ LOREM_IPSUM
 
   factory :direct_upload do
     user
-    
+
     trait :proposal do
       resource_type "Proposal"
     end
@@ -838,6 +850,20 @@ LOREM_IPSUM
       attachment { File.new("spec/fixtures/files/clippy.jpg") }
     end
     initialize_with { new(attributes) }
+  end
+
+  factory :map_location do
+    latitude 51.48
+    longitude 0.0
+    zoom 10
+
+    trait :proposal_map_location do
+      proposal
+    end
+
+    trait :budget_investment_map_location do
+      association :investment, factory: :budget_investment
+    end
   end
 
 end
