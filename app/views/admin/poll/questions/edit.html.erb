@@ -2,6 +2,4 @@
 
 <h2><%= t("admin.questions.edit.title") %></h2>
 
-<div class="poll-question-form">
-  <%= render "form", form_url: admin_question_path(@question) %>
-</div>
+<%= render "form", form_url: admin_question_path(@question) %>
