@@ -31,8 +31,14 @@
   <div id="myAlertPolls"></div>
   <div class="row margin-top">
     <div class="small-12 medium-9 column" id="fatherOfAllAnswer">
-      <% @questions.each do |question| %>
-        <%= render 'polls/questions/question', question: question %>
+      <% if @poll.voted_in_booth?(current_user) %>
+          <div class="callout warning">
+            <%= t("polls.show.already_voted_in_booth") %>
+          </div>
+      <% else %>
+          <% @questions.each do |question| %>
+              <%= render 'polls/questions/question', question: question %>
+          <% end %>
       <% end %>
     </div>
 
@@ -250,7 +256,7 @@
           {
               var arrayElementosOrdenadoFinal = new Array();
 
-              for(ind2 = 0; ind2 < arrayElement.length; ind2++)
+              for(ind2 = 1; ind2 < arrayElement.length + 1; ind2++)
               {
                   for(ind3 = 0; ind3 < arrayElement.length; ind3++)
                   {
@@ -264,6 +270,7 @@
           }
 
       </script>
+
     <aside class="small-12 medium-3 column">
       <%= render partial: 'shared/social_share', locals: {
         share_title: t("proposals.show.share"),
