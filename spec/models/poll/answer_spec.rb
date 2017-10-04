@@ -51,7 +51,6 @@ describe Poll::Answer do
 
       expect(voter.document_number).to eq(answer.author.document_number)
       expect(voter.poll_id).to eq(answer.poll.id)
-      expect(voter.officer_id).to eq(nil)
     end
 
     it "updates a poll_voter with user and poll data" do
