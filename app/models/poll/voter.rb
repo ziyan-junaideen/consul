@@ -8,7 +8,6 @@ class Poll
     belongs_to :geozone
     belongs_to :booth_assignment
     belongs_to :officer_assignment
-    belongs_to :officer
 
     validates :poll_id, presence: true
     validates :user_id, presence: true
