@@ -531,7 +531,6 @@ FactoryGirl.define do
   factory :poll_voter, class: 'Poll::Voter' do
     poll
     association :user, :level_two
-    association :officer, factory: :poll_officer
     origin "web"
 
     trait :from_booth do
