@@ -87,11 +87,9 @@ feature 'Admin booths' do
   end
 
   scenario "Edit" do
-    poll = create(:poll, :current)
     booth = create(:poll_booth)
-    assignment = create(:poll_booth_assignment, poll: poll, booth: booth)
 
-    visit available_admin_booths_path
+    visit admin_booths_path
 
     within("#booth_#{booth.id}") do
       click_link "Edit"
