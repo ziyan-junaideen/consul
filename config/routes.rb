@@ -113,7 +113,7 @@ Rails.application.routes.draw do
   end
 
   resources :polls, only: [:show, :index] do
-    resources :questions, controller: 'polls/questions', shallow: true do
+    resources :questions, only: [:show], controller: 'polls/questions', shallow: true do
       post :answer, on: :member
     end
   end
@@ -300,9 +300,7 @@ Rails.application.routes.draw do
         end
       end
 
-      resources :questions do
-        resources :answers, only: [:new, :create], controller: 'questions/answers'
-      end
+      resources :questions
     end
 
     resources :verifications, controller: :verifications, only: :index do

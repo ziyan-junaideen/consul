@@ -147,9 +147,6 @@ fr:
         name: Nom
         locale: Langue
         body: Contenu
-      poll/question_answer:
-        title: "Réponse"
-        description: "Description"
     errors:
       models:
         user:
