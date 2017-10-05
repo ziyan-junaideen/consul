@@ -27,15 +27,15 @@ module Verification
   end
 
   def sms_verified?
-    confirmed_phone.present?
+    true
   end
 
   def level_two_verified?
-    level_two_verified_at.present? || (residence_verified? && sms_verified?)
+    level_two_verified_at.present? || residence_verified?
   end
 
   def level_three_verified?
-    verified_at.present?
+    level_two_verified?
   end
 
   def level_two_or_three_verified?
@@ -55,10 +55,9 @@ module Verification
   end
 
   def user_type
-    case
-    when level_three_verified?
+    if level_three_verified?
       :level_3_user
-    when level_two_verified?
+    elsif level_two_verified?
       :level_2_user
     else
       :level_1_user
