@@ -14,8 +14,7 @@ class Poll::Question < ActiveRecord::Base
   belongs_to :author, -> { with_hidden }, class_name: 'User', foreign_key: 'author_id'
 
   has_many :comments, as: :commentable
-  has_many :answers, class_name: 'Poll::Answer'
-  has_many :question_answers, class_name: 'Poll::Question::Answer'
+  has_many :answers
   has_many :partial_results
   belongs_to :proposal
 
@@ -24,6 +23,7 @@ class Poll::Question < ActiveRecord::Base
   validates :poll_id, presence: true
 
   validates :title, length: { minimum: 4 }
+  validates :description, length: { maximum: Poll::Question.description_max_length }
 
   scope :by_poll_id,    ->(poll_id) { where(poll_id: poll_id) }
 
@@ -40,8 +40,13 @@ class Poll::Question < ActiveRecord::Base
   def searchable_values
     { title                 => 'A',
       proposal.try(:title)  => 'A',
+      description           => 'B',
       author.username       => 'C',
       author_visible_name   => 'C' }
+  end
+
+  def description
+    super.try :html_safe
   end
 
   def valid_answers
@@ -54,6 +59,7 @@ class Poll::Question < ActiveRecord::Base
       self.author_visible_name = proposal.author.name
       self.proposal_id = proposal.id
       self.title = proposal.title
+      self.description = proposal.description
       self.valid_answers = I18n.t('poll_questions.default_valid_answers')
     end
   end
