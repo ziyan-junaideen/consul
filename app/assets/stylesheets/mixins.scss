@@ -2,8 +2,7 @@
 //
 // 01. Logo
 // 02. Orbit bullets
-// 03. Direct uploads
-// ------------------
+//
 
 // 01. Logo
 // --------
@@ -35,7 +34,6 @@
 
 // 02. Orbit bullet
 // ----------------
-
 @mixin orbit-bullets {
   @include disable-mouse-outline;
   position: relative;
@@ -61,9 +59,8 @@
   }
 }
 
-// 03. Direct uploads
+// 02. Direct uploads
 // ------------------
-
 @mixin direct-uploads {
 
   .cached-image {
@@ -136,4 +133,5 @@
   .loading-bar.no-transition {
     transition: none;
   }
+
 }
