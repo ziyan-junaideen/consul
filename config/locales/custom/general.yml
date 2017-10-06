@@ -726,7 +726,7 @@ es:
       description: Encontrarnos, debatir y compartir lo que nos parece importante en nuestra ciudad.
       title: Debates
     decide:
-      description: De las propuestas que recepciones apoyas la que quieres que entren en el proceso.
+      description: De las propuestas recepcionadas apoyas la que quieres que entren en el proceso.
       title: Apoyos
     do:
       description: Si la propuesta es dictaminada como viable, se someterán al proceso de priorización ciudadana.
