@@ -7,17 +7,17 @@
   <div class="row">
     <div class="small-12 column">
       <h2><%= t("pages.more_info.title", org_name: setting['org_name']) %></h2>
-      <p class="lead"><%= t("pages.more_info.subtitle") %></p>
-      <p><%= t("pages.more_info.guide", org_name: setting['org_name']) %></p>
+      <!--<p class="lead"><%= t("pages.more_info.subtitle") %></p>-->
+      <!--<p><%= t("pages.more_info.guide", org_name: setting['org_name']) %></p>-->
     </div>
   </div>
 
-  <%= render "pages/more_info/menu" %>
+
 </div>
 
 <div id="more-info" class="more-info-content">
   <div class="row">
-    <div class="small-12 medium-7 large-8 column">
+    <div class="small-12 medium-12 large-12 column">
       <% if feature?(:debates) %>
         <%= render "pages/more_info/debates" %>
       <% end %>
@@ -31,6 +31,9 @@
       <% if feature?(:polls) %>
         <%= render "pages/more_info/polls" %>
       <% end %>
+
+      <%= render "pages/more_info/priorizacion" %>
+
     </div>
     <div class="small-12 medium-4 large-3 column more-info-sidebar">
       <%= render "pages/more_info/sidebar" %>
