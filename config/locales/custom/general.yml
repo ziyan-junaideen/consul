@@ -211,7 +211,7 @@ es:
       moderation: Moderar
       valuation: Evaluación
       officing: Presidentes de mesa
-      more_info: Cómo participar
+      more_info: "Como participar"
       my_account_link: Mi cuenta
       my_activity_link: Mi actividad
       notifications: Notificaciones
@@ -352,6 +352,21 @@ es:
       title: Propuestas ciudadanas
       top: Top semanal
       top_link_proposals: Propuestas más apoyadas por categoría
+      section_footer:
+        title: Propuestas
+        description: Propón lo que quieres que el Ayuntamiento lleve a cabo y apoya propuestas de otras personas.
+        help_text_1: "Para crear una propuesta hay que registrarse en %{org} además para apoyarlas debes verificar tu cuenta."
+#        help_text_2:  "La método para la priorización de las propuestas será:
+#                       1.	Los asistentes numerarán  las propuestas según su orden de preferencia (con un mínimo de 10)
+#                       2.	Cada persona podrá entregar sólo una hoja de votación en el total de asambleas, para ello se registrarán los votantes, previamente acreditados mediante DNI.
+##                       3.	El voto será personal e intransferible."
+#        help_text_3:  "Recuento:
+#
+#                       1.	Cada número tiene asignada una puntuación, así el 1 tendrá la puntuación más alta, y un punto menos el 2 y así consecutivamente.
+#                       2.	Procediéndose a la suma de las puntuaciones obtenidas por cada propuesta.
+#                       3.	El recuento lo hará un trabajador o trabajadora  del ayuntamiento junto con uno de los  miembros de la Comisión Permanente de Participación de la zona correspondiente o en su defecto con un ciudadano o ciudadana voluntaria de la propia asamblea.
+#                       4.	El resultado se anunciará al final de la asamblea."
+
     new:
       form:
         submit_button: Crear propuesta
@@ -436,6 +451,22 @@ es:
       cant_answer_not_logged_in: "Necesitas iniciar sesión o registrarte para participar"
       cant_answer_verify: "Por favor verifica tu cuenta para poder responder"
       already_answer: "Ya has participado en esta votación"
+      section_footer:
+              title: Proceso de Priorizacion
+              description: Si obtiene los apoyos suficientes entran en el proceso Construimos desde Abajo.
+              help_text_1: "-	Se presentarán todas las propuestas, con imágenes y una valoración económica de las mismas. Procediéndose a realizar  una breve explicación del sentido de cada una de ellas."
+
+              help_text_2: "- Se facilitará la posibilidad a miembros de una asamblea de zona distinta a defender alguna de ellas."
+
+              help_text_3: "Los método para la priorización de las propuestas será:"
+              help_text_4:  "1.	Los asistentes numerarán  las propuestas según su orden de preferencia (con un mínimo de 10)"
+              help_text_5:  "2.	Cada persona podrá entregar sólo una hoja de votación en el total de asambleas, para ello se registrarán los votantes, previamente acreditados mediante DNI."
+              help_text_6:  "3.	El voto será personal e intransferible."
+              help_text_7:  "Recuento:"
+              help_text_8:  "1.	Cada número tiene asignada una puntuación, así el 1 tendrá la puntuación más alta, y un punto menos el 2 y así consecutivamente."
+              help_text_9:  "2.	Procediéndose a la suma de las puntuaciones obtenidas por cada propuesta."
+              help_text_10:  "3.	El recuento lo hará un trabajador o trabajadora  del ayuntamiento junto con uno de los  miembros de la Comisión Permanente de Participación de la zona correspondiente o en su defecto con un ciudadano o ciudadana voluntaria de la propia asamblea."
+              help_text_11:  "4.	El resultado se anunciará al final de la asamblea."
     show:
       dates_title: "Fechas de participación"
       cant_answer_not_logged_in: "Necesitas %{signin} o %{signup} para participar."
@@ -710,14 +741,14 @@ es:
       description: Encontrarnos, debatir y compartir lo que nos parece importante en nuestra ciudad.
       title: Debates
     decide:
-      description: La ciudadanía decide si acepta o rechaza las propuestas más apoyadas.
-      title: Decides
+      description: De las propuestas recepcionadas apoyas las que quieres que entren en el proceso.
+      title: Apoyos
     do:
-      description: Si la propuesta es aceptada mayoritariamente, el Ayuntamiento la asume como propia y se hace.
-      title: Se hace
+      description: Si la propuesta es dictaminada como viable, se someterán al proceso de priorización ciudadana.
+      title: Decides
     proposal:
       description: Espacio abierto para propuestas ciudadanas sobre el tipo de ciudad en el que queremos vivir.
-      title: Propones
+      title: Propuestas
     verification:
       i_dont_have_an_account: No tengo cuenta, quiero crear una y verificarla
       i_have_an_account: Ya tengo una cuenta que quiero verificar
