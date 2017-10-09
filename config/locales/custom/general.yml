@@ -180,7 +180,7 @@ es:
 
       consul: Consul
       consul_url: https://github.com/consul/consul
-      contact_us: Para asistencia técnica entra en
+      contact_us: Para asistencia técnica envía un correo electrónico a
       copyright: Ayuntamiento de Puerto Real, %{year}
       description: Es una adaptación de la plataforma %{open_source} %{consul} desarrollada por el Ayuntamiento de Madrid y adaptada por el Ayuntamiento de Puerto Real.<br/>
       faq: Asistencia técnica
