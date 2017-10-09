@@ -180,18 +180,19 @@
                 if(typeMessage == 0)
                 {
                     parr.innerHTML =
-                        "<b>Recuerde: <br>Para que la votación sea válida, " +
-                        "debe asignar un valor distinto en cada propuesta y no " +
-                        "dejar ninguna propuesta sin contestar.</b>";
+                        "<b>Indique del 1 al " + arrayChildAnswer.length + ", por orden de preferencia, qué propuestas de las siguientes considera más prioritarias" +
+                        "<br>Solo se aceptarán las votaciones con TODAS LAS PROPUESTAS PUNTUADAS."+
+                        "<br>En las propuestas presentadas en VARIAS FASES, la Fase 1 deberá valorarse ANTES que la Fase 2 y así sucesivamente.</b>";
                 }
 
                 if(typeMessage == 1 || typeMessage == 2 || typeMessage == 3)
                 {
                     myAlert.className = "alert callout";
 
-                    parr.innerHTML= "<b>Recuerde: <br>Para que la votación sea válida, " +
-                        "debe asignar un valor distinto en cada propuesta y no " +
-                        "dejar ninguna propuesta sin contestar.</b><br>";
+                    parr.innerHTML =
+                        "<b>Indique del 1 al " + arrayChildAnswer.length + ", por orden de preferencia, qué propuestas de las siguientes considera más prioritarias" +
+                        "<br>Solo se aceptarán las votaciones con TODAS LAS PROPUESTAS PUNTUADAS."+
+                        "<br>En las propuestas presentadas en VARIAS FASES, la Fase 1 deberá valorarse ANTES que la Fase 2 y así sucesivamente.</b><br>";
 
                     switch (typeMessage)
                     {
