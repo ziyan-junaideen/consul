@@ -1268,3 +1268,9 @@ table {
   visibility: hidden;
   height: 0;
 }
+
+//Disabled button with CSS
+.disabledButton {
+  opacity: 0.25;
+  pointer-events: none;
+}
