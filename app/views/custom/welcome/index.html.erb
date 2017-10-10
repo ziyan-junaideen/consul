@@ -30,16 +30,16 @@
 
       <!--</div>-->
       <div class="small-12 medium-4 column">
-        <h2><%= t("welcome.proposal.title") %></h2>
+        <h2><%= link_to t("welcome.proposal.title"),proposals_path %></h2>
         <p><%= t("welcome.proposal.description") %></p>
       </div>
 
       <div class="small-12 medium-4 column">
-        <h2><%= t("welcome.decide.title") %></h2>
+        <h2><%= link_to t("welcome.decide.title"),proposals_path %></h2>
         <p><%= t("welcome.decide.description") %></p>
       </div>
       <div class="small-12 medium-4 column">
-        <h2><%= t("welcome.do.title") %></h2>
+        <h2><%= link_to t("welcome.do.title"),polls_path %></h2>
         <p><%= t("welcome.do.description") %></p>
       </div>
     </div>
