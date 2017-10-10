@@ -59,32 +59,32 @@
               document.onload
               {
                   var myAlert = document.getElementById("myAlertPolls"); // DIV container
-                  myAlert.className = "primary callout";
                   var myAlert2 = document.getElementById("myAlertPolls2"); //DIV container 2, el de abajo
-                  myAlert2.className = "primary callout";
 
                   //Button confirmación falso, solo redirecciona
                   var linkButtonConfirmation = document.createElement("a");
-                  linkButtonConfirmation.className = "button primary float-right disabledButton";
                   linkButtonConfirmation.href = "<%= root_url %>";
                   linkButtonConfirmation.innerHTML = "Confirmar votación";
 
                   var linkButtonConfirmation2 = document.createElement("a");
-                  linkButtonConfirmation2.className = "button primary float-right disabledButton";
                   linkButtonConfirmation2.href = "<%= root_url %>";
                   linkButtonConfirmation2.innerHTML = "Confirmar votación";
+
                   myAlert.appendChild(linkButtonConfirmation);
                   myAlert2.appendChild(linkButtonConfirmation2);
 
                   // <p> contenedor del texto
                   var parr = document.createElement("p");
                   parr.id = "parrMyAlert";
+                  parr.className = "large-10 medium-10 small-12";
                   var parr2 = document.createElement("p");
                   parr2.id = "parrMyAlert2";
+                  parr2.className = "large-10 medium-10 small-12";
+
                   myAlert.appendChild(parr);
                   myAlert2.appendChild(parr2);
 
-                  var arrayChildChoosen = new Array();                   // Array con los elementos activos al votar
+                  var arrayChildChoosen = new Array();                 // Array con los elementos activos al votar
                   var arrayChildAnswer;                                // Array con los elementos de la propuesta
                   //Array con todas las propuestas, usado para saber el numero de propuestas
                   var arrayChildrenOf_FatherOfAllAnswer =
@@ -208,6 +208,12 @@
                   //ESCRIBIMOS EL MENSAJE
                   if(typeMessage == 0)
                   {
+                      linkButtonConfirmation.className = "button primary float-right disabledButton large-2 medium-2 small-12";
+                      linkButtonConfirmation2.className = "button primary float-right disabledButton large-2 medium-2 small-12";
+
+                      myAlert.className = "primary callout row";
+                      myAlert2.className = "primary callout row";
+
                       parr.innerHTML =
                           "<b>Indique del 1 al " + arrayChildAnswer.length + ", por orden de preferencia, qué propuestas de las siguientes considera más prioritarias" +
                           "<br>Solo se aceptarán las votaciones con TODAS LAS PROPUESTAS PUNTUADAS."+
@@ -217,11 +223,11 @@
 
                   if(typeMessage == 1 || typeMessage == 2 || typeMessage == 3)
                   {
-                      linkButtonConfirmation.className = "button alert float-right disabledButton";
-                      linkButtonConfirmation2.className = "button alert float-right disabledButton";
+                      linkButtonConfirmation.className = "button alert float-right disabledButton large-2 medium-2 small-12";
+                      linkButtonConfirmation2.className = "button alert float-right disabledButton large-2 medium-2 small-12";
 
-                      myAlert.className = "alert callout";
-                      myAlert2.className = "alert callout";
+                      myAlert.className = "alert callout row";
+                      myAlert2.className = "alert callout row";
 
                       parr.innerHTML =
                           "<b>Indique del 1 al " + arrayChildAnswer.length + ", por orden de preferencia, qué propuestas de las siguientes considera más prioritarias" +
@@ -301,11 +307,11 @@
 
                   if(typeMessage == 4)
                   {
-                      linkButtonConfirmation.className = "button success float-right";;
-                      linkButtonConfirmation2.className = "button success float-right";;
+                      linkButtonConfirmation.className = "button success float-right large-2 medium-2 small-12";
+                      linkButtonConfirmation2.className = "button success float-right large-2 medium-2 small-12";
 
-                      myAlert.className = "success callout";
-                      myAlert2.className = "success callout";
+                      myAlert.className = "success callout row";
+                      myAlert2.className = "success callout row";
 
                       parr.innerHTML = "<b style='color:#21610B;'>Su votación es válida. Ha votado esta priorización:" +
                           "</b><br><span style='display: inline-block; line-height: 1.2rem;' class='callout margin-top' id='summaryAnswer'></span>";
