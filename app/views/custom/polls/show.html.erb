@@ -65,14 +65,14 @@
 
                   //Button confirmación falso, solo redirecciona
                   var linkButtonConfirmation = document.createElement("a");
-                  linkButtonConfirmation.className = "button float-right disabledButton";
+                  linkButtonConfirmation.className = "button primary float-right disabledButton";
                   linkButtonConfirmation.href = "<%= root_url %>";
-                  linkButtonConfirmation.innerHTML = "Terminar votación";
+                  linkButtonConfirmation.innerHTML = "Confirmar votación";
 
                   var linkButtonConfirmation2 = document.createElement("a");
-                  linkButtonConfirmation2.className = "button float-right disabledButton";
+                  linkButtonConfirmation2.className = "button primary float-right disabledButton";
                   linkButtonConfirmation2.href = "<%= root_url %>";
-                  linkButtonConfirmation2.innerHTML = "Terminar votación";
+                  linkButtonConfirmation2.innerHTML = "Confirmar votación";
                   myAlert.appendChild(linkButtonConfirmation);
                   myAlert2.appendChild(linkButtonConfirmation2);
 
@@ -217,8 +217,8 @@
 
                   if(typeMessage == 1 || typeMessage == 2 || typeMessage == 3)
                   {
-                      linkButtonConfirmation.className = "button float-right disabledButton";
-                      linkButtonConfirmation2.className = "button float-right disabledButton";
+                      linkButtonConfirmation.className = "button alert float-right disabledButton";
+                      linkButtonConfirmation2.className = "button alert float-right disabledButton";
 
                       myAlert.className = "alert callout";
                       myAlert2.className = "alert callout";
@@ -301,13 +301,13 @@
 
                   if(typeMessage == 4)
                   {
-                      linkButtonConfirmation.className = "button float-right";;
-                      linkButtonConfirmation2.className = "button float-right";;
+                      linkButtonConfirmation.className = "button success float-right";;
+                      linkButtonConfirmation2.className = "button success float-right";;
 
                       myAlert.className = "success callout";
                       myAlert2.className = "success callout";
 
-                      parr.innerHTML = "<b style='color:#21610B;'>Su votación es válida. Ha votado está priorización:" +
+                      parr.innerHTML = "<b style='color:#21610B;'>Su votación es válida. Ha votado esta priorización:" +
                           "</b><br><span style='display: inline-block; line-height: 1.2rem;' class='callout margin-top' id='summaryAnswer'></span>";
 
                       var arrayChildChoosenOrdenado = ordenAnswer(arrayChildChoosen, arrayChildAnswer.length);
