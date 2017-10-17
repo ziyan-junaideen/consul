@@ -1,0 +1,26 @@
+<h2 class="inline-block"><%= t("admin.booths.index.title") %></h2>
+
+<% if controller_name == "booths" && action_name != "available" %>
+  <%= link_to t("admin.booths.index.add_booth"), new_admin_booth_path, class: "button success float-right" %>
+<% end %>
+
+<% if @booths.empty? %>
+  <div class="callout primary">
+    <%= t("admin.booths.index.no_booths") %>
+  </div>
+<% end %>
+
+<% if @booths.any? %>
+  <table>
+    <thead>
+      <th><%= t("admin.booths.index.name") %></th>
+      <th class="text-right"><%= t("admin.actions.actions") %></th>
+    </thead>
+    <tbody>
+    <% @booths.each do |booth| %>
+    <!-- Aqui listaríamos los booths con un switch-button Assign/Unnassing como el de Select/Unslect en budget invsetments -->
+    <% end %>
+    </tbody>
+  </table>
+
+<% end %>
