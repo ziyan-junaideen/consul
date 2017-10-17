@@ -27,15 +27,15 @@ module Verification
   end
 
   def sms_verified?
-    true
+    confirmed_phone.present?
   end
 
   def level_two_verified?
-    level_two_verified_at.present? || residence_verified?
+    level_two_verified_at.present? || (residence_verified? && sms_verified?)
   end
 
   def level_three_verified?
-    level_two_verified?
+    verified_at.present?
   end
 
   def level_two_or_three_verified?
