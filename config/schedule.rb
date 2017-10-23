@@ -19,8 +19,8 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 1.minute do
-  command "date > ~/cron-test.txt"
+every :reboot do
+  command "cd ~/decidePuertoReal && RAILS_ENV=production bin/delayed_job start"
 end
 
 every 1.day, at: '5:00 am' do
