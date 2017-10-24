@@ -587,15 +587,20 @@ en:
       new:
         title: "Create Question"
         poll_label: "Poll"
-        valid_answers_note: "Enter the answers separated by commas (,)"
       show:
         proposal: Original proposal
         author: Author
         title: Title
         valid_answers: Valid answers
-        description: Description
+        add_answer: "Add answer"
         video_url: External video
         documents: Documents (1)
+        answers:
+          title: Answer
+          description: Description
+    answers:
+      new:
+        title: "New answer"
     recounts:
       index:
         title: "Recounts"
@@ -607,7 +612,7 @@ en:
       index:
         title: "Results"
         no_results: "There are no results"
-        table_whites: "Blank ballots"
+        table_whites: "Totally blank ballots"
         table_nulls: "Invalid ballots"
         table_total: "Total ballots"
         table_answer: Answer
