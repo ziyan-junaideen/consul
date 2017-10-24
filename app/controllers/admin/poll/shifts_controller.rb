@@ -1,7 +1,6 @@
 class Admin::Poll::ShiftsController < Admin::Poll::BaseController
 
   before_action :load_booth
-  before_action :load_polls
   before_action :load_officer
 
   def new
@@ -30,17 +29,13 @@ class Admin::Poll::ShiftsController < Admin::Poll::BaseController
   end
 
   def search_officers
-    @officers = User.search(params[:search]).order(username: :asc)
+    @officers = User.search(params[:search]).order(username: :asc).select { |o| o.poll_officer? == true }
   end
 
   private
 
     def load_booth
       @booth = ::Poll::Booth.find(params[:booth_id])
-    end
-
-    def load_polls
-      @polls = ::Poll.current_or_incoming
     end
 
     def load_shifts
