@@ -14,8 +14,8 @@ en:
       phone_number_label: Phone number
       public_activity_label: Keep my list of activities public
       public_interests_label: Keep my interests public
-      public_interests_my_title_list: List of interests (Tags of elements you follow)
-      public_interests_user_title_list: List of interests (Tags of elements this user follows)
+      public_interests_my_title_list: List of interests (tags of elements you follow)
+      public_interests_user_title_list: List of interests (tags of elements this user follows)
       public_interests_my_empty_list: You do not follow any elements yet.
       public_interests_user_empty_list: This user does not follow any elements yet.
       save_changes_submit: Save changes
@@ -158,6 +158,7 @@ en:
       flag: This debate has been flagged as inappropriate by several users.
       login_to_comment: You must %{signin} or %{signup} to leave a comment.
       share: Share
+      author: Author
     update:
       form:
         submit_button: Save changes
@@ -180,6 +181,7 @@ en:
     spending_proposal: Spending proposal
     budget/investment: Investment
     poll/shift: Shift
+    poll/question/answer: Answer
     user: Account
     verification/sms: phone
     signature_sheet: Signature sheet
@@ -466,10 +468,6 @@ en:
       no_geozone_restricted: "All city"
       geozone_restricted: "Districts"
       geozone_info: "Can participate people in the Census of: "
-      can_answer: "You can participate in this poll!"
-      cant_answer: "This poll is not available on your geozone"
-      cant_answer_not_logged_in: "You must sign in or sign up to participate"
-      cant_answer_verify: "You must verify your account in order to answer"
       already_answer: "You already have participated in this poll"
       section_header:
         icon_alt: Voting icon
@@ -481,9 +479,12 @@ en:
         help_text_1: "Voting takes place when a citizen proposal supports reaches 1% of the census with voting rights. Voting can also include questions that the City Council ask to the citizens decision."
         help_text_2: "To participate in the next vote you have to sign up on %{org} and verify your account. All registered voters in the city over 16 years old can vote. The results of all votes are binding on the government."
     show:
-      already_voted_in_booth: "You have already participated in a booth for this poll."
+      already_voted_in_booth: "You have already participated in a physical booth. You can not participate again."
+      already_voted_in_web: "You have already participated in this poll. If you vote again it will be overwritten."
       back: Back to voting
       cant_answer_not_logged_in: "You must %{signin} or %{signup} to participate."
+      comments_tab: Comments
+      login_to_comment: You must %{signin} or %{signup} to leave a comment.
       signin: Sign in
       signup: Sign up
       cant_answer_verify_html: "You must %{verify_link} in order to answer."
@@ -494,12 +495,33 @@ en:
       more_info_title: "More information"
       documents: Documents
       zoom_plus: Expand image
+      read_more: "Read more about %{answer}"
+      read_less: "Read less about %{answer}"
+      participate_in_other_polls: Participate in other polls
+      videos: "External video"
+      info_menu: "Information"
+      stats_menu: "Participation statistics"
+      results_menu: "Poll results"
+      stats:
+        title: "Participation data"
+        total_participation: "Total participation"
+        total_votes: "Total amount of given votes"
+        votes: "VOTES"
+        web: "WEB"
+        booth: "BOOTH"
+        total: "TOTAL"
+        valid: "Valid"
+        white: "White votes"
+        null_votes: "Invalid"
+      results:
+        title: "Questions"
+        most_voted_answer: "Most voted answer: "
   poll_questions:
     create_question: "Create question"
-    default_valid_answers: "Yes, No"
     show:
       vote_answer: "Vote %{answer}"
       voted: "You have voted %{answer}"
+      voted_token: "You can write down this vote identifier, to check your vote on the final results:"
   proposal_notifications:
     new:
       title: "Send message"
@@ -689,7 +711,12 @@ en:
       deleted: Deleted
       deleted_debate: This debate has been deleted
       deleted_proposal: This proposal has been deleted
-      deleted_budget_investment: This investment has been deleted
+      deleted_budget_investment: This investment project has been deleted
+      proposals: Proposals
+      debates: Debates
+      budget_investments: Budget investments
+      comments: Comments
+      actions: Actions
       filters:
         comments:
           one: 1 Comment
@@ -708,7 +735,7 @@ en:
           other: "%{count} Following"
       no_activity: User has no public activity
       no_private_messages: "This user doesn't accept private messages."
-      private_activity: This user decided to keep the activity list private
+      private_activity: This user decided to keep the activity list private.
       send_private_message: "Send private message"
     proposals:
       send_notification: "Send notification"

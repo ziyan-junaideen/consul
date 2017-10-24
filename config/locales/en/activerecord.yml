@@ -156,7 +156,6 @@ en:
         description: "Description"
       poll/question:
         title: "Question"
-        valid_answers: "Posibles answers"
         summary: "Summary"
         description: "Description"
         external_url: "Link to additional documentation"
@@ -213,9 +212,12 @@ en:
       image:
         title: Title
         attachment: Attachment
-      poll/question_answer:
-        title: "Answer"
-        description: "Description"
+      poll/question/answer:
+        title: Answer
+        description: Description
+      poll/question/answer/video:
+        title: Title
+        url: External video
     errors:
       models:
         user:

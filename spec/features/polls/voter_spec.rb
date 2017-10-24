@@ -32,8 +32,34 @@ feature "Voter" do
         expect(page).to_not have_link('Yes')
       end
 
+      find(:css, ".js-token-message").should be_visible
+      token = find(:css, ".js-question-answer")[:href].gsub(/.+?(?=token)/, '').gsub('token=', '')
+
+      expect(page).to have_content "You can write down this vote identifier, to check your vote on the final results: #{token}"
+
       expect(Poll::Voter.count).to eq(1)
       expect(Poll::Voter.first.origin).to eq("web")
+    end
+
+    scenario "Voting via web as unverified user", :js do
+      poll = create(:poll)
+
+      question = create(:poll_question, poll: poll)
+      answer1 = create(:poll_question_answer, question: question, title: 'Yes')
+      answer2 = create(:poll_question_answer, question: question, title: 'No')
+
+      user = create(:user, :incomplete_verification)
+
+      login_as user
+      visit poll_path(poll)
+
+      within("#poll_question_#{question.id}_answers") do
+        expect(page).to_not have_link('Yes', href: "/questions/#{question.id}/answer?answer=Yes&token=")
+        expect(page).to_not have_link('No', href: "/questions/#{question.id}/answer?answer=No&token=")
+      end
+
+      expect(page).to have_content("You must verify your account in order to answer")
+      expect(page).to_not have_content("You have already participated in this poll. If you vote again it will be overwritten")
     end
 
     scenario "Voting in booth", :js do
@@ -46,8 +72,12 @@ feature "Voter" do
 
       expect(page).to have_content poll.name
 
-      first(:button, "Confirm vote").click
-      expect(page).to have_content "Vote introduced!"
+      within("#poll_#{poll.id}") do
+        click_button("Confirm vote")
+        expect(page).to_not have_button("Confirm vote")
+        expect(page).to have_button('Wait, confirming vote...', disabled: true)
+        expect(page).to have_content "Vote introduced!"
+      end
 
       expect(Poll::Voter.count).to eq(1)
       expect(Poll::Voter.first.origin).to eq("booth")
@@ -65,7 +95,8 @@ feature "Voter" do
 
       scenario "Trying to vote in web and then in booth", :js do
         login_as user
-        vote_for_poll_via_web(poll, question)
+        vote_for_poll_via_web(poll, question, 'Yes')
+        expect(Poll::Voter.count).to eq(1)
 
         click_link "Sign out"
 
@@ -91,9 +122,61 @@ feature "Voter" do
         visit poll_path(poll)
 
         expect(page).to_not have_link('Yes')
-        expect(page).to have_content "You have already participated in a booth for this poll."
+        expect(page).to have_content "You have already participated in a physical booth. You can not participate again."
         expect(Poll::Voter.count).to eq(1)
       end
+
+      scenario "Trying to vote in web again", :js do
+        login_as user
+        vote_for_poll_via_web(poll, question, 'Yes')
+        expect(Poll::Voter.count).to eq(1)
+
+        visit poll_path(poll)
+
+        expect(page).to_not have_selector('.js-token-message')
+
+        expect(page).to have_content "You have already participated in this poll. If you vote again it will be overwritten."
+        within("#poll_question_#{question.id}_answers") do
+          expect(page).to_not have_link('Yes')
+        end
+
+        click_link "Sign out"
+
+        login_as user
+        visit poll_path(poll)
+
+        within("#poll_question_#{question.id}_answers") do
+          expect(page).to have_link('Yes')
+          expect(page).to have_link('No')
+        end
+      end
+    end
+
+    scenario "Voting in poll and then verifiying account", :js do
+      user = create(:user)
+
+      question = create(:poll_question, poll: poll)
+      answer1 = create(:poll_question_answer, question: question, title: 'Yes')
+      answer2 = create(:poll_question_answer, question: question, title: 'No')
+
+      login_through_form_as_officer(officer.user)
+      vote_for_poll_via_booth
+
+      visit root_path
+      click_link "Sign out"
+
+      login_as user
+      visit account_path
+      click_link 'Verify my account'
+
+      verify_residence
+      confirm_phone(user)
+
+      visit poll_path(poll)
+
+      expect(page).to_not have_link('Yes')
+      expect(page).to have_content "You have already participated in a physical booth. You can not participate again."
+      expect(Poll::Voter.count).to eq(1)
     end
 
   end
