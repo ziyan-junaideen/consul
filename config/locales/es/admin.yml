@@ -587,13 +587,22 @@ es:
       new:
         title: "Crear pregunta ciudadana"
         poll_label: "Votación"
-        valid_answers_note: "Escribe las respuestas separadas por comas (,)"
       show:
         proposal: Propuesta ciudadana original
         author: Autor
         title: Título
         valid_answers: Respuestas válidas
+        add_answer: "Añadir respuesta"
         description: Descripción
+        video_url: Video externo
+        documents: Documentos (1)
+        preview: Ver en la web
+        answers:
+          title: Respuesta
+          description: Descripción
+    answers:
+      new:
+        title: "Nueva respuesta"
         video_url: Video externo
         documents: Documentos (1)
     recounts:
@@ -607,7 +616,7 @@ es:
       index:
         title: "Resultados"
         no_results: "No hay resultados"
-        table_whites: Papeletas en blanco
+        table_whites: Papeletas totalmente en blanco
         table_nulls: Papeletas nulas
         table_total: Papeletas totales
         table_answer: Respuesta
