@@ -7,9 +7,7 @@ class Officing::PollsController < Officing::BaseController
 
   def final
     @polls = if current_user.poll_officer?
-               current_user.poll_officer.final_days_assigned_polls.select do |poll|
-                 poll.ends_at > 2.weeks.ago && poll.expired? || poll.ends_at.today?
-               end
+               current_user.poll_officer.final_days_assigned_polls.select {|poll| poll.ends_at > 2.weeks.ago && poll.expired?}
              else
                []
              end
