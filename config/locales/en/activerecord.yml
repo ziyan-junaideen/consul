@@ -152,9 +152,10 @@ en:
         starts_at: "Start Date"
         ends_at: "Closing Date"
         geozone_restricted: "Restricted by geozone"
+        summary: "Summary"
+        description: "Description"
       poll/question:
         title: "Question"
-        valid_answers: "Posibles answers"
         summary: "Summary"
         description: "Description"
         external_url: "Link to additional documentation"
@@ -211,6 +212,12 @@ en:
       image:
         title: Title
         attachment: Attachment
+      poll/question/answer:
+        title: Answer
+        description: Description
+      poll/question/answer/video:
+        title: Title
+        url: External video
     errors:
       models:
         user:
