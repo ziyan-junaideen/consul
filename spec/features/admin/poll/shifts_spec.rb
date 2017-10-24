@@ -31,8 +31,6 @@ feature 'Admin shifts' do
   end
 
   scenario "Create Vote Collection Shift and Recount & Scrutiny Shift on same date", :js do
-    create(:poll)
-    create(:poll, :incoming)
     poll = create(:poll, :current)
     booth = create(:poll_booth)
     assignment = create(:poll_booth_assignment, poll: poll, booth: booth)
