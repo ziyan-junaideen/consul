@@ -16,41 +16,41 @@ class CensusApi
     end
 
     def valid?
-      data[:datos_habitante][:item].present?
+      data.present?
     end
 
     def date_of_birth
-      str = data[:datos_habitante][:item][:fecha_nacimiento_string]
+      str = data[:date_of_birth]
       day, month, year = str.match(/(\d\d?)\D(\d\d?)\D(\d\d\d?\d?)/)[1..3]
       return nil unless day.present? && month.present? && year.present?
       Date.new(year.to_i, month.to_i, day.to_i)
     end
 
     def postal_code
-      data[:datos_vivienda][:item][:codigo_postal]
+      data[:postal_code]
     end
 
     def district_code
-      data[:datos_vivienda][:item][:codigo_distrito]
+      data[:district_code]
     end
 
     def gender
-      case data[:datos_habitante][:item][:descripcion_sexo]
-      when "Varón"
+      case data[:gender]
+      when "Male"
         "male"
-      when "Mujer"
+      when "Female"
         "female"
       end
     end
 
     def name
-      "#{data[:datos_habitante][:item][:nombre]} #{data[:datos_habitante][:item][:apellido1]}"
+      "#{data[:name]} #{data[:surname]}"
     end
 
     private
 
       def data
-        @body[:get_habita_datos_response][:get_habita_datos_return]
+        @body
       end
   end
 
@@ -93,30 +93,18 @@ class CensusApi
 
     def stubbed_valid_response
       {
-        get_habita_datos_response: {
-          get_habita_datos_return: {
-            datos_habitante: {
-              item: {
-                fecha_nacimiento_string: "31-12-1980",
-                identificador_documento: "12345678Z",
-                descripcion_sexo: "Varón",
-                nombre: "José",
-                apellido1: "García"
-              }
-            },
-            datos_vivienda: {
-              item: {
-                codigo_postal: "28013",
-                codigo_distrito: "01"
-              }
-            }
-          }
-        }
+        date_of_birth: "31-12-1980",
+        document_number: "12345678Z",
+        gender: "Male",
+        surname: "García",
+        name: "José",
+        postal_code: "28013",
+        district_code: "01"
       }
     end
 
     def stubbed_invalid_response
-      {get_habita_datos_response: {get_habita_datos_return: {datos_habitante: {}, datos_vivienda: {}}}}
+      {}
     end
 
     def dni?(document_type)

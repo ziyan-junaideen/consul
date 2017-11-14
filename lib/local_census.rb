@@ -35,9 +35,9 @@ class LocalCensus
 
     def gender
       case @body.gender
-      when "Varón"
+      when "Male"
         "male"
-      when "Mujer"
+      when "Female"
         "female"
       end
     rescue NoMethodError
@@ -45,7 +45,7 @@ class LocalCensus
     end
 
     def name
-        "#{@body.nombre} #{@body.apellido1}"
+        "#{@body.name} #{@body.surname}"
     rescue
         nil
     end
