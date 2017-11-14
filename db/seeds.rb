@@ -82,6 +82,8 @@ Setting['feature.legislation'] = true
 Setting['feature.user.recommendations'] = true
 Setting['feature.community'] = true
 Setting['feature.map'] = nil
+Setting['feature.census_api'] = true
+Setting['feature.local_census'] = false
 
 # Spending proposals feature flags
 Setting['feature.spending_proposal_features.voting_allowed'] = nil
