@@ -155,6 +155,10 @@ a {
   margin-bottom: $line-height;
 }
 
+.margin-left {
+  margin-left: $line-height;
+}
+
 .margin-right {
   margin-right: $line-height;
 }
@@ -210,6 +214,8 @@ a {
   margin-bottom: $line-height / 2;
 
   li {
+    font-size: $base-font-size;
+    margin-bottom: 0;
     margin-right: $line-height / 2;
 
     @include breakpoint(medium) {
@@ -303,17 +309,24 @@ a {
   float: left;
 }
 
+.back:not([class^="icon-"]) {
+  text-decoration: underline;
+}
+
 .tabs-content {
   border: 0;
 }
 
 .tabs {
-  border: {
-    left: 0;
-    right: 0;
-    top: 0;
-  };
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
   margin-bottom: $line-height;
+
+  .tabs-title {
+    font-size: $base-font-size;
+    margin-bottom: 0;
+  }
 
   .tabs-title > a {
     color: $text-medium;
@@ -343,11 +356,9 @@ a {
 }
 
 .truncate-horizontal-text {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .align-top {
@@ -364,6 +375,14 @@ a {
 
 .table-cell {
   display: table-cell;
+}
+
+.off-canvas-content {
+  box-shadow: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 // 02. Header
@@ -633,7 +652,7 @@ header {
     text-align: left;
 
     @include breakpoint(medium) {
-      margin-right: rem-calc(24);
+      margin-right: $line-height;
     }
 
     &:hover {
@@ -1129,8 +1148,13 @@ form {
     color: #ecf00b;
     font-size: rem-calc(10);
     position: absolute;
-    right: 8px;
+    left: 12px;
     top: 6px;
+
+    @include breakpoint(medium) {
+      left: auto;
+      right: 8px;
+    }
   }
 }
 
@@ -2018,7 +2042,6 @@ table {
 // ------------
 
 .activity {
-  margin-bottom: $line-height * 2;
 
   .accordion li {
     margin-bottom: $line-height / 2;
@@ -2050,62 +2073,15 @@ table {
     }
   }
 
-  table {
-    border: 0;
-    margin-bottom: 0;
-  }
-
-  td {
-    position: relative;
-
-    &:first-child {
-      padding-left: $line-height * 1.5;
-      width: 75%;
-    }
-
-    &::before {
-      color: $brand;
-      font-family: "icons" !important;
-      font-size: rem-calc(24);
-      left: 4px;
-      position: absolute;
-    }
-  }
-
-  .activity-comments td:first-child::before {
-    content: 'e';
-    top: 18px;
-  }
-
-  .activity-debates td:first-child::before {
-    content: 'i';
-    top: 14px;
-  }
-
-  .activity-proposals {
-
-    td:first-child::before {
-      content: 'h';
-      top: 18px;
-    }
-
-    .retired {
-      text-decoration: line-through;
-    }
-  }
-
-  .activity-investment-projects td:first-child::before,
-  .activity-ballot td:first-child::before {
-    content: '\53';
-    top: 10px;
+  .retired {
+    text-decoration: line-through;
   }
 }
 
 .public-interests {
-  margin-top: $line-height;
 
-  .column {
-    padding-left: 0;
+  li {
+    margin-right: $line-height / 4;
   }
 }
 
@@ -2183,9 +2159,10 @@ table {
 }
 
 // 19. Recommended Section Home
-// -----------
+// ----------------------------
 
 .home-page {
+
   .push {
     display: none;
   }
@@ -2219,7 +2196,7 @@ table {
 
     .card-section {
       padding: $line-height 0;
-      max-width: 300px;
+      max-width: rem-calc(300);
       margin: 0 auto;
 
       p {
@@ -2229,10 +2206,10 @@ table {
     }
 
     .orbit {
-      height: 300px;
+      height: rem-calc(300);
 
       .orbit-wrapper {
-        max-height: 250px;
+        max-height: rem-calc(250);
         overflow: hidden;
         position: relative;
       }
@@ -2248,7 +2225,7 @@ table {
     background: image-url('truncate.png');
     background-repeat: repeat-x;
     bottom: 0;
-    height: 20px;
+    height: rem-calc(20);
     position: absolute;
     width: 100%;
   }
@@ -2269,21 +2246,21 @@ table {
   .proposals-inner,
   .budget-investments-inner {
     background: #fff;
-    max-height: 350px;
+    max-height: rem-calc(350);
 
     @include breakpoint(small) {
-      max-height: 400px;
+      max-height: rem-calc(400);
     }
 
     h4 {
       margin-top: $line-height;
       margin-bottom: 0;
       font-size: rem-calc(18);
-      min-height: 50px;
+      min-height: rem-calc(50);
     }
 
     h5 {
-      font-size: rem-calc(14);
+      font-size: $small-font-size;
       text-align: left;
     }
   }
@@ -2291,20 +2268,20 @@ table {
   .carousel-image {
 
     .card .orbit {
-      height: 480px;
+      height: rem-calc(480);
 
       .orbit-wrapper {
-        max-height: 450px;
+        max-height: rem-calc(450);
       }
     }
 
     .debates-inner,
     .proposals-inner,
     .budget-investments-inner {
-      max-height: 500px;
+      max-height: rem-calc(500);
 
       @include breakpoint(small) {
-        max-height: 600px;
+        max-height: rem-calc(600);
       }
     }
   }
@@ -2318,7 +2295,9 @@ table {
   }
 }
 
-// 19. Documents
+// 20. Documents
+// -------------
+
 .documents-list {
 
   table {
@@ -2376,4 +2355,30 @@ table {
 
     }
   }
+}
+
+.additional-document-link {
+  background: $highlight-soft;
+  border: 1px solid $highlight;
+  display: block;
+  margin: $line-height / 2 0;
+  padding: $line-height / 2;
+  position: relative;
+
+  a {
+    word-wrap: break-word;
+  }
+
+  .icon-document {
+    color: #007bb7;
+    display: inline-block;
+    font-size: rem-calc(24);
+    line-height: $line-height;
+    vertical-align: middle;
+  }
+}
+
+.document-divider {
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
 }
