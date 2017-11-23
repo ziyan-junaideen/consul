@@ -5,11 +5,13 @@ document.onload
 
     //Button confirmación falso, solo redirecciona
     var linkButtonConfirmation = document.createElement("a");
-    linkButtonConfirmation.href = "<%= root_path %>";
+
+    linkButtonConfirmation.href = "<%= root_url %>";
     linkButtonConfirmation.innerHTML = "Confirmar votación";
 
     var linkButtonConfirmation2 = document.createElement("a");
-    linkButtonConfirmation2.href = "<%= root_path %>";
+    linkButtonConfirmation2.href = "<%= root_url %>";
+
     linkButtonConfirmation2.innerHTML = "Confirmar votación";
 
     myAlert.appendChild(linkButtonConfirmation);
@@ -196,12 +198,12 @@ document.onload
                         if(arrayChildrenOf_FatherOfAllAnswer[num2].id == idFather)
                         {
                             //Estas dos lineas son usadas para acceder al titulo de la propuesta
-                            var arrayChildrensGrandfather = arrayChildChoosenOrdenado[zy].parentElement.parentElement.parentElement;
-                            var titleQuestion = arrayChildrensGrandfather.children[0];
+                            var arrayChildrensGrandfather = arrayChildChoosenOrdenado[zy].parentElement.parentElement.parentElement.children;
+                            var titleQuestion = arrayChildrensGrandfather[0].children;
 
                             document.getElementById("summaryAnswer").innerHTML =
                                 document.getElementById("summaryAnswer").innerHTML +
-                                "<i style='color:red;'>" + arrayChildChoosenOrdenado[zy].innerHTML + ": " + titleQuestion.innerHTML + "</i><br>";
+                                "<i style='color:red;'>" + arrayChildChoosenOrdenado[zy].innerHTML + ": " + titleQuestion[0].innerHTML + "</i><br>";
                         }
                     }
                 }
@@ -233,12 +235,12 @@ document.onload
                         if(arrayChildrenOf_FatherOfAllAnswer[num2].id == idFather)
                         {
                             //Estas dos lineas son usadas para acceder al titulo de la propuesta
-                            var arrayChildrensGrandfather = arrayChildChoosenOrdenado[zy2].parentElement.parentElement.parentElement;
-                            var titleQuestion = arrayChildrensGrandfather.children[0];
+                            var arrayChildrensGrandfather = arrayChildChoosenOrdenado[zy2].parentElement.parentElement.parentElement.children;
+                            var titleQuestion = arrayChildrensGrandfather[0].children;
 
                             document.getElementById("summaryAnswer").innerHTML =
                                 document.getElementById("summaryAnswer").innerHTML +
-                                "<i style='color:red;'>" + arrayChildChoosenOrdenado[zy2].innerHTML + ": " + titleQuestion.innerHTML + "</i><br>";
+                                "<i style='color:red;'>" + arrayChildChoosenOrdenado[zy2].innerHTML + ": " + titleQuestion[0].innerHTML + "</i><br>";
                         }
                     }
                 }
@@ -271,12 +273,12 @@ document.onload
                 if(arrayChildrenOf_FatherOfAllAnswer[num].id == idFather)
                 {
                     //Estas dos lineas son usadas para acceder al titulo de la propuesta
-                    var arrayChildrensGrandfather = arrayChildChoosenOrdenado[z].parentElement.parentElement.parentElement;
-                    var titleQuestion = arrayChildrensGrandfather.children[0];
+                    var arrayChildrensGrandfather = arrayChildChoosenOrdenado[z].parentElement.parentElement.parentElement.children;
+                    var titleQuestion = arrayChildrensGrandfather[0].children;
 
                     document.getElementById("summaryAnswer").innerHTML =
                         document.getElementById("summaryAnswer").innerHTML +
-                        "<i style='color:#21610B;'>" + arrayChildChoosenOrdenado[z].innerHTML + ": " + titleQuestion.innerHTML + "</i><br>";
+                        "<i style='color:#21610B;'>" + arrayChildChoosenOrdenado[z].innerHTML + ": " + titleQuestion[0].innerHTML + "</i><br>";
                     break;
                 }
             }

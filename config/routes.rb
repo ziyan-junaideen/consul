@@ -472,6 +472,12 @@ Rails.application.routes.draw do
   get 'more-information/how-to-use',          to: 'pages#show', id: 'more_info/how_to_use/index',     as: 'how_to_use'
   get 'more-information/faq',                 to: 'pages#show', id: 'more_info/faq/index',            as: 'faq'
 
+  get 'more-information/debates',             to: 'pages#show', id: 'more_info/_debates',             as: 'more_info/debates'
+  get 'more-information/budgets',             to: 'pages#show', id: 'more_info/_budgets',             as: 'more_info/_budgets'
+  get 'more-information/proposals',           to: 'pages#show', id: 'more_info/_proposals',           as: 'more_info/_proposals'
+  get 'more-information/polls',               to: 'pages#show', id: 'more_info/_polls',               as: 'more_info/_polls'
+  get 'more-information/others',              to: 'pages#show', id: 'more_info/_other',               as: 'more_info/_other'
+
   # static pages
   get '/blog' => redirect("http://blog.consul/")
   resources :pages, path: '/', only: [:show]

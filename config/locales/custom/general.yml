@@ -211,7 +211,7 @@ es:
       moderation: Moderar
       valuation: Evaluación
       officing: Presidentes de mesa
-      more_info: "Como participar"
+      more_info: "Información"
       my_account_link: Mi cuenta
       my_activity_link: Mi actividad
       notifications: Notificaciones
@@ -225,7 +225,7 @@ es:
       open_gov: Decide Puerto Real
       proposals: Propuestas
       poll_questions: Votaciones
-      see_all: PRIORIZACIÓN PROPUESTAS CIUDADANAS
+      see_all: Ver propuestas
       budgets: Presupuestos participativos
       spending_proposals: "Propuestas de inversión"
     admin:
@@ -353,13 +353,10 @@ es:
       top: Top semanal
       top_link_proposals: Propuestas más apoyadas por categoría
       section_footer:
-        title: Propuestas
-        description: Propón lo que quieres que el Ayuntamiento lleve a cabo y apoya propuestas de otras personas.
-        help_text_1: "Para crear una propuesta hay que registrarse en %{org} además para apoyarlas debes verificar tu cuenta."
-#        help_text_2:  "La método para la priorización de las propuestas será:
-#                       1.	Los asistentes numerarán  las propuestas según su orden de preferencia (con un mínimo de 10)
-#                       2.	Cada persona podrá entregar sólo una hoja de votación en el total de asambleas, para ello se registrarán los votantes, previamente acreditados mediante DNI.
-##                       3.	El voto será personal e intransferible."
+        title: ¿Cómo funcionan las propuestas ciudadanas?
+        description: El mecanismo de propuestas ciudadanas se resumen en tres pasos muy sencillos.
+  #      help_text_1: "1. ¡Propuestas! Creas una propuesta en esta web."
+ #       help_text_2: "La método para la priorización de las propuestas será:"
 #        help_text_3:  "Recuento:
 #
 #                       1.	Cada número tiene asignada una puntuación, así el 1 tendrá la puntuación más alta, y un punto menos el 2 y así consecutivamente.
