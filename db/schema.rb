@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171115164152) do
+ActiveRecord::Schema.define(version: 20171124143730) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -850,6 +850,16 @@ ActiveRecord::Schema.define(version: 20171115164152) do
   add_index "proposals", ["summary"], name: "index_proposals_on_summary", using: :btree
   add_index "proposals", ["title"], name: "index_proposals_on_title", using: :btree
   add_index "proposals", ["tsv"], name: "index_proposals_on_tsv", using: :gin
+
+  create_table "relatives", force: :cascade do |t|
+    t.integer "first_relative_id"
+    t.integer "second_relative_id"
+    t.string  "first_relative_type"
+    t.string  "second_relative_type"
+    t.integer "duplicated_id"
+    t.integer "times_reported",       default: 0
+    t.boolean "hidden",               default: false
+  end
 
   create_table "settings", force: :cascade do |t|
     t.string "key"
