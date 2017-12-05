@@ -94,7 +94,7 @@ module Budgets
 
       def set_random_seed
         if params[:order] == 'random' || params[:order].blank?
-          seed = rand(11..99) / 10.0
+          seed = rand(-100..100) / 100.0
           params[:random_seed] ||= Float(seed) rescue 0
         else
           params[:random_seed] = nil
@@ -131,8 +131,7 @@ module Budgets
       end
 
       def investments
-        case @current_order
-        when 'random'
+        if @current_order == 'random'
           @investments.apply_filters_and_search(@budget, params, @current_filter)
                       .send("sort_by_#{@current_order}", params[:random_seed])
         else
