@@ -5,7 +5,7 @@ module Abilities
     def initialize(user)
       merge Abilities::Everyone.new(user)
 
-      can [:read, :update], User, id: user.id
+      can [:read, :update], User, id: user.id if user.present?
 
       can :read, Debate
       can :update, Debate do |debate|
@@ -16,13 +16,13 @@ module Abilities
       can :update, Proposal do |proposal|
         proposal.editable_by?(user)
       end
-      can [:retire_form, :retire], Proposal, author_id: user.id
+      can [:retire_form, :retire], Proposal, author_id: user.id if user.present?
 
       can :read, Legislation::Proposal
       cannot [:edit, :update], Legislation::Proposal do |proposal|
         proposal.editable_by?(user)
       end
-      can [:retire_form, :retire], Legislation::Proposal, author_id: user.id
+      can [:retire_form, :retire], Legislation::Proposal, author_id: user.id if user.present?
 
       can :create, Comment
       can :create, Debate
@@ -35,31 +35,31 @@ module Abilities
       can :suggest, ActsAsTaggableOn::Tag
 
       can [:flag, :unflag], Comment
-      cannot [:flag, :unflag], Comment, user_id: user.id
+      cannot [:flag, :unflag], Comment, user_id: user.id if user.present?
 
       can [:flag, :unflag], Debate
-      cannot [:flag, :unflag], Debate, author_id: user.id
+      cannot [:flag, :unflag], Debate, author_id: user.id if user.present?
 
       can [:flag, :unflag], Proposal
-      cannot [:flag, :unflag], Proposal, author_id: user.id
+      cannot [:flag, :unflag], Proposal, author_id: user.id if user.present?
 
       can [:flag, :unflag], Legislation::Proposal
-      cannot [:flag, :unflag], Legislation::Proposal, author_id: user.id
+      cannot [:flag, :unflag], Legislation::Proposal, author_id: user.id if user.present?
 
       can [:create, :destroy], Follow
 
-      can [:destroy], Document, documentable: { author_id: user.id }
+      can [:destroy], Document, documentable: { author_id: user.id } if user.present?
 
-      can [:destroy], Image, imageable: { author_id: user.id }
+      can [:destroy], Image, imageable: { author_id: user.id } if user.present?
 
       can [:create, :destroy], DirectUpload
 
-      unless user.organization?
+      unless user.present? && user.organization?
         can :vote, Debate
         can :vote, Comment
       end
 
-      if user.level_two_or_three_verified?
+      if user.present? && user.level_two_or_three_verified?
         can :vote, Proposal
         can :vote_featured, Proposal
         can :vote, SpendingProposal
@@ -71,14 +71,14 @@ module Abilities
 
         can :create, Budget::Investment,               budget: { phase: "accepting" }
         can :suggest, Budget::Investment,              budget: { phase: "accepting" }
-        can :destroy, Budget::Investment,              budget: { phase: ["accepting", "reviewing"] }, author_id: user.id
+        can :destroy, Budget::Investment,              budget: { phase: ["accepting", "reviewing"] }, author_id: user.id if user.present?
         can :vote, Budget::Investment,                 budget: { phase: "selecting" }
 
         can [:show, :create], Budget::Ballot,          budget: { phase: "balloting" }
         can [:create, :destroy], Budget::Ballot::Line, budget: { phase: "balloting" }
 
         can :create, DirectMessage
-        can :show, DirectMessage, sender_id: user.id
+        can :show, DirectMessage, sender_id: user.id if user.present?
         can :answer, Poll do |poll|
           poll.answerable_by?(user)
         end
@@ -87,13 +87,13 @@ module Abilities
         end
       end
 
-      can [:create, :show], ProposalNotification, proposal: { author_id: user.id }
+      can [:create, :show], ProposalNotification, proposal: { author_id: user.id } if user.present?
 
       can :create, Annotation
-      can [:update, :destroy], Annotation, user_id: user.id
+      can [:update, :destroy], Annotation, user_id: user.id if user.present?
 
       can [:create], Topic
-      can [:update, :destroy], Topic, author_id: user.id
+      can [:update, :destroy], Topic, author_id: user.id if user.present?
     end
   end
 end
