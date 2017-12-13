@@ -17,8 +17,9 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   rescue_from CanCan::AccessDenied do |exception|
+    redirect_url = can_registered_but_not_anonymous?(exception.action, exception.subject.class) ? new_user_session_url : main_app.root_url
     respond_to do |format|
-      format.html { redirect_to main_app.root_url, alert: exception.message }
+      format.html { redirect_to redirect_url, alert: exception.message }
       format.json { render json: {error: exception.message}, status: :forbidden }
     end
   end
@@ -27,6 +28,10 @@ class ApplicationController < ActionController::Base
   respond_to :html
 
   private
+
+    def can_registered_but_not_anonymous?(action, class_name)
+      !Abilities::Everyone.new(nil).can?(action, class_name) && Abilities::Common.new(nil).can?(action, class_name)
+    end
 
     def authenticate_http_basic
       authenticate_or_request_with_http_basic do |username, password|
