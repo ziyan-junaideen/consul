@@ -38,6 +38,7 @@ section "Creating Settings" do
   Setting.create(key: 'org_name', value: 'CONSUL')
   Setting.create(key: 'place_name', value: 'City')
   Setting.create(key: 'feature.debates', value: "true")
+  Setting.create(key: 'feature.proposals', value: "true")
   Setting.create(key: 'feature.polls', value: "true")
   Setting.create(key: 'feature.spending_proposals', value: nil)
   Setting.create(key: 'feature.spending_proposal_features.voting_allowed', value: nil)
@@ -65,6 +66,7 @@ section "Creating Settings" do
   Setting.create(key: 'map_latitude', value: 51.48)
   Setting.create(key: 'map_longitude', value: 0.0)
   Setting.create(key: 'map_zoom', value: 10)
+  Setting.create(key: 'related_contents_report_threshold', value: 2)
 end
 
 section "Creating Geozones" do
