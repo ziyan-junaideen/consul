@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171127230716) do
+ActiveRecord::Schema.define(version: 20171212193323) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -119,10 +119,11 @@ ActiveRecord::Schema.define(version: 20171127230716) do
 
   create_table "budget_investment_milestones", force: :cascade do |t|
     t.integer  "investment_id"
-    t.string   "title",         limit: 80
+    t.string   "title",            limit: 80
     t.text     "description"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.datetime "publication_date"
   end
 
   create_table "budget_investments", force: :cascade do |t|
@@ -798,6 +799,8 @@ ActiveRecord::Schema.define(version: 20171127230716) do
     t.datetime "hidden_at"
     t.boolean  "results_enabled",    default: false
     t.boolean  "stats_enabled",      default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "polls", ["starts_at", "ends_at"], name: "index_polls_on_starts_at_and_ends_at", using: :btree
