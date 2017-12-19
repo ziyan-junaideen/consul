@@ -29,8 +29,6 @@ class NotificationsController < ApplicationController
       case notification.linkable_resource.class.name
       when "Budget::Investment"
         budget_investment_path @notification.linkable_resource.budget, @notification.linkable_resource
-      when "Topic"
-        community_topic_path @notification.linkable_resource.community, @notification.linkable_resource
       else
         url_for @notification.linkable_resource
       end

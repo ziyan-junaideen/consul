@@ -7,13 +7,8 @@ feature 'Officing Results' do
     @officer_assignment = create(:poll_officer_assignment, :final, officer: @poll_officer)
     @poll = @officer_assignment.booth_assignment.poll
     @poll.update(ends_at: 1.day.ago)
-    @question_1 = create(:poll_question, poll: @poll)
-    create(:poll_question_answer, title: 'Yes', question: @question_1)
-    create(:poll_question_answer, title: 'No', question: @question_1)
-    @question_2 = create(:poll_question, poll: @poll)
-    create(:poll_question_answer, title: 'Today', question: @question_2)
-    create(:poll_question_answer, title: 'Tomorrow', question: @question_2)
-
+    @question_1 = create(:poll_question, poll: @poll, valid_answers: "Yes,No")
+    @question_2 = create(:poll_question, poll: @poll, valid_answers: "Today,Tomorrow")
     login_as(@poll_officer.user)
   end
 
@@ -58,7 +53,9 @@ feature 'Officing Results' do
     expect(page).to_not have_content('Your results')
 
     booth_name = @officer_assignment.booth_assignment.booth.name
+    date = I18n.l(@poll.starts_at.to_date, format: :long)
     select booth_name, from: 'officer_assignment_id'
+    select date, from: 'date'
 
     fill_in "questions[#{@question_1.id}][0]", with: '100'
     fill_in "questions[#{@question_1.id}][1]", with: '200'
@@ -74,8 +71,8 @@ feature 'Officing Results' do
 
     expect(page).to have_content('Your results')
 
-    within("#results_#{@officer_assignment.booth_assignment_id}_#{Date.current.strftime('%Y%m%d')}") do
-      expect(page).to have_content(I18n.l(Date.current, format: :long))
+    within("#results_#{@officer_assignment.booth_assignment_id}_#{@poll.starts_at.to_date.strftime('%Y%m%d')}") do
+      expect(page).to have_content(date)
       expect(page).to have_content(booth_name)
     end
   end
@@ -84,9 +81,9 @@ feature 'Officing Results' do
     partial_result = create(:poll_partial_result,
                       officer_assignment: @officer_assignment,
                       booth_assignment: @officer_assignment.booth_assignment,
-                      date: Date.current,
+                      date: @poll.starts_at,
                       question: @question_1,
-                      answer: @question_1.question_answers.first.title,
+                      answer: @question_1.valid_answers[0],
                       author: @poll_officer.user,
                       amount: 7777)
 
@@ -97,7 +94,9 @@ feature 'Officing Results' do
     visit new_officing_poll_result_path(@poll)
 
     booth_name = partial_result.booth_assignment.booth.name
+    date = I18n.l(partial_result.date, format: :long)
     select booth_name, from: 'officer_assignment_id'
+    select date, from: 'date'
 
     fill_in "questions[#{@question_1.id}][0]", with: '5555'
     fill_in "questions[#{@question_1.id}][1]", with: '200'
@@ -144,13 +143,13 @@ feature 'Officing Results' do
     expect(page).to have_content(@officer_assignment.booth_assignment.booth.name)
 
     expect(page).to have_content(@question_1.title)
-    @question_1.question_answers.each_with_index do |answer, i|
-      within("#question_#{@question_1.id}_#{i}_result") { expect(page).to have_content(answer.title) }
+    @question_1.valid_answers.each_with_index do |answer, i|
+      within("#question_#{@question_1.id}_#{i}_result") { expect(page).to have_content(answer) }
     end
 
     expect(page).to have_content(@question_2.title)
-    @question_2.question_answers.each_with_index do |answer, i|
-      within("#question_#{@question_2.id}_#{i}_result") { expect(page).to have_content(answer.title) }
+    @question_2.valid_answers.each_with_index do |answer, i|
+      within("#question_#{@question_2.id}_#{i}_result") { expect(page).to have_content(answer) }
     end
 
     within('#white_results') { expect(page).to have_content('21') }

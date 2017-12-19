@@ -1,21 +1,13 @@
 <li id="<%= dom_id(notification) %>" class="notification">
-  <% if notification.notifiable_available? %>
-    <%= link_to notification do %>
-      <p>
-        <em>
-          <%= t("notifications.index.#{notification.notifiable_action}",
-                count: notification.counter) %>
-        </em>
-        <strong><%= notification.notifiable_title %></strong>
-      </p>
-
-      <p class="time"><%= l notification.timestamp, format: :datetime %></p>
-    <% end %>
-  <% else %>
+  <%= link_to notification do %>
     <p>
-      <strong>
-        <%= t("notifications.index.notifiable_hidden") %>
-      </strong>
+      <em>
+        <%= t("notifications.index.#{notification.notifiable_action}",
+              count: notification.counter) %>
+      </em>
+      <strong><%= notification.notifiable_title %></strong>
     </p>
+
+    <p class="time"><%= l notification.timestamp, format: :datetime %></p>
   <% end %>
 </li>

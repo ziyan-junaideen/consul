@@ -76,7 +76,7 @@ describe :voter do
 
     it "should not be valid if the user has voted via web" do
       answer = create(:poll_answer)
-      answer.record_voter_participation('token')
+      answer.record_voter_participation
 
       voter = build(:poll_voter, poll: answer.question.poll, user: answer.author)
       expect(voter).to_not be_valid
@@ -162,12 +162,11 @@ describe :voter do
 
     it "sets user info" do
       user = create(:user, document_number: "1234A", document_type: "1")
-      voter = build(:poll_voter, user: user, token: "1234abcd")
+      voter = build(:poll_voter, user: user)
       voter.save
 
       expect(voter.document_number).to eq("1234A")
       expect(voter.document_type).to eq("1")
-      expect(voter.token).to eq("1234abcd")
     end
   end
 end

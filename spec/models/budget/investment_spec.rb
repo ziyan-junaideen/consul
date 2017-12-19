@@ -3,10 +3,6 @@ require 'rails_helper'
 describe Budget::Investment do
   let(:investment) { build(:budget_investment) }
 
-  describe "Concerns" do
-    it_behaves_like "notifiable"
-  end
-
   it "should be valid" do
     expect(investment).to be_valid
   end

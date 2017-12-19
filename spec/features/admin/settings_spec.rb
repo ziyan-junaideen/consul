@@ -87,6 +87,7 @@ feature 'Admin settings' do
       expect(page).to have_content "Map configuration updated succesfully"
     end
 
+
   end
 
 end

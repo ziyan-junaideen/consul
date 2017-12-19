@@ -69,9 +69,7 @@
         <%= safe_html_with_links @proposal.description %>
 
         <% if feature?(:map) && map_location_available?(@proposal.map_location) %>
-          <div class="margin">
-            <%= render_map(@proposal.map_location, "proposal", false, nil) %>
-          </div>
+          <%= render_map(@proposal.map_location, "proposal", false, nil) %>
         <% end %>
 
         <% if @proposal.external_url.present? %>
@@ -182,9 +180,6 @@
         } %>
 
         <% if current_user %>
-          <div class="sidebar-divider"></div>
-          <p class="sidebar-title"><%= t("shared.follow") %></p>
-
           <%= render 'follows/follow_button', follow: find_or_build_follow(current_user, @proposal)  %>
         <% end %>
 

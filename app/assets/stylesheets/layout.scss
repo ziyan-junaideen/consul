@@ -155,10 +155,6 @@ a {
   margin-bottom: $line-height;
 }
 
-.margin-left {
-  margin-left: $line-height;
-}
-
 .margin-right {
   margin-right: $line-height;
 }
@@ -214,8 +210,6 @@ a {
   margin-bottom: $line-height / 2;
 
   li {
-    font-size: $base-font-size;
-    margin-bottom: 0;
     margin-right: $line-height / 2;
 
     @include breakpoint(medium) {
@@ -306,11 +300,7 @@ a {
 .icon-angle-left {
   clear: both;
   color: $text-medium;
-  display: inline-block;
-}
-
-.back:not([class^="icon-"]) {
-  text-decoration: underline;
+  float: left;
 }
 
 .tabs-content {
@@ -318,15 +308,12 @@ a {
 }
 
 .tabs {
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
+  border: {
+    left: 0;
+    right: 0;
+    top: 0;
+  };
   margin-bottom: $line-height;
-
-  .tabs-title {
-    font-size: $base-font-size;
-    margin-bottom: 0;
-  }
 
   .tabs-title > a {
     color: $text-medium;
@@ -356,9 +343,11 @@ a {
 }
 
 .truncate-horizontal-text {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
 }
 
 .align-top {
@@ -375,14 +364,6 @@ a {
 
 .table-cell {
   display: table-cell;
-}
-
-.off-canvas-content {
-  box-shadow: none;
-}
-
-.uppercase {
-  text-transform: uppercase;
 }
 
 // 02. Header
@@ -652,7 +633,7 @@ header {
     text-align: left;
 
     @include breakpoint(medium) {
-      margin-right: $line-height;
+      margin-right: rem-calc(24);
     }
 
     &:hover {
@@ -1148,13 +1129,8 @@ form {
     color: #ecf00b;
     font-size: rem-calc(10);
     position: absolute;
-    left: 12px;
+    right: 8px;
     top: 6px;
-
-    @include breakpoint(medium) {
-      left: auto;
-      right: 8px;
-    }
   }
 }
 
@@ -2042,55 +2018,94 @@ table {
 // ------------
 
 .activity {
+  margin-bottom: $line-height * 2;
 
-  .retired {
-    text-decoration: line-through;
+  .accordion li {
+    margin-bottom: $line-height / 2;
+
+    .accordion-title {
+      border-bottom: 1px solid $border;
+      background: #f8f9fb;
+      font-size: $small-font-size;
+      padding: $line-height / 2;
+    }
+
+    .accordion-content {
+      padding: 0;
+    }
+  }
+
+  .accordion .title {
+    display: block;
+    line-height: $line-height;
+  }
+
+  .accordion .icon {
+    font-size: rem-calc(20);
+    float: left;
+    margin-right: $line-height / 3;
+
+    &.icon-debates {
+      margin-top: rem-calc(3);
+    }
+  }
+
+  table {
+    border: 0;
+    margin-bottom: 0;
+  }
+
+  td {
+    position: relative;
+
+    &:first-child {
+      padding-left: $line-height * 1.5;
+      width: 75%;
+    }
+
+    &::before {
+      color: $brand;
+      font-family: "icons" !important;
+      font-size: rem-calc(24);
+      left: 4px;
+      position: absolute;
+    }
+  }
+
+  .activity-comments td:first-child::before {
+    content: 'e';
+    top: 18px;
+  }
+
+  .activity-debates td:first-child::before {
+    content: 'i';
+    top: 14px;
+  }
+
+  .activity-proposals {
+
+    td:first-child::before {
+      content: 'h';
+      top: 18px;
+    }
+
+    .retired {
+      text-decoration: line-through;
+    }
+  }
+
+  .activity-investment-projects td:first-child::before,
+  .activity-ballot td:first-child::before {
+    content: '\53';
+    top: 10px;
   }
 }
 
 .public-interests {
+  margin-top: $line-height;
 
-  li {
-    margin-right: $line-height / 4;
-
-    span {
-      background: none;
-      border: 1px solid #ececec;
-    }
-  }
-}
-
-.following {
-
-  .follow-list {
-    list-style-type: circle;
-    padding: $line-height / 2;
-
-    li {
-      margin-bottom: $line-height / 2;
-      margin-left: $line-height;
-    }
-  }
-
-  h3 {
-    font-size: rem-calc(24);
-    margin-top: $line-height;
-    padding-left: rem-calc(30);
-    position: relative;
-
-    span {
-      left: 0;
-      position: absolute;
-      top: 2px;
-    }
-  }
-
-  .interests {
-
-    @include breakpoint(medium) {
-      border-left: 1px solid #ececec;
-      padding-left: $line-height;
-    }
+  .column {
+    padding-left: 0;
   }
 }
 
@@ -2168,10 +2183,9 @@ table {
 }
 
 // 19. Recommended Section Home
-// ----------------------------
+// -----------
 
 .home-page {
-
   .push {
     display: none;
   }
@@ -2205,7 +2219,7 @@ table {
 
     .card-section {
       padding: $line-height 0;
-      max-width: rem-calc(300);
+      max-width: 300px;
       margin: 0 auto;
 
       p {
@@ -2215,10 +2229,10 @@ table {
     }
 
     .orbit {
-      height: rem-calc(300);
+      height: 300px;
 
       .orbit-wrapper {
-        max-height: rem-calc(250);
+        max-height: 250px;
         overflow: hidden;
         position: relative;
       }
@@ -2234,7 +2248,7 @@ table {
     background: image-url('truncate.png');
     background-repeat: repeat-x;
     bottom: 0;
-    height: rem-calc(20);
+    height: 20px;
     position: absolute;
     width: 100%;
   }
@@ -2255,21 +2269,21 @@ table {
   .proposals-inner,
   .budget-investments-inner {
     background: #fff;
-    max-height: rem-calc(350);
+    max-height: 350px;
 
     @include breakpoint(small) {
-      max-height: rem-calc(400);
+      max-height: 400px;
     }
 
     h4 {
       margin-top: $line-height;
       margin-bottom: 0;
       font-size: rem-calc(18);
-      min-height: rem-calc(50);
+      min-height: 50px;
     }
 
     h5 {
-      font-size: $small-font-size;
+      font-size: rem-calc(14);
       text-align: left;
     }
   }
@@ -2277,20 +2291,20 @@ table {
   .carousel-image {
 
     .card .orbit {
-      height: rem-calc(480);
+      height: 480px;
 
       .orbit-wrapper {
-        max-height: rem-calc(450);
+        max-height: 450px;
       }
     }
 
     .debates-inner,
     .proposals-inner,
     .budget-investments-inner {
-      max-height: rem-calc(500);
+      max-height: 500px;
 
       @include breakpoint(small) {
-        max-height: rem-calc(600);
+        max-height: 600px;
       }
     }
   }
@@ -2304,9 +2318,7 @@ table {
   }
 }
 
-// 20. Documents
-// -------------
-
+// 19. Documents
 .documents-list {
 
   table {
@@ -2364,30 +2376,4 @@ table {
 
     }
   }
-}
-
-.additional-document-link {
-  background: $highlight-soft;
-  border: 1px solid $highlight;
-  display: block;
-  margin: $line-height / 2 0;
-  padding: $line-height / 2;
-  position: relative;
-
-  a {
-    word-wrap: break-word;
-  }
-
-  .icon-document {
-    color: #007bb7;
-    display: inline-block;
-    font-size: rem-calc(24);
-    line-height: $line-height;
-    vertical-align: middle;
-  }
-}
-
-.document-divider {
-  background: #fafafa;
-  border-bottom: 1px solid #eee;
 }
