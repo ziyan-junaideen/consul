@@ -31,12 +31,6 @@ en:
       administrator:
         one: "Administrator"
         other: "Administrators"
-      valuator:
-        one: "Evaluador"
-        other: "Evaluadores"
-      manager:
-        one: "Manager"
-        other: "Managers"
       vote:
         one: "Vote"
         other: "Votes"
@@ -88,12 +82,6 @@ en:
       images:
         one: "Image"
         other: "Images"
-      topic:
-        one: "Topic"
-        other: "Topics"
-      poll:
-        one: "Poll"
-        other: "Polls"
     attributes:
       budget:
         name: "Name"
@@ -124,7 +112,6 @@ en:
       budget/investment/milestone:
         title: "Title"
         description: "Description"
-        publication_date: "Publication date"
       comment:
         body: "Comment"
         user: "User"
@@ -165,10 +152,9 @@ en:
         starts_at: "Start Date"
         ends_at: "Closing Date"
         geozone_restricted: "Restricted by geozone"
-        summary: "Summary"
-        description: "Description"
       poll/question:
         title: "Question"
+        valid_answers: "Posibles answers"
         summary: "Summary"
         description: "Description"
         external_url: "Link to additional documentation"
@@ -225,12 +211,6 @@ en:
       image:
         title: Title
         attachment: Attachment
-      poll/question/answer:
-        title: Answer
-        description: Description
-      poll/question/answer/video:
-        title: Title
-        url: External video
     errors:
       models:
         user:
@@ -289,8 +269,3 @@ en:
             image:
               image_width: "Width must be %{required_width}px"
               image_height: "Height must be %{required_height}px"
-      messages:
-        record_invalid: "Validation failed: %{errors}"
-        restrict_dependent_destroy:
-          has_one: "Cannot delete record because a dependent %{record} exists"
-          has_many: "Cannot delete record because dependent %{record} exist"

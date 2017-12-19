@@ -44,16 +44,12 @@ class Document < ActiveRecord::Base
     attachment.instance.prefix(attachment, style)
   end
 
-  def prefix(attachment, _style)
+  def prefix(attachment, style)
     if !attachment.instance.persisted?
       "cached_attachments/user/#{attachment.instance.user_id}"
     else
       ":attachment/:id_partition"
     end
-  end
-
-  def humanized_content_type
-    attachment_content_type.split("/").last.upcase
   end
 
   private

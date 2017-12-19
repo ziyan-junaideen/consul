@@ -22,7 +22,7 @@ module ImagesHelper
     image.errors[:attachment].join(', ') if image.errors.key?(:attachment)
   end
 
-  def image_bytes_to_megabytes(bytes)
+  def image_bytesToMeg(bytes)
     bytes / Numeric::MEGABYTE
   end
 

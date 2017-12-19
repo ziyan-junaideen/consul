@@ -2,22 +2,15 @@ require 'rails_helper'
 
 feature 'Topics' do
 
-  context "Concerns" do
-    it_behaves_like 'notifiable in-app', Topic
-  end
-
   context 'New' do
 
-    scenario 'Create new topic link should redirect to sign up for anonymous users', :js do
+    scenario 'Should display disabled button to new topic page without user logged', :js do
       proposal = create(:proposal)
       community = proposal.community
 
-      logout
       visit community_path(community)
-      click_link "Create topic"
 
-      expect(page).to have_content "Sign in with:"
-      expect(current_path).to eq(new_user_session_path)
+      expect(page).to have_selector(".button.expanded.disabled")
     end
 
     scenario 'Can access to new topic page with user logged', :js do
@@ -41,8 +34,8 @@ feature 'Topics' do
 
       click_link "Create topic"
 
-      expect(page).to have_content "Title"
-      expect(page).to have_content "Initial text"
+      expect(page).to have_content "Topic Title"
+      expect(page).to have_content "Description"
       expect(page).to have_content "Recommendations to create a topic"
       expect(page).to have_content "Do not write the topic title or whole sentences in capital letters. On the internet that is considered shouting. And no one likes to be yelled at."
       expect(page).to have_content "Any topic or comment that implies an illegal action will be eliminated, also those that intend to sabotage the spaces of the subject, everything else is allowed."
@@ -135,9 +128,9 @@ feature 'Topics' do
       user = create(:user)
       topic = create(:topic, community: community, author: user)
       login_as(user)
-      visit community_topic_path(community, topic)
+      visit community_path(community)
 
-      click_link "Destroy topic"
+      click_link "Destroy"
 
       expect(page).to have_content "Topic deleted successfully."
       expect(page).not_to have_content topic.title

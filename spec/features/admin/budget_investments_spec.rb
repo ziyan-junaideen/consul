@@ -421,37 +421,20 @@ feature 'Admin budget investments' do
       end
     end
 
-    scenario "Changes valuation and user generated tags" do
+    scenario "Only displays valuation tags" do
       budget_investment = create(:budget_investment, tag_list: 'Park')
       budget_investment.set_tag_list_on(:valuation, 'Education')
       budget_investment.save
 
       visit admin_budget_budget_investment_path(budget_investment.budget, budget_investment)
 
-      within("#user-tags") do
-        expect(page).to_not have_content "Education"
-        expect(page).to have_content "Park"
-      end
+      expect(page).to     have_content "Education"
+      expect(page).to_not have_content "Park"
 
       click_link 'Edit classification'
 
-      fill_in 'budget_investment_tag_list', with: 'Park, Trees'
-      fill_in 'budget_investment_valuation_tag_list', with: 'Education, Environment'
-      click_button 'Update'
-
-      visit admin_budget_budget_investment_path(budget_investment.budget, budget_investment)
-
-      within("#user-tags") do
-        expect(page).to_not have_content "Education"
-        expect(page).to_not have_content "Environment"
-        expect(page).to have_content "Park, Trees"
-      end
-
-      within("#tags") do
-        expect(page).to have_content "Education, Environment"
-        expect(page).to_not have_content "Park"
-        expect(page).to_not have_content "Trees"
-      end
+      expect(page).to     have_content "Education"
+      expect(page).to_not have_content "Park"
     end
 
     scenario "Maintains user tags" do

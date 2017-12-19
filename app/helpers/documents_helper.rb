@@ -33,7 +33,7 @@ module DocumentsHelper
 
   def render_attachment(builder, document)
     klass = document.errors[:attachment].any? ? "error" : ""
-    klass = document.persisted? || document.cached_attachment.present? ? " hide" : ""
+    klass = document.persisted? || document.cached_attachment.present?  ? " hide" : ""
     html = builder.label :attachment,
                          t("documents.form.attachment_label"),
                          class: "button hollow #{klass}"
@@ -54,11 +54,4 @@ module DocumentsHelper
                        "direct_upload[resource_relation]": "documents")
   end
 
-  def document_item_link(document)
-    link_to "#{document.title} <small>(#{document.humanized_content_type} | \
-             #{number_to_human_size(document.attachment_file_size)}</small>)".html_safe,
-             document.attachment.url,
-             target: "_blank",
-             title: t("shared.target_blank_html")
-  end
 end

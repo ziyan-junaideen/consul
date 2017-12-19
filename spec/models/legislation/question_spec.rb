@@ -1,11 +1,7 @@
 require 'rails_helper'
 
-describe Legislation::Question do
+RSpec.describe Legislation::Question, type: :model do
   let(:question) { create(:legislation_question) }
-
-  describe "Concerns" do
-    it_behaves_like "notifiable"
-  end
 
   it "should be valid" do
     expect(question).to be_valid
@@ -63,9 +59,4 @@ describe Legislation::Question do
       expect(question2.first_question_id).to eq(question1.id)
     end
   end
-
-  describe "notifications" do
-    it_behaves_like 'notifiable'
-  end
-
 end

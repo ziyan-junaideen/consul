@@ -18,29 +18,21 @@ class Admin::Poll::BoothAssignmentsController < Admin::Poll::BaseController
     @booth_assignment = @poll.booth_assignments.includes(:recounts, :voters,
                                                          officer_assignments: [officer: [:user]]).find(params[:id])
     @voters_by_date = @booth_assignment.voters.group_by {|v| v.created_at.to_date}
-    @partial_results = @booth_assignment.partial_results
-    @recounts = @booth_assignment.recounts
   end
 
   def create
-    @poll = Poll.find(booth_assignment_params[:poll_id])
-    @booth = Poll::Booth.find(booth_assignment_params[:booth_id])
-    @booth_assignment = ::Poll::BoothAssignment.new(poll: @poll,
-                                                    booth: @booth)
+    @booth_assignment = ::Poll::BoothAssignment.new(poll_id: booth_assignment_params[:poll_id],
+                                                    booth_id: booth_assignment_params[:booth_id])
 
     if @booth_assignment.save
       notice = t("admin.poll_booth_assignments.flash.create")
     else
       notice = t("admin.poll_booth_assignments.flash.error_create")
     end
-    respond_to do |format|
-      format.js { render layout: false }
-    end
+    redirect_to admin_poll_booth_assignments_path(@booth_assignment.poll_id), notice: notice
   end
 
   def destroy
-    @poll = Poll.find(booth_assignment_params[:poll_id])
-    @booth = Poll::Booth.find(booth_assignment_params[:booth_id])
     @booth_assignment = ::Poll::BoothAssignment.find(params[:id])
 
     if @booth_assignment.destroy
@@ -48,14 +40,7 @@ class Admin::Poll::BoothAssignmentsController < Admin::Poll::BaseController
     else
       notice = t("admin.poll_booth_assignments.flash.error_destroy")
     end
-    respond_to do |format|
-      format.js { render layout: false }
-    end
-  end
-
-  def manage
-    @booths = ::Poll::Booth.all
-    @poll = Poll.find(params[:poll_id])
+    redirect_to admin_poll_booth_assignments_path(@booth_assignment.poll_id), notice: notice
   end
 
   private

@@ -22,9 +22,7 @@
         <%= render "pages/more_info/debates" %>
       <% end %>
 
-      <% if feature?(:proposals) %>
-        <%= render "pages/more_info/proposals" %>
-      <% end %>
+      <%= render "pages/more_info/proposals" %>
 
       <% if feature?(:budgets) %>
         <%= render "pages/more_info/budgets" %>

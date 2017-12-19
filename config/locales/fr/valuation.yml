@@ -1,3 +1,4 @@
+---
 fr:
   valuation:
     header:
@@ -13,9 +14,9 @@ fr:
           current: Ouvert
           finished: Terminé
         table_name: Nom
-        table_phase: Phase de
+        table_phase: Phase
         table_assigned_investments_valuation_open: Propositions d'investissement assignées avec une évaluation ouverte
-        table_actions: Statut des votes
+        table_actions: Actions
         evaluate: Évaluer
     budget_investments:
       index:
@@ -34,7 +35,7 @@ fr:
         table_id: ID
         table_title: Titre
         table_heading_name: Nom du titre
-        table_actions: Statut des votes
+        table_actions: Actions
       show:
         back: Retour
         title: Propositions d'investissement
@@ -61,15 +62,15 @@ fr:
         dossier: Rapport
         price_html: "Coût (%{currency})"
         price_first_year_html: "Coût durant la première année (%{currency}) <small>(optionnel, données non publiques)</small>"
-        price_explanation_html: Informations sur le coût <small>(optionnel, données publiques)</small>
+        price_explanation_html: "Informations sur le coût <small>(optionnel, données publiques)</small>"
         feasibility: Faisabilité
         feasible: Faisable
         unfeasible: Infaisable
         undefined_feasible: Indécis
-        feasible_explanation_html: Informations sur la non-viabilité <small>(le cas échéant, données publiques)</small>
+        feasible_explanation_html: "Informations sur la non-viabilité <small>(le cas échéant, données publiques)</small>"
         valuation_finished: Évaluation terminée
-        duration_html: Délai d'exécution <small>(optionnel, données non publiques)</small>
-        internal_comments_html: Commentaires et observations <small>(pour les responsables internes, données non publiques)</small>
+        duration_html: "Délai d'exécution <small>(optionnel, données non publiques)</small>"
+        internal_comments_html: "Commentaires et observations <small>(pour les responsables internes, données non publiques)</small>"
         save: Enregistrer les changements
       notice:
         valuate: "Rapport mis-à-jour"
@@ -110,15 +111,17 @@ fr:
         price_html: "Coût (%{currency}) <small>(données publiques)</small>"
         price_first_year_html: "Coût durant la première année (%{currency}) <small>(optionnel, données non publiques)</small>"
         currency: "€"
-        price_explanation_html: Informations sur le coût <small>(optionnel, données publiques)</small>
+        price_explanation_html: "Informations sur le coût <small>(optionnel, données publiques)</small>"
         feasibility: Faisabilité
         feasible: Faisable
         not_feasible: Infaisable
         undefined_feasible: Indécis
-        feasible_explanation_html: Informations sur la non-viabilité <small>(le cas échéant, données publiques)</small>
+        feasible_explanation_html: "Informations sur la non-viabilité <small>(le cas échéant, données publiques)</small>"
         valuation_finished: Évaluation terminée
-        time_scope_html: Délai d'exécution <small>(optionnel, données non publiques)</small>
-        internal_comments_html: Commentaires et observations <small>(pour les responsables internes, données non publiques)</small>
+        time_scope_html: "Délai d'exécution <small>(optionnel, données non publiques)</small>"
+        internal_comments_html: "Commentaires et observations <small>(pour les responsables internes, données non publiques)</small>"
         save: Enregistrer les changements
       notice:
         valuate: "Informations actualisées"
+
+
