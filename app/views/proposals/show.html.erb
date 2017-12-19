@@ -197,8 +197,17 @@
   </div>
 <% end %>
 
-<div class="tabs-content" data-tabs-content="proposals-tabs" role="tablist">
-  <%= render "proposals/filter_subnav" %>
+<div class="tabs-content sticky-tabs" data-tabs-content="proposals-tabs" role="tablist">
+  <div class="margin-bottom" data-sticky-container>
+    <div class="sticky filter-subnav" data-sticky
+                        data-stick-to="bottom"
+                        data-check-every="0"
+                        data-margin-bottom="0"
+                        data-anchor="<%= dom_id(@proposal) %>">
+      <%= render "proposals/filter_subnav" %>
+    </div>
+  </div>
+
   <%= render "proposals/notifications" %>
 
   <div class="tabs-panel is-active" id="tab-comments">
