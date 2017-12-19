@@ -77,10 +77,20 @@ module CommonActions
     user ||= create(:user)
 
     login_as(user)
-    commentable_path = commentable.is_a?(Proposal) ? proposal_path(commentable) : debate_path(commentable)
+    commentable_path = if commentable.is_a?(Proposal)
+                         proposal_path(commentable)
+                       elsif commentable.is_a?(Debate)
+                         debate_path(commentable)
+                       elsif commentable.is_a?(Topic)
+                         community_topic_path(commentable, community_id: commentable.community_id)
+                       elsif commentable.is_a?(Poll)
+                         poll_path(commentable)
+                       else
+                         budget_investment_path(commentable, budget_id: commentable.budget_id)
+                       end
     visit commentable_path
 
-    fill_in "comment-body-#{commentable.class.name.underscore}_#{commentable.id}", with: 'Have you thought about...?'
+    fill_in "comment-body-#{commentable.class.name.gsub(/::/, '_').downcase}_#{commentable.id}", with: 'Have you thought about...?'
     click_button 'Publish comment'
 
     expect(page).to have_content 'Have you thought about...?'
@@ -163,14 +173,15 @@ module CommonActions
     expect(page).to have_content 'Document verified with Census'
   end
 
-  def confirm_phone
+  def confirm_phone(user = nil)
+    user ||= User.last
+
     fill_in 'sms_phone', with: "611111111"
     click_button 'Send'
 
     expect(page).to have_content 'Enter the confirmation code sent to you by text message'
 
-    user = User.last.reload
-    fill_in 'sms_confirmation_code', with: user.sms_confirmation_code
+    fill_in 'sms_confirmation_code', with: user.reload.sms_confirmation_code
     click_button 'Send'
 
     expect(page).to have_content 'Code correct'
@@ -298,14 +309,13 @@ module CommonActions
     end
   end
 
-  def vote_for_poll_via_web
-    visit question_path(question)
+  def vote_for_poll_via_web(poll, question, answer)
+    visit poll_path(poll)
 
-    click_link 'Answer this question'
-    click_link 'Yes'
-
-    expect(page).to_not have_link('Yes')
-    expect(Poll::Voter.count).to eq(1)
+    within("#poll_question_#{question.id}_answers") do
+      click_link answer.to_s
+      expect(page).to_not have_link(answer.to_s)
+    end
   end
 
   def vote_for_poll_via_booth
@@ -318,6 +328,33 @@ module CommonActions
     expect(page).to have_content "Vote introduced!"
 
     expect(Poll::Voter.count).to eq(1)
+  end
+
+  def model_name(described_class)
+    return :proposal_notification if described_class == ProposalNotification
+
+    described_class.name.gsub("::", "_").downcase.to_sym
+  end
+
+  def comment_body(resource)
+    "comment-body-#{resource.class.name.gsub("::", "_").downcase.to_sym}_#{resource.id}"
+  end
+
+  def path_for(resource)
+    nested_path_for(resource) || url_for([resource, only_path: true])
+  end
+
+  def nested_path_for(resource)
+    case resource.class.name
+    when "Legislation::Question"
+      legislation_process_question_path(resource.process, resource)
+    when "Legislation::Proposal"
+      legislation_process_proposal_path(resource.process, resource)
+    when "Budget::Investment"
+      budget_investment_path(resource.budget, resource)
+    else
+      false
+    end
   end
 
 end

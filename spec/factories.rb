@@ -50,6 +50,7 @@ FactoryGirl.define do
     end
 
     trait :verified do
+      residence_verified_at Time.current
       verified_at Time.current
     end
 
@@ -361,6 +362,7 @@ FactoryGirl.define do
     association :investment, factory: :budget_investment
     sequence(:title)     { |n| "Budget investment milestone #{n} title" }
     description          'Milestone description'
+    publication_date     Time.zone.today
   end
 
   factory :vote do
@@ -489,6 +491,11 @@ FactoryGirl.define do
       ends_at { 15.days.ago }
     end
 
+    trait :recounting do
+      starts_at { 1.month.ago }
+      ends_at { Date.current }
+    end
+
     trait :published do
       published true
     end
@@ -498,8 +505,25 @@ FactoryGirl.define do
     poll
     association :author, factory: :user
     sequence(:title) { |n| "Question title #{n}" }
-    sequence(:description) { |n| "Question description #{n}" }
-    valid_answers { Faker::Lorem.words(3).join(', ') }
+
+    trait :with_answers do
+      after(:create) do |question, _evaluator|
+        create(:poll_question_answer, question: question, title: "Yes")
+        create(:poll_question_answer, question: question, title: "No")
+      end
+    end
+  end
+
+  factory :poll_question_answer, class: 'Poll::Question::Answer' do
+    association :question, factory: :poll_question
+    sequence(:title) { |n| "Answer title #{n}" }
+    sequence(:description) { |n| "Answer description #{n}" }
+  end
+
+  factory :poll_answer_video, class: 'Poll::Question::Answer::Video' do
+    association :answer, factory: :poll_question_answer
+    title "Sample video title"
+    url "https://youtu.be/nhuNb0XtRhQ"
   end
 
   factory :poll_booth, class: 'Poll::Booth' do
@@ -526,11 +550,20 @@ FactoryGirl.define do
     association :booth, factory: :poll_booth
     association :officer, factory: :poll_officer
     date Date.current
+
+    trait :vote_collection_task do
+      task 0
+    end
+
+    trait :recount_scrutiny_task do
+      task 1
+    end
   end
 
   factory :poll_voter, class: 'Poll::Voter' do
     poll
     association :user, :level_two
+    association :officer, factory: :poll_officer
     origin "web"
 
     trait :from_booth do
@@ -549,31 +582,16 @@ FactoryGirl.define do
   end
 
   factory :poll_answer, class: 'Poll::Answer' do
-    association :question, factory: :poll_question
+    association :question, factory: [:poll_question, :with_answers]
     association :author, factory: [:user, :level_two]
-    answer { question.valid_answers.sample }
+    answer { question.question_answers.sample.title }
   end
 
   factory :poll_partial_result, class: 'Poll::PartialResult' do
-    association :question, factory: :poll_question
+    association :question, factory: [:poll_question, :with_answers]
     association :author, factory: :user
     origin { 'web' }
-    answer { question.valid_answers.sample }
-  end
-
-  factory :poll_white_result, class: 'Poll::WhiteResult' do
-    association :author, factory: :user
-    origin { 'web' }
-  end
-
-  factory :poll_null_result, class: 'Poll::NullResult' do
-    association :author, factory: :user
-    origin { 'web' }
-  end
-
-  factory :poll_total_result, class: 'Poll::TotalResult' do
-    association :author, factory: :user
-    origin { 'web' }
+    answer { question.question_answers.sample.title }
   end
 
   factory :poll_recount, class: 'Poll::Recount' do
@@ -692,7 +710,7 @@ FactoryGirl.define do
     start_date Date.current - 5.days
     end_date Date.current + 5.days
     debate_start_date Date.current - 5.days
-    debate_end_date Date.current - 2.days
+    debate_end_date Date.current + 2.days
     draft_publication_date Date.current - 1.day
     allegations_start_date Date.current
     allegations_end_date Date.current + 3.days
@@ -800,6 +818,14 @@ LOREM_IPSUM
     user
   end
 
+  factory :legislation_proposal, class: 'Legislation::Proposal' do
+    title "Example proposal for a legislation"
+    summary "This law should include..."
+    terms_of_service '1'
+    process factory: :legislation_process
+    author factory: :user
+  end
+
   factory :site_customization_page, class: 'SiteCustomization::Page' do
     slug "example-page"
     title "Example page"
@@ -864,6 +890,9 @@ LOREM_IPSUM
     trait :budget_investment_map_location do
       association :investment, factory: :budget_investment
     end
+  end
+
+  factory :related_content do
   end
 
 end

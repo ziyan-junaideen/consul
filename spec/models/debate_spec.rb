@@ -4,7 +4,10 @@ require 'rails_helper'
 describe Debate do
   let(:debate) { build(:debate) }
 
-  it_behaves_like "has_public_author"
+  describe "Concerns" do
+    it_behaves_like "has_public_author"
+    it_behaves_like "notifiable"
+  end
 
   it "should be valid" do
     expect(debate).to be_valid
@@ -725,10 +728,10 @@ describe Debate do
     end
 
     it "Should return debates ordered by cached_votes_total" do
-      debate1 =  create(:debate, cached_votes_total: 1, tag_list: "Sport" )
-      debate2 =  create(:debate, cached_votes_total: 5, tag_list: "Sport" )
-      debate3 =  create(:debate, cached_votes_total: 10, tag_list: "Sport" )
-      proposal = create(:proposal, tag_list: "Sport" )
+      debate1 =  create(:debate, cached_votes_total: 1, tag_list: "Sport")
+      debate2 =  create(:debate, cached_votes_total: 5, tag_list: "Sport")
+      debate3 =  create(:debate, cached_votes_total: 10, tag_list: "Sport")
+      proposal = create(:proposal, tag_list: "Sport")
       create(:follow, followable: proposal, user: user)
 
       result = Debate.recommendations(user).sort_by_recommendations
@@ -741,7 +744,7 @@ describe Debate do
     it "Should return debates related with user interests" do
       debate1 =  create(:debate, tag_list: "Sport")
       debate2 =  create(:debate, tag_list: "Politics")
-      proposal1 =  create(:proposal, tag_list: "Sport")
+      proposal1 = create(:proposal, tag_list: "Sport")
       create(:follow, followable: proposal1, user: user)
 
       result = Debate.recommendations(user)
@@ -753,7 +756,7 @@ describe Debate do
     it "Should not return debates when user is the author" do
       debate1 =  create(:debate, author: user, tag_list: "Sport")
       debate2 =  create(:debate, tag_list: "Sport")
-      proposal = create(:proposal, tag_list: "Sport" )
+      proposal = create(:proposal, tag_list: "Sport")
       create(:follow, followable: proposal, user: user)
 
       result = Debate.recommendations(user)
@@ -763,4 +766,5 @@ describe Debate do
     end
 
   end
+
 end

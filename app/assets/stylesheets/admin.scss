@@ -149,6 +149,7 @@ $sidebar-active: #f4fcd0;
   }
 
   table {
+
     .break {
       word-break: break-word;
     }
@@ -267,6 +268,11 @@ $sidebar-active: #f4fcd0;
   .input-group-button {
     padding-bottom: rem-calc(16);
   }
+}
+
+.sortable thead th:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 // 02. Sidebar
@@ -604,6 +610,7 @@ table {
   .callout {
     height: $line-height * 2;
     line-height: $line-height * 2;
+    margin: 0;
     padding: 0 $line-height / 2;
   }
 }

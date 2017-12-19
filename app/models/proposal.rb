@@ -12,11 +12,13 @@ class Proposal < ActiveRecord::Base
   include Communitable
   include Imageable
   include Mappable
+  include Notifiable
   include Documentable
   documentable max_documents_allowed: 3,
                max_file_size: 3.megabytes,
                accepted_content_types: [ "application/pdf" ]
   include EmbedVideosHelper
+  include Relationable
 
   acts_as_votable
   acts_as_paranoid column: :hidden_at
@@ -69,10 +71,10 @@ class Proposal < ActiveRecord::Base
   scope :public_for_api,           -> { all }
 
   def self.recommendations(user)
-    tagged_with(user.interests, any: true).
-    where("author_id != ?", user.id).
-    unsuccessful.
-    not_followed_by_user(user)
+    tagged_with(user.interests, any: true)
+      .where("author_id != ?", user.id)
+      .unsuccessful
+      .not_followed_by_user(user)
   end
 
   def self.not_followed_by_user(user)

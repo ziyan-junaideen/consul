@@ -3,7 +3,26 @@ require 'rails_helper'
 
 feature 'Proposals' do
 
+  scenario 'Disabled with a feature flag' do
+    Setting['feature.proposals'] = nil
+    expect{ visit proposals_path }.to raise_exception(FeatureFlags::FeatureDisabled)
+    Setting['feature.proposals'] = true
+  end
+
+  context "Concerns" do
+    it_behaves_like 'notifiable in-app', Proposal
+  end
+
   context 'Index' do
+
+    before do
+      Setting['feature.allow_images'] = true
+    end
+
+    after do
+      Setting['feature.allow_images'] = nil
+    end
+
     scenario 'Lists featured and regular proposals' do
       featured_proposals = create_featured_proposals
       proposals = [create(:proposal), create(:proposal), create(:proposal)]
@@ -38,7 +57,7 @@ feature 'Proposals' do
 
       within("ul.pagination") do
         expect(page).to have_content("1")
-        expect(page).to have_content("2")
+        expect(page).to have_link('2', href: 'http://www.example.com/proposals?page=2')
         expect(page).to_not have_content("3")
         click_link "Next", exact: false
       end
@@ -55,7 +74,7 @@ feature 'Proposals' do
       visit proposals_path(proposal)
 
       within("#proposal_#{proposal.id}") do
-        expect(page).to have_css("div.no-image")
+        expect(page).to_not have_css("div.with-image")
       end
       within("#proposal_#{proposal_with_image.id}") do
         expect(page).to have_css("img[alt='#{proposal_with_image.image.title}']")
@@ -153,8 +172,8 @@ feature 'Proposals' do
     proposal = create(:proposal)
 
     visit proposal_path(proposal)
-    expect(page.html).to include "<meta name=\"twitter:title\" content=\"#{proposal.title}\" />"
-    expect(page.html).to include "<meta id=\"ogtitle\" property=\"og:title\" content=\"#{proposal.title}\"/>"
+    expect(page).to have_css "meta[name='twitter:title'][content=\"#{proposal.title}\"]", visible: false
+    expect(page).to have_css "meta[property='og:title'][content=\"#{proposal.title}\"]", visible: false
   end
 
   scenario 'Create' do
