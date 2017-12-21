@@ -897,4 +897,7 @@ LOREM_IPSUM
   factory :related_content do
   end
 
+  factory :related_content_score do
+  end
+
 end
