@@ -26,27 +26,20 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
 
     scenario "Create image", :js do
       login_as user
-      visit send(path, arguments)
+      visit imageable_path(path, arguments)
 
       click_link "Add image"
-      expect(page).to have_content "Choose image"
 
-      attach_file(image_input[:id], "spec/fixtures/files/clippy.jpg", make_visible: true)
+      upload_file
+      expect_file_uploaded
 
-      expect(page).to have_link("Remove image", href: /#{direct_upload_destroy_path}/) #Trying to avoid flakiness
-      expect(page).to have_selector ".file-name", text: "clippy.jpg" #(Should update nested image file name after choosing any file)
-      expect(page).to have_selector ".loading-bar.complete" #(Should update loading bar style after valid file upload)
-      expect_image_has_title("clippy.jpg") #(Should update nested image file title with file name after choosing a file when no title defined)
-      expect_image_has_cached_attachment(".jpg") #(Should update image cached_attachment field after valid file upload)
-
-      send(fill_resource_method_name) if fill_resource_method_name
+      fill_form(fill_resource_method_name)
       click_on submit_button
       expect(page).to have_content imageable_success_notice
 
-      imageable_redirected_to_resource_show_or_navigate_to #Visit Show
-
-      expect(page).to have_selector "figure img"
-      expect(page).to have_selector "figure figcaption"
+      redirect_to_imageable
+      expect(page).to have_css "figure img"
+      expect(page).to have_css "figure figcaption"
     end
 
     scenario "View image" do
@@ -54,7 +47,7 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
       #Show
     end
 
-    scenario "Update", :js do
+    scenario "Update image", :js do
       skip unless path.include? "edit"
 
       login_as user
@@ -65,10 +58,10 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
       expect(page).to have_css ".image", count: 1 #"Should show persisted image"
       expect(page).to have_css "a#new_image_link", visible: false #"Should not show add image button when image already exists"
 
-      ###"Should remove nested field after remove image"
+      ### Missing clicking on update button and expecting results
+
       click_on "Remove image"
-      expect(page).not_to have_css ".image"
-      ###
+      expect(page).not_to have_css ".image" ###"Should remove nested field after remove image"
       expect(page).to have_css "a#new_image_link", visible: true #"Should show add image button after remove image"
     end
 
@@ -86,7 +79,7 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
       image_input = find(".image").find("input[type=file]", visible: false)
       attach_file(image_input[:id], "spec/fixtures/files/logo_header.png", make_visible: true)
 
-      expect(page).to have_selector ".loading-bar.errors"
+      expect(page).to have_css ".loading-bar.errors"
       expect_image_has_cached_attachment("")
 
       within "#nested-image .image" do
@@ -127,14 +120,42 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
         click_link "Remove image"
       end
 
-      expect(page).not_to have_selector("#nested-image .image")
+      expect(page).not_to have_css("#nested-image .image")
     end
 
   end
-
 end
 
-def imageable_redirected_to_resource_show_or_navigate_to
+def image_input
+  find(".image").find("input[type=file]", visible: false)
+end
+
+def upload_file
+  expect(page).to have_content "Choose image"
+  attach_file(image_input[:id], "spec/fixtures/files/clippy.jpg", make_visible: true)
+end
+
+def expect_file_uploaded
+  expect(page).to have_link("Remove image", href: /#{direct_upload_destroy_path}/) #Trying to avoid flakiness
+  expect(page).to have_css ".file-name", text: "clippy.jpg" #(Should update nested image file name after choosing any file)
+  expect(page).to have_css ".loading-bar.complete" #(Should update loading bar style after valid file upload)
+  expect_image_has_title("clippy.jpg") #(Should update nested image file title with file name after choosing a file when no title defined)
+  expect_image_has_cached_attachment(".jpg") #(Should update image cached_attachment field after valid file upload)
+end
+
+def expect_image_has_title(title)
+  within(".image") do
+    expect(find("input[name$='[title]']").value).to eq title
+  end
+end
+
+def expect_image_has_cached_attachment(extension)
+  within(".image") do
+    expect(find("input[name$='[cached_attachment]']", visible: false).value).to end_with(extension)
+  end
+end
+
+def redirect_to_imageable
   find("a", text: "Not now, go to my proposal")
   click_on "Not now, go to my proposal"
 rescue
@@ -143,7 +164,6 @@ end
 
 def imageable_attach_new_file(_imageable_factory_name, path, success = true)
   click_link "Add image"
-  #expect(page).to have_button "Choose image"
 
   within "#nested-image" do
     image = find(".image")
@@ -159,38 +179,26 @@ def imageable_attach_new_file(_imageable_factory_name, path, success = true)
   end
 end
 
+def imageable_path(path, arguments)
+  send(path, arguments)
+end
+
+def fill_form(fill_resource_method_name)
+  return unless fill_resource_method_name.present?
+
+  send(fill_resource_method_name)
+end
+
 def imageable_fill_new_valid_proposal
-  fill_in :proposal_title, with: "Proposal title #{rand(99999)}"
-  fill_in :proposal_summary, with: "Proposal summary"
-  fill_in :proposal_question, with: "Proposal question?"
+  fill_in :proposal_title, with: "title #{rand(99999)}"
+  fill_in :proposal_summary, with: "summary"
+  fill_in :proposal_question, with: "question"
   check :proposal_terms_of_service
 end
 
 def imageable_fill_new_valid_budget_investment
   page.select imageable.heading.name_scoped_by_group, from: :budget_investment_heading_id
-  fill_in :budget_investment_title, with: "Budget investment title"
-  fill_in_ckeditor "budget_investment_description", with: "Budget investment description"
+  fill_in :budget_investment_title, with: "title"
+  fill_in_ckeditor "description", with: "description"
   check :budget_investment_terms_of_service
-end
-
-def expect_image_has_title(title)
-  image = find(".image")
-
-  within image do
-    expect(find("input[name$='[title]']").value).to eq title
-  end
-end
-
-def expect_image_has_cached_attachment(extension)
-  within "#nested-image" do
-    image = find(".image")
-
-    within image do
-      expect(find("input[name$='[cached_attachment]']", visible: false).value).to end_with(extension)
-    end
-  end
-end
-
-def image_input
-  find(".image").find("input[type=file]", visible: false)
 end
