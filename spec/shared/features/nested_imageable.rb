@@ -9,11 +9,10 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
   let!(:imageable)           { create(imageable_factory_name) }
 
   before do
-
     Setting['feature.allow_images'] = true
 
     imageable_path_arguments&.each do |argument_name, path_to_value|
-        arguments.merge!("#{argument_name}": imageable.send(path_to_value))
+      arguments.merge!("#{argument_name}": imageable.send(path_to_value))
     end
 
     imageable.update(author: user) if imageable.respond_to?(:author)
@@ -25,108 +24,97 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
 
   describe "at #{path}" do
 
-    scenario "Should show new image link when imageable has not an associated image defined" do
-      login_as user
-      visit send(path, arguments)
-
-      expect(page).to have_selector "#new_image_link", visible: true
-    end
-
-    scenario "Should hide new image link after add one image" do
-      login_as user
-      visit send(path, arguments)
-
-      click_on "Add image"
-
-      expect(page).to have_selector "#new_image_link", visible: true
-    end
-
-    scenario "Should update nested image file name after choosing any file", :js do
+    scenario "Create image", :js do
       login_as user
       visit send(path, arguments)
 
       click_link "Add image"
-      image_input = find(".image").find("input[type=file]", visible: false)
+      expect(page).to have_content "Choose image"
+
       attach_file(image_input[:id], "spec/fixtures/files/clippy.jpg", make_visible: true)
 
-      expect(page).to have_selector ".file-name", text: "clippy.jpg"
+      expect(page).to have_link("Remove image", href: /#{direct_upload_destroy_path}/) #Trying to avoid flakiness
+      expect(page).to have_selector ".file-name", text: "clippy.jpg" #(Should update nested image file name after choosing any file)
+      expect(page).to have_selector ".loading-bar.complete" #(Should update loading bar style after valid file upload)
+      expect_image_has_title("clippy.jpg") #(Should update nested image file title with file name after choosing a file when no title defined)
+      expect_image_has_cached_attachment(".jpg") #(Should update image cached_attachment field after valid file upload)
+
+      send(fill_resource_method_name) if fill_resource_method_name
+      click_on submit_button
+      expect(page).to have_content imageable_success_notice
+
+      imageable_redirected_to_resource_show_or_navigate_to #Visit Show
+
+      expect(page).to have_selector "figure img"
+      expect(page).to have_selector "figure figcaption"
     end
 
-    scenario "Should update nested image file title with file name after choosing a file when no title defined", :js do
+    scenario "View image" do
+      #Index
+      #Show
+    end
+
+    scenario "Update", :js do
+      skip unless path.include? "edit"
+
       login_as user
+      create(:image, imageable: imageable)
       visit send(path, arguments)
 
-      imageable_attach_new_file(imageable_factory_name, "spec/fixtures/files/clippy.jpg")
+      expect(page).to have_content "Edit proposal"
+      expect(page).to have_css ".image", count: 1 #"Should show persisted image"
+      expect(page).to have_css "a#new_image_link", visible: false #"Should not show add image button when image already exists"
 
-      expect_image_has_title("clippy.jpg")
+      ###"Should remove nested field after remove image"
+      click_on "Remove image"
+      expect(page).not_to have_css ".image"
+      ###
+      expect(page).to have_css "a#new_image_link", visible: true #"Should show add image button after remove image"
     end
 
-    scenario "Should not update nested image file title with file name after choosing a file when title already defined", :js do
+    scenario "Destroy image" do
+      #destroy
+    end
+
+    scenario "Errors on create", :js do
       login_as user
       visit send(path, arguments)
 
       click_link "Add image"
-      input_title = find(".image input[name$='[title]']")
-      fill_in input_title[:id], with: "Title"
-      image_input = find(".image").find("input[type=file]", visible: false)
-      attach_file(image_input[:id], "spec/fixtures/files/clippy.jpg", make_visible: true)
+      expect(page).to have_content "Choose image"
 
-      if has_many_images
-        expect(find("input[id$='_title']").value).to eq "Title"
-      else
-        expect(find("##{imageable_factory_name}_image_attributes_title").value).to eq "Title"
+      image_input = find(".image").find("input[type=file]", visible: false)
+      attach_file(image_input[:id], "spec/fixtures/files/logo_header.png", make_visible: true)
+
+      expect(page).to have_selector ".loading-bar.errors"
+      expect_image_has_cached_attachment("")
+
+      within "#nested-image .image" do
+        expect(page).to have_content("type image/png does not match any of accepted content types jpeg, jpg", count: 1) #Note: It should probably be png not allowed Should show nested image errors after unvalid form submit
       end
     end
 
-    scenario "Should update loading bar style after valid file upload", :js do
-      login_as user
-      visit send(path, arguments)
-
-      imageable_attach_new_file(imageable_factory_name, "spec/fixtures/files/clippy.jpg")
-
-      expect(page).to have_selector ".loading-bar.complete"
+    scenario "Errors on update", :js do
     end
 
-    scenario "Should update loading bar style after invalid file upload", :js do
-      login_as user
-      visit send(path, arguments)
-
-      imageable_attach_new_file(imageable_factory_name, "spec/fixtures/files/logo_header.png", false)
-
-      expect(page).to have_selector ".loading-bar.errors"
-    end
-
-    scenario "Should update image cached_attachment field after valid file upload", :js do
-      login_as user
-      visit send(path, arguments)
-
-      imageable_attach_new_file(imageable_factory_name, "spec/fixtures/files/clippy.jpg")
-
-      expect_image_has_cached_attachment(".jpg")
-    end
-
-    scenario "Should not update image cached_attachment field after unvalid file upload", :js do
-      login_as user
-      visit send(path, arguments)
-
-      imageable_attach_new_file(imageable_factory_name, "spec/fixtures/files/logo_header.png", false)
-
-      expect_image_has_cached_attachment("")
-    end
-
-    scenario "Should show nested image errors after unvalid form submit", :js do
+    scenario "Set a custom file name", :js do #"Should not update nested image file title with file name after choosing a file when title already defined"
       login_as user
       visit send(path, arguments)
 
       click_link "Add image"
-      click_on submit_button
+      expect(page).to have_content "Choose image"
+
+      input_title = find(".image input[name$='[title]']")
+
+      fill_in input_title[:id], with: "File 123"
+
+      image_input = find(".image").find("input[type=file]", visible: false)
+      attach_file(image_input[:id], "spec/fixtures/files/clippy.jpg", make_visible: true)
 
       if has_many_images
-        # Pending. Review soon and test
+        expect(find("input[id$='_title']").value).to eq "File 123"
       else
-        within "#nested-image .image" do
-          expect(page).to have_content("can't be blank", count: 2)
-        end
+        expect(find("##{imageable_factory_name}_image_attributes_title").value).to eq "File 123"
       end
     end
 
@@ -142,86 +130,6 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
       expect(page).not_to have_selector("#nested-image .image")
     end
 
-    scenario "Should show successful notice when resource filled correctly without any nested images", :js do
-      login_as user
-      visit send(path, arguments)
-
-      send(fill_resource_method_name) if fill_resource_method_name
-      click_on submit_button
-
-      if has_many_images
-         skip "no need to test, there are no attributes for the parent resource"
-      else
-        expect(page).to have_content imageable_success_notice
-      end
-    end
-
-    scenario "Should show successful notice when resource filled correctly and after valid file uploads", :js do
-      login_as user
-      visit send(path, arguments)
-      send(fill_resource_method_name) if fill_resource_method_name
-
-      imageable_attach_new_file(imageable_factory_name, "spec/fixtures/files/clippy.jpg")
-      click_on submit_button
-
-      expect(page).to have_content imageable_success_notice
-    end
-
-    scenario "Should show new image after successful creation with one uploaded file", :js do
-      login_as user
-      visit send(path, arguments)
-      send(fill_resource_method_name) if fill_resource_method_name
-
-      imageable_attach_new_file(imageable_factory_name, "spec/fixtures/files/clippy.jpg")
-      click_on submit_button
-      imageable_redirected_to_resource_show_or_navigate_to
-
-      if has_many_images
-        # Pending. Review soon and test
-      else
-        expect(page).to have_selector "figure img"
-        expect(page).to have_selector "figure figcaption"
-      end
-    end
-
-    if path.include? "edit"
-
-      scenario "Should show persisted image" do
-        login_as user
-        create(:image, imageable: imageable)
-        visit send(path, arguments)
-
-        expect(page).to have_css ".image", count: 1
-      end
-
-      scenario "Should not show add image button when image already exists", :js do
-        login_as user
-        create(:image, imageable: imageable)
-        visit send(path, arguments)
-
-        expect(page).to have_css "a#new_image_link", visible: false
-      end
-
-      scenario "Should remove nested field after remove image", :js do
-        login_as user
-        create(:image, imageable: imageable)
-        visit send(path, arguments)
-        click_on "Remove image"
-
-        expect(page).not_to have_css ".image"
-      end
-
-      scenario "Should show add image button after remove image", :js do
-        login_as user
-        create(:image, imageable: imageable)
-        visit send(path, arguments)
-        click_on "Remove image"
-
-        expect(page).to have_css "a#new_image_link", visible: true
-      end
-
-    end
-
   end
 
 end
@@ -235,6 +143,8 @@ end
 
 def imageable_attach_new_file(_imageable_factory_name, path, success = true)
   click_link "Add image"
+  #expect(page).to have_button "Choose image"
+
   within "#nested-image" do
     image = find(".image")
     image_input = image.find("input[type=file]", visible: false)
@@ -250,7 +160,7 @@ def imageable_attach_new_file(_imageable_factory_name, path, success = true)
 end
 
 def imageable_fill_new_valid_proposal
-  fill_in :proposal_title, with: "Proposal title"
+  fill_in :proposal_title, with: "Proposal title #{rand(99999)}"
   fill_in :proposal_summary, with: "Proposal summary"
   fill_in :proposal_question, with: "Proposal question?"
   check :proposal_terms_of_service
@@ -279,4 +189,8 @@ def expect_image_has_cached_attachment(extension)
       expect(find("input[name$='[cached_attachment]']", visible: false).value).to end_with(extension)
     end
   end
+end
+
+def image_input
+  find(".image").find("input[type=file]", visible: false)
 end

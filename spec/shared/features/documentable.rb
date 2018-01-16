@@ -15,6 +15,11 @@ shared_examples "documentable" do |documentable_factory_name, documentable_path,
     end
   end
 
+  scenario "Upload"
+  scenario "Download"
+  scenario "Remove"
+  scenario "Errors"
+
   context "Show documents tab" do
 
     scenario "Download action should be able to anyone" do

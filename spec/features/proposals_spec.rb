@@ -1406,51 +1406,56 @@ feature 'Proposals' do
 
   it_behaves_like "followable", "proposal", "proposal_path", { "id": "id" }
 
-  it_behaves_like "imageable", "proposal", "proposal_path", { "id": "id" }
+  context "images", :focus do
+    #it_behaves_like "imageable", "proposal", "proposal_path", { "id": "id" }
 
-  it_behaves_like "nested imageable",
-                  "proposal",
-                  "new_proposal_path",
-                  { },
-                  "imageable_fill_new_valid_proposal",
-                  "Create proposal",
-                  "Proposal created successfully"
 
-  it_behaves_like "nested imageable",
-                  "proposal",
-                  "edit_proposal_path",
-                  { "id": "id" },
-                  nil,
-                  "Save changes",
-                  "Proposal updated successfully"
 
-  it_behaves_like "documentable", "proposal", "proposal_path", { "id": "id" }
+      it_behaves_like "nested imageable",
+                      "proposal",
+                      "new_proposal_path",
+                      { },
+                      "imageable_fill_new_valid_proposal",
+                      "Create proposal",
+                      "Proposal created successfully"
 
-  it_behaves_like "nested documentable",
-                  "user",
-                  "proposal",
-                  "new_proposal_path",
-                  { },
-                  "documentable_fill_new_valid_proposal",
-                  "Create proposal",
-                  "Proposal created successfully"
+    it_behaves_like "nested imageable",
+                    "proposal",
+                    "edit_proposal_path",
+                    { "id": "id" },
+                    nil,
+                    "Save changes",
+                    "Proposal updated successfully"
+    end
 
-  it_behaves_like "nested documentable",
-                  "user",
-                  "proposal",
-                  "edit_proposal_path",
-                  { "id": "id" },
-                  nil,
-                  "Save changes",
-                  "Proposal updated successfully"
+    it_behaves_like "documentable", "proposal", "proposal_path", { "id": "id" }
 
-  it_behaves_like "mappable",
-                  "proposal",
-                  "proposal",
-                  "new_proposal_path",
-                  "edit_proposal_path",
-                  "proposal_path",
-                  { }
+    it_behaves_like "nested documentable",
+                    "user",
+                    "proposal",
+                    "new_proposal_path",
+                    { },
+                    "documentable_fill_new_valid_proposal",
+                    "Create proposal",
+                    "Proposal created successfully"
+
+    it_behaves_like "nested documentable",
+                    "user",
+                    "proposal",
+                    "edit_proposal_path",
+                    { "id": "id" },
+                    nil,
+                    "Save changes",
+                    "Proposal updated successfully"
+
+    it_behaves_like "mappable",
+                    "proposal",
+                    "proposal",
+                    "new_proposal_path",
+                    "edit_proposal_path",
+                    "proposal_path",
+                    { }
+
 
   scenario 'Erased author' do
     user = create(:user)
