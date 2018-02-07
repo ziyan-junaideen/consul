@@ -36,9 +36,4 @@ class Admin::StatsController < Admin::BaseController
     @users_who_have_sent_message = DirectMessage.select(:sender_id).distinct.count
   end
 
-  def polls
-    @polls = ::Poll.current
-    @participants = ::Poll::Voter.where(poll: @polls)
-  end
-
 end

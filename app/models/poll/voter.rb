@@ -1,14 +1,13 @@
 class Poll
   class Voter < ActiveRecord::Base
 
-    VALID_ORIGINS = %w{web booth}.freeze
+    VALID_ORIGINS = %w{ web booth }
 
     belongs_to :poll
     belongs_to :user
     belongs_to :geozone
     belongs_to :booth_assignment
     belongs_to :officer_assignment
-    belongs_to :officer
 
     validates :poll_id, presence: true
     validates :user_id, presence: true

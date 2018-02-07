@@ -3,11 +3,15 @@
 
   <% if user.interests.any? %>
 
-    <ul class="no-bullet tags">
-      <% user.interests.each do |interest| %>
-        <li class="inline-block"><span><%= interest %></span></li>
-      <% end %>
-    </ul>
+    <% user.interests.in_groups_of(10, false) do |interests_group| %>
+      <div class="small-4 column end">
+        <ul class="no-bullet">
+          <% interests_group.each do |interest| %>
+            <li> <small><%= interest %></small> </li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
 
   <% else %>
 
@@ -16,4 +20,5 @@
     </div>
 
   <% end %>
+
 </div>

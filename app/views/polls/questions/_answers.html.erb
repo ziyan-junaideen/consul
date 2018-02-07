@@ -1,25 +1,22 @@
 <div class="poll-question-answers">
-  <% if can?(:answer, question) && !question.poll.voted_in_booth?(current_user) %>
-    <% question.question_answers.each do |answer| %>
-      <% if @answers_by_question_id[question.id] == answer.title &&
-            (!voted_before_sign_in(question) ||
-             question.poll.voted_in_booth?(current_user)) %>
-        <span class="button answered"
-              title="<%= t("poll_questions.show.voted", answer: answer.title)%>">
-          <%= answer.title %>
+  <% if can? :answer, question %>
+    <% question.valid_answers.each do |answer| %>
+      <% if @answers_by_question_id[question.id] == answer %>
+        <span class="button answered" title="<%= t("poll_questions.show.voted", answer: answer)%>">
+          <%= answer %>
         </span>
       <% else %>
-        <%= link_to answer.title,
-          answer_question_path(question, answer: answer.title, token: token),
+        <%= link_to answer,
+          answer_question_path(question, answer: answer),
           method: :post,
           remote: true,
-          title: t("poll_questions.show.vote_answer", answer: answer.title),
-          class: "button secondary hollow js-question-answer" %>
+          title: t("poll_questions.show.vote_answer", answer: answer),
+          class: "button secondary hollow" %>
       <% end %>
     <% end %>
   <% else %>
-    <% question.question_answers.each do |answer| %>
-      <span class="button secondary hollow disabled"><%= answer.title %></span>
+    <% question.valid_answers.each do |answer| %>
+      <span class="button secondary hollow disabled"><%= answer %></span>
     <% end %>
   <% end %>
 </div>

@@ -1,19 +1,21 @@
-shared_examples "nested imageable" do |imageable_factory_name, path, imageable_path_arguments, fill_resource_method_name, submit_button, imageable_success_notice, has_many_images = false|
+shared_examples "nested imageable" do |imageable_factory_name, path, imageable_path_arguments, fill_resource_method_name, submit_button, imageable_success_notice|
   include ActionView::Helpers
   include ImagesHelper
   include ImageablesHelper
 
+  let!(:administrator)       { create(:user) }
   let!(:user)                { create(:user, :level_two) }
-  let!(:administrator)       { create(:administrator, user: user) }
   let!(:arguments)           { {} }
-  let!(:imageable)           { create(imageable_factory_name) }
+  let!(:imageable)           { create(imageable_factory_name, author: user) }
 
   before do
-    imageable_path_arguments&.each do |argument_name, path_to_value|
-        arguments.merge!("#{argument_name}": imageable.send(path_to_value))
-    end
+    create(:administrator, user: administrator)
 
-    imageable.update(author: user) if imageable.respond_to?(:author)
+    if imageable_path_arguments
+      imageable_path_arguments.each do |argument_name, path_to_value|
+        arguments.merge!("#{argument_name}": imageable.send(path_to_value))
+      end
+    end
   end
 
   describe "at #{path}" do
@@ -64,11 +66,7 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
       image_input = find(".image").find("input[type=file]", visible: false)
       attach_file(image_input[:id], "spec/fixtures/files/clippy.jpg", make_visible: true)
 
-      if has_many_images
-        expect(find("input[id$='_title']").value).to eq "Title"
-      else
-        expect(find("##{imageable_factory_name}_image_attributes_title").value).to eq "Title"
-      end
+      expect(find("##{imageable_factory_name}_image_attributes_title").value).to eq "Title"
     end
 
     scenario "Should update loading bar style after valid file upload", :js do
@@ -80,7 +78,7 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
       expect(page).to have_selector ".loading-bar.complete"
     end
 
-    scenario "Should update loading bar style after invalid file upload", :js do
+    scenario "Should update loading bar style after unvalid file upload", :js do
       login_as user
       visit send(path, arguments)
 
@@ -114,12 +112,8 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
       click_link "Add image"
       click_on submit_button
 
-      if has_many_images
-        # Pending. Review soon and test
-      else
-        within "#nested-image .image" do
-          expect(page).to have_content("can't be blank", count: 2)
-        end
+      within "#nested-image .image" do
+        expect(page).to have_content("can't be blank", count: 2)
       end
     end
 
@@ -142,11 +136,7 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
       send(fill_resource_method_name) if fill_resource_method_name
       click_on submit_button
 
-      if has_many_images
-         skip "no need to test, there are no attributes for the parent resource"
-      else
-        expect(page).to have_content imageable_success_notice
-      end
+      expect(page).to have_content imageable_success_notice
     end
 
     scenario "Should show successful notice when resource filled correctly and after valid file uploads", :js do
@@ -169,12 +159,8 @@ shared_examples "nested imageable" do |imageable_factory_name, path, imageable_p
       click_on submit_button
       imageable_redirected_to_resource_show_or_navigate_to
 
-      if has_many_images
-        # Pending. Review soon and test
-      else
-        expect(page).to have_selector "figure img"
-        expect(page).to have_selector "figure figcaption"
-      end
+      expect(page).to have_selector "figure img"
+      expect(page).to have_selector "figure figcaption"
     end
 
     if path.include? "edit"
@@ -226,7 +212,7 @@ rescue
   return
 end
 
-def imageable_attach_new_file(_imageable_factory_name, path, success = true)
+def imageable_attach_new_file(imageable_factory_name, path, success = true)
   click_link "Add image"
   within "#nested-image" do
     image = find(".image")

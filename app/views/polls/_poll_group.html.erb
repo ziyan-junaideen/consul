@@ -1,49 +1,57 @@
 <% poll_group.each do |poll| %>
-  <div class="poll with-image">
-    <% if user_signed_in? && !current_user.unverified? && !poll.votable_by?(current_user) %>
+  <div class="poll">
+    <% if poll.answerable_by?(current_user) && poll.votable_by?(current_user) %>
+      <%= link_to poll,
+              class: "icon-poll-answer can-answer",
+              title: t("polls.index.can_answer") do %>
+          <span class="show-for-sr">
+            <%= t("polls.index.can_answer") %>
+          </span>
+      <% end %>
+    <% elsif current_user.nil? %>
+      <%= link_to new_user_session_path,
+              class: "icon-poll-answer not-logged-in",
+              title: t("polls.index.cant_answer_not_logged_in") do %>
+          <span class="show-for-sr">
+            <%= t("polls.index.cant_answer_not_logged_in") %>
+          </span>
+      <% end %>
+    <% elsif current_user.unverified? %>
+      <%= link_to verification_path,
+                  class: "icon-poll-answer unverified",
+                  title: t("polls.index.cant_answer_verify") do %>
+          <span class="show-for-sr">
+            <%= t("polls.index.cant_answer_verify") %>
+          </span>
+      <% end %>
+    <% elsif !poll.votable_by?(current_user) %>
       <div class="icon-poll-answer already-answer" title="<%= t("polls.index.already_answer") %>">
         <span class="show-for-sr"><%= t("polls.index.already_answer") %></span>
       </div>
+    <% else %>
+      <div class="icon-poll-answer cant-answer" title="<%= t("polls.index.cant_answer") %>">
+        <span class="show-for-sr"><%= t("polls.index.cant_answer") %></span>
+      </div>
     <% end %>
-    <div class="row" data-equalizer data-equalize-on="medium">
-      <div class="small-12 medium-3 column">
-        <div class="image-container" data-equalizer-watch>
-          <% if poll.image.present? %>
-            <%= image_tag poll.image_url(:large), alt: poll.image.title %>
-          <% else %>
-            <div class="no-image"></div>
-          <% end %>
-        </div>
+    <div class="row" data-equalizer>
+      <div class="small-12 medium-3 column" data-equalizer-watch>
+        <!-- PENDING TO REPLACE THIS BLOCK WITH POLL MAIN IMAGE -->
+        <div style="background: #eee; width: 100%; height: 100%; display: block; margin: -12px;">&nbsp;</div>
+        <!-- /. PENDING TO REPLACE THIS BLOCK WITH POLL MAIN IMAGE -->
       </div>
       <div class="small-12 medium-6 column" data-equalizer-watch>
         <div class="dates"></div>
         <% if poll.questions.count == 1 %>
           <% poll.questions.each do |question| %>
-            <h4>
-              <% if poll.results_enabled? %>
-                <%= link_to question.title, results_poll_path(poll) %>
-              <% elsif poll.stats_enabled? %>
-                <%= link_to question.title, stats_poll_path(poll) %>
-              <% else %>
-                <%= link_to question.title, poll %>
-              <% end %>
-            </h4>
+            <h4><%= link_to question.title, poll %></h4>
             <%= poll_dates(poll) %>
           <% end %>
         <% else %>
-          <h4>
-            <% if poll.results_enabled? %>
-              <%= link_to poll.name, results_poll_path(poll) %>
-            <% elsif poll.stats_enabled? %>
-                <%= link_to poll.name, stats_poll_path(poll) %>
-            <% else %>
-              <%= link_to poll.name, poll %>
-            <% end %>
-          </h4>
+          <h4><%= link_to poll.name, poll %></h4>
           <%= poll_dates(poll) %>
           <ul class="margin-top">
             <% poll.questions.each do |question| %>
-              <li><%= question.title %></li>
+              <li><%= link_to question.title, question_path(question) %></li>
             <% end %>
           </ul>
         <% end %>

@@ -14,7 +14,9 @@
     <div class="small-12 column">
       <table>
         <tbody>
-          <%= render partial: "documents/document", collection: documents %>
+          <% documents.each do |document| %>
+            <%= render "documents/document", document: document %>
+          <% end %>
         </tbody>
       </table>
     </div>
