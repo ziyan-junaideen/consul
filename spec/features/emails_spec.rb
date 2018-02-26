@@ -495,6 +495,8 @@ feature 'Emails' do
 
     scenario "Send newsletter email to selected users" do
       admin = create(:administrator)
+      2.times { create(:user) }
+
       login_as(admin.user)
 
       visit new_admin_newsletter_path
