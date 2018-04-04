@@ -17,7 +17,7 @@ before_script:
 - bundle exec rake db:setup
 script:
 - "bundle exec rake assets:precompile RAILS_ENV=test > /dev/null 2>&1"
-- "bin/rspec --profile"
+- "bin/knapsack_pro_rspec[--profile]"
 env:
   global:
   - KNAPSACK_PRO_FIXED_QUEUE_SPLIT=true
