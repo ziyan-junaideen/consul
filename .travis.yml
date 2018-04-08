@@ -17,11 +17,11 @@ before_script:
 - bundle exec rake db:setup
 script:
 - "bundle exec rake assets:precompile RAILS_ENV=test > /dev/null 2>&1"
-- "bin/knapsack_pro_rspec[--format documentation]"
+- "bin/knapsack_pro_rspec"
 env:
   global:
   - KNAPSACK_PRO_FIXED_QUEUE_SPLIT=true
-  - KNAPSACK_PRO_LOG_LEVEL=info
+  - KNAPSACK_PRO_LOG_LEVEL=debug
   - KNAPSACK_PRO_CI_NODE_TOTAL=2
   matrix:
   - KNAPSACK_PRO_CI_NODE_INDEX=0
