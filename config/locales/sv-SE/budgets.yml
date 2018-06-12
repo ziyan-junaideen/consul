@@ -1,0 +1,72 @@
+sv:
+  budgets:
+    ballots:
+      show:
+        title: Din valsedel
+        amount_spent: Spenderat belopp
+        remaining: "Du har fortfarande <span>%{amount}</span> att investera."
+        no_balloted_group_yet: "Du har inte röstat på denna grupp ännu, gå och rösta!"
+        remove: Ta bort röst
+        voted_html:
+          one: "Du har röstat <span></span> investeringar."
+          other: "Du har röstat <span>%{count}</span> investeringar."
+        voted_info_html: "Du kan ändra din röst på någon tid förrän i slutet av den här fasen.<br> Inget behov av att spendera alla pengar du har tillgängliga."
+        zero: Har du inte röstat i ett investeringsprojekt.
+      reasons_for_not_balloting:
+        not_logged_in: Du måste %{signin} eller %{signup} för att kunna lämna en kommentar.
+        not_verified: Endast godkända användare kan rösta om investeringar; %{verify_account}.
+        organization: Organisationer är inte tillåtna att rösta
+        not_selected: Omarkerade investeringsprojekt som inte stöds
+        not_enough_money_html: "Du har redan tilldelat den tillgängliga budgeten.<br><small>kom ihåg att du kan %{change_ballot} när som helst</small>"
+        no_ballots_allowed: Vald fas är stängd
+        different_heading_assigned_html: "Du har redan röstat under en annan rubrik: %{heading_link}"
+        change_ballot: ändra dina röster
+    groups:
+      show:
+        title: Välj ett alternativ
+        unfeasible_title: Ogenomförbara investeringar
+        unfeasible: Se ogenomförbara investeringar
+        unselected_title: Investeringar inte valda för lottningsfast
+        unselected: Se investeringar som inte valts för lottningsfas
+    phase:
+      drafting: Utkast (inte synligt för allmänheten)
+      accepting: Accepterar projekt
+      reviewing: Granskar projekt
+      selecting: Väljer projekt
+      valuating: Värderar projekt
+      publishing_prices: Publicerar projektpriser
+      finished: Färdig budget
+    index:
+      title: Medborgarbudgetar
+      empty_budgets: Det finns inga budgetar.
+      section_header:
+        icon_alt: Medborgarbudgetssymbol
+        title: Medborgarbudget
+        help: Hjälp med medborgardeltagande budgetar
+        all_phases: Se alla faser
+      all_phases: Budget investerings faser
+      map: Budget investeringars förslag ligger geografiskt
+      investment_proyects: Lista över investeringsprojekt
+      unfeasible_investment_proyects: Lista över ogenomförbara investeringsprojekt
+      not_selected_investment_proyects: Lista över investeringsprojekt som inte valts till lottning
+      finished_budgets: Färdiga medborgarbudgetar
+      see_results: Se resultat
+      section_footer:
+        title: Hjälp med medborgarbudgetar
+        description: Med medborgarbudgeterna kan medborgarna hantera den kommunala budgeten genom att rösta på investeringsprojekt.
+    investments:
+      form:
+        tags_label: Taggar
+      index:
+        search_form:
+          button: Sök
+          title: Sök
+      show:
+        share: Dela
+        votes: Röster
+        price: Kostnad
+    show:
+      group: Grupp
+      phase: Aktuell fas
+    results:
+      price: Kostnad
