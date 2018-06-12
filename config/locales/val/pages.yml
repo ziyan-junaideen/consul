@@ -11,6 +11,7 @@ val:
     verify:
       code: Codi que has rebut en la teua carta
       email: Correu electrònic
+      info: 'Per a verificar el teu compte introdueix les dades amb les que et vas registrar:'
       info_code: 'Ara introdueix el codi que has rebut en la teua carta:'
       password: Contrasenya
       submit: Verificar el meu compte
