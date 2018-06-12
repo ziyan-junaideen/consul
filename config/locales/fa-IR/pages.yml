@@ -1,0 +1,27 @@
+fa:
+  pages:
+    general_terms: شرایط و ضوابط
+    help:
+      menu:
+        debates: "مباحثه"
+        proposals: "طرح های پیشنهادی"
+        budgets: "بودجه مشارکتی"
+        polls: "نظر سنجی ها"
+        other: "اطلاعات دیگر مورد علاقه"
+        processes: "روندها\n"
+      debates:
+        title: "مباحثه"
+        link: "بحث های شهروند"
+      proposals:
+        title: "طرح های پیشنهادی"
+      polls:
+        title: "نظر سنجی ها"
+      processes:
+        title: "روندها\n"
+        link: "روندها\n"
+      faq:
+        page:
+          faq_1_title: "سوال 1"
+    verify:
+      email: پست الکترونیکی
+      password: رمز عبور
