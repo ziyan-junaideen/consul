@@ -1,0 +1,12 @@
+nl:
+  legislation:
+    annotations:
+      comments:
+        see_all: Alles tonen
+    processes:
+      index:
+        section_footer:
+          help_text_1: "In participatieprocessen biedt de overheid burgers de mogelijkheid deel te nemen aan het opstellen en wijzigen van verordeningen en de mogelijkheid te reageren op plannen die zij voornemens is te verrichten."
+    questions:
+      participation:
+        unauthenticated: U moet zijn ingelogd om te kunnen deelnemen.
