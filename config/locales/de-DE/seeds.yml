@@ -1,0 +1,30 @@
+de:
+  seeds:
+    organizations:
+      human_rights: Menschenrechte
+    categories:
+      associations: Verbände
+      culture: Kultur
+      sports: Sport
+      social_rights: Soziale Rechte
+      economy: Wirtschaft
+      employment: Beschäftigung
+      sustainability: Nachhaltigkeit
+      participation: Teilnahme
+      mobility: Mobilität
+      media: Medien
+      health: Gesundheit
+      transparency: Transparenz
+      security_emergencies: Sicherheit und Notfälle
+      environment: Umgebung
+    budgets:
+      currency: '€'
+      groups:
+        all_city: Alle Städte
+        districts: Bezirke
+    polls:
+      current_poll: "Aktuelle Umfrage"
+      incoming_poll: "Eingehende Umfrage"
+      recounting_poll: "Umfrage wiederholen"
+      expired_poll_without_stats: "Abgelaufene Umfrage ohne Statistiken und Ergebnisse"
+      expired_poll_with_stats: "Abgelaufene Umfrage mit Statistiken und Ergebnisse"
