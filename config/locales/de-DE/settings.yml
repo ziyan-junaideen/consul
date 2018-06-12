@@ -1,0 +1,20 @@
+de:
+  settings:
+    months_to_archive_proposals: "Monate, um Vorschläge zu archivieren"
+    twitter_handle: "Twitter handle"
+    twitter_hashtag: "Twitter hashtag"
+    facebook_handle: "Facebook handle"
+    youtube_handle: "Youtube handle"
+    telegram_handle: "Telegram handle"
+    instagram_handle: "Instagram handle"
+    blog_url: "Blog URL"
+    feature:
+      twitter_login: Twitter login
+      facebook_login: Facebook login
+      google_login: Google login
+      proposals: Vorschläge
+      debates: Diskussionen
+      polls: Umfragen
+    map_zoom: Zoom
+    mailer_from_address: Herkunft-E-Mailadresse
+    min_age_to_participate: erforderliches Mindestalter zur Teilnahme
