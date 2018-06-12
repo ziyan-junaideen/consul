@@ -1,0 +1,53 @@
+it:
+  mailers:
+    no_reply: "Questo messaggio è stato inviato da un indirizzo di posta elettronica che non accetta risposte."
+    comment:
+      hi: Salve
+      new_comment_by_html: C'è un nuovo commento da <b>%{commenter}</b>
+      subject: Qualcuno ha commentato sul tuo %{commentable}
+      title: Nuovo commento
+    config:
+      manage_email_subscriptions: Per non ricevere più queste email, modifica le impostazioni
+    email_verification:
+      click_here_to_verify: questo link
+      instructions_2_html: Questa e-mail consente di verificare il tuo account con <b>%{document_type} %{document_number}</b>. Se questi documenti non ti appartengono, non cliccare sul link precedente e ignorare questa email.
+      instructions_html: Per completare la verifica dell'account utente, è necessario fare clic %{verification_link}.
+      thanks: Grazie.
+      title: Conferma il tuo account utilizzando il seguente link
+    reply:
+      new_reply_by_html: C'è una nuova risposta da <b>%{commenter}</b> per il tuo commento su
+      subject: Qualcuno ha risposto al tuo commento
+      title: Nuova risposta al tuo commento
+    unfeasible_spending_proposal:
+      hi: "Gentile utente,"
+      new_href: "nuovo progetto di investimento"
+      sincerely: "Cordiali saluti"
+      sorry: "Ci scusiamo per l'inconveniente e ancora grazie per la tua preziosa partecipazione."
+      subject: "Il tuo progetto di investimento '%{code}' è stato contrassegnato come non realizzabile"
+    proposal_notification_digest:
+      share: Condividi la proposta
+      comment: Commenta la proposta
+      unsubscribe_account: La mia utenza
+    direct_message_for_receiver:
+      subject: "Hai ricevuto un nuovo messaggio privato"
+      reply: Rispondere a %{sender}
+    direct_message_for_sender:
+      subject: "Hai inviato un nuovo messaggio privato"
+      title_html: "Hai inviato un nuovo messaggio privato a <strong>%{receiver}</strong> con il contenuto:"
+    user_invite:
+      ignore: "Se non hai richiesto questo invito non ti preoccupare, puoi ignorare questa email."
+      text: "Grazie per la richiesta di adesione %{org}! Tra poco ti sarà possibile iniziare a decidere sui progetti della città, basta compilare il modulo qui sotto:"
+      title: "Benvenuto/a a %{org}"
+      button: Completare la registrazione
+    budget_investment_created:
+      follow_link: "Bilanci partecipativi"
+      sincerely: "Cordiali saluti"
+      share: "Condividi il tuo progetto"
+    budget_investment_selected:
+      subject: "Il tuo progetto di investimento '%{code}' è stato selezionato"
+      share: "Per iniziare a ottenere voti, condividi il tuo progetto di investimento sui social network. Solo così potrai vederlo realizzato!"
+      share_button: "Condividi il tuo progetto di investimento"
+      thanks: "Grazie ancora per aver partecipato."
+      sincerely: "Cordiali saluti"
+    budget_investment_unselected:
+      subject: "Il tuo progetto di investimento '%{code}' è stato selezionato"
