@@ -1,0 +1,35 @@
+nl:
+  seeds:
+    settings:
+      official_level_1_name: Ambtenaren
+      official_level_2_name: Overheidsorganisatie
+      official_level_3_name: Directeuren
+      official_level_4_name: Raadsleden
+      official_level_5_name: Burgemeester
+    geozones:
+      north_district: Noordelijke regio
+      west_district: Westelijke regio
+      east_district: Oostelijke regio
+      central_district: Centrum
+    organizations:
+      human_rights: Mensenrechten
+    categories:
+      culture: Cultureel
+      sports: Sport
+      social_rights: Sociale voorzieningen
+      economy: Economie
+      employment: Werkgelegenheid
+      equity: Gelijkwaardigheid
+      sustainability: Duurzaamheid
+      participation: Participatie
+      mobility: Mobiliteit
+      media: Media
+      health: Gezondheid
+      transparency: Transparantie
+      security_emergencies: Veiligheid
+      environment: Milieu
+    budgets:
+      budget: Budget
+      currency: '€'
+      groups:
+        all_city: Hele gemeente
