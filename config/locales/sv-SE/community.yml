@@ -1,0 +1,49 @@
+sv:
+  community:
+    sidebar:
+      title: Gemenskap
+      description:
+        proposal: Delta i gemenskapen kring detta förslag.
+        investment: Delta i gemenskapen kring denna investering.
+      button_to_access: Gå med i gemenskapen
+    show:
+      title:
+        proposal: Gemenskap kring förslaget
+        investment: Gemenskap kring investeringen
+      description:
+        proposal: Delta i gemenskapen kring förslaget. En aktiv gemenskap kan förbättra innehållet i förslaget, göra det mer känt och öka dess stöd.
+        investment: Delta i gemenskapen kring investeringen. En aktiv gemenskap kan förbättra innehållet i investeringen, göra det mer känt och öka dess stöd.
+      create_first_community_topic:
+        first_theme: Skapa det första ämnet i gemenskapen
+      tab:
+        participants: Deltagare
+      sidebar:
+        participate: Delta
+        new_topic: Skapa ämne
+      topic:
+        comments:
+          zero: Inga kommentarer
+    topic:
+      create: Skapa ett ämne
+      edit: Redigera ämne
+      form:
+        topic_title: Titel
+        new:
+          submit_button: Skapa ämne
+        edit:
+          submit_button: Redigera ämne
+        create:
+          submit_button: Skapa ämne
+        update:
+          submit_button: Uppdatera ämne
+      show:
+        tab:
+          comments_tab: Kommentarer
+      sidebar:
+        recommendations_title: Rekommendationer om att skapa ett ämne
+        recommendation_one: Skriv inte ämnets titel eller hela meningar med stora bokstäver. På nätet ses det som att skrika. Det är ingen som gillar att man skriker åt dem.
+        recommendation_two: Alla ämnen eller kommentarer som innebär en olaglig åtgärd kommer att tas bort, liksom de som saboterar ämnet. Allt annat är tillåtet.
+        recommendation_three: Platsen är din med - du ska kunna trivas och göra dig hörd här.
+  topics:
+    show:
+      login_to_comment: Du måste %{signin} eller %{signup} för att kunna lämna en kommentar.
