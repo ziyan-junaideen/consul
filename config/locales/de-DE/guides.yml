@@ -1,0 +1,8 @@
+de:
+  guides:
+    title: "Haben Sie eine Idee für %{org}?"
+    subtitle: "Was möchten Sie eröffnen"
+    proposal:
+      title: "Ein Bürgervorschlag"
+      feature_4_html: "Wenn in einer Abstimmung genehmigt, akzeptiert der Stadtrat den Vorschlag"
+      new_button: Ich möchte einen Vorschlag erstellen
