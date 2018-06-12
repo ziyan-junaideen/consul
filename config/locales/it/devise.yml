@@ -1,0 +1,30 @@
+it:
+  devise:
+    password_expired:
+      expire_password: "Password scaduta"
+      change_required: "La password è scaduta"
+      change_password: "Cambiare la password"
+      new_password: "Nuova password"
+      updated: "Password aggiornata correttamente"
+    confirmations:
+      confirmed: "Il tuo account è stato confermato."
+      send_instructions: "Tra pochi minuti riceverai un'e-mail contenente le istruzioni su come reimpostare la password."
+      send_paranoid_instructions: "Se il tuo indirizzo email è nel nostro archivio, in pochi minuti riceverai un'e-mail contenente le istruzioni su come reimpostare la password."
+    failure:
+      already_authenticated: "Sei già iscritto."
+      inactive: "Il tuo account non è ancora stato attivato."
+      invalid: "%{authentication_keys} o password non validi."
+      locked: "Il tuo account è stato bloccato."
+      last_attempt: "Hai sono un altro tentativo prima che il tuo account sia bloccato."
+      timeout: "La sessione è scaduta. Per favore accedi nuovamente per continuare."
+    mailer:
+      confirmation_instructions:
+        subject: "Istruzioni di conferma"
+      reset_password_instructions:
+        subject: "Istruzioni per reimpostare la password"
+      unlock_instructions:
+        subject: "Istruzioni di sblocco"
+    omniauth_callbacks:
+      success: "Correttamente identificato come %{kind}."
+    registrations:
+      signed_up: "Benvenuto! Sei stato autenticato."
