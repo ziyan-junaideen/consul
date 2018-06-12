@@ -1,0 +1,29 @@
+de:
+  officing:
+    header:
+      title: Umfrage
+    polls:
+      final:
+        select_poll: Umfrage auswählen
+        add_results: Ergebnisse hinzufügen
+    results:
+      flash:
+        create: "Ergebnisse speichern"
+        error_create: "Ergebnisse wurden nicht gespeichert. Fehler."
+      new:
+        date: "Datum"
+        submit: "Speichern"
+        results_list: "Ihre Ergebnisse"
+        see_results: "Ergebnisse anzeigen"
+      index:
+        no_results: "Keine Ergebnisse"
+        results: Ergebnisse
+        table_answer: Antwort
+        table_votes: Bewertung
+    voters:
+      new:
+        title: Umfragen
+        table_poll: Umfrage
+        table_status: Status Umfrage
+      can_vote:
+        submit_disable_with: "Warten, Abstimmung bestätigen..."
