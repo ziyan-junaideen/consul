@@ -183,6 +183,7 @@ val:
         status: Estat
         title: Títol
         updated_at: Actualitzada el
+        more_info_flag: Mostra a la pàgina de més informació
         print_content_flag: Botó d'imprimir contingut
         locale: Llengua
       site_customization/image:
