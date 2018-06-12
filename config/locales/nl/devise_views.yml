@@ -1,9 +1,7 @@
----
 nl:
   devise_views:
     confirmations:
       new:
-        email_label: Email
         submit: Stuur instructies opnieuw
         title: Stuur bevestiging instructies opnieuw
       show:
@@ -40,7 +38,6 @@ nl:
     organizations:
       registrations:
         new:
-          email_label: Email
           organization_name_label: Naam van organisatie
           password_confirmation_label: Bevestig wachtwoord
           password_label: Wachtwoord
@@ -63,12 +60,10 @@ nl:
         password_label: Nieuw wachtwoord
         title: Verander uw wachtwoord
       new:
-        email_label: Email
         send_submit: Stuur instructies
         title: Wachtwoord vergeten?
     sessions:
       new:
-        email_label: Email
         password_label: Wachtwoord
         remember_me: Onthoud mij
         submit: Ok
@@ -84,7 +79,6 @@ nl:
         signup_link: Aanmelden
     unlocks:
       new:
-        email_label: Email
         submit: Stuur de-blokker instructies opnieuw.
         title: Stuur de-blokker instructies
     users:
@@ -98,7 +92,6 @@ nl:
         edit:
           current_password_label: Huidig wachtwoord
           edit: Toegangsgegevens aanpassen
-          email_label: Email
           leave_blank: Laat leeg als u het niet wilt aanpassen
           need_current: Uw huidige wachtwoord ter bevestiging van de veranderingen
           password_confirmation_label: Bevestig nieuw wachtwoord
@@ -106,8 +99,6 @@ nl:
           update_submit: Pas aan
           waiting_for: 'In afwachting van bevestiging:'
         new:
-          cancel: Cancel login
-          email_label: Email
           organization_signup: Vertegenwoordigd u een organisatie of collectief? %{signup_link}
           organization_signup_link: Hier aanmelden
           password_confirmation_label: Bevestig wachtwoord
@@ -118,8 +109,8 @@ nl:
           terms_link: voorwaarden van gebruik
           terms_title: Met aanmelding accepteerd u de voorwaarden van gebruik
           title: Aanmelden
-          username_is_available: "Gebruikersnaam is beschikbaar"
-          username_is_not_available: "Gebruikersnaam is bezet"
+          username_is_available: Gebruikersnaam is beschikbaar
+          username_is_not_available: Gebruikersnaam is bezet
           username_label: Gebruikersnaam
           username_note: De naam bij uw bijdragen
         success:
