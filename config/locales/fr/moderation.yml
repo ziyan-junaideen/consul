@@ -1,12 +1,9 @@
----
 fr:
   moderation:
-    header:
-      title: Modération
     comments:
       index:
         block_authors: Bloquer un auteur
-        confirm: "Êtes-vous sûr(e) ?"
+        confirm: Êtes-vous sûr(e) ?
         filter: Filtrer
         filters:
           all: Tous
@@ -28,7 +25,7 @@ fr:
     debates:
       index:
         block_authors: Bloquer un auteur
-        confirm: "Êtes-vous sûr(e) ?"
+        confirm: Êtes-vous sûr(e) ?
         filter: Filtrer
         filters:
           all: Tous
@@ -44,6 +41,8 @@ fr:
           created_at: Les plus récents
           flags: Les plus signalés
         title: Débats
+    header:
+      title: Modération
     menu:
       flagged_comments: Commentaires
       flagged_debates: Débats
@@ -52,7 +51,7 @@ fr:
     proposals:
       index:
         block_authors: Bloquer un auteur
-        confirm: "Êtes-vous sûr(e) ?"
+        confirm: Êtes-vous sûr(e) ?
         filter: Filtrer
         filters:
           all: Tous
