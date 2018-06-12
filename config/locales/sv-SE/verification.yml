@@ -1,0 +1,67 @@
+sv:
+  verification:
+    alert:
+      lock: Du har nått det maximala antalet försök. Vänligen försök igen senare.
+    back: Återvänd till mitt konto
+    email:
+      create:
+        alert:
+          failure: Det gick inte att skicka e-postmeddelandet till ditt konto
+        flash:
+          success: 'Vi har skickat ett bekräftelsemail till ditt konto: %{email}'
+      show:
+        alert:
+          failure: Verifieringskoden är felaktig
+        flash:
+          success: Du är en verifierad användare
+    letter:
+      alert:
+        unconfirmed_code: Du har inte angett bekräftelsekoden ännu
+      create:
+        flash:
+          offices: Citizen Support Offices
+          success_html: Tack för att du begärde din <b> högsta säkerhetskod (krävs endast för slutliga röster) </b>. Om några dagar skickar vi det till adressen med de data vi har på filen. Kom ihåg att du kan samla din kod från något av %{offices}.
+      edit:
+        see_all: Se förslag
+        title: Brev begärt
+      errors:
+        incorrect_code: Verifieringskoden är felaktig
+      new:
+        go_to_index: Se förslag
+        office: Verifiera i någon %{office}
+        offices: Citizen Support Offices
+        send_letter: Skicka mig ett brev med koden
+        title: Grattis!
+        user_permission_info: Med ditt konto kan du...
+      update:
+        flash:
+          success: Kod korrekt. Ditt konto är nu verifierat
+    redirect_notices:
+      already_verified: Ditt konto är redan verifierat
+    residence:
+      new:
+        date_of_birth: Födelsedatum
+        document_number: Dokumentnummber
+        document_number_help_title: Hjälp
+        document_type:
+          passport: Pass
+          residence_card: Uppehållskort
+          spanish_id: Dagar
+        document_type_label: Dokumenttyp
+        error_not_allowed_age: Du har inte åldern som krävs för att delta
+        error_not_allowed_postal_code: Du måste vara registrerad för att kunna verifieras.
+        error_verifying_census_offices: Citizen Support Office
+        postal_code: Postnummer
+        postal_code_note: För att verifiera ditt konto måste du vara registrerad
+        terms: villkoren för tillträde
+        title: Verifiera uppehållstillstånd
+        verify_residence: Verifiera uppehållstillstånd
+    sms:
+      edit:
+        resend_sms_link: Klicka här för att skicka det igen
+        resend_sms_text: Fick du inte en text med din bekräftelsekod?
+        submit_button: Skicka
+        title: Bekräfta säkerhetskod
+      new:
+        phone: Ange ditt mobilnummer för att ta emot koden
+        submit_button: Skicka
