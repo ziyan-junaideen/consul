@@ -1,0 +1,105 @@
+it:
+  budgets:
+    ballots:
+      show:
+        title: Il tuo voto
+        amount_spent: Importo speso
+        remaining: "Hai ancora <span>%{amount}</span> da investire."
+        no_balloted_group_yet: "Non hai ancora votato in questo gruppo, vota!"
+        remove: Rimuovere il voto
+        voted_html:
+          one: "Hai votato <span>un</span> progetto di investimento."
+          other: "Hai votato <span>%{count}</span> progetti di investimento."
+        voted_info_html: "È possibile cambiare il proprio voto in qualsiasi momento fino alla fine di questa fase. <br> Non è necessario spendere tutti i fondi disponibili."
+      reasons_for_not_balloting:
+        not_logged_in: È necessario %{signin} o %{signup} per continuare.
+        not_verified: Solo gli utenti verificati possono votare gli investimenti; %{verify_account}.
+        organization: Le organizzazioni non sono ammesse a votare
+        no_ballots_allowed: Fase di selezione è chiusa
+        change_ballot: cambiare il tuo voto
+    groups:
+      show:
+        title: Selezionare un'opzione
+        unfeasible_title: Progetti di investimento irrealizzabili
+        unfeasible: Mostrare gli investimenti irrealizzabili
+        unselected_title: Investimenti che non sono stati selezionati per la fase di voto
+        unselected: Mostrare gli investimenti non selezionati per la fase di voto
+    phase:
+      accepting: Presentazione dei progetti
+      reviewing: Revisione interna dei progetti
+      selecting: Selezione dei progetti
+      valuating: Valutazione dei progetti
+      finished: Risultati
+    index:
+      title: Bilanci partecipativi
+    investments:
+      form:
+        tag_category_label: "Categorie"
+        tags_instructions: "Taggare questa proposta. Si può scegliere tra le categorie riportate oppure aggiungerne una"
+        tags_label: Tag
+        tags_placeholder: "Inserisci i tag che desideri utilizzare, separati da virgole (',')"
+      index:
+        title: Bilancio partecipativo
+        unfeasible: Progetti di investimento irrealizzabili
+        by_heading: "Progetti di investimento con ambito di applicazione: %{heading}"
+        search_form:
+          placeholder: Ricercare progetti di investimento...
+        sidebar:
+          my_ballot: I miei voti
+          voted_html:
+            one: "<strong>Hai votato una proposta con un costo di %{amount_spent}</strong>"
+            other: "<strong>Hai votato %{count} proposte con un costo di %{amount_spent}</strong>"
+          voted_info: È possibile %{link} in qualsiasi momento fino alla fine di questa fase. Non è necessario spendere tutti i fondi disponibili.
+          voted_info_link: cambiare il tuo voto
+          change_ballot: "Se cambi idea è possibile cancellare il tuo voto in %{check_ballot} e ricominciare da capo."
+          check_ballot_link: "controllare il mio voto"
+          verified_only: "Per creare un nuovo budget d'investimento %{verify}."
+          verify_account: "verifica la tua utenza"
+          not_logged_in: "Per creare un nuovo investimento di bilancio è necessario %{sign_in} o %{sign_up}."
+          sign_in: "accedere"
+          by_feasibility: Per fattibilità
+          feasible: Progetti realizzabili
+          unfeasible: Progetti non realizzabili
+        orders:
+          random: casuale
+          confidence_score: più apprezzate
+          price: per costi
+      show:
+        author_deleted: Utente cancellato
+        price_explanation: Informazioni sui costi
+        unfeasibility_explanation: Informazioni sulla infattibilità
+        code_html: 'Codice del progetto di investimento: <strong>%{code}</strong>'
+        location_html: 'Ubicazione: <strong>%{location}</strong>'
+        share: Condividere
+        title: Progetto di investimento
+        supports: Supporti
+        votes: Voti
+        price: Costi
+        no_milestones: Non ci sono traguardi-milestone definiti
+      wrong_price_format: Solo numeri interi
+      investment:
+        add: Votare
+        already_added: Hai già aggiunto questo progetto di investimento
+        support_title: Sostenere questo progetto
+        supports:
+          zero: Non supporta
+          one: 1 supporto
+          other: "supporta %{count}"
+        give_support: Sostenere
+      header:
+        check_ballot: Controllare il mio voto
+        different_heading_assigned_html: "Hai attivi voti in un'altra voce: %{heading_link}"
+    show:
+      group: Gruppo
+      phase: Fase attuale
+      see_results: Vedere i risultati
+    results:
+      page_title: "%{budget} - risultati"
+      heading: "Risultati per il bilancio partecipativo"
+      spending_proposal: Titolo della proposta
+      hide_discarded_link: Nascondere le scartate
+      show_all_link: Visualizzare tutti
+      amount_available: Budget disponibile
+      accepted: "Proposta di spesa accettata: "
+      discarded: "Proposta di spesa scartata: "
+      incompatibles: Incompatibili
