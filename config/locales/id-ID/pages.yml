@@ -1,0 +1,84 @@
+id:
+  pages:
+    census_terms: Untuk mengkonfirmasi akun, anda harus berusia 16 tahun ke atas dan terdaftar, setelah memberikan informasi yang diminta sebelumnya, akan melakukan verifikasi. Dengan menerima proses verifikasi, anda juga menyetujui verifikasi informasi ini, serta metode kontak yang ada di berkas tersebut. Data yang diberikan akan diperoleh dan diproses dalam berkas yang disebutkan sebelumnya dalam syarat dan ketentuan penggunaan untuk Portal.
+    conditions: Syarat dan ketentuan penggunaan
+    general_terms: Syarat dan ketentuan
+    help:
+      title: "%{org} adalah platform untuk partisipasi warga"
+      subtitle: "Di %{org} anda dapat membuat usulan, memberikan suara dalam konsultasi warga, mengusulkan proyek anggaran partisipatif, memutuskan peraturan kota dan membuka perdebatan untuk saling bertukar pendapat dengan orang lain."
+      guide: "Panduan ini menjelaskan apa masing-masing bagian %{org} dan bagaimana mereka bekerja."
+      menu:
+        debates: "Perdebatan"
+        proposals: "Usulan"
+        budgets: "Anggaran partisipatif"
+        other: "Informasi lain yang menarik"
+      debates:
+        title: "Perdebatan"
+        description: "Di bagian %{link} anda dapat hadir dan berbagi pendapat dengan orang lain mengenai masalah yang menjadi perhatiananda terkait dengan kota. Ini juga merupakan tempat untuk menghasilkan gagasan bahwa melalui bagian lain dari %{org} mengarah pada tindakan nyata oleh Dewan Kota."
+        link: "perdebatan warga"
+        feature_html: "Anda bisa membuka perdebatan, berkomentar dan menilainya dengan <strong>saya setuju</strong> atau <strong> Saya tidak setuju </strong>. Untuk itu anda harus %{link}."
+        feature_link: "mendaftar masuk %{org}"
+        image_alt: "Tombol untuk menilai perdebatan"
+        figcaption: '"Saya setuju" dan "Saya tidak setuju" untuk menilai debat.'
+      proposals:
+        title: "Usulan"
+        description: "Di bagian %{link} anda dapat membuat usulan agar Dewan Kota dapat melaksanakannya. Usulan tersebut memerlukan dukungan, dan jika mendapat dukungan memadai, mereka diminta untuk memberikan suara secara terbuka. Usulan yang disetujui dalam suara warga negara ini diterima oleh Dewan Kota dan dilaksanakan."
+        link: "usulan warga"
+        feature_html: "Untuk membuat proposal anda harus mendaftar di %{org}. Usulan yang mendapat dukungan di situs web 1% orang dengan hak untuk memilih (%{supports} mendukung orang berusia di atas 16 tahun yang terdaftar) pergi untuk memilih. Untuk mendukung usulan, penting untuk memverifikasi akun anda."
+        image_alt: "Tombol untuk mendukung sebuah usulan"
+        figcaption_html: 'Tombol untuk "Mendukung" sebuah usulan.<br>Ketika mencapai jumlah dukungan akan memilih.'
+      budgets:
+        title: "Penganggaran Partisipatif"
+        description: "Bagian %{link} membantu orang membuat keputusan langsung mengenai bagian anggaran kota mana yang dibelanjakan."
+        link: "anggaran partisipatif"
+        feature: "Dalam proses ini, setiap tahun orang meningkatkan, mendukung dan memberikan suara pada proyek. Suara yang paling banyak dipilih didanai oleh anggaran kota."
+        phase_1_html: "Antara Januari dan awal Maret, orang yang terdaftar di %{org} bisa <strong>menyajikan</strong>."
+        phase_2_html: "Pada bulan Maret, pengusul harus mengumpulkan dukungan, dalam bentuk <strong> preseleksi </strong>."
+        phase_3_html: "Antara bulan April dan awal Mei, para ahli dari <strong> tingkat Dewan Kota </strong> memesan lebih dari atau kurang didukung dan memastikan bahwa mereka layak dilakukan."
+        phase_4_html: "Akhirnya, antara bulan Mei dan Juni, semua warga negara dapat <strong>memilih</strong> proyek yang paling menarik perhatian mereka."
+        phase_5_html: "Dari persetujuan anggaran tahun berikutnya Dewan Kota mulai melaksanakan proyek pemenang."
+        image_alt: "Fase yang berbeda dari anggaran partisipatif"
+        figcaption_html: 'Tahap "Dukungan" dan "Pemungutan suara" dari anggaran partisipatif.'
+      polls:
+        title: "Jajak pendapat"
+        description: "Bagian %{link} diaktifkan setiap kali sebuah proposal mencapai 1% dukungan dan pergi ke pemungutan suara atau saat Dewan Kota mengajukan sebuah masalah kepada masyarakat untuk diputuskan."
+        link: "jajak pendapat"
+        feature_1: "Untuk berpartisipasi dalam pemungutan suara anda harus %{link} dan memverifikasi akun anda."
+        feature_1_link: "mendaftar masuk %{org_name}"
+        feature_2: "Semua pemilih terdaftar berusia di atas 16 tahun dapat memilih."
+        feature_3: "Hasil semua suara mengikat pemerintah kota."
+      faq:
+        title: "Masalah teknis?"
+        description: "Baca Tanya Jawab dan selesaikan pertanyaan anda."
+        button: "Lihat pertanyaan yang sering diajukan"
+        page:
+          title: "Pertanyaan yang Sering Diajukan"
+          description: "Gunakan halaman ini untuk menyelesaikan FAQ umum bagi pengguna situs."
+          faq_1_title: "Pertanyaan 1"
+          faq_1_description: "Ini adalah contoh untuk deskripsi pertanyaan."
+      other:
+        title: "Informasi lain yang menarik"
+        how_to_use: "Gunakan %{org_name} di kota anda"
+      how_to_use:
+        text: |-
+          Menggunakannya dalam pemerintah setempat atau membantu kami untuk meningkatkan hal itu, itu adalah perangkat lunak bebas.
+          
+          
+          Portal Pemerintah Terbuka ini menggunakan aplikasi [CONSUL] (https://github.com/consul/consul 'consul github') yaitu perangkat lunak bebas, dengan [lisensi AGPLv3] (http://www.gnu.org/licenses/ agpl-3.0.html 'AGPLv3 gnu'), itu berarti dengan kata-kata sederhana siapa pun dapat menggunakan kode ini dengan bebas, menyalinnya, melihatnya secara mendetail, memodifikasinya dan mendistribusikannya kembali ke kata dengan modifikasi yang dia inginkan (membiarkan yang lain melakukan sama). Karena menurut kami budaya lebih baik dan lebih kaya saat dilepaskan.
+          
+          Jika Anda seorang programmer, Anda dapat melihat kode tersebut dan membantu kami memperbaikinya di [CONSUL app] (https://github.com/consul/consul 'consul github').
+      titles:
+        how_to_use: Gunakan di pemerintah daerah
+    privacy: Kebijakan Privasi
+    titles:
+      accessibility: Aksesibilitas
+      conditions: Ketentuan penggunaan
+      help: "Apa %{org}? - Partisipasi warga"
+      privacy: Kebijakan Privasi
+    verify:
+      code: Kode yang anda terima di surat
+      email: Email
+      info_code: 'Sekarang memperkenalkan kode yang anda terima di surat:'
+      password: Kata sandi
+      submit: Verifikasi akun saya
+      title: Verifikasi akun anda
