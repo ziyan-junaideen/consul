@@ -1,0 +1,43 @@
+de:
+  mailers:
+    no_reply: "Diese Nachricht wurde von einer E-Mail-Adresse gesendet, die keine Antworten akzeptiert."
+    comment:
+      hi: Hallo
+      new_comment_by_html: Es gibt einen neuen Kommentar von <b>%{commenter}</b>
+      subject: Jemand hat Ihre %{commentable} kommentiert.
+      title: Neuer Kommentar
+    config:
+      manage_email_subscriptions: Wenn Sie keine E-Mails empfangen möchten, ändern Sie bitte Ihre Einstellungen in
+    email_verification:
+      subject: E-Mail bestätigen
+      thanks: Vielen Dank.
+      title: Link folgen, um Konto zu bestätigen
+    reply:
+      hi: Hallo
+      new_reply_by_html: Es gibt eine neue Antwort von <b>%{commenter}</b> auf Ihren Kommentar
+      subject: Jemand hat auf Ihren Kommentar geantwortet
+      title: Neue Antwort auf Ihren Kommentar
+    unfeasible_spending_proposal:
+      new_href: "neues Investitionsprojekt"
+    proposal_notification_digest:
+      share: Vorschlag teilen
+      comment: Vorschlag kommentieren
+      unsubscribe_account: Mein Benutzerkonto
+    direct_message_for_receiver:
+      reply: Antwort an %{sender}
+      unsubscribe_account: Mein Benutzerkonto
+    direct_message_for_sender:
+      subject: "Sie haben eine private Nachricht versendet"
+    user_invite:
+      thanks: "Vielen Dank."
+      title: "Willkommen zu %{org}"
+      button: Registrierung abschließen
+      subject: "Einladung an %{org_name}"
+    budget_investment_created:
+      share: "Teilen Sie ihr Projekt"
+    budget_investment_unfeasible:
+      new_href: "neues Investitionsprojekt"
+    budget_investment_selected:
+      thanks: "Vielen Dank für Ihre Teilnahme."
+    budget_investment_unselected:
+      thanks: "Vielen Dankf für Ihre Teilnahme."
