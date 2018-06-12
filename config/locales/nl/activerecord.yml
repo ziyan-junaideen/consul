@@ -10,6 +10,9 @@ nl:
       budget/investment:
         one: "Investering"
         other: "Investeringen"
+      budget/investment/milestone:
+        one: "mijlpaal"
+        other: "mijlpalen"
       comment:
         one: "Reactie"
         other: "Reacties"
@@ -24,10 +27,16 @@ nl:
         other: "Deelnemers"
       moderator:
         one: "Moderator"
-        other: "Moderatoren"
+        other: "Moderators"
       administrator:
         one: "Admin"
         other: "Admins"
+      manager:
+        one: "Manager"
+        other: "Managers"
+      newsletter:
+        one: "Nieuwsbrief"
+        other: "Nieuwsbrieven"
       vote:
         one: "Stem"
         other: "Stemmen"
@@ -41,8 +50,8 @@ nl:
         one: "lid"
         other: "leden"
       proposal:
-        one: "Burgervoorstel"
-        other: "Burgervoorstellen"
+        one: "Voorstel"
+        other: "Voorstellen"
       spending_proposal:
         one: "Begrotingsvoorstel"
         other: "Begrotingsvoorstellen"
@@ -50,11 +59,20 @@ nl:
         one: Aangepaste pagina
         other: Aangepaste paginas
       site_customization/image:
-        one: Aangepaste illustratie
-        other: Aangepaste illustraties
+        one: Aangepaste afbeelding
+        other: Aangepaste afbeeldingen
       site_customization/content_block:
         one: Aangepaste inhoud
         other: Aangepaste inhoud
+      legislation/process:
+        one: "Proces"
+        other: "Processen"
+      legislation/draft_versions:
+        one: "Versie"
+        other: "Versies"
+      legislation/draft_texts:
+        one: "Concept"
+        other: "Concepten"
     attributes:
       budget:
         name: "Naam"
@@ -68,15 +86,23 @@ nl:
         phase: "Fase"
         currency_symbol: "Valuta"
       budget/investment:
-        heading_id: "Begrotingsectie"
+        heading_id: "Kop"
         title: "Titel"
         description: "Omschrijving"
-        external_url: "Externe url"
-        location: "Locatie"
-        administrator_id: "Administrator"
         external_url: "Link naar extra documentatie"
-        heading_id: "Kop"
+        administrator_id: "Beheerder"
+        location: "Locatie"
         organization_name: "Als u een voorstel doet uit naam van een collectief/organisatie, voer de naam in"
+        image: "Voorgestelde afbeelding"
+        image_title: "Titel"
+      budget/investment/milestone:
+        title: "Title"
+        description: "Omschrijving"
+        publication_date: "Publicatiedatum"
+      budget/heading:
+        name: "Naam van de rubriek"
+        price: "Prijs"
+        population: "Bevolking"
       comment:
         body: "Reactie"
         user: "Deelnemer"
@@ -92,7 +118,8 @@ nl:
         description: "Omschrijving"
         terms_of_service: "Gebruiksvoorwaarden"
       user:
-        email: "Email"
+        login: "Email of gebruikersnaam"
+        email: "E-mail"
         username: "Gebruikersnaam"
         password_confirmation: "Bevestiging wachtwoord"
         password: "Wachtwoord"
@@ -105,7 +132,6 @@ nl:
         name: "Naam van organisatie"
         responsible_name: "Persoon verantwoordelijk voor de groep"
       spending_proposal:
-        administrator_id: "Administrator"
         association_name: "Verenigingsnaam"
         description: "Omschrijving"
         external_url: "Link naar extra documentatie"
@@ -116,21 +142,19 @@ nl:
         starts_at: "Start Datum"
         ends_at: "Eind Datum"
         geozone_restricted: "Beperkt tot regio"
+        summary: "Samenvatting"
+        description: "Omschrijving"
       poll/question:
         title: "Vraag"
-        valid_answers: "Mogelijke antwoorden"
         summary: "Samenvatting"
         description: "Omschrijving"
         external_url: "Link naar extra documentatie"
       signature_sheet:
-        signable_type: "Signable type"
-        signable_id: "Signable ID"
         document_numbers: "Documentnummers"
       site_customization/page:
         content: Inhoud
         created_at: Aangemaakt op
         subtitle: Subtitel
-        slug: Slug
         status: Status
         title: Titel
         updated_at: Bijgewerkt op
@@ -142,8 +166,41 @@ nl:
         image: Beeld
       site_customization/content_block:
         name: Naam
-        locale: locale
-        body: Body
+        locale: taal
+        body: Platte tekst
+      legislation/process:
+        title: Titel
+        description: Omschrijving
+        additional_info: Aanvullende informatie
+        start_date: Begindatum
+        end_date: Einddatum
+        debate_start_date: Begindatum
+        debate_end_date: Einddatum
+      legislation/draft_version:
+        body: Tekst
+        changelog: Wijzigingen
+        status: Status
+      legislation/question:
+        title: Titel
+      legislation/annotation:
+        text: Reactie
+      document:
+        title: Titel
+        attachment: Bijlage
+      image:
+        title: Titel
+        attachment: Bijlage
+      poll/question/answer:
+        title: Antwoord
+        description: Omschrijving
+      poll/question/answer/video:
+        title: Titel
+        url: Externe video
+      newsletter:
+        segment_recipient: Ontvangers
+        subject: Onderwerp
+        from: Van
+        body: Inhoud
     errors:
       models:
         user:
@@ -161,7 +218,6 @@ nl:
         poll/voter:
           attributes:
             document_number:
-              not_in_census: "Document not in census"
               has_voted: "Deelnemer heeft al gestemd"
         proposal:
           attributes:
@@ -189,3 +245,7 @@ nl:
             image:
               image_width: "Breedte moet %{required_width}px zijn"
               image_height: "Hoogte moet %{required_height}px zijn"
+        comment:
+          attributes:
+            valuation:
+              cannot_comment_valuation: 'Je kunt niet reageren op een raming'
