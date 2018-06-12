@@ -1,0 +1,23 @@
+nl:
+  documents:
+    title: Documenten
+    max_documents_allowed_reached_html: Het maximale aantal documenten is bereikt <strong>verwijder oude documenten om een nieuwe toe te voegen.</strong>
+    form:
+      title: Documenten
+      title_placeholder: Geef een titel op
+      attachment_label: Selecteer een document
+      delete_button: Verwijder document
+      note: "U kunt maximaal %{max_documents_allowed} documenten toevoegen voor de volgende inhoudstypen: %{accepted_content_types}, tot %{max_file_size} MB per bestand."
+      add_new_document: Document toevoegen
+    actions:
+      destroy:
+        notice: Document is verwijderd.
+        alert: Document kan niet worden verwijderd.
+        confirm: Weet u zeker dat het document moet worden verwijderd? Dit kan niet ongedaan worden gemaakt.
+    buttons:
+      download_document: Document downloaden
+      destroy_document: Document verwijderen
+    errors:
+      messages:
+        in_between: moet tussen %{min} en %{max}
+        wrong_content_type: document van type %{content_type} wordt niet herkend als %{accepted_content_types}
