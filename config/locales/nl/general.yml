@@ -1,4 +1,3 @@
----
 nl:
   account:
     show:
@@ -17,7 +16,6 @@ nl:
       subscription_to_website_newsletter_label: Stuur me email met relevante informatie over de website
       email_on_direct_message_label: Stuur me email naar aanleiding van directe boodschappen
       email_digest_label: Stuur me een samenvatting van meldingen naar aanleiding van voorstellen
-      official_position_badge_label: Show official position badge
       title: Mijn account
       user_permission_debates: Deelnemen aan discussies
       user_permission_info: Met uw account kunt u...
@@ -25,7 +23,6 @@ nl:
       user_permission_support_proposal: Voorstellen steunen
       user_permission_title: Deelname
       user_permission_verify: Verifiëer uw account om alles te kunnen.
-      user_permission_verify_info: "* Only for users on Census."
       user_permission_votes: Deelnemen aan laatste stemronde
       username_label: Gebeuikersnaam
       verified_account: Account geverifiëerd
@@ -33,29 +30,20 @@ nl:
   application:
     close: Afsluiten
     menu: Menu
-  ckeditor:
-    buttons:
-      cancel: Sluit
-      delete: Verwijder
-      next: Volgende
-      upload: Upload
-    confirm_delete: Zeker?
-    page_title: CKEditor File Manager
   comments:
     comment:
       admin: Admin
       author: Schrijver
       deleted: Deze reactie is verwijderd
-      moderator: Moderator
       responses:
+        zero: Geen reacties
         one: 1 reactie
         other: "%{count} reacties"
-        zero: Geen reacties
       user_deleted: deelnemer verwijderd
       votes:
+        zero: Geen stemmen
         one: 1 stem
         other: "%{count} stemmen"
-        zero: Geen stemmen
     form:
       comment_as_admin: Reageer als admin
       comment_as_moderator: Reageer als moderator
@@ -78,14 +66,13 @@ nl:
         submit_button: Start een debat
     debate:
       comments:
+        zero: Geen reacties
         one: 1 reactie
         other: "%{count} reacties"
-        zero: Geen reacties
-      debate: Debat
       votes:
+        zero: Geen stemmen
         one: 1 stem
         other: "%{count} stemmen"
-        zero: Geen stemmen
     edit:
       editing: Edit debat
       form:
@@ -112,12 +99,11 @@ nl:
         button: Zoek
         placeholder: Zoek in discussies...
         title: Zoek
-      search_results:
-        one: " met de term '%{search_term}'"
-        other: " met de term '%{search_term}'"
       select_order: Sorteer op
       start_debate: Start een debat
       title: Debatten
+      section_footer:
+        budget_link: begrotingsvoorstellen
     new:
       form:
         submit_button: Start een debat
@@ -133,9 +119,9 @@ nl:
     show:
       author_deleted: Deelnemer verwijderd
       comments:
+        zero: Geen opmerkingen
         one: 1 opmerking
         other: "%{count} opmerkingen"
-        zero: Geen opmerkingen
       comments_title: Opmerkingen
       edit_debate_link: Pas aan
       flag: Verschillende mensen vinden de inhoud ongepast.
@@ -156,15 +142,18 @@ nl:
     direct_message: privébericht
     error: fout
     errors: fouten
-    not_saved: 'belemmeren het opslaan van %{resource}:'
     policy: Privacybeleid
     proposal: Voorstel
     proposal_notification: "Melding"
     spending_proposal: Uitgaven voorstel
     budget/investment: Investering
+    poll/question/answer: Antwoord
     user: Deelnemer
     verification/sms: telefoon
     signature_sheet: Handtekeningenvel
+    document: Document
+    topic: Onderwerp
+    image: Afbeelding
   geozones:
     none: Hele stad
     all: Alle bereiken
@@ -194,8 +183,10 @@ nl:
       transparency_title: Transparantie
       transparency_url: https://transparency.consul
     header:
+      administration_menu: Beheerder
       administration: Beheer
       available_locales: Beschikbare talen
+      collaborative_legislation: Wetgevingsproces
       debates: Discussies
       external_link_blog: Blog
       external_link_opendata: Open data
@@ -208,44 +199,24 @@ nl:
       moderation: Moderatie
       valuation: Beoordeling
       officing: Stembureau
-      more_info: Meer informatie
+      help: Help
       my_account_link: Mijn account
       my_activity_link: Mijn bijdragen
-      notifications: Meldingen
-      new_notifications:
-        one: U heeft een nieuwe melding
-        other: U heeft %{count} nieuwe meldingen
-      no_notifications: "U heeft geen nieuwe meldingen"
       open: open
-      open_city_slogan_html: Er zijn steden die rechtstreeks door hun bewoners worden bestuurd, welke <b>discussiëren</b> over de onderwerpen waarover ze zich zorgen maken, welke <b>voorstellen</b> doen om hun leven te verbeteren en <b>zelf</b> beslissen welke daarvan zullen worden uitgevoerd.
-      open_city_title: De gemeente waar u van houdt is de gemeente waarin u meedenkt.
       open_gov: Open bestuur
       proposals: Voorstellen
       poll_questions: Stemmen
-      see_all: Bekijk voorstellen
-      budgets: Burgerbegroting
+      budgets: Begrotingsvoorstellen
       spending_proposals: Begrotingsvoorstellen
-  legislation:
-    help:
-      alt: Selecteer de tekst waarop u wilt reageren en druk op de knop met het potlood.
-      text: Om te reageren moet u registreren en inloggen. Selecteer dan de tekst waarop u wilt reageren en druk op de knop met het potlood.
-      text_sign_in: log in
-      text_sign_up: registreer
-      title: Hoe kan ik reageren?
+      notification_item:
+        new_notifications:
+          one: U heeft een nieuwe melding
+          other: U heeft %{count} nieuwe meldingen
   locale: Nederlands
   notifications:
     index:
-      comments_on:
-        one: Iemand heeft gereageerd op
-        other: Er zijn %{count} nieuwe reacties op
       empty_notifications: U heeft geen nieuwe meldingen.
       mark_all_as_read: Alles als gelezen markeren
-      proposal_notification:
-        one: Er is een nieuwe melding over
-        other: Er zijn %{count} nieuwe meldingen over
-      replies_to:
-        one: Iemand antwoordde op uw reactie op
-        other: Er zijn %{count} nieuwe antwoordde op uw reactie op
       title: Meldingen
   map:
     title: "Regios"
@@ -256,23 +227,18 @@ nl:
     facebook:
       sign_in: Log in via Facebook
       sign_up: Registreer via Facebook
-      name: Facebook
-    finish_signup:
-      title: Voeg uw email address toe
-    google_oauth2:
-      sign_in: Log in via Google
-      sign_up: Registreer via Google
-      name: Google
-    twitter:
-      sign_in: Log in via Twitter
-      sign_up: Registreer via Twitter
-      name: Twitter
-    info_sign_in: "Log in via:"
-    info_sign_up: "Registreer via:"
-    or_fill: "Of vul het volgende in:"
     finish_signup:
       title: "Verdere details"
       username_warning: "Door een verandering in de manier waarop we met sociale netwerken communiceren, is het mogelijk dat uw gebruikersnaam nu als 'al in gebruik' verschijnt. Kiest u dan een andere gebruikersnaam, aub."
+    google_oauth2:
+      sign_in: Log in via Google
+      sign_up: Registreer via Google
+    twitter:
+      sign_in: Log in via Twitter
+      sign_up: Registreer via Twitter
+    info_sign_in: "Log in via:"
+    info_sign_up: "Registreer via:"
+    or_fill: "Of vul het volgende in:"
   proposals:
     create:
       form:
@@ -300,7 +266,7 @@ nl:
       geozone: Regio
       proposal_external_url: Link naar meet informatie
       proposal_question: Vraag
-      proposal_question_example_html: Moet samengevat worden in een vraag met een ja/nee antwoord. <br>E.g. 'Ben je het eens met autovrije Geldersekade?'
+      proposal_question_example_html: "Moet samengevat worden in een vraag met een ja/nee antwoord. <br>E.g. 'Ben je het eens met autovrije Geldersekade?'"
       proposal_responsible_name: Volledige naam van persoon die het voorstel doet
       proposal_responsible_name_note: "(individueel of als vertegenwoordiger van een collectief; niet publiek zichtbaar)"
       proposal_summary: Samenvatting voorstel
@@ -313,6 +279,8 @@ nl:
       tags_instructions: "Label dit voorstel. U kunt één van de voorgestelde categorieën kiezen of er één toevoegen"
       tags_label: Labels
       tags_placeholder: "Voeg labels toe, gescheiden door kommas (',')"
+      map_remove_marker: "Locatie verwijderen"
+      map_skip_checkbox: "De locatie voor het voorstel is niet bekend."
     index:
       featured_proposals: Uitgelicht
       filter_topic:
@@ -325,6 +293,10 @@ nl:
         most_commented: meeste reacties
         relevance: relevantie
         archival_date: Gearchiveerd
+        recommendations: aanbevelingen
+      recommendations:
+        without_results: Er zijn geen voorstellen die aan uw interesses voldoen
+        without_interests: Volg voorstellen zodat het systeem aanbevelingen kan doen
       retired_proposals: Teruggetrokken voorstellen
       retired_proposals_link: "Teruggetrokken voorstellen"
       retired_links:
@@ -338,9 +310,6 @@ nl:
         button: Zoek
         placeholder: Zoek voorstellen..
         title: Zoek
-      search_results:
-        one: " die de term '%{search_term}' bevatten"
-        other: " die de term '%{search_term}' bevatten"
       select_order: Sorteer op
       select_order_long: 'U ziet de voorstellen op:'
       start_proposal: Doe een voorstel
@@ -351,9 +320,9 @@ nl:
       form:
         submit_button: Doe voorstel
       more_info: Hoe werken voorstellen?
+      recommendation_one: Gebruik geen hoofdletters voor de titel, of voor hele zinnen. Dit is equivalent aan schreeuwen op het internet, en niemand houdt ervan toegeschreeuwd te worden.
       recommendation_three: Geniet van deze ruimte, en van de stemmen die 'm vullen.
       recommendation_two: Ieder voorstel waarin een illegale activiteit wordt aanmoedigd zal worden verwijderd, en ook die welke de discussie saboteren. Verder is alles toegestaan.
-      recommendation_one: Gebruik geen hoofdletters voor de titel, of voor hele zinnen. Dit is equivalent aan schreeuwen op het internet, en niemand houdt ervan toegeschreeuwd te worden.
       recommendations_title: Aanbevelingen bij het doen van voorstellen
       start_new: Doe nieuw voorstel
     notice:
@@ -361,19 +330,17 @@ nl:
     proposal:
       already_supported: U steunt dit voorstel al. Deel het!
       comments:
+        zero: Geen reacties
         one: 1 reactie
         other: "%{count} reacties"
-        zero: Geen reacties
-      proposal: Voorstel
       reason_for_supports_necessary: 1% van de census
       support: Steun
       support_title: Steun dit voorstel
       supports:
+        zero: Geen Steunbetuigingen
         one: 1 Steunbetuiging
         other: "%{count} Steunbetuigingen"
-        zero: Geen Steunbetuigingen
       supports_necessary: "%{number} steunbetuigingen nodig"
-      total_percent: 100%
       archived: "Dit voorstel is gearchiveerd en kan niet worden gesteund."
       successful: "Dit voorstel heeft het benodigd aantal steunbetuigingen en zal in stemming worden gebracht."
       voting: "volgende stemronde"
@@ -381,9 +348,9 @@ nl:
       author_deleted: Deelnemer verwijdert
       code: 'Voorstel code:'
       comments:
+        zero: Geen reacties
         one: 1 reactie
         other: "%{count} reacties"
-        zero: Geen reacties
       comments_tab: Reacties
       edit_proposal_link: Bewerk
       flag: Dit voorstel is door verschillende deelnemers aangemerkt als ongepast.
@@ -406,7 +373,6 @@ nl:
     final_date: "Definitieve hertelling/resultaten"
     index:
       filters:
-        current: "Open"
         incoming: "Binnenkort"
         expired: "Verlopen"
       title: "Stemmen"
@@ -416,13 +382,8 @@ nl:
       no_geozone_restricted: "Hele stad"
       geozone_restricted: "Regio's"
       geozone_info: "Open voor deelnemers uit: "
-      can_answer: "U kunt deelnemen aan deze stemronde!"
-      cant_answer: "Deze stemronde is niet beschikbaar in uw regio"
-      cant_answer_not_logged_in: "U moet inloggen om deel te kunnen nemen"
-      cant_answer_verify: "Uw account moet zijn geverifieerd om te kunnen antwoorden"
       already_answer: "U heeft al deelgenomen aan deze ronde"
     show:
-      dates_title: "Data"
       cant_answer_not_logged_in: "U moet zijn ingelogd om te kunnen deelnemen."
       signin: Log in
       signup: Registreer
@@ -432,27 +393,9 @@ nl:
       cant_answer_expired: "Deze stemronde is voorbij."
   poll_questions:
     create_question: "Stel vraag"
-    default_valid_answers: "Ja, Nee"
     show:
-      answer_this_question: "Antwoord op deze vraag"
-      original_proposal: "Oorspronkelijk voorstel"
-      author: "Gedaan door"
-      dates_title: "Data"
-      more_info: "Meer informatie"
-      not_logged_in: "U moet zijn ingelogd om te kunnen deelnemen."
-      signin: Log in
-      signup: Registreer
-      cant_answer_verify_html: "Uw account moet zijn geverifieerd om te kunnen antwoorden."
-      verify_link: "verifieer uw account"
-      cant_answer_incoming: "Deze stemronde is nog niet begonnen"
-      cant_answer_expired: "Deze stemronde is voorbij."
-      cant_answer_wrong_geozone: "Deze vraag wordt niet behandeld in uw regio"
       vote_answer: "Stem %{answer}"
       voted: "U heeft %{answer} gestemd"
-      poll: "Stemronde"
-    banner:
-      featured_title: "#NextVoting"
-      info: "Nieuwe voorstellen die de stemfase hebben bereikt."
   proposal_notifications:
     new:
       title: "Stuur bericht"
@@ -466,17 +409,13 @@ nl:
   shared:
     edit: 'Bewerk'
     save: 'Sla op'
-    delete: 'Verwijder'
-    comments:
-      title: 'Reacties'
-      login_to_comment: 'U moet zijn ingelogd om te kunnen reageren.'
+    delete: Verwijder
     "yes": "Ja"
     "no": "Nee"
     advanced_search:
       author_type: 'Op auteur categorie'
       author_type_blank: 'Selecteer een categorie'
       date: 'Op datum'
-      date_placeholder: 'DD/MM/YYYY'
       date_range_blank: 'Kies een datum'
       date_1: 'Afgelopen 24 uur'
       date_2: 'Afgelopen week'
@@ -486,10 +425,8 @@ nl:
       from: 'Van'
       general: 'Met tekst:'
       general_placeholder: 'Schrijf de tekst'
-      search: 'Filter'
       title: 'Geavanceerd zoeken'
       to: 'Aan'
-    delete: Verwijder
     author_info:
       author_deleted: Deelnemer verwijderd
     back: Terug
@@ -506,7 +443,6 @@ nl:
     suggest:
       debate:
         found:
-
           one: "Er is een debat met de term '%{query}'; u kunt daar deelnemen in plaats van een nieuwe discussie te openen."
           other: "Er zijn discussies met de term '%{query}'; u kunt daar deelnemen in plaats van een nieuwe discussie te openen."
         message: "Er worden %{limit} uit %{count} discussies met de term '%{query}' getoond"
@@ -518,7 +454,6 @@ nl:
         message: "Er worden %{limit} uit %{count} voorstellen met de term '%{query}' getoond"
         see_all: "Alles tonen"
     tags_cloud:
-      tags: Trending
       districts: "Regio's"
       districts_list: "Regio lijst"
       categories: "Categorieën"
@@ -526,17 +461,14 @@ nl:
     you_are_in: "U bent in"
     unflag: Hef markering op
     outline:
-      debates: Discussies
-      proposals: Voorstellen
-      budget: Burgerbegroting
+      budget: Begrotingsvoorstel
       searcher: Zoeker
   social:
-    blog: Blog
-    facebook: Facebook
-    twitter: Twitter
-    youtube: YouTube
-    whatsapp: WhatsApp
-    telegram: Telegram
+    blog: "Blog"
+    facebook: "Facebook"
+    twitter: "Twitter"
+    youtube: "YouTube"
+    telegram: "Telegram"
   spending_proposals:
     form:
       association_name_label: 'Voeg hier de naam toe als u een voorstel doet namens een vereniging of collectief'
@@ -549,7 +481,7 @@ nl:
         new: Voeg toe
       title: Titel begrotingsvoorstel
     index:
-      title: Participatief begroten
+      title: Begrotingsvoorstellen
       unfeasible: Onhaalbare begrotingsvoorstellen
       by_geozone: "Begrotingsvoorstellen in regio: %{geozone}"
       search_form:
@@ -565,7 +497,7 @@ nl:
         unfeasible: Onhaalbaar
       start_spending_proposal: Initieer een begrotingsvoorstel
     new:
-      more_info: Hoe werkt een burgerbegroting?
+      more_info: Hoe werken begrotingsvoorstellen?
       recommendation_one: Het voorstel moet refereren aan een begrootbare activiteit.
       recommendation_three: Geef voldoende en gedetailleerde informatie, zodat de beoordelingscommissie goed begrijpt waar het over gaat.
       recommendation_two: Voorstellen die illegale activiteiten stimuleren worden verwijderd.
@@ -582,9 +514,9 @@ nl:
       support: Steun
       support_title: Steun dit project
       supports:
+        zero: Geen steunbetuigingen
         one: 1 steunbetuiging
         other: "%{count} steunbetuigingen"
-        zero: Geen steunbetuigingen
   stats:
     index:
       visits: Bezoeken
@@ -644,8 +576,6 @@ nl:
       retired: "Teruggetrokken"
   votes:
     agree: Ik ben het eens
-    anonymous: Te veel anonieme stemmen om stem toe te staan %{verify_account}.
-    anonymous: Too many anonymous votes to admit vote %{verify_account}.
     comment_unauthenticated: U moet zich registreren en inloggen om te stemmen.
     disagree: Ik ben het oneens
     organizations: Organisaties kunnen niet stemmen
@@ -667,20 +597,7 @@ nl:
       organization: Organisaties kunnen niet stemmen
       unfeasible: Onhaalbare voorstellen kunnen niet worden gesteund
       not_voting_allowed: Stemronde is gesloten
-      different_heading_assigned: U kunt voorstellen steunen in één district
   welcome:
-    debates:
-      description: Voor ontmoetingen en discussies over zaken die ons in onze gemeente aangaan.
-      title: Discussies
-    decide:
-      description: Het publiek besluit over de gesteunde voorstellen.
-      title: U beslist
-    do:
-      description: Als de meerderheid een voorstel steunt zal de gemeenteraad het accepteren als haar eigen, en komt het voor elkaar.
-      title: Het komt voor elkaar
-    proposal:
-      description: Vrije ruimte voor burgerinitiatieven rond de gemeente of stad waarin we willen leven.
-      title: U initieert
     verification:
       i_dont_have_an_account: Ik heb nog geen account
       i_have_an_account: Ik heb al een account
@@ -697,14 +614,6 @@ nl:
       user_permission_verify_info: "* allen voor deelnemers uit de regio."
       user_permission_verify_my_account: Verifieer mijn account
       user_permission_votes: Neem deel aan definitieve stemronde
-  legislation:
-    help:
-      title: "Hoe kan ik op dit document reageren?"
-      text: "U dient te zijn ingelogd om te reageren. Selecteer dan de tekst waarop u wilt reageren en klik de knop met het potlood."
-      text_sign_in: "log in"
-      text_sign_up: "registreer"
-      alt: "Selecteer de tekst waarop u wilt reageren en klik de knop met het potlood."
   invisible_captcha:
     sentence_for_humans: "Negeer dit veld als u mens bent"
     timestamp_error_message: "Sorry, dat ging te snel! Probeer nog eens."
-
