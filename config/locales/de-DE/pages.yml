@@ -1,14 +1,57 @@
 de:
   pages:
+    conditions: Allgemeine Nutzungsbedingungen
+    general_terms: Allgemeine Nutzungsbedingungen
     help:
+      title: "%{org} ist eine Plattform zur Bürgerbeteiligung"
       menu:
         debates: "Diskussionen"
         proposals: "Vorschläge"
         polls: "Umfragen"
+        other: "Weitere interessante Informationen"
         processes: "Prozesse"
       debates:
         title: "Diskussionen"
+        feature_html: "Sie können Diskussionen eröffnen, kommentieren und mit <strong> Ich stimme zu</strong> oder <strong>Ich stimme nicht zu</strong> bewerten. Hierfür müssen Sie %{link}."
         feature_link: "registrieren für %{org}"
         image_alt: "Button, um die Diskussionen zu bewerten"
+        figcaption: '"Ich stimme zu" und "Ich stimme nicht zu" Buttons, um die Diskussion zu bewerten.'
       proposals:
         title: "Vorschläge"
+        link: "Bürgervorschläge"
+        image_alt: "Button zur Unterstützung eines Vorschlags"
+      budgets:
+        image_alt: "Verschiedene Phasen eines partizipativen Haushalts"
+      polls:
+        title: "Umfragen"
+        link: "Umfragen"
+        feature_1: "Um an der Abstimmung teilzunehmen, müssen Sie %{link} und Ihr Konto verifizieren."
+        feature_1_link: "anmelden %{org_name}"
+      processes:
+        title: "Prozesse"
+        link: "Prozesse"
+        sign_up: "Registrierung unter %{org}"
+      faq:
+        title: "Technische Probleme?"
+        description: "Lesen Sie die FAQs und finden Sie Antworten auf Ihre Fragen."
+        button: "Zeige häufig gestellte Fragen"
+        page:
+          title: "Häufige gestellte Fragen"
+          faq_1_title: "Frage 1"
+          faq_1_description: "Dies ist ein Beispiel für die Beschreibung der ersten Frage."
+      other:
+        title: "Weitere interessante Informationen"
+        how_to_use: "Verwenden Sie %{org_name} in Ihrer Stadt"
+    privacy: Datenschutzregelung
+    titles:
+      accessibility: Barrierefreiheit
+      conditions: Nutzungsbedingungen
+      privacy: Datenschutzregelung
+    verify:
+      code: Code, den Sie per Brief/SMS erhalten haben
+      email: E-Mail
+      info: 'Um Ihr Konto zu verifizieren, geben Sie bitte Ihre Zugangsdaten ein:'
+      info_code: 'Bitte geben Sie nun Ihren Code, den Sie per Post/SMS erhalten haben ein:'
+      password: Passwort
+      submit: Mein Benutzerkonto verifizieren
+      title: Verifizieren Sie Ihr Benutzerkonto
