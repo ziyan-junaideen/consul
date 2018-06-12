@@ -1,0 +1,27 @@
+de:
+  flash:
+    actions:
+      create:
+        notice: "%{resource_name} erfolgreich erstellt."
+        debate: "Diskussion erfolgreich erstellt."
+        direct_message: "Ihre Nachricht wurde erfolgreich versendet."
+        poll: "Umfrage erfolgreich erstellt."
+        poll_question_answer: "Antwort erfolgreich erstellt"
+        poll_question_answer_video: "Video erfolgreich erstellt"
+        poll_question_answer_image: "Bild erfolgreich hochgeladen"
+        proposal: "Vorschlag erfolgreich erstellt."
+        proposal_notification: "Ihre Nachricht wurde versendet."
+        topic: "Thema erfolgreich erstellt."
+      save_changes:
+        notice: Änderungen gespeichert
+      update:
+        notice: "%{resource_name} erfolgreich aktualisiert."
+        debate: "Diskussion erfolgreich akutalisiert."
+        poll: "Umfrage erfolgreich akutalisiert."
+        proposal: "Vorschlag erfolgreich aktualisiert."
+        topic: "Thema erfolgreich aktualisiert."
+      destroy:
+        budget_investment: "Investitionsprojekt erfolgreich gelöscht."
+        error: "Konnte nicht gelöscht werden"
+        topic: "Thema erfolgreich gelöscht."
+        poll_question_answer_video: "Video-Antwort erfolgreich gelöscht."
