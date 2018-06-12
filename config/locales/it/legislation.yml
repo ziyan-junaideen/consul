@@ -1,0 +1,65 @@
+it:
+  legislation:
+    annotations:
+      comments:
+        comments_count:
+          one: "%{count} commento"
+          other: "%{count} commento"
+        replies_count:
+          one: "%{count} risposta"
+          other: "%{count} risposta"
+        cancel: Cancella
+        publish_comment: Pubblica commento
+      form:
+        phase_not_open: Questa fase non è aperta
+      index:
+        comments_about: Commenti su
+      version_chooser:
+        seeing_version: Commmenti per la versione
+        see_text: Vedere la bozza di testo
+    draft_versions:
+      changes:
+        seeing_changelog_version: Riepilogo delle modifiche
+      show:
+        loading_comments: Caricamento dei commenti
+        seeing_version: Stai vedendo la versione in bozza
+        select_draft_version: Selezionare la bozza
+        select_version_submit: vedi
+        updated_at: aggiornato a %{date}
+        see_changes: vedere il riepilogo delle modifiche
+        see_comments: Vedere tutti i commenti
+        text_toc: Sommario
+    processes:
+      debate:
+        empty_questions: Non ci sono domande
+        participate: Partecipare al dibattito
+      index:
+        filters:
+          open: Processi aperti
+          past: Passato
+        no_open_processes: Non ci sono processi aperti
+        no_next_processes: Non ci sono processi pianificati
+        no_past_processes: Non ci sono processi precedenti
+      phase_not_open:
+        not_open: Questa fase non è ancora aperta
+      phase_empty:
+        empty: Nulla è stato pubblicato al momento
+      process:
+        see_latest_comments: Vedere i commenti più recenti
+      shared:
+        draft_publication_date: Pubblicazione in bozza
+        result_publication_date: Pubblicazione del risultato finale
+    questions:
+      comments:
+        comment_button: Pubblica la risposta
+        comments_title: Apri le risposte
+        comments_closed: Fase chiusa
+        form:
+          leave_comment: Lascia la tua risposta
+      show:
+        answer_question: Invia la risposta
+        next_question: Prossima domanda
+        first_question: Prima domanda
+      participation:
+        organizations: Le organizzazioni non sono ammesse a partecipare al dibattito
+        verified_only: Possono partecipare solo gli utenti verificati, %{verify_account}.
