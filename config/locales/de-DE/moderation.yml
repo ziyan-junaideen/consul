@@ -4,16 +4,62 @@ de:
       index:
         block_authors: Autoren blockieren
         confirm: Sind Sie sich sicher?
+        filter: Filter
+        filters:
+          all: Alle
+          with_ignored_flag: Als gesehen markieren
+        headers:
+          comment: Kommentar
+        hide_comments: Kommentare ausblenden
+        ignore_flags: als gesehen markieren
+        orders:
+          flags: am meisten markiert
+          newest: Neuste
         title: Kommentare
     debates:
       index:
         block_authors: Autoren blockieren
+        confirm: Sind Sie sich sicher?
+        filter: Filter
+        filters:
+          all: Alle
+          with_ignored_flag: Als gesehen markieren
+        headers:
+          debate: Diskussion
+        hide_debates: Diskussionen ausblenden
+        ignore_flags: Als gesehen markieren
+        orders:
+          created_at: Neuste
+          flags: Am meisten markiert
+        title: Diskussionen
     menu:
       flagged_comments: Kommentare
+      flagged_debates: Diskussionen
+      proposals: Vorschläge
+      users: Benutzer blockieren
     proposals:
       index:
+        block_authors: Autor blockieren
+        confirm: Sind Sie sich sicher?
         filter: Filter
+        filters:
+          all: Alle
+          pending_flag_review: Ausstehende Bewertung
+          with_ignored_flag: Als gesehen markieren
         headers:
           proposal: Vorschlag
         hide_proposals: Vorschläge ausblenden
+        ignore_flags: als gesehen markieren
+        order: sortieren nach
+        orders:
+          created_at: neuestes
+          flags: am meisten markiert
         title: Vorschläge
+    users:
+      index:
+        hidden: Blockiert
+        hide: Block
+        search: Suche
+        search_placeholder: E-Mail oder Benutzername
+        title: Benutzer blockieren
+      notice_hide: Benutzer gesperrt. Alle Diskussionen und Kommentare dieses Benutzers wurden ausgeblendet.
