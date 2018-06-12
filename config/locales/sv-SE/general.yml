@@ -1,4 +1,202 @@
 sv:
   account:
     show:
+      email_on_comment_label: Meddela mig via e-post när någon kommenterar mina förslag eller debatter
+      email_on_comment_reply_label: Meddela mig via e-mail när någon svarar på mina kommentarer
+      erase_account_link: Ta bort mitt konto
+      finish_verification: Slutför verifiering
       notifications: Meddelanden
+      organization_name_label: Organisationsnamn
+      organization_responsible_name_placeholder: Företrädare för organisationen/kollektivet
+      personal: Personlig information
+      phone_number_label: Telefonnummer
+      public_activity_label: Håll min lista över aktiviteter offentlig
+      save_changes_submit: Spara ändringar
+      email_on_direct_message_label: Få e-post gällande direkta meddelanden
+      email_digest_label: Få en sammanfattning av förslagsaviseringar
+      title: Mitt konto
+      user_permission_debates: Delta på debatter
+      user_permission_info: Med ditt konto kan du...
+      user_permission_proposal: Skapa nya förslag
+      user_permission_support_proposal: Stöd förslag
+      user_permission_title: Deltagande
+      user_permission_verify: Bekräfta ditt konto för att utföra alla handlingar.
+      user_permission_votes: Delta i slutomröstningen
+      username_label: Användarnamn
+      verified_account: Kontot verifierat
+      verify_my_account: Verifiera mitt konto
+  application:
+    close: Stäng
+    menu: Meny
+  comments:
+    comments_closed: Kommentarer är stängda
+    verified_only: För att delta %{verify_account}
+    verify_account: verifiera ditt konto
+    comment:
+      admin: Administratör
+      author: Författare
+      deleted: Den här kommentaren har tagits bort
+      moderator: Moderator
+      responses:
+        zero: Inga svar
+        one: 1 svar
+        other: "%{count} svar"
+      user_deleted: Användaren borttagen
+      votes:
+        zero: Inga röster
+        one: 1 röst
+        other: "%{count} röster"
+    form:
+      comment_as_admin: Kommentera som admin
+      comment_as_moderator: Kommentera som moderator
+      leave_comment: Lämna din kommentar
+    orders:
+      most_voted: Flest röster
+      newest: Nyaste först
+      oldest: Äldsta först
+      most_commented: Mest kommenterade
+    select_order: Sortera efter
+    show:
+      return_to_commentable: 'Gå tillbaka till '
+  comments_helper:
+    comment_button: Publicera kommentar
+    comment_link: Kommentera
+    comments_title: Kommentarer
+    reply_button: Publicera svar
+    reply_link: Svara
+  debates:
+    create:
+      form:
+        submit_button: Starta en debatt
+    debate:
+      comments:
+        zero: Inga kommentarer
+        one: 1 kommentar
+        other: "%{count} kommentarer"
+      votes:
+        zero: Inga röster
+        one: 1 röst
+        other: "%{count} röster"
+    edit:
+      editing: Redigera debatt
+      form:
+        submit_button: Spara ändringar
+      show_link: Visa debatt
+    form:
+      debate_text: Inledande debatttext
+      debate_title: Debatttitel
+      tags_instructions: Tagga denna debatt.
+      tags_label: Ämne
+      tags_placeholder: "Skriv in de etiketter du vill använda, avgränsade med semikolon (',')"
+    index:
+      orders:
+        confidence_score: högst betygsatt
+        created_at: senaste
+        hot_score: mest aktiva
+        most_commented: mest kommenterade
+        recommendations: rekommendationer
+      recommendations:
+        without_results: Det finns inga debatter som rör dina intressen
+        without_interests: Följ förslag så vi kan ge dig rekommendationer
+      search_form:
+        button: Sök
+        placeholder: Sök diskussioner...
+        title: Sök
+      select_order: Sortera efter
+      start_debate: Starta en diskussion
+      title: Diskussioner
+      section_header:
+        title: Diskussioner
+        help: Hjälp kring debatter
+      section_footer:
+        title: Hjälp kring debatter
+        proposals_link: förslag
+        budget_link: deltagande budgeterande
+    new:
+      form:
+        submit_button: Starta en diskussion
+      recommendation_one: Använd inte versaler för diskussionstiteln eller för hela meningar. På internet anses detta skrika. Och gillar ingen att bli skriken på.
+      start_new: Starta en diskussion
+    show:
+      author_deleted: Användaren borttagen
+      comments:
+        zero: Inga kommentarer
+      comments_title: Kommentarer
+      edit_debate_link: Redigera
+      flag: Denna debatt har flaggats som olämpligt av flera användare.
+      share: Dela
+      author: Författare
+    update:
+      form:
+        submit_button: Spara ändringar
+  errors:
+    messages:
+      user_not_found: Användaren hittades inte
+      invalid_date_range: "Felaktig datumföljd"
+  form:
+    direct_message: privat meddelande
+    error: fel
+    errors: fel
+    policy: Sekretesspolicy
+    proposal: Förslag
+    proposal_notification: "Anmälan"
+    spending_proposal: Investeringsförslag
+    budget/investment: Investering
+    image: Bild
+  layouts:
+    header:
+      administration_menu: Admin
+      external_link_blog: Blogg
+      help: Hjälp
+  notifications:
+    index:
+      read: Läst
+  proposals:
+    retire_options:
+      other: Andra
+    form:
+      tags_label: Taggar
+    index:
+      retired_links:
+        all: Alla
+        other: Andra
+    proposal:
+      total_percent: 100%
+    show:
+      edit_proposal_link: Redigera
+      share: Dela
+  polls:
+    all: "Alla"
+    index:
+      filters:
+        current: "Pågående"
+    show:
+      stats:
+        web: "WEBB"
+        total: "TOTALT"
+  proposal_notifications:
+    new:
+      title_label: "Titel"
+  shared:
+    edit: 'Redigera'
+    save: 'Spara'
+    "yes": "Ja"
+    "no": "Nej"
+    advanced_search:
+      from: 'Från'
+      to: 'Till'
+    check_all: Alla
+    check_none: Ingen
+    hide: Göm
+    show: Visa
+  spending_proposals:
+    show:
+      share: Dela
+  users:
+    direct_messages:
+      new:
+        title_label: Titel
+  related_content:
+    submit: "Lägg till"
+    score_positive: "Ja"
+    score_negative: "Nej"
