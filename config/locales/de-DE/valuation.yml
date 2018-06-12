@@ -1,0 +1,75 @@
+de:
+  valuation:
+    budgets:
+      index:
+        filters:
+          current: Offen
+          finished: Fertig
+        table_name: Name
+        table_phase: Phase
+        table_actions: Aktionen
+        evaluate: Bewerten
+    budget_investments:
+      index:
+        headings_filter_all: Alle Überschriften
+        filters:
+          valuation_open: Offen
+        title: Investitionsprojekte
+        edit: Dossier bearbeiten
+        table_id: ID
+        table_title: Titel
+        table_actions: Aktionen
+      show:
+        back: Zurück
+        title: Investitionsprojekt
+        info: Autor Informationen
+        by: Gesendet von
+        heading: Überschrift
+        dossier: Dossier
+        edit_dossier: Dossier bearbeiten
+        currency: "€"
+        feasibility: Durchführbarkeit
+        feasible: Durchführbar
+        unfeasible: Undurchführbar
+        undefined: Undefiniert
+        duration: Zeitrahmen
+        responsibles: Verantwortliche
+      edit:
+        dossier: Dossier
+        feasibility: Durchführbarkeit
+        feasible: Durchführbar
+        unfeasible: Nicht durchführbar
+        undefined_feasible: Ausstehend
+        feasible_explanation_html: Erläuterung der Durchführbarkeit
+        valuation_finished_alert: "Sind Sie sicher, dass Sie diesen Bericht als erledigt markieren möchten? Hiernach können Sie keine Änderungen mehr vornehmen."
+        not_feasible_alert: "Der Autor des Projekts erhält sofort eine E-Mail mit einem Bericht zur Undurchführbarkeit."
+        duration_html: Zeitrahmen
+        save: Änderungen speichern
+      notice:
+        valuate: "Dossier aktualisiert"
+    spending_proposals:
+      index:
+        filters:
+          valuation_open: Offen
+          valuation_finished: Bewertung beendet
+        edit: Bearbeiten
+      show:
+        back: Zurück
+        heading: Investitionsprojekte
+        info: Autor info
+        association_name: Verband
+        by: Gesendet von
+        sent: Gesendet um
+        geozone: Rahmen
+        dossier: Dossier
+        edit_dossier: Dossier bearbeiten
+        currency: "€"
+        feasibility: Durchführbarkeit
+        feasible: Durchführbar
+        responsibles: Verantwortliche
+      edit:
+        dossier: Dossier
+        time_scope_html: Zeitrahmen
+        save: Änderungen speichern
+      notice:
+        valuate: "Dossier aktualisiert"
