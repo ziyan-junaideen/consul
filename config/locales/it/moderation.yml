@@ -1,0 +1,69 @@
+it:
+  moderation:
+    comments:
+      index:
+        block_authors: Blocca gli autori
+        confirm: Sei sicuro?
+        filter: Filtro
+        filters:
+          all: Tutti
+          pending_flag_review: In sospeso
+          with_ignored_flag: Contrassegna come già visto
+        headers:
+          comment: Commento
+          moderate: Moderare
+        hide_comments: Nascondere i commenti
+        ignore_flags: Contrassegnato come già visto
+        order: Ordine
+        orders:
+          flags: I più segnalati
+          newest: Più recente
+        title: Commenti
+    dashboard:
+      index:
+        title: Moderare
+    debates:
+      index:
+        block_authors: Blocca gli autori
+        confirm: Sei sicuro?
+        filter: Filtro
+        filters:
+          all: Tutti
+          pending_flag_review: In sospeso
+          with_ignored_flag: Contrassegna come già visto
+        headers:
+          debate: Dibattito
+          moderate: Moderare
+        hide_debates: Nascondi i dibattiti
+        ignore_flags: Contrassegna come già visto
+        order: Ordine
+        orders:
+          created_at: Più recente
+          flags: Più contrassegnato
+        title: Dibattiti
+    header:
+      title: Moderare
+    menu:
+      flagged_comments: Commenti
+      flagged_debates: Dibattiti
+      proposals: Proposte
+      users: Blocca gli utenti
+    proposals:
+      index:
+        block_authors: Blocca gli autori
+        confirm: Sei sicuro?
+        filters:
+          pending_flag_review: In attesa di revisione
+        headers:
+          proposal: Proposta
+        hide_proposals: Nascondi le proposte
+        order: Ordinare per
+        orders:
+          created_at: Più recente
+    users:
+      index:
+        hidden: Bloccato
+        hide: Blocco
+        search: Ricerca
+        search_placeholder: e-mail o nome utente
+      notice_hide: Utente bloccato. Tutti i dibattiti e commenti di questo utente sono state nascostie.
