@@ -1,0 +1,13 @@
+it:
+  pages:
+    census_terms: Per confermare la tua utenza (account) devi avere almeno 16 anni ed essere registrato, dopo aver fornito le informazioni richieste in precedenza, che saranno verificate. Accettando il processo di verifica, acconsenti anche alla verifica di tali informazioni, ed autorizzi i metodi di contatto indicati. I dati forniti saranno acquisiti e memorizzati in un archivio, come menzionato in precedenza nei termini e condizioni di utilizzo del portale.
+    general_terms: Termini e condizioni d'uso
+    titles:
+      conditions: Termini di utilizzo
+    verify:
+      code: Codice che hai ricevuto nella lettera
+      email: E-mail
+      info_code: 'Ora introduci il codice che hai ricevuto nella lettera:'
+      password: Password
+      submit: Verificare la mia utenza
+      title: Verifica il tuo account
