@@ -1,0 +1,12 @@
+nl:
+  community:
+    show:
+      sidebar:
+        participate: Deelnemen
+      topic:
+        comments:
+          one: 1 reactie
+          other: "%{count} reacties"
+  topics:
+    show:
+      login_to_comment: U moet %{signin} of %{signup} om een reactie te kunnen plaatsen.
