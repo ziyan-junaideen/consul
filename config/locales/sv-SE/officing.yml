@@ -1,0 +1,23 @@
+sv:
+  officing:
+    header:
+      title: Omröstning
+    dashboard:
+      index:
+        title: Omröstningskontor
+    polls:
+      final:
+        select_poll: Välj omröstning
+        add_results: Lägg till resultat
+    results:
+      flash:
+        create: "Resultaten har sparats"
+        error_create: "Resultaten har INTE sparats. Felaktig data."
+        error_wrong_booth: "Fel röstbås. Resultatet sparades INTE."
+      new:
+        title: "%{poll} - Lägg till resultat"
+        not_allowed: "Du får lägga till resultat för denna omröstning"
+        booth: "Röstbås"
+        date: "Datum"
+        select_booth: "Välj röstbås"
+        submit: "Spara"
