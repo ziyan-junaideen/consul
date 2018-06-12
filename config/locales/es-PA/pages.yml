@@ -1,0 +1,16 @@
+es-PA:
+  pages:
+    census_terms: Para verificar la cuenta hay que tener 16 años o más y estar empadronado aportando los datos indicados anteriormente, los cuales serán contrastados. Aceptando el proceso de verificación acepta dar su consentimiento para contrastar dicha información, así como medios de contacto que figuren en dichos ficheros. Los datos aportados serán incorporados y tratados en un fichero indicado anteriormente en las condiciones de uso del portal.
+    conditions: Condiciones de uso
+    general_terms: Términos y Condiciones
+    privacy: Política de privacidad
+    titles:
+      accessibility: Accesibilidad
+      conditions: Condiciones de uso
+      privacy: Política de Privacidad
+    verify:
+      code: Código que has recibido en tu carta
+      info_code: 'Ahora introduce el código que has recibido en tu carta:'
+      password: Contraseña
+      submit: Verificar mi cuenta
+      title: Verifica tu cuenta
