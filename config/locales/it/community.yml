@@ -2,3 +2,8 @@ it:
   community:
     sidebar:
       title: Comunità
+    show:
+      topic:
+        comments:
+          one: 1 commento
+          other: "%{count} commenti"
