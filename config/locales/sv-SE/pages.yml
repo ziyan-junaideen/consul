@@ -1,0 +1,38 @@
+sv:
+  pages:
+    conditions: Regler och villkor för användning
+    general_terms: Regler och villkor
+    help:
+      menu:
+        debates: "Debatter"
+        proposals: "Förslag"
+      debates:
+        title: "Debatter"
+        link: "debatter"
+        feature_link: "registrera i %{org}"
+      proposals:
+        title: "Förslag"
+        link: "medborgarförslag"
+      polls:
+        title: "Omröstningar"
+        link: "omröstningar"
+      faq:
+        page:
+          title: "Vanliga frågor"
+          description: "Använd denna sida för att hjälpa dina användare med deras vanligaste frågorna."
+          faq_1_title: "Fråga 1"
+      other:
+        how_to_use: "Använd %{org_name} i din stad"
+      titles:
+        how_to_use: Använd det i din lokal styrelse
+    privacy: Sekretesspolicy
+    titles:
+      accessibility: Tillgänglighet
+      conditions: Användarvillkor
+      help: "Vad är %{org}? - Medborgardialog"
+      privacy: Sekretesspolicy
+    verify:
+      email: E-post
+      password: Lösenord
+      submit: Verifiera mitt konto
+      title: Verifiera ditt konto
