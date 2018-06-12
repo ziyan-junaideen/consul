@@ -1,0 +1,308 @@
+de:
+  activerecord:
+    models:
+      activity:
+        one: "Aktivität"
+        other: "Aktivitäten"
+      budget:
+        one: "Budget"
+        other: "Budgets"
+      budget/investment:
+        one: "Investition"
+        other: "Investitionen"
+      budget/investment/milestone:
+        one: "Meilenstein"
+        other: "Meilensteine"
+      comment:
+        one: "Kommentar"
+        other: "Kommentare"
+      debate:
+        one: "Diskussion"
+        other: "Debatten"
+      tag:
+        one: "Markierung"
+        other: "Markierungen"
+      user:
+        one: "Benutzer"
+        other: "Benutzer"
+      moderator:
+        one: "Moderator"
+        other: "Moderatoren"
+      administrator:
+        one: "Administrator"
+        other: "Administratoren"
+      manager:
+        one: "Manager"
+        other: "Manager"
+      newsletter:
+        one: "Newsletter"
+        other: "Newsletters"
+      vote:
+        one: "Stimme"
+        other: "Stimmen"
+      organization:
+        one: "Organisation"
+        other: "Organisationen"
+      poll/booth:
+        one: "Wahlkabine"
+        other: "Wahlkabinen"
+      poll/officer:
+        one: "Beamter/in"
+        other: "Beamte/innen"
+      proposal:
+        one: "Bürgerantrag"
+        other: "Bürgeranträge"
+      site_customization/page:
+        one: Benutzerwebseite
+        other: Benutzerwebseiten
+      site_customization/image:
+        one: Benutzerbild
+        other: Benutzerbilder
+      site_customization/content_block:
+        one: Benutzerspezifischer Inhaltsdatenblock
+        other: Benutzerspezifische Inhaltsdatenblöcke
+      legislation/process:
+        one: "Prozess"
+        other: "Prozesse"
+      legislation/draft_versions:
+        one: "Entwurfsfassung"
+        other: "Entwurfsfassungen"
+      legislation/draft_texts:
+        one: "Entwurf"
+        other: "Entwürfe"
+      legislation/questions:
+        one: "Frage"
+        other: "Fragen"
+      legislation/question_options:
+        one: "Fragemöglichkeit"
+        other: "Fragemöglichkeiten"
+      legislation/answers:
+        one: "Antwort"
+        other: "Antworten"
+      documents:
+        one: "Dokument"
+        other: "Dokumente"
+      images:
+        one: "Bild"
+        other: "Bilder"
+      topic:
+        one: "Thema"
+        other: "Themen"
+      poll:
+        one: "Abstimmung"
+        other: "Abstimmungen"
+    attributes:
+      budget:
+        name: "Name"
+        description_accepting: "Beschreibung während Akzeptierungsphase"
+        description_reviewing: "Beschreibung während Überprüfungsphase"
+        description_selecting: "Beschreibung während Auswahlphase"
+        description_valuating: "Beschreibung während Bewertungsphase"
+        description_balloting: "Beschreibung während Abstimmungsphase"
+        description_reviewing_ballots: "Beschreibung während der Überprüfungshase der Abstimmungen"
+        description_finished: "Beschreibung wenn das Budget finalisiert ist"
+        phase: "Phase"
+        currency_symbol: "Währung"
+      budget/investment:
+        heading_id: "Überschrift"
+        title: "Titel"
+        description: "Beschreibung"
+        external_url: "Link zu weiterer Dokumentation"
+        administrator_id: "Administrator"
+        location: "Standort (optional)"
+        organization_name: "Wenn Sie einen Vorschlag im Namen eines Kollektivs/einer Organisation, oder von mehreren Menschen machen, nennen Sie bitte dessen/deren Name/n"
+        image: "Vorschlag beschreibendes Bild"
+        image_title: "Bildtitel"
+      budget/investment/milestone:
+        title: "Titel"
+        description: "Beschreibung"
+        publication_date: "Datum der Veröffentlichung"
+      budget/heading:
+        name: "Name der Überschrift"
+        price: "Preis"
+        population: "Bevölkerung"
+      comment:
+        body: "Kommentar"
+        user: "Benutzer"
+      debate:
+        author: "Autor"
+        description: "Meinung"
+        terms_of_service: "Nutzungsbedingungen"
+        title: "Titel"
+      proposal:
+        author: "Autor"
+        title: "Titel"
+        question: "Frage"
+        description: "Beschreibung"
+        terms_of_service: "Nutzungsbedingungen"
+      user:
+        login: "E-Mail oder Benutzername"
+        email: "E-Mail"
+        username: "Benutzername"
+        password_confirmation: "Bestätigen Sie das Passwort "
+        password: "Passwort"
+        current_password: "Aktuelles Passwort"
+        phone_number: "Telefonnummer"
+        official_position: "Öffentliches Amt"
+        official_level: "Offizielle Ebene"
+        redeemable_code: "Bestätigungscode per E-Mail erhalten"
+      organization:
+        name: "Name der Organisation"
+        responsible_name: "Der/die Gruppenverantwortliche"
+      spending_proposal:
+        association_name: "Vereinsname"
+        description: "Beschreibung"
+        external_url: "Link zu weiterer Dokumentation"
+        geozone_id: "Einsatzumfang"
+        title: "Titel"
+      poll:
+        name: "Name"
+        starts_at: "Startdatum"
+        ends_at: "Abgabetermin"
+        geozone_restricted: "beschränkt auf Verwaltungsgebiet"
+        summary: "Zusammenfassung"
+        description: "Beschreibung"
+      poll/question:
+        title: "Frage"
+        summary: "Zusammenfassung"
+        description: "Beschreibung"
+        external_url: "Link zu weiterer Dokumentation"
+      signature_sheet:
+        signable_type: "Handschrift"
+        signable_id: "zu unterzeichnender Ausweis"
+        document_numbers: "Dokumentennummern"
+      site_customization/page:
+        content: Inhalt
+        created_at: Erstellt am
+        subtitle: Untertitel
+        slug: Slug
+        status: Status
+        title: Titel
+        updated_at: Aktualisiert am
+        more_info_flag: In der Hilfeseite anzeigen
+        print_content_flag: Taste Inhaltdrucken
+        locale: Sprache
+      site_customization/image:
+        name: Name
+        image: Bild
+      site_customization/content_block:
+        name: Name
+        locale: Gebietsschema
+        body: Körper
+      legislation/process:
+        title: Prozesstitel
+        description: Beschreibung
+        additional_info: zusätzliche Information
+        start_date: Startdatum
+        end_date: Enddatum
+        debate_start_date: Startdatum Diskussion
+        debate_end_date: Enddatum Diskussion
+        draft_publication_date: Entwurf-Veröffentlichungsdatum
+        allegations_start_date: Behauptung-Startdatum
+        allegations_end_date: Behauptung-Enddatum
+        result_publication_date: Veröffentlichungsdatum Endergebnis
+      legislation/draft_version:
+        title: Version-Titel
+        body: Text
+        changelog: Änderungen
+        status: Status
+        final_version: Endgültige Fassung
+      legislation/question:
+        title: Titel
+        question_options: Optionen
+      legislation/question_option:
+        value: Wert
+      legislation/annotation:
+        text: Kommentar
+      document:
+        title: Titel
+        attachment: Anlage
+      image:
+        title: Titel
+        attachment: Anlage
+      poll/question/answer:
+        title: Antwort
+        description: Beschreibung
+      poll/question/answer/video:
+        title: Titel
+        url: Externe Videos
+      newsletter:
+        segment_recipient: Empfänger
+        subject: Betreff
+        from: Von
+        body: Inhalt der E-Mail
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              password_already_set: "Dieser Benutzer hat bereits ein Passwort"
+        debate:
+          attributes:
+            tag_list:
+              less_than_or_equal_to: "Kennzeichen müssen kleiner als oder gleich %{count} sein"
+        direct_message:
+          attributes:
+            max_per_day:
+              invalid: "Sie haben die maximale Anzahl an Privatnachrichten pro Tag erreicht"
+        image:
+          attributes:
+            attachment:
+              min_image_width: "Bildbreite muss mindestens %{required_min_width}px betragen"
+              min_image_height: "Bildhöhe muss mindestens %{required_min_height}px betragen"
+        newsletter:
+          attributes:
+            segment_recipient:
+              invalid: "Das Benutzersegment Empfänger ist ungültig"
+        map_location:
+          attributes:
+            map:
+              invalid: Der Kartenstandort darf nicht leer sein. Platzieren Sie einen Marker oder aktivieren Sie das Kontrollkästchen, wenn keine Lokalisierung erforderlich ist
+        poll/voter:
+          attributes:
+            document_number:
+              not_in_census: "Nicht in Zählung zu erfassen"
+              has_voted: "Benutzer hat bereits abgestimmt"
+        legislation/process:
+          attributes:
+            end_date:
+              invalid_date_range: muss am oder nach dem Startdatum
+            debate_end_date:
+              invalid_date_range: muss am oder nach dem Debatten-Startdatum
+            allegations_end_date:
+              invalid_date_range: muss am oder nach dem Behauptungsstartdatum
+        proposal:
+          attributes:
+            tag_list:
+              less_than_or_equal_to: "Kennzeichnungen müssen kleiner oder gleich %{count} sein"
+        budget/investment:
+          attributes:
+            tag_list:
+              less_than_or_equal_to: "Kennzeichnungen müssen kleiner oder gleich %{count} sein"
+        proposal_notification:
+          attributes:
+            minimum_interval:
+              invalid: "Sie müssen mindestens %{interval} Tage zwischen den Benachrichtigungen warten"
+        signature:
+          attributes:
+            document_number:
+              not_in_census: 'nicht überprüft durch Zählung'
+              already_voted: 'Bereits abgestimmter Vorschlag'
+        site_customization/page:
+          attributes:
+            slug:
+              slug_format: "muss sein Buchstaben, Ziffern, _ und -"
+        site_customization/image:
+          attributes:
+            image:
+              image_width: "Breite muss %{required_width}px sein"
+              image_height: "Höhe muss %{required_height}px sein"
+        comment:
+          attributes:
+            valuation:
+              cannot_comment_valuation: 'Sie können keine Bewertung kommentieren'
+      messages:
+        record_invalid: "Validierung fehlgeschlagen: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "Datensatz kann nicht gelöscht werden, da ein abhängiger %{record} vorhanden ist"
+          has_many: "Datensatz kann nicht gelöscht werden, da abhängiger %{record} vorhanden ist"
