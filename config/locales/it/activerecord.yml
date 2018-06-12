@@ -1,0 +1,205 @@
+it:
+  activerecord:
+    models:
+      activity:
+        one: "attività"
+        other: "attività"
+      budget:
+        one: "Bilancio"
+        other: "Bilancio"
+      budget/investment:
+        one: "Investimento"
+        other: "Investimenti"
+      comment:
+        one: "Commento"
+        other: "Commenti"
+      debate:
+        one: "Dibattito"
+        other: "Dibattiti"
+      tag:
+        one: "Tag"
+        other: "Tag"
+      user:
+        one: "Utente"
+        other: "Utenti"
+      moderator:
+        one: "Moderatore"
+        other: "Moderatori"
+      administrator:
+        one: "Amministratore"
+        other: "Amministratori"
+      manager:
+        one: "Gestore"
+        other: "Gestori"
+      vote:
+        one: "Voto"
+        other: "Voti"
+      organization:
+        one: "Organizzazione"
+        other: "Organizzazioni"
+      poll/booth:
+        one: "area di voto"
+        other: "aree di voto"
+      poll/officer:
+        one: "responsabile"
+        other: "responsabili"
+      proposal:
+        one: "Proposta cittadina"
+        other: "Proposte cittadine"
+      site_customization/page:
+        one: Pagina personalizzata
+        other: Pagine personalizzate
+      site_customization/image:
+        one: Immagine personalizzata
+        other: Immagini personalizzate
+      site_customization/content_block:
+        one: Blocco di contenuto personalizzato
+        other: Blocchi di contenuto personalizzato
+      legislation/draft_versions:
+        one: "Versione in bozza"
+        other: "Versioni in bozza"
+      legislation/draft_texts:
+        one: "Bozza"
+        other: "Bozze"
+      legislation/questions:
+        one: "Domanda"
+        other: "Domanda"
+      legislation/question_options:
+        one: "Opzione della domanda"
+        other: "Opzione della domanda"
+      legislation/answers:
+        one: "Risposta"
+        other: "Risposte"
+      documents:
+        one: "Documento"
+        other: "Documenti"
+      images:
+        one: "Immagine"
+        other: "Immagini"
+      topic:
+        one: "Argomento"
+        other: "Argomenti"
+      poll:
+        one: "Sondaggio"
+        other: "Sondaggi"
+    attributes:
+      budget:
+        name: "Nome"
+        description_accepting: "Descrizione durante la fase della Accettazione"
+        description_reviewing: "Descrizione durante la fase della Verifica"
+        description_selecting: "Descrizione durante la fase della Ricerca di appoggi"
+        description_valuating: "Descrizione durante la fase della Valutazione"
+        description_balloting: "Descrizione durante la fase del Voto"
+        description_reviewing_ballots: "Descrizione durante la fase della Verifica del voto"
+        description_finished: "Descrizione durante la fase della Approvazione del Bilancio / Risultati"
+        phase: "Fase"
+        currency_symbol: "Valuta"
+      budget/investment:
+        heading_id: "Intestazione"
+        title: "Titolo"
+        description: "Descrizione"
+        external_url: "Link alla documentazione addizionale"
+        administrator_id: "Amministratore"
+        location: "Posizione (facoltativo)"
+      comment:
+        user: "Utente"
+      debate:
+        author: "Autore"
+        description: "Opinione"
+        terms_of_service: "Termini di servizio"
+      proposal:
+        question: "Domanda"
+      user:
+        password_confirmation: "Conferma password"
+        official_position: "Incarico ufficiale"
+        official_level: "Livello dell'incarico"
+        redeemable_code: "Il codice di verifica che hai ricevuto via email"
+      organization:
+        responsible_name: "La persona responsabile per l'organzzazione"
+      spending_proposal:
+        association_name: "Nome Associazione"
+        geozone_id: "Zona di attuazione"
+      poll:
+        starts_at: "Data inizio"
+        ends_at: "Data chiusura"
+        geozone_restricted: "Ristretto alla zona geografica"
+      poll/question:
+        summary: "Sommario"
+      signature_sheet:
+        signable_type: "Tipo Foglio firme"
+        signable_id: "ID Proposta"
+        document_numbers: "Numero di documenti"
+      site_customization/page:
+        content: Contenuto
+        created_at: Creato a
+        subtitle: Sottotitolo
+        status: Stato
+        updated_at: Aggiornato a
+        print_content_flag: Bottone di stampa
+        locale: Lingua
+      site_customization/image:
+        image: Immagine
+      site_customization/content_block:
+        locale: Lingua
+        body: Testo
+      legislation/process:
+        title: Titolo del processo
+        additional_info: Ulteriori info
+        start_date: Data di inizio
+        end_date: Data di fine
+        debate_start_date: Data di inizio del dibattito
+        debate_end_date: Data di fine del dibattito
+        draft_publication_date: Data di pubblicazione della bozza
+        result_publication_date: Data di pubblicazione del risultato finale
+      legislation/draft_version:
+        title: Titolo della versione
+        body: Testo
+        changelog: Modifiche
+        final_version: Versione finale
+      legislation/question:
+        question_options: Opzioni
+      legislation/question_option:
+        value: Valore
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              password_already_set: "Questo utente ha già una password"
+        debate:
+          attributes:
+            tag_list:
+              less_than_or_equal_to: "Le tags devono essere minori o uguali a %{count}"
+        direct_message:
+          attributes:
+            max_per_day:
+              invalid: "Hai raggiunto il numero massimo di messaggi privati giornalieri"
+        poll/voter:
+          attributes:
+            document_number:
+              not_in_census: "Il documento non è presente negli archivi istituzionali"
+              has_voted: "L'utente ha già votato"
+        legislation/process:
+          attributes:
+            end_date:
+              invalid_date_range: deve essere almeno dalla data di inizio
+            debate_end_date:
+              invalid_date_range: deve essere almeno dalla data di inizio del dibattio
+        proposal_notification:
+          attributes:
+            minimum_interval:
+              invalid: "Devi aspettare almeno %{interval} giorni dalle notifiche"
+        signature:
+          attributes:
+            document_number:
+              not_in_census: 'Il documento non è stato verificato negli archivi istituzionali'
+              already_voted: 'Proposta già votata'
+        site_customization/page:
+          attributes:
+            slug:
+              slug_format: "devono essere lettere, numeri, caratteri come _ e -"
+        site_customization/image:
+          attributes:
+            image:
+              image_width: "La dimensione deve essere %{required_width}px"
+              image_height: "L'altezza deve essere %{required_height}px"
