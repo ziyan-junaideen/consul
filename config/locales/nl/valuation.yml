@@ -1,0 +1,79 @@
+nl:
+  valuation:
+    header:
+      title: Beoordeling
+    menu:
+      title: Raming
+      budgets: Begrotingsvoorstellen
+    budgets:
+      index:
+        title: Begrotingsvoorstellen
+        table_assigned_investments_valuation_open: Projecten die nog niet zijn geraamd
+    budget_investments:
+      index:
+        filters:
+          valuating: Wordt geraamd
+          valuation_finished: Geraamd
+        title: Projecten
+      show:
+        title: Project
+        valuation_finished: Geraamd
+      edit:
+        dossier: Dossier
+        feasibility: Haalbaarheid
+        feasible: Haalbaar
+        valuation_finished: Beoordeeld
+        valuation_finished_alert: "Dit rapport als voltooid markeren? Dit kan het niet meer worden gewijzigd."
+        duration_html: Tijdsspanne
+        save: Wijzigingen opslaan
+      notice:
+        valuate: "Dossier bijgewerkt"
+      valuation_comments: Reacties op raming
+      not_in_valuating_phase: Investeringen kunnen alleen worden geraamd wanneer de ramingsfase van het budget is gestart
+    spending_proposals:
+      index:
+        filters:
+          valuation_open: Open
+          valuating: Wordt beoordeeld
+          valuation_finished: Beoordeeld
+        title: Projecten voor begrotingsvoorstellen
+        edit: Wijzigen
+      show:
+        back: Terug
+        info: Over de auteur
+        association_name: Asociación
+        by: Verzonden door
+        sent: Verzonden aan
+        geozone: Scope
+        dossier: Dossier
+        edit_dossier: Dossier wijzigen
+        price: Prijs
+        price_first_year: Kosten eerste jaar
+        currency: "€"
+        feasibility: Haalbaarheid
+        feasible: Haalbaar
+        not_feasible: Onhaalbaar
+        undefined: Ongedefinieerd
+        valuation_finished: Beoordeeld
+        time_scope: Tijdsspanne
+        internal_comments: Besloten opmerking
+        responsibles: Verantwoordelijken
+        assigned_admin: Toegewezen beheerder
+        assigned_valuators: Toegewezen beoordelaars
+      edit:
+        dossier: Dossier
+        price_html: "Prijs (%{currency})"
+        price_first_year_html: "Kosten eerste jaar (%{currency})"
+        currency: "€"
+        price_explanation_html: Toelichting op de kosten
+        feasibility: Haalbaarheid
+        feasible: Haalbaar
+        not_feasible: Onhaalbaar
+        undefined_feasible: In behandeling
+        feasible_explanation_html: Toelichting op de haalbaarheid
+        valuation_finished: Beoordeeld
+        time_scope_html: Tijdsspanne
+        internal_comments_html: Interne reacties
+        save: Wijzigingen opslaan
+      notice:
+        valuate: "Dossier gewijzigd"
