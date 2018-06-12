@@ -93,7 +93,7 @@ he:
       create: יצירת הצעה תקציב
       filters:
         unfeasible: פרויקטים להשקעה אינם ברי ביצוע
-        by_geozone: 'פרויקטים להשקעה בהיקפים של:: %{geozone}'
+        by_geozone: "פרויקטים להשקעה בהיקפים של:: %{geozone}"
       print:
         print_button: הדפסה
     sessions:
@@ -106,7 +106,7 @@ he:
       create_user_submit: יצירת משתמש/ת
       create_user_success_html: שלחנו הודעה לכתובת הדואר אלקטרוני <b>%{email}</b> כדי לוודא שהוא שייך למשתמש/ת. ההודעה מכילה קישור שעליך ללחוץ עליו. לאחר מכן יש צורך להגדיר את סיסמת הגישה שלך לפני שיתאפשר להיכנס לאתר
       erased_notice: חשבון המשתמש/ת נמחק
-      erased_by_manager: 'נמחק על ידי מנהל: %{manager}'
+      erased_by_manager: "נמחק על ידי מנהל: %{manager}"
       erase_account_link: מחיקת משתמש
       erase_account_confirm: בטוח שברצונך למחוק את החשבון? לא ניתן לבטל פעולה זו
       erase_warning: לא ניתן לבטל פעולה זו. נא לוודא שכוונתך למחוק את החשבון הזה
