@@ -1,0 +1,6 @@
+sv:
+  views:
+    pagination:
+      first: Första
+      last: Sista
+      next: Nästa
