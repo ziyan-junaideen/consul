@@ -1,0 +1,27 @@
+sv:
+  legislation:
+    annotations:
+      form:
+        phase_not_open: Fasen är inte öppen
+    draft_versions:
+      show:
+        text_body: Text
+    processes:
+      index:
+        filters:
+          next: Nästa
+          past: Tidigare
+      phase_not_open:
+        not_open: Fasen är inte öppen ännu
+      phase_empty:
+        empty: Inget har publicerats än
+    questions:
+      comments:
+        comments_closed: Avslutad fas
+      show:
+        share: Dela
+      participation:
+        phase_not_open: Denna fas är inte öppen
+        debate_phase_not_open: Diskussionsfasen har avslutats, och svar kan inte längre tas emot
+    shared:
+      share: Dela
