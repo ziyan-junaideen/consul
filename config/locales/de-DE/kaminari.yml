@@ -1,0 +1,12 @@
+de:
+  helpers:
+    page_entries_info:
+      entry:
+        zero: Einträge
+  views:
+    pagination:
+      current: Sie sind auf der Seite
+      first: Erste
+      last: Letzte
+      next: Nächste
+      previous: Vorherige
