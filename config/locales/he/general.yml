@@ -19,7 +19,7 @@ he:
       official_position_badge_label: הצג את אות הדירוג הרשמי שלי
       title: החשבון שלי
       user_permission_debates: להשתתף בדיונים
-      user_permission_info: '...עם החשבון שלך תוכל/י'
+      user_permission_info: ...עם החשבון שלך תוכל/י
       user_permission_proposal: ליצור הצעות חדשות
       user_permission_support_proposal: לתמוך בהצעות
       user_permission_title: השתתפות
@@ -179,14 +179,9 @@ he:
       management: ניהול
       moderation: הנחיה
       valuation: הערכה
-      more_info: מידע נוסף
       my_account_link: החשבון שלי
       my_activity_link: הפעילות שלי
-      notifications: התראות
-      no_notifications: "אין לך התראות חדשות"
       open: פתיחה
-      open_city_slogan_html: ערים ומדינות בעולם מתנהלות באופן ישיר בידי האזרחים, שיכולים <b>לדון</b> בנושאים שמדאיגים אותם או חשובים להם, <b>להציע</b> תכניות ורעיונות שישפרו את חייהם ואז <b>לקבוע</b> בעצמם מה ההצעות שיבוצעו בפועל. עכשיו גם בישראל
-      open_city_title: קול העם מזמינה אותך לכתוב ולהחליט על העתיד שלנו ביחד למען כולנו
       open_gov: ממשל פתוח
       proposals: הצעות
       poll_questions: הצבעות
@@ -249,6 +244,7 @@ he:
       geozone: היקף הפעילות
       proposal_external_url: קישור למידע נוסף
       proposal_question: השאלה המוצעת
+      proposal_question_example_html: "את ההצעה חייבים לסכם בצורה שהתשובה עליה תהיה [כן] או [לא]. <em>- למשל 'האם לדעתך צריך להפוך את רחוב קפלן למדרחוב?'</em>"
       proposal_responsible_name: שם ושם משפחה מלא של מציע/ת ההצעה
       proposal_responsible_name_note: "“(כאדם פרטי או כנציג/ה של התאגדות תושבים. השם יישמר חסוי מפני שאר המשתמשים)\""
       proposal_summary: תקציר ההצעה
@@ -348,7 +344,7 @@ he:
       participate_button_expired: "ההצבעה הסתיימה"
       no_geozone_restricted: "בכל הערים/הרשויות"
       geozone_restricted: "מחוזות"
-      geozone_info: 'יכולים להשתתף אזרחים מ: '
+      geozone_info: "יכולים להשתתף אזרחים מ: "
       already_answer: "השתתפת כבר בהצבעה זו"
     show:
       cant_answer_not_logged_in: "נדרשת %{signin} או %{signup} בכדי להשתתף"
@@ -449,7 +445,7 @@ he:
     index:
       title: מימון השתתפותי
       unfeasible: פרויקטים שהשקעה בהם אינה ברת ביצוע
-      by_geozone: 'פרויקט השקעה בתחומי: %{geozone}'
+      by_geozone: "פרויקט השקעה בתחומי: %{geozone}"
       search_form:
         button: חיפוש
         placeholder: פרויקטים להשקעה...
@@ -546,18 +542,6 @@ he:
       unfeasible: לא ניתן לתמוך בפרויקטים שאינם ברי ביצוע
       not_voting_allowed: שלב ההצבעות נסגר
   welcome:
-    debates:
-      description: לפגישות, דיונים ודיוק הצעות לקראת הצעה סופית
-      title: דיונים
-    decide:
-      description: חברי התנועה מחליטים אם הם מקבלים או דוחים את ההצעות הנתמכות ביותר על ידי הציבור
-      title: ההצבעות שלך
-    do:
-      description: אם ההצעה מקובלת על הרוב, היא תעלה למצע התנועה ותקודם על ידי חבריה
-      title: זה יעשה
-    proposal:
-      description: המרחב הציבורי להצעות שלך לניהול המדינה
-      title: ההצעות שלך
     verification:
       i_dont_have_an_account: אין לי חשבון
       i_have_an_account: כבר יש לי חשבון
