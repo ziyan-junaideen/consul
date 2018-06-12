@@ -1,0 +1,29 @@
+ca:
+  debates:
+    index:
+      featured_debates: Destacar
+  errors:
+    messages:
+      user_not_found: Usuari no trobat
+  layouts:
+    header:
+      administration: Administración
+      spending_proposals: Propostes d'inversió
+  proposals:
+    form:
+      proposal_question_example_html: "Ha de ser resumida en una pregunta la resposta de la qual siga Sí o No. <em>Ex. 'Està vostè d'acord en peatonalizar el carrer Major?'</em>"
+  poll_questions:
+    create_question: "crear pregunta"
+  shared:
+    delete: esborrar
+    search_results: "Resultats de la cerca"
+    back: Tornar
+    check: seleccionar
+    hide: Amaga
+    show: Mostra
+  stats:
+    index:
+      visits: visites
+      votes: vots
+      verified_users: usuaris verificats
+      unverified_users: Usuaris sense verificar
