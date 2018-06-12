@@ -1,0 +1,16 @@
+de:
+  images:
+    remove_image: Bild entfernen
+    form:
+      title: Beschreibendes Bild
+      title_placeholder: Fügen Sie einen aussagekräftigen Titel für das Bild hinzu
+      attachment_label: Bild auswählen
+      delete_button: Bild entfernen
+      add_new_image: Bild hinzufügen
+      admin_title: "Bild"
+      admin_alt_text: "Alternativer Text für das Bild"
+    actions:
+      destroy:
+        notice: Das Bild wurde erfolgreich gelöscht.
+        alert: Das Bild kann nicht entfernt werden.
+        confirm: Sind sie sicher, dass Sie das Bild löschen möchten? Diese Aktion kann nicht widerrufen werden!
