@@ -1,0 +1,87 @@
+zh-CN:
+  activerecord:
+    models:
+      activity:
+        other: "活动"
+      budget:
+        other: "预算"
+      budget/investment:
+        other: "投资"
+      budget/investment/milestone:
+        other: "里程碑"
+      comment:
+        other: "意见"
+      debate:
+        other: "讨论"
+      tag:
+        other: "标签"
+      user:
+        other: "用户"
+      moderator:
+        other: "版主"
+      administrator:
+        other: "管理员"
+      valuator:
+        other: "评价者"
+      valuator_group:
+        other: "评价小组"
+      manager:
+        other: "经理"
+      newsletter:
+        other: "时事通讯"
+      vote:
+        other: "投票"
+      organization:
+        other: "组织"
+      poll/booth:
+        other: "摊位"
+      poll/officer:
+        other: "官员"
+      proposal:
+        other: "公民提议"
+      site_customization/page:
+        other: 自定义页面
+      site_customization/image:
+        other: 自定义图片
+      site_customization/content_block:
+        other: 自定义内容模块
+      legislation/process:
+        other: "进程"
+      legislation/draft_versions:
+        other: "草稿版本"
+      legislation/draft_texts:
+        other: "草稿"
+      legislation/questions:
+        other: "问题"
+      legislation/question_options:
+        other: "问题选项"
+      legislation/answers:
+        other: "答案"
+      documents:
+        other: "文件"
+      images:
+        other: "图片"
+      topic:
+        other: "主题"
+      poll:
+        other: "民意调查"
+    attributes:
+      budget:
+        name: "名字"
+        description_accepting: "接受阶段的说明"
+        description_reviewing: "审查阶段的说明"
+        description_selecting: "选择阶段的说明"
+        description_valuating: "评估阶段的说明"
+        description_balloting: "投票阶段的说明"
+        description_reviewing_ballots: "审查选票阶段的说明"
+        description_finished: "预算完成后的说明"
+        phase: "阶段"
+        currency_symbol: "货币"
+      budget/investment:
+        heading_id: "标题"
+        title: "标题"
+        description: "说明书"
+        external_url: "链接到附加文档"
+        administrator_id: "管理员"
+        location: "位置(可选)"
+        organization_name: "如果你是以集体/组织的名义或者代表更多的人提出建议，写下它的名字。"
