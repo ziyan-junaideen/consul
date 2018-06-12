@@ -28,7 +28,7 @@ fr:
     org_name: "Nom de l'organisation"
     place_name: "Nom du lieu"
     feature:
-      budgets: Budgets participatifs
+      budgets: Budget participatif
       twitter_login: Se connecter avec Twitter
       facebook_login: Se connecter avec Facebook
       google_login: Se connecter avec Google
@@ -39,9 +39,19 @@ fr:
       spending_proposals: Propositions d'investissement
       spending_proposal_features:
         voting_allowed: Vote sur les propositions d'investissement
+      legislation: Législation
+      community: Communauté sur les propositions et les investissements
+      map: Localisation des propositions et des projets d'investissement
+      allow_images: Permettre d'importer et d'afficher des images
+      allow_attached_documents: Permettre le téléchargement et le visionnage de pièces jointes
+    map_latitude: Latitude
+    map_longitude: Longitude
+    map_zoom: Zoom
     mailer_from_name: Nom de l'expéditeur
     mailer_from_address: Courriel de l'expéditeur
+    meta_title: "Titre du site (SEO)"
     meta_description: "Description du site (SEO)"
     meta_keywords: "Mots-clés (SEO)"
     verification_offices_url: URL des bureaux de vérification
     min_age_to_participate: Âge minimum de participation
+    proposal_improvement_path: Lien interne vers les suggestions d'amélioration de la proposition
