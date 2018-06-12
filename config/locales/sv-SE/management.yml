@@ -1,0 +1,14 @@
+sv:
+  management:
+    email_label: E-post
+    menu:
+      users: Användare
+    proposals:
+      print:
+        print_button: Skriv ut
+    budget_investments:
+      print:
+        print_button: Skriv ut
+    spending_proposals:
+      print:
+        print_button: Skriv ut
