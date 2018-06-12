@@ -1,0 +1,27 @@
+sv:
+  devise_views:
+    confirmations:
+      new:
+        email_label: E-post
+    mailer:
+      reset_password_instructions:
+        hello: Hej
+      unlock_instructions:
+        hello: Hej
+    organizations:
+      registrations:
+        new:
+          email_label: E-post
+    passwords:
+      new:
+        email_label: E-post
+    unlocks:
+      new:
+        email_label: E-post
+    users:
+      registrations:
+        edit:
+          edit: Redigera
+          email_label: E-post
+        new:
+          email_label: E-post
