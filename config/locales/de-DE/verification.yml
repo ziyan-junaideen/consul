@@ -1,27 +1,67 @@
 de:
   verification:
+    alert:
+      lock: Sie haben die maximale Anzahl an Versuchen erreicht. Bitte versuchen Sie es später erneut.
     back: Zurück zu meinem Konto
     email:
+      create:
+        alert:
+          failure: Beim versenden einer E-Mail an Ihr Benutzerkonto ist ein Problem aufgetreten
+        flash:
+          success: 'Wir haben einen Bestätigungslink an Sie versendet: %{email}'
       show:
         alert:
           failure: Der Bestätigungscode ist falsch
+        flash:
+          success: Sie sind ein verifizierter Benutzer
     letter:
+      alert:
+        unconfirmed_code: Sie haben den Bestätigungscode noch nicht eingegeben
       edit:
         see_all: Vorschläge anzeigen
       new:
         go_to_index: Vorschläge anzeigen
+        title: Glückwunsch!
+        user_permission_info: Mit Ihrem Benutzerkonto können Sie...
+      update:
+        flash:
+          success: Code bestätigt. Ihr Benutzerkonto ist nun verifiziert
+    redirect_notices:
+      already_verified: Das Benutzerkonto ist bereits verifiziert
+      email_already_sent: Wir haben bereits eine E-Mail mit einem Bestätigungslink verschickt. Falls Sie noch keine E-Mail erhalten haben, können Sie hier einen neuen erhalten
     residence:
+      alert:
+        unconfirmed_residency: Sie haben noch nicht Ihren Wohnsitz bestätigt
+      create:
+        flash:
+          success: Wohnsitz bestätigt
       new:
         date_of_birth: Geburtsdatum
+        document_number: Dokumentennummern
         document_number_help_title: Hilfe
+        document_type_label: Dokumentenart
+        error_not_allowed_age: Sie haben nicht das erforderliche Alter um teilzunehmen
+        error_not_allowed_postal_code: Zur Verifizierung müssen Sie sich registrieren.
         postal_code: Postleitzahl
+        postal_code_note: Sie müssen sich registrieren, um Ihr Benutzerkonto zu verifizieren
+        title: Wohnsitz bestätigen
+        verify_residence: Wohnsitz bestätigen
     sms:
       edit:
+        resend_sms_link: Hier klicken, um erneut zu senden
         submit_button: Senden
       new:
         submit_button: Senden
+      update:
+        flash:
+          level_two:
+            success: korrekter Code
+    step_1: Wohnsitz
     step_2: Bestätigungscode
+    step_3: Abschließende Überprüfung
+    user_permission_debates: An Diskussionen teilnehmen
     user_permission_proposal: Neuen Vorschlag erstellen
+    user_permission_support_proposal: Vorschläge unterstützen*
     verified_user:
       show:
         email_title: E-Mails
