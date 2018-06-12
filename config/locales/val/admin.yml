@@ -40,7 +40,7 @@ val:
         form:
           error:
             one: "error va impedir guardar el banner"
-            other: 'errors van impedir guardar el banner'
+            other: "errors van impedir guardar el banner"
       new:
         creating: Crear banner
     activity:
@@ -134,12 +134,24 @@ val:
         administrator_filter_all: Tots els administradors
         valuator_filter_all: Tots els avaluadors
         tags_filter_all: Totes les etiquetes
+        sort_by:
+          title: Títol
+          supports: Avals
         filters:
           all: Totes
           without_admin: Sense administrador
+          without_valuator: Sense avaluador asignat
+          under_valuation: En avaluació
           valuation_finished: Avaluació finalitzada
+          feasible: Viable
           selected: Seleccionades
+          undecided: Sense decidir
+          unfeasible: Inviable
+          max_per_heading: Màx. avals per districte
           winners: Guanyadores
+        buttons:
+          search: Cercar
+          filter: Filtrar
         download_current_selection: "Baixar la selecció actual"
         no_budget_investments: "No hi ha projectes d'inversió."
         title: Propostes d'inversió
@@ -160,6 +172,7 @@ val:
         table_geozone: "Ámbit d'actuació"
         table_feasibility: "Viabilitat"
         table_valuation_finished: "Av. Fin."
+        table_selection: "Selecció"
         table_incompatible: "Incompatible"
       show:
         assigned_admin: Administrador asignat
@@ -170,6 +183,7 @@ val:
         edit_classification: Edita classificació
         by: Autor
         sent: Data
+        group: Grup
         heading: Partida
         dossier: Informe
         edit_dossier: Editar informe
@@ -327,9 +341,6 @@ val:
           title: Propostes
           back: Tornar
         form:
-          header_information: Capçelera d'informació
-          header_information_description: Proporciona informació sobre el recorregut de les propostes. Aquest text es mostrarà com una alerta en la capcelera de la secció de Popostes dins d'aquest proces. Utilitza Markdown per a formatejar el text.
-          header_information_placeholder: Afegeix informació per a la capcelera de les propostes
           custom_categories: Categoríes
           custom_categories_description: Categoríes que l'usuari pot seleccionar al crear la proposta.
       draft_versions:
@@ -457,12 +468,10 @@ val:
         pages: Personalitzar pàgines
         images: Personalitzar imatges
         content_blocks: Personalitzar blocs
-      title_categories: Categoríes
       title_moderated_content: Contingut moderat
       title_budgets: Pressupostos
       title_polls: Votacions
       title_profiles: Perfils
-      title_banners: Banners
       title_site_customization: Personalitzar lloc
       legislation: Legislació col·laborativa
       users: Usuaris
@@ -1025,11 +1034,6 @@ val:
         title: Verificacions incompletes
     site_customization:
       content_blocks:
-        form:
-          content_blocks_information: Informació sobre els blocs de text
-          content_block_about: Pots crear blocs de HTML que s'incrustaràn en la capçalera o el peu del teu CONSUL.
-          content_block_top_links_html: "Els <strong>blocs de la capçalera (top_links)</strong> són blocs d'enllaços que s'han de crear amb aquest format:"
-          content_block_footer_html: "Els <strong>blocs del peu (footer)</strong> poden tenir qualsevol format i es poden utilitzar per guardar empremtes Javascript, contingut CSS o contingut HTML personalitzat."
         create:
           notice: Bloc creat correctament
           error: No s'ha pogut crear el bloc
