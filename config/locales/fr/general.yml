@@ -164,7 +164,7 @@ fr:
       user_not_found: Utilisateur introuvable
       invalid_date_range: "Intervalle de dates invalide"
   form:
-    accept_terms: J'accepte le %{policy} et les %{conditions}
+    accept_terms: J'accepte la %{policy} et les %{conditions}
     accept_terms_title: J’accepte la politique de confidentialité et les conditions d’utilisation
     conditions: Conditions légales
     debate: Débat
@@ -172,7 +172,7 @@ fr:
     error: erreur
     errors: erreurs
     not_saved_html: "a empêché cette %{resource} d'être sauvegardée. <br>Vérifiez les champs marqués pour les corriger :"
-    policy: Vie privée
+    policy: Politique de confidentialité
     proposal: Proposition
     proposal_notification: "Notification"
     spending_proposal: Proposition de dépense
@@ -210,7 +210,7 @@ fr:
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
       participation_text: Modelez la ville dans laquelle vous souhaitez vivre.
       participation_title: Participation
-      privacy: Vie privée
+      privacy: Politique de confidentialité
       transparency_text: Trouver tout à propos de la mairie de Madrid
       transparency_title: Transparence
       transparency_url: https://transparency.consul
