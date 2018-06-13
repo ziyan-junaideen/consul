@@ -702,6 +702,22 @@ de:
       index:
         title: "Zählungen"
         no_recounts: "Es gibt nichts nachzuzählen"
+    results:
+      index:
+        title: "Ergebnisse"
+      result:
+        table_answer: Antwort
+      results_by_booth:
+        results: Ergebnisse
+        see_results: Ergebnisse anzeigen
+    booths:
+      index:
+        name: "Name"
+      new:
+        name: "Name"
+    officials:
+      index:
+        name: Name
     organizations:
       index:
         filters:
@@ -758,10 +774,22 @@ de:
         button: Suche
       poll_officers_search:
         button: Suche
+      poll_questions_search:
+        button: Suchen
+      proposal_search:
+        button: Suchen
+      spending_proposal_search:
+        button: Suchen
+      user_search:
+        button: Suchen
+        placeholder: Benutzer nach Name oder E-Mail suchen
+      search_results: "Suchergebnisse"
       no_search_results: "Es wurden keine Ergebnisse gefunden."
       actions: Aktionen
       title: Titel
       description: Beschreibung
+      image: Bild
+      show_image: Bild anzeigen
     spending_proposals:
       index:
         geozone_filter_all: Alle Zonen
@@ -785,6 +813,7 @@ de:
         edit: Bearbeiten
         edit_classification: Klassifizierung bearbeiten
         association_name: Verband
+        sent: Gesendet
         geozone: Rahmen
         dossier: Dossier
         edit_dossier: Dossier bearbeiten
@@ -801,6 +830,20 @@ de:
         finished_and_feasible_count: Fertig und durchführbar
         finished_and_unfeasible_count: Fertig und undurchführbar
         finished_count: Fertig
+    geozones:
+      index:
+        edit: Bearbeiten
+        delete: Löschen
+      geozone:
+        name: Name
+        coordinates: Koordinaten
+      edit:
+        form:
+          submit_button: Änderungen speichern
+        back: Zurück
+      new:
+        back: Zurück
+        creating: Bezirk anlegen
     stats:
       show:
         stats_title: Statistiken
@@ -812,8 +855,14 @@ de:
           proposal_votes: Bewertungen Vorschlag
           proposals: Vorschläge
           unverified_users: Benutzer nicht verifziert
+          verified_users: Verifizierte Benutzer
+          visits: Besuche
+        visits_title: Besuche
+        direct_messages: Direktnachrichten
         proposal_notifications: Vorschlagsbenachrichtigung
         polls: Umfragen
+      direct_messages:
+        title: Direktnachrichten
       polls:
         title: Umfrage Statistik
         all: Umfragen
@@ -824,8 +873,21 @@ de:
       create: Thema erstellen
     users:
       columns:
+        name: Name
         email: E-Mail
         document_number: Dokumentennummern
+        roles: Rollen
+        verification_level: Überprüfungsstatus
+      index:
+        title: Benutzer
+        no_users: Es gibt keine Benutzer.
+      search:
+        placeholder: Benutzer nach E-Mail, Name oder Dokumentennummer suchen
+        search: Suchen
+    verifications:
+      index:
+        phone_not_given: Telefon nicht angegeben
+        sms_code_not_confirmed: Der SMS-Code konnte nicht bestätigt werden
     site_customization:
       content_blocks:
         errors:
@@ -866,3 +928,5 @@ de:
           see_page: Seite anzeigen
         page:
           status: Status
+          updated_at: Letzte Aktualisierung
+          status_draft: Entwurf
