@@ -10,13 +10,27 @@ de:
         title: Benutzerkonto
       edit:
         title: 'Benutzerkonto bearbeiten: Passwort zurücksetzen'
+        back: Zurück
+        password:
+          password: Passwort
+          send_email: Passwort zurücksetzen via E-Mail
+          reset_email_send: E-Mail korrekt gesendet.
+          reseted: Passwort erfolgreich zurückgesetzt
+          random: Zufälliges Passwort generieren
+          save: Speichern
+          print: Passwort drucken
+          print_help: Sie können das Passwort drucken, wenn es gespeichert ist.
     account_info:
       change_user: Benutzer wechseln
       document_number_label: 'Dokumentennummern:'
+      document_type_label: 'Dokumententyp:'
       email_label: 'E-Mail:'
       identified_label: 'Identifizieren als:'
       username_label: 'Benutzername:'
     check: Überprüfen
+    dashboard:
+      index:
+        title: Verwaltung
     document_number: Dokumentennummern
     document_type_label: Dokumentenart
     document_verifications:
