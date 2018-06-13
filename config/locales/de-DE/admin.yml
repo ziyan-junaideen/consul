@@ -934,3 +934,6 @@ de:
           locale: Sprache
     homepage:
       title: Homepage
+      cards:
+        title: Titel
+        description: Beschreibung
