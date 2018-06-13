@@ -930,3 +930,7 @@ de:
           status: Status
           updated_at: Letzte Aktualisierung
           status_draft: Entwurf
+          status_published: Veröffentlicht
+          locale: Sprache
+    homepage:
+      title: Homepage
