@@ -95,6 +95,7 @@ de:
         blank_dates: Termine sind leer
       destroy:
         success_notice: Budget erfolgreich gelöscht
+        unable_notice: Sie können ein Budget mit zugehörigen Projekten nicht löschen
       new:
         title: Neue partizipativen Haushaltsmittel
       show:
