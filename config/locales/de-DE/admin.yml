@@ -150,6 +150,8 @@ de:
         filters:
           all: Alle
           without_admin: Ohne zugewiesenen Administrator
+          without_valuator: Ohne zugewiesenen Wertgeber
+          under_valuation: In Bewertungsphase
           valuation_finished: Bewertung beendet
           feasible: Durchführbar
           selected: Ausgewählt
