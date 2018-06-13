@@ -2,8 +2,15 @@ de:
   officing:
     header:
       title: Umfrage
+    dashboard:
+      index:
+        title: Vorsitzende/r der Abstimmung
+        info: Hier können Sie Benutzerdokumente überprüfen und Abstimmungsergebnisse speichern
+    menu:
+      voters: Dokument überprüfen
     polls:
       final:
+        title: Auflistung über abgeschlossene Abstimmungen
         select_poll: Umfrage auswählen
         add_results: Ergebnisse hinzufügen
     results:
