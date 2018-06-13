@@ -410,6 +410,11 @@ de:
         create:
           notice: 'Frage erfolgreich erstellt. <a href="%{link}">Zum Anzeigen hier klicken</a>'
           error: Frage konnte nicht erstellt werden
+        update:
+          notice: 'Frage erfolgreich aktualisiert. <a href="%{link}">Zum Anzeigen hier klicken</a>'
+          error: Frage konnte nicht aktualisiert werden
+        destroy:
+          notice: Frage erfolgreich gelöscht
         edit:
           back: Zurück
           title: "Bearbeiten \"%{question_title}\""
@@ -419,6 +424,8 @@ de:
             error: Fehler
         form:
           add_option: Option hinzufügen
+          title: Frage
+          title_placeholder: Frage hinzufügen
           value_placeholder: Eine geschlossene Antwort hinzufügen
         index:
           back: Zurück
@@ -451,6 +458,7 @@ de:
       activity: Moderator-Aktivität
       admin: Administrator-Menü
       banner: Verwalten von Bannern
+      poll_questions: Fragen
       proposals_topics: Themen für Vorschläge
       budgets: Partizipative Haushaltsmittel
       geozones: Distrikte verwalten
@@ -461,6 +469,8 @@ de:
       administrators: Administratoren
       managers: Managers
       moderators: Moderatoren
+      newsletters: Newsletter
+      emails_download: E-Mails herunterladen
       valuators: Gutachter
       poll_officers: Vorsitzende der Abstimmung
       polls: Abstimmungen
@@ -473,6 +483,7 @@ de:
       stats: Statistiken
       signature_sheets: Signatur-Blätter
       site_customization:
+        homepage: Homepage
         pages: Benutzerwebseiten
         images: Benutzerbilder
         content_blocks: Nutzerspezifische Inhaltsdatenblöcke
@@ -480,6 +491,7 @@ de:
       title_budgets: Budgets
       title_polls: Abstimmungen
       title_profiles: Profile
+      title_settings: Einstellungen
       legislation: Partizipative Gesetzgebung
       users: Benutzer
     administrators:
@@ -528,8 +540,26 @@ de:
         email: E-Mail
         description: Beschreibung
         no_description: Keine Beschreibung
+        group: "Gruppe"
+        no_group: "Keine Gruppe"
       valuator:
         delete: Löschen
+      summary:
+        finished_and_feasible_count: Abgeschlossen und durchführbar
+        finished_and_unfeasible_count: Abgeschlossen und undurchführbar
+        finished_count: Abgeschlossen
+      show:
+        description: "Beschreibung"
+        email: "E-Mail"
+        group: "Gruppe"
+        no_description: "Ohne Beschreibung"
+        no_group: "Ohne Gruppe"
+    valuator_groups:
+      index:
+        name: "Name"
+        members: "Mitglieder"
+      form:
+        name: "Gruppenname"
     poll_officers:
       index:
         title: Vorsitzende der Abstimmung
@@ -566,6 +596,7 @@ de:
         search_officer_button: Suche
         search_officer_placeholder: Suche nach Beamter/in
         select_date: "Tag auswählen"
+        no_voting_days: "Abstimmungsphase beendet"
         table_email: "E-Mail"
         table_name: "Name"
       flash:
