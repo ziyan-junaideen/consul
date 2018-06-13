@@ -184,6 +184,7 @@ de:
         table_feasibility: "Durchführbarkeit"
         table_selection: "Ausgewählt"
         table_incompatible: "Inkompatibel"
+        see_results: "Ergebnisse anzeigen"
       show:
         assigned_admin: Zugewiesener Administrator
         assigned_valuators: Zugewiesene Gutachter
@@ -217,6 +218,9 @@ de:
         image: "Bild"
         see_image: "Bild anzeigen"
         no_image: "Ohne Bild"
+        documents: "Dokumente"
+        see_documents: "Dokumente anzeigen (%{count})"
+        no_documents: "Ohne Dokumente"
       edit:
         classification: Klassifizierung
         compatibility: Kompatibilität
@@ -230,6 +234,7 @@ de:
         tags: Kennzeichen
         tags_placeholder: "Schreiben Sie die Kennzeichen, die Sie wollen durch Kommas (,) getrennt"
         undefined: Nicht definiert
+        user_groups: "Gruppen"
       search_unfeasible: Suche nicht durchführbar
     milestones:
       index:
@@ -243,9 +248,13 @@ de:
         image: "Bild"
         show_image: "Bild anzeigen"
         documents: "Dokumente"
+      form:
+        add_language: Sprache hinzufügen
+        remove_language: Sprache entfernen
       new:
         creating: Meilenstein erstellen
         date: Datum
+        description: Beschreibung
       edit:
         title: Meilenstein bearbeiten
       create:
@@ -398,6 +407,9 @@ de:
           final_version: Endgültige Fassung
           status: Status
       questions:
+        create:
+          notice: 'Frage erfolgreich erstellt. <a href="%{link}">Zum Anzeigen hier klicken</a>'
+          error: Frage konnte nicht erstellt werden
         edit:
           back: Zurück
           title: "Bearbeiten \"%{question_title}\""
