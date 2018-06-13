@@ -1,8 +1,15 @@
 de:
   management:
     account:
+      menu:
+        reset_password_email: Passwort per E-Mail zurücksetzen
+        reset_password_manually: Passwort manuell zurücksetzen
+      alert:
+        unverified_user: Es dürfen nur verifizierte Benutzerkonten bearbeitet werden
       show:
         title: Benutzerkonto
+      edit:
+        title: 'Benutzerkonto bearbeiten: Passwort zurücksetzen'
     account_info:
       change_user: Benutzer wechseln
       document_number_label: 'Dokumentennummern:'
