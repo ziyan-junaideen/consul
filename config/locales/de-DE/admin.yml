@@ -62,6 +62,7 @@ de:
           on_users: Benutzer
         title: Moderator-Aktivität
         type: Typ
+        no_activity: Hier sind keine Moderatoren aktiv.
     budgets:
       index:
         title: partizipative Haushaltsmittel
@@ -70,6 +71,7 @@ de:
         filters:
           open: Offen
           finished: Abgeschlossen
+        budget_investments: Projekte verwalten
         table_name: Name
         table_phase: Phase
         table_investments: Investitionen
@@ -119,6 +121,7 @@ de:
       winners:
         calculate: Gewinner-Investitionen berechnen
         calculated: Die Gewinner werden ermittelt, es kann einen Moment dauern.
+        recalculate: Gewinner-Investitionen neu berechnen
     budget_phases:
       edit:
         start_date: Startdatum
