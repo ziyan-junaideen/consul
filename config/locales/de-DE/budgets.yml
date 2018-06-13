@@ -34,6 +34,8 @@ de:
       reviewing: Interne Prüfung der Projekte
       selecting: Auswahlphase
       valuating: Evaluierung der Projekte
+      publishing_prices: Veröffentlichung der Projektpreise
+      balloting: Finale Abstimmung
       finished: Ergebnisse
     index:
       title: partizipative Haushaltsmittel
@@ -74,6 +76,7 @@ de:
         share: Teilen
         supports: Unterstützung
         votes: Stimmen
+        price: Preis
         comments_tab: Kommentare
         milestones_tab: Meilensteine
         no_milestones: Keine Meilensteine definiert
@@ -112,6 +115,7 @@ de:
       ballot_lines_count: Male ausgewählt
       hide_discarded_link: Ausblendung löschen
       show_all_link: Alle anzeigen
+      price: Preis
       amount_available: Verfügbare Haushaltsmittel
       accepted: "Zugesagter Ausgabenvorschlag:"
       discarded: "Gelöschter Ausgabenvorschlag: "
