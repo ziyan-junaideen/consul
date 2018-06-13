@@ -9,6 +9,7 @@ de:
     config:
       manage_email_subscriptions: Wenn Sie keine E-Mails empfangen möchten, ändern Sie bitte Ihre Einstellungen in
     email_verification:
+      click_here_to_verify: diesen Link
       subject: E-Mail bestätigen
       thanks: Vielen Dank.
       title: Link folgen, um Konto zu bestätigen
