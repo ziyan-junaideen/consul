@@ -29,6 +29,7 @@ de:
         unselected: Investitionen, die nicht für die Abstimmungsphase ausgewählt wurden, anzeigen
     phase:
       drafting: Entwurf (nicht für die Öffentlichkeit sichtbar)
+      informing: Information
       accepting: Angenommene Projekte
       reviewing: Interne Prüfung der Projekte
       selecting: Auswahlphase
