@@ -10,6 +10,7 @@ de:
       manage_email_subscriptions: Wenn Sie keine E-Mails empfangen möchten, ändern Sie bitte Ihre Einstellungen in
     email_verification:
       click_here_to_verify: diesen Link
+      instructions_2_html: Diese E-Mail dient dazu Ihr Konto mit <b>%{document_type} %{document_number}</b>zu bestätigen. Wenn diese Daten nicht Sie betreffen, klicken Sie bitte nicht auf den vorherigen Link und ignorieren Sie diese E-Mail.
       subject: E-Mail bestätigen
       thanks: Vielen Dank.
       title: Link folgen, um Konto zu bestätigen
@@ -19,6 +20,7 @@ de:
       subject: Jemand hat auf Ihren Kommentar geantwortet
       title: Neue Antwort auf Ihren Kommentar
     unfeasible_spending_proposal:
+      hi: "Liebe/r Benutzer/in"
       new_href: "neues Investitionsprojekt"
     proposal_notification_digest:
       share: Vorschlag teilen
