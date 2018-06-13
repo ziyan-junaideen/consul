@@ -132,6 +132,7 @@ de:
         description: Beschreibung
         description_help_text: Dieser Text erscheint als Überschrift, wenn die Phase aktiv ist
         enabled: Phase aktiviert
+        enabled_help_text: Diese Phase wird öffentlich in der Zeitleiste der Budgetphasen angezeigt und ist auch für andere Zwecke aktiv
         save_changes: Änderungen speichern
     budget_investments:
       index:
