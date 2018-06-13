@@ -5,6 +5,7 @@ de:
     actions:
       actions: Aktionen
       confirm: Sind Sie sich sicher?
+      confirm_hide: Moderation bestätigen
       hide: Ausblenden
       hide_author: Autor verbergen
       restore: Wiederherstellen
