@@ -6,3 +6,5 @@ sv:
       media: Media
     budgets:
       currency: kr
+      groups:
+        all_city: Hela staden
