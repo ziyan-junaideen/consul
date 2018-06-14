@@ -61,12 +61,19 @@ sv:
         search_form:
           button: Sök
           title: Sök
+        sidebar:
+          sign_up: "registrera sig"
+        orders:
+          random: slumpmässig
       show:
         share: Dela
         votes: Röster
         price: Kostnad
+      investment:
+        add: Rösta
     show:
       group: Grupp
       phase: Aktuell fas
     results:
+      link: Resultat
       price: Kostnad
