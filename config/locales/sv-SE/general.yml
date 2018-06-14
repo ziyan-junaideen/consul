@@ -151,12 +151,19 @@ sv:
   layouts:
     application:
       firefox: Firefox
+    footer:
+      open_data_title: Öppna data
     header:
       administration_menu: Admin
       debates: Debatter
       external_link_blog: Blogg
+      external_link_opendata: Öppna data
+      locale: 'Språk:'
+      valuation: Bedömning
       help: Hjälp
+      my_account_link: Mitt konto
       open: öppen
+      proposals: Förslag
   legacy_legislation:
     help:
       text_sign_in: logga in
@@ -177,6 +184,7 @@ sv:
     index:
       orders:
         created_at: senaste
+        archival_date: arkiverad
       retired_links:
         all: Alla
         done: Genomfört
@@ -184,9 +192,18 @@ sv:
       search_form:
         button: Sök
         title: Sök
+      title: Förslag
+      section_header:
+        title: Förslag
     proposal:
+      comments:
+        one: 1 kommentar
+        other: "%{count} kommentarer"
       total_percent: 100%
     show:
+      comments:
+        one: 1 kommentar
+        other: "%{count} kommentarer"
       edit_proposal_link: Redigera
       share: Dela
       author: Författare
@@ -199,15 +216,19 @@ sv:
       section_header:
         title: Omröstning
     show:
+      signin: Logga in
+      signup: Registrera sig
       stats:
         votes: "RÖSTER"
         web: "WEBB"
         booth: "VALSTATION"
         total: "TOTALT"
         valid: "Giltiga"
+        null_votes: "Ogiltig"
   proposal_notifications:
     new:
       title_label: "Titel"
+      body_label: "Meddelande"
   shared:
     edit: 'Redigera'
     save: 'Spara'
@@ -215,14 +236,25 @@ sv:
     "yes": "Ja"
     "no": "Nej"
     advanced_search:
+      date: 'Efter datum'
+      date_2: 'Förra veckan'
+      date_4: 'Förra året'
       from: 'Från'
       search: 'Filter'
       to: 'Till'
+    back: Gå tillbaka
     check: Välja
     check_all: Alla
     check_none: Ingen
     hide: Göm
     show: Visa
+    suggest:
+      debate:
+        see_all: "Se alla"
+      budget_investment:
+        see_all: "Se alla"
+      proposal:
+        see_all: "Se alla"
     share: Dela
     view_mode:
       cards: Kort
@@ -230,11 +262,32 @@ sv:
   spending_proposals:
     show:
       share: Dela
+  stats:
+    index:
+      debates: Debatter
+      proposals: Förslag
   users:
     direct_messages:
       new:
+        body_label: Meddelande
         title_label: Titel
+        signin: logga in
+        signup: registrera sig
+    show:
+      deleted: Raderat
+      debates: Debatter
+      actions: Åtgärder
+      filters:
+        comments:
+          one: 1 kommentar
+          other: "%{count} kommentarer"
+  votes:
+    agree: Jag håller med
+    signin: Logga in
+    signup: Registrera sig
   related_content:
     submit: "Lägg till"
     score_positive: "Ja"
     score_negative: "Nej"
+    content_title:
+      proposal: "Förslag"
