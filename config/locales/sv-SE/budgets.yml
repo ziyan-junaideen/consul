@@ -62,6 +62,7 @@ sv:
           button: Sök
           title: Sök
         sidebar:
+          my_ballot: Min röst
           sign_up: "registrera sig"
         orders:
           random: slumpmässig
