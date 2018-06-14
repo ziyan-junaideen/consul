@@ -21,3 +21,9 @@ sv:
         date: "Datum"
         select_booth: "Välj röstbås"
         submit: "Spara"
+      index:
+        table_votes: Röster
+    voters:
+      new:
+        title: Omröstningar
+        table_poll: Omröstning
