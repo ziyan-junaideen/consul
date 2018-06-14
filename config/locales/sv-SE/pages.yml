@@ -6,6 +6,7 @@ sv:
       menu:
         debates: "Debatter"
         proposals: "Förslag"
+        polls: "Omröstningar"
       debates:
         title: "Debatter"
         link: "debatter"
