@@ -884,6 +884,7 @@ sv:
           all: Alla
     shared:
       title: Titel
+      image: Bild
     spending_proposals:
       index:
         tags_filter_all: Alla Taggar
@@ -1122,3 +1123,7 @@ sv:
         page:
           title: Titel
           status_draft: Utkast
+    homepage:
+      cards_title: Kort
+      cards:
+        title: Titel
