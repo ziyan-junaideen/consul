@@ -65,3 +65,6 @@ sv:
       new:
         phone: Ange ditt mobilnummer för att ta emot koden
         submit_button: Skicka
+    verified_user:
+      show:
+        email_title: E-post
