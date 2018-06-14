@@ -15,6 +15,12 @@ sv:
     passwords:
       new:
         email_label: E-post
+    sessions:
+      new:
+        submit: Komma in
+    shared:
+      links:
+        login: Komma in
     unlocks:
       new:
         email_label: E-post
