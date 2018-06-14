@@ -1,5 +1,11 @@
 sv:
   management:
+    account:
+      edit:
+        back: Tillbaka
+        password:
+          save: Spara
+    check: Kontrollera
     email_label: E-post
     menu:
       users: Användare
