@@ -4,6 +4,7 @@ sv:
       edit:
         back: Tillbaka
         password:
+          password: Lösenord
           save: Spara
     check: Kontrollera
     email_label: E-post
