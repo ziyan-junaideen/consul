@@ -22,8 +22,10 @@ sv:
         select_booth: "Välj röstbås"
         submit: "Spara"
       index:
+        results: Resultat
         table_votes: Röster
     voters:
       new:
         title: Omröstningar
         table_poll: Omröstning
+        table_actions: Åtgärder
