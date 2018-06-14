@@ -66,5 +66,7 @@ sv:
         phone: Ange ditt mobilnummer för att ta emot koden
         submit_button: Skicka
     verified_user:
+      form:
+        submit_button: Skicka koden
       show:
         email_title: E-post
