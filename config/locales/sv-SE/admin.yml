@@ -433,6 +433,7 @@ sv:
             error: Fel
         form:
           add_option: Lägg till alternativ
+          title: Fråga
           value_placeholder: Lägg till ett stängt svar
         index:
           back: Tillbaka
@@ -498,6 +499,7 @@ sv:
       title_budgets: Budgetar
       title_polls: Omröstningar
       title_profiles: Profiler
+      title_settings: Inställningar
       legislation: Kollaborativ lagstiftning
       users: Användare
     administrators:
@@ -878,11 +880,18 @@ sv:
         no_organizations: Det finns inga organisationer.
         reject: Avvisa
         rejected: Avvisade
+        pending: Väntande
     proposals:
       index:
         filters:
           all: Alla
+          without_confirmed_hide: Väntande
+    settings:
+      index:
+        features:
+          disable: "Inaktivera"
     shared:
+      actions: Åtgärder
       title: Titel
       image: Bild
     spending_proposals:
@@ -1124,6 +1133,7 @@ sv:
           title: Titel
           status_draft: Utkast
     homepage:
+      title: Hemsida
       cards_title: Kort
       cards:
         title: Titel
