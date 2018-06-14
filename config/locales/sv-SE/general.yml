@@ -134,6 +134,7 @@ sv:
       user_not_found: Användaren hittades inte
       invalid_date_range: "Felaktig datumföljd"
   form:
+    debate: Debatt
     direct_message: privat meddelande
     error: fel
     errors: fel
@@ -142,53 +143,90 @@ sv:
     proposal_notification: "Anmälan"
     spending_proposal: Investeringsförslag
     budget/investment: Investering
+    poll/shift: Skift
+    user: Konto
+    verification/sms: telefon
+    topic: Ämne
     image: Bild
   layouts:
+    application:
+      firefox: Firefox
     header:
       administration_menu: Admin
+      debates: Debatter
       external_link_blog: Blogg
       help: Hjälp
+      open: öppen
+  legacy_legislation:
+    help:
+      text_sign_in: logga in
+      text_sign_up: registrera sig
+  locale: Svenska
   notifications:
     index:
       read: Läst
+  omniauth:
+    twitter:
+      name: Twitter
   proposals:
     retire_options:
+      done: Genomfört
       other: Andra
     form:
       tags_label: Taggar
     index:
+      orders:
+        created_at: senaste
       retired_links:
         all: Alla
+        done: Genomfört
         other: Andra
+      search_form:
+        button: Sök
+        title: Sök
     proposal:
       total_percent: 100%
     show:
       edit_proposal_link: Redigera
       share: Dela
+      author: Författare
   polls:
     all: "Alla"
     index:
       filters:
         current: "Pågående"
+      title: "Omröstningar"
+      section_header:
+        title: Omröstning
     show:
       stats:
+        votes: "RÖSTER"
         web: "WEBB"
+        booth: "VALSTATION"
         total: "TOTALT"
+        valid: "Giltiga"
   proposal_notifications:
     new:
       title_label: "Titel"
   shared:
     edit: 'Redigera'
     save: 'Spara'
+    delete: Ta bort
     "yes": "Ja"
     "no": "Nej"
     advanced_search:
       from: 'Från'
+      search: 'Filter'
       to: 'Till'
+    check: Välja
     check_all: Alla
     check_none: Ingen
     hide: Göm
     show: Visa
+    share: Dela
+    view_mode:
+      cards: Kort
+      list: Lista
   spending_proposals:
     show:
       share: Dela
