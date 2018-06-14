@@ -1,10 +1,20 @@
 sv:
   legislation:
     annotations:
+      comments:
+        see_all: Se alla
+        cancel: Avbryt
       form:
         phase_not_open: Fasen är inte öppen
-    draft_versions:
+        signin: Logga in
+        signup: Registrera sig
       show:
+        title: Kommentera
+    draft_versions:
+      changes:
+        title: Ändringar
+      show:
+        select_version_submit: se
         text_body: Text
     processes:
       index:
@@ -15,13 +25,19 @@ sv:
         not_open: Fasen är inte öppen ännu
       phase_empty:
         empty: Inget har publicerats än
+      shared:
+        debate_dates: Debatt
     questions:
       comments:
         comments_closed: Avslutad fas
+      question:
+        debate: Debatt
       show:
         share: Dela
       participation:
         phase_not_open: Denna fas är inte öppen
+        signin: Logga in
+        signup: Registrera sig
         debate_phase_not_open: Diskussionsfasen har avslutats, och svar kan inte längre tas emot
     shared:
       share: Dela
