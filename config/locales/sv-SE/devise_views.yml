@@ -3,20 +3,30 @@ sv:
     confirmations:
       new:
         email_label: E-post
+      show:
+        submit: Bekräfta
     mailer:
+      confirmation_instructions:
+        welcome: Välkommen
       reset_password_instructions:
         hello: Hej
       unlock_instructions:
         hello: Hej
+    menu:
+      login_items:
+        login: Logga in
     organizations:
       registrations:
         new:
           email_label: E-post
+          password_label: Lösenord
+          submit: Registrera dig
     passwords:
       new:
         email_label: E-post
     sessions:
       new:
+        password_label: Lösenord
         submit: Komma in
     shared:
       links:
@@ -31,3 +41,7 @@ sv:
           email_label: E-post
         new:
           email_label: E-post
+          password_label: Lösenord
+          submit: Registrera dig
+          title: Registrera dig
+          username_label: Användarnamn
