@@ -25,6 +25,12 @@ sv:
       administrator:
         one: "Administratör"
         other: "Administratörer"
+      valuator:
+        one: "Bedömare"
+        other: "Bedömare"
+      manager:
+        one: "Chef"
+        other: "Chefer"
       vote:
         one: "Röst"
         other: "Röster"
