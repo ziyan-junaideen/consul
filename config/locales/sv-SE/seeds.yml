@@ -1,4 +1,8 @@
 sv:
   seeds:
+    settings:
+      official_level_5_name: Borgmästare
+    categories:
+      media: Media
     budgets:
       currency: kr
