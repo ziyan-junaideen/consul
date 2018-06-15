@@ -880,17 +880,38 @@ sv:
         no_organizations: Det finns inga organisationer.
         reject: Avvisa
         rejected: Avvisade
+        search: Sök
+        verified: Verifierad
+        verify: Kontrollera
         pending: Väntande
     proposals:
       index:
+        filter: Filtrera
         filters:
           all: Alla
           without_confirmed_hide: Väntande
     settings:
       index:
+        update_setting: Uppdatera
         features:
+          enable: "Aktivera"
           disable: "Inaktivera"
+        map:
+          form:
+            submit: Uppdatera
     shared:
+      booths_search:
+        button: Sök
+      poll_officers_search:
+        button: Sök
+      poll_questions_search:
+        button: Sök
+      proposal_search:
+        button: Sök
+      spending_proposal_search:
+        button: Sök
+      user_search:
+        button: Sök
       actions: Åtgärder
       title: Titel
       image: Bild
@@ -1129,11 +1150,19 @@ sv:
           create: Skapa ny sida
           delete: Ta bort sida
           title: Anpassade sidor
+          see_page: Se sida
         page:
+          status: Status
           title: Titel
           status_draft: Utkast
+          locale: Språk
     homepage:
       title: Hemsida
       cards_title: Kort
       cards:
         title: Titel
+        link_url: Länk-URL
+      feeds:
+        debates: Debatter
+      new:
+        card_title: Nytt kort
