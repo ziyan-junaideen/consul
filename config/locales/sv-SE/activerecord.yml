@@ -4,6 +4,9 @@ sv:
       activity:
         one: "aktivitet"
         other: "aktiviteter"
+      budget:
+        one: "Budget"
+        other: "Budgetar"
       budget/investment:
         one: "Investering"
         other: "Investeringar"
@@ -28,9 +31,15 @@ sv:
       valuator:
         one: "Bedömare"
         other: "Bedömare"
+      valuator_group:
+        one: "Bedömningsgrupp"
+        other: "Bedömningsgrupper"
       manager:
         one: "Chef"
         other: "Chefer"
+      newsletter:
+        one: "Nyhetsbrev"
+        other: "Nyhetsbrev"
       vote:
         one: "Röst"
         other: "Röster"
@@ -46,6 +55,9 @@ sv:
       proposal:
         one: "Medborgarförslag"
         other: "Medborgarförslag"
+      spending_proposal:
+        one: "Investeringsprojekt"
+        other: "Investeringsprojekt"
       site_customization/page:
         one: Anpassad sida
         other: Anpassade sidor
@@ -144,6 +156,7 @@ sv:
         name: "Organisationens namn"
         responsible_name: "Gruppens talesperson"
       spending_proposal:
+        administrator_id: "Administratör"
         association_name: "Föreningens namn"
         description: "Beskrivning"
         external_url: "Länk till ytterligare dokumentation"
@@ -185,6 +198,7 @@ sv:
         body: Innehåll
       legislation/process:
         title: Processens titel
+        summary: Sammanfattning
         description: Beskrivning
         additional_info: Ytterligare information
         start_date: Startdatum
@@ -227,6 +241,11 @@ sv:
         body: E-post innehåll
       widget/card:
         title: Titel
+        description: Beskrivning
+        link_text: Länktext
+        link_url: Länk-URL
+      widget/feed:
+        limit: Antal objekt
     errors:
       models:
         user:
