@@ -42,6 +42,7 @@ sv:
       legislation: Lagstiftning
       community: Diskussion om förslag och investeringar
       map: Geografisk plats för förslag och investeringar
+      public_stats: Offentliga statistiker
     map_latitude: Latitud
     map_longitude: Longitud
     map_zoom: Zooma
