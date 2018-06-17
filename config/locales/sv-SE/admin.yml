@@ -434,6 +434,7 @@ sv:
         form:
           add_option: Lägg till alternativ
           title: Fråga
+          title_placeholder: Lägg till fråga
           value_placeholder: Lägg till ett stängt svar
         index:
           back: Tillbaka
@@ -500,6 +501,7 @@ sv:
       title_polls: Omröstningar
       title_profiles: Profiler
       title_settings: Inställningar
+      title_site_customization: Webbplatsens innehåll
       legislation: Kollaborativ lagstiftning
       users: Användare
     administrators:
@@ -881,6 +883,7 @@ sv:
         reject: Avvisa
         rejected: Avvisade
         search: Sök
+        title: Organisationer
         verified: Verifierad
         verify: Kontrollera
         pending: Väntande
@@ -916,8 +919,10 @@ sv:
       actions: Åtgärder
       title: Titel
       image: Bild
+      show_image: Visa bild
     spending_proposals:
       index:
+        valuator_filter_all: Alla bedömare
         tags_filter_all: Alla Taggar
         filters:
           valuation_open: Pågående
@@ -1153,8 +1158,10 @@ sv:
           title: Anpassade sidor
           see_page: Se sida
         page:
+          created_at: Skapad den
           status: Status
           title: Titel
+          updated_at: Uppdaterad den
           status_draft: Utkast
           locale: Språk
     homepage:
@@ -1167,4 +1174,5 @@ sv:
       feeds:
         debates: Debatter
       new:
+        header_title: Ny header
         card_title: Nytt kort
