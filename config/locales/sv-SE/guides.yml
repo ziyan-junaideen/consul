@@ -14,3 +14,5 @@ sv:
       feature_1_html: "Idéer om någon åtgärd kommunfullmäktigen kan ta"
       feature_2_html: "Behöver <strong>%{votes} stöd</strong> i %{org} för att gå till omröstning"
       feature_3_html: "Aktivera när som helst, du har <strong>ett år</strong> för att få stöden"
+      feature_4_html: "Om godkänd i en omröstning accepterar kommunfullmäktige förslaget"
+      new_button: Jag vill skapa ett förslag
