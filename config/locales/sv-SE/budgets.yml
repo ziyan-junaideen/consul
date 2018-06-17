@@ -35,6 +35,7 @@ sv:
       selecting: Väljer projekt
       valuating: Värderar projekt
       publishing_prices: Publicerar projektpriser
+      balloting: Rösta på projekt
       finished: Färdig budget
     index:
       title: Medborgarbudgetar
@@ -63,6 +64,7 @@ sv:
           title: Sök
         sidebar:
           my_ballot: Min röst
+          voted_info_link: ändra din röst
           check_ballot_link: "kontrollera min omröstning"
           sign_in: "logga in"
           sign_up: "registrera sig"
@@ -95,4 +97,5 @@ sv:
       heading_selection_title: "Efter distrikt"
       show_all_link: Visa alla
       price: Kostnad
+      amount_available: Tillgänglig budget
       incompatibles: Oförenliga
