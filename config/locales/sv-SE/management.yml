@@ -24,6 +24,7 @@ sv:
     spending_proposals:
       print:
         print_button: Skriv ut
+    username_label: Användarnamn
     user_invites:
       new:
         label: E-post
