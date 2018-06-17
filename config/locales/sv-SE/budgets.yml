@@ -37,6 +37,7 @@ sv:
       valuating: Värderar projekt
       publishing_prices: Publicerar projektpriser
       balloting: Rösta på projekt
+      reviewing_ballots: Granskning omröstning
       finished: Färdig budget
     index:
       title: Medborgarbudgetar
@@ -60,20 +61,35 @@ sv:
       form:
         tag_category_label: "Kategorier"
         tags_label: Taggar
+        tags_placeholder: "Skriv in taggarna du vill använda, avgränsade med semikolon (',')"
         map_location: "Kartposition"
+        map_location_instructions: "Navigera till platsen på kartan och placera markören."
         map_remove_marker: "Ta bort kartmarkör"
         location: "Ytterligare platsinformation"
       index:
         title: Medborgarbudget
+        unfeasible: Ogenomförbara investeringsprojekt
+        by_heading: "Investeringsprojekt med område: %{heading}"
         search_form:
           button: Sök
+          placeholder: Sök investeringsprojekt...
           title: Sök
+        search_results_html:
+          one: " innehåller term <strong>'%{search_term}'</strong>"
+          other: " innehåller termer <strong>'%{search_term}'</strong>"
         sidebar:
           my_ballot: Min röst
+          voted_html:
+            one: "<strong>Du röstade för ett förslag med en kostnad av %{amount_spent}</strong>"
+            other: "<strong>Du röstade för %{count} förslag med en kostnad av %{amount_spent}</strong>"
           voted_info_link: ändra din röst
+          different_heading_assigned_html: "Du har aktiva röster i en annan rubrik: %{heading_link}"
           check_ballot_link: "kontrollera min omröstning"
+          zero: Du har inte röstat något investeringsprojekt i denna grupp.
+          verified_only: "För att skapa en ny budget investeringar måste du %{verify}."
           verify_account: "verifiera ditt konto"
           create: "Skapa en budget investering"
+          not_logged_in: "Om du vill skapa en ny budget investering måste du %{sign_in} eller %{sign_up}."
           sign_in: "logga in"
           sign_up: "registrera sig"
           by_feasibility: Efter genomförbarhet
@@ -87,6 +103,9 @@ sv:
         author_deleted: Användare borttagen
         price_explanation: Kostnadsförklaring
         unfeasibility_explanation: Förklaring av ogenomförbarhet
+        code_html: 'Investeringsprojektkod: <strong>%{code}</strong>'
+        location_html: 'Plats: <strong>%{location}</strong>'
+        organization_name_html: 'Föreslås på uppdrag av: <strong>%{name}</strong>'
         share: Dela
         title: Investeringsprojekt
         supports: Stöd
@@ -94,10 +113,14 @@ sv:
         price: Kostnad
         comments_tab: Kommentarer
         milestones_tab: Milstolpar
+        no_milestones: Har inte bestämda milstolpar
+        milestone_publication_date: "Publicerade %{publication_date}"
         author: Författare
       wrong_price_format: Endast heltal
       investment:
         add: Rösta
+        already_added: Du har redan lagt till detta investeringsprojekt
+        already_supported: Du har redan stött detta investeringsprojekt. Dela det!
         support_title: Stödja detta projekt
         supports:
           zero: Inga stöd
@@ -106,7 +129,9 @@ sv:
         give_support: Stöd
       header:
         check_ballot: Kontrollera min omröstning
+        different_heading_assigned_html: "Du har aktiva röster i en annan rubrik: %{heading_link}"
         check_ballot_link: "kontrollera min omröstning"
+        price: "Denna rubrik har en budget på"
     progress_bar:
       assigned: "Du har tilldelat: "
       available: "Tillgänglig budget: "
@@ -115,6 +140,8 @@ sv:
       phase: Aktuell fas
       unfeasible_title: Ogenomförbara investeringar
       unfeasible: Se ogenomförbara investeringar
+      unselected_title: Investeringar inte utvalda för omröstningsfas
+      unselected: Se investeringar som inte valts för omröstningsfas
       see_results: Se resultat
     results:
       link: Resultat
@@ -127,4 +154,12 @@ sv:
       show_all_link: Visa alla
       price: Kostnad
       amount_available: Tillgänglig budget
+      accepted: "Accepterad utgiftsförslag: "
+      discarded: "Kasserade utgiftsförslag: "
       incompatibles: Oförenliga
+      investment_proyects: Lista över alla investeringsprojekt
+      unfeasible_investment_proyects: Lista över alla ogenomförbara investeringsprojekt
+      not_selected_investment_proyects: Lista över alla investeringsprojekt som inte valts till omröstnings
+    phases:
+      errors:
+        dates_range_invalid: "Startdatum kan inte vara samma eller senare än Slutdatum"
