@@ -117,6 +117,7 @@ sv:
     new:
       form:
         submit_button: Starta en diskussion
+      more_info: Mer information
       recommendation_one: Använd inte versaler för diskussionstiteln eller för hela meningar. På internet anses detta skrika. Och gillar ingen att bli skriken på.
       start_new: Starta en diskussion
     show:
@@ -189,6 +190,7 @@ sv:
   locale: Svenska
   notifications:
     index:
+      mark_all_as_read: Markera alla som läst
       read: Läst
       title: Notiser
       unread: Oläst
@@ -207,6 +209,9 @@ sv:
     info_sign_in: "Logga in med:"
     info_sign_up: "Registrera dig med:"
   proposals:
+    create:
+      form:
+        submit_button: Skapa förslag
     edit:
       editing: Redigera förslag
       show_link: Visa förslag
@@ -229,6 +234,7 @@ sv:
         hot_score: mest aktiva
         relevance: relevans
         archival_date: arkiverad
+        recommendations: rekommendationer
       retired_links:
         all: Alla
         duplicated: Duplicerad
@@ -240,9 +246,13 @@ sv:
         button: Sök
         title: Sök
       select_order: Sortera efter
+      start_proposal: Skapa förslag
       title: Förslag
       section_header:
         title: Förslag
+    new:
+      form:
+        submit_button: Skapa förslag
     proposal:
       comments:
         one: 1 kommentar
@@ -265,6 +275,7 @@ sv:
       edit_proposal_link: Redigera
       notifications_tab: Notiser
       share: Dela
+      send_notification: Skicka notis
       author: Författare
   polls:
     all: "Alla"
@@ -277,6 +288,9 @@ sv:
       section_header:
         icon_alt: Omröstnings ikon
         title: Omröstning
+        help: Hjälp om omröstning
+      section_footer:
+        title: Hjälp om omröstning
     show:
       comments_tab: Kommentarer
       signin: Logga in
@@ -290,6 +304,8 @@ sv:
         total: "TOTALT"
         valid: "Giltiga"
         null_votes: "Ogiltig"
+  poll_questions:
+    create_question: "Skapa fråga"
   proposal_notifications:
     new:
       title_label: "Titel"
@@ -301,6 +317,7 @@ sv:
     "yes": "Ja"
     "no": "Nej"
     advanced_search:
+      author_type_blank: 'Välj en kategori'
       date: 'Efter datum'
       date_placeholder: 'DD/MM/ÅÅÅÅ'
       date_range_blank: 'Välj ett datum'
@@ -311,6 +328,7 @@ sv:
       from: 'Från'
       general: 'Med texten'
       search: 'Filter'
+      title: 'Avancerad sök'
       to: 'Till'
     back: Gå tillbaka
     check: Välja
@@ -318,6 +336,8 @@ sv:
     check_none: Ingen
     follow: "Följ"
     hide: Göm
+    print:
+      print_button: Skriv ut denna info
     search: Sök
     show: Visa
     suggest:
@@ -338,7 +358,9 @@ sv:
       list: Lista
   social:
     blog: "%{org} Blogg"
+    facebook: "%{org} Facebook"
     whatsapp: WhatsApp
+    telegram: "%{org} telegram"
   spending_proposals:
     form:
       description: Beskrivning
@@ -362,6 +384,7 @@ sv:
       debates: Debatter
       proposals: Förslag
       comments: Kommentarer
+      comment_votes: Röster på kommentarer
       votes: Totalt antal röster
   users:
     direct_messages:
@@ -389,6 +412,7 @@ sv:
           one: 1 Följer
           other: "%{count} Följer"
     proposals:
+      send_notification: "Skicka notis"
       retire: "Dra tillbaka"
   votes:
     agree: Jag håller med
@@ -400,6 +424,7 @@ sv:
     feed:
       most_active:
         processes: "Öppna processer"
+      see_all_debates: Se alla debatter
       process_label: Process
     cards:
       title: Stjärnmarkerade
@@ -407,7 +432,9 @@ sv:
       slide: "Se %{title}"
     welcome:
       title: Delta
+      user_permission_verify_my_account: Verifiera mitt konto
   related_content:
+    title: "Relaterat innehåll"
     placeholder: "%{url}"
     submit: "Lägg till"
     score_positive: "Ja"
