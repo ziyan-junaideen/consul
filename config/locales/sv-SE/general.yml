@@ -248,6 +248,7 @@ sv:
       select_order: Sortera efter
       start_proposal: Skapa förslag
       title: Förslag
+      top: Veckans topp
       section_header:
         title: Förslag
     new:
@@ -255,10 +256,12 @@ sv:
         submit_button: Skapa förslag
     proposal:
       comments:
+        zero: Inga kommentarer
         one: 1 kommentar
         other: "%{count} kommentarer"
       support: Stöd
       supports:
+        zero: Inga stöd
         one: 1 stöd
         other: "%{count} stöd"
       votes:
@@ -269,6 +272,7 @@ sv:
       voting: "nästa omröstning"
     show:
       comments:
+        zero: Inga kommentarer
         one: 1 kommentar
         other: "%{count} kommentarer"
       comments_tab: Kommentarer
@@ -284,7 +288,9 @@ sv:
         current: "Pågående"
         incoming: "Inkommande"
       title: "Omröstningar"
+      participate_button_expired: "Omröstningen är slut"
       no_geozone_restricted: "Hela staden"
+      geozone_restricted: "Distrikter"
       section_header:
         icon_alt: Omröstnings ikon
         title: Omröstning
@@ -295,7 +301,9 @@ sv:
       comments_tab: Kommentarer
       signin: Logga in
       signup: Registrera sig
+      documents: Dokument
       zoom_plus: Expandera bild
+      info_menu: "Information"
       results_menu: "Omröstningsresultat"
       stats:
         votes: "RÖSTER"
@@ -304,6 +312,8 @@ sv:
         total: "TOTALT"
         valid: "Giltiga"
         null_votes: "Ogiltig"
+      results:
+        title: "Frågor"
   poll_questions:
     create_question: "Skapa fråga"
   proposal_notifications:
@@ -325,6 +335,7 @@ sv:
       date_2: 'Förra veckan'
       date_3: 'Förra månaden'
       date_4: 'Förra året'
+      date_5: 'Anpassad'
       from: 'Från'
       general: 'Med texten'
       search: 'Filter'
@@ -334,7 +345,9 @@ sv:
     check: Välja
     check_all: Alla
     check_none: Ingen
+    collective: Kollektiv
     follow: "Följ"
+    following: "Följer"
     hide: Göm
     print:
       print_button: Skriv ut denna info
@@ -348,12 +361,15 @@ sv:
       proposal:
         see_all: "Se alla"
     tags_cloud:
+      districts: "Distrikter"
       categories: "Kategorier"
+    you_are_in: "Du är på"
     unflag: Ta bort flagga
     share: Dela
     orbit:
       next_slide: Nästa sida
     view_mode:
+      title: Visningsmod
       cards: Kort
       list: Lista
   social:
@@ -378,6 +394,10 @@ sv:
       share: Dela
     spending_proposal:
       support: Stöd
+      supports:
+        zero: Inga stöd
+        one: 1 stöd
+        other: "%{count} stöd"
   stats:
     index:
       visits: Besök
@@ -395,6 +415,7 @@ sv:
         signup: registrera sig
     show:
       deleted: Raderat
+      proposals: Förslag
       debates: Debatter
       comments: Kommentarer
       actions: Åtgärder
