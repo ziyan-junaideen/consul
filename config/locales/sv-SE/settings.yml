@@ -40,6 +40,8 @@ sv:
       spending_proposal_features:
         voting_allowed: Omröstning om investeringsprojekt
       legislation: Lagstiftning
+      user:
+        recommendations: Rekommendationer
       community: Diskussion om förslag och investeringar
       map: Geografisk plats för förslag och investeringar
       public_stats: Offentliga statistiker
