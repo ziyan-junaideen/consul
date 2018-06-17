@@ -74,6 +74,9 @@ sv:
         author: Författare
       investment:
         add: Rösta
+        supports:
+          one: 1 stöd
+          other: "%{count} stöd"
     show:
       group: Grupp
       phase: Aktuell fas
