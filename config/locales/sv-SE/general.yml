@@ -89,6 +89,7 @@ sv:
       tags_label: Ämne
       tags_placeholder: "Skriv in de etiketter du vill använda, avgränsade med semikolon (',')"
     index:
+      featured_debates: Stjärnmarkerade
       orders:
         confidence_score: högst betygsatt
         created_at: senaste
@@ -150,8 +151,12 @@ sv:
     poll/question/answer: Svar
     user: Konto
     verification/sms: telefon
+    document: Dokument
     topic: Ämne
     image: Bild
+  geozones:
+    none: Hela staden
+    all: Alla ämne
   layouts:
     application:
       firefox: Firefox
@@ -163,6 +168,8 @@ sv:
       external_link_blog: Blogg
       external_link_opendata: Öppna data
       locale: 'Språk:'
+      management: Förvaltning
+      moderation: Moderering
       valuation: Bedömning
       help: Hjälp
       my_account_link: Mitt konto
@@ -188,22 +195,30 @@ sv:
       name: Twitter
   proposals:
     retire_options:
+      duplicated: Duplicerad
+      unfeasible: Ej genomförbart
       done: Genomfört
       other: Andra
     form:
+      tag_category_label: "Kategorier"
       tags_label: Taggar
     index:
+      featured_proposals: Stjärnmarkerade
       orders:
         created_at: senaste
         relevance: relevans
         archival_date: arkiverad
       retired_links:
         all: Alla
+        duplicated: Duplicerad
+        started: Pågående
+        unfeasible: Ej genomförbart
         done: Genomfört
         other: Andra
       search_form:
         button: Sök
         title: Sök
+      select_order: Sortera efter
       title: Förslag
       section_header:
         title: Förslag
@@ -211,10 +226,12 @@ sv:
       comments:
         one: 1 kommentar
         other: "%{count} kommentarer"
+      support: Stöd
       supports:
         one: 1 stöd
         other: "%{count} stöd"
       votes:
+        zero: Inga röster
         one: 1 röst
         other: "%{count} röster"
       total_percent: 100%
@@ -222,6 +239,7 @@ sv:
       comments:
         one: 1 kommentar
         other: "%{count} kommentarer"
+      comments_tab: Kommentarer
       edit_proposal_link: Redigera
       share: Dela
       author: Författare
@@ -230,11 +248,13 @@ sv:
     index:
       filters:
         current: "Pågående"
+        incoming: "Inkommande"
       title: "Omröstningar"
       no_geozone_restricted: "Hela staden"
       section_header:
         title: Omröstning
     show:
+      comments_tab: Kommentarer
       signin: Logga in
       signup: Registrera sig
       stats:
@@ -256,7 +276,9 @@ sv:
     "no": "Nej"
     advanced_search:
       date: 'Efter datum'
+      date_placeholder: 'DD/MM/ÅÅÅÅ'
       date_2: 'Förra veckan'
+      date_3: 'Förra månaden'
       date_4: 'Förra året'
       from: 'Från'
       search: 'Filter'
@@ -276,6 +298,8 @@ sv:
         see_all: "Se alla"
       proposal:
         see_all: "Se alla"
+    tags_cloud:
+      categories: "Kategorier"
     unflag: Ta bort flagga
     share: Dela
     view_mode:
@@ -294,6 +318,8 @@ sv:
         title: Sök
     show:
       share: Dela
+    spending_proposal:
+      support: Stöd
   stats:
     index:
       visits: Besök
@@ -310,6 +336,7 @@ sv:
     show:
       deleted: Raderat
       debates: Debatter
+      comments: Kommentarer
       actions: Åtgärder
       filters:
         comments:
