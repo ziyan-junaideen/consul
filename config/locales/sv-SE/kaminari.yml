@@ -1,6 +1,14 @@
 sv:
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "%{entry_name} kan inte hittas"
+          one: Det finns <strong>1 %{entry_name}</strong>
+          other: Det finns <strong>%{count} %{entry_name}</strong>
   views:
     pagination:
+      current: Du är på sidan
       first: Första
       last: Sista
       next: Nästa
