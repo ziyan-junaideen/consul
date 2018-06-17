@@ -18,6 +18,7 @@ sv:
         text_body: Text
     processes:
       index:
+        filter: Filter
         filters:
           next: Nästa
           past: Tidigare
