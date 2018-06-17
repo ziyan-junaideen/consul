@@ -60,12 +60,14 @@ sv:
     investments:
       form:
         tag_category_label: "Kategorier"
+        tags_instructions: "Tagga detta förslag. Du kan välja från föreslagna kategorier eller lägga till dina egna"
         tags_label: Taggar
         tags_placeholder: "Skriv in taggarna du vill använda, avgränsade med semikolon (',')"
         map_location: "Kartposition"
         map_location_instructions: "Navigera till platsen på kartan och placera markören."
         map_remove_marker: "Ta bort kartmarkör"
         location: "Ytterligare platsinformation"
+        map_skip_checkbox: "Denna investering har inte en konkret plats eller jag vet inte den."
       index:
         title: Medborgarbudget
         unfeasible: Ogenomförbara investeringsprojekt
@@ -82,8 +84,10 @@ sv:
           voted_html:
             one: "<strong>Du röstade för ett förslag med en kostnad av %{amount_spent}</strong>"
             other: "<strong>Du röstade för %{count} förslag med en kostnad av %{amount_spent}</strong>"
+          voted_info: Du kan %{link} när du vill innan slutet av den här fasen. Inget behov av att spendera alla pengar du har tillgängliga.
           voted_info_link: ändra din röst
           different_heading_assigned_html: "Du har aktiva röster i en annan rubrik: %{heading_link}"
+          change_ballot: "Om du ändrar dig kan du ta bort dina röster i %{check_ballot} och starta igen."
           check_ballot_link: "kontrollera min omröstning"
           zero: Du har inte röstat något investeringsprojekt i denna grupp.
           verified_only: "För att skapa en ny budget investeringar måste du %{verify}."
@@ -116,6 +120,8 @@ sv:
         no_milestones: Har inte bestämda milstolpar
         milestone_publication_date: "Publicerade %{publication_date}"
         author: Författare
+        project_unfeasible_html: 'Denna investering projektet <strong>har markerats som ej genomförbar</strong> och kommer inte gå till omröstningsfas.'
+        project_not_selected_html: 'Denna investering projektet <strong>har inte valts</strong> för omröstningsfas.'
       wrong_price_format: Endast heltal
       investment:
         add: Rösta
@@ -130,6 +136,7 @@ sv:
       header:
         check_ballot: Kontrollera min omröstning
         different_heading_assigned_html: "Du har aktiva röster i en annan rubrik: %{heading_link}"
+        change_ballot: "Om du ändrar dig kan du ta bort dina röster i %{check_ballot} och starta igen."
         check_ballot_link: "kontrollera min omröstning"
         price: "Denna rubrik har en budget på"
     progress_bar:
@@ -163,3 +170,5 @@ sv:
     phases:
       errors:
         dates_range_invalid: "Startdatum kan inte vara samma eller senare än Slutdatum"
+        prev_phase_dates_invalid: "Startdatum måste infalla senare än startdatum för tidigare aktiverad fas (%{phase_name})"
+        next_phase_dates_invalid: "Slutdatum måste infalla tidigare än slutdatum för nästa aktiverad fas (%{phase_name})"
