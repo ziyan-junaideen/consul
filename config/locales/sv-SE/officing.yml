@@ -30,3 +30,5 @@ sv:
         title: Omröstningar
         table_poll: Omröstning
         table_actions: Åtgärder
+      show:
+        can_vote: Kan rösta
