@@ -20,15 +20,20 @@ sv:
         booth: "Röstbås"
         date: "Datum"
         select_booth: "Välj röstbås"
+        ballots_total: "Totalt antal röster"
         submit: "Spara"
+        see_results: "Se resultat"
       index:
+        no_results: "Inga resultat"
         results: Resultat
         table_answer: Svar
         table_votes: Röster
+        table_total: "Totalt antal röster"
     voters:
       new:
         title: Omröstningar
         table_poll: Omröstning
+        table_status: Omröstningsstatus
         table_actions: Åtgärder
       show:
         can_vote: Kan rösta
