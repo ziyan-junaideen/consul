@@ -15,6 +15,8 @@ sv:
         investment: Delta i gemenskapen kring investeringen. En aktiv gemenskap kan förbättra innehållet i investeringen, göra det mer känt och öka dess stöd.
       create_first_community_topic:
         first_theme: Skapa det första ämnet i gemenskapen
+        sign_in: "logga in"
+        sign_up: "registrera sig"
       tab:
         participants: Deltagare
       sidebar:
@@ -23,6 +25,8 @@ sv:
       topic:
         comments:
           zero: Inga kommentarer
+          one: 1 kommentar
+          other: "%{count} kommentarer"
       author: Författare
     topic:
       create: Skapa ett ämne
