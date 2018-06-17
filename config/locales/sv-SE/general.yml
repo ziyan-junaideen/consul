@@ -1,6 +1,7 @@
 sv:
   account:
     show:
+      change_credentials_link: Ändra mina autentiseringsuppgifter
       email_on_comment_label: Meddela mig via e-post när någon kommenterar mina förslag eller debatter
       email_on_comment_reply_label: Meddela mig via e-mail när någon svarar på mina kommentarer
       erase_account_link: Ta bort mitt konto
@@ -90,6 +91,9 @@ sv:
       tags_placeholder: "Skriv in de etiketter du vill använda, avgränsade med semikolon (',')"
     index:
       featured_debates: Stjärnmarkerade
+      filter_topic:
+        one: " med ämne '%{topic} '"
+        other: " med ämne '%{topic} '"
       orders:
         confidence_score: högst betygsatt
         created_at: senaste
@@ -108,6 +112,7 @@ sv:
       start_debate: Starta en diskussion
       title: Diskussioner
       section_header:
+        icon_alt: Debatt ikon
         title: Diskussioner
         help: Hjälp kring debatter
       section_footer:
@@ -117,6 +122,7 @@ sv:
     new:
       form:
         submit_button: Starta en diskussion
+      info_link: skapa nytt förslag
       more_info: Mer information
       recommendation_one: Använd inte versaler för diskussionstiteln eller för hela meningar. På internet anses detta skrika. Och gillar ingen att bli skriken på.
       start_new: Starta en diskussion
@@ -167,12 +173,20 @@ sv:
       accessibility: Tillgänglighet
       copyright: CONSUL, %{year}
       open_data_title: Öppna data
+      open_source: mjukvara med öppen källkod
       participation_title: Deltagande
+      privacy: Sekretesspolicy
+      transparency_title: Transparens
     header:
       administration_menu: Admin
+      administration: Administration
+      available_locales: Tillgängliga språk
+      collaborative_legislation: Lagstiftningsprocesser
       debates: Debatter
       external_link_blog: Blogg
       external_link_opendata: Öppna data
+      external_link_opendata_url: https://opendata.Consul
+      external_link_transparency: Transparens
       locale: 'Språk:'
       logo: Consuls logo
       management: Förvaltning
@@ -183,6 +197,8 @@ sv:
       my_activity_link: Min aktivitet
       open: öppen
       proposals: Förslag
+      notification_item:
+        notifications: Notiser
   legacy_legislation:
     help:
       text_sign_in: logga in
@@ -195,16 +211,26 @@ sv:
       title: Notiser
       unread: Oläst
     notification:
+      action:
+        comments_on:
+          one: Någon kommenterade på
+          other: Det finns %{count} nya kommentarer på
       mark_as_read: Markera som läst
       mark_as_unread: Markera som oläst
   map:
     title: "Distrikter"
   omniauth:
     facebook:
+      sign_in: Logga in med Facebook
+      sign_up: Registrera dig med Facebook
       name: Facebook
     google_oauth2:
+      sign_in: Logga in med Google
+      sign_up: Registrera dig med Google
       name: Google
     twitter:
+      sign_in: Logga in med Twitter
+      sign_up: Registrera dig med Twitter
       name: Twitter
     info_sign_in: "Logga in med:"
     info_sign_up: "Registrera dig med:"
@@ -214,6 +240,8 @@ sv:
         submit_button: Skapa förslag
     edit:
       editing: Redigera förslag
+      form:
+        submit_button: Spara ändringar
       show_link: Visa förslag
     retire_form:
       retired_explanation_label: Förklaring
@@ -224,14 +252,21 @@ sv:
       other: Andra
     form:
       proposal_text: Förslags text
+      proposal_title: Förslags titel
+      proposal_video_url: Länk till extern video
       tag_category_label: "Kategorier"
       tags_label: Taggar
+      map_location: "Kartposition"
     index:
       featured_proposals: Stjärnmarkerade
+      filter_topic:
+        one: " med ämne '%{topic} '"
+        other: " med ämne '%{topic} '"
       orders:
         confidence_score: högst betygsatt
         created_at: senaste
         hot_score: mest aktiva
+        most_commented: mest kommenterade
         relevance: relevans
         archival_date: arkiverad
         recommendations: rekommendationer
@@ -244,22 +279,31 @@ sv:
         other: Andra
       search_form:
         button: Sök
+        placeholder: Sök förslag...
         title: Sök
       select_order: Sortera efter
       start_proposal: Skapa förslag
       title: Förslag
       top: Veckans topp
       section_header:
+        icon_alt: Förslag-ikonen
         title: Förslag
+        help: Hjälp om förslag
+      section_footer:
+        title: Hjälp om förslag
     new:
       form:
         submit_button: Skapa förslag
+      start_new: Skapa nytt förslag
     proposal:
+      improve_info_link: "Se mer information"
       comments:
         zero: Inga kommentarer
         one: 1 kommentar
         other: "%{count} kommentarer"
+      reason_for_supports_necessary: 1% av folkräkningen
       support: Stöd
+      support_title: Stödja detta förslag
       supports:
         zero: Inga stöd
         one: 1 stöd
@@ -271,6 +315,8 @@ sv:
       total_percent: 100%
       voting: "nästa omröstning"
     show:
+      author_deleted: Användare borttagen
+      code: 'Förslagskod:'
       comments:
         zero: Inga kommentarer
         one: 1 kommentar
@@ -280,7 +326,12 @@ sv:
       notifications_tab: Notiser
       share: Dela
       send_notification: Skicka notis
+      embed_video_title: "Video om %{proposal}"
+      title_video_url: "Extern video"
       author: Författare
+    update:
+      form:
+        submit_button: Spara ändringar
   polls:
     all: "Alla"
     index:
@@ -301,31 +352,44 @@ sv:
       comments_tab: Kommentarer
       signin: Logga in
       signup: Registrera sig
+      verify_link: "verifiera ditt konto"
       documents: Dokument
       zoom_plus: Expandera bild
       info_menu: "Information"
       results_menu: "Omröstningsresultat"
       stats:
+        title: "Deltagardata"
+        total_participation: "Totalt antal deltagare"
         votes: "RÖSTER"
         web: "WEBB"
         booth: "VALSTATION"
         total: "TOTALT"
         valid: "Giltiga"
+        white: "Blankröster"
         null_votes: "Ogiltig"
       results:
         title: "Frågor"
+        most_voted_answer: "Mest utvald svar: "
   poll_questions:
     create_question: "Skapa fråga"
+    show:
+      vote_answer: "Rösta för %{answer}"
   proposal_notifications:
     new:
+      title: "Skicka meddelande"
       title_label: "Titel"
       body_label: "Meddelande"
+      submit_button: "Skicka meddelande"
+      proposal_page: "förslagets sida"
+    show:
+      back: "Gå tillbaka till min aktivitet"
   shared:
     edit: 'Redigera'
     save: 'Spara'
     delete: Ta bort
     "yes": "Ja"
     "no": "Nej"
+    search_results: "Sökresultat"
     advanced_search:
       author_type_blank: 'Välj en kategori'
       date: 'Efter datum'
@@ -338,14 +402,18 @@ sv:
       date_5: 'Anpassad'
       from: 'Från'
       general: 'Med texten'
+      general_placeholder: 'Skriva text'
       search: 'Filter'
       title: 'Avancerad sök'
       to: 'Till'
+    author_info:
+      author_deleted: Användare borttagen
     back: Gå tillbaka
     check: Välja
     check_all: Alla
     check_none: Ingen
     collective: Kollektiv
+    flag: Flagga som olämplig
     follow: "Följ"
     following: "Följer"
     hide: Göm
@@ -365,6 +433,8 @@ sv:
       categories: "Kategorier"
     you_are_in: "Du är på"
     unflag: Ta bort flagga
+    outline:
+      budget: Medborgarbudget
     share: Dela
     orbit:
       next_slide: Nästa sida
@@ -384,16 +454,21 @@ sv:
         create: Skapa
         new: Skapa
     index:
+      unfeasible: Ogenomförbara investeringsprojekt
       search_form:
         button: Sök
+        placeholder: Investeringsprojekt...
         title: Sök
       sidebar:
         feasibility: Genomförbarhet
         unfeasible: Ej genomförbart
     show:
+      author_deleted: Användare borttagen
       share: Dela
+    wrong_price_format: Endast heltal
     spending_proposal:
       support: Stöd
+      support_title: Stödja detta projekt
       supports:
         zero: Inga stöd
         one: 1 stöd
@@ -410,13 +485,17 @@ sv:
     direct_messages:
       new:
         body_label: Meddelande
+        submit_button: Skicka meddelande
         title_label: Titel
+        verify_account: verifiera ditt konto
         signin: logga in
         signup: registrera sig
     show:
       deleted: Raderat
+      deleted_proposal: Det här förslaget har tagits bort
       proposals: Förslag
       debates: Debatter
+      budget_investments: Budget investeringar
       comments: Kommentarer
       actions: Åtgärder
       filters:
@@ -429,33 +508,55 @@ sv:
         proposals:
           one: 1 Förslag
           other: "%{count} Förslag"
+        budget_investments:
+          one: 1 Investering
+          other: "%{count} Investeringar"
         follows:
           one: 1 Följer
           other: "%{count} Följer"
+      send_private_message: "Skicka privat meddelande"
     proposals:
       send_notification: "Skicka notis"
       retire: "Dra tillbaka"
+      see: "Se förslag"
   votes:
     agree: Jag håller med
     disagree: Jag håller inte med
     signin: Logga in
     signup: Registrera sig
     supports: Stöd
+    verify_account: verifiera ditt konto
+    spending_proposals:
+      not_voting_allowed: Omröstningsfas är stäng
+    budget_investments:
+      not_voting_allowed: Omröstningsfas är stäng
   welcome:
     feed:
       most_active:
+        debates: "Mest aktiva debatter"
+        proposals: "Mest aktiva förslag"
         processes: "Öppna processer"
       see_all_debates: Se alla debatter
       process_label: Process
+      see_process: Se process
     cards:
       title: Stjärnmarkerade
     recommended:
+      debates:
+        title: Rekommenderade debatter
+      proposals:
+        title: Rekommenderade förslag
       slide: "Se %{title}"
+    verification:
+      title: Kontoverifiering
     welcome:
       title: Delta
+      user_permission_debates: Delta i debatter
+      user_permission_proposal: Skapa nya förslag
       user_permission_verify_my_account: Verifiera mitt konto
   related_content:
     title: "Relaterat innehåll"
+    add: "Lägg till relaterat innehåll"
     placeholder: "%{url}"
     submit: "Lägg till"
     score_positive: "Ja"
