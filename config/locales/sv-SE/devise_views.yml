@@ -4,6 +4,7 @@ sv:
       new:
         email_label: E-post
         submit: Skicka instruktioner igen
+        title: Skicka om bekräftelse instruktioner
       show:
         submit: Bekräfta
         title: Bekräfta mitt konto
@@ -32,6 +33,7 @@ sv:
           password_confirmation_label: Bekräfta lösenord
           password_label: Lösenord
           phone_number_label: Telefonnummer
+          responsible_name_label: Fullständigt namn på personen som ansvarar för kollektivet
           submit: Registrera dig
           title: Registrera som organisation eller kollektiv
         success:
@@ -57,6 +59,7 @@ sv:
     shared:
       links:
         login: Komma in
+        new_confirmation: Har du inte fått instruktioner för att aktivera ditt konto?
         new_password: Glömt ditt lösenord?
         new_unlock: Har du inte fått upplåsning instruktioner?
         signin_with_provider: Logga in med %{provider}
@@ -65,6 +68,8 @@ sv:
     unlocks:
       new:
         email_label: E-post
+        submit: Skicka om upplåsning instruktioner
+        title: Skickade om upplåsning instruktioner
     users:
       registrations:
         delete_form:
@@ -76,6 +81,7 @@ sv:
           current_password_label: Nuvarande lösenord
           edit: Redigera
           email_label: E-post
+          need_current: Vi behöver ditt nuvarande lösenord för att bekräfta ändringarna
           password_confirmation_label: Bekräfta nytt lösenord
           password_label: Nytt lösenord
           update_submit: Uppdatera
