@@ -6,7 +6,12 @@ sv:
         password:
           password: Lösenord
           save: Spara
+    account_info:
+      email_label: 'E-post:'
     check: Kontrollera
+    document_verifications:
+      link: Consul
+      verify: Kontrollera
     email_label: E-post
     menu:
       users: Användare
@@ -19,3 +24,6 @@ sv:
     spending_proposals:
       print:
         print_button: Skriv ut
+    user_invites:
+      new:
+        label: E-post
