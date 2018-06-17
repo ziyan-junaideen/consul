@@ -1,0 +1,16 @@
+sv:
+  guides:
+    title: "Har du en idé för %{org}?"
+    subtitle: "Välj vad du vill skapa"
+    budget_investment:
+      title: "Ett investeringsprojekt"
+      feature_1_html: "Idéer om hur att spendera en del av <strong>kommunens budget</strong>"
+      feature_2_html: "Investeringsprojekt är accepterade <strong>mellan januari och mars</strong>"
+      feature_3_html: "Om det får stöd, är genomförbart och handlar om någonting som kommunen har ansvar på, då går det till omröstningsfas"
+      feature_4_html: "Om medborgarna godkänner projekten blir de verklighet"
+      new_button: Jag vill skapa en budget investering
+    proposal:
+      title: "Ett medborgarförslag"
+      feature_1_html: "Idéer om någon åtgärd kommunfullmäktigen kan ta"
+      feature_2_html: "Behöver <strong>%{votes} stöd</strong> i %{org} för att gå till omröstning"
+      feature_3_html: "Aktivera när som helst, du har <strong>ett år</strong> för att få stöden"
