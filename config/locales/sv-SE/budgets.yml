@@ -30,6 +30,7 @@ sv:
         unselected: Se investeringar som inte valts för lottningsfas
     phase:
       drafting: Utkast (inte synligt för allmänheten)
+      informing: Information
       accepting: Accepterar projekt
       reviewing: Granskar projekt
       selecting: Väljer projekt
@@ -57,8 +58,13 @@ sv:
         description: Med medborgarbudgeterna kan medborgarna hantera den kommunala budgeten genom att rösta på investeringsprojekt.
     investments:
       form:
+        tag_category_label: "Kategorier"
         tags_label: Taggar
+        map_location: "Kartposition"
+        map_remove_marker: "Ta bort kartmarkör"
+        location: "Ytterligare platsinformation"
       index:
+        title: Medborgarbudget
         search_form:
           button: Sök
           title: Sök
@@ -66,20 +72,33 @@ sv:
           my_ballot: Min röst
           voted_info_link: ändra din röst
           check_ballot_link: "kontrollera min omröstning"
+          verify_account: "verifiera ditt konto"
+          create: "Skapa en budget investering"
           sign_in: "logga in"
           sign_up: "registrera sig"
+          by_feasibility: Efter genomförbarhet
+          feasible: Genomförbara projekt
+          unfeasible: Ogenomförbara projekt
         orders:
           random: slumpmässig
           confidence_score: högst betygsatt
+          price: efter pris
       show:
+        author_deleted: Användare borttagen
+        price_explanation: Kostnadsförklaring
+        unfeasibility_explanation: Förklaring av ogenomförbarhet
         share: Dela
+        title: Investeringsprojekt
         supports: Stöd
         votes: Röster
         price: Kostnad
         comments_tab: Kommentarer
+        milestones_tab: Milstolpar
         author: Författare
+      wrong_price_format: Endast heltal
       investment:
         add: Rösta
+        support_title: Stödja detta projekt
         supports:
           zero: Inga stöd
           one: 1 stöd
@@ -88,13 +107,23 @@ sv:
       header:
         check_ballot: Kontrollera min omröstning
         check_ballot_link: "kontrollera min omröstning"
+    progress_bar:
+      assigned: "Du har tilldelat: "
+      available: "Tillgänglig budget: "
     show:
       group: Grupp
       phase: Aktuell fas
+      unfeasible_title: Ogenomförbara investeringar
+      unfeasible: Se ogenomförbara investeringar
       see_results: Se resultat
     results:
       link: Resultat
+      page_title: "%{budget} - Resultat"
+      heading: "Medborgarbudgets resultat"
       heading_selection_title: "Efter distrikt"
+      spending_proposal: Förslags titel
+      ballot_lines_count: Antal utvald
+      hide_discarded_link: Gömma kasserade
       show_all_link: Visa alla
       price: Kostnad
       amount_available: Tillgänglig budget
