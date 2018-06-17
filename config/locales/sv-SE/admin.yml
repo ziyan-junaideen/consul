@@ -893,6 +893,7 @@ sv:
     settings:
       index:
         update_setting: Uppdatera
+        feature_flags: Funktioner
         features:
           enable: "Aktivera"
           disable: "Inaktivera"
