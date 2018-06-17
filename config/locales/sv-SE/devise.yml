@@ -29,6 +29,12 @@ sv:
         subject: "Instruktioner för att låsa upp kontot"
     omniauth_callbacks:
       failure: "Du godkändes inte som %{kind} eftersom ”%{reason}”."
+    passwords:
+      updated_not_active: "Ditt lösenord har ändrats framgångsrikt."
+    unlocks:
+      unlocked: "Ditt konto har låsts upp. Logga in för att fortsätta."
   errors:
     messages:
+      already_confirmed: "Du har redan verifierats; försök att logga in."
       not_locked: "var inte låst."
+      equal_to_current_password: "måste vara annorlunda än det aktuella lösenordet."
