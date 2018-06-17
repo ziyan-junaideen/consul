@@ -70,3 +70,5 @@ sv:
         submit_button: Skicka koden
       show:
         email_title: E-post
+        phone_title: Telefonnummer
+        use_another_phone: Använda en annan telefon
