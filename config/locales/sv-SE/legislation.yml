@@ -8,6 +8,8 @@ sv:
         phase_not_open: Fasen är inte öppen
         signin: Logga in
         signup: Registrera sig
+      index:
+        title: Kommentarer
       show:
         title: Kommentera
     draft_versions:
@@ -16,6 +18,7 @@ sv:
       show:
         select_version_submit: se
         text_body: Text
+        text_comments: Kommentarer
     processes:
       index:
         filter: Filter
