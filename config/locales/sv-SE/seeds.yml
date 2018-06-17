@@ -3,7 +3,9 @@ sv:
     settings:
       official_level_5_name: Borgmästare
     categories:
+      culture: Kultur
       sports: Idrott
+      economy: Ekonomi
       equity: Jämlikhet
       media: Media
       health: Hälsa
