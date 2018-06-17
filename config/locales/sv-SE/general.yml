@@ -151,6 +151,7 @@ sv:
     poll/question/answer: Svar
     user: Konto
     verification/sms: telefon
+    signature_sheet: Underskriftspapper
     document: Dokument
     topic: Ämne
     image: Bild
@@ -159,20 +160,26 @@ sv:
     all: Alla ämne
   layouts:
     application:
+      chrome: Google Chrome
       firefox: Firefox
     footer:
+      accessibility: Tillgänglighet
+      copyright: CONSUL, %{year}
       open_data_title: Öppna data
+      participation_title: Deltagande
     header:
       administration_menu: Admin
       debates: Debatter
       external_link_blog: Blogg
       external_link_opendata: Öppna data
       locale: 'Språk:'
+      logo: Consuls logo
       management: Förvaltning
       moderation: Moderering
       valuation: Bedömning
       help: Hjälp
       my_account_link: Mitt konto
+      my_activity_link: Min aktivitet
       open: öppen
       proposals: Förslag
   legacy_legislation:
@@ -183,7 +190,11 @@ sv:
   notifications:
     index:
       read: Läst
+      title: Notiser
       unread: Oläst
+    notification:
+      mark_as_read: Markera som läst
+      mark_as_unread: Markera som oläst
   map:
     title: "Distrikter"
   omniauth:
@@ -193,19 +204,29 @@ sv:
       name: Google
     twitter:
       name: Twitter
+    info_sign_in: "Logga in med:"
+    info_sign_up: "Registrera dig med:"
   proposals:
+    edit:
+      editing: Redigera förslag
+      show_link: Visa förslag
+    retire_form:
+      retired_explanation_label: Förklaring
     retire_options:
       duplicated: Duplicerad
       unfeasible: Ej genomförbart
       done: Genomfört
       other: Andra
     form:
+      proposal_text: Förslags text
       tag_category_label: "Kategorier"
       tags_label: Taggar
     index:
       featured_proposals: Stjärnmarkerade
       orders:
+        confidence_score: högst betygsatt
         created_at: senaste
+        hot_score: mest aktiva
         relevance: relevans
         archival_date: arkiverad
       retired_links:
@@ -235,12 +256,14 @@ sv:
         one: 1 röst
         other: "%{count} röster"
       total_percent: 100%
+      voting: "nästa omröstning"
     show:
       comments:
         one: 1 kommentar
         other: "%{count} kommentarer"
       comments_tab: Kommentarer
       edit_proposal_link: Redigera
+      notifications_tab: Notiser
       share: Dela
       author: Författare
   polls:
@@ -252,11 +275,14 @@ sv:
       title: "Omröstningar"
       no_geozone_restricted: "Hela staden"
       section_header:
+        icon_alt: Omröstnings ikon
         title: Omröstning
     show:
       comments_tab: Kommentarer
       signin: Logga in
       signup: Registrera sig
+      zoom_plus: Expandera bild
+      results_menu: "Omröstningsresultat"
       stats:
         votes: "RÖSTER"
         web: "WEBB"
@@ -277,10 +303,13 @@ sv:
     advanced_search:
       date: 'Efter datum'
       date_placeholder: 'DD/MM/ÅÅÅÅ'
+      date_range_blank: 'Välj ett datum'
+      date_1: 'Senaste 24 timmarna'
       date_2: 'Förra veckan'
       date_3: 'Förra månaden'
       date_4: 'Förra året'
       from: 'Från'
+      general: 'Med texten'
       search: 'Filter'
       to: 'Till'
     back: Gå tillbaka
@@ -302,13 +331,17 @@ sv:
       categories: "Kategorier"
     unflag: Ta bort flagga
     share: Dela
+    orbit:
+      next_slide: Nästa sida
     view_mode:
       cards: Kort
       list: Lista
   social:
+    blog: "%{org} Blogg"
     whatsapp: WhatsApp
   spending_proposals:
     form:
+      description: Beskrivning
       submit_buttons:
         create: Skapa
         new: Skapa
@@ -316,6 +349,9 @@ sv:
       search_form:
         button: Sök
         title: Sök
+      sidebar:
+        feasibility: Genomförbarhet
+        unfeasible: Ej genomförbart
     show:
       share: Dela
     spending_proposal:
@@ -326,6 +362,7 @@ sv:
       debates: Debatter
       proposals: Förslag
       comments: Kommentarer
+      votes: Totalt antal röster
   users:
     direct_messages:
       new:
@@ -345,18 +382,31 @@ sv:
         debates:
           one: 1 Debatt
           other: "%{count} Debatter"
+        proposals:
+          one: 1 Förslag
+          other: "%{count} Förslag"
+        follows:
+          one: 1 Följer
+          other: "%{count} Följer"
     proposals:
       retire: "Dra tillbaka"
   votes:
     agree: Jag håller med
+    disagree: Jag håller inte med
     signin: Logga in
     signup: Registrera sig
     supports: Stöd
   welcome:
     feed:
+      most_active:
+        processes: "Öppna processer"
       process_label: Process
     cards:
       title: Stjärnmarkerade
+    recommended:
+      slide: "Se %{title}"
+    welcome:
+      title: Delta
   related_content:
     placeholder: "%{url}"
     submit: "Lägg till"
@@ -365,3 +415,6 @@ sv:
     content_title:
       proposal: "Förslag"
       debate: "Debatt"
+  admin/widget:
+    header:
+      title: Administration
