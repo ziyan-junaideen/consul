@@ -3,6 +3,9 @@ sv:
     annotations:
       comments:
         see_all: Se alla
+        comments_count:
+          one: "%{count} kommentar"
+          other: "%{count} kommentarer"
         cancel: Avbryt
         publish_comment: Publicera Commentar
       form:
@@ -11,6 +14,9 @@ sv:
         signup: Registrera sig
       index:
         title: Kommentarer
+        comments_count:
+          one: "%{count} kommentar"
+          other: "%{count} kommentarer"
       show:
         title: Kommentera
     draft_versions:
@@ -18,6 +24,7 @@ sv:
         title: Ändringar
       show:
         select_version_submit: se
+        see_comments: Se alla kommentarer
         text_body: Text
         text_comments: Kommentarer
     processes:
@@ -37,6 +44,9 @@ sv:
       comments:
         comments_closed: Avslutad fas
       question:
+        comments:
+          one: "%{count} kommentar"
+          other: "%{count} kommentarer"
         debate: Debatt
       show:
         answer_question: Skicka svar
