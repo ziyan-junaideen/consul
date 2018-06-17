@@ -28,6 +28,7 @@ sv:
       new:
         password_label: Lösenord
         submit: Komma in
+        title: Logga in
     shared:
       links:
         login: Komma in
@@ -36,9 +37,12 @@ sv:
         email_label: E-post
     users:
       registrations:
+        delete_form:
+          erase_reason_label: Syfte
         edit:
           edit: Redigera
           email_label: E-post
+          update_submit: Uppdatera
         new:
           email_label: E-post
           password_label: Lösenord
