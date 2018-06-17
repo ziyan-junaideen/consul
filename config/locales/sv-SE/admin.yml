@@ -1158,6 +1158,7 @@ sv:
           locale: Språk
     homepage:
       title: Hemsida
+      header_title: Header
       cards_title: Kort
       cards:
         title: Titel
