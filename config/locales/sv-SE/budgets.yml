@@ -63,10 +63,12 @@ sv:
           title: Sök
         sidebar:
           my_ballot: Min röst
+          check_ballot_link: "kontrollera min omröstning"
           sign_in: "logga in"
           sign_up: "registrera sig"
         orders:
           random: slumpmässig
+          confidence_score: högst betygsatt
       show:
         share: Dela
         supports: Stöd
@@ -77,13 +79,20 @@ sv:
       investment:
         add: Rösta
         supports:
+          zero: Inga stöd
           one: 1 stöd
           other: "%{count} stöd"
         give_support: Stöd
+      header:
+        check_ballot: Kontrollera min omröstning
+        check_ballot_link: "kontrollera min omröstning"
     show:
       group: Grupp
       phase: Aktuell fas
+      see_results: Se resultat
     results:
       link: Resultat
+      heading_selection_title: "Efter distrikt"
       show_all_link: Visa alla
       price: Kostnad
+      incompatibles: Oförenliga
