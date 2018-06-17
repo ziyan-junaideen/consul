@@ -23,6 +23,7 @@ sv:
       topic:
         comments:
           zero: Inga kommentarer
+      author: Författare
     topic:
       create: Skapa ett ämne
       edit: Redigera ämne
