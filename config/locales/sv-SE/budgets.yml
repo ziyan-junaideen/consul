@@ -69,17 +69,21 @@ sv:
           random: slumpmässig
       show:
         share: Dela
+        supports: Stöd
         votes: Röster
         price: Kostnad
+        comments_tab: Kommentarer
         author: Författare
       investment:
         add: Rösta
         supports:
           one: 1 stöd
           other: "%{count} stöd"
+        give_support: Stöd
     show:
       group: Grupp
       phase: Aktuell fas
     results:
       link: Resultat
+      show_all_link: Visa alla
       price: Kostnad
