@@ -144,6 +144,7 @@ sv:
     spending_proposal: Investeringsförslag
     budget/investment: Investering
     poll/shift: Skift
+    poll/question/answer: Svar
     user: Konto
     verification/sms: telefon
     topic: Ämne
@@ -172,7 +173,10 @@ sv:
   notifications:
     index:
       read: Läst
+      unread: Oläst
   omniauth:
+    google_oauth2:
+      name: Google
     twitter:
       name: Twitter
   proposals:
@@ -199,6 +203,9 @@ sv:
       comments:
         one: 1 kommentar
         other: "%{count} kommentarer"
+      votes:
+        one: 1 röst
+        other: "%{count} röster"
       total_percent: 100%
     show:
       comments:
@@ -246,7 +253,9 @@ sv:
     check: Välja
     check_all: Alla
     check_none: Ingen
+    follow: "Följ"
     hide: Göm
+    search: Sök
     show: Visa
     suggest:
       debate:
@@ -255,15 +264,25 @@ sv:
         see_all: "Se alla"
       proposal:
         see_all: "Se alla"
+    unflag: Ta bort flagga
     share: Dela
     view_mode:
       cards: Kort
       list: Lista
   spending_proposals:
+    form:
+      submit_buttons:
+        create: Skapa
+        new: Skapa
+    index:
+      search_form:
+        button: Sök
+        title: Sök
     show:
       share: Dela
   stats:
     index:
+      visits: Besök
       debates: Debatter
       proposals: Förslag
   users:
@@ -281,13 +300,17 @@ sv:
         comments:
           one: 1 kommentar
           other: "%{count} kommentarer"
+    proposals:
+      retire: "Dra tillbaka"
   votes:
     agree: Jag håller med
     signin: Logga in
     signup: Registrera sig
   related_content:
+    placeholder: "%{url}"
     submit: "Lägg till"
     score_positive: "Ja"
     score_negative: "Nej"
     content_title:
       proposal: "Förslag"
+      debate: "Debatt"
