@@ -94,6 +94,7 @@ sv:
         created_at: senaste
         hot_score: mest aktiva
         most_commented: mest kommenterade
+        relevance: relevans
         recommendations: rekommendationer
       recommendations:
         without_results: Det finns inga debatter som rör dina intressen
@@ -121,6 +122,8 @@ sv:
       author_deleted: Användaren borttagen
       comments:
         zero: Inga kommentarer
+        one: 1 kommentar
+        other: "%{count} kommentarer"
       comments_title: Kommentarer
       edit_debate_link: Redigera
       flag: Denna debatt har flaggats som olämpligt av flera användare.
@@ -174,7 +177,11 @@ sv:
     index:
       read: Läst
       unread: Oläst
+  map:
+    title: "Distrikter"
   omniauth:
+    facebook:
+      name: Facebook
     google_oauth2:
       name: Google
     twitter:
@@ -188,6 +195,7 @@ sv:
     index:
       orders:
         created_at: senaste
+        relevance: relevans
         archival_date: arkiverad
       retired_links:
         all: Alla
@@ -203,6 +211,9 @@ sv:
       comments:
         one: 1 kommentar
         other: "%{count} kommentarer"
+      supports:
+        one: 1 stöd
+        other: "%{count} stöd"
       votes:
         one: 1 röst
         other: "%{count} röster"
@@ -220,6 +231,7 @@ sv:
       filters:
         current: "Pågående"
       title: "Omröstningar"
+      no_geozone_restricted: "Hela staden"
       section_header:
         title: Omröstning
     show:
@@ -269,6 +281,8 @@ sv:
     view_mode:
       cards: Kort
       list: Lista
+  social:
+    whatsapp: WhatsApp
   spending_proposals:
     form:
       submit_buttons:
@@ -285,6 +299,7 @@ sv:
       visits: Besök
       debates: Debatter
       proposals: Förslag
+      comments: Kommentarer
   users:
     direct_messages:
       new:
@@ -300,12 +315,21 @@ sv:
         comments:
           one: 1 kommentar
           other: "%{count} kommentarer"
+        debates:
+          one: 1 Debatt
+          other: "%{count} Debatter"
     proposals:
       retire: "Dra tillbaka"
   votes:
     agree: Jag håller med
     signin: Logga in
     signup: Registrera sig
+    supports: Stöd
+  welcome:
+    feed:
+      process_label: Process
+    cards:
+      title: Stjärnmarkerade
   related_content:
     placeholder: "%{url}"
     submit: "Lägg till"
