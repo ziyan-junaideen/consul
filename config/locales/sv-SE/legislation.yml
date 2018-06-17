@@ -27,6 +27,7 @@ sv:
       phase_empty:
         empty: Inget har publicerats än
       shared:
+        key_dates: Viktiga datum
         debate_dates: Debatt
     questions:
       comments:
