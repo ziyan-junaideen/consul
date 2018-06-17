@@ -23,6 +23,7 @@ sv:
         submit: "Spara"
       index:
         results: Resultat
+        table_answer: Svar
         table_votes: Röster
     voters:
       new:
