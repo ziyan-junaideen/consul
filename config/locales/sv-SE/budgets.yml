@@ -63,6 +63,7 @@ sv:
           title: Sök
         sidebar:
           my_ballot: Min röst
+          sign_in: "logga in"
           sign_up: "registrera sig"
         orders:
           random: slumpmässig
@@ -70,6 +71,7 @@ sv:
         share: Dela
         votes: Röster
         price: Kostnad
+        author: Författare
       investment:
         add: Rösta
     show:
