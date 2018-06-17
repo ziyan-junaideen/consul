@@ -2,14 +2,25 @@ sv:
   seeds:
     settings:
       official_level_5_name: Borgmästare
+    geozones:
+      west_district: Västra distriktet
+      east_district: Östra distriktet
+    organizations:
+      human_rights: Mänskliga rättigheter
     categories:
+      associations: Föreningar
       culture: Kultur
       sports: Idrott
+      social_rights: Sociala rättigheter
       economy: Ekonomi
+      employment: Arbetsmarknad
       equity: Jämlikhet
       media: Media
       health: Hälsa
+      transparency: Transparens
     budgets:
       currency: kr
       groups:
         all_city: Hela staden
+    polls:
+      current_poll: "Aktuell omröstning"
