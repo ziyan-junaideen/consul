@@ -69,6 +69,7 @@ sv:
         filters:
           open: Öppna
           finished: Klart
+        budget_investments: Hantera projekt
         table_name: Namn
         table_phase: Etapp
         table_investments: Investeringar
@@ -488,6 +489,7 @@ sv:
       poll_shifts: Hantera växlingar
       officials: Tjänstemän
       organizations: Organisationer
+      settings: Globala inställningar
       spending_proposals: Investeringsförslag
       stats: Statistik
       signature_sheets: Underskrifter
@@ -916,6 +918,7 @@ sv:
         button: Sök
       user_search:
         button: Sök
+      no_search_results: "Inga resultat."
       actions: Åtgärder
       title: Titel
       image: Bild
