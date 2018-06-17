@@ -4,3 +4,5 @@ sv:
       first: Första
       last: Sista
       next: Nästa
+      previous: Föregående
+      truncate: "&hellip;"
