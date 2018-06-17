@@ -22,8 +22,11 @@ sv:
         new:
           email_label: E-post
           password_label: Lösenord
+          phone_number_label: Telefonnummer
           submit: Registrera dig
     passwords:
+      edit:
+        password_label: Nytt lösenord
       new:
         email_label: E-post
     sessions:
@@ -42,12 +45,16 @@ sv:
       registrations:
         delete_form:
           erase_reason_label: Syfte
+          title: Radera konto
         edit:
           edit: Redigera
           email_label: E-post
+          password_label: Nytt lösenord
           update_submit: Uppdatera
         new:
+          cancel: Avbryt inloggning
           email_label: E-post
+          organization_signup_link: Registrera dig här
           password_label: Lösenord
           submit: Registrera dig
           title: Registrera dig
