@@ -14,6 +14,8 @@ sv:
         notice: Dokumentet har raderats.
         alert: Dokumentet kunde inte raderas.
         confirm: Är du säker på att du vill radera dokumentet? Åtgärden kan inte ångras!
+    buttons:
+      download_document: Ladda ner fil
     errors:
       messages:
         in_between: måste vara mellan %{min} och %{max}
