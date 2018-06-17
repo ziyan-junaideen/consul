@@ -23,6 +23,7 @@ sv:
         participate: Delta
         new_topic: Skapa ämne
       topic:
+        edit: Redigera ämne
         comments:
           zero: Inga kommentarer
           one: 1 kommentar
@@ -33,6 +34,7 @@ sv:
       edit: Redigera ämne
       form:
         topic_title: Titel
+        topic_text: Inledande text
         new:
           submit_button: Skapa ämne
         edit:
