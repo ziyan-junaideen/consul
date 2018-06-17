@@ -14,17 +14,23 @@ sv:
     dashboard:
       index:
         title: Förvaltning
+    document_number: Dokumentnummer
     document_type_label: Dokumenttyp
     document_verifications:
       link: Consul
+      title: Användarhantering
       verify: Kontrollera
     email_label: E-post
     date_of_birth: Födelsedatum
     menu:
+      create_proposal: Skapa förslag
+      print_proposals: Skriv ut förslag
       users: Användare
     print:
       proposals_title: 'Förslag:'
+    print_info: Skriv ut denna info
     proposals:
+      create_proposal: Skapa förslag
       print:
         print_button: Skriv ut
     budget_investments:
