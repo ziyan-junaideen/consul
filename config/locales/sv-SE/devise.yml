@@ -29,3 +29,6 @@ sv:
         subject: "Instruktioner för att låsa upp kontot"
     omniauth_callbacks:
       failure: "Du godkändes inte som %{kind} eftersom ”%{reason}”."
+  errors:
+    messages:
+      not_locked: "var inte låst."
