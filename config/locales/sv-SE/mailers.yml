@@ -15,6 +15,7 @@ sv:
     reply:
       hi: Hej
     unfeasible_spending_proposal:
+      new_href: "nytt investeringsprojekt"
       sincerely: "Vänliga hälsningar"
     proposal_notification_digest:
       share: Dela förslaget
@@ -35,8 +36,10 @@ sv:
       button: Slutför registrering
       subject: "Inbjudan till %{org_name}"
     budget_investment_created:
+      follow_link: "Medborgarbudgetar"
       sincerely: "Vänliga hälsningar,"
     budget_investment_unfeasible:
+      new_href: "nytt investeringsprojekt"
       sincerely: "Vänliga hälsningar"
     budget_investment_selected:
       sincerely: "Vänliga hälsningar"
