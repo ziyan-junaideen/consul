@@ -12,6 +12,7 @@ sv:
     account_info:
       change_user: Ändra användare
       document_number_label: 'Dokumentnummer:'
+      document_type_label: 'Dokumenttyp:'
       email_label: 'E-post:'
       identified_label: 'Identifierad som:'
       username_label: 'Användarnamn:'
@@ -33,8 +34,11 @@ sv:
       create_proposal: Skapa förslag
       print_proposals: Skriv ut förslag
       support_proposals: Stöd förslag
+      create_spending_proposal: Skapa investeringsförslag
       print_spending_proposals: Skriv ut investeringsförslag
       support_spending_proposals: Stöd investeringsförslag
+      create_budget_investment: Skapa budget investering
+      print_budget_investments: Skriv ut budget investeringar
       users: Användare
       user_invites: Skicka inbjudningar
     permissions:
@@ -52,6 +56,7 @@ sv:
         print_button: Skriv ut
     budgets:
       create_new_investment: Skapa nya investering
+      print_investments: Skriv ut budget investeringar
     budget_investments:
       alert:
         unverified_user: Användare är inte verifierad
@@ -65,6 +70,8 @@ sv:
       create: Skapa investeringsförslag
       print:
         print_button: Skriv ut
+    sessions:
+      signed_out: Utloggad framgångsrikt.
     username_label: Användarnamn
     users:
       create_user: Skapa ett nytt konto
