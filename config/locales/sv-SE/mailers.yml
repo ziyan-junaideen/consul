@@ -39,6 +39,7 @@ sv:
     budget_investment_created:
       follow_link: "Medborgarbudgetar"
       sincerely: "Vänliga hälsningar,"
+      share: "Dela ditt projekt"
     budget_investment_unfeasible:
       hi: "Kära användare,"
       new_href: "nytt investeringsprojekt"
