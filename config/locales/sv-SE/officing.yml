@@ -24,6 +24,7 @@ sv:
         ballots_null: "Ogiltiga röster"
         ballots_total: "Totalt antal röster"
         submit: "Spara"
+        results_list: "Dina resultat"
         see_results: "Se resultat"
       index:
         no_results: "Inga resultat"
