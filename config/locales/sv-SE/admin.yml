@@ -904,6 +904,8 @@ sv:
         title: Gömda förslag
     settings:
       index:
+        banners: Banner stilar
+        banner_imgs: Banner bilder
         no_banners_images: Inga banner bild
         no_banners_styles: Inga banner stilar
         title: Konfigurationsinställningar
@@ -930,6 +932,7 @@ sv:
         button: Sök
       user_search:
         button: Sök
+      search_results: "Sökresultat"
       no_search_results: "Inga resultat."
       actions: Åtgärder
       title: Titel
@@ -1187,6 +1190,7 @@ sv:
       header_title: Header
       cards_title: Kort
       create_card: Skapa kort
+      no_cards: Det finns inga kort.
       cards:
         title: Titel
         description: Beskrivning
