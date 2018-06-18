@@ -190,6 +190,7 @@ sv:
         table_evaluation: "Visa till värderingsorgan"
         table_incompatible: "Oförenlig"
         cannot_calculate_winners: Budgeten måste stå i fas "lottningsprojekt", "granskar valsedlar" eller "färdiga budgeter" för att kunna beräkna vinnarprojekt
+        see_results: "Se resultat"
       show:
         assigned_admin: Utsedd administratör
         assigned_valuators: Ansvarig utvärderare
@@ -329,6 +330,7 @@ sv:
           enabled: Aktiverat
           process: Process
           debate_phase: Debatt fas
+          allegations_phase: Utkastsfas
           proposals_phase: Förslagsfas
           start: Starta
           end: Slut
@@ -468,6 +470,7 @@ sv:
       activity: Moderator aktivitet
       admin: Administrationsmeny
       banner: Hantera fälttecken
+      poll_questions: Frågor
       proposals_topics: Förslag till ämnen
       budgets: Medborgarbudgetar
       geozones: Hantera geozones
@@ -894,6 +897,7 @@ sv:
         filter: Filtrera
         filters:
           all: Alla
+          with_confirmed_hide: Bekräftad
           without_confirmed_hide: Väntande
     settings:
       index:
@@ -921,10 +925,12 @@ sv:
       no_search_results: "Inga resultat."
       actions: Åtgärder
       title: Titel
+      description: Beskrivning
       image: Bild
       show_image: Visa bild
     spending_proposals:
       index:
+        administrator_filter_all: Alla administratörer
         valuator_filter_all: Alla bedömare
         tags_filter_all: Alla Taggar
         filters:
@@ -1166,16 +1172,28 @@ sv:
           title: Titel
           updated_at: Uppdaterad den
           status_draft: Utkast
+          status_published: Publicerad
           locale: Språk
     homepage:
       title: Hemsida
       header_title: Header
       cards_title: Kort
+      create_card: Skapa kort
       cards:
         title: Titel
+        description: Beskrivning
+        link_text: Länktext
         link_url: Länk-URL
       feeds:
+        proposals: Förslag
         debates: Debatter
+        processes: Processer
       new:
         header_title: Ny header
         card_title: Nytt kort
+        submit_card: Skapa kort
+      edit:
+        header_title: Redigera header
+        submit_header: Spara header
+        card_title: Redigera kort
+        submit_card: Spara kort
