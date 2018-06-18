@@ -36,5 +36,6 @@ sv:
   errors:
     messages:
       already_confirmed: "Du har redan verifierats; försök att logga in."
+      not_found: "inte hittas."
       not_locked: "var inte låst."
       equal_to_current_password: "måste vara annorlunda än det aktuella lösenordet."
