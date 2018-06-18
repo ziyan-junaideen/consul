@@ -15,6 +15,7 @@ sv:
     reply:
       hi: Hej
     unfeasible_spending_proposal:
+      hi: "Kära användare,"
       new_href: "nytt investeringsprojekt"
       sincerely: "Vänliga hälsningar"
     proposal_notification_digest:
@@ -39,9 +40,12 @@ sv:
       follow_link: "Medborgarbudgetar"
       sincerely: "Vänliga hälsningar,"
     budget_investment_unfeasible:
+      hi: "Kära användare,"
       new_href: "nytt investeringsprojekt"
       sincerely: "Vänliga hälsningar"
     budget_investment_selected:
+      hi: "Kära användare,"
       sincerely: "Vänliga hälsningar"
     budget_investment_unselected:
+      hi: "Kära användare,"
       sincerely: "Vänliga hälsningar"
