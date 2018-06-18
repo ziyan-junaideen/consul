@@ -197,6 +197,7 @@ sv:
       my_activity_link: Min aktivitet
       open: öppen
       proposals: Förslag
+      budgets: Medborgarbudget
       notification_item:
         notifications: Notiser
   legacy_legislation:
@@ -454,6 +455,7 @@ sv:
         create: Skapa
         new: Skapa
     index:
+      title: Medborgarbudget
       unfeasible: Ogenomförbara investeringsprojekt
       search_form:
         button: Sök
