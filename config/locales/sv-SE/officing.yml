@@ -42,3 +42,4 @@ sv:
         table_actions: Åtgärder
       show:
         can_vote: Kan rösta
+        submit: Bekräfta röst
