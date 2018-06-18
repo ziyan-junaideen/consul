@@ -28,6 +28,7 @@ sv:
         title: "Processer"
         link: "processer"
       faq:
+        title: "Tekniska problem?"
         page:
           title: "Vanliga frågor"
           description: "Använd denna sida för att hjälpa dina användare med deras vanligaste frågorna."
