@@ -22,6 +22,7 @@ sv:
       user_permission_support_proposal: Stöd förslag
       user_permission_title: Deltagande
       user_permission_verify: Bekräfta ditt konto för att utföra alla handlingar.
+      user_permission_verify_info: "* Endast för användare på folkräkningen."
       user_permission_votes: Delta i slutomröstningen
       username_label: Användarnamn
       verified_account: Kontot verifierat
@@ -145,6 +146,7 @@ sv:
       user_not_found: Användaren hittades inte
       invalid_date_range: "Felaktig datumföljd"
   form:
+    conditions: Regler och villkor för användning
     debate: Debatt
     direct_message: privat meddelande
     error: fel
@@ -171,12 +173,15 @@ sv:
       firefox: Firefox
     footer:
       accessibility: Tillgänglighet
+      conditions: Regler och villkor för användning
+      consul: CONSUL programvara
       copyright: CONSUL, %{year}
       open_data_title: Öppna data
       open_source: mjukvara med öppen källkod
       participation_title: Deltagande
       privacy: Sekretesspolicy
       transparency_title: Transparens
+      transparency_url: https://transparency.consul
     header:
       administration_menu: Admin
       administration: Administration
@@ -187,6 +192,7 @@ sv:
       external_link_opendata: Öppna data
       external_link_opendata_url: https://opendata.Consul
       external_link_transparency: Transparens
+      external_link_transparency_url: https://transparency.consul
       locale: 'Språk:'
       logo: Consuls logo
       management: Förvaltning
@@ -227,6 +233,8 @@ sv:
       sign_in: Logga in med Facebook
       sign_up: Registrera dig med Facebook
       name: Facebook
+    finish_signup:
+      title: "Ytterligare detaljer"
     google_oauth2:
       sign_in: Logga in med Google
       sign_up: Registrera dig med Google
@@ -237,6 +245,7 @@ sv:
       name: Twitter
     info_sign_in: "Logga in med:"
     info_sign_up: "Registrera dig med:"
+    or_fill: "Eller fyll i följande formulär:"
   proposals:
     create:
       form:
@@ -408,6 +417,7 @@ sv:
     "no": "Nej"
     search_results: "Sökresultat"
     advanced_search:
+      author_type: 'Efter författarkategori'
       author_type_blank: 'Välj en kategori'
       date: 'Efter datum'
       date_placeholder: 'DD/MM/ÅÅÅÅ'
@@ -448,11 +458,15 @@ sv:
         see_all: "Se alla"
     tags_cloud:
       districts: "Distrikter"
+      districts_list: "Distriktlist"
       categories: "Kategorier"
+    target_blank_html: " (länken öppnas i nytt fönster)"
     you_are_in: "Du är på"
     unflag: Ta bort flagga
+    unfollow_entity: "Sluta följa %{entity}"
     outline:
       budget: Medborgarbudget
+    go_to_page: "Gå till sidan av "
     share: Dela
     orbit:
       previous_slide: Föregående sida
@@ -464,6 +478,8 @@ sv:
   social:
     blog: "%{org} Blogg"
     facebook: "%{org} Facebook"
+    twitter: "%{org} Twitter"
+    youtube: "%{org} YouTube"
     whatsapp: WhatsApp
     telegram: "%{org} telegram"
     instagram: "%{org} Instagram"
@@ -508,9 +524,11 @@ sv:
       debates: Debatter
       proposals: Förslag
       comments: Kommentarer
+      proposal_votes: Röster om förslag
       debate_votes: Röster om debatter
       comment_votes: Röster på kommentarer
       votes: Totalt antal röster
+      verified_users: Verifierade användare
       unverified_users: Overifierade användare
   users:
     direct_messages:
@@ -569,6 +587,7 @@ sv:
         processes: "Öppna processer"
       see_all_debates: Se alla debatter
       see_all_proposals: Se alla förslag
+      see_all_processes: Se alla processer
       process_label: Process
       see_process: Se process
     cards:
@@ -591,6 +610,7 @@ sv:
       title: Delta
       user_permission_debates: Delta i debatter
       user_permission_proposal: Skapa nya förslag
+      user_permission_support_proposal: Stöd förslag
       user_permission_verify_my_account: Verifiera mitt konto
   related_content:
     title: "Relaterat innehåll"
