@@ -71,6 +71,7 @@ sv:
         save: Spara ändringar
       notice:
         valuate: "Uppdaterad rapport"
+      valuation_comments: Bedomningskommentarer
     spending_proposals:
       index:
         geozone_filter_all: Alla stadsdelar
