@@ -19,6 +19,8 @@ sv:
           other: "%{count} kommentarer"
       show:
         title: Kommentera
+      version_chooser:
+        seeing_version: Kommentarer för version
     draft_versions:
       changes:
         title: Ändringar
@@ -26,10 +28,12 @@ sv:
         select_draft_version: Välj utkast
         select_version_submit: se
         see_comments: Se alla kommentarer
+        text_toc: Index
         text_body: Text
         text_comments: Kommentarer
     processes:
       header:
+        additional_info: Ytterligare information
         description: Beskrivning
       proposals:
         empty_proposals: Det finns inga förslag
@@ -38,17 +42,24 @@ sv:
         filters:
           next: Nästa
           past: Tidigare
+        section_header:
+          title: Lagstiftningsprocesser
       phase_not_open:
         not_open: Fasen är inte öppen ännu
       phase_empty:
         empty: Inget har publicerats än
+      process:
+        see_latest_comments_title: Kommentera denna process
       shared:
         key_dates: Viktiga datum
         debate_dates: Debatt
+        draft_publication_date: Publiceringsdatum för utkast
         proposals_dates: Förslag
     questions:
       comments:
         comments_closed: Avslutad fas
+        form:
+          leave_comment: Lämna ditt svar
       question:
         comments:
           zero: Inga kommentarer
