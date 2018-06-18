@@ -6,6 +6,9 @@ sv:
         comments_count:
           one: "%{count} kommentar"
           other: "%{count} kommentarer"
+        replies_count:
+          one: "%{count} svar"
+          other: "%{count} svar"
         cancel: Avbryt
         publish_comment: Publicera Commentar
       form:
@@ -14,6 +17,8 @@ sv:
         signup: Registrera sig
       index:
         title: Kommentarer
+        comments_about: Kommentarer om
+        see_in_context: Se i sammanhang
         comments_count:
           one: "%{count} kommentar"
           other: "%{count} kommentarer"
@@ -21,12 +26,15 @@ sv:
         title: Kommentera
       version_chooser:
         seeing_version: Kommentarer för version
+        see_text: Se utkast
     draft_versions:
       changes:
         title: Ändringar
+        see_text: Se utkast
       show:
         select_draft_version: Välj utkast
         select_version_submit: se
+        updated_at: uppdaterad den %{date}
         see_comments: Se alla kommentarer
         text_toc: Index
         text_body: Text
@@ -40,8 +48,11 @@ sv:
       index:
         filter: Filter
         filters:
+          open: Öppna processer
           next: Nästa
           past: Tidigare
+        no_open_processes: Det finns inga öppna processer
+        no_past_processes: Det finns inga avslutade processer
         section_header:
           title: Lagstiftningsprocesser
       phase_not_open:
@@ -49,6 +60,7 @@ sv:
       phase_empty:
         empty: Inget har publicerats än
       process:
+        see_latest_comments: Se de senaste kommentarerna
         see_latest_comments_title: Kommentera denna process
       shared:
         key_dates: Viktiga datum
@@ -57,6 +69,7 @@ sv:
         proposals_dates: Förslag
     questions:
       comments:
+        comment_button: Publicera svar
         comments_closed: Avslutad fas
         form:
           leave_comment: Lämna ditt svar
@@ -69,11 +82,13 @@ sv:
       show:
         answer_question: Skicka svar
         next_question: Nästa fråga
+        first_question: Först fråga
         share: Dela
       participation:
         phase_not_open: Denna fas är inte öppen
         signin: Logga in
         signup: Registrera sig
+        verify_account: verifiera ditt konto
         debate_phase_not_open: Diskussionsfasen har avslutats, och svar kan inte längre tas emot
     shared:
       share: Dela
