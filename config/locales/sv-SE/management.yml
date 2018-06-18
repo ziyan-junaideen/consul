@@ -10,6 +10,8 @@ sv:
     account_info:
       change_user: Ändra användare
       email_label: 'E-post:'
+      identified_label: 'Identifierad som:'
+      username_label: 'Användarnamn:'
     check: Kontrollera
     dashboard:
       index:
@@ -25,11 +27,20 @@ sv:
     menu:
       create_proposal: Skapa förslag
       print_proposals: Skriv ut förslag
+      support_proposals: Stöd förslag
+      print_spending_proposals: Skriv ut investeringsförslag
+      support_spending_proposals: Stöd investeringsförslag
       users: Användare
+    permissions:
+      create_proposals: Skapa förslag
+      support_proposals: Stöd förslag
+      vote_proposals: Rösta på förslag
     print:
       proposals_title: 'Förslag:'
     print_info: Skriv ut denna info
     proposals:
+      alert:
+        unverified_user: Användare är inte verifierad
       create_proposal: Skapa förslag
       print:
         print_button: Skriv ut
@@ -37,12 +48,16 @@ sv:
       print:
         print_button: Skriv ut
     spending_proposals:
+      alert:
+        unverified_user: Användare är inte verifierad
+      create: Skapa investeringsförslag
       print:
         print_button: Skriv ut
     username_label: Användarnamn
     users:
       create_user_submit: Skapa användare
       erase_account_link: Ta bort användare
+      erase_submit: Radera konto
     user_invites:
       new:
         label: E-post
