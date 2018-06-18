@@ -7,6 +7,7 @@ sv:
       north_district: Norra distriktet
       west_district: Västra distriktet
       east_district: Östra distriktet
+      central_district: Center distrikt
     organizations:
       human_rights: Mänskliga rättigheter
     categories:
@@ -23,6 +24,7 @@ sv:
       transparency: Transparens
       environment: Miljö
     budgets:
+      budget: Medborgarbudget
       currency: kr
       groups:
         all_city: Hela staden
