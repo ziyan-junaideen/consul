@@ -45,14 +45,14 @@ sv:
       section_header:
         icon_alt: Medborgarbudgetssymbol
         title: Medborgarbudget
-        help: Hjälp med medborgardeltagande budgetar
+        help: Hjälp med medborgarbudgetar
         all_phases: Se alla faser
       all_phases: Budget investerings faser
       map: Budget investeringars förslag ligger geografiskt
       investment_proyects: Lista över investeringsprojekt
       unfeasible_investment_proyects: Lista över ogenomförbara investeringsprojekt
       not_selected_investment_proyects: Lista över investeringsprojekt som inte valts till lottning
-      finished_budgets: Färdiga medborgarbudgetar
+      finished_budgets: Avslutade medborgarbudgetar
       see_results: Se resultat
       section_footer:
         title: Hjälp med medborgarbudgetar
