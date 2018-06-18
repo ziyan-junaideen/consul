@@ -42,6 +42,7 @@ sv:
       legislation: Lagstiftning
       user:
         recommendations: Rekommendationer
+        skip_verification: Hoppa över användarverifiering
       community: Diskussion om förslag och investeringar
       map: Geografisk plats för förslag och investeringar
       public_stats: Offentliga statistiker
