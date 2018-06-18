@@ -7,6 +7,7 @@ sv:
         debates: "Debatter"
         proposals: "Förslag"
         polls: "Omröstningar"
+        processes: "Processer"
       debates:
         title: "Debatter"
         link: "debatter"
@@ -14,11 +15,15 @@ sv:
       proposals:
         title: "Förslag"
         link: "medborgarförslag"
+        image_alt: "Stöd ett förslag knapp"
       budgets:
         title: "Medborgarbudget"
       polls:
         title: "Omröstningar"
         link: "omröstningar"
+      processes:
+        title: "Processer"
+        link: "processer"
       faq:
         page:
           title: "Vanliga frågor"
