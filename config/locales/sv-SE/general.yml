@@ -198,6 +198,7 @@ sv:
       open: öppen
       proposals: Förslag
       budgets: Medborgarbudget
+      spending_proposals: Investeringsförslag
       notification_item:
         notifications: Notiser
   legacy_legislation:
@@ -258,6 +259,7 @@ sv:
       tag_category_label: "Kategorier"
       tags_label: Taggar
       map_location: "Kartposition"
+      map_remove_marker: "Ta bort kartmarkör"
     index:
       featured_proposals: Stjärnmarkerade
       filter_topic:
@@ -297,6 +299,9 @@ sv:
         submit_button: Skapa förslag
       start_new: Skapa nytt förslag
     proposal:
+      created: "Du skapade ett förslag!"
+      share:
+        view_proposal: Inte nu, gå till mitt förslag
       improve_info_link: "Se mer information"
       comments:
         zero: Inga kommentarer
@@ -350,12 +355,14 @@ sv:
       section_footer:
         title: Hjälp om omröstning
     show:
+      back: Tillbaka till omröstning
       comments_tab: Kommentarer
       signin: Logga in
       signup: Registrera sig
       verify_link: "verifiera ditt konto"
       documents: Dokument
       zoom_plus: Expandera bild
+      videos: "Extern video"
       info_menu: "Information"
       results_menu: "Omröstningsresultat"
       stats:
@@ -438,6 +445,7 @@ sv:
       budget: Medborgarbudget
     share: Dela
     orbit:
+      previous_slide: Föregående sida
       next_slide: Nästa sida
     view_mode:
       title: Visningsmod
@@ -464,11 +472,17 @@ sv:
       sidebar:
         feasibility: Genomförbarhet
         unfeasible: Ej genomförbart
+      start_spending_proposal: Skapa ett investeringsprojekt
+    new:
+      more_info: Hur funkar medborgarbudgetar?
+      start_new: Skapa investeringsförslag
     show:
       author_deleted: Användare borttagen
+      code: 'Förslagskod:'
       share: Dela
     wrong_price_format: Endast heltal
     spending_proposal:
+      spending_proposal: Investeringsprojekt
       support: Stöd
       support_title: Stödja detta projekt
       supports:
@@ -539,6 +553,7 @@ sv:
         proposals: "Mest aktiva förslag"
         processes: "Öppna processer"
       see_all_debates: Se alla debatter
+      see_all_proposals: Se alla förslag
       process_label: Process
       see_process: Se process
     cards:
@@ -548,10 +563,12 @@ sv:
         title: Rekommenderade debatter
       proposals:
         title: Rekommenderade förslag
+        btn_text_link: Alla rekommenderade förslag
       slide: "Se %{title}"
     verification:
       title: Kontoverifiering
     welcome:
+      go_to_index: Se förslag och debatter
       title: Delta
       user_permission_debates: Delta i debatter
       user_permission_proposal: Skapa nya förslag
