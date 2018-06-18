@@ -892,6 +892,8 @@ sv:
         verified: Verifierad
         verify: Kontrollera
         pending: Väntande
+      search:
+        title: Sök organisationer
     proposals:
       index:
         filter: Filtrera
@@ -899,11 +901,17 @@ sv:
           all: Alla
           with_confirmed_hide: Bekräftad
           without_confirmed_hide: Väntande
+        title: Gömda förslag
     settings:
       index:
+        no_banners_images: Inga banner bild
+        no_banners_styles: Inga banner stilar
+        title: Konfigurationsinställningar
         update_setting: Uppdatera
         feature_flags: Funktioner
         features:
+          enabled: "Aktiverad funktion"
+          disabled: "Oaktiverad funktion"
           enable: "Aktivera"
           disable: "Inaktivera"
         map:
