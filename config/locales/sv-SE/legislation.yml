@@ -23,11 +23,16 @@ sv:
       changes:
         title: Ändringar
       show:
+        select_draft_version: Välj utkast
         select_version_submit: se
         see_comments: Se alla kommentarer
         text_body: Text
         text_comments: Kommentarer
     processes:
+      header:
+        description: Beskrivning
+      proposals:
+        empty_proposals: Det finns inga förslag
       index:
         filter: Filter
         filters:
@@ -40,11 +45,13 @@ sv:
       shared:
         key_dates: Viktiga datum
         debate_dates: Debatt
+        proposals_dates: Förslag
     questions:
       comments:
         comments_closed: Avslutad fas
       question:
         comments:
+          zero: Inga kommentarer
           one: "%{count} kommentar"
           other: "%{count} kommentarer"
         debate: Debatt
