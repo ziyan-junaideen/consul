@@ -6,6 +6,7 @@ sv:
       menu:
         debates: "Debatter"
         proposals: "Förslag"
+        budgets: "Medborgarbudgetar"
         polls: "Omröstningar"
         processes: "Processer"
       debates:
@@ -18,9 +19,11 @@ sv:
         image_alt: "Stöd ett förslag knapp"
       budgets:
         title: "Medborgarbudget"
+        link: "medborgarbudgetar"
       polls:
         title: "Omröstningar"
         link: "omröstningar"
+        feature_1_link: "registrera i %{org_name}"
       processes:
         title: "Processer"
         link: "processer"
