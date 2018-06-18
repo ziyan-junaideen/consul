@@ -1,6 +1,8 @@
 sv:
   management:
     account:
+      menu:
+        reset_password_manually: Återställa lösenord manuellt
       edit:
         back: Tillbaka
         password:
@@ -9,6 +11,7 @@ sv:
           print: Skriv ut lösenord
     account_info:
       change_user: Ändra användare
+      document_number_label: 'Dokumentnummer:'
       email_label: 'E-post:'
       identified_label: 'Identifierad som:'
       username_label: 'Användarnamn:'
@@ -24,6 +27,8 @@ sv:
       verify: Kontrollera
     email_label: E-post
     date_of_birth: Födelsedatum
+    email_verifications:
+      send_email: Skicka verifieringsmail
     menu:
       create_proposal: Skapa förslag
       print_proposals: Skriv ut förslag
@@ -31,6 +36,7 @@ sv:
       print_spending_proposals: Skriv ut investeringsförslag
       support_spending_proposals: Stöd investeringsförslag
       users: Användare
+      user_invites: Skicka inbjudningar
     permissions:
       create_proposals: Skapa förslag
       support_proposals: Stöd förslag
@@ -44,7 +50,13 @@ sv:
       create_proposal: Skapa förslag
       print:
         print_button: Skriv ut
+    budgets:
+      create_new_investment: Skapa nya investering
     budget_investments:
+      alert:
+        unverified_user: Användare är inte verifierad
+      filters:
+        unfeasible: Ogenomförbara investering
       print:
         print_button: Skriv ut
     spending_proposals:
@@ -55,9 +67,16 @@ sv:
         print_button: Skriv ut
     username_label: Användarnamn
     users:
+      create_user: Skapa ett nytt konto
       create_user_submit: Skapa användare
+      email_optional_label: E-postadress (tillval)
+      erased_notice: Användarkonto raderas.
       erase_account_link: Ta bort användare
       erase_submit: Radera konto
     user_invites:
       new:
         label: E-post
+        submit: Skicka inbjudningar
+        title: Skicka inbjudningar
+      create:
+        title: Skicka inbjudningar
