@@ -1,8 +1,10 @@
 sv:
   seeds:
     settings:
+      official_level_1_name: Tjänstepersoner
       official_level_5_name: Borgmästare
     geozones:
+      north_district: Norra distriktet
       west_district: Västra distriktet
       east_district: Östra distriktet
     organizations:
@@ -15,12 +17,15 @@ sv:
       economy: Ekonomi
       employment: Arbetsmarknad
       equity: Jämlikhet
+      sustainability: Hållbarhet
       media: Media
       health: Hälsa
       transparency: Transparens
+      environment: Miljö
     budgets:
       currency: kr
       groups:
         all_city: Hela staden
+        districts: Distrikter
     polls:
       current_poll: "Aktuell omröstning"
