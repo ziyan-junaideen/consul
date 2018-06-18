@@ -221,6 +221,7 @@ sv:
       mark_as_unread: Markera som oläst
   map:
     title: "Distrikter"
+    start_proposal: Skapa ett förslag
   omniauth:
     facebook:
       sign_in: Logga in med Facebook
@@ -246,6 +247,7 @@ sv:
         submit_button: Spara ändringar
       show_link: Visa förslag
     retire_form:
+      retired_reason_blank: Välj en anledning
       retired_explanation_label: Förklaring
     retire_options:
       duplicated: Duplicerad
@@ -253,6 +255,8 @@ sv:
       done: Genomfört
       other: Andra
     form:
+      proposal_summary: Förslags sammanfattning
+      proposal_summary_note: "(högst 200 tecken)"
       proposal_text: Förslags text
       proposal_title: Förslags titel
       proposal_video_url: Länk till extern video
@@ -333,6 +337,7 @@ sv:
       share: Dela
       send_notification: Skicka notis
       embed_video_title: "Video om %{proposal}"
+      title_external_url: "Ytterligare dokumentation"
       title_video_url: "Extern video"
       author: Författare
     update:
@@ -345,6 +350,8 @@ sv:
         current: "Pågående"
         incoming: "Inkommande"
       title: "Omröstningar"
+      participate_button: "Delta i denna omröstning"
+      participate_button_incoming: "Mer information"
       participate_button_expired: "Omröstningen är slut"
       no_geozone_restricted: "Hela staden"
       geozone_restricted: "Distrikter"
@@ -360,6 +367,7 @@ sv:
       signin: Logga in
       signup: Registrera sig
       verify_link: "verifiera ditt konto"
+      more_info_title: "Mer information"
       documents: Dokument
       zoom_plus: Expandera bild
       videos: "Extern video"
@@ -382,6 +390,7 @@ sv:
     create_question: "Skapa fråga"
     show:
       vote_answer: "Rösta för %{answer}"
+      voted: "Du har röstat %{answer}"
   proposal_notifications:
     new:
       title: "Skicka meddelande"
@@ -424,6 +433,7 @@ sv:
     flag: Flagga som olämplig
     follow: "Följ"
     following: "Följer"
+    follow_entity: "Följ %{entity}"
     hide: Göm
     print:
       print_button: Skriv ut denna info
@@ -456,12 +466,15 @@ sv:
     facebook: "%{org} Facebook"
     whatsapp: WhatsApp
     telegram: "%{org} telegram"
+    instagram: "%{org} Instagram"
   spending_proposals:
     form:
+      association_name: 'Föreningens namn'
       description: Beskrivning
       submit_buttons:
         create: Skapa
         new: Skapa
+      title: Investeringsförslagstitel
     index:
       title: Medborgarbudget
       unfeasible: Ogenomförbara investeringsprojekt
@@ -495,8 +508,10 @@ sv:
       debates: Debatter
       proposals: Förslag
       comments: Kommentarer
+      debate_votes: Röster om debatter
       comment_votes: Röster på kommentarer
       votes: Totalt antal röster
+      unverified_users: Overifierade användare
   users:
     direct_messages:
       new:
@@ -561,11 +576,15 @@ sv:
     recommended:
       debates:
         title: Rekommenderade debatter
+        btn_text_link: Alla rekommenderade debatter
       proposals:
         title: Rekommenderade förslag
         btn_text_link: Alla rekommenderade förslag
+      budget_investments:
+        title: Rekommenderade investeringar
       slide: "Se %{title}"
     verification:
+      i_dont_have_an_account: Jag har inget konto
       title: Kontoverifiering
     welcome:
       go_to_index: Se förslag och debatter
@@ -576,8 +595,10 @@ sv:
   related_content:
     title: "Relaterat innehåll"
     add: "Lägg till relaterat innehåll"
+    label: "Länk till relaterat innehåll"
     placeholder: "%{url}"
     submit: "Lägg till"
+    is_related: "Är det relaterat innehåll?"
     score_positive: "Ja"
     score_negative: "Nej"
     content_title:
