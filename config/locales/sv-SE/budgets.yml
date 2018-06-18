@@ -57,6 +57,8 @@ sv:
       section_footer:
         title: Hjälp med medborgarbudgetar
         description: Med medborgarbudgeterna kan medborgarna hantera den kommunala budgeten genom att rösta på investeringsprojekt.
+        help_text_1: "Medborgarbudgetar är processer där medborgarna bestämmer direkt på en del av den kommunala budgeten. Varje registrerad person över 16 år kan lämna ett investeringsprojekt och få stöd från andra medborgare."
+        help_text_2: "Mest röstade projekt bedömas och går till en slutlig omröstning där medborgarna bestämmer vilka åtgärder ska genomföras av kommunfullmäktige när den kommunala budgeten för nästa år är godkänd."
     investments:
       form:
         tag_category_label: "Kategorier"
