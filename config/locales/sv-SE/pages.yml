@@ -8,11 +8,13 @@ sv:
         proposals: "Förslag"
         budgets: "Medborgarbudgetar"
         polls: "Omröstningar"
+        other: "Annan information av intresse"
         processes: "Processer"
       debates:
         title: "Debatter"
         link: "debatter"
         feature_link: "registrera i %{org}"
+        image_alt: "Knappar för att betygsätta diskussioner"
       proposals:
         title: "Förslag"
         link: "medborgarförslag"
@@ -27,13 +29,16 @@ sv:
       processes:
         title: "Processer"
         link: "processer"
+        sign_up: "registrera dig i %{org}"
       faq:
         title: "Tekniska problem?"
+        button: "Visa vanliga frågor"
         page:
           title: "Vanliga frågor"
           description: "Använd denna sida för att hjälpa dina användare med deras vanligaste frågorna."
           faq_1_title: "Fråga 1"
       other:
+        title: "Annan information av intresse"
         how_to_use: "Använd %{org_name} i din stad"
       titles:
         how_to_use: Använd det i din lokal styrelse
@@ -44,6 +49,7 @@ sv:
       help: "Vad är %{org}? - Medborgardialog"
       privacy: Sekretesspolicy
     verify:
+      code: Koden du fick i ett brev
       email: E-post
       password: Lösenord
       submit: Verifiera mitt konto
