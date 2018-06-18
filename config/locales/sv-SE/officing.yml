@@ -20,6 +20,7 @@ sv:
         booth: "Röstbås"
         date: "Datum"
         select_booth: "Välj röstbås"
+        ballots_white: "Blankröster"
         ballots_null: "Ogiltiga röster"
         ballots_total: "Totalt antal röster"
         submit: "Spara"
@@ -29,6 +30,7 @@ sv:
         results: Resultat
         table_answer: Svar
         table_votes: Röster
+        table_whites: "Blankröster"
         table_nulls: "Ogiltiga röster"
         table_total: "Totalt antal röster"
     voters:
