@@ -17,6 +17,7 @@ sv:
         confirm: Är du säker på att du vill radera dokumentet? Åtgärden kan inte ångras!
     buttons:
       download_document: Ladda ner fil
+      destroy_document: Radera dokument
     errors:
       messages:
         in_between: måste vara mellan %{min} och %{max}
