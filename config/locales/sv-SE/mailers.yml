@@ -34,5 +34,11 @@ sv:
       title: "Välkommen till %{org}"
       button: Slutför registrering
       subject: "Inbjudan till %{org_name}"
+    budget_investment_created:
+      sincerely: "Vänliga hälsningar,"
     budget_investment_unfeasible:
+      sincerely: "Vänliga hälsningar"
+    budget_investment_selected:
+      sincerely: "Vänliga hälsningar"
+    budget_investment_unselected:
       sincerely: "Vänliga hälsningar"
