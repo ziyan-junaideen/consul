@@ -719,6 +719,8 @@ sv:
         table_location: "Plats"
     polls:
       index:
+        title: "Lista över aktiva omröstningar"
+        no_polls: "Det finns inga kommande omröstningar."
         create: "Skapa opinionsundersökning"
         name: "Namn"
         dates: "Datum"
@@ -830,6 +832,7 @@ sv:
         title: "Resultat av monter"
     booths:
       index:
+        title: "Lista över aktiva vallokaler"
         add_booth: "Lägg till monter"
         name: "Namn"
         location: "Plats"
@@ -891,12 +894,14 @@ sv:
         reject: Avvisa
         rejected: Avvisade
         search: Sök
+        search_placeholder: Namn, e-post eller telefonnummer
         title: Organisationer
         verified: Verifierad
         verify: Kontrollera
         pending: Väntande
       search:
         title: Sök organisationer
+        no_results: Inga organisationer.
     proposals:
       index:
         filter: Filtrera
@@ -905,6 +910,7 @@ sv:
           with_confirmed_hide: Bekräftad
           without_confirmed_hide: Väntande
         title: Gömda förslag
+        no_hidden_proposals: Det finns inga gömma förslag.
     settings:
       flash:
         updated: Uppdaterad värde
@@ -934,12 +940,16 @@ sv:
         placeholder: Sök valarbetare
       poll_questions_search:
         button: Sök
+        placeholder: Sök omröstningsfrågor
       proposal_search:
         button: Sök
+        placeholder: Sök förslag efter titel, kod, beskrivning eller fråga
       spending_proposal_search:
         button: Sök
+        placeholder: Sök investeringsförslag efter titel eller beskrivning
       user_search:
         button: Sök
+        placeholder: Sök användare efter namn eller e-post
       search_results: "Sökresultat"
       no_search_results: "Inga resultat."
       actions: Åtgärder
@@ -1109,6 +1119,7 @@ sv:
         add_tag: Lägg till ett nytt förslag till ämne
         title: Ämnesförslag
         topic: Ämne
+        help: "När en användare skapar ett förslag föreslås de följande ämnena som taggar."
       name:
         placeholder: Skriv namnet på ämnet
     users:
@@ -1131,6 +1142,8 @@ sv:
         title: Ofullständiga kontroller
     site_customization:
       content_blocks:
+        information: Information om innehållsblock
+        no_blocks: "Det finns inga innehållsblock."
         create:
           notice: Innehållsblock har lyckats skapas
           error: Innehållsblocket kunde inte skapas
@@ -1186,6 +1199,8 @@ sv:
           delete: Ta bort sida
           title: Anpassade sidor
           see_page: Se sida
+        new:
+          title: Skapa ny custom sida
         page:
           created_at: Skapad den
           status: Status
