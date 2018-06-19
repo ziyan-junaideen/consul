@@ -812,7 +812,7 @@ val:
       flash:
         updated: Valor actualitzat
       index:
-        banners: Stil de banner
+        banners: Estil del banner
         banner_imgs: Imatges del banner
         title: Configuració global
         update_setting: Actualitzar
