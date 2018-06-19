@@ -140,7 +140,7 @@ sv:
       index:
         heading_filter_all: Alla rubriker
         administrator_filter_all: Alla administratörer
-        valuator_filter_all: Alla värderingsorgan
+        valuator_filter_all: Alla bedömare
         tags_filter_all: Alla Taggar
         advanced_filters: Avancerade filter
         placeholder: Söknings projekt
@@ -152,7 +152,7 @@ sv:
         filters:
           all: Alla
           without_admin: Utan tilldelad administration
-          without_valuator: Utan tilldelade värderingsorgan
+          without_valuator: Utan tilldelad bedömare
           under_valuation: Under bedömning
           valuation_finished: Bedömning avslutad
           feasible: Genomförbart
@@ -165,13 +165,13 @@ sv:
           two_filters_html: "Nuvarande använda filter: <b><em>%{filter}, %{advanced_filters}</em></b>"
         buttons:
           search: Sök
-          filter: Filter
+          filter: Filtrera
         download_current_selection: "Ladda ned nuvarande val"
         no_budget_investments: "Det finns inga investeringsprojekt."
         title: Investeringsprojekt
         assigned_admin: Utsedd administratör
         no_admin_assigned: Ingen admin tilldelad
-        no_valuators_assigned: Ingen värderingsorgan som tilldelats
+        no_valuators_assigned: Inga tilldelade bedömare
         no_valuation_groups: Inga värderingsgrupper tilldelade
         feasibility:
           feasible: "Genomförbart (%{price})"
@@ -183,19 +183,19 @@ sv:
         table_title: "Titel"
         table_supports: "Stöder"
         table_admin: "Administratör"
-        table_valuator: "Värderingsorgan"
+        table_valuator: "Bedömare"
         table_valuation_group: "Värderingsgrupp"
         table_geozone: "Verksamhetsområde"
         table_feasibility: "Genomförbarhet"
         table_valuation_finished: "Val. Fin."
         table_selection: "Vald"
-        table_evaluation: "Visa till värderingsorgan"
+        table_evaluation: "Visa till bedömare"
         table_incompatible: "Oförenlig"
         cannot_calculate_winners: Budgeten måste stå i fas "lottningsprojekt", "granskar valsedlar" eller "färdiga budgeter" för att kunna beräkna vinnarprojekt
         see_results: "Se resultat"
       show:
         assigned_admin: Utsedd administratör
-        assigned_valuators: Ansvarig utvärderare
+        assigned_valuators: Tilldelade bedömare
         classification: Klassificering
         info: "%{budget_name} - grupp: %{group_name} - investering projekt %{id}"
         edit: Redigera
@@ -236,7 +236,7 @@ sv:
         mark_as_incompatible: Markera som oförenligt
         selection: Urval
         mark_as_selected: Markera som valda
-        assigned_valuators: Värderingsorgan
+        assigned_valuators: Bedömare
         select_heading: Välj rubrik
         submit_button: Uppdatera
         user_tags: Etiketter som tilldelats användaren
@@ -278,7 +278,7 @@ sv:
         filters:
           all: Alla
           with_confirmed_hide: Bekräftat
-          without_confirmed_hide: Väntar
+          without_confirmed_hide: Väntande
         hidden_debate: Gömd debatt
         hidden_proposal: Gömt förslag
         title: Gömda kommentarer
@@ -294,7 +294,7 @@ sv:
         filters:
           all: Alla
           with_confirmed_hide: Bekräftat
-          without_confirmed_hide: Väntar
+          without_confirmed_hide: Väntande
         title: Gömd debatt
         no_hidden_debates: Det finns inga dolda kommentarer.
     hidden_users:
@@ -303,7 +303,7 @@ sv:
         filters:
           all: Alla
           with_confirmed_hide: Bekräftat
-          without_confirmed_hide: Väntar
+          without_confirmed_hide: Väntande
         title: Dolda användare
         user: Användare
         no_hidden_users: Det finns inga dolda kommentarer.
@@ -329,7 +329,7 @@ sv:
           form:
             error: Fel
         form:
-          enabled: Aktiverat
+          enabled: Aktiverad
           process: Process
           debate_phase: Debatt fas
           allegations_phase: Utkastsfas
@@ -407,7 +407,7 @@ sv:
           title: Utkastversioner
           create: Skapa version
           delete: Ta bort
-          preview: Förhandsgranska
+          preview: Förhandsvisning
         new:
           back: Tillbaka
           title: Skapa ny version
@@ -487,7 +487,7 @@ sv:
       emails: Skickar iväg e-postmeddelanden
       newsletters: Nyhetsbrev
       emails_download: E-post Ladda ner
-      valuators: Värderingsorgan
+      valuators: Bedömare
       poll_officers: Valarbetare
       polls: Omröstningar
       poll_booths: Båslägen
@@ -560,7 +560,7 @@ sv:
         draft: Utkast
         edit: Redigera
         delete: Ta bort
-        preview: Förhandsgranska
+        preview: Förhandsvisning
         empty_newsletters: Det finns ingen nyhetsbrev att Visa
       new:
         title: Nytt nyhetsbrev
@@ -584,33 +584,33 @@ sv:
         download_emails_button: Ladda ned e-post lista
     valuators:
       index:
-        title: Värderingsorgan
+        title: Bedömare
         name: Namn
         email: E-post
         description: Beskrivning
         no_description: Ingen beskrivning
-        no_valuators: Det finns ingen värderingsorgan.
-        valuator_groups: "Värderingsorgan"
+        no_valuators: Det finns inga bedömare.
+        valuator_groups: "Bedömargrupper"
         group: "Grupp"
         no_group: "Ingen grupp"
       valuator:
-        add: Lägg till värderingsorgan
+        add: Lägg till bedömare
         delete: Ta bort
       search:
-        title: 'Värderingsorgan: Användarsökning'
+        title: 'Bedömare: Användarsökning'
       summary:
-        title: Värderingssammanfattning för investeringprojekt
-        valuator_name: Värderingsorgan
-        finished_and_feasible_count: Klar och genomförbar
-        finished_and_unfeasible_count: Klar och genomförbar
+        title: Sammanfattning av bedömare för investeringsprojekt
+        valuator_name: Bedömare
+        finished_and_feasible_count: Klart och genomförbart
+        finished_and_unfeasible_count: Klart och ogenomförbart
         finished_count: Färdig
         in_evaluation_count: Utvärderas
         total_count: Totalt
         cost: Kostnad
       form:
-        edit_title: "Värderingsorgan: Redigera värderingsman"
-        update: "Uppdatera värderingsorgan"
-        updated: "Värderingsorgan uppdaterat"
+        edit_title: "Bedömare: Redigera bedömare"
+        update: "Uppdatera bedömare"
+        updated: "Bedömare uppdaterad framgångsrik"
       show:
         description: "Beskrivning"
         email: "E-post"
@@ -619,18 +619,18 @@ sv:
         no_group: "Utan grupp"
     valuator_groups:
       index:
-        title: "Värderingsorgan"
-        new: "Skapa värderingsgrupp"
+        title: "Bedömargrupper"
+        new: "Skapa bedömargrupp"
         name: "Namn"
         members: "Medlemmar"
-        no_groups: "Det finns ingen värderingsorgansgrupper"
+        no_groups: "Det finns inga bedömargrupper"
       show:
-        title: "Värderingsorgansgrupp: %{group}"
-        no_valuators: "Det finns ingen värderingsorgan som tilldelats denna grupp"
+        title: "Bedömargrupp: %{group}"
+        no_valuators: "Det finns inga bedömare som tilldelats denna grupp"
       form:
         name: "Grupp namn"
-        new: "Skapa värderingsorgan grupp"
-        edit: "Spara värderingsorgan grupp"
+        new: "Skapa bedömargrupp"
+        edit: "Spara bedömargrupp"
     poll_officers:
       index:
         title: Valarbetare
@@ -973,16 +973,16 @@ sv:
         title: Investeringsprojekt för medborgarbudget
         assigned_admin: Utsedd administratör
         no_admin_assigned: Ingen admin tilldelad
-        no_valuators_assigned: Ingen värderingsorgan som tilldelats
+        no_valuators_assigned: Inga tilldelade bedömare
         summary_link: "Investeringsprojektet Sammanfattning"
-        valuator_summary_link: "Värderingsorgan Sammanfattning"
+        valuator_summary_link: "Sammanfattning från bedömare"
         feasibility:
           feasible: "Genomförbart (%{price})"
           not_feasible: "Ej genomförbart"
           undefined: "Odefinierad"
       show:
         assigned_admin: Utsedd administratör
-        assigned_valuators: Tilldelade värderingsorgan
+        assigned_valuators: Tilldelade bedömare
         back: Tillbaka
         classification: Klassificering
         heading: "Investeringsprojekt %{id}"
@@ -998,7 +998,7 @@ sv:
         undefined: Odefinierad
       edit:
         classification: Klassificering
-        assigned_valuators: Värderingsorgan
+        assigned_valuators: Bedömare
         submit_button: Uppdatera
         tags: Taggar
         tags_placeholder: "Skriv de etiketter du vill ska separeras med kommatecken ()"
