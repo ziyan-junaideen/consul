@@ -2,11 +2,21 @@ sv:
   management:
     account:
       menu:
+        reset_password_email: Återställ lösenord med e-post
         reset_password_manually: Återställa lösenord manuellt
+      alert:
+        unverified_user: Ingen verifierad användare inloggad än
+      show:
+        title: Användarkonto
       edit:
+        title: 'Redigera användarkonto: Återställ lösenord'
         back: Tillbaka
         password:
           password: Lösenord
+          send_email: Skicka e-post för lösenordsåterställning
+          reset_email_send: E-post skickat.
+          reseted: Lösenordet återställd
+          random: Generera nytt slumpmässigt lösenord
           save: Spara
           print: Skriv ut lösenord
     account_info:
@@ -23,12 +33,15 @@ sv:
     document_number: Dokumentnummer
     document_type_label: Dokumenttyp
     document_verifications:
+      already_verified: Detta användarkonto är redan verifierad.
       link: Consul
+      not_in_census: Detta dokument är inte registrerad.
       title: Användarhantering
       verify: Kontrollera
     email_label: E-post
     date_of_birth: Födelsedatum
     email_verifications:
+      already_verified: Detta användarkonto är redan verifierad.
       send_email: Skicka verifieringsmail
     menu:
       create_proposal: Skapa förslag
@@ -39,14 +52,20 @@ sv:
       support_spending_proposals: Stöd investeringsförslag
       create_budget_investment: Skapa budget investering
       print_budget_investments: Skriv ut budget investeringar
+      support_budget_investments: Stöd budget investeringar
       users: Användare
+      edit_user_accounts: Redigera användarkonto
       user_invites: Skicka inbjudningar
     permissions:
       create_proposals: Skapa förslag
+      debates: Delta i debatter
       support_proposals: Stöd förslag
       vote_proposals: Rösta på förslag
     print:
+      proposals_info: Skapa ditt förslag på http://url.consul
       proposals_title: 'Förslag:'
+      spending_proposals_info: Delta på http://url.consul
+      budget_investments_info: Delta på http://url.consul
     print_info: Skriv ut denna info
     proposals:
       alert:
@@ -57,19 +76,30 @@ sv:
     budgets:
       create_new_investment: Skapa nya investering
       print_investments: Skriv ut budget investeringar
+      support_investments: Stöd budget investeringar
     budget_investments:
       alert:
         unverified_user: Användare är inte verifierad
+      create: Skapa en budget investering
       filters:
+        heading: Begrepp
         unfeasible: Ogenomförbara investering
       print:
         print_button: Skriv ut
+      search_results:
+        one: " innehåller termen '%{search_term}'"
+        other: " innehåller termer '%{search_term}'"
     spending_proposals:
       alert:
         unverified_user: Användare är inte verifierad
       create: Skapa investeringsförslag
+      filters:
+        unfeasible: Ogenomförbara investeringsprojekt
       print:
         print_button: Skriv ut
+      search_results:
+        one: " innehåller termen '%{search_term}'"
+        other: " innehåller termer '%{search_term}'"
     sessions:
       signed_out: Utloggad framgångsrikt.
     username_label: Användarnamn
@@ -78,6 +108,7 @@ sv:
       create_user_submit: Skapa användare
       email_optional_label: E-postadress (tillval)
       erased_notice: Användarkonto raderas.
+      erased_by_manager: "Borttagen av manager: %{manager}"
       erase_account_link: Ta bort användare
       erase_submit: Radera konto
     user_invites:
