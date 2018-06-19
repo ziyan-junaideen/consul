@@ -13,6 +13,7 @@ val:
       unmark_featured: Llevar destacat
       edit: Editar
       configure: Configurar
+      delete: Eliminar
     banners:
       index:
         title: Banner
@@ -68,6 +69,7 @@ val:
         new_link: Crear nou pressupost
         filter: Filtre
         filters:
+          open: Oberts
           finished: Finalitzats
         budget_investments: Vore propostes d'inversió
         table_name: Nom
@@ -105,6 +107,7 @@ val:
         no_groups: No hi ha grups creats encara. Cada usuari podrà votar en una sola partida de cada grup.
         add_group: Afegeix nou grup
         create_group: Crea un grup
+        edit_group: Editar grup
         heading: Nom de la partida
         add_heading: Afegir partida
         amount: Quantitat
