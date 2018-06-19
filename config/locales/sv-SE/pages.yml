@@ -4,6 +4,7 @@ sv:
     general_terms: Regler och villkor
     help:
       title: "%{org} är en plattform för medborgardeltagande"
+      guide: "Den här guiden förklarar vad är alla avsnitt av %{org} och hur de fungerar."
       menu:
         debates: "Debatter"
         proposals: "Förslag"
