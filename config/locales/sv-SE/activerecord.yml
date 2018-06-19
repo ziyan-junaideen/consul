@@ -10,6 +10,9 @@ sv:
       budget/investment:
         one: "Investering"
         other: "Investeringar"
+      budget/investment/milestone:
+        one: "milstolp"
+        other: "milstolpar"
       comment:
         one: "Kommentar"
         other: "Kommentarer"
@@ -50,8 +53,8 @@ sv:
         one: "röstbås"
         other: "röstbås"
       poll/officer:
-        one: "funktionär"
-        other: "funktionärer"
+        one: "valarbetare"
+        other: "valarbetare"
       proposal:
         one: "Medborgarförslag"
         other: "Medborgarförslag"
@@ -240,6 +243,7 @@ sv:
         from: Från
         body: E-post innehåll
       widget/card:
+        label: Etikett (tillval)
         title: Titel
         description: Beskrivning
         link_text: Länktext
