@@ -1,5 +1,11 @@
 val:
   seeds:
+    categories:
+      mobility: Mobilitat
+      media: Mitjans
+      health: Salut
+      transparency: Transparència
+      security_emergencies: Seguretat i Emergències
     budgets:
       groups:
         districts: Districtes
