@@ -5,6 +5,7 @@ sv:
     actions:
       actions: Åtgärder
       confirm: Är du säker?
+      confirm_hide: Bekräfta moderering
       hide: Göm
       hide_author: Göm författare
       restore: Återställ
@@ -61,6 +62,7 @@ sv:
           on_users: Användare
         title: Moderatoråtgärder
         type: Typ
+        no_activity: Det finns ingen moderatoraktivitet.
     budgets:
       index:
         title: Medborgarbudget
@@ -362,6 +364,7 @@ sv:
           status_planned: Planerad
         subnav:
           info: Information
+          draft_texts: Utkasttexter
           questions: Debatt
           proposals: Förslag
       proposals:
@@ -485,7 +488,7 @@ sv:
       newsletters: Nyhetsbrev
       emails_download: E-post Ladda ner
       valuators: Värderingsorgan
-      poll_officers: Opinionsmän
+      poll_officers: Valarbetare
       polls: Omröstningar
       poll_booths: Båslägen
       poll_booth_assignments: Bås uppgifter
@@ -630,20 +633,20 @@ sv:
         edit: "Spara värderingsorgan grupp"
     poll_officers:
       index:
-        title: Opinionsmän
+        title: Valarbetare
       officer:
         add: Lägg till
         delete: Ta bort position
         name: Namn
         email: E-post
-        entry_name: ämbetsman
+        entry_name: valarbetare
       search:
         email_placeholder: Sök användare via e-post
         search: Sök
         user_not_found: Användaren hittades inte
     poll_officer_assignments:
       index:
-        officers_title: "Lista över ämbetsmän"
+        officers_title: "Lista över valarbetare"
         no_officers: "Det finns ingen officerare som tilldelats denna enkät."
         table_name: "Namn"
         table_email: "E-post"
@@ -662,11 +665,11 @@ sv:
         edit_shifts: Redigera växlingar
         new_shift: "Ny skiftning"
         no_shifts: "Denna monter har inga växlingar"
-        officer: "Ämbetsman"
+        officer: "Valarbetare"
         remove_shift: "Ta bort"
         search_officer_button: Sök
-        search_officer_placeholder: Sök ämbetsman
-        search_officer_text: Sök efter en ämbetsman för att tilldela ett nytt skift
+        search_officer_placeholder: Sök valarbetare
+        search_officer_text: Sök efter en valarbetare för att tilldela ett nytt skift
         select_date: "Välj dag"
         select_task: "Välj uppgift"
         table_shift: "Skift"
@@ -699,14 +702,14 @@ sv:
         error_create: "Ett fel uppstod när du tilldelade mätningen till montern"
       show:
         location: "Plats"
-        officers: "Ämbetsmän"
-        officers_list: "Lista för ämbetsmän för denna monter"
-        no_officers: "Det finns inga ämbetsmän i denna monter"
+        officers: "Valarbetare"
+        officers_list: "Lista över valarbetare för denna vallokal"
+        no_officers: "Det finns inga valarbetare i denna vallokal"
         recounts: "Omräkningar"
         recounts_list: "Räkna om lista för denna monter"
         results: "Resultat"
         date: "Datum"
-        count_final: "Slutliga omräkning (av ämbetsman)"
+        count_final: "Slutlig omräkning (av valarbetare)"
         count_by_system: "Röster (automatisk)"
         total_system: Totalt antal röster (automatiskt)
       index:
@@ -733,7 +736,7 @@ sv:
       show:
         questions_tab: Frågor
         booths_tab: Röstbås
-        officers_tab: Ämbetsmän
+        officers_tab: Valarbetare
         recounts_tab: Omräkningar
         results_tab: Resultat
         no_questions: "Det finns inga frågor till denna opinionsundersökning."
@@ -903,6 +906,8 @@ sv:
           without_confirmed_hide: Väntande
         title: Gömda förslag
     settings:
+      flash:
+        updated: Uppdaterad värde
       index:
         banners: Banner stilar
         banner_imgs: Banner bilder
@@ -917,13 +922,16 @@ sv:
           enable: "Aktivera"
           disable: "Inaktivera"
         map:
+          title: Kartinställningar
           form:
             submit: Uppdatera
     shared:
       booths_search:
         button: Sök
+        placeholder: Sök vallokal efter namn
       poll_officers_search:
         button: Sök
+        placeholder: Sök valarbetare
       poll_questions_search:
         button: Sök
       proposal_search:
@@ -941,6 +949,7 @@ sv:
       show_image: Visa bild
     spending_proposals:
       index:
+        geozone_filter_all: Alla områden
         administrator_filter_all: Alla administratörer
         valuator_filter_all: Alla bedömare
         tags_filter_all: Alla Taggar
@@ -1188,6 +1197,8 @@ sv:
     homepage:
       title: Hemsida
       header_title: Header
+      no_header: Det finns inget header.
+      create_header: Skapa header
       cards_title: Kort
       create_card: Skapa kort
       no_cards: Det finns inga kort.
@@ -1202,6 +1213,7 @@ sv:
         processes: Processer
       new:
         header_title: Ny header
+        submit_header: Skapa header
         card_title: Nytt kort
         submit_card: Skapa kort
       edit:
