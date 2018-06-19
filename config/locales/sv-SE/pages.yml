@@ -3,6 +3,7 @@ sv:
     conditions: Regler och villkor för användning
     general_terms: Regler och villkor
     help:
+      title: "%{org} är en plattform för medborgardeltagande"
       menu:
         debates: "Debatter"
         proposals: "Förslag"
@@ -15,6 +16,7 @@ sv:
         link: "debatter"
         feature_link: "registrera i %{org}"
         image_alt: "Knappar för att betygsätta diskussioner"
+        figcaption: '"Jag håller med" och "Jag håller inte med" knappar för att betygsätta debatter.'
       proposals:
         title: "Förslag"
         link: "medborgarförslag"
@@ -22,21 +24,28 @@ sv:
       budgets:
         title: "Medborgarbudget"
         link: "medborgarbudgetar"
+        image_alt: "Olika faser av en medborgarbudget"
+        figcaption_html: '"Stöd" och "Omröstning" faser av en medborgarbudget.'
       polls:
         title: "Omröstningar"
         link: "omröstningar"
+        feature_1: "För att delta i omröstningen måste du %{link} och verifiera ditt konto."
         feature_1_link: "registrera i %{org_name}"
+        feature_2: "Alla verifierade medborgare över 16 år har möjlighet att rösta."
+        feature_3: "Resultaten av alla omröstningar är bindande för kommunfullmäktige."
       processes:
         title: "Processer"
         link: "processer"
         sign_up: "registrera dig i %{org}"
       faq:
         title: "Tekniska problem?"
+        description: "Läs de vanliga frågorna och hitta ett svar till dina."
         button: "Visa vanliga frågor"
         page:
           title: "Vanliga frågor"
           description: "Använd denna sida för att hjälpa dina användare med deras vanligaste frågorna."
           faq_1_title: "Fråga 1"
+          faq_1_description: "Detta är ett exempel på beskrivning till frågan ett."
       other:
         title: "Annan information av intresse"
         how_to_use: "Använd %{org_name} i din stad"
@@ -51,6 +60,8 @@ sv:
     verify:
       code: Koden du fick i ett brev
       email: E-post
+      info: 'För att verifiera ditt konto måste du skriva in dina uppgifter:'
+      info_code: 'Nu kan du skriva in koden du fick i ett brev:'
       password: Lösenord
       submit: Verifiera mitt konto
       title: Verifiera ditt konto
