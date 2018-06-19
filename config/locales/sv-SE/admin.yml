@@ -334,7 +334,7 @@ sv:
           debate_phase: Debatt fas
           allegations_phase: Utkastsfas
           proposals_phase: Förslagsfas
-          start: Starta
+          start: Start
           end: Slut
           use_markdown: Använda Markdown för att formatera texten
           title_placeholder: Titeln på processen
@@ -652,7 +652,7 @@ sv:
         table_email: "E-post"
       by_officer:
         date: "Datum"
-        booth: "Röstbås"
+        booth: "Vallokal"
         assignments: "Officing skiftar i denna enkät"
         no_assignments: "Denna användare har inga officing förändringar i denna enkät."
     poll_shifts:
@@ -812,7 +812,7 @@ sv:
       index:
         title: "Omräkningar"
         no_recounts: "Det finns inget att räkna om"
-        table_booth_name: "Monter"
+        table_booth_name: "Vallokal"
         table_total_recount: "Totala omräkningen (av ämbetsman)"
         table_system_count: "Röster (automatisk)"
     results:
@@ -989,7 +989,7 @@ sv:
         edit: Redigera
         edit_classification: Redigera klassificering
         association_name: Förening
-        by: Av
+        by: Efter
         sent: Skickat
         geozone: Omfattning
         dossier: Rapport
