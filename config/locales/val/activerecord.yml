@@ -34,9 +34,15 @@ val:
       valuator:
         one: "Avaluador"
         other: "Avaluadors"
+      valuator_group:
+        one: "Grup d'Avaluadors"
+        other: "Grups d'Avaluadors"
       manager:
         one: "Gestor"
         other: "Gestors"
+      newsletter:
+        one: "Butlletí informatiu"
+        other: "Butlletins informatius"
       vote:
         one: "Vot"
         other: "Vots"
@@ -195,6 +201,7 @@ val:
         body: Contingut
       legislation/process:
         title: Títol del procés
+        summary: Resum
         description: Descripció
         additional_info: Informació addicional
         start_date: Data d'inici del procés
@@ -230,6 +237,19 @@ val:
       poll/question/answer/video:
         title: Títol
         url: Vídeo extern
+      newsletter:
+        segment_recipient: Destinataris
+        subject: Asumpte
+        from: De
+        body: Contingut del email
+      widget/card:
+        label: Etiqueta (opcional)
+        title: Títol
+        description: Descripció
+        link_text: Text de l'enllaç
+        link_url: URL de l'enllaç
+      widget/feed:
+        limit: Número d'elements
     errors:
       models:
         user:
@@ -249,6 +269,10 @@ val:
             attachment:
               min_image_width: "La imatge ha de tindre al menys %{required_min_width}px de llarg"
               min_image_height: "La imatge ha de tindre al menys %{required_min_height}px d'alt"
+        newsletter:
+          attributes:
+            segment_recipient:
+              invalid: "El segment d'usuaris es invàlid"
         map_location:
           attributes:
             map:
@@ -292,6 +316,10 @@ val:
             image:
               image_width: "Ha de tenir %{required_width}px d'ample"
               image_height: "Ha de tenir %{required_height}px d'alt"
+        comment:
+          attributes:
+            valuation:
+              cannot_comment_valuation: 'No pots comentar una valoració'
       messages:
         record_invalid: "Error de validació: %{errors}"
         restrict_dependent_destroy:
