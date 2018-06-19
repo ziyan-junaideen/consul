@@ -14,14 +14,24 @@ val:
       debates:
         title: "Debats"
         link: "debats ciutadans"
+        feature_link: "registrarte en %{org}"
       proposals:
         title: "Propostes"
+        link: "propostes ciutadanes"
+      budgets:
+        title: "Pressupostos Participatius"
+        link: "pressupostos participatius"
       polls:
         title: "Votacions"
         link: "votacions"
+      processes:
+        title: "Processos legislatius"
+        link: "processos legislatius"
       faq:
+        title: "Problemes tècnics?"
         page:
           title: "Preguntes Freqüents"
+          faq_1_title: "Pregunta 1"
     privacy: Política de privacitat
     titles:
       accessibility: Accessibilitat
