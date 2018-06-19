@@ -3,6 +3,7 @@ sv:
     no_reply: "Det här meddelanden skickades från en e-postadress som inte accepterar svar."
     comment:
       hi: Hej
+      new_comment_by_html: Det finns en ny kommentar från <b>%{commenter}</b>
       subject: Någon har kommenterat på ditt %{commentable}
       title: Ny kommentar
     config:
@@ -14,11 +15,16 @@ sv:
       title: Bekräfta kontot via länken nedan
     reply:
       hi: Hej
+      new_reply_by_html: Det finns ett nytt svar från <b>%{commenter}</b> till din kommentar på
+      subject: Någon har svarat på din kommentar
+      title: Nytt svar på din kommentar
     unfeasible_spending_proposal:
       hi: "Kära användare,"
       new_href: "nytt investeringsprojekt"
       sincerely: "Vänliga hälsningar"
+      subject: "Ditt investeringsprojekt '%{code}' har markerats som ogenomförbart"
     proposal_notification_digest:
+      title: "Förslagsnotifikationer i %{org_name}"
       share: Dela förslaget
       comment: Kommentera förslaget
       unsubscribe_account: Mitt konto
@@ -37,6 +43,10 @@ sv:
       button: Slutför registrering
       subject: "Inbjudan till %{org_name}"
     budget_investment_created:
+      subject: "Tack för att du skapade en investering!"
+      title: "Tack för att du skapade en investering!"
+      intro_html: "Hej <strong>%{author}</strong>,"
+      follow_html: "Vi vill informera dig om hur processen går, men du kan också följa på <strong>%{link}</strong>."
       follow_link: "Medborgarbudgetar"
       sincerely: "Vänliga hälsningar,"
       share: "Dela ditt projekt"
@@ -44,9 +54,16 @@ sv:
       hi: "Kära användare,"
       new_href: "nytt investeringsprojekt"
       sincerely: "Vänliga hälsningar"
+      subject: "Ditt investeringsprojekt '%{code}' har markerats som ogenomförbart"
     budget_investment_selected:
+      subject: "Ditt investeringsprojekt '%{code}' har valts"
       hi: "Kära användare,"
+      share_button: "Dela ditt investeringsprojekt"
+      thanks: "Tack igen för att du deltar."
       sincerely: "Vänliga hälsningar"
     budget_investment_unselected:
+      subject: "Ditt investeringsprojekt '%{code}' har inte valts"
       hi: "Kära användare,"
+      participate_url: "delta i slutomröstningen"
+      thanks: "Tack igen för att du deltar."
       sincerely: "Vänliga hälsningar"
