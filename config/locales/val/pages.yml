@@ -3,6 +3,25 @@ val:
     census_terms: Per a verificar el compte hi ha que tindre 16 anys o més i estar empadronat aportant les dades indicades anteriorment, les quals seran contrastades. Acceptant el procés de verificació accepta donar el seu consentiment per a contrastar dita informació, així com els mitjans de contacte que figuren en els dits fitxers. Les dades aportades seran incorporades i tractades en un fitxer indicat anteriorment en les condicions d'us del portal.
     conditions: Condicions d'us
     general_terms: Condicions d'us
+    help:
+      menu:
+        debates: "Debats"
+        proposals: "Propostes"
+        budgets: "Pressupostos participatius"
+        polls: "Votacions"
+        other: "Altra informació d'interés"
+        processes: "Processos legislatius"
+      debates:
+        title: "Debats"
+        link: "debats ciutadans"
+      proposals:
+        title: "Propostes"
+      polls:
+        title: "Votacions"
+        link: "votacions"
+      faq:
+        page:
+          title: "Preguntes Freqüents"
     privacy: Política de privacitat
     titles:
       accessibility: Accessibilitat
