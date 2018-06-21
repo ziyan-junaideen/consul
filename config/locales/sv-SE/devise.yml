@@ -29,12 +29,20 @@ sv:
         subject: "Instruktioner för att låsa upp kontot"
     omniauth_callbacks:
       failure: "Du godkändes inte som %{kind} eftersom ”%{reason}”."
+      success: "Framgångsrikt identifierat som %{kind}."
     passwords:
+      send_paranoid_instructions: "Om din e-postadress finns i vår databas kommer du strax att få en länk för att återställa ditt lösenord."
+      updated: "Ditt lösenord har ändrats framgångsrikt. Inloggad framgångsrikt."
       updated_not_active: "Ditt lösenord har ändrats framgångsrikt."
+    registrations:
+      signed_up: "Välkommen! Du har autentiserats."
+      updated: "Ditt konto har uppdaterats framgångsrikt."
     sessions:
+      signed_in: "Inloggad framgångsrikt."
       signed_out: "Utloggad framgångsrikt."
       already_signed_out: "Utloggad framgångsrikt."
     unlocks:
+      send_paranoid_instructions: "Om du har ett konto kommer du strax att få ett mail med instruktioner för att låsa upp ditt konto."
       unlocked: "Ditt konto har låsts upp. Logga in för att fortsätta."
   errors:
     messages:
