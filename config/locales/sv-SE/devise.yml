@@ -31,6 +31,9 @@ sv:
       failure: "Du godkändes inte som %{kind} eftersom ”%{reason}”."
     passwords:
       updated_not_active: "Ditt lösenord har ändrats framgångsrikt."
+    sessions:
+      signed_out: "Utloggad framgångsrikt."
+      already_signed_out: "Utloggad framgångsrikt."
     unlocks:
       unlocked: "Ditt konto har låsts upp. Logga in för att fortsätta."
   errors:
