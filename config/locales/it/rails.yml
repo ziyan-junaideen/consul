@@ -165,6 +165,7 @@ it:
         units:
           billion: Miliardi
           million: Milioni di euro
+          quadrillion: Quadrilione
           thousand: Mille
           trillion: Trilione
       format:
