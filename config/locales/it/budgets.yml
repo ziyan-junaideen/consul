@@ -50,6 +50,11 @@ it:
       map: Proposte di investimenti economici geograficamente localizzate
       investment_proyects: Elenco di tutti i progetti di investimento
       unfeasible_investment_proyects: Elenco di tutti i progetti di investimento irrealizzabili
+      not_selected_investment_proyects: Elenco di tutti i progetti di investimento non selezionati per il voto
+      finished_budgets: Bilanci partecipativi conclusi
+      see_results: Vedi i risultati
+      section_footer:
+        title: Aiuto con i bilanci partecipativi
     investments:
       form:
         tag_category_label: "Categorie"
