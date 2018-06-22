@@ -65,10 +65,13 @@ it:
         order: Ordinare per
         orders:
           created_at: Più recente
+          flags: Più segnalati
+        title: Proposte
     users:
       index:
         hidden: Bloccato
         hide: Blocco
         search: Ricerca
         search_placeholder: e-mail o nome utente
+        title: Bloccare utenti
       notice_hide: Utente bloccato. Tutti i dibattiti e commenti di questo utente sono state nascostie.
