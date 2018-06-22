@@ -56,6 +56,9 @@ it:
       section_footer:
         title: Aiuto con i bilanci partecipativi
         description: Attraverso i bilanci partecipativi i cittadini decidono a che progetti proposti dai vicini debba essere destinata parte del budget comunale.
+        help_text_1: "I bilanci partecipativi sono un processo attraverso il quale i cittadini decidono direttamente come viene spesa parte del budget comunale. Ogni residente maggiore di 16 anni può proporre un progetto di investimento che viene preselezionato in una fase di raccolta di sostegno da parte dei cittadini."
+        help_text_2: "I progetti più votati sono valutati e sottoposti ad un voto finale in cui vengono stabilite le attività che verranno portate avanti dal Consiglio Comunale a seguito dell’approvazione del bilancio dell’anno successivo."
+        help_text_3: "La presentazione dei progetti a bilancio partecipativo inizia a gennaio e si protrae per un periodo di un mese e mezzo. Per partecipare e avanzare proposte per l’intera città e/o provincia, occorre registrarsi su %{org} e verificare il proprio account."
     investments:
       form:
         tag_category_label: "Categorie"
