@@ -55,6 +55,7 @@ it:
       see_results: Vedi i risultati
       section_footer:
         title: Aiuto con i bilanci partecipativi
+        description: Attraverso i bilanci partecipativi i cittadini decidono a che progetti proposti dai vicini debba essere destinata parte del budget comunale.
     investments:
       form:
         tag_category_label: "Categorie"
