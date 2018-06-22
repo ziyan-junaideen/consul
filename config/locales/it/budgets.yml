@@ -11,11 +11,15 @@ it:
           one: "Hai votato <span>un</span> progetto di investimento."
           other: "Hai votato <span>%{count}</span> progetti di investimento."
         voted_info_html: "È possibile cambiare il proprio voto in qualsiasi momento fino alla fine di questa fase. <br> Non è necessario spendere tutti i fondi disponibili."
+        zero: Non hai votato alcun progetto di investimento.
       reasons_for_not_balloting:
         not_logged_in: È necessario %{signin} o %{signup} per continuare.
         not_verified: Solo gli utenti verificati possono votare gli investimenti; %{verify_account}.
         organization: Le organizzazioni non sono ammesse a votare
+        not_selected: I progetti di investimento non selezionati non possono essere supportati
+        not_enough_money_html: "Hai già assegnato il budget disponibile.<br><small>Ricorda che puoi %{change_ballot} in qualunque momento</small>"
         no_ballots_allowed: Fase di selezione è chiusa
+        different_heading_assigned_html: "Hai già votato per un titolo diverso: %{heading_link}"
         change_ballot: cambiare il tuo voto
     groups:
       show:
@@ -25,13 +29,27 @@ it:
         unselected_title: Investimenti che non sono stati selezionati per la fase di voto
         unselected: Mostrare gli investimenti non selezionati per la fase di voto
     phase:
+      drafting: Bozza (non visibile al pubblico)
+      informing: Informazioni
       accepting: Presentazione dei progetti
       reviewing: Revisione interna dei progetti
       selecting: Selezione dei progetti
       valuating: Valutazione dei progetti
+      balloting: Votazione dei progetti
+      reviewing_ballots: Revisione voti
       finished: Risultati
     index:
       title: Bilanci partecipativi
+      empty_budgets: Non ci sono bilanci.
+      section_header:
+        icon_alt: Icona dei bilanci partecipativi
+        title: Bilanci partecipativi
+        help: Aiuto con i bilanci partecipativi
+        all_phases: Vedere tutte le fasi
+      all_phases: Fasi dell'investimento economico
+      map: Proposte di investimenti economici geograficamente localizzate
+      investment_proyects: Elenco di tutti i progetti di investimento
+      unfeasible_investment_proyects: Elenco di tutti i progetti di investimento irrealizzabili
     investments:
       form:
         tag_category_label: "Categorie"
