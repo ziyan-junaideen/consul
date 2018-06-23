@@ -79,6 +79,7 @@ it:
         search_form:
           button: Cerca
           placeholder: Ricercare progetti di investimento...
+          title: Cerca
         sidebar:
           my_ballot: I miei voti
           voted_html:
