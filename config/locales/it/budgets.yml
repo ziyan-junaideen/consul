@@ -74,8 +74,10 @@ it:
       index:
         title: Bilancio partecipativo
         unfeasible: Progetti di investimento irrealizzabili
+        unfeasible_text: "L’investimento deve rispettare una serie di requisiti (legalità, concretezza, rientrare nelle competenze della città, non eccedere i limiti di bilancio) per essere dichiarato attuabile e accedere al voto finale. Tutti gli investimenti che non rispettano tali criteri sono identificati come irrealizzabili e riportati nella lista seguente, assieme al relativo rapporto di non fattibilità."
         by_heading: "Progetti di investimento con ambito di applicazione: %{heading}"
         search_form:
+          button: Cerca
           placeholder: Ricercare progetti di investimento...
         sidebar:
           my_ballot: I miei voti
