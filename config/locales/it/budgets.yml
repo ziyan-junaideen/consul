@@ -67,6 +67,10 @@ it:
         tags_label: Tag
         tags_placeholder: "Inserisci i tag che desideri utilizzare, separati da virgole (',')"
         map_location: "Posizione sulla mappa"
+        map_location_instructions: "Scorrete la mappa sino a individuare il luogo giusto e posizionare il segnaposto."
+        map_remove_marker: "Rimuovere segnaposto"
+        location: "Informazioni aggiuntive sul luogo"
+        map_skip_checkbox: "Questo investimento non ha una precisa collocazione geografica ovvero io non ne sono a conoscenza."
       index:
         title: Bilancio partecipativo
         unfeasible: Progetti di investimento irrealizzabili
