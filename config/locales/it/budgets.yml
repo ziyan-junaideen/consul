@@ -129,6 +129,9 @@ it:
         already_added: Hai già aggiunto questo progetto di investimento
         already_supported: Hai già espresso il tuo sostegno per questo progetto di investimento. Condividilo!
         support_title: Sostenere questo progetto
+        confirm_group:
+          one: "Puoi dare il tuo sostegno agli investimenti solo in %{count} distretto. Se continui non potrai cambiare la scelta in merito al tuo distretto. Sei sicuro?"
+          other: "Puoi dare il tuo sostegno agli investimenti solo in %{count} distretti. Se continui non potrai cambiare la scelta in merito al tuo distretto. Sei sicuro?"
         supports:
           zero: Non supporta
           one: 1 supporto
@@ -137,6 +140,7 @@ it:
       header:
         check_ballot: Controllare il mio voto
         different_heading_assigned_html: "Hai attivi voti in un'altra voce: %{heading_link}"
+        change_ballot: "Se cambi idea puoi rimuovere il tuo voto da %{check_ballot} e ricominciare."
     show:
       group: Gruppo
       phase: Fase attuale
