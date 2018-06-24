@@ -167,3 +167,8 @@ it:
       discarded: "Proposta di spesa scartata: "
       incompatibles: Incompatibili
       investment_proyects: Elenco di tutti i progetti di investimento
+      unfeasible_investment_proyects: Elenco di tutti i progetti di investimento irrealizzabili
+      not_selected_investment_proyects: Elenco di tutti i progetti di investimento non selezionati per la fase di voto finale
+    phases:
+      errors:
+        dates_range_invalid: "La Data di inizio non può essere uguale o successiva alla Data finale"
