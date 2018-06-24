@@ -87,12 +87,16 @@ it:
             other: "<strong>Hai votato %{count} proposte con un costo di %{amount_spent}</strong>"
           voted_info: È possibile %{link} in qualsiasi momento fino alla fine di questa fase. Non è necessario spendere tutti i fondi disponibili.
           voted_info_link: cambiare il tuo voto
+          different_heading_assigned_html: "Hai voti attivi in un'altra voce: %{heading_link}"
           change_ballot: "Se cambi idea è possibile cancellare il tuo voto in %{check_ballot} e ricominciare da capo."
           check_ballot_link: "controllare il mio voto"
+          zero: Non hai votato alcun progetto di investimento in questo gruppo.
           verified_only: "Per creare un nuovo budget d'investimento %{verify}."
           verify_account: "verifica la tua utenza"
+          create: "Creare un progetto di investimento"
           not_logged_in: "Per creare un nuovo investimento di bilancio è necessario %{sign_in} o %{sign_up}."
           sign_in: "accedere"
+          sign_up: "registrati"
           by_feasibility: Per fattibilità
           feasible: Progetti realizzabili
           unfeasible: Progetti non realizzabili
@@ -106,16 +110,24 @@ it:
         unfeasibility_explanation: Informazioni sulla infattibilità
         code_html: 'Codice del progetto di investimento: <strong>%{code}</strong>'
         location_html: 'Ubicazione: <strong>%{location}</strong>'
+        organization_name_html: 'Proposto per conto di: <strong>%{name}</strong>'
         share: Condividere
         title: Progetto di investimento
         supports: Supporti
         votes: Voti
         price: Costi
+        comments_tab: Commenti
+        milestones_tab: Traguardi
         no_milestones: Non ci sono traguardi-milestone definiti
+        milestone_publication_date: "Pubblicato il %{publication_date}"
+        author: Autore
+        project_unfeasible_html: 'Questo progetto di investimento <strong>è stato contrassegnato come irrealizzabile</strong> e non accederà alla fase di voto finale.'
+        project_not_selected_html: 'Questo progetto di investimento <strong>non è stato selezionato</strong> per la fase di voto finale.'
       wrong_price_format: Solo numeri interi
       investment:
         add: Votare
         already_added: Hai già aggiunto questo progetto di investimento
+        already_supported: Hai già espresso il tuo sostegno per questo progetto di investimento. Condividilo!
         support_title: Sostenere questo progetto
         supports:
           zero: Non supporta
