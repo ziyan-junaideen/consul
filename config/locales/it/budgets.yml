@@ -141,17 +141,29 @@ it:
         check_ballot: Controllare il mio voto
         different_heading_assigned_html: "Hai attivi voti in un'altra voce: %{heading_link}"
         change_ballot: "Se cambi idea puoi rimuovere il tuo voto da %{check_ballot} e ricominciare."
+        price: "Questa sezione dispone di un budget di"
+    progress_bar:
+      assigned: "Sono stati assegnati: "
+      available: "Budget disponibile: "
     show:
       group: Gruppo
       phase: Fase attuale
+      unfeasible_title: Investimenti irrealizzabili
+      unfeasible: Vedi investimenti irrealizzabili
+      unselected_title: Investimenti non selezionati per la fase di voto finale
+      unselected: Vedi gli investimenti non selezionati per la fase di voto finale
       see_results: Vedere i risultati
     results:
+      link: Risultati
       page_title: "%{budget} - risultati"
       heading: "Risultati per il bilancio partecipativo"
+      heading_selection_title: "Per distretto"
       spending_proposal: Titolo della proposta
       hide_discarded_link: Nascondere le scartate
       show_all_link: Visualizzare tutti
+      price: Prezzo
       amount_available: Budget disponibile
       accepted: "Proposta di spesa accettata: "
       discarded: "Proposta di spesa scartata: "
       incompatibles: Incompatibili
+      investment_proyects: Elenco di tutti i progetti di investimento
