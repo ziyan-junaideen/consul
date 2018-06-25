@@ -80,7 +80,7 @@ sv:
         edit_groups: Redigera partigrupper
         edit_budget: Redigera budget
       create:
-        notice: Ny deltagarbudget skapad med framgång!
+        notice: Ny medborgarbudget skapad med framgång!
       update:
         notice: Deltagarbudget har uppdaterats med framgång
       edit:
