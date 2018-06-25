@@ -32,5 +32,9 @@ it:
       success: "Correttamente identificato come %{kind}."
     passwords:
       no_token: "Non è possibile accedere a questa pagina se non attraverso un link di reset password. Se ci sei arrivato tramite un link di reset password, per favore assicurati che l’URL sia completo."
+      send_instructions: "Tra qualche minuto, riceverai una email contenente le istruzioni per resettare la password."
+      send_paranoid_instructions: "Se il tuo indirizzo email è nel nostro database, tra pochi minuti riceverai un link da usare per resettare la password."
+      updated: "La password è stata cambiata con successo. Autenticazione effettuata."
+      updated_not_active: "La password è stata cambiata con successo."
     registrations:
       signed_up: "Benvenuto! Sei stato autenticato."
