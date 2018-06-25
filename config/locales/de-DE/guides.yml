@@ -2,6 +2,9 @@ de:
   guides:
     title: "Haben Sie eine Idee für %{org}?"
     subtitle: "Was möchten Sie eröffnen"
+    budget_investment:
+      title: "Ein Investitionsprojekt"
+      feature_1_html: "Ideen, wofür ein Teil des <strong>Bürgerhaushaltes</strong> verwendet werden kann"
     proposal:
       title: "Ein Bürgervorschlag"
       feature_4_html: "Wenn in einer Abstimmung genehmigt, akzeptiert der Stadtrat den Vorschlag"
