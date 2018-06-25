@@ -75,6 +75,7 @@ sv:
       index:
         title: Medborgarbudget
         unfeasible: Ogenomförbara investeringsprojekt
+        unfeasible_text: "Projekten måste uppfylla vissa kriterier (juridiskt giltiga, genomförbara, vara inom stadens ansvarsområde, inte överskrida budgeten) för att förklaras giltiga och nå den slutgiltiga omröstningen. De projekt som inte uppfyller kriterierna markeras som ogiltiga och visas i följande lista, tillsammans med en förklaring av bedömningen."
         by_heading: "Investeringsprojekt med område: %{heading}"
         search_form:
           button: Sök
@@ -132,6 +133,9 @@ sv:
         already_added: Du har redan lagt till detta investeringsprojekt
         already_supported: Du har redan stött detta investeringsprojekt. Dela det!
         support_title: Stödja detta projekt
+        confirm_group:
+          one: "Du kan bara stödja projekt i %{count} stadsdel. Om du fortsätter kommer du inte kunna ändra valet av stadsdel. Vill du fortsätta?"
+          other: "Du kan bara stödja projekt i %{count} stadsdelar. Om du fortsätter kommer du inte kunna ändra valet av stadsdel. Vill du fortsätta?"
         supports:
           zero: Inga stöd
           one: 1 stöd
