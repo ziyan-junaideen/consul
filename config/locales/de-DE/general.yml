@@ -405,8 +405,10 @@ de:
         help: Hilfe zur Abstimmung
       section_footer:
         title: Hilfe zur Abstimmung
+        help_text_1: "Eine Abstimmung findet dann statt, wenn ein Bürgervorschlag von 1% der Stimmberechtigten in der Volkszählung unterstützt wird. Eine Abstimmung kann außerdem eine Bürgerbefragung durch die Stadtverwaltung beinhalten."
       no_polls: "Keine offenen Abstimmungen."
     show:
+      already_voted_in_booth: "Sie haben bereits in einer physischen Wahlkabine teilgenommen. Sie können nicht nochmal teilnehmen."
       already_voted_in_web: "Sie haben bereits an der Umfrage teilgenommen. Falls Sie erneut abstimmen, wird Ihre Wahl überschrieben."
       back: Zurück zur Abstimmung
       cant_answer_not_logged_in: "Sie müssen sich %{signin} oder %{signup}, um fortfahren zu können."
@@ -418,8 +420,10 @@ de:
       verify_link: "verifizieren Sie Ihr Konto"
       cant_answer_incoming: "Diese Umfrage hat noch nicht begonnen."
       cant_answer_expired: "Diese Umfrage wurde beendet."
+      cant_answer_wrong_geozone: "Diese Frage ist nicht in ihrem Gebiet verfügbar."
       more_info_title: "Weitere Informationen"
       documents: Dokumente
+      zoom_plus: Bild vergrößern
       read_more: "Mehr lesen über %{answer}"
       read_less: "Weniger lesen über %{answer}"
       participate_in_other_polls: an anderen Umfragen teilnehmen
@@ -428,8 +432,12 @@ de:
       stats_menu: "Teilnahme Statistiken"
       results_menu: "Umfrageergebnisse"
       stats:
+        title: "Teilnahmedaten"
+        total_participation: "Gesamtanzahl TeilnehmerInnen"
         total_votes: "Gesamtanzahl der Bewertungen"
         votes: "STIMMEN"
+        web: "WEB"
+        booth: "WAHLKABINE"
         total: "GESAMT"
         valid: "Gültig"
         white: "White votes"
@@ -439,11 +447,16 @@ de:
         most_voted_answer: "Am meisten bewerteten Antworten: "
   poll_questions:
     create_question: "Frage erstellen"
+    show:
+      vote_answer: "Für %{answer} abstimmen"
+      voted: "Sie haben für %{answer} abgestimmt"
   proposal_notifications:
     new:
+      title: "Nachricht senden"
       title_label: "Titel"
       body_label: "Nachricht"
       submit_button: "Nachricht senden"
+      info_about_receivers_html: "Diese Nachricht wird an <strong>%{count} BenutzerInnen </strong> geschickt und wird auf der %{proposal_page}.<br> angezeigt. Die Nachricht wird nicht sofort verschickt, sondern BenutzerInnen bekommen regelmäßig eine E-Mail mit allen Benachrichtigen zu den Vorschlägen."
       proposal_page: "die Vorschlagsseite"
     show:
       back: "Zurück zu meiner Aktivität"
@@ -455,24 +468,29 @@ de:
     "no": "Nein"
     search_results: "Ergebnisse anzeigen"
     advanced_search:
+      author_type: 'Nach Kategorie VerfasserIn'
       author_type_blank: 'Kategorie auswählen'
       date: 'Nach Datum'
       date_placeholder: 'TT/MM/JJJJ'
+      date_range_blank: 'Wählen Sie ein Datum'
       date_1: 'Letzten 24 Stunden'
       date_2: 'Letzte Woche'
       date_3: 'Vergangenen Monat'
       date_4: 'Letztes Jahr'
       date_5: 'Angepasst'
       from: 'Von'
+      general: 'Mit dem Text'
       general_placeholder: 'Text verfassen'
       search: 'Filter'
       title: 'Erweiterte Suche'
+      to: 'An'
     author_info:
       author_deleted: Benutzer gelöscht
     back: Zurück
     check: Auswählen
     check_all: Alle
     check_none: Keinen
+    collective: Kollektiv
     flag: Als unangemessen melden
     follow: "Folgen"
     following: "Folgen"
