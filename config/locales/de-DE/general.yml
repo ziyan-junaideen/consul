@@ -51,6 +51,8 @@ de:
       user_deleted: Benutzer gelöscht
       votes:
         zero: Keine Bewertung
+        one: 1 Stimme
+        other: "%{count} Stimmen"
     form:
       comment_as_admin: Als Administrator kommentieren
       comment_as_moderator: Als Moderator kommentieren
@@ -76,8 +78,12 @@ de:
     debate:
       comments:
         zero: Keine Kommentare
+        one: 1 Kommentar
+        other: "%{count} Kommentare"
       votes:
         zero: Keine Bewertungen
+        one: 1 Stimme
+        other: "%{count} Stimmen"
     edit:
       editing: Diskussion bearbeiten
       form:
@@ -131,6 +137,8 @@ de:
       author_deleted: Benutzer gelöscht
       comments:
         zero: Keine Kommentare
+        one: 1 Kommentar
+        other: "%{count} Kommentare"
       comments_title: Kommentare
       edit_debate_link: Bearbeiten
       flag: Diese Diskussion wurde von verschiedenen Benutzern als unangebracht gemeldet.
@@ -147,9 +155,9 @@ de:
   form:
     accept_terms: Ich stimme der %{policy} und den %{conditions} zu
     accept_terms_title: Ich stimme den Datenschutzrichtlinien und den Nutzungsbedingungen zu
-    conditions: allgemeine Nutzungsbedingungen
+    conditions: Allgemeine Nutzungsbedingungen
     debate: Diskussion
-    direct_message: private Nachricht
+    direct_message: Private Nachricht
     error: Fehler
     errors: Fehler
     policy: Datenschutzbestimmungen
@@ -165,23 +173,23 @@ de:
     topic: Thema
     image: Bild
   geozones:
-    none: Alle Städte
+    none: Ganze Stadt
     all: Alle Bereiche
   layouts:
     application:
       chrome: Google Chrome
       firefox: Firefox
-      ie: Gegenwärtig nutzen Sie den Internet Explorer als Browser. Für eine bessere Umsetzung unserer Seite, empfehlen wir %{firefox} oder %{chrome}.
-      ie_title: Die Website ist für Ihren Browser nicht optimiert
+      ie: Wir haben festgestellt, dass Sie Internet Explorer verwenden. Für eine verbesserte Anwendung empfehlen wir %{firefox} oder %{chrome}.
+      ie_title: Diese Website ist für Ihren Browser nicht optimiert
     footer:
       accessibility: Zugänglichkeit
       conditions: Allgemeine Nutzungsbedingungen
       consul: CONSUL Anwendung
       consul_url: https://github.com/consul/consul
-      contact_us: Für technische Hilfe bestätigen
+      contact_us: Für technische Unterstützung geben Sie ein
       copyright: CONSUL, %{year}
       description: Die Plattform basiert auf %{consul}, einer %{open_source}.
-      faq: technische Hilfe
+      faq: Technische Hilfe
       open_data_text: Sie haben Zugang zu allen Daten der Stadtverwaltung.
       open_data_title: Open Data
       open_source: Open-Source Software
@@ -210,7 +218,7 @@ de:
       help: Hilfe
       my_account_link: Mein Benutzerkonto
       my_activity_link: Meine Aktivität
-      open: Offen
+      open: offen
       open_gov: Open Government
       proposals: Vorschläge
       poll_questions: Abstimmung
@@ -379,12 +387,18 @@ de:
       already_supported: Sie haben diesen Vorschlag bereits unterstützt. Teilen Sie es!
       comments:
         zero: Keine Kommentare
+        one: 1 Kommentar
+        other: "%{count} Kommentare"
       support: Unterstützung
       support_title: Vorschlag unterstützen
       supports:
         zero: Keine Unterstützung
+        one: 1 Unterstützer/in
+        other: "%{count} Unterstützer/innen"
       votes:
         zero: Keine Bewertungen
+        one: 1 Stimme
+        other: "%{count} Stimmen"
       supports_necessary: "%{number} Unterstützungen benötigt"
       total_percent: 100 %
       archived: "Dieser Vorschlag wurde archiviert und nicht mehr unterstützt werden."
@@ -394,6 +408,8 @@ de:
       author_deleted: Benutzer gelöscht
       comments:
         zero: Keine Kommentare
+        one: 1 Kommentar
+        other: "%{count} Kommentare"
       comments_tab: Kommentare
       edit_proposal_link: Bearbeiten
       flag: Dieser Vorschlag wurde von verschiedenen Benutzern als unangebracht gemeldet.
@@ -582,15 +598,24 @@ de:
         feasibility: Durchführbarkeit
         unfeasible: Undurchführbar
       start_spending_proposal: Investitionsprojekt erstellen
+    new:
+      recommendation_three: Versuchen Sie Ihren Ausgabenvorschlag so detailliert wie möglich zu beschreiben, damit das Überprüfungsteam ihre Argumente leicht versteht.
+      recommendation_two: Jeder Vorschlag oder Kommentar der auf verbotene Handlung abzielt, wird gelöscht.
+      recommendations_title: Wie erstelle ich einen Ausgabenvorschlag
+      start_new: Ausgabenvorschlag erstellen
     show:
       author_deleted: Benutzer gelöscht
       share: Teilen
     wrong_price_format: Nur ganze Zahlen
     spending_proposal:
+      spending_proposal: Investitionsprojekt
+      already_supported: Sie haben dies bereits unterstützt. Teilen Sie es!
       support: Unterstützung
       support_title: Unterstützen Sie dieses Projekt
       supports:
         zero: Keine Unterstützung
+        one: 1 Unterstützer/in
+        other: "%{count} Unterstützer/innen"
   stats:
     index:
       visits: Besuche
@@ -605,6 +630,8 @@ de:
       unverified_users: Benutzer nicht verifziert
   unauthorized:
     default: Sie sind nicht berechtigt, auf diese Seite zuzugreifen.
+    manage:
+      all: "Sie sind nicht berechtigt die Aktion '%{action}' %{subject} auszuführen."
   users:
     direct_messages:
       new:
@@ -629,9 +656,18 @@ de:
       debates: Diskussionen
       comments: Kommentare
       actions: Aktionen
+      filters:
+        comments:
+          one: 1 Kommentar
+          other: "%{count} Kommentare"
+        budget_investments:
+          one: 1 Investition
+          other: "%{count} Investitionen"
       no_activity: Benutzer hat keine öffentliche Aktivität
       no_private_messages: "Der Benutzer akzeptiert keine privaten Nachrichten."
+      private_activity: Dieser Benutzer hat beschlossen die Aktivitätsliste geheim zu halten.
       send_private_message: "Private Nachricht senden"
+      delete_alert: "Sind Sie sicher, dass Sie Ihr Investitionsprojekt löschen wollen? Diese Aktion kann nicht widerrufen werden!"
     proposals:
       send_notification: "Benachrichtigung senden"
       retire: "Ruhezustand"
@@ -652,13 +688,30 @@ de:
       not_logged_in: Sie müssen %{signin} oder %{signup}, um fortfahren zu können.
       not_verified: 'Nur verifizierte Benutzer können Vorschläge bewerten: %{verify_account}.'
       organization: Organisationen ist es nicht erlaubt abzustimmen
+      unfeasible: Undurchführbare Investitionsprojekte können nicht unterstützt werden
       not_voting_allowed: Die Abstimmungsphase ist geschlossen
     budget_investments:
       not_logged_in: Sie müssen sich %{signin} oder %{signup}, um fortfahren zu können.
       not_verified: Nur verifizierte Benutzer können über ein Investitionsprojekt abstimmen; %{verify_account}.
       organization: Organisationen dürfen nicht abstimmen
+      unfeasible: Undurchführbare Investitionsprojekte können nicht unterstützt werden
       not_voting_allowed: Die Abstimmungsphase ist geschlossen
+      different_heading_assigned:
+        one: "Sie können nur Investitionsprojekte in %{count} Bezirk unterstützen"
+        other: "Sie können nur Investitionsprojekte in %{count} Bezirken unterstützen"
   welcome:
+    feed:
+      most_active:
+        debates: "Aktivste Debatten"
+        proposals: "Aktivste Vorschläge"
+        processes: "Offene Prozesse"
+      see_all_debates: Alle Debatten anzeigen
+      see_all_proposals: Alle Vorschläge anzeigen
+      see_all_processes: Alle Prozesse anzeigen
+      process_label: Prozess
+      see_process: Prozess anzeigen
+    cards:
+      title: Hervorgehoben
     recommended:
       title: Empfehlungen, die Sie vielleicht interessieren
       debates:
@@ -669,6 +722,7 @@ de:
         btn_text_link: Alle empfohlene Vorschläge
       budget_investments:
         title: Empfohlene Investitionen
+      slide: "%{title} anzeigen"
     verification:
       i_dont_have_an_account: Ich habe kein Benutzerkonto
       i_have_an_account: Ich habe bereits ein Benutzerkonto
@@ -703,3 +757,6 @@ de:
     content_title:
       proposal: "Vorschlag"
       debate: "Diskussion"
+  admin/widget:
+    header:
+      title: Verwaltung
