@@ -6,15 +6,22 @@ sv:
         submit: Skicka instruktioner igen
         title: Skicka om bekräftelse instruktioner
       show:
+        instructions_html: Bekräftar kontot med e-postadress %{email}
+        new_password_confirmation_label: Upprepa ditt lösenord
+        new_password_label: Nytt lösenord
+        please_set_password: Ställ in ditt nya lösenord (för e-postadressen ovan)
         submit: Bekräfta
         title: Bekräfta mitt konto
     mailer:
       confirmation_instructions:
         confirm_link: Bekräfta mitt konto
+        text: 'Bekräfta din e-postadress med följande länk:'
+        title: Välkommen till portalen för öppen data
         welcome: Välkommen
       reset_password_instructions:
         change_link: Uppdatera mitt lösenord
         hello: Hej
+        ignore_text: Ignorera det här meddelandet om du inte begärt ett nytt lösenord.
         title: Uppdatera ditt lösenord
       unlock_instructions:
         hello: Hej
