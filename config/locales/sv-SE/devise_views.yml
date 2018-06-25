@@ -45,6 +45,7 @@ sv:
           password_label: Lösenord
           phone_number_label: Telefonnummer
           responsible_name_label: Fullständigt namn på personen som ansvarar för kollektivet
+          responsible_name_note: Det här är en person som representerar organisationen/gruppen som står bakom förslagen
           submit: Registrera dig
           title: Registrera som organisation eller kollektiv
         success:
@@ -114,4 +115,5 @@ sv:
         success:
           back_to_index: Jag förstår; gå tillbaka till hemsidan
           instructions_2_html: När bekräftad kan du börja att delta.
+          thank_you_html: Tack för att du har registrerat dig. Nu behöver du <b>bekräfta din e-postadress</b>.
           title: Ändra din e-postadress
