@@ -108,6 +108,7 @@ fr:
         add_group: Ajouter un nouveau groupe
         create_group: Créer un groupe
         edit_group: Modifier le groupe
+        submit: Sauvegarder le groupe
         heading: Nom de la rubrique
         add_heading: Ajouter une rubrique
         amount: Montant
@@ -119,9 +120,11 @@ fr:
         table_amount: Montant
         table_population: Population
         population_info: "Le champ de population pour la tranche du budget est utilisé à des fins statistiques à la fin du budget pour montrer le pourcentage de votants pour chaque tranche qui représente une zone. Le champ est optionnel donc vous pouvez le laissez blanc."
+        max_votable_headings: "Nombre maxium de rubriques dans lequel un utilisateur peut voter"
       winners:
         calculate: Calculer les investissements gagnant
         calculated: Le calcul des gagnants peut prendre quelques minutes.
+        recalculate: Recalculer les investissements gagnant
     budget_phases:
       edit:
         start_date: Date de début
@@ -169,6 +172,7 @@ fr:
         assigned_admin: Administrateur assigné
         no_admin_assigned: Pas d'administrateur assigné
         no_valuators_assigned: Pas d'évaluateur assigné
+        no_valuation_groups: Aucun groupe d’évaluation assignés
         feasibility:
           feasible: "Réalisable (%{price})"
           unfeasible: "Irréalisable"
@@ -180,11 +184,14 @@ fr:
         table_supports: "Soutiens"
         table_admin: "Administrateur"
         table_valuator: "Évaluateur"
+        table_valuation_group: "Groupe d’évaluation"
         table_geozone: "Périmètre des opérations"
         table_feasibility: "Faisabilité"
         table_valuation_finished: "Ev. Ter."
         table_selection: "Sélection"
+        table_evaluation: "Montrer aux évaluateurs"
         table_incompatible: "Incompatibles"
+        see_results: "Voir les résultats"
       show:
         assigned_admin: Administrateur assigné
         assigned_valuators: Évaluateur assigné
@@ -215,6 +222,13 @@ fr:
           title: Gagnants
           "true": "Oui"
           "false": "Non"
+        image: "Image"
+        see_image: "Voir l’image"
+        no_image: "Sans image"
+        documents: "Documents"
+        see_documents: "Voir les documents (%{count})"
+        no_documents: "Sans document"
+        valuator_groups: "Groupes de l’évaluateur"
       edit:
         classification: Classement
         compatibility: Compatibilité
@@ -228,6 +242,7 @@ fr:
         tags: Étiquettes
         tags_placeholder: "Saisir les étiquettes souhaitées séparées par des virgules (,)"
         undefined: Indéterminé
+        user_groups: "Groupes"
       search_unfeasible: Recherche impossible
     milestones:
       index:
@@ -241,9 +256,13 @@ fr:
         image: "Image"
         show_image: "Afficher l'image"
         documents: "Documents"
+      form:
+        add_language: Ajouter une langue
+        remove_language: Supprimer une langue
       new:
         creating: Créer un nouveau jalon
         date: Date
+        description: Description
       edit:
         title: Modifier le jalon
       create:
@@ -417,7 +436,10 @@ fr:
             error: Erreur
         form:
           add_option: Ajouter une option
+          title: Question
+          title_placeholder: Ajouter une question
           value_placeholder: Ajouter une réponse
+          question_options: "Réponses possibles (optionnel, réponses ouvertes par défaut)"
         index:
           back: Retour
           title: Questions liées à ce processus
@@ -476,6 +498,7 @@ fr:
       stats: Statistiques
       signature_sheets: Feuilles de signature
       site_customization:
+        homepage: Page d’accueil
         pages: Pages personnalisées
         images: Images personnalisées
         content_blocks: Blocs de contenu personnalisés
@@ -483,6 +506,7 @@ fr:
       title_budgets: Budgets
       title_polls: Votes
       title_profiles: Profils
+      title_settings: Paramètres
       title_site_customization: Personnalisation du site
       legislation: Processus législatif collaboratif
       users: Utilisateurs
@@ -537,6 +561,7 @@ fr:
         empty_newsletters: Aucun bulletin d'information à afficher
       new:
         title: Nouveau bulletin d'information
+        from: Adresse électronique qui apparaîtra comme expéditeur de la newsletter
       edit:
         title: Modifier le bulletin d'information
       show:
@@ -546,6 +571,7 @@ fr:
         sent_at: Envoyé à
         subject: Objet
         segment_recipient: Destinataires
+        from: Adresse électronique qui apparaîtra comme expéditeur de la newsletter
         body: Contenu du courriel
         body_help_text: Voici le rendu du courriel pour les destinataires
         send_alert: Êtes-vous sûr de vouloir envoyer ce bulletin d'information à %{n} utilisateurs ?
@@ -563,6 +589,9 @@ fr:
         description: Description
         no_description: Aucune description
         no_valuators: Il n'y a pas d'évaluateurs.
+        valuator_groups: "Groupes de l’évaluateur"
+        group: "Groupe"
+        no_group: "Aucun groupe"
       valuator:
         add: Ajouter un évaluateur
         delete: Supprimer
@@ -577,6 +606,10 @@ fr:
         in_evaluation_count: En évaluation
         total_count: Total
         cost: Coût
+      form:
+        edit_title: "Évaluateurs : modifier l'évaluateur"
+        update: "Modifier l'évaluateur"
+        updated: "L'évaluateur a bien été modifié"
       show:
         description: "Description"
         email: "Courriel"
@@ -588,6 +621,15 @@ fr:
         title: "Groupes d'évaluateurs"
         new: "Créer un groupe d'évaluateurs"
         name: "Nom"
+        members: "Membres"
+        no_groups: "Il n’y a aucun groupe d’évaluateur"
+      show:
+        title: "Groupe d’évaluateurs : %{group}"
+        no_valuators: "Il n’y a aucun évaluateurs assignés à ce groupe"
+      form:
+        name: "Nom du groupe"
+        new: "Créer un groupe d'évaluateurs"
+        edit: "Sauvegarder le groupe d'évaluateurs"
     poll_officers:
       index:
         title: Assesseurs
@@ -628,6 +670,7 @@ fr:
         search_officer_placeholder: Rechercher un assesseur
         search_officer_text: Rechercher un assesseur à qui associer une nouvelle période de travail
         select_date: "Sélectionner le jour"
+        no_voting_days: "Jours de vote terminé"
         select_task: "Sélectionner une tâche"
         table_shift: "Période de travail"
         table_email: "Email"
@@ -875,6 +918,8 @@ fr:
       index:
         banners: Style des bannières
         banner_imgs: Images des bannières
+        no_banners_images: Aucune image de bannière
+        no_banners_styles: Aucun style de bannière
         title: Paramètres
         update_setting: Mettre à jour
         feature_flags: Fonctionnalités
@@ -914,6 +959,9 @@ fr:
       actions: Actions
       title: Titre
       description: Description
+      image: Image
+      show_image: Afficher l'image
+      moderated_content: "Vérifiez le contenu modéré par les modérateurs, et confirmez que la modération a été faite correctement."
     spending_proposals:
       index:
         geozone_filter_all: Tous les districts
@@ -1076,6 +1124,7 @@ fr:
         add_tag: Ajouter un nouveau sujet de proposition
         title: Sujets de propositions
         topic: Sujet
+        help: "Quand un utilisateur créé une proposition, les thèmes suivants sont proposés comme tags par défaut."
       name:
         placeholder: Saisir le nom du sujet
     users:
@@ -1098,6 +1147,11 @@ fr:
         title: Vérifications incomplètes
     site_customization:
       content_blocks:
+        information: Information à propos des blocs de contenu
+        about: Vous pouvez créer des blocs de contenu en HTML pour les insérer dans l'en-tête ou le pied de page de votre Consul.
+        top_links_html: "<strong>Les blocs de l'en-tête (top_links)</strong> sont des blocs de liens devant impérativement respecter ce format :"
+        footer_html: "<strong>Les blocs du pied de page</strong> ont un format libre et peuvent être utilisés pour insérer du Javascript, du CSS ou du HTML personnalisé."
+        no_blocks: "Il n'y a pas de bloc de contenu."
         create:
           notice: Bloc de contenu créé avec succès
           error: Le bloc de contenu n'a pas pu être créé
@@ -1163,3 +1217,31 @@ fr:
           status_draft: Brouillon
           status_published: Publié
           locale: Langue
+    homepage:
+      title: Page d’accueil
+      description: Les modules actifs apparaissent dans la page d’accueil dans le même ordre, comme en l’espèce.
+      header_title: Entête
+      no_header: Il n'y a pas d'entête.
+      create_header: Créer un entête
+      cards_title: Encarts
+      create_card: Créer un encart
+      no_cards: Il n'y a pas d'encarts.
+      cards:
+        title: Titre
+        description: Description
+        link_text: Texte du lien
+        link_url: Url du lien
+      feeds:
+        proposals: Propositions
+        debates: Débats
+        processes: Processus
+      new:
+        header_title: Nouvel entête
+        submit_header: Créer un entête
+        card_title: Nouvel encart
+        submit_card: Créer un encart
+      edit:
+        header_title: Modifier l'entête
+        submit_header: Sauvegarder l'entête
+        card_title: Modifier l'encart
+        submit_card: Sauvegarder l'encart
