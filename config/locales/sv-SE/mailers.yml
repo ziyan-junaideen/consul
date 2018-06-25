@@ -43,8 +43,8 @@ sv:
       button: Slutför registrering
       subject: "Inbjudan till %{org_name}"
     budget_investment_created:
-      subject: "Tack för att du skapade en investering!"
-      title: "Tack för att du skapade en investering!"
+      subject: "Tack för att du skapade ett budgetförslag!"
+      title: "Tack för att du skapade ett budgetförslag!"
       intro_html: "Hej <strong>%{author}</strong>,"
       follow_html: "Vi vill informera dig om hur processen går, men du kan också följa på <strong>%{link}</strong>."
       follow_link: "Medborgarbudgetar"
