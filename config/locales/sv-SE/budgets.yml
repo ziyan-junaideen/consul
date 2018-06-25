@@ -60,6 +60,7 @@ sv:
         help_text_1: "Medborgarbudgetar är processer där medborgarna bestämmer direkt på en del av den kommunala budgeten. Varje registrerad person över 16 år kan lämna ett investeringsprojekt och få stöd från andra medborgare."
         help_text_2: "Mest röstade projekt bedömas och går till en slutlig omröstning där medborgarna bestämmer vilka åtgärder ska genomföras av kommunfullmäktige när den kommunala budgeten för nästa år är godkänd."
         help_text_3: "Förslagen till medborgarbudgeten presenteras från januari och en och en halvmånad framåt. För att delta och skapa förslag för hela staden och / eller en stadsdel, måste du registrera dig på %{org} och bekräfta ditt konto."
+        help_text_4: "Välj en beskrivande och tydlig rubrik för ditt förslag för att få så många röster som möjligt. I de följande fälten finns möjlighet att ge en detaljerad beskrivning av ditt förslag. Använd gärna dokument och bilder för att hjälpa andra att förstå ditt förslag."
     investments:
       form:
         tag_category_label: "Kategorier"
