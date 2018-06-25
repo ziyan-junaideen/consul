@@ -108,6 +108,7 @@ de:
       start_debate: Starten Sie eine Diskussion
       title: Diskussionen
       section_header:
+        icon_alt: Debattensymbol
         title: Diskussionen
         help: Hilfe zu Diskussionen
       section_footer:
@@ -185,8 +186,10 @@ de:
       open_data_title: Open Data
       open_source: Open-Source Software
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
+      participation_text: Gestalten Sie die Stadt, in der Sie leben möchten.
       participation_title: Teilnahme
       privacy: Datenschutzbestimmungen
+      transparency_text: Erfahren Sie alles über die Stadt.
       transparency_title: Transparenz
       transparency_url: https://transparency.consul
     header:
@@ -296,8 +299,11 @@ de:
     form:
       geozone: Rahmenbedingungen
       proposal_external_url: Link zur weiteren Dokumentation
+      proposal_question_example_html: "Muss in eine Frage zusammengefasst werden, die mit Ja oder Nein beantwortet werden kann. <br> Z.B. \"Sind Sie damit einverstanden, dass die Große Straße zur Fußgängerzone wird?\""
       proposal_responsible_name: Vollständiger Name der Person, die den Vorschlag einreicht
+      proposal_responsible_name_note: "(Einzelperson oder Vertreter/in eines Kollektivs; wird nicht öffentlich angezeigt)"
       proposal_summary: Zusammenfassung Vorschlag
+      proposal_summary_note: "(maximal 200 Zeichen)"
       proposal_text: Vorschlagstext
       proposal_title: Titel des Vorschlages
       proposal_video_url: Link zu externem Video
@@ -306,8 +312,11 @@ de:
       tags_instructions: "Markieren Sie den Vorschlag. Sie können einen Tag auswählen oder selbst erstellen"
       tags_label: Tags
       tags_placeholder: "Trennen Sie die Tags mit einem Komma (',')"
+      map_location: "Kartenposition"
+      map_remove_marker: "Entfernen Sie die Kartenmarkierung"
       map_skip_checkbox: "Dieser Vorschlag hat keinen konkreten Ort oder ich kenne ihn nicht."
     index:
+      featured_proposals: Hervorgehoben
       orders:
         confidence_score: am besten bewertet
         created_at: neuste
@@ -316,6 +325,9 @@ de:
         relevance: Relevanz
         archival_date: archiviert
         recommendations: Empfehlungen
+      recommendations:
+        without_results: Es gibt keine Vorschläge, die Ihren Interessen entsprechen
+        without_interests: Folgen Sie Vorschlägen, sodass wir Ihnen Empfehlungen geben können
       retired_proposals: Vorschläge im Ruhezustand
       retired_proposals_link: "Vorschläge vom Autor zurückgezogen"
       retired_links:
