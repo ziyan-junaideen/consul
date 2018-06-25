@@ -144,6 +144,7 @@ de:
       user_not_found: Benutzer wurde nicht gefunden
       invalid_date_range: "Ungültiger Datenbereich"
   form:
+    accept_terms: Ich stimme der %{policy} und den %{conditions} zu
     accept_terms_title: Ich stimme den Datenschutzrichtlinien und den Nutzungsbedingungen zu
     conditions: allgemeine Nutzungsbedingungen
     debate: Diskussion
@@ -153,14 +154,18 @@ de:
     policy: Datenschutzbestimmungen
     proposal: Vorschlag
     proposal_notification: "Benachrichtigung"
+    spending_proposal: Ausgabenvorschlag
+    budget/investment: Investitionsvorschlag
     poll/question/answer: Antwort
     user: Benutzerkonto
     verification/sms: Telefon
+    signature_sheet: Unterschriftenblatt
     document: Dokument
     topic: Thema
     image: Bild
   geozones:
     none: Alle Städte
+    all: Alle Bereiche
   layouts:
     application:
       chrome: Google Chrome
@@ -176,6 +181,7 @@ de:
       copyright: CONSUL, %{year}
       description: Die Plattform basiert auf %{consul}, einer %{open_source}.
       faq: technische Hilfe
+      open_data_text: Sie haben Zugang zu allen Daten der Stadtverwaltung.
       open_data_title: Open Data
       open_source: Open-Source Software
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
@@ -185,6 +191,7 @@ de:
       transparency_url: https://transparency.consul
     header:
       administration_menu: Admin
+      administration: Verwaltung
       available_locales: Verfügbare Sprachen
       collaborative_legislation: Gesetzgebungsverfahren
       debates: Diskussionen
@@ -195,6 +202,7 @@ de:
       external_link_transparency_url: https://transparency.consul
       locale: 'Sprache:'
       logo: Consul-Logo
+      management: Management
       moderation: Moderation
       help: Hilfe
       my_account_link: Mein Benutzerkonto
@@ -203,6 +211,13 @@ de:
       open_gov: Open Government
       proposals: Vorschläge
       poll_questions: Abstimmung
+      spending_proposals: Ausgabenvorschläge
+      notification_item:
+        new_notifications:
+          one: Sie haben eine neue Benachrichtigung
+          other: Sie haben %{count} neue Benachrichtigungen
+        notifications: Benachrichtigungen
+        no_notifications: "Sie haben keine neuen Benachrichtigungen"
     admin:
       watch_form_message: 'Sie haben die Änderungen nicht gespeichert. Möchten Sie die Seite dennoch verlassen?'
   legacy_legislation:
@@ -217,7 +232,23 @@ de:
     index:
       empty_notifications: Sie haben keine neuen Benachrichtigungen.
       mark_all_as_read: Alles als gelesen markieren
+      read: Gelesen
       title: Benachrichtigungen
+      unread: Ungelesen
+    notification:
+      action:
+        comments_on:
+          one: Neuer Kommentar zu
+          other: Es gibt %{count} neue Kommentare zu
+        proposal_notification:
+          one: Sie haben eine neue Benachrichtigung zu
+          other: Sie haben %{count} neue Benachrichtigungen zu
+        replies_to:
+          one: Jemand hat auf Ihren Kommentar zu geantwortet
+          other: Es gibt %{count} neue Antworten auf Ihren Kommentar zu
+      mark_as_read: Als gelesen markieren
+      mark_as_unread: Als ungelesen markieren
+      notifiable_hidden: Dieses Element ist nicht mehr verfügbar.
   map:
     title: "Bezirke"
     proposal_for_district: "Starten Sie einen Vorschlag für Ihren Bezirk"
