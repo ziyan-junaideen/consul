@@ -837,6 +837,7 @@ sv:
     booths:
       index:
         title: "Lista över aktiva vallokaler"
+        no_booths: "Det finns inga aktiva valstationer för den kommande omröstningen."
         add_booth: "Lägg till monter"
         name: "Namn"
         location: "Plats"
@@ -933,6 +934,9 @@ sv:
           disable: "Inaktivera"
         map:
           title: Kartinställningar
+          help: Här kan du anpassa hur kartan visas för användare. Dra kartmarkören eller klicka på kartan, ställ in önskad zoom och klicka på knappen ”Uppdatera”.
+          flash:
+            update: Kartinställningarna har uppdaterats.
           form:
             submit: Uppdatera
     shared:
@@ -961,6 +965,7 @@ sv:
       description: Beskrivning
       image: Bild
       show_image: Visa bild
+      moderated_content: "Kontrollera det modererade innehållet och bekräfta om modereringen är korrekt."
     spending_proposals:
       index:
         geozone_filter_all: Alla områden
@@ -1147,6 +1152,9 @@ sv:
     site_customization:
       content_blocks:
         information: Information om innehållsblock
+        about: Du kan skapa innehållsblock i HTML som kan infogas i sidhuvudet eller sidfoten på din CONSUL-installation.
+        top_links_html: "<strong>Header block (top_links)</strong> är block av länkar som måste ha detta format:"
+        footer_html: "<strong>Sidfot-block</strong> kan ha valfritt format och kan användas för att infoga Javascript, CSS eller anpassad HTML."
         no_blocks: "Det finns inga innehållsblock."
         create:
           notice: Innehållsblock har lyckats skapas
@@ -1215,6 +1223,7 @@ sv:
           locale: Språk
     homepage:
       title: Hemsida
+      description: De aktiva modulerna visas på hemsidan i samma ordning som här.
       header_title: Header
       no_header: Det finns inget header.
       create_header: Skapa header
