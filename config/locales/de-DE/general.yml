@@ -19,6 +19,7 @@ de:
       subscription_to_website_newsletter_label: Per E-Mail Webseite relevante Informationen erhalten
       email_on_direct_message_label: E-Mails über direkte Nachrichten empfangen
       email_digest_label: Benachrichtigungen mit Zusammenfassung über Vorschlag erhalten
+      official_position_badge_label: Kennzeichen des Benutzertyps anzeigen
       title: Mein Konto
       user_permission_debates: An Diskussion teilnehmen
       user_permission_info: Mit Ihrem Konto können Sie...
@@ -26,6 +27,7 @@ de:
       user_permission_support_proposal: Vorschläge unterstützen
       user_permission_title: Teilnahme
       user_permission_verify: Damit Sie alle Funktionen nutzen können, müssen Sie ihr Konto verifizieren.
+      user_permission_verify_info: "* Nur für in der Volkszählung registrierte Benutzer."
       user_permission_votes: An finaler Abstimmung teilnehmen
       username_label: Benutzername
       verified_account: Konto verifiziert
@@ -44,6 +46,8 @@ de:
       moderator: Moderator
       responses:
         zero: Keine Rückmeldungen
+        one: 1 Antwort
+        other: "%{count} Antworten"
       user_deleted: Benutzer gelöscht
       votes:
         zero: Keine Bewertung
@@ -80,10 +84,12 @@ de:
         submit_button: Änderungen speichern
       show_link: Diskussion anzeigen
     form:
+      debate_text: Ursprünglicher Text der Debatte
       debate_title: Titel der Diskussion
       tags_instructions: Diskussion markieren.
       tags_label: Inhalte
     index:
+      featured_debates: Hervorgehoben
       orders:
         confidence_score: am besten bewertet
         created_at: neuste
