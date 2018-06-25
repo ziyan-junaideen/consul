@@ -172,3 +172,5 @@ it:
     phases:
       errors:
         dates_range_invalid: "La Data di inizio non può essere uguale o successiva alla Data finale"
+        prev_phase_dates_invalid: "La data di inizio deve essere posteriore alla data di inizio della fase (%{phase_name}) precedentemente abilitata"
+        next_phase_dates_invalid: "La data di conclusione deve essere precedente alla data di conclusione della fase (%{phase_name}) successivamente abilitata"
