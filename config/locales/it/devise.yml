@@ -19,6 +19,7 @@ it:
       not_found_in_database: "%{authentication_keys} o password errata."
       timeout: "La sessione è scaduta. Per favore accedi nuovamente per continuare."
       unauthenticated: "È necessario eseguire il log in o registrarsi per continuare."
+      unconfirmed: "Per proseguire, per favore clicca sul link di conferma che ti abbiamo inviato via mail"
     mailer:
       confirmation_instructions:
         subject: "Istruzioni di conferma"
@@ -27,6 +28,9 @@ it:
       unlock_instructions:
         subject: "Istruzioni di sblocco"
     omniauth_callbacks:
+      failure: "Non è stato possibile autorizzarti in quanto %{kind} perché “%{reason}”."
       success: "Correttamente identificato come %{kind}."
+    passwords:
+      no_token: "Non è possibile accedere a questa pagina se non attraverso un link di reset password. Se ci sei arrivato tramite un link di reset password, per favore assicurati che l’URL sia completo."
     registrations:
       signed_up: "Benvenuto! Sei stato autenticato."
