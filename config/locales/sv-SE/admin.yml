@@ -442,6 +442,7 @@ sv:
           title: Fråga
           title_placeholder: Lägg till fråga
           value_placeholder: Lägg till ett stängt svar
+          question_options: "Möjliga svar (ej obligatoriskt, öppna svar som standard)"
         index:
           back: Tillbaka
           title: Frågor som är associerade till denna process
@@ -564,6 +565,7 @@ sv:
         empty_newsletters: Det finns ingen nyhetsbrev att Visa
       new:
         title: Nytt nyhetsbrev
+        from: E-postadress som visas som avsändare för nyhetsbrevet
       edit:
         title: Redigera nyhetsbrev
       show:
@@ -573,6 +575,7 @@ sv:
         sent_at: Skickat vid
         subject: Ämne
         segment_recipient: Mottagare
+        from: E-postadress som visas som avsändare för nyhetsbrevet
         body: E-post innehåll
         body_help_text: Detta är hur användarna kommer att se e-post
         send_alert: Är du säker du vill sända detta nyhetsbrev till %{n} användare?
@@ -671,6 +674,7 @@ sv:
         search_officer_placeholder: Sök valarbetare
         search_officer_text: Sök efter en valarbetare för att tilldela ett nytt skift
         select_date: "Välj dag"
+        no_voting_days: "Omröstningen har avslutats"
         select_task: "Välj uppgift"
         table_shift: "Skift"
         table_email: "E-post"
@@ -989,7 +993,7 @@ sv:
         edit: Redigera
         edit_classification: Redigera klassificering
         association_name: Förening
-        by: Efter
+        by: Av
         sent: Skickat
         geozone: Omfattning
         dossier: Rapport
