@@ -31,22 +31,35 @@ sv:
       failure: "Du godkändes inte som %{kind} eftersom ”%{reason}”."
       success: "Framgångsrikt identifierat som %{kind}."
     passwords:
+      no_token: "Du kan inte komma åt denna sida utom genom en länk för återställning av lösenord. Om du har kommit hit genom en länk för återställning av lösenord, kontrollera att webbadressen är komplett."
+      send_instructions: "Du kommer strax att få ett e-postmeddelande med instruktioner för att återställa ditt lösenord."
       send_paranoid_instructions: "Om din e-postadress finns i vår databas kommer du strax att få en länk för att återställa ditt lösenord."
       updated: "Ditt lösenord har ändrats framgångsrikt. Inloggad framgångsrikt."
       updated_not_active: "Ditt lösenord har ändrats framgångsrikt."
     registrations:
+      destroyed: "Hejdå! Ditt konto har avslutats, men vi hoppas att få se dig igen snart!"
       signed_up: "Välkommen! Du har autentiserats."
+      signed_up_but_inactive: "Din registrering lyckades, men du behöver aktivera ditt konto innan du kan logga in."
+      signed_up_but_locked: "Din registrering lyckades, men du behöver aktivera ditt konto innan du kan logga in."
+      signed_up_but_unconfirmed: "Vi har skickat ett meddelande med en verifieringslänk. Vänligen klicka på länken för att aktivera ditt konto."
+      update_needs_confirmation: "Ditt konto har uppdaterats, men vi behöver verifiera din nya e-postadress. Kontrollera din e-post och klicka på länken för att slutföra verifieringen av dina nya e-postadress."
       updated: "Ditt konto har uppdaterats framgångsrikt."
     sessions:
       signed_in: "Inloggad framgångsrikt."
       signed_out: "Utloggad framgångsrikt."
       already_signed_out: "Utloggad framgångsrikt."
     unlocks:
+      send_instructions: "Du kommer strax att få ett e-postmeddelande med instruktioner för att låsa upp ditt konto."
       send_paranoid_instructions: "Om du har ett konto kommer du strax att få ett mail med instruktioner för att låsa upp ditt konto."
       unlocked: "Ditt konto har låsts upp. Logga in för att fortsätta."
   errors:
     messages:
       already_confirmed: "Du har redan verifierats; försök att logga in."
+      confirmation_period_expired: "Du behöver verifiera ditt konto inom %{period}, var vänlig skicka en ny begäran."
+      expired: "är inte längre giltig, var vänlig gör en ny begäran."
       not_found: "inte hittas."
       not_locked: "var inte låst."
+      not_saved:
+        one: "Ett fel gjorde att %{resource} inte sparades. Kontrollera de markerade fälten för att rätta till dem:"
+        other: "%{count} fel gjorde att %{resource} inte sparades. Kontrollera de markerade fälten för att rätta till dem:"
       equal_to_current_password: "måste vara annorlunda än det aktuella lösenordet."
