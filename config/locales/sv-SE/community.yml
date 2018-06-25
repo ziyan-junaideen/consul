@@ -14,7 +14,9 @@ sv:
         proposal: Delta i gemenskapen kring förslaget. En aktiv gemenskap kan förbättra innehållet i förslaget, göra det mer känt och öka dess stöd.
         investment: Delta i gemenskapen kring investeringen. En aktiv gemenskap kan förbättra innehållet i investeringen, göra det mer känt och öka dess stöd.
       create_first_community_topic:
+        first_theme_not_logged_in: Inga ämnen finns tillgängliga, skapa det första.
         first_theme: Skapa det första ämnet i gemenskapen
+        sub_first_theme: "För att skapa ett tema behöver du %{sign_in} eller %{sign_up}."
         sign_in: "logga in"
         sign_up: "registrera sig"
       tab:
@@ -24,11 +26,13 @@ sv:
         new_topic: Skapa ämne
       topic:
         edit: Redigera ämne
+        destroy: Ta bort ämne
         comments:
           zero: Inga kommentarer
           one: 1 kommentar
           other: "%{count} kommentarer"
       author: Författare
+      back: Tillbaka till %{community} %{proposal}
     topic:
       create: Skapa ett ämne
       edit: Redigera ämne
