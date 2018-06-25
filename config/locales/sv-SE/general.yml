@@ -12,7 +12,11 @@ sv:
       personal: Personlig information
       phone_number_label: Telefonnummer
       public_activity_label: Håll min lista över aktiviteter offentlig
+      public_interests_label: Visa etiketterna för de ämnen jag följer publikt
+      public_interests_my_title_list: Taggar för ämnen du följer
+      public_interests_user_title_list: Taggar för ämnen den här användaren följer
       save_changes_submit: Spara ändringar
+      subscription_to_website_newsletter_label: Få relevanta uppdateringar om hemsidan med e-post
       email_on_direct_message_label: Få e-post gällande direkta meddelanden
       email_digest_label: Få en sammanfattning av förslagsaviseringar
       title: Mitt konto
