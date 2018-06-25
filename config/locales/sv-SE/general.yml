@@ -114,6 +114,9 @@ sv:
         button: Sök
         placeholder: Sök diskussioner...
         title: Sök
+      search_results_html:
+        one: " som innehåller ämnet <strong>'%{search_term}'</strong>"
+        other: " som innehåller ämnena <strong>'%{search_term}'</strong>"
       select_order: Sortera efter
       start_debate: Starta en diskussion
       title: Diskussioner
@@ -123,6 +126,9 @@ sv:
         help: Hjälp kring debatter
       section_footer:
         title: Hjälp kring debatter
+        description: Starta en debatt för att diskutera frågor du är intresserad av med andra.
+        help_text_1: "Utrymmet för medborgardebatter riktar sig till alla som vill ta upp frågor som berör dem och som de vill diskutera med andra."
+        help_text_2: 'För att starta en debatt behöver du registrera dig på %{org}. Användare kan även kommentera i öppna debatter och betygsätta dem med knapparna för "jag håller med" eller "jag håller inte med".'
         proposals_link: förslag
         budget_link: deltagande budgeterande
     new:
