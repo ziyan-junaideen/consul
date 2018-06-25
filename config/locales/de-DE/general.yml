@@ -98,11 +98,13 @@ de:
         relevance: Relevanz
         recommendations: Empfehlungen
       recommendations:
+        without_results: Es gibt keine Debatten, die Ihren Interessen entsprechen
         without_interests: Vorschläge folgen, sodass wir Ihnen Empfehlungen geben können
       search_form:
         button: Suche
         placeholder: Suche Diskussionen...
         title: Suche
+      select_order: Sortieren nach
       start_debate: Starten Sie eine Diskussion
       title: Diskussionen
       section_header:
@@ -140,6 +142,7 @@ de:
   errors:
     messages:
       user_not_found: Benutzer wurde nicht gefunden
+      invalid_date_range: "Ungültiger Datenbereich"
   form:
     accept_terms_title: Ich stimme den Datenschutzrichtlinien und den Nutzungsbedingungen zu
     conditions: allgemeine Nutzungsbedingungen
