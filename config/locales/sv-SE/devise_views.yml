@@ -22,9 +22,13 @@ sv:
         change_link: Uppdatera mitt lösenord
         hello: Hej
         ignore_text: Ignorera det här meddelandet om du inte begärt ett nytt lösenord.
+        info_text: Du behöver använda länken för att ändra ditt lösenord.
+        text: 'Vi har mottagit en begäran om att ändra ditt lösenord. Du kan göra det med följande länk:'
         title: Uppdatera ditt lösenord
       unlock_instructions:
         hello: Hej
+        info_text: Ditt konto har blockerats på grund av ett alltför stort antal misslyckade inloggningsförsök.
+        instructions_text: 'Klicka på länken för att låsa upp ditt konto:'
         title: Ditt konto har låsts
         unlock_link: Låsa upp mitt konto
     menu:
