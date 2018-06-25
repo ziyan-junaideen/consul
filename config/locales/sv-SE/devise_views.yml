@@ -50,6 +50,10 @@ sv:
           title: Registrera som organisation eller kollektiv
         success:
           back_to_index: Jag förstår; gå tillbaka till hemsidan
+          instructions_1_html: "<b>Vi kommer snart att kontakta dig</b> för att bekräfta att du representerar den här gruppen."
+          instructions_2_html: Medan din <b>e-postadress granskas</b>, har vi skickat en <b>länk för att bekräfta ditt konto</b>.
+          instructions_3_html: När bekräftelsen är klar kan du börja delta som en overifierad grupp.
+          thank_you_html: Tack för att du har registrerat en grupp på webbplatsen. Den <b>inväntar nu granskning</b>.
           title: Registrering av organisation / kollektiv
     passwords:
       edit:
@@ -86,6 +90,7 @@ sv:
       registrations:
         delete_form:
           erase_reason_label: Syfte
+          info: Åtgärden kan inte ångras. Kontrollera att detta är vad du vill.
           info_reason: Om du vill kan du skriva en anledning (tillval)
           submit: Radera mitt konto
           title: Radera konto
@@ -93,6 +98,7 @@ sv:
           current_password_label: Nuvarande lösenord
           edit: Redigera
           email_label: E-post
+          leave_blank: Lämna tomt om du inte vill ändra
           need_current: Vi behöver ditt nuvarande lösenord för att bekräfta ändringarna
           password_confirmation_label: Bekräfta nytt lösenord
           password_label: Nytt lösenord
@@ -101,12 +107,15 @@ sv:
         new:
           cancel: Avbryt inloggning
           email_label: E-post
+          organization_signup: Representerar du en organisation eller grupp? %{signup_link}
           organization_signup_link: Registrera dig här
           password_confirmation_label: Bekräfta lösenord
           password_label: Lösenord
+          redeemable_code: Bekräftelsekod via e-post (frivilligt)
           submit: Registrera dig
           terms: Genom registrering godkänner du %{terms}
           terms_link: regler och villkor för användning
+          terms_title: Genom att registrera dig godkänner du användarvillkoren
           title: Registrera dig
           username_is_available: Användarnamn tillgängligt
           username_is_not_available: Användarnamn redan används
@@ -114,6 +123,7 @@ sv:
           username_note: Namnet som visas bredvid dina inlägg
         success:
           back_to_index: Jag förstår; gå tillbaka till hemsidan
+          instructions_1_html: <b>Kontrollera din e-postadress</b> - vi har skickat en <b>länk för att bekräfta ditt konto</b>.
           instructions_2_html: När bekräftad kan du börja att delta.
           thank_you_html: Tack för att du har registrerat dig. Nu behöver du <b>bekräfta din e-postadress</b>.
           title: Ändra din e-postadress
