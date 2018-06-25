@@ -288,6 +288,8 @@ de:
       retired_explanation_placeholder: Erläutern Sie kurz, warum der Vorschlag nicht weiter unterstützt werden sollte
       submit_button: Vorschlag zurückziehen
     retire_options:
+      duplicated: Dupliziert
+      started: In Ausführung
       unfeasible: Undurchführbar
       done: Erledigt
       other: Andere
@@ -397,6 +399,7 @@ de:
       participate_button: "An dieser Umfrage teilnehmen"
       participate_button_incoming: "Weitere Informationen"
       participate_button_expired: "Umfrage beendet"
+      already_answer: "Sie haben bereits an dieser Abstimmung teilgenommen"
       section_header:
         title: Abstimmung
         help: Hilfe zur Abstimmung
