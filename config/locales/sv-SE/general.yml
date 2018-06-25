@@ -129,13 +129,16 @@ sv:
         description: Starta en debatt för att diskutera frågor du är intresserad av med andra.
         help_text_1: "Utrymmet för medborgardebatter riktar sig till alla som vill ta upp frågor som berör dem och som de vill diskutera med andra."
         help_text_2: 'För att starta en debatt behöver du registrera dig på %{org}. Användare kan även kommentera i öppna debatter och betygsätta dem med knapparna för "jag håller med" eller "jag håller inte med".'
+        help_text_3: "Tänk på att en debatt inte leder till någon konkret handling. Om du vill lägga ett %{proposal} för staden eller föreslå ett investeringsprojekt för %{budget} när den fasen är öppen, gå till respektive del av hemsidan."
         proposals_link: förslag
         budget_link: deltagande budgeterande
     new:
       form:
         submit_button: Starta en diskussion
+      info: Om du vill lägga ett förslag är det här fel avdelning, gå till %{info_link}.
       info_link: skapa nytt förslag
       more_info: Mer information
+      recommendation_four: Den här är ditt utrymme, ha det så roligt med det.
       recommendation_one: Använd inte versaler för diskussionstiteln eller för hela meningar. På internet anses detta skrika. Och gillar ingen att bli skriken på.
       start_new: Starta en diskussion
     show:
