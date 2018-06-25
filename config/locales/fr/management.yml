@@ -2,6 +2,7 @@ fr:
   management:
     account:
       menu:
+        reset_password_email: Réinitialiser mot de passe par courriel
         reset_password_manually: Réinitialiser le mot de passe manuellement
       alert:
         unverified_user: Vous ne pouvez éditer que les comptes des utilisateurs vérifiés
