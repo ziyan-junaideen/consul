@@ -341,12 +341,17 @@ de:
         button: Suche
         placeholder: Suche Vorschläge...
         title: Suche
+      search_results_html:
+        one: "enthält den Begriff <strong>'%{search_term}'</strong>"
+        other: "enthält die Begriffe <strong>'%{search_term}'</strong>"
       select_order: Sortieren nach
+      select_order_long: 'Sie sehen Vorschläge nach:'
       start_proposal: Vorschlag erstellen
       title: Vorschläge
       top: Tops der Woche
       top_link_proposals: Die am meisten unterstützten Vorschläge nach Kategorie
       section_header:
+        icon_alt: Vorschläge-Symbol
         title: Vorschläge
         help: Hilfe zu Vorschlägen
       section_footer:
