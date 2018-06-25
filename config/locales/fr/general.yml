@@ -240,6 +240,10 @@ fr:
       poll_questions: Votes
       budgets: Budget participatif
       spending_proposals: Propositions de dépense
+      notification_item:
+        new_notifications:
+          one: Vous avez une nouvelle notification
+          other: Vous avez %{count} nouvelles notifications
     admin:
       watch_form_message: 'Vous avez des modifications non sauvegardées. Êtes-vous sûr(e) de vouloir quitter cette page ?'
   legacy_legislation:
