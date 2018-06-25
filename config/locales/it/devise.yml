@@ -16,7 +16,9 @@ it:
       invalid: "%{authentication_keys} o password non validi."
       locked: "Il tuo account è stato bloccato."
       last_attempt: "Hai sono un altro tentativo prima che il tuo account sia bloccato."
+      not_found_in_database: "%{authentication_keys} o password errata."
       timeout: "La sessione è scaduta. Per favore accedi nuovamente per continuare."
+      unauthenticated: "È necessario eseguire il log in o registrarsi per continuare."
     mailer:
       confirmation_instructions:
         subject: "Istruzioni di conferma"
