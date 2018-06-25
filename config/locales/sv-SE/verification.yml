@@ -27,6 +27,7 @@ sv:
       errors:
         incorrect_code: Verifieringskoden är felaktig
       new:
+        explanation: 'För att delta i den slutgiltiga omröstningen kan du:'
         go_to_index: Se förslag
         office: Verifiera i någon %{office}
         offices: Citizen Support Offices
@@ -38,8 +39,16 @@ sv:
           success: Kod korrekt. Ditt konto är nu verifierat
     redirect_notices:
       already_verified: Ditt konto är redan verifierat
+      email_already_sent: Vi har redan skickat ett e-postmeddelande med en bekräftelselänk. Om du inte hittar e-postmeddelandet, kan vi skicka ett nytt
     residence:
+      alert:
+        unconfirmed_residency: Du har inte bekräftat din adress
+      create:
+        flash:
+          success: Din adress är bekräftad
       new:
+        accept_terms_text: Jag accepterar %{terms_url} för folkbokföringen
+        accept_terms_text_title: Jag accepterar villkoren för tillgång till folkbokföringen
         date_of_birth: Födelsedatum
         document_number: Dokumentnummber
         document_number_help_title: Hjälp
