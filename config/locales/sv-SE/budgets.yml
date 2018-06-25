@@ -95,10 +95,10 @@ sv:
           change_ballot: "Om du ändrar dig kan du ta bort dina röster i %{check_ballot} och starta igen."
           check_ballot_link: "kontrollera min omröstning"
           zero: Du har inte röstat något investeringsprojekt i denna grupp.
-          verified_only: "För att skapa en ny budget investeringar måste du %{verify}."
+          verified_only: "För att skapa ett nytt budgetförslag måste du %{verify}."
           verify_account: "verifiera ditt konto"
-          create: "Skapa en budget investering"
-          not_logged_in: "Om du vill skapa en ny budget investering måste du %{sign_in} eller %{sign_up}."
+          create: "Skapa ett budgetförslag"
+          not_logged_in: "Om du vill skapa ett nytt budgetförslag måste du %{sign_in} eller %{sign_up}."
           sign_in: "logga in"
           sign_up: "registrera sig"
           by_feasibility: Efter genomförbarhet
