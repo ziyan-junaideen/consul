@@ -37,4 +37,6 @@ it:
       updated: "La password è stata cambiata con successo. Autenticazione effettuata."
       updated_not_active: "La password è stata cambiata con successo."
     registrations:
+      destroyed: "Arrivederci! Il tuo account è stato cancellato. Speriamo di rivederti presto. Come da tua richiesta, i dati personali inseriti come utente del sito facenti parte del file 'File', di responsabilità del 'Responsabile', sono stati cancellati secondo quanto previsto dall’articolo 16 della Ley Orgánica 15/1999 de Protección de Datos de Carácter Personal e dall’articolo 31 del relativo Reglamento de desarollo (RD 1720/2007)."
       signed_up: "Benvenuto! Sei stato autenticato."
+      signed_up_but_inactive: "La registrazione è avvenuta con successo, ma non è stato possibile eseguire il log in perché l’account non è ancora stato attivato."
