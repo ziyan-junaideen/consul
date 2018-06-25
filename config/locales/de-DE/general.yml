@@ -356,10 +356,13 @@ de:
         help: Hilfe zu Vorschlägen
       section_footer:
         title: Hilfe zu Vorschlägen
+        help_text_1: "Bürgervorschläge sind eine Chance für Nachbarn und Gemeinschaften direkt zu mitzuentscheiden, wie Sie ihre Stadt gestalten wollen. Jede Person kann einen Vorschlag zu einem Thema oder Anliegen Ihres Interesses bei der Stadtverwaltung einbringen, nachdem dieser ausreichend Unterstützung bekommen hat und die Abstimmungsphase passiert hat."
+        help_text_2: "Um einen Vorschlag einzubringen, müssen Sie sich auf %{org} registrieren. Vorschläge, die Unterstützung von anderen Benutzern im Netz erhalten haben, gehen weiter in die Abstimmungsphase. Um Vorschläge unterstützen zu können, ist ein verifierziertes Benutzerkonto notwendig."
     new:
       form:
         submit_button: Vorschlag erstellen
       more_info: Wie funktionieren die Bürger Vorschläge?
+      recommendation_one: Verwenden Sie bitte nicht ausschließlich Großbuchstaben für die Überschrift oder für komplette Sätze. Im Internet gilt das als Schreien und niemand möchte angeschrien werden.
       recommendation_two: Diskussionen oder Kommentare, die illegale Handlungen beinhalten, werden gelöscht sowie diejenigen, die die Diskussionen absichtlich sabotieren. Alles andere ist erlaubt.
       recommendations_title: Empfehlungen zum Erstellen eines Vorschlags
       start_new: Neuen Vorschlag erstellen
@@ -383,7 +386,10 @@ de:
       votes:
         zero: Keine Bewertungen
       supports_necessary: "%{number} Unterstützungen benötigt"
+      total_percent: 100 %
       archived: "Dieser Vorschlag wurde archiviert und nicht mehr unterstützt werden."
+      successful: "Dieser Vorschlag hat die erforderliche Unterstützung erreicht und geht nun weiter in die %{voting}."
+      voting: "Nächste Abstimmung"
     show:
       author_deleted: Benutzer gelöscht
       comments:
@@ -393,11 +399,13 @@ de:
       flag: Dieser Vorschlag wurde von verschiedenen Benutzern als unangebracht gemeldet.
       login_to_comment: Sie müssen sich %{signin} oder %{signup}, um einen Kommentar zu hinterlassen.
       notifications_tab: Benachrichtigungen
+      retired_warning: "Der/Die Autor/in ist der Ansicht, dass dieser Vorschlag nicht mehr Unterstützung erhalten soll."
       retired_warning_link_to_explanation: Lesen Sie die Erläuterung, bevor Sie abstimmen.
       retired: Vorschlag vom Autor zurückgezogen
       share: Teilen
       send_notification: Benachrichtigung senden
       no_notifications: "Dieser Vorschlag enthält keine Benachrichtigungen."
+      title_external_url: "Zusätzliche Dokumentation"
       title_video_url: "Externes Video"
       author: Autor
     update:
@@ -416,6 +424,8 @@ de:
       participate_button: "An dieser Umfrage teilnehmen"
       participate_button_incoming: "Weitere Informationen"
       participate_button_expired: "Umfrage beendet"
+      no_geozone_restricted: "Ganze Stadt"
+      geozone_restricted: "Bezirke"
       already_answer: "Sie haben bereits an dieser Abstimmung teilgenommen"
       section_header:
         title: Abstimmung
@@ -558,12 +568,19 @@ de:
         create: Erstellen
         new: Erstellen
     index:
+      unfeasible: Undurchführbare Investitionsvorschläge
+      by_geozone: "Investitionsvorschläge im Bereich: %{geozone}"
       search_form:
         button: Suche
         placeholder: Investitionsprojekte...
         title: Suche
+      search_results:
+        one: "enthält den Begriff  '%{search_term}'"
+        other: "enthält die Begriffe  '%{search_term}'"
       sidebar:
+        geozones: Handlungsbereiche
         feasibility: Durchführbarkeit
+        unfeasible: Undurchführbar
       start_spending_proposal: Investitionsprojekt erstellen
     show:
       author_deleted: Benutzer gelöscht
