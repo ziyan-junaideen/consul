@@ -193,15 +193,25 @@ sv:
     application:
       chrome: Google Chrome
       firefox: Firefox
+      ie: Vi har upptäckt att du använder Internet Explorer. För en förbättrad upplevelse rekommenderar vi %{firefox} eller %{chrome}.
+      ie_title: Webbplatsen är inte optimerad för din webbläsare
     footer:
       accessibility: Tillgänglighet
       conditions: Regler och villkor för användning
       consul: CONSUL programvara
+      consul_url: https://github.com/consul/consul
+      contact_us: För teknisk support gå till
       copyright: CONSUL, %{year}
+      description: Den här webbplatsen använder %{consul} som är %{open_source}.
+      faq: teknisk support
+      open_data_text: Du har tillgång till all information om kommunfullmäktige.
       open_data_title: Öppna data
       open_source: mjukvara med öppen källkod
+      open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
+      participation_text: Skapa den stad du vill ha.
       participation_title: Deltagande
       privacy: Sekretesspolicy
+      transparency_text: Få reda på allt som staden.
       transparency_title: Transparens
       transparency_url: https://transparency.consul
     header:
@@ -225,18 +235,30 @@ sv:
       my_account_link: Mitt konto
       my_activity_link: Min aktivitet
       open: öppen
+      open_gov: Öppna myndigheter
       proposals: Förslag
+      poll_questions: Rösta
       budgets: Medborgarbudget
       spending_proposals: Investeringsförslag
       notification_item:
+        new_notifications:
+          one: Du har %{count} nytt meddelande
+          other: Du har %{count} nya meddelanden
         notifications: Notiser
+        no_notifications: "Du har inga nya meddelanden"
+    admin:
+      watch_form_message: 'Du har osparade ändringar. Vill du verkligen lämna sidan?'
   legacy_legislation:
     help:
+      alt: Markera texten du vill kommentera och klicka på knappen med pennan.
+      text: Du behöver %{sign_in} eller %{sign_up} för att kommentera dokumentet. Markera sedan texten du vill kommentera och klicka på knappen med pennan.
       text_sign_in: logga in
       text_sign_up: registrera sig
+      title: Hur kommenterar jag det här dokumentet?
   locale: Svenska
   notifications:
     index:
+      empty_notifications: Du har inga nya meddelanden.
       mark_all_as_read: Markera alla som läst
       read: Läst
       title: Notiser
@@ -246,10 +268,19 @@ sv:
         comments_on:
           one: Någon kommenterade på
           other: Det finns %{count} nya kommentarer på
+        proposal_notification:
+          one: Du har ett nytt meddelande om
+          other: Du har %{count} nya meddelanden om
+        replies_to:
+          one: Du har fått ett svar på din kommentar om
+          other: Du har fått %{count} svar på din kommentar om
       mark_as_read: Markera som läst
       mark_as_unread: Markera som oläst
+      notifiable_hidden: Den här resursen är inte längre tillgänglig.
   map:
     title: "Distrikter"
+    proposal_for_district: "Skriv ett förslag för din stadsdel"
+    select_district: Verksamhetsområde
     start_proposal: Skapa ett förslag
   omniauth:
     facebook:
