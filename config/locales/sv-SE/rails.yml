@@ -12,16 +12,16 @@ sv:
       - 
       - jan
       - feb
-      - Mar
-      - Apr
-      - Maj
-      - Jun
-      - Jul
-      - Aug
-      - Sep
-      - Okt
-      - Nov
-      - Dec
+      - mars
+      - april
+      - maj
+      - juni
+      - juli
+      - aug
+      - sep
+      - okt
+      - nov
+      - dec
     day_names:
       - söndag
       - måndag
@@ -36,29 +36,29 @@ sv:
       short: "%b %d"
     month_names:
       - 
-      - Januari
-      - Februari
-      - Mars
-      - April
-      - Maj
-      - Juni
-      - Juli
-      - Augusti
-      - September
-      - Oktober
-      - November
-      - December
+      - januari
+      - februari
+      - mars
+      - april
+      - maj
+      - juni
+      - juli
+      - augusti
+      - september
+      - oktober
+      - november
+      - december
     order:
-      - ':år'
-      - ':månad'
-      - :dag
+      - :year
+      - :month
+      - :day
   datetime:
     distance_in_words:
       about_x_hours:
-        one: ungefär 1 timme
+        one: ungefär en timme
         other: ungefär %{count} timmar
       about_x_months:
-        one: ungefär en timme
+        one: ungefär en månad
         other: ungefär %{count} månader
       about_x_years:
         one: ungefär ett år
@@ -72,7 +72,7 @@ sv:
         other: mindre än %{count} minuter
       less_than_x_seconds:
         one: mindre än en sekund
-        other: mindre än %{count} minuter
+        other: mindre än %{count} sekunder
       over_x_years:
         one: mer än ett år
         other: mer än %{count} år
