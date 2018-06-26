@@ -45,6 +45,8 @@ de:
         flash:
           success: Wohnsitz bestätigt
       new:
+        accept_terms_text: Ich stimme den %{terms_url} des Melderegisters zu
+        accept_terms_text_title: Ich stimme den Allgemeinen Nutzungsbedingungen des Melderegisters zu
         date_of_birth: Geburtsdatum
         document_number: Dokumentennummer
         document_number_help_title: Hilfe
