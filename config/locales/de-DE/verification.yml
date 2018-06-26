@@ -20,8 +20,12 @@ de:
       edit:
         see_all: Vorschläge anzeigen
         title: Brief angefordert
+      errors:
+        incorrect_code: Der Bestätigungscode ist falsch
       new:
+        explanation: 'Um an der finalen Abstimmungen teilzunehmen, können Sie:'
         go_to_index: Vorschläge anzeigen
+        office: Verifiziere dich persönlich in jedem %{office}
         title: Glückwunsch!
         user_permission_info: Mit Ihrem Benutzerkonto können Sie...
       update:
