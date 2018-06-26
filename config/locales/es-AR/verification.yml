@@ -56,6 +56,7 @@ es-AR:
         document_type:
           passport: Pasaporte
           residence_card: Tarjeta de residencia
+          spanish_id: DNI
         document_type_label: Tipo de documento
         error_not_allowed_age: No tienes la edad mínima para participar
         error_not_allowed_postal_code: Para verificarte debes estar empadronado.
@@ -80,6 +81,7 @@ es-AR:
       new:
         phone: Introduce tu teléfono móvil para recibir el código
         phone_format_html: "<strong><em>(Ejemplo: 612345678 ó +34612345678)</em></strong>"
+        phone_note: Usaremos únicamente su teléfono para enviarle un código, nunca para contactarlo.
         phone_placeholder: "Ejemplo: 612345678 ó +34612345678"
         submit_button: Enviar
         title: SMS de confirmación
@@ -102,6 +104,7 @@ es-AR:
       form:
         submit_button: Enviar código
       show:
+        email_title: Correos
         explanation: Actualmente disponemos de los siguientes datos en el Padrón, selecciona donde quieres que enviemos el código de confirmación.
         phone_title: Teléfonos
         title: Información disponible
