@@ -152,8 +152,14 @@ es-AR:
         filters:
           all: Todas
           without_admin: Sin administrador
+          without_valuator: Sin valoración asignada
+          under_valuation: Debajo de valoración
           valuation_finished: Evaluación finalizada
+          feasible: Factible
           selected: Seleccionadas
+          undecided: Sin decidir
+          unfeasible: Inviable
+          max_per_heading: Máx. soportado por partida
           winners: Ganadoras
         download_current_selection: "Descargar selección actual"
         no_budget_investments: "No hay proyectos de inversión."
