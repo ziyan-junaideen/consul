@@ -540,9 +540,36 @@ es-AR:
       all_users: Todos los usuarios
       administrators: Administradores
       proposal_authors: Autores de la propuesta
+      investment_authors: Autores de la inversión en el presupuesto actual
+      feasible_and_undecided_investment_authors: "Autores de alguna inversión en el presupuesto actual que no cumplen con: [valuación infalible finalizada]"
+      selected_investment_authors: Autores de inversiones seleccionadas en el actual presupuesto
+      winner_investment_authors: Autores de inversiones ganadoras en el actual presupuesto
+      not_supported_on_current_budget: Usuarios que no apoyaron inversiones en el actual presupuesto
+      invalid_recipients_segment: "Segmento de destinatario inválido"
     newsletters:
+      create_success: Boletín informativo creado satisfactoriamente
+      update_success: Boletín informativo actualizado satisfactoriamente
+      send_success: Boletín informativo enviado satisfactoriamente
+      delete_success: Boletín informativo borrado satisfactoriamente
       index:
         title: Envío de newsletters
+        new_newsletter: Nuevo boletín informativo
+        subject: Tema
+        segment_recipient: Destinatarios
+        sent: Enviado
+        actions: Acciones
+        draft: Borrador
+        edit: Editar
+        delete: Borrar
+        preview: Previa
+        empty_newsletters: No hay boletines informativos para mostrar
+      new:
+        title: Nuevo boletín informativo
+        from: Correo que aparecerá cuando se envia el boletín informativo
+      edit:
+        title: Editar boletín informativo
+      show:
+        title: Vista previa boletín informativo
     valuators:
       index:
         title: Evaluadores
