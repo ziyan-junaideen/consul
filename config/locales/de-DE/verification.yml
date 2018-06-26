@@ -6,19 +6,20 @@ de:
     email:
       create:
         alert:
-          failure: Beim versenden einer E-Mail an Ihr Benutzerkonto ist ein Problem aufgetreten
+          failure: Beim Versenden einer E-Mail an Ihr Benutzerkonto ist ein Problem aufgetreten
         flash:
-          success: 'Wir haben einen Bestätigungslink an Sie versendet: %{email}'
+          success: 'Wir haben einen Bestätigungslink an Sie geschickt: %{email}'
       show:
         alert:
           failure: Der Bestätigungscode ist falsch
         flash:
-          success: Sie sind ein verifizierter Benutzer
+          success: Sie sind ein/e verifizierte/r Benutzer/in
     letter:
       alert:
         unconfirmed_code: Sie haben den Bestätigungscode noch nicht eingegeben
       edit:
         see_all: Vorschläge anzeigen
+        title: Brief angefordert
       new:
         go_to_index: Vorschläge anzeigen
         title: Glückwunsch!
