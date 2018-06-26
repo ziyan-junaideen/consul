@@ -140,6 +140,9 @@ sv:
       more_info: Mer information
       recommendation_four: Den här är ditt utrymme, ha det så roligt med det.
       recommendation_one: Använd inte versaler för diskussionstiteln eller för hela meningar. På internet anses detta skrika. Och gillar ingen att bli skriken på.
+      recommendation_three: Hänsynslös kritik välkomnas. Det här utrymmet är till för diskussion och reflektion. Men vi rekommenderar att du ändå håller diskussionen sjysst och intelligent. Världen blir en bättre plats om vi alla tänker på det.
+      recommendation_two: Debattinlägg eller kommentarer som förespråkar olagliga handlingar eller försöker sabotera diskussionen kommer att raderas. Allt annat är tillåtet.
+      recommendations_title: Rekommendationer för debattinlägg
       start_new: Starta en diskussion
     show:
       author_deleted: Användaren borttagen
@@ -150,6 +153,7 @@ sv:
       comments_title: Kommentarer
       edit_debate_link: Redigera
       flag: Denna debatt har flaggats som olämpligt av flera användare.
+      login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
       share: Dela
       author: Författare
     update:
@@ -160,16 +164,20 @@ sv:
       user_not_found: Användaren hittades inte
       invalid_date_range: "Felaktig datumföljd"
   form:
+    accept_terms: Jag godkänner %{policy} och %{conditions}
+    accept_terms_title: Jag godkänner sekretesspolicyn och användarvillkoren
     conditions: Regler och villkor för användning
     debate: Debatt
     direct_message: privat meddelande
     error: fel
     errors: fel
+    not_saved_html: "förhindrade att %{resource} sparas. <br>Kontrollera och rätta till de markerade fälten:"
     policy: Sekretesspolicy
     proposal: Förslag
     proposal_notification: "Anmälan"
     spending_proposal: Investeringsförslag
     budget/investment: Investering
+    budget/heading: Budgetrubrik
     poll/shift: Skift
     poll/question/answer: Svar
     user: Konto
