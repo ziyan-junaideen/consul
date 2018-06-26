@@ -5,6 +5,7 @@ es-AR:
     actions:
       actions: Acciones
       confirm: '¿Estás seguro?'
+      confirm_hide: Confirmar moderación
       hide: Ocultar
       hide_author: Bloquear al autor
       restore: Volver a mostrar
@@ -12,8 +13,10 @@ es-AR:
       unmark_featured: Quitar destacado
       edit: Editar
       configure: Configurar
+      delete: Borrar
     banners:
       index:
+        title: Marcadores
         create: Crear un banner
         edit: Editar banner
         delete: Eliminar banner
@@ -54,17 +57,21 @@ es-AR:
         filters:
           all: Todo
           on_comments: Comentarios
+          on_debates: Debates
           on_proposals: Propuestas
           on_users: Usuarios
         title: Actividad de los Moderadores
         type: Tipo
+        no_activity: No hay actividad de moderadores.
     budgets:
       index:
         title: Presupuestos participativos
         new_link: Crear nuevo presupuesto
         filter: Filtro
         filters:
+          open: Abierto
           finished: Terminados
+        budget_investments: Gestionar proyectos
         table_name: Nombre
         table_phase: Fase
         table_investments: Propuestas de inversión
@@ -79,6 +86,13 @@ es-AR:
       edit:
         title: Editar campaña de presupuestos participativos
         delete: Eliminar presupuesto
+        phase: Fase
+        dates: Fechas
+        enabled: Habilitado
+        actions: Acciones
+        edit_phase: Editar fase
+        active: Activo
+        blank_dates: Las fechas están en blanco
       destroy:
         success_notice: Presupuesto eliminado correctamente
         unable_notice: No se puede eliminar un presupuesto con proyectos asociados
@@ -93,6 +107,8 @@ es-AR:
         no_groups: No hay grupos creados todavía. Cada usuario podrá votar en una sola partida de cada grupo.
         add_group: Añadir nuevo grupo
         create_group: Crear grupo
+        edit_group: Editar grupo
+        submit: Guardar grupo
         heading: Nombre de la partida
         add_heading: Añadir partida
         amount: Cantidad
@@ -104,15 +120,35 @@ es-AR:
         table_amount: Cantidad
         table_population: Población
         population_info: "El campo población de las partidas presupuestarias se usa con fines estadísticos únicamente, con el objetivo de mostrar el porcentaje de votos habidos en cada partida que represente un área con población. Es un campo opcional, así que puedes dejarlo en blanco si no aplica."
+        max_votable_headings: "Máximo número de títulos en los cuales un usuario puede votar"
       winners:
         calculate: Calcular propuestas ganadoras
         calculated: Calculando ganadoras, puede tardar un minuto.
+        recalculate: Re calculando Ganador de Inversiones
+    budget_phases:
+      edit:
+        start_date: Fecha de comienzo
+        end_date: Fecha de finalización
+        summary: Sumario
+        summary_help_text: Este texto informará al usuario sobre la fase. Para mostrar si la fase no está activa, seleccione el casillero debajo
+        description: Descripción
+        description_help_text: Este texto aparecerá en el encabezado cunado la fase esté activa
+        enabled: Fase habilitada
+        enabled_help_text: Esta fase estará activa en la línea de tiempo de fases de presupuesto, y para otros própositos
+        save_changes: Guardar cambios
     budget_investments:
       index:
         heading_filter_all: Todas las partidas
         administrator_filter_all: Todos los administradores
         valuator_filter_all: Todos los evaluadores
         tags_filter_all: Todas las etiquetas
+        advanced_filters: Filtros avanzados
+        placeholder: Buscar proyectos
+        sort_by:
+          placeholder: Por clase
+          id: ID
+          title: Título
+          supports: Soportes
         filters:
           all: Todas
           without_admin: Sin administrador
