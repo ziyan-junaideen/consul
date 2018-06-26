@@ -51,3 +51,13 @@ it:
     unlocks:
       send_instructions: "Tra qualche minuto riceverai una email contenente le istruzioni per sbloccare il tuo account."
       send_paranoid_instructions: "Se disponi di un account, tra qualche minuto riceverai una email contenente le istruzioni per sbloccarlo."
+      unlocked: "Il tuo account è stato sbloccato. Per favore, accedi per continuare."
+  errors:
+    messages:
+      already_confirmed: "Hai già eseguito questa verifica; per favore, prova ad eseguire il log in."
+      confirmation_period_expired: "È necessario provvedere alla verifica entro %{period}; per favore, esegui nuovamente la richiesta."
+      not_found: "non reperibile."
+      not_saved:
+        one: "1 errore ha impedito a questa %{resource} di essere salvata. Si prega di verificare i campi contrassegnati per capire come correggerli:"
+        other: "%{count} errori hanno impedito a questa %{resource} di essere salvata. Si prega di verificare i campi contrassegnati per capire come correggerli:"
+      equal_to_current_password: "deve essere diversa dalla password attuale."
