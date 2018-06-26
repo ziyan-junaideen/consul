@@ -538,6 +538,8 @@ es-AR:
         title: 'Moderadores: Búsqueda de usuarios'
     segment_recipient:
       all_users: Todos los usuarios
+      administrators: Administradores
+      proposal_authors: Autores de la propuesta
     newsletters:
       index:
         title: Envío de newsletters
