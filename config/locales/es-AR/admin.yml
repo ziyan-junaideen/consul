@@ -1096,6 +1096,10 @@ es-AR:
     site_customization:
       content_blocks:
         information: Información sobre los bloques de contenido
+        about: Puede crear bloques de contenido HTML para ser insertados en el encabezado o en el final de su CONSUL.
+        top_links_html: "<strong>Encabezados (top_links)</strong> bloques de direcciones deben tener este formato:"
+        footer_html: "<strong>bloques finales</strong>pueden tener cualquier formato y ser usados para insertar javascript, CSS o HTML personalizados."
+        no_blocks: "No hay bloques de contenido."
         create:
           notice: Bloque creado correctamente
           error: No se ha podido crear el bloque
@@ -1106,6 +1110,9 @@ es-AR:
           notice: Bloque borrado correctamente
         edit:
           title: Editar bloque
+        errors:
+          form:
+            error: Error
         index:
           create: Crear nuevo bloque
           delete: Borrar bloque
@@ -1138,6 +1145,9 @@ es-AR:
           notice: Página eliminada correctamente
         edit:
           title: Editar %{page_title}
+        errors:
+          form:
+            error: Error
         form:
           options: Opciones
         index:
@@ -1155,3 +1165,12 @@ es-AR:
           status_draft: Borrador
           status_published: Publicada
           locale: Idioma
+    homepage:
+      title: Página principal
+      description: Los módulos activos aparecerán en la página principal en el mismo orden que aquí.
+      header_title: Encabezado
+      no_header: No hay encabezado.
+      create_header: Crear encabezado
+      cards_title: Tarjetas
+      create_card: Crear tarjeta
+      no_cards: No hay tarjetas.
