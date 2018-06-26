@@ -17,6 +17,9 @@ de:
     letter:
       alert:
         unconfirmed_code: Sie haben den Bestätigungscode noch nicht eingegeben
+      create:
+        flash:
+          success_html: Danke, dass Sie Ihren <b>Hochsicherheitscode (nur für die finale Abstimmung erforderlich) </b> angefordert haben. Vor der Abstimmung erhalten Sie einen Brief mit der Anweisung, Ihr Konto zu bestätigen. Heben Sie den Brief gut auf, um sich persönlich in einem der %{offices} verifizieren zu können.
       edit:
         see_all: Vorschläge anzeigen
         title: Brief angefordert
@@ -26,14 +29,15 @@ de:
         explanation: 'Um an der finalen Abstimmungen teilzunehmen, können Sie:'
         go_to_index: Vorschläge anzeigen
         office: Verifiziere dich persönlich in jedem %{office}
+        send_letter: Schicken Sie mir einen Brief mit dem Code
         title: Glückwunsch!
         user_permission_info: Mit Ihrem Benutzerkonto können Sie...
       update:
         flash:
           success: Code bestätigt. Ihr Benutzerkonto ist nun verifiziert
     redirect_notices:
-      already_verified: Das Benutzerkonto ist bereits verifiziert
-      email_already_sent: Wir haben bereits eine E-Mail mit einem Bestätigungslink verschickt. Falls Sie noch keine E-Mail erhalten haben, können Sie hier einen neuen erhalten
+      already_verified: Ihr Benutzerkonto ist bereits verifiziert
+      email_already_sent: Wir haben bereits eine E-Mail mit einem Bestätigungslink verschickt. Falls Sie noch keine E-Mail erhalten haben, können Sie hier einen neuen Code anfordern
     residence:
       alert:
         unconfirmed_residency: Sie haben noch nicht Ihren Wohnsitz bestätigt
@@ -42,7 +46,7 @@ de:
           success: Wohnsitz bestätigt
       new:
         date_of_birth: Geburtsdatum
-        document_number: Dokumentennummern
+        document_number: Dokumentennummer
         document_number_help_title: Hilfe
         document_type_label: Dokumentenart
         error_not_allowed_age: Sie haben nicht das erforderliche Alter um teilzunehmen
