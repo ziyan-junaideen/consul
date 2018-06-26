@@ -570,6 +570,21 @@ es-AR:
         title: Editar boletín informativo
       show:
         title: Vista previa boletín informativo
+        send: Enviar
+        affected_users: (%{n} usuarios afectados)
+        sent_at: Enviado al
+        subject: Tema
+        segment_recipient: Destinatarios
+        from: Correo que aparecerá cuando envie el boletín informativo
+        body: Contenido del correo
+        body_help_text: Así verán los usuarios el correo
+        send_alert: '¿ Está seguro que desea enviar este boletín informativo a %{n} usuarios?'
+    emails_download:
+      index:
+        title: Descargando correos
+        download_segment: Descargando direcciones de correo
+        download_segment_help_text: Descargando en formato CSV
+        download_emails_button: Descargando lista de correos
     valuators:
       index:
         title: Evaluadores
