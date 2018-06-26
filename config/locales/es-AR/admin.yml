@@ -162,25 +162,37 @@ es-AR:
           max_per_heading: Máx. soportado por partida
           winners: Ganadoras
           one_filter_html: "Filtros actuales aplicados:<b><em>%{filter}</em></b>"
+          two_filters_html: "Filtros actuales aplicados:<b><em>%{filter},%{advanced_filters}</em></b>"
+        buttons:
+          search: Buscar
+          filter: Filtro
         download_current_selection: "Descargar selección actual"
         no_budget_investments: "No hay proyectos de inversión."
         title: Propuestas de inversión
         assigned_admin: Administrador asignado
         no_admin_assigned: Sin admin asignado
         no_valuators_assigned: Sin evaluador
+        no_valuation_groups: Grupos asignados sin valoración
         feasibility:
           feasible: "Viable (%{price})"
           unfeasible: "Inviable"
           undecided: "Sin decidir"
         selected: "Seleccionada"
         select: "Seleccionar"
+        table_id: "ID"
         table_title: "Título"
         table_supports: "Apoyos"
         table_admin: "Administrador"
         table_valuator: "Evaluador"
+        table_valuation_group: "Grupo Valorado"
         table_geozone: "Ámbito de actuación"
         table_feasibility: "Viabilidad"
         table_valuation_finished: "Ev. Fin."
+        table_selection: "Seleccionado"
+        table_evaluation: "Mostrar a evaluador"
+        table_incompatible: "Incompatible"
+        cannot_calculate_winners: El presupuesto tiene que permanecer en la fase "Proyectos de votación", "Revisión de votación" o "Votación finalizada" en orden para calcular los proyectos ganadores
+        see_results: "Ver resultados"
       show:
         assigned_admin: Administrador asignado
         assigned_valuators: Evaluadores asignados
@@ -190,6 +202,7 @@ es-AR:
         edit_classification: Editar clasificación
         by: Autor
         sent: Fecha
+        group: Grupo
         heading: Partida
         dossier: Informe
         edit_dossier: Editar informe
@@ -200,6 +213,8 @@ es-AR:
         new_milestone: Crear nuevo hito
         compatibility:
           title: Compatibilidad
+          "true": Incompatible
+          "false": Compatible
         selection:
           title: Selección
           "true": Seleccionado
@@ -207,6 +222,14 @@ es-AR:
         winner:
           title: Ganadora
           "true": "Si"
+          "false": "No"
+        image: "Imagen"
+        see_image: "Ver imagen"
+        no_image: "Sin imagen"
+        documents: "Documentos"
+        see_documents: "Ver documentos (%{count})"
+        no_documents: "Sin documentos"
+        valuator_groups: "Grupos Evaluadores"
       edit:
         classification: Clasificación
         compatibility: Compatibilidad
@@ -220,9 +243,11 @@ es-AR:
         tags: Etiquetas
         tags_placeholder: "Escribe las etiquetas que desees separadas por comas (,)"
         undefined: Sin definir
+        user_groups: "Grupos"
       search_unfeasible: Buscar inviables
     milestones:
       index:
+        table_id: "ID"
         table_title: "Título"
         table_description: "Descripción"
         table_publication_date: "Fecha de publicación"
@@ -232,9 +257,13 @@ es-AR:
         image: "Imagen"
         show_image: "Mostrar imagen"
         documents: "Documentos"
+      form:
+        add_language: Agregar lenguaje
+        remove_language: Remover lenguaje
       new:
         creating: Crear hito
         date: Fecha
+        description: Descripción
       edit:
         title: Editar hito
       create:
@@ -279,6 +308,7 @@ es-AR:
         user: Usuario
         no_hidden_users: No hay uusarios bloqueados.
       show:
+        email: 'Correo:'
         hidden_at: 'Bloqueado:'
         registered_at: 'Fecha de alta:'
         title: Actividad del usuario (%{user})
@@ -295,10 +325,14 @@ es-AR:
         edit:
           back: Volver
           submit_button: Guardar cambios
+        errors:
+          form:
+            error: Error
         form:
           enabled: Habilitado
           process: Proceso
           debate_phase: Fase previa
+          allegations_phase: Fase de redacción
           proposals_phase: Fase de propuestas
           start: Inicio
           end: Fin
@@ -330,6 +364,8 @@ es-AR:
           status_planned: Próximamente
         subnav:
           info: Información
+          draft_texts: Redacción
+          questions: Debate
           proposals: Propuestas
       proposals:
         index:
@@ -351,6 +387,9 @@ es-AR:
           back: Volver
           submit_button: Guardar cambios
           warning: Ojo, has editado el texto. Para conservar de forma permanente los cambios, no te olvides de hacer click en Guardar.
+        errors:
+          form:
+            error: Error
         form:
           title_html: 'Editando <span class="strong">%{draft_version_title}</span> del proceso <span class="strong">%{process_title}</span>'
           launch_text_editor: Lanzar editor de texto
@@ -395,9 +434,15 @@ es-AR:
           back: Volver
           title: "Editar “%{question_title}”"
           submit_button: Guardar cambios
+        errors:
+          form:
+            error: Error
         form:
           add_option: +Añadir respuesta cerrada
+          title: Pregunta
+          title_placeholder: Agregar pregunta
           value_placeholder: Escribe una respuesta cerrada
+          question_options: "Posibles respuestas ( opcional, respuestas abiertas por defecto)"
         index:
           back: Volver
           title: Preguntas asociadas a este proceso
@@ -418,6 +463,7 @@ es-AR:
       index:
         title: Gestores
         name: Nombre
+        email: Correo
         no_managers: No hay gestores.
       manager:
         add: Añadir como Gestor
@@ -428,6 +474,7 @@ es-AR:
       activity: Actividad de moderadores
       admin: Menú de administración
       banner: Gestionar banners
+      poll_questions: Preguntas
       proposals_topics: Temas de propuestas
       budgets: Presupuestos participativos
       geozones: Gestionar distritos
@@ -438,6 +485,9 @@ es-AR:
       administrators: Administradores
       managers: Gestores
       moderators: Moderadores
+      emails: Envio de correos
+      newsletters: Noticias
+      emails_download: Bajando correos
       valuators: Evaluadores
       poll_officers: Presidentes de mesa
       polls: Votaciones
