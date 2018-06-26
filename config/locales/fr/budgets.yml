@@ -30,6 +30,7 @@ fr:
         unselected: Voir les investissements non-sélectionnés pour la phase de vote
     phase:
       drafting: Brouillon (non visible du public)
+      informing: Information
       accepting: Présentation des projets
       reviewing: Examen des projets
       selecting: Sélection des projets
