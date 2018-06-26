@@ -6,6 +6,12 @@ it:
     help:
       title: "%{org} è una piattaforma di partecipazione cittadina"
       subtitle: "In %{org} è possibile fare proposte, votare nelle consultazioni cittadine, proporre progetti a bilancio partecipativo, decidere in materia di regolamentazioni municipali e dare inizio a dibattiti per scambiarsi opinioni con gli altri."
+      guide: "Questa guida spiega a cosa serve e come funziona ciascuna sezione di %{org}."
+      menu:
+        debates: "Dibattiti"
+        proposals: "Proposte"
+        budgets: "Bilanci partecipativi"
+        polls: "Sondaggi"
     titles:
       conditions: Termini di utilizzo
     verify:
