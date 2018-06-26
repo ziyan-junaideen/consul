@@ -328,13 +328,19 @@ sv:
       geozone: Verksamhetsområde
       proposal_external_url: Länk till ytterligare dokumentation
       proposal_question: Frågeställning
+      proposal_question_example_html: "Ska sammanfattas i en ja- eller nej-fråga.<br>Till exempel: 'Ska vi göra om Drottninggatan till gågata?'"
+      proposal_responsible_name: Förslagslämnarens fullständiga namn
+      proposal_responsible_name_note: "(individuellt eller som representant för en grupp; kommer inte att visas offentligt)"
       proposal_summary: Förslags sammanfattning
       proposal_summary_note: "(högst 200 tecken)"
       proposal_text: Förslags text
       proposal_title: Förslags titel
       proposal_video_url: Länk till extern video
+      proposal_video_url_note: Lägg till en länk till YouTube eller Vimeo
       tag_category_label: "Kategorier"
+      tags_instructions: "Lägg till ämnesområden till förslaget. Du kan välja mellan de föreslagna kategorierna eller lägga till dina egna"
       tags_label: Taggar
+      tags_placeholder: "Skriv de ämnesområden du vill använda, avgränsade med komma (',')"
       map_location: "Kartposition"
       map_remove_marker: "Ta bort kartmarkör"
     index:
@@ -437,18 +443,28 @@ sv:
     show:
       back: Tillbaka till omröstning
       comments_tab: Kommentarer
+      login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
       signin: Logga in
       signup: Registrera sig
+      cant_answer_verify_html: "Du måste %{verify_link} för att svara."
       verify_link: "verifiera ditt konto"
+      cant_answer_incoming: "Omröstningen har inte börjat än."
+      cant_answer_expired: "Omröstningen är avslutad."
+      cant_answer_wrong_geozone: "Den här frågan är inte tillgänglig i ditt geografiska område."
       more_info_title: "Mer information"
       documents: Dokument
       zoom_plus: Expandera bild
+      read_more: "Läs mer om %{answer}"
+      read_less: "Visa mindre om %{answer}"
+      participate_in_other_polls: Delta i andra omröstningar
       videos: "Extern video"
       info_menu: "Information"
+      stats_menu: "Deltagandestatistik"
       results_menu: "Omröstningsresultat"
       stats:
         title: "Deltagardata"
         total_participation: "Totalt antal deltagare"
+        total_votes: "Totalt antal röster"
         votes: "RÖSTER"
         web: "WEBB"
         booth: "VALSTATION"
