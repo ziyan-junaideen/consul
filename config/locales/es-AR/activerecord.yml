@@ -25,6 +25,9 @@ es-AR:
       administrator:
         one: "Administrador"
         other: "Administradores"
+      valuator_group:
+        one: "Grupo Valorador"
+        other: "Grupos Valoradores"
       manager:
         one: "Gestor"
         other: "Gestores"
@@ -43,6 +46,9 @@ es-AR:
       proposal:
         one: "Propuesta ciudadana"
         other: "Propuestas ciudadanas"
+      spending_proposal:
+        one: "Proyecto de Inversión"
+        other: "Proyectos de Inversiónes"
       site_customization/page:
         one: Página
         other: Páginas
@@ -141,6 +147,7 @@ es-AR:
         name: "Nombre de organización"
         responsible_name: "Persona responsable del colectivo"
       spending_proposal:
+        administrator_id: "Administrador"
         association_name: "Nombre de la asociación"
         description: "Descripción"
         external_url: "Enlace a documentación adicional"
@@ -166,9 +173,11 @@ es-AR:
         content: Contenido
         created_at: Creada
         subtitle: Subtítulo
+        slug: Ficha
         status: Estado
         title: Título
         updated_at: última actualización
+        more_info_flag: Mostrar en la página de ayuda
         print_content_flag: Botón de imprimir contenido
         locale: Idioma
       site_customization/image:
@@ -180,6 +189,7 @@ es-AR:
         body: Contenido
       legislation/process:
         title: Título del proceso
+        summary: Sumario
         description: En qué consiste
         additional_info: Información adicional
         start_date: Fecha de inicio del proceso
@@ -215,6 +225,19 @@ es-AR:
       poll/question/answer/video:
         title: Título
         url: Vídeo externo
+      newsletter:
+        segment_recipient: Destinatarios
+        subject: Tema
+        from: Desde
+        body: Contenido de correo
+      widget/card:
+        label: Etiqueta (opcional)
+        title: Título
+        description: Descripción
+        link_text: Texto del enlace
+        link_url: Enlace URL
+      widget/feed:
+        limit: Número de items
     errors:
       models:
         user:
@@ -234,6 +257,10 @@ es-AR:
             attachment:
               min_image_width: "La imagen debe tener al menos %{required_min_width}px de largo"
               min_image_height: "La imagen debe tener al menos %{required_min_height}px de alto"
+        newsletter:
+          attributes:
+            segment_recipient:
+              invalid: "El destinatario es inválido"
         map_location:
           attributes:
             map:
@@ -277,6 +304,10 @@ es-AR:
             image:
               image_width: "Debe tener %{required_width}px de ancho"
               image_height: "Debe tener %{required_height}px de alto"
+        comment:
+          attributes:
+            valuation:
+              cannot_comment_valuation: 'No puede comentar una valoración'
       messages:
         record_invalid: "Error de validación: %{errors}"
         restrict_dependent_destroy:
