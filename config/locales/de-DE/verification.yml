@@ -48,9 +48,14 @@ de:
         date_of_birth: Geburtsdatum
         document_number: Dokumentennummer
         document_number_help_title: Hilfe
+        document_number_help_text_html: '<strong>DNI</strong>: 12345678A<br> <strong>Pass</strong>: AAA000001<br> <strong>Personalausweis</strong>: X1234567P'
+        document_type:
+          passport: Pass
+          spanish_id: Personalausweis
         document_type_label: Dokumentenart
-        error_not_allowed_age: Sie haben nicht das erforderliche Alter um teilzunehmen
-        error_not_allowed_postal_code: Zur Verifizierung müssen Sie sich registrieren.
+        error_not_allowed_age: Sie erfüllen nicht das erforderliche Alter um teilnehmenzu können
+        error_not_allowed_postal_code: Für die Verifizierung müssen Sie registriert sein.
+        error_verifying_census: Das Meldeamt konnte ihre Daten nicht verifizieren. Bitte bestätigen Sie, dass ihre Meldedaten korrekt sind, indem Sie das Amt persönlich oder telefonisch kontaktieren %{offices}.
         postal_code: Postleitzahl
         postal_code_note: Sie müssen sich registrieren, um Ihr Benutzerkonto zu verifizieren
         title: Wohnsitz bestätigen
