@@ -161,6 +161,7 @@ es-AR:
           unfeasible: Inviable
           max_per_heading: Máx. soportado por partida
           winners: Ganadoras
+          one_filter_html: "Filtros actuales aplicados:<b><em>%{filter}</em></b>"
         download_current_selection: "Descargar selección actual"
         no_budget_investments: "No hay proyectos de inversión."
         title: Propuestas de inversión
