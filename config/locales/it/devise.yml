@@ -49,4 +49,5 @@ it:
       signed_out: "Sei stato disconnesso correttamente."
       already_signed_out: "Sei stato disconnesso correttamente."
     unlocks:
-      send_instructions: "Tra qualche minuto, riceverai una email contenente le istruzioni per sbloccare il tuo account."
+      send_instructions: "Tra qualche minuto riceverai una email contenente le istruzioni per sbloccare il tuo account."
+      send_paranoid_instructions: "Se disponi di un account, tra qualche minuto riceverai una email contenente le istruzioni per sbloccarlo."
