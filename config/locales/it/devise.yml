@@ -41,3 +41,12 @@ it:
       signed_up: "Benvenuto! Sei stato autenticato."
       signed_up_but_inactive: "La registrazione è avvenuta con successo, ma non è stato possibile eseguire il log in perché l’account non è ancora stato attivato."
       signed_up_but_locked: "La registrazione è avvenuta con successo, ma non è stato possibile eseguire il log in perché l’account è bloccato."
+      signed_up_but_unconfirmed: "Ti è stato inviato un messaggio contenente un link di verifica. Per favore, clicca sul link per attivare il tuo account."
+      update_needs_confirmation: "Il tuo account è stato aggiornato correttamente; tuttavia, abbiamo bisogno di verificare il tuo nuovo indirizzo email. Per favore, controlla la tua casella di posta e clicca sul link per completare la conferma del nuovo indirizzo email."
+      updated: "Il tuo account è stato aggiornato con successo."
+    sessions:
+      signed_in: "Ti sei connesso correttamente."
+      signed_out: "Sei stato disconnesso correttamente."
+      already_signed_out: "Sei stato disconnesso correttamente."
+    unlocks:
+      send_instructions: "Tra qualche minuto, riceverai una email contenente le istruzioni per sbloccare il tuo account."
