@@ -462,22 +462,27 @@ sv:
     all: "Alla"
     no_dates: "inget datum har tilldelats"
     dates: "Från %{open_at} till %{closed_at}"
+    final_date: "Slutgiltigt resultat"
     index:
       filters:
         current: "Pågående"
         incoming: "Inkommande"
+        expired: "Avslutad"
       title: "Omröstningar"
       participate_button: "Delta i denna omröstning"
       participate_button_incoming: "Mer information"
       participate_button_expired: "Omröstningen är slut"
       no_geozone_restricted: "Hela staden"
       geozone_restricted: "Distrikter"
+      geozone_info: "Öppen för invånare från: "
+      already_answer: "Du har redan deltagit i den här omröstningen"
       section_header:
         icon_alt: Omröstnings ikon
         title: Omröstning
         help: Hjälp om omröstning
       section_footer:
         title: Hjälp om omröstning
+        description: Registrera dig för att kunna rösta på medborgarförslag och förslag från staden. Bli direkt delaktig i lokala beslut.
     show:
       back: Tillbaka till omröstning
       comments_tab: Kommentarer
