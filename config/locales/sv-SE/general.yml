@@ -431,6 +431,7 @@ sv:
       supports_necessary: "behöver %{number} röster"
       total_percent: 100%
       archived: "Förslaget har arkiverats och kan inte längre stödjas."
+      successful: "Förslaget har fått tillräckligt stort stöd och kommer att gå vidare till %{voting}."
       voting: "nästa omröstning"
     show:
       author_deleted: Användare borttagen
@@ -441,6 +442,8 @@ sv:
         other: "%{count} kommentarer"
       comments_tab: Kommentarer
       edit_proposal_link: Redigera
+      flag: Förslaget har markerats som olämpligt av flera användare.
+      login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
       notifications_tab: Notiser
       share: Dela
       send_notification: Skicka notis
