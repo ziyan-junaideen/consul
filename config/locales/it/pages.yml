@@ -80,9 +80,12 @@ it:
     titles:
       accessibility: Accessibilità
       conditions: Termini di utilizzo
+      help: "Cos’é %{org}? - Partecipazione cittadina"
+      privacy: Informativa sulla privacy
     verify:
       code: Codice che hai ricevuto nella lettera
       email: E-mail
+      info: 'Per verificare il tuo account inserisci i dati di accesso:'
       info_code: 'Ora introduci il codice che hai ricevuto nella lettera:'
       password: Password
       submit: Verificare la mia utenza
