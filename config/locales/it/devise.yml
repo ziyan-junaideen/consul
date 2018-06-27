@@ -57,6 +57,7 @@ it:
       already_confirmed: "Hai già eseguito questa verifica; per favore, prova ad eseguire il log in."
       confirmation_period_expired: "È necessario provvedere alla verifica entro %{period}; per favore, esegui nuovamente la richiesta."
       not_found: "non reperibile."
+      not_locked: "non è stato bloccato."
       not_saved:
         one: "1 errore ha impedito a questa %{resource} di essere salvata. Si prega di verificare i campi contrassegnati per capire come correggerli:"
         other: "%{count} errori hanno impedito a questa %{resource} di essere salvata. Si prega di verificare i campi contrassegnati per capire come correggerli:"
