@@ -118,7 +118,7 @@ sv:
       model_invalid: "Kontrollfel: %{errors}"
       not_a_number: är inte ett nummer
       not_an_integer: måste vara ett heltal
-      odd: måste vara udda
+      odd: måste vara ett udda tal
       required: måste finnas
       taken: används redan
       too_long:
