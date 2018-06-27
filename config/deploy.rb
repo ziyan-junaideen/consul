@@ -67,3 +67,10 @@ task :refresh_sitemap do
     end
   end
 end
+
+task :restart_unicorn do
+  on roles(:app) do
+    execute "kill -QUIT `cat /home/deploy/consul/shared/pids/unicorn.pid`"
+    execute "cd /home/deploy/consul/current && /home/deploy/.rvm/gems/ruby-2.3.2/wrappers/unicorn -c config/unicorn.rb -E production -D"
+  end
+end
