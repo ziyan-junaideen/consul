@@ -37,6 +37,9 @@ it:
         phase_1_html: "Da gennaio e fino ai primi di marzo, chi è registrato su %{org} può <strong>presentare</strong>."
         phase_2_html: "In marzo, i proponenti devono raccogliere sostenitori nella fase di <strong>preselezione</strong>."
         phase_3_html: "Tra aprile e i primi di maggio, gli esperti del <strong>Consiglio Comunale valutano</strong> i progetti a seconda del sostegno ricevuto da ciascuno e ne controllano la fattibilità."
+        phase_4_html: "Infine, tra maggio e giugno tutti i cittadini possono <strong>votare</strong> i progetti che ritengono più interessanti."
+        phase_5_html: "Il Consiglio Comunale inizierà a realizzare i progetti vincitori a partire dall’approvazione del bilancio, l’anno successivo."
+        image_alt: "Diverse fasi del bilancio partecipativo"
     titles:
       conditions: Termini di utilizzo
     verify:
