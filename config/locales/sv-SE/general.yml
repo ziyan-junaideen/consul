@@ -579,6 +579,13 @@ sv:
       budget_investment:
         create:
           notice_html: "Du följer nu det här investeringsprojektet! </br> Vi meddelar dig om alla ändringar så att du kan hålla dig uppdaterad."
+        destroy:
+          notice_html: "Du har slutat följa det här investeringsprojektet! </br> Vi kommer inte längre meddela dig om ändringar för det här projektet."
+      proposal:
+        create:
+          notice_html: "Du följer nu det här medborgarförslaget! </br> Vi meddelar dig om alla ändringar så att du kan hålla dig uppdaterad."
+        destroy:
+          notice_html: "Du har slutat följa det här medborgarförslaget! </br> Vi kommer inte längre meddela dig om ändringar för det här förslaget."
     hide: Göm
     print:
       print_button: Skriv ut denna info
@@ -586,12 +593,25 @@ sv:
     show: Visa
     suggest:
       debate:
+        found:
+          one: "Det finns redan en debatt om '%{query}'. Du kan delta i den istället för att starta en ny debatt."
+          other: "Det finns redan debatter om '%{query}'. Du kan delta i dem istället för att starta en ny debatt."
+        message: "Du visar %{limit} av %{count} debatter som innehåller '%{query} '"
         see_all: "Se alla"
       budget_investment:
+        found:
+          one: "Det finns redan ett projekt om '%{query}'. Du kan delta i det istället för att skapa ett nytt projekt."
+          other: "Det finns redan projekt om '%{query}'. Du kan delta i dem istället för att skapa ett nytt projekt."
+        message: "Du visar %{limit} av %{count} projekt som innehåller '%{query} '"
         see_all: "Se alla"
       proposal:
+        found:
+          one: "Det finns redan ett förslag om '%{query}'. Du kan delta i det istället för att skapa ett nytt förslag"
+          other: "Det finns redan förslag om '%{query}'. Du kan delta i dem istället för att skapa ett nytt förslag"
+        message: "Du visar %{limit} av %{count} förslag som innehåller '%{query} '"
         see_all: "Se alla"
     tags_cloud:
+      tags: Populära
       districts: "Distrikter"
       districts_list: "Distriktlist"
       categories: "Kategorier"
@@ -601,11 +621,13 @@ sv:
     unfollow_entity: "Sluta följa %{entity}"
     outline:
       budget: Medborgarbudget
+      searcher: Sökmotor
     go_to_page: "Gå till sidan av "
     share: Dela
     orbit:
       previous_slide: Föregående sida
       next_slide: Nästa sida
+    documentation: Ytterligare dokumentation
     view_mode:
       title: Visningsmod
       cards: Kort
@@ -620,8 +642,11 @@ sv:
     instagram: "%{org} Instagram"
   spending_proposals:
     form:
+      association_name_label: 'Namn på grupp eller organisation som förslaget kommer från'
       association_name: 'Föreningens namn'
       description: Beskrivning
+      external_url: Länk till ytterligare dokumentation
+      geozone: Användningsområde
       submit_buttons:
         create: Skapa
         new: Skapa
