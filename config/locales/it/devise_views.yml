@@ -15,3 +15,38 @@ it:
     mailer:
       confirmation_instructions:
         confirm_link: Confermare il mio account
+        text: 'È possibile confermare l’account di posta elettronica attraverso il seguente link:'
+        title: Benvenuti nel Portale per l’Amministrazione Aperta
+        welcome: Benvenuti
+      reset_password_instructions:
+        change_link: Cambiare la password
+        hello: Ciao
+        ignore_text: Se non hai richiesto una modifica della password, ignora questa email.
+        info_text: La password non verrà cambiata a meno che non si acceda al link e la si modifichi.
+        text: 'Abbiamo ricevuto una richiesta di modifica della password. È possibile farlo attraverso il seguente link:'
+        title: Cambiare la password
+      unlock_instructions:
+        hello: Ciao
+        info_text: Il tuo account è stato bloccato a causa di un numero eccessivo di tentativi di accesso non riusciti.
+        instructions_text: 'Si prega di cliccare questo link per sbloccare l’account:'
+        title: Il tuo account è stato bloccato
+        unlock_link: Sbloccare l’account
+    menu:
+      login_items:
+        login: Accedere
+        logout: Uscire
+        signup: Registrarsi
+    organizations:
+      registrations:
+        new:
+          email_label: E-mail
+          organization_name_label: Nome dell'organizzazione
+          password_confirmation_label: Conferma la password
+          password_label: Password
+          phone_number_label: Numero di telefono
+          responsible_name_label: Nome e cognome della persona responsabile del collettivo
+          responsible_name_note: Si tratta del rappresentante dell’associazione o del collettivo in nome dei quali vengono presentate le proposte
+          submit: Registrarsi
+          title: Registrarsi come un'organizzazione o collettivo
+        success:
+          back_to_index: Ho capito; torna alla pagina principale
