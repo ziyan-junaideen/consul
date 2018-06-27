@@ -70,6 +70,7 @@ sv:
           help: Hjälp med lagstiftande processer
         section_footer:
           title: Hjälp med lagstiftande processer
+          description: Delta i debatter och processer inför beslut i staden. Dina åsikter kommer att tas i beaktande av kommunfullmäktige.
       phase_not_open:
         not_open: Fasen är inte öppen ännu
       phase_empty:
@@ -81,10 +82,12 @@ sv:
         key_dates: Viktiga datum
         debate_dates: Debatt
         draft_publication_date: Publiceringsdatum för utkast
+        allegations_dates: Påståenden
         proposals_dates: Förslag
     questions:
       comments:
         comment_button: Publicera svar
+        comments_title: Öppna svar
         comments_closed: Avslutad fas
         form:
           leave_comment: Lämna ditt svar
@@ -103,10 +106,14 @@ sv:
         phase_not_open: Denna fas är inte öppen
         signin: Logga in
         signup: Registrera sig
+        unauthenticated: Du behöver %{signin} eller %{signup} för att kunna delta.
+        verified_only: Endast verifierade användare kan delta %{verify_account}.
         verify_account: verifiera ditt konto
         debate_phase_not_open: Diskussionsfasen har avslutats, och svar kan inte längre tas emot
     shared:
       share: Dela
+      share_comment: Kommentera %{version_name} från processen %{process_name}
     proposals:
       form:
         tags_label: "Kategorier"
+      not_verified: "Rösta på förslag %{verify_account}."
