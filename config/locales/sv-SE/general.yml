@@ -746,6 +746,8 @@ sv:
           one: 1 Följer
           other: "%{count} Följer"
       no_activity: Användaren har ingen offentlig aktivitet
+      no_private_messages: "Användaren tar inte emot privata meddelanden."
+      private_activity: Användarens aktivitetslista är privat.
       send_private_message: "Skicka privat meddelande"
     proposals:
       send_notification: "Skicka notis"
