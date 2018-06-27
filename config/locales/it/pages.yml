@@ -20,6 +20,15 @@ it:
         link: "dibattiti cittadini"
         feature_html: "Puoi dare inizio a dibattiti, commentare e valutarli con <strong>Sono d’accordo</strong> o <strong>Non sono d’accordo</strong>. Per farlo occorre %{link}."
         feature_link: "registratevi su %{org}"
+        image_alt: "Pulsanti per valutare i dibattiti"
+        figcaption: 'Pulsanti "Sono d''accordo" e "Non sono d''accordo" per valutare i dibattiti.'
+      proposals:
+        title: "Proposte"
+        description: "Nella sezione %{link} è possibile avanzare proposte da far realizzare dal Consiglio Comunale. Le proposte necessitano di sostegno e, se viene raggiunto un sostegno sufficiente, vengono ammesse al voto pubblico. Le proposte così approvate dal voto dei cittadini sono accettate dal Consiglio Comunale e realizzate."
+        link: "proposte dei cittadini"
+        feature_html: "Per creare una proposta è necessario registrarsi su %{org}. Le proposte che raccolgono sul sito il sostegno di almeno l’1% degli aventi diritto al voto (%{supports} dei residenti maggiori di 16 anni) accedono al voto. Per sostenere le proposte è necessario verificare il proprio account."
+        image_alt: "Pulsante per sostenere una proposta"
+        figcaption_html: 'Pulsante per “Sostenere” una proposta.<br>Quando raggiunge il numero di sostegni necessario, andrà al voto.'
     titles:
       conditions: Termini di utilizzo
     verify:
