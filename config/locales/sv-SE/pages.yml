@@ -28,9 +28,16 @@ sv:
         link: "medborgarförslag"
         feature_html: "För att skapa ett förslag behöver du registrera på %{org}. De förslag som får stöd av för 1% av de röstberättigade invånarna (%{supports} är för personer över 16 år och registrerade på webbplatsen) går vidare till omröstning. För att kunna stödja förslag behöver du ha ett verifierat konto."
         image_alt: "Stöd ett förslag knapp"
+        figcaption_html: 'Knapp för att "Stödja" ett förslag.<br>När det fått tillräckligt med stöd går det vidare till omröstning.'
       budgets:
         title: "Medborgarbudget"
+        description: "I %{link}-delen beslutar invånarna om hur delar av stadens budget ska användas."
         link: "medborgarbudgetar"
+        feature: "Varje år skapar, stödjer och röstar medborgarna på projekt. De projekt som fått mest stöd bekostas av stadens budget."
+        phase_1_html: "Från januari till början av mars kan alla som är registrerade på %{org} <strong>föreslå projekt</strong>."
+        phase_2_html: "Under mars månad samlar förslagslämnarna stöd i en <strong>första urvalsprocess</strong>."
+        phase_3_html: "Från april till början av maj <strong>rangordnar</strong> experter från staden projekten efter hur mycket stöd de fått, och bedömer om de är genomförbara."
+        phase_4_html: "Från maj till juni kan medborgare slutligen <strong>rösta</strong> på de projekt de gillar bäst."
         image_alt: "Olika faser av en medborgarbudget"
         figcaption_html: '"Stöd" och "Omröstning" faser av en medborgarbudget.'
       polls:
