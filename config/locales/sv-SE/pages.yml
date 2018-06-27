@@ -16,13 +16,17 @@ sv:
         processes: "Processer"
       debates:
         title: "Debatter"
+        description: "I %{link}-delen kan du presentera dina åsikter och diskutera frågor som rör staden. Det är också en plats för att utveckla idéer som kan tas vidare till andra delar av %{org} och leda till konkreta åtgärder från kommunfullmäktige."
         link: "debatter"
+        feature_html: "Du kan skriva debattinlägg och kommentera och utvärdera andras inlägg med <strong>Jag håller med</strong> eller <strong>Jag håller inte med</strong>. För att göra det behöver du %{link}."
         feature_link: "registrera i %{org}"
         image_alt: "Knappar för att betygsätta diskussioner"
         figcaption: '"Jag håller med" och "Jag håller inte med" knappar för att betygsätta debatter.'
       proposals:
         title: "Förslag"
+        description: "I %{link}-delen kan du skriva förslag som du vill att kommunfullmäktige ska genomföra. Förslagen behöver få tillräckligt med stöd för att gå vidare till omröstning. De förslag som vinner en omröstningen kommer att genomföras av kommunfullmäktige."
         link: "medborgarförslag"
+        feature_html: "För att skapa ett förslag behöver du registrera på %{org}. De förslag som får stöd av för 1% av de röstberättigade invånarna (%{supports} är för personer över 16 år och registrerade på webbplatsen) går vidare till omröstning. För att kunna stödja förslag behöver du ha ett verifierat konto."
         image_alt: "Stöd ett förslag knapp"
       budgets:
         title: "Medborgarbudget"
