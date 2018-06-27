@@ -342,7 +342,9 @@ sv:
       tags_label: Taggar
       tags_placeholder: "Skriv de ämnesområden du vill använda, avgränsade med komma (',')"
       map_location: "Kartposition"
+      map_location_instructions: "Navigera till platsen på kartan och placera markören."
       map_remove_marker: "Ta bort kartmarkör"
+      map_skip_checkbox: "Det finns ingen specifik geografisk plats för förslaget, eller jag känner inte till platsen."
     index:
       featured_proposals: Stjärnmarkerade
       filter_topic:
@@ -356,6 +358,11 @@ sv:
         relevance: relevans
         archival_date: arkiverad
         recommendations: rekommendationer
+      recommendations:
+        without_results: Finns det inga förslag som rör dina intressen
+        without_interests: Följ förslag så vi kan ge dig rekommendationer
+      retired_proposals: Förslag som tagits tillbaka
+      retired_proposals_link: "Förslag som tagits tillbaka av förslagslämnaren"
       retired_links:
         all: Alla
         duplicated: Duplicerad
@@ -367,10 +374,15 @@ sv:
         button: Sök
         placeholder: Sök förslag...
         title: Sök
+      search_results_html:
+        one: " innehåller <strong>'%{search_term}'</strong>"
+        other: " innehåller <strong>'%{search_term}'</strong>"
       select_order: Sortera efter
+      select_order_long: 'Du visar förslagen'
       start_proposal: Skapa förslag
       title: Förslag
       top: Veckans topp
+      top_link_proposals: Populäraste förslagen från varje kategori
       section_header:
         icon_alt: Förslag-ikonen
         title: Förslag
