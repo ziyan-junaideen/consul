@@ -1,9 +1,11 @@
 sv:
   pages:
+    census_terms: För att verifiera kontot måste du vara 16 år eller äldre och registrera dig med ovan angivna uppgifter, vilka kommer att granskas. Genom att godkänna verifieringsprocessen bekräftar du att information är korrekt, inklusive de kontaktuppgifter som angetts. Uppgifterna kommer att införlivas och behandlas i ett register enligt användningsvillkoren för portalen.
     conditions: Regler och villkor för användning
     general_terms: Regler och villkor
     help:
       title: "%{org} är en plattform för medborgardeltagande"
+      subtitle: "På %{org} kan du lägga förslag, delta i omröstningar, ge förslag till medborgarbudgetar, besluta i lokala frågor och debattera med andra."
       guide: "Den här guiden förklarar vad är alla avsnitt av %{org} och hur de fungerar."
       menu:
         debates: "Debatter"
