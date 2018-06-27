@@ -45,7 +45,11 @@ sv:
         skip_verification: Hoppa över användarverifiering
       community: Diskussion om förslag och investeringar
       map: Geografisk plats för förslag och investeringar
+      allow_images: Tillåt uppladdning och visning av bilder
+      allow_attached_documents: Tillåt uppladdning och visning av dokument
+      guides: Instruktioner för att skapa förslag och investeringsprojekt
       public_stats: Offentliga statistiker
+    related_content_score_threshold: Nivå för överensstämmelse med relaterat innehåll
     map_latitude: Latitud
     map_longitude: Longitud
     map_zoom: Zooma
