@@ -389,6 +389,7 @@ sv:
         help: Hjälp om förslag
       section_footer:
         title: Hjälp om förslag
+        description: Skriv ett medborgarförslag. Om det får tillräckligt med stöd går det till omröstning, så att alla medborgare kan bestämma om sin stad.
     new:
       form:
         submit_button: Skapa förslag
