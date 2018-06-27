@@ -3,3 +3,15 @@ it:
     confirmations:
       new:
         email_label: E-mail
+        submit: Inviare nuovamente le istruzioni
+        title: Inviare nuovamente le istruzioni di conferma
+      show:
+        instructions_html: Stiamo confermando l'account con e-mail %{email}
+        new_password_confirmation_label: Reintrodurre la password
+        new_password_label: Nuova password
+        please_set_password: Si prega di scegliere la nuova pasword (che permetterà di accedere con l'e-mail di cui sopra)
+        submit: Confermare
+        title: Confermare il mio account
+    mailer:
+      confirmation_instructions:
+        confirm_link: Confermare il mio account
