@@ -40,6 +40,7 @@ sv:
         select_draft_version: Välj utkast
         select_version_submit: se
         updated_at: uppdaterad den %{date}
+        see_changes: visa sammanfattning av ändringar
         see_comments: Se alla kommentarer
         text_toc: Index
         text_body: Text
@@ -48,8 +49,12 @@ sv:
       header:
         additional_info: Ytterligare information
         description: Beskrivning
+        more_info: Mer information
       proposals:
         empty_proposals: Det finns inga förslag
+      debate:
+        empty_questions: Det finns inga frågor
+        participate: Delta i debatten
       index:
         filter: Filter
         filters:
@@ -57,9 +62,14 @@ sv:
           next: Nästa
           past: Tidigare
         no_open_processes: Det finns inga öppna processer
+        no_next_processes: Inga planerade processer
         no_past_processes: Det finns inga avslutade processer
         section_header:
+          icon_alt: Ikon för lagstiftande process
           title: Lagstiftningsprocesser
+          help: Hjälp med lagstiftande processer
+        section_footer:
+          title: Hjälp med lagstiftande processer
       phase_not_open:
         not_open: Fasen är inte öppen ännu
       phase_empty:
