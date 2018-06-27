@@ -67,11 +67,14 @@ sv:
         undefined_feasible: Väntande
         feasible_explanation_html: Förklaring av genomförbarhet
         valuation_finished: Bedömning avslutad
+        valuation_finished_alert: "Är du säker på att du vill markera rapporten som färdig? Efter det kan du inte längre göra ändringar."
+        not_feasible_alert: "Förslagslämnaren får ett e-postmeddelande om varför projektet inte är genomförbart."
         duration_html: Tidsram
         save: Spara ändringar
       notice:
         valuate: "Uppdaterad rapport"
       valuation_comments: Bedomningskommentarer
+      not_in_valuating_phase: Investeringar kan endast vara värderas när budgeten är i värderingfasen
     spending_proposals:
       index:
         geozone_filter_all: Alla stadsdelar
