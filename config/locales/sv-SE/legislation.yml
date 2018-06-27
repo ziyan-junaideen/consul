@@ -35,6 +35,8 @@ sv:
         seeing_changelog_version: Sammanfattning av ändringar
         see_text: Se utkast
       show:
+        loading_comments: Laddar kommentarer
+        seeing_version: Du visar ett utkast
         select_draft_version: Välj utkast
         select_version_submit: se
         updated_at: uppdaterad den %{date}
