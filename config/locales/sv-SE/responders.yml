@@ -9,12 +9,14 @@ sv:
         poll_booth: "Röstbåset har skapats."
         poll_question_answer: "Ditt svar har skapats"
         poll_question_answer_video: "Videon har skapats"
+        poll_question_answer_image: "Bilden har laddats upp"
         proposal: "Förslaget har skapats."
         proposal_notification: "Ditt meddelande har skickats."
         spending_proposal: "Investeringsförslaget har skapats. Du kan nå det från %{activity}"
         budget_investment: "Investeringsförslaget har skapats."
         signature_sheet: "Signaturarket har skapats"
         topic: "Temat har skapats."
+        valuator_group: "Värderingsgruppen har skapats"
       save_changes:
         notice: Ändringarna har sparats
       update:
@@ -26,9 +28,11 @@ sv:
         spending_proposal: "Investeringsprojektet har uppdaterats."
         budget_investment: "Investeringsprojektet har uppdaterats."
         topic: "Temat har uppdaterats."
+        valuator_group: "Värderingsgruppen har uppdaterats"
       destroy:
         spending_proposal: "Investeringsförslaget har raderats."
         budget_investment: "Investeringsprojektet har raderats."
         error: "Kunde inte radera"
         topic: "Temat har raderats."
         poll_question_answer_video: "Videosvaret har raderats."
+        valuator_group: "Värderingsgruppen har tagits bort"
