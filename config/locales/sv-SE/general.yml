@@ -445,8 +445,12 @@ sv:
       flag: Förslaget har markerats som olämpligt av flera användare.
       login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
       notifications_tab: Notiser
+      retired_warning: "Förslagslämnaren vill inte längre att förslaget ska samla stöd."
+      retired_warning_link_to_explanation: Läs beskrivningen innan du röstar på förslaget.
+      retired: Förslag som tagits tillbaka av förslagslämnaren
       share: Dela
       send_notification: Skicka notis
+      no_notifications: "Förslaget har inte några meddelanden."
       embed_video_title: "Video om %{proposal}"
       title_external_url: "Ytterligare dokumentation"
       title_video_url: "Extern video"
@@ -456,6 +460,8 @@ sv:
         submit_button: Spara ändringar
   polls:
     all: "Alla"
+    no_dates: "inget datum har tilldelats"
+    dates: "Från %{open_at} till %{closed_at}"
     index:
       filters:
         current: "Pågående"
