@@ -40,6 +40,14 @@ it:
         phase_4_html: "Infine, tra maggio e giugno tutti i cittadini possono <strong>votare</strong> i progetti che ritengono più interessanti."
         phase_5_html: "Il Consiglio Comunale inizierà a realizzare i progetti vincitori a partire dall’approvazione del bilancio, l’anno successivo."
         image_alt: "Diverse fasi del bilancio partecipativo"
+        figcaption_html: 'Fasi di “Sostegno” e “Voto” dei bilanci partecipativi.'
+      polls:
+        title: "Sondaggi"
+        description: "La sezione %{link} si attiva ogni volta che una proposta raggiunge l’1% del sostegno e va al voto o quando il Consiglio Comunale pone una questione sulla quale i cittadini debbano decidere."
+        link: "sondaggi"
+        feature_1: "Per partecipare al voto occorre %{link} e verificare l’account."
+        feature_1_link: "registrarsi su %{org_name}"
+        feature_2: "Tutti i residenti maggiori di 16 anni possono votare."
     titles:
       conditions: Termini di utilizzo
     verify:
