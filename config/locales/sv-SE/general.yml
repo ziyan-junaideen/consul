@@ -483,8 +483,14 @@ sv:
       section_footer:
         title: Hjälp om omröstning
         description: Registrera dig för att kunna rösta på medborgarförslag och förslag från staden. Bli direkt delaktig i lokala beslut.
+        help_text_1: "Förslag som får stöd 1% av invånarna går vidare till omröstning. Även förslag från kommunfullmäktige kan gå till omröstning."
+        help_text_2: "För att delta i nästa omröstning behöver du registrera dig på %{org} och verifiera ditt konto. Alla stadens invånare över 16 får rösta. Resultatet av omröstningen är bindande för kommunfullmäktige."
+      no_polls: "Det finns inga pågående omröstningar."
     show:
+      already_voted_in_booth: "Du har redan röstat i en fysisk valstation. Du kan inte rösta igen."
+      already_voted_in_web: "Du har redan deltagit i den här omröstningen. Om du röstar igen kommer din föregående röst att skrivas över."
       back: Tillbaka till omröstning
+      cant_answer_not_logged_in: "Du behöver %{signin} eller %{signup} för att kunna delta."
       comments_tab: Kommentarer
       login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
       signin: Logga in
@@ -523,12 +529,14 @@ sv:
     show:
       vote_answer: "Rösta för %{answer}"
       voted: "Du har röstat %{answer}"
+      voted_token: "Skriv ner den här verifieringskoden för att kunna kontrollera din röst i det slutgiltiga resultatet:"
   proposal_notifications:
     new:
       title: "Skicka meddelande"
       title_label: "Titel"
       body_label: "Meddelande"
       submit_button: "Skicka meddelande"
+      info_about_receivers_html: "Det här meddelandet kommer att skickas till <strong>%{count} personer</strong> och visas på %{proposal_page}.<br> Meddelanden skickas inte på en gång, utan som regelbundna e-postmeddelanden med sammanfattningar av förslagen."
       proposal_page: "förslagets sida"
     show:
       back: "Gå tillbaka till min aktivitet"
@@ -567,6 +575,10 @@ sv:
     follow: "Följ"
     following: "Följer"
     follow_entity: "Följ %{entity}"
+    followable:
+      budget_investment:
+        create:
+          notice_html: "Du följer nu det här investeringsprojektet! </br> Vi meddelar dig om alla ändringar så att du kan hålla dig uppdaterad."
     hide: Göm
     print:
       print_button: Skriv ut denna info
