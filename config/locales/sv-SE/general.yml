@@ -646,7 +646,7 @@ sv:
       association_name: 'Föreningens namn'
       description: Beskrivning
       external_url: Länk till ytterligare dokumentation
-      geozone: Användningsområde
+      geozone: Geografiskt område
       submit_buttons:
         create: Skapa
         new: Skapa
@@ -654,16 +654,25 @@ sv:
     index:
       title: Medborgarbudget
       unfeasible: Ogenomförbara investeringsprojekt
+      by_geozone: "Investeringsprojekt för område: %{geozone}"
       search_form:
         button: Sök
         placeholder: Investeringsprojekt...
         title: Sök
+      search_results:
+        one: " innehåller '%{search_term}'"
+        other: " innehåller '%{search_term}'"
       sidebar:
+        geozones: Geografiskt område
         feasibility: Genomförbarhet
         unfeasible: Ej genomförbart
       start_spending_proposal: Skapa ett investeringsprojekt
     new:
       more_info: Hur funkar medborgarbudgetar?
+      recommendation_one: Förslaget måste ge hänvisa till faktiska kostnader.
+      recommendation_three: Beskriv ditt förslag så detaljerat som möjligt, så att att de som granskar det förstår vad du menar.
+      recommendation_two: Förslag som förespråkar olagliga handlingar kommer att raderas.
+      recommendations_title: Så skapar du ett budgetförslag
       start_new: Skapa investeringsförslag
     show:
       author_deleted: Användare borttagen
@@ -672,6 +681,7 @@ sv:
     wrong_price_format: Endast heltal
     spending_proposal:
       spending_proposal: Investeringsprojekt
+      already_supported: Du stödjer redan det här projektet. Dela det!
       support: Stöd
       support_title: Stödja detta projekt
       supports:
@@ -690,18 +700,30 @@ sv:
       votes: Totalt antal röster
       verified_users: Verifierade användare
       unverified_users: Overifierade användare
+  unauthorized:
+    default: Du har inte behörighet att komma åt sidan.
+    manage:
+      all: "Du har inte behörighet att utföra åtgärden '%{action}' %{subject}."
   users:
     direct_messages:
       new:
         body_label: Meddelande
+        direct_messages_bloqued: "Användaren tar inte emot direkta meddelanden"
         submit_button: Skicka meddelande
+        title: Skicka ett privat meddelande till %{receiver}
         title_label: Titel
+        verified_only: För att skicka ett privat meddelande behöver du %{verify_account}
         verify_account: verifiera ditt konto
+        authenticate: Du behöver %{signin} eller %{signup} för att fortsätta.
         signin: logga in
         signup: registrera sig
+      show:
+        receiver: Meddelandet har skickats till %{receiver}
     show:
       deleted: Raderat
+      deleted_debate: Den här debatten har tagits bort
       deleted_proposal: Det här förslaget har tagits bort
+      deleted_budget_investment: Det här projektet har tagits bort
       proposals: Förslag
       debates: Debatter
       budget_investments: Budget investeringar
@@ -723,6 +745,7 @@ sv:
         follows:
           one: 1 Följer
           other: "%{count} Följer"
+      no_activity: Användaren har ingen offentlig aktivitet
       send_private_message: "Skicka privat meddelande"
     proposals:
       send_notification: "Skicka notis"
