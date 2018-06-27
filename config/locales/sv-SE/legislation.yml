@@ -3,6 +3,7 @@ sv:
     annotations:
       comments:
         see_all: Se alla
+        see_complete: Visa förklaring
         comments_count:
           one: "%{count} kommentar"
           other: "%{count} kommentarer"
@@ -13,6 +14,7 @@ sv:
         publish_comment: Publicera Commentar
       form:
         phase_not_open: Fasen är inte öppen
+        login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
         signin: Logga in
         signup: Registrera sig
       index:
@@ -30,6 +32,7 @@ sv:
     draft_versions:
       changes:
         title: Ändringar
+        seeing_changelog_version: Sammanfattning av ändringar
         see_text: Se utkast
       show:
         select_draft_version: Välj utkast
