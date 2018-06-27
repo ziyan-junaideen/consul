@@ -48,12 +48,22 @@ it:
     user_invite:
       ignore: "Se non hai richiesto questo invito non ti preoccupare, puoi ignorare questa email."
       text: "Grazie per la richiesta di adesione %{org}! Tra poco ti sarà possibile iniziare a decidere sui progetti della città, basta compilare il modulo qui sotto:"
+      thanks: "Grazie mille."
       title: "Benvenuto/a a %{org}"
       button: Completare la registrazione
+      subject: "Invito per %{org_name}"
     budget_investment_created:
+      subject: "Grazie per aver creato un investimento!"
+      title: "Grazie per aver creato un investimento!"
+      intro_html: "Ciao <strong>%{author}</strong>,"
+      text_html: "Grazie per aver creato il tuo investimento <strong>%{investment}</strong> per i Bilanci Partecipativi <strong>%{budget}</strong>."
+      follow_html: "Ti informeremo sugli sviluppi del procedimento, che puoi seguire anche su <strong>%{link}</strong>."
       follow_link: "Bilanci partecipativi"
       sincerely: "Cordiali saluti"
+      signatory: "DIPARTIMENTO PER LA PARTECIPAZIONE PUBBLICA"
       share: "Condividi il tuo progetto"
+    budget_investment_unfeasible:
+      hi: "Gentile utente,"
     budget_investment_selected:
       subject: "Il tuo progetto di investimento '%{code}' è stato selezionato"
       share: "Per iniziare a ottenere voti, condividi il tuo progetto di investimento sui social network. Solo così potrai vederlo realizzato!"
