@@ -38,10 +38,12 @@ sv:
         phase_2_html: "Under mars månad samlar förslagslämnarna stöd i en <strong>första urvalsprocess</strong>."
         phase_3_html: "Från april till början av maj <strong>rangordnar</strong> experter från staden projekten efter hur mycket stöd de fått, och bedömer om de är genomförbara."
         phase_4_html: "Från maj till juni kan medborgare slutligen <strong>rösta</strong> på de projekt de gillar bäst."
+        phase_5_html: "Från det att budgeten för kommande år godkänts börjar stadsfullmäktige genomföra de vinnande projekten."
         image_alt: "Olika faser av en medborgarbudget"
         figcaption_html: '"Stöd" och "Omröstning" faser av en medborgarbudget.'
       polls:
         title: "Omröstningar"
+        description: "%{link}-delen aktiveras varje gång ett förslag får 1% stöd och går vidare till omröstning, eller när kommunfullmäktige lämnar ett förslag till omröstning."
         link: "omröstningar"
         feature_1: "För att delta i omröstningen måste du %{link} och verifiera ditt konto."
         feature_1_link: "registrera i %{org_name}"
@@ -49,7 +51,9 @@ sv:
         feature_3: "Resultaten av alla omröstningar är bindande för kommunfullmäktige."
       processes:
         title: "Processer"
+        description: "I %{link}-delen är medborgare med i processen att skriva och kommentera nya policydokument som rör staden och kan kommentera existerande dokument."
         link: "processer"
+        feature: "För att delta i processen behöver du %{sign_up} och följa %{link}-sidan för att se vilka dokument och policies som diskuteras."
         sign_up: "registrera dig i %{org}"
       faq:
         title: "Tekniska problem?"
