@@ -138,7 +138,7 @@ sv:
       info: Om du vill lägga ett förslag är det här fel avdelning, gå till %{info_link}.
       info_link: skapa nytt förslag
       more_info: Mer information
-      recommendation_four: Den här är ditt utrymme, ha det så roligt med det.
+      recommendation_four: Det här är din plats, du ska kunna trivas och göra din röst hörd här.
       recommendation_one: Använd inte versaler för diskussionstiteln eller för hela meningar. På internet anses detta skrika. Och gillar ingen att bli skriken på.
       recommendation_three: Hänsynslös kritik välkomnas. Det här utrymmet är till för diskussion och reflektion. Men vi rekommenderar att du ändå håller diskussionen sjysst och intelligent. Världen blir en bättre plats om vi alla tänker på det.
       recommendation_two: Debattinlägg eller kommentarer som förespråkar olagliga handlingar eller försöker sabotera diskussionen kommer att raderas. Allt annat är tillåtet.
@@ -398,12 +398,21 @@ sv:
         submit_button: Skapa förslag
       more_info: Hur fungerar medborgarförslag?
       recommendation_one: Använd inte versaler i förslagets titel eller i hela meningar i beskrivningen. På internet betyder det att skrika, och ingen gillar när folk skriker på dem.
+      recommendation_three: Det här är din plats, du ska kunna trivas och göra din röst hörd här.
+      recommendation_two: Förslag eller kommentarer som förespråkar olagliga handlingar eller försöker sabotera diskussionen kommer att raderas. Allt annat är tillåtet.
+      recommendations_title: Rekommendationer för att skriva förslag
       start_new: Skapa nytt förslag
+    notice:
+      retired: Förslag som dragits tillbaka
     proposal:
       created: "Du skapade ett förslag!"
       share:
+        guide: "Nu kan du dela förslaget så att folk kan börja stödja det."
+        edit: "Du kan ändra texten fram tills förslaget har delats."
         view_proposal: Inte nu, gå till mitt förslag
+      improve_info: "Få mer stöd genom att förbättra ditt förslag"
       improve_info_link: "Se mer information"
+      already_supported: Du stödjer redan det här förslaget. Dela det!
       comments:
         zero: Inga kommentarer
         one: 1 kommentar
@@ -419,7 +428,9 @@ sv:
         zero: Inga röster
         one: 1 röst
         other: "%{count} röster"
+      supports_necessary: "behöver %{number} röster"
       total_percent: 100%
+      archived: "Förslaget har arkiverats och kan inte längre stödjas."
       voting: "nästa omröstning"
     show:
       author_deleted: Användare borttagen
