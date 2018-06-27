@@ -390,9 +390,14 @@ sv:
       section_footer:
         title: Hjälp om förslag
         description: Skriv ett medborgarförslag. Om det får tillräckligt med stöd går det till omröstning, så att alla medborgare kan bestämma om sin stad.
+        help_text_1: "Medborgarförslagen är en möjlighet för grannar och föreningar att bestämma hur de vill att staden ska se ut. Vem som helst kan lämna ett förslag om en fråga som är viktigt för dem, och kommunen kommer sedan genomföra förslaget om det för tillräckligt med stöd för att gå till omröstning och vinna."
+        help_text_2: "Du behöver registrera dig på %{org} för att skapa ett förslag. Förslag som får stöd 1% av invånarna går vidare till omröstning. Du behöver ha ett verifierat konto för att kunna stödja förslag."
+        help_text_3: "Medborgarförslag som fått tillräckligt stöd går vidare till omröstning. Om förslaget får en majoritet av rösterna i omröstningen kommer kommunen att genomföra förslaget."
     new:
       form:
         submit_button: Skapa förslag
+      more_info: Hur fungerar medborgarförslag?
+      recommendation_one: Använd inte versaler i förslagets titel eller i hela meningar i beskrivningen. På internet betyder det att skrika, och ingen gillar när folk skriker på dem.
       start_new: Skapa nytt förslag
     proposal:
       created: "Du skapade ett förslag!"
