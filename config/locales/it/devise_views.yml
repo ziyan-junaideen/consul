@@ -1,0 +1,5 @@
+it:
+  devise_views:
+    confirmations:
+      new:
+        email_label: E-mail
