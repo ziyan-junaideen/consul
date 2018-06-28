@@ -289,6 +289,12 @@ sv:
         title: Redigera investeringsstatus
       update:
         notice: Investeringsstatusen har uppdaterats
+      new:
+        title: Skapa investeringsstatus
+      create:
+        notice: Investeringsstatusen har skapats
+      delete:
+        notice: Investeringsstatusen har tagits bort
     comments:
       index:
         filter: Filter
