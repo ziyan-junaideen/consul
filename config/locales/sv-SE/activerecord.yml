@@ -124,7 +124,6 @@ sv:
         image_title: "Bildtext"
       budget/investment/milestone:
         title: "Titel"
-        description: "Beskrivning"
         publication_date: "Datum för offentliggörande"
       budget/heading:
         name: "Rubriknamn"
