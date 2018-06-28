@@ -241,6 +241,9 @@ val:
       budgets: Pressupostos participatius
       spending_proposals: Propostes d'inversió
       notification_item:
+        new_notifications:
+          one: Tens una nova notificació
+          other: Tens %{count} noves notificacions
         notifications: Notificacions
         no_notifications: "No tens noves notificacions"
     admin:
@@ -268,6 +271,12 @@ val:
         proposal_notification:
           one: Hi ha una nova notificació en
           other: Hi ha %{count} noves notificacions en
+        replies_to:
+          one: Hi ha una resposta nova al teu comentari en
+          other: Hi ha %{count} respostes noves al teu comentari en
+      mark_as_read: Marcar com llegides
+      mark_as_unread: Marcar com no llegides
+      notifiable_hidden: Aquest recurs no esta disponible.
   map:
     title: "Districtes"
     proposal_for_district: "Crea una proposta per al teu districte"
@@ -772,9 +781,12 @@ val:
   welcome:
     feed:
       most_active:
+        debates: "Debats més actius"
+        proposals: "Propostes més actives"
         processes: "Processos oberts"
       see_all_debates: Veure tots els debats
       see_all_proposals: Veure totes les propostes
+      see_all_processes: Veure tots els processos
       process_label: Procés
       see_process: Veure procés
     cards:
