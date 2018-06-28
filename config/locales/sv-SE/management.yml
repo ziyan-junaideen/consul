@@ -49,6 +49,14 @@ sv:
     date_of_birth: Födelsedatum
     email_verifications:
       already_verified: Detta användarkonto är redan verifierad.
+      choose_options: 'Välj ett av följande alternativ:'
+      document_found_in_census: Det här dokumentet finns i registret, men är inte kopplat till något användarkonto.
+      document_mismatch: 'Den här e-postadressen tillhör en användare som redan har ett id-nummer: %{document_number} (%{document_type})'
+      email_placeholder: Fyll i e-postadressen för personen som skapade kontot
+      email_sent_instructions: För att kunna verifiera användaren och bekräfta att det är rätt e-postadress, behöver användaren klicka på länken som skickats till e-postadressen som angavs ovan.
+      if_existing_account: Om personen redan har ett användarkonto på webbplatsen,
+      if_no_existing_account: Om personen ännu inte skapat ett användarkonto
+      introduce_email: 'Fyll i e-postadressen för användarkonto:'
       send_email: Skicka verifieringsmail
     menu:
       create_proposal: Skapa förslag
@@ -70,6 +78,7 @@ sv:
       vote_proposals: Rösta på förslag
     print:
       proposals_info: Skapa ditt förslag på http://url.consul
+      proposals_note: De förslag som har fått tillräckligt mycket stöd går vidare till omröstning. Kommunen kommer att genomföra förslaget om det får en majoritet av rösterna.
       proposals_title: 'Förslag:'
       spending_proposals_info: Delta på http://url.consul
       budget_investments_info: Delta på http://url.consul
