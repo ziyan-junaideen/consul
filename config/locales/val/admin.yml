@@ -182,6 +182,7 @@ val:
         table_valuation_finished: "Av. Fin."
         table_selection: "Selecció"
         table_incompatible: "Incompatible"
+        see_results: "Veure resultats"
       show:
         assigned_admin: Administrador asignat
         assigned_valuators: Evaluadors asignats
@@ -216,6 +217,9 @@ val:
         see_image: "Veure imatge"
         no_image: "Sense imatge"
         documents: "Documents"
+        see_documents: "Veure documents (%{count})"
+        no_documents: "Sense documents"
+        valuator_groups: "Grups d'Avaluadors"
       edit:
         classification: Classificació
         compatibility: Compatibilitat
@@ -229,6 +233,7 @@ val:
         tags: Etiquetes
         tags_placeholder: "Escriu les etiquetes que vulguis separades per comes (,)"
         undefined: Sense definir
+        user_groups: "Grups"
       search_unfeasible: Buscar inviables
     milestones:
       index:
@@ -236,12 +241,16 @@ val:
         table_title: "Títol"
         table_description: "Descripció"
         table_publication_date: "Data de publicació"
+        table_status: Estat
         table_actions: "Accions"
         delete: "Eliminar fita"
         no_milestones: "No hi ha fites definides"
         image: "Imatge"
         show_image: "Mostrar imatge"
         documents: "Documents"
+      form:
+        add_language: Afegir idioma
+        remove_language: Eliminar idioma
       new:
         creating: Crear fita
         date: Data
@@ -520,6 +529,23 @@ val:
     newsletters:
       index:
         title: Enviament de newsletters
+        new_newsletter: Nou butlletí informatiu
+      new:
+        title: Nou butlletí informatiu
+      edit:
+        title: Editar butlletí informatiu
+      show:
+        send: Enviar
+        sent_at: Enviada el
+        subject: Asumpte
+        segment_recipient: Destinataris
+        body: Contingut del email
+    emails_download:
+      index:
+        title: Descàrrega de emails
+        download_segment: Descarregar direccions de email
+        download_segment_help_text: Descarrega en format CSV
+        download_emails_button: Descarregar llista de emails
     valuators:
       index:
         title: Avaluadors
@@ -528,6 +554,9 @@ val:
         description: Descripció
         no_description: Sense descripció
         no_valuators: No hi ha avaluadors.
+        valuator_groups: "Grups d'Avaluadors"
+        group: "Grup"
+        no_group: "Sense grup"
       valuator:
         add: Afegir com a avaluador
         delete: Borrar
@@ -542,7 +571,17 @@ val:
         in_evaluation_count: En avaluació
         total_count: Total
         cost: Cost total
+      show:
+        email: "Email"
+        group: "Grup"
+        no_description: "Sense descripció"
+        no_group: "Sense grup"
     valuator_groups:
+      index:
+        title: "Grups d'Avaluadors"
+        new: "Crear grups d'avaluadors"
+        name: "Nom"
+        members: "Membres"
       form:
         edit: "Guardar grups d'avaluadors"
     poll_officers:
