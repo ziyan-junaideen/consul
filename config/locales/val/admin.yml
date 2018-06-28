@@ -191,6 +191,7 @@ val:
         table_selection: "Selecció"
         table_evaluation: "Veure a evaluadors"
         table_incompatible: "Incompatible"
+        cannot_calculate_winners: El pressupost ha d'estar en les fases "Votació final", "Votació finalitzada" o "Resultats" per a poder calcular les propostes guanyadores
         see_results: "Veure resultats"
       show:
         assigned_admin: Administrador asignat
@@ -260,6 +261,7 @@ val:
       form:
         add_language: Afegir idioma
         remove_language: Eliminar idioma
+        admin_statuses: Estat administratiu de les propostes
       new:
         creating: Crear fita
         date: Data
@@ -276,7 +278,17 @@ val:
       index:
         table_name: Nom
         table_description: Descripció
+        table_actions: Accions
+        delete: Esborrar
         edit: Editar
+      edit:
+        title: Edita l'estat de la proposta
+      update:
+        notice: Estat de la proposta actualitzat correctament
+      new:
+        title: Crear estat de la proposta
+      create:
+        notice: Estat de la proposta creat correctament
     comments:
       index:
         filter: Filtre
@@ -444,6 +456,7 @@ val:
             error: Error
         form:
           add_option: Afegir resposta
+          title: Pregunta
           title_placeholder: Escriu un títol a la pregunta
           value_placeholder: Escriu una resposta
         index:
