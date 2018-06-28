@@ -45,7 +45,12 @@ sv:
         create: "Bekräftat dokument"
         not_allowed: "Du har inga skift idag"
       new:
-        title: Granska dokument
+        title: Godkänn dokument
+        document_number: "Dokumentnummer (inklusive bokstäver)"
+        submit: Godkänn dokument
+        error_verifying_census: "Ditt dokument kunde inte verifieras mot folkbokföringen."
+        form_errors: förhindrade godkännandet av det här dokumentet
+        no_assignments: "Du har inga skift idag"
     voters:
       new:
         title: Omröstningar
@@ -54,4 +59,8 @@ sv:
         table_actions: Åtgärder
       show:
         can_vote: Kan rösta
+        error_already_voted: Du har redan deltagit i den här omröstningen
         submit: Bekräfta röst
+        success: "Du har röstat!"
+      can_vote:
+        submit_disable_with: "Vänta, din röst bekräftas..."
