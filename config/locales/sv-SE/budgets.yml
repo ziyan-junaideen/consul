@@ -124,6 +124,7 @@ sv:
         milestones_tab: Milstolpar
         no_milestones: Har inte bestämda milstolpar
         milestone_publication_date: "Publicerade %{publication_date}"
+        milestone_status_changed: Investeringens status har ändrats till
         author: Författare
         project_unfeasible_html: 'Denna investering projektet <strong>har markerats som ej genomförbar</strong> och kommer inte gå till omröstningsfas.'
         project_not_selected_html: 'Denna investering projektet <strong>har inte valts</strong> för omröstningsfas.'
