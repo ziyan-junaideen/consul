@@ -130,7 +130,9 @@ val:
         start_date: Data d'inici del procés
         end_date: Data de fi del procés
         summary: Resum
+        summary_help_text: Este text informarà a l'usuari sobre la fase. Per a mostrar-lo inclús quant la fase no estiga activa, selecciona la casella següent
         description: Descripció
+        description_help_text: Este text apareixerà en la capçalera quant la fase estiga activa
         enabled: Fase habilitada
         enabled_help_text: Aquesta fase serà pública en el calendari de fases del pressupost, així com activa per a qualsevol altre propòsit
         save_changes: Guardar canvis
@@ -140,6 +142,8 @@ val:
         administrator_filter_all: Tots els administradors
         valuator_filter_all: Tots els avaluadors
         tags_filter_all: Totes les etiquetes
+        advanced_filters: Filtres avançats
+        placeholder: Buscar projectes
         sort_by:
           placeholder: Ordenar per
           id: ID
@@ -157,6 +161,8 @@ val:
           unfeasible: Inviable
           max_per_heading: Màx. avals per districte
           winners: Guanyadores
+          one_filter_html: "Filtres aplicats: <b><em>%{filter}</em></b>"
+          two_filters_html: "Filtres aplicats: <b><em>%{filter}, %{advanced_filters}}</em></b>"
         buttons:
           search: Cercar
           filter: Filtrar
@@ -166,6 +172,7 @@ val:
         assigned_admin: Administrador assignat
         no_admin_assigned: Sense admin assignat
         no_valuators_assigned: Sense avaluador
+        no_valuation_groups: Sense grups avaluadors
         feasibility:
           feasible: "Viable (%{price})"
           unfeasible: "Inviable"
@@ -177,10 +184,12 @@ val:
         table_supports: "Avals"
         table_admin: "Administrador"
         table_valuator: "Avaluador"
+        table_valuation_group: "Grup avaluador"
         table_geozone: "Ámbit d'actuació"
         table_feasibility: "Viabilitat"
         table_valuation_finished: "Av. Fin."
         table_selection: "Selecció"
+        table_evaluation: "Veure a evaluadors"
         table_incompatible: "Incompatible"
         see_results: "Veure resultats"
       show:
@@ -872,6 +881,8 @@ val:
       index:
         banners: Estil del banner
         banner_imgs: Imatges del banner
+        no_banners_images: No hi ha imatges de banner
+        no_banners_styles: No hi ha estils de banner
         title: Configuració global
         update_setting: Actualitzar
         feature_flags: Funcionalitats
@@ -913,6 +924,7 @@ val:
       description: Descripció
       image: Imatge
       show_image: Mostrar imatge
+      moderated_content: "Revisa el contigut moderat pels moderadors, i confirma si la moderació s'ha realitzat correctament."
     spending_proposals:
       index:
         geozone_filter_all: Tots els àmbits d'actuació
