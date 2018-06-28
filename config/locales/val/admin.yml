@@ -141,6 +141,7 @@ val:
         valuator_filter_all: Tots els avaluadors
         tags_filter_all: Totes les etiquetes
         sort_by:
+          placeholder: Ordenar per
           id: ID
           title: Títol
           supports: Avals
@@ -211,6 +212,10 @@ val:
           title: Guanyadores
           "true": "Si"
           "false": "No"
+        image: "Imatge"
+        see_image: "Veure imatge"
+        no_image: "Sense imatge"
+        documents: "Documents"
       edit:
         classification: Classificació
         compatibility: Compatibilitat
@@ -240,6 +245,7 @@ val:
       new:
         creating: Crear fita
         date: Data
+        description: Descripció
       edit:
         title: Editar fita
       create:
@@ -248,6 +254,11 @@ val:
         notice: Fita actualitzada
       delete:
         notice: Fita eliminada correctament
+    statuses:
+      index:
+        table_name: Nom
+        table_description: Descripció
+        edit: Editar
     comments:
       index:
         filter: Filtre
