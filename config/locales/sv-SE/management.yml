@@ -139,7 +139,9 @@ sv:
     user_invites:
       new:
         label: E-post
+        info: "Fyll i e-postadresserna separerade med komma (',')"
         submit: Skicka inbjudningar
         title: Skicka inbjudningar
       create:
+        success_html: <strong>%{count} inbjudningar</strong> har skickats.
         title: Skicka inbjudningar
