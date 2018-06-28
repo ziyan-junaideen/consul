@@ -10,6 +10,8 @@ sv:
       manage_email_subscriptions: För att sluta få e-postmeddelanden kan du ändra dina inställningar i
     email_verification:
       click_here_to_verify: den här länken
+      instructions_2_html: Det här e-postmeddelandet är för att verifiera ditt konto med <b>%{document_type} %{document_number}</b>. Klicka inte på länken ovan om de inte tillhör dig.
+      instructions_html: Klicka på %{verification_link} för att slutföra verifieringen av ditt användarkonto för Open Government-portalen.
       subject: Bekräfta din e-postadress
       thanks: Tack så mycket.
       title: Bekräfta kontot via länken nedan
@@ -20,8 +22,11 @@ sv:
       title: Nytt svar på din kommentar
     unfeasible_spending_proposal:
       hi: "Kära användare,"
+      new_html: "Med anledning av det ber vi dig att skapa ett <strong>nytt förslag</strong> som uppfyller kraven för den här processen. Du kan göra det med följande länk: %{url}."
       new_href: "nytt investeringsprojekt"
+      reconsider_html: "Om du anser att det avvisade förslaget uppfyller kraven på ett investeringsförslag ber vi dig skriva till examples@consul.es inom 48 timmar och inkludera koden %{code} i meddelandets ämnesrad."
       sincerely: "Vänliga hälsningar"
+      signatory: "FÖRVALTNINGEN FÖR MEDBORGARDELTAGANDE"
       subject: "Ditt investeringsprojekt '%{code}' har markerats som ogenomförbart"
     proposal_notification_digest:
       title: "Förslagsnotifikationer i %{org_name}"
