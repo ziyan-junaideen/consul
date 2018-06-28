@@ -125,6 +125,9 @@ val:
       budget/investment/milestone:
         title: "Títol"
         publication_date: "Data de publicació"
+      budget/investment/status:
+        name: "Nom"
+        description: "Descripció (opcional)"
       budget/heading:
         name: "Nom de la partida"
         price: "Cost"
