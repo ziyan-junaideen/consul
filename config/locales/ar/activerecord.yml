@@ -60,7 +60,6 @@ ar:
         location: "الموقع (اختياري)"
       budget/investment/milestone:
         title: "العنوان"
-        description: "الوصف"
         publication_date: "تاريخ النشر"
       budget/heading:
         price: "السعر"
