@@ -619,6 +619,7 @@ val:
       next_slide: Imatge següent
     documentation: Documentació adicional
     view_mode:
+      title: Mode de vista
       cards: Targetes
       list: Lista
   social:
@@ -738,6 +739,7 @@ val:
       no_private_messages: "Este usuari no accepta missatges privats."
       private_activity: Este usuari ha decidit mantindre en privat la seua llista d'activitats.
       send_private_message: "Enviar un missatge privat"
+      delete_alert: "Segur que desitges eliminar aquesta proposta? Aquesta acció no es pot desfer"
     proposals:
       send_notification: "Enviar notificació"
       retire: "Retirar"
@@ -769,6 +771,10 @@ val:
       not_voting_allowed: El període de votació està tancat
   welcome:
     feed:
+      most_active:
+        processes: "Processos oberts"
+      see_all_debates: Veure tots els debats
+      see_all_proposals: Veure totes les propostes
       process_label: Procés
     cards:
       title: Destacades
