@@ -19,6 +19,7 @@ sv:
           random: Generera nytt slumpmässigt lösenord
           save: Spara
           print: Skriv ut lösenord
+          print_help: Du kommer kunna skriva ut lösenordet när det har sparats.
     account_info:
       change_user: Ändra användare
       document_number_label: 'Dokumentnummer:'
@@ -30,13 +31,19 @@ sv:
     dashboard:
       index:
         title: Förvaltning
+        info: Här kan du hantera användare med åtgärderna som listas i menyn till vänster.
     document_number: Dokumentnummer
     document_type_label: Dokumenttyp
     document_verifications:
       already_verified: Detta användarkonto är redan verifierad.
+      has_no_account_html: För att skapa ett konto, gå till %{link} och klicka <b>'Registrera'</b> i övre vänstra hörnet.
       link: Consul
+      in_census_has_following_permissions: 'Den här användaren har följande rättigheter på webbplatsen:'
       not_in_census: Detta dokument är inte registrerad.
+      not_in_census_info: 'Invånare i staden har följande rättigheter på webbplatsen:'
+      please_check_account_data: Var vänlig kontrollera att uppgifterna ovan stämmer.
       title: Användarhantering
+      under_age: "Du är inte tillräckligt gammal för att kunna verifiera ditt konto."
       verify: Kontrollera
     email_label: E-post
     date_of_birth: Födelsedatum
