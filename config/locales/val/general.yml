@@ -776,6 +776,7 @@ val:
       see_all_debates: Veure tots els debats
       see_all_proposals: Veure totes les propostes
       process_label: Procés
+      see_process: Veure procés
     cards:
       title: Destacades
     recommended:
@@ -788,6 +789,7 @@ val:
         btn_text_link: Totes les propostes recomanades
       budget_investments:
         title: Pressupostos recomanats
+      slide: "Veure %{title}"
     verification:
       i_dont_have_an_account: No tinc compte, vull crear-ne un i verificar-lo
       i_have_an_account: Ja tinc un compte que vull verificar
@@ -824,3 +826,6 @@ val:
       proposal: "Proposta"
       debate: "Debat"
       budget_investment: "Pressupost participatiu"
+  admin/widget:
+    header:
+      title: Administració
