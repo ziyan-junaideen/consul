@@ -47,6 +47,7 @@ sv:
       title_html: "Du har skickat ett meddelande till <strong>%{receiver}</strong> med innehållet:"
     user_invite:
       ignore: "Om du inte har begärt denna inbjudan oroa inte dig, du kan ignorera detta mail."
+      text: "Tack för att du registrerat dig på %{org}! Nu kan du snart vara med och skapa staden du vill ha! Fyll bara i det här formuläret:"
       thanks: "Tack så mycket."
       title: "Välkommen till %{org}"
       button: Slutför registrering
@@ -55,6 +56,7 @@ sv:
       subject: "Tack för att du skapade ett budgetförslag!"
       title: "Tack för att du skapade ett budgetförslag!"
       intro_html: "Hej <strong>%{author}</strong>,"
+      text_html: "Tack för att du skapat investeringen <strong>%{investment}</strong> för medborgarbudgeten <strong>%{budget}</strong>."
       follow_html: "Vi vill informera dig om hur processen går, men du kan också följa på <strong>%{link}</strong>."
       follow_link: "Medborgarbudgetar"
       sincerely: "Vänliga hälsningar,"
@@ -62,13 +64,18 @@ sv:
       share: "Dela ditt projekt"
     budget_investment_unfeasible:
       hi: "Kära användare,"
+      new_html: "Med anledning av det ber vi dig att skapa en <strong>ny investering</strong> som uppfyller kraven för den här processen. Du kan göra det med följande länk: %{url}."
       new_href: "nytt investeringsprojekt"
+      reconsider_html: "Om du anser att det avvisade förslaget uppfyller kraven på ett investeringsförslag ber vi dig skriva till examples@consul.es inom 48 timmar och inkludera koden %{code} i meddelandets ämnesrad."
       sincerely: "Vänliga hälsningar"
       signatory: "FÖRVALTNINGEN FÖR MEDBORGARDELTAGANDE"
+      sorry: "Ledsen för besväret och vi återigen tack för din ovärderliga medverkan."
       subject: "Ditt investeringsprojekt '%{code}' har markerats som ogenomförbart"
+      unfeasible_html: "Från kommunfullmäktige vill vi tacka för ditt deltagande i <strong>medborgarbudgeten</strong>. Tyvärr kommer ditt förslag <strong>'%{title}'</strong> att uteslutas från den här processen av följande anledning:"
     budget_investment_selected:
       subject: "Ditt investeringsprojekt '%{code}' har valts"
       hi: "Kära användare,"
+      selected_html: "Från kommunfullmäktige vill vi tacka för ditt deltagande i <strong>medborgarbudgeten</strong>. Ditt investeringsprojekt <strong>'%{title}'</strong> har gått vidare till den slutgiltiga omröstningen, som kommer att ske <strong>15 maj till 30 juni</strong>."
       share: "Börja få röster, dela ditt investeringsprojekt på sociala nätverk. Att dela det är viktigt för att det blir verklighet."
       share_button: "Dela ditt investeringsprojekt"
       thanks: "Tack igen för att du deltar."
@@ -77,6 +84,8 @@ sv:
     budget_investment_unselected:
       subject: "Ditt investeringsprojekt '%{code}' har inte valts"
       hi: "Kära användare,"
+      unselected_html: "Från kommunfullmäktige vill vi tacka för ditt deltagande i <strong>medborgarbudgeten</strong>. Tyvärr har ditt investeringsprojekt <strong>'%{title}'</strong> inte gått vidare till den slutgiltiga omröstningen."
+      participate_html: "Du kan fortfarande delta i den slutgiltiga omröstningen för investeringsprojekt från <strong>15 maj till 30 juni</strong>."
       participate_url: "delta i slutomröstningen"
       thanks: "Tack igen för att du deltar."
       sincerely: "Vänliga hälsningar"
