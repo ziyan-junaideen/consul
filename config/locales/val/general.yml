@@ -231,6 +231,7 @@ val:
       moderation: Moderació
       valuation: Avaluació
       officing: Presidents de taula
+      help: Ajuda
       my_account_link: El meu compte
       my_activity_link: La meua activitat
       open: obert
@@ -239,6 +240,9 @@ val:
       poll_questions: Votacions
       budgets: Pressupostos participatius
       spending_proposals: Propostes d'inversió
+      notification_item:
+        notifications: Notificacions
+        no_notifications: "No tens noves notificacions"
     admin:
       watch_form_message: 'Has realitzat canvis que no han sigut guardats. Segur que vols abandonar la pàgina?'
   legacy_legislation:
@@ -604,6 +608,9 @@ val:
       previous_slide: Imatge anterior
       next_slide: Imatge següent
     documentation: Documentació adicional
+    view_mode:
+      cards: Targetes
+      list: Lista
   social:
     blog: "Blog de %{org}"
     facebook: "Facebook de %{org}"
@@ -751,6 +758,8 @@ val:
       unfeasible: No es poden votar propostes inviables
       not_voting_allowed: El període de votació està tancat
   welcome:
+    feed:
+      process_label: Procés
     recommended:
       title: Recomanacions que et poden interessar
       debates:
