@@ -5,8 +5,14 @@ sv:
     dashboard:
       index:
         title: Omröstningskontor
+        info: Här kan du granska användardokumentation och spara resultat från omröstningar
+    menu:
+      voters: Granska dokument
+      total_recounts: Resultat av omröstning
     polls:
       final:
+        title: Avslutade omröstningar
+        no_polls: Du har inga omröstningar för granskning
         select_poll: Välj omröstning
         add_results: Lägg till resultat
     results:
@@ -34,6 +40,12 @@ sv:
         table_whites: "Blankröster"
         table_nulls: "Ogiltiga röster"
         table_total: "Totalt antal röster"
+    residence:
+      flash:
+        create: "Bekräftat dokument"
+        not_allowed: "Du har inga skift idag"
+      new:
+        title: Granska dokument
     voters:
       new:
         title: Omröstningar
