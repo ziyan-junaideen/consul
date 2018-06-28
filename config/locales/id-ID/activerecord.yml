@@ -83,7 +83,6 @@ id:
         image_title: "Judul gambar"
       budget/investment/milestone:
         title: "Judul"
-        description: "Deskripsi"
         publication_date: "Tanggal publikasi"
       budget/heading:
         name: "Nama judul"
