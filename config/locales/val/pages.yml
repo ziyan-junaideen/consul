@@ -35,6 +35,8 @@ val:
         page:
           title: "Preguntes Freqüents"
           faq_1_title: "Pregunta 1"
+      titles:
+        how_to_use: Utilitza-ho en el teu municipi
     privacy: Política de privacitat
     titles:
       accessibility: Accessibilitat
