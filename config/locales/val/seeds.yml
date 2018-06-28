@@ -1,11 +1,24 @@
 val:
   seeds:
     categories:
+      equity: Equitat
+      sustainability: Sostenibilitat
+      participation: Participació
       mobility: Mobilitat
       media: Mitjans
       health: Salut
       transparency: Transparència
       security_emergencies: Seguretat i Emergències
+      environment: Medi Ambient
     budgets:
+      budget: Pressupost participatiu
+      currency: '€'
       groups:
+        all_city: Tota la Ciutat
         districts: Districtes
+    polls:
+      current_poll: "Votació Oberta"
+      current_poll_geozone_restricted: "Votació Oberta restringida per geozona"
+      incoming_poll: "Següent Votació"
+      recounting_poll: "Votació en Recompte"
+      expired_poll_without_stats: "Votació Finalitzada sense Estadístiques ni Resultats"
