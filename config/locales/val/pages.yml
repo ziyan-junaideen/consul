@@ -24,9 +24,12 @@ val:
       polls:
         title: "Votacions"
         link: "votacions"
+        feature_1_link: "registrar-te en %{org_name}"
+        feature_2: "Poden votar totes les persones empadronades en la ciutat majors de 16 anys."
       processes:
         title: "Processos legislatius"
         link: "processos legislatius"
+        sign_up: "registrar-se en %{org}"
       faq:
         title: "Problemes tècnics?"
         page:
