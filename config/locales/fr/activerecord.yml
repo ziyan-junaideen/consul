@@ -124,7 +124,6 @@ fr:
         image_title: "Titre de l'image"
       budget/investment/milestone:
         title: "Titre"
-        description: "Description"
         publication_date: "Date de publication"
       budget/heading:
         name: "Nom de la rubrique"
