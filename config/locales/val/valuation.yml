@@ -73,6 +73,7 @@ val:
         save: Guardar canvis
       notice:
         valuate: "Dossier actualitzat"
+      valuation_comments: Comentaris d'avaluació
     spending_proposals:
       index:
         geozone_filter_all: Tots els àmbits d'actuació
