@@ -97,7 +97,6 @@ nl:
         image_title: "Titel"
       budget/investment/milestone:
         title: "Title"
-        description: "Omschrijving"
         publication_date: "Publicatiedatum"
       budget/heading:
         name: "Naam van de rubriek"
