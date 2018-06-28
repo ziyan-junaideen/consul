@@ -118,7 +118,6 @@ gl:
         image_title: "Título da imaxe"
       budget/investment/milestone:
         title: "Título"
-        description: "Descrición"
         publication_date: "Data de publicación"
       budget/heading:
         name: "Nome da partida"
