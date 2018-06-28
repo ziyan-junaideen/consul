@@ -83,6 +83,7 @@ sv:
         debate_dates: Debatt
         draft_publication_date: Publiceringsdatum för utkast
         allegations_dates: Påståenden
+        result_publication_date: Publiceringsdatum för resultat
         proposals_dates: Förslag
     questions:
       comments:
@@ -102,8 +103,10 @@ sv:
         next_question: Nästa fråga
         first_question: Först fråga
         share: Dela
+        title: Kollaborativ lagstiftningsprocess
       participation:
         phase_not_open: Denna fas är inte öppen
+        organizations: Organisationer får inte delta i debatten
         signin: Logga in
         signup: Registrera sig
         unauthenticated: Du behöver %{signin} eller %{signup} för att kunna delta.
