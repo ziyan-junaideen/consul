@@ -27,11 +27,15 @@ sv:
       reconsider_html: "Om du anser att det avvisade förslaget uppfyller kraven på ett investeringsförslag ber vi dig skriva till examples@consul.es inom 48 timmar och inkludera koden %{code} i meddelandets ämnesrad."
       sincerely: "Vänliga hälsningar"
       signatory: "FÖRVALTNINGEN FÖR MEDBORGARDELTAGANDE"
+      sorry: "Ledsen för besväret och vi återigen tack för din ovärderliga medverkan."
       subject: "Ditt investeringsprojekt '%{code}' har markerats som ogenomförbart"
+      unfeasible_html: "Från kommunfullmäktige vill vi tacka för ditt deltagande i <strong>medborgarbudgeten</strong>. Tyvärr kommer ditt förslag <strong>'%{title}'</strong> att uteslutas från den här processen av följande anledning:"
     proposal_notification_digest:
+      info: "Här är de nya meddelanden från förslagslämnarna till de förslag som du stödjer på %{org_name}."
       title: "Förslagsnotifikationer i %{org_name}"
       share: Dela förslaget
       comment: Kommentera förslaget
+      unsubscribe: "Gå till %{account} och avmarkera 'Få sammanfattningar av meddelanden om förslag', om du inte längre vill få meddelanden om förslag."
       unsubscribe_account: Mitt konto
     direct_message_for_receiver:
       subject: "Du har fått ett nytt meddelande"
@@ -54,11 +58,13 @@ sv:
       follow_html: "Vi vill informera dig om hur processen går, men du kan också följa på <strong>%{link}</strong>."
       follow_link: "Medborgarbudgetar"
       sincerely: "Vänliga hälsningar,"
+      signatory: "FÖRVALTNINGEN FÖR MEDBORGARDELTAGANDE"
       share: "Dela ditt projekt"
     budget_investment_unfeasible:
       hi: "Kära användare,"
       new_href: "nytt investeringsprojekt"
       sincerely: "Vänliga hälsningar"
+      signatory: "FÖRVALTNINGEN FÖR MEDBORGARDELTAGANDE"
       subject: "Ditt investeringsprojekt '%{code}' har markerats som ogenomförbart"
     budget_investment_selected:
       subject: "Ditt investeringsprojekt '%{code}' har valts"
@@ -67,9 +73,11 @@ sv:
       share_button: "Dela ditt investeringsprojekt"
       thanks: "Tack igen för att du deltar."
       sincerely: "Vänliga hälsningar"
+      signatory: "FÖRVALTNINGEN FÖR MEDBORGARDELTAGANDE"
     budget_investment_unselected:
       subject: "Ditt investeringsprojekt '%{code}' har inte valts"
       hi: "Kära användare,"
       participate_url: "delta i slutomröstningen"
       thanks: "Tack igen för att du deltar."
       sincerely: "Vänliga hälsningar"
+      signatory: "FÖRVALTNINGEN FÖR MEDBORGARDELTAGANDE"
