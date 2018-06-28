@@ -124,7 +124,6 @@ val:
         image_title: "Títol de la imatge"
       budget/investment/milestone:
         title: "Títol"
-        description: "Descripció"
         publication_date: "Data de publicació"
       budget/heading:
         name: "Nom de la partida"
