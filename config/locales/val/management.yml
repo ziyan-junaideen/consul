@@ -5,6 +5,12 @@ val:
         unverified_user: Sols es poden editar comptes d'usuaris verificats
       show:
         title: Compte d'usuari
+      edit:
+        back: Arrere
+        password:
+          password: Contrasenya
+          save: Guardar
+          print: Imprimir contrasenya
     account_info:
       change_user: Canviar usuari
       document_number_label: 'Número de document:'
