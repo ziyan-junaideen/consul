@@ -248,7 +248,7 @@ sv:
         segment_recipient: Mottagare
         subject: Ämne
         from: Från
-        body: E-post innehåll
+        body: E-postmeddelande
       widget/card:
         label: Etikett (tillval)
         title: Titel
