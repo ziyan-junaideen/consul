@@ -29,6 +29,7 @@ val:
         unselected: Veure les propostes no seleccionades per a la votació final
     phase:
       drafting: Esborrany (No visible per al públic)
+      informing: Informació
       accepting: Acceptant propostes
       reviewing: Revisant propostes
       selecting: Selecció de propostes
@@ -39,6 +40,7 @@ val:
       finished: Resultats
     index:
       title: Pressupostos participatius
+      empty_budgets: No hi ha pressupostos.
       section_header:
         icon_alt: Icona de pressupostos participatius
         title: Pressupostos participatius
@@ -68,6 +70,7 @@ val:
         map_location_instructions: "Navega per el mapa fins la ubicació i deixa el marcador."
         map_remove_marker: "Eliminar el marcador"
         location: "Informació adicional de localització"
+        map_skip_checkbox: "Esta proposta no te una ubicació concreta o no la conec."
       index:
         title: Pressupostos participatius
         unfeasible: Propostes d'inversió no viables
@@ -120,6 +123,7 @@ val:
         milestones_tab: Seguiments
         no_milestones: No hi ha fites definides
         milestone_publication_date: "Publicat el %{publication_date}"
+        milestone_status_changed: Estat de la proposta canviat a
         author: Autor
       wrong_price_format: Solament pot incloure caràcters numèrics
       investment:
