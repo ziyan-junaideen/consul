@@ -71,6 +71,9 @@ sv:
         section_footer:
           title: Hjälp med lagstiftande processer
           description: Delta i debatter och processer inför beslut i staden. Dina åsikter kommer att tas i beaktande av kommunfullmäktige.
+          help_text_1: "Kommunfullmäktige ger möjlighet för medborgare att diskutera och delta i utformandet av policies och förslag till beslut för staden."
+          help_text_2: "Alla som är registrerade på %{org} kan delta och bidra med synpunkter inför nya förslag och beslut för staden. Dina kommentarer analyseras av relevant förvaltning och tas i beaktande i utformandet av nya förslag."
+          help_text_3: "Kommunfullmäktige kan också starta processer för att få synpunkter på förslag."
       phase_not_open:
         not_open: Fasen är inte öppen ännu
       phase_empty:
