@@ -108,6 +108,7 @@ val:
         add_group: Afegeix nou grup
         create_group: Crea un grup
         edit_group: Editar grup
+        submit: Guardar group
         heading: Nom de la partida
         add_heading: Afegir partida
         amount: Quantitat
@@ -119,9 +120,11 @@ val:
         table_amount: Quantitat
         table_population: Població
         population_info: "El camp població de les partides pressupuestaries s'usa amb fins estadistics únicament, amb l'objectiu de mostrar el percentatge de vots en cada partida que represente un àrea amb població. Es un camp opciona, així que pots deixarlo en blanc si no s'aplica."
+        max_votable_headings: "Màxim número de partides en les que un usuari pot votar"
       winners:
         calculate: Calcular propostes guanyadores
         calculated: Calculant guanyadores, pot tardar algún minut.
+        recalculate: Recalcular propostes guanyadores
     budget_phases:
       edit:
         start_date: Data d'inici del procés
@@ -138,6 +141,7 @@ val:
         valuator_filter_all: Tots els avaluadors
         tags_filter_all: Totes les etiquetes
         sort_by:
+          id: ID
           title: Títol
           supports: Avals
         filters:
@@ -468,6 +472,7 @@ val:
       stats: Estadístiques
       signature_sheets: Fulls de signatures
       site_customization:
+        homepage: Pàgina principal
         pages: Personalitzar pàgines
         images: Personalitzar imatges
         content_blocks: Personalitzar blocs
