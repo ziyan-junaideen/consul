@@ -13,6 +13,9 @@ val:
       budget/investment/milestone:
         one: "fita"
         other: "fites"
+      budget/investment/status:
+        one: "Estat de la proposta"
+        other: "Estat de les propostes"
       comment:
         one: "Comentari"
         other: "Comentaris"
@@ -123,7 +126,9 @@ val:
         image: "Imatge descriptiva de la proposta d'inversió"
         image_title: "Títol de la imatge"
       budget/investment/milestone:
+        status_id: "Estat actual de la proposta (opcional)"
         title: "Títol"
+        description: "Descripció (opcional si hi ha un estat asignat)"
         publication_date: "Data de publicació"
       budget/investment/status:
         name: "Nom"
