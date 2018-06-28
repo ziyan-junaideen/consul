@@ -251,6 +251,7 @@ sv:
         table_title: "Titel"
         table_description: "Beskrivning"
         table_publication_date: "Datum för offentliggörande"
+        table_status: Status
         table_actions: "Åtgärder"
         delete: "Ta bort milstolpe"
         no_milestones: "Ha inte bestämda milstolpar"
@@ -260,6 +261,8 @@ sv:
       form:
         add_language: Lägg till språk
         remove_language: Ta bort språk
+        admin_statuses: Administrativ status för investering
+        no_statuses_defined: Det finns ingen definierad investeringsstatus än
       new:
         creating: Skapa milstolpe
         date: Datum
@@ -272,6 +275,20 @@ sv:
         notice: Milstolpe uppdaterad
       delete:
         notice: Milstolpe raderad
+    statuses:
+      index:
+        title: Investeringsstatus
+        empty_statuses: Det finns ingen definierad investeringsstatus än
+        new_status: Skapa ny investeringsstatus
+        table_name: Namn
+        table_description: Beskrivning
+        table_actions: Åtgärder
+        delete: Radera
+        edit: Redigera
+      edit:
+        title: Redigera investeringsstatus
+      update:
+        notice: Investeringsstatusen har uppdaterats
     comments:
       index:
         filter: Filter
