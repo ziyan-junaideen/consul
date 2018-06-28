@@ -121,7 +121,6 @@ fa:
         image_title: "عنوان تصویر"
       budget/investment/milestone:
         title: "عنوان"
-        description: "توضیحات"
         publication_date: "تاریخ انتشار"
       budget/heading:
         name: "عنوان نام"
