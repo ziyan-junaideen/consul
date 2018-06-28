@@ -1,6 +1,10 @@
 val:
   seeds:
+    settings:
+      official_level_5_name: Alcalde
     geozones:
+      north_district: Districte Nord
+      west_district: Districte Oest
       east_district: Districte Est
       central_district: Districte Central
     organizations:
@@ -28,6 +32,8 @@ val:
       groups:
         all_city: Tota la Ciutat
         districts: Districtes
+      valuator_groups:
+        culture_and_sports: Cultura & Esports
     polls:
       current_poll: "Votació Oberta"
       current_poll_geozone_restricted: "Votació Oberta restringida per geozona"
