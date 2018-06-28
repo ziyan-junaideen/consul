@@ -542,6 +542,9 @@ val:
         in_evaluation_count: En avaluació
         total_count: Total
         cost: Cost total
+    valuator_groups:
+      form:
+        edit: "Guardar grups d'avaluadors"
     poll_officers:
       index:
         title: Presidents de taula
@@ -869,6 +872,8 @@ val:
       actions: Accions
       title: Títol
       description: Descripció
+      image: Imatge
+      show_image: Mostrar imatge
     spending_proposals:
       index:
         geozone_filter_all: Tots els àmbits d'actuació
@@ -1118,3 +1123,16 @@ val:
           status_draft: Esborrany
           status_published: Publicada
           locale: Idioma
+    homepage:
+      title: Pàgina principal
+      cards:
+        title: Títol
+        description: Descripció
+        link_text: Text de l'enllaç
+        link_url: URL de l'enllaç
+      feeds:
+        proposals: Propostes
+        debates: Debats
+        processes: Processos
+      new:
+        card_title: Nova targeta
