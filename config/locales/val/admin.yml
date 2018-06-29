@@ -262,6 +262,7 @@ val:
         add_language: Afegir idioma
         remove_language: Eliminar idioma
         admin_statuses: Estat administratiu de les propostes
+        no_statuses_defined: No hi ha estats de projectes definits
       new:
         creating: Crear fita
         date: Data
@@ -277,6 +278,7 @@ val:
     statuses:
       index:
         title: Estat de les propostes
+        empty_statuses: No hi ha estats de projectes creats
         new_status: Crear nou estat de la proposta
         table_name: Nom
         table_description: Descripció
@@ -562,6 +564,10 @@ val:
       administrators: Administradors
       proposal_authors: Autors de propostes
       investment_authors: Usuaris autors de propostes en els actuals pressupostos
+      feasible_and_undecided_investment_authors: "Usuaris autors d'algun projecte en els actuals pressupostos que no cumplisca: [evaluació finalitzada inviable]"
+      selected_investment_authors: Autors de projectes seleccionades en els actuals pressupostos
+      winner_investment_authors: Usuaris autors de projectes guanyadors en els actuals pressupostos
+      not_supported_on_current_budget: Usuaris que no han avalat projectes en els actuals pressupostos
       invalid_recipients_segment: "El segment de destinataris es invàlid"
     newsletters:
       create_success: Butlletí informatiu creat correctament
@@ -1170,6 +1176,8 @@ val:
       content_blocks:
         information: Informació sobre els blocs de text
         about: Pots crear blocs de HTML que s'incrustaràn en la capçalera o al peu del teu CONSUL.
+        top_links_html: "Els <strong>blocs de la capçalera (top_links)</strong> son blocs d'enllaços que han de crearse en aquest format:"
+        footer_html: "Els <strong>blocs del peu (footer)</strong> poden tenir qualsevol format i es poden utilitzar per guardar empremtes Javascript, contingut CSS o contingut HTML personalitzat."
         no_blocks: "No hi ha blocs de text."
         create:
           notice: Bloc creat correctament
