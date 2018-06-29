@@ -16,8 +16,12 @@ val:
         processes: "Processos legislatius"
       debates:
         title: "Debats"
+        description: "En la secció de %{link} pots exposar i compartir la teua opinió amb altres persones sobre temes que et preocupen relacionats en la teua ciutat. També es un espai on generar idees que a través de les altres seccions de %{org} duguen a actuacions concretes per part de l'Ajuntament."
         link: "debats ciutadans"
+        feature_html: "Pots obrir debats, comentaris i avaluar-los amb els botons de <strong>Estic d'acord</strong> o <strong>No estic d'acord</strong>. Per a això has de %{link}."
         feature_link: "registrarte en %{org}"
+        image_alt: "Botons per a valorar els debats"
+        figcaption: 'Botons "Estic d''acord" i "No estic d''acord" per a valorar els debats.'
       proposals:
         title: "Propostes"
         link: "propostes ciutadanes"
