@@ -19,6 +19,7 @@ val:
           random: Generar contrasenya aleatoria
           save: Guardar
           print: Imprimir contrasenya
+          print_help: Podràs imprimir la contrasenya quant s'haja guardat.
     account_info:
       change_user: Canviar usuari
       document_number_label: 'Número de document:'
