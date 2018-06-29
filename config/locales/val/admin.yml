@@ -552,6 +552,7 @@ val:
       index:
         title: Enviament de newsletters
         new_newsletter: Nou butlletí informatiu
+        subject: Asumpte
         segment_recipient: Destinataris
         sent: Enviat
         actions: Accions
@@ -1149,6 +1150,7 @@ val:
     site_customization:
       content_blocks:
         information: Informació sobre els blocs de text
+        about: Pots crear blocs de HTML que s'incrustaràn en la capçalera o al peu del teu CONSUL.
         create:
           notice: Bloc creat correctament
           error: No s'ha pogut crear el bloc
@@ -1216,6 +1218,12 @@ val:
           locale: Idioma
     homepage:
       title: Pàgina principal
+      header_title: Capçalera
+      no_header: No hi ha capçalera.
+      create_header: Crear capçalera
+      cards_title: Targetes
+      create_card: Crear targeta
+      no_cards: No hi ha targetes.
       cards:
         title: Títol
         description: Descripció
@@ -1226,4 +1234,12 @@ val:
         debates: Debats
         processes: Processos
       new:
+        header_title: Nova capçalera
+        submit_header: Crear capçalera
         card_title: Nova targeta
+        submit_card: Crear targeta
+      edit:
+        header_title: Editar capçalera
+        submit_header: Guardar capçalera
+        card_title: Editar targeta
+        submit_card: Guardar targeta
