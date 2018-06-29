@@ -37,6 +37,7 @@ val:
         phase_1_html: "Entre gener i principis de març, les persones registrades en %{org} poden <strong>presentar propostes</strong>."
         phase_2_html: "En març, els proponents han de reunir avals, a mode de <strong>fase de preselecció</strong>."
         phase_3_html: "Entre abril i principis de maig, els experts de l'Ajuntament <strong>tasen els projectes</strong> per ordre de més a menys avals i comproven que son viables."
+        phase_4_html: "Finalment, entre maig i juny, tota la ciutadania pot <strong>votar els projectes</strong> que més l'interessen."
       polls:
         title: "Votacions"
         link: "votacions"
