@@ -1,6 +1,9 @@
 val:
   management:
     account:
+      menu:
+        reset_password_email: Restablir contrasenya via email
+        reset_password_manually: Restablir contrasenya manualment
       alert:
         unverified_user: Sols es poden editar comptes d'usuaris verificats
       show:
