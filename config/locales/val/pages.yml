@@ -38,11 +38,17 @@ val:
         phase_2_html: "En març, els proponents han de reunir avals, a mode de <strong>fase de preselecció</strong>."
         phase_3_html: "Entre abril i principis de maig, els experts de l'Ajuntament <strong>tasen els projectes</strong> per ordre de més a menys avals i comproven que son viables."
         phase_4_html: "Finalment, entre maig i juny, tota la ciutadania pot <strong>votar els projectes</strong> que més l'interessen."
+        phase_5_html: "A partir de l'aprovació dels pressupostos a l'any següent l'Ajuntament comença a dur a terme els projectes guanyadors."
+        image_alt: "Diferents fases d'un pressupost participatiu"
+        figcaption_html: 'Fase d''"Avals" i fase de "Votació" dels pressupostos participatius.'
       polls:
         title: "Votacions"
+        description: "La secció de %{link} s'activa cada vegada que una proposta arriba a l'1% d'avals i passa a votació o quant l'Ajuntament proposa un tema per a que la gent decidisca sobre ell."
         link: "votacions"
+        feature_1: "Per a participar en les votacions has de %{link} i verificar el teu compte."
         feature_1_link: "registrar-te en %{org_name}"
         feature_2: "Poden votar totes les persones empadronades en la ciutat majors de 16 anys."
+        feature_3: "Els resultats de totes les votacions son vinculants per al govern municipal."
       processes:
         title: "Processos legislatius"
         link: "processos legislatius"
