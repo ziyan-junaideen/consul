@@ -1170,6 +1170,7 @@ val:
       content_blocks:
         information: Informació sobre els blocs de text
         about: Pots crear blocs de HTML que s'incrustaràn en la capçalera o al peu del teu CONSUL.
+        no_blocks: "No hi ha blocs de text."
         create:
           notice: Bloc creat correctament
           error: No s'ha pogut crear el bloc
@@ -1237,6 +1238,7 @@ val:
           locale: Idioma
     homepage:
       title: Pàgina principal
+      description: Els moduls actius apareixeran en la pàgina principal en el mateix ordre que ací.
       header_title: Capçalera
       no_header: No hi ha capçalera.
       create_header: Crear capçalera
