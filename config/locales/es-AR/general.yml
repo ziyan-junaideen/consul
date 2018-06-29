@@ -770,8 +770,15 @@ es-AR:
         proposals: "Propuestas más activas"
         processes: "Procesos abiertos"
       see_all_debates: Ver todos los debates
+      see_all_proposals: Ver todas las propuestas
+      see_all_processes: Ver todos los procesos
+      process_label: Proceso
+      see_process: Ver proceso
+    cards:
+      title: Ofrecidos
     recommended:
       title: Recomendaciones que te pueden interesar
+      help: "Estas recomendaciones son generadas por las etiquetas de los debates y propuestas que usted está siguiendo."
       debates:
         title: Debates recomendados
         btn_text_link: Todos los debates recomendados
@@ -780,6 +787,7 @@ es-AR:
         btn_text_link: Todas las propuestas recomendadas
       budget_investments:
         title: Presupuestos recomendados
+      slide: "Ver %{title}"
     verification:
       i_dont_have_an_account: No tengo cuenta, quiero crear una y verificarla
       i_have_an_account: Ya tengo una cuenta que quiero verificar
@@ -803,12 +811,19 @@ es-AR:
     title: "Contenido relacionado"
     add: "Añadir contenido relacionado"
     label: "Enlace a contenido relacionado"
+    placeholder: "%{url}"
     help: "Puedes introducir cualquier enlace de %{models} que esté dentro de %{org}."
     submit: "Añadir"
     error: "Enlace no válido. Recuerda que debe empezar por %{url}."
+    error_itself: "Enlace no válido. No puede relacionar un contenido suyo."
     success: "Has añadido un nuevo contenido relacionado"
     is_related: "¿Es contenido relacionado?"
     score_positive: "Sí"
+    score_negative: "No"
     content_title:
       proposal: "Propuesta"
+      debate: "Debate"
       budget_investment: "Propuesta de inversión"
+  admin/widget:
+    header:
+      title: Administración
