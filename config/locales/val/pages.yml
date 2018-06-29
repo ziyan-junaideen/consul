@@ -24,7 +24,10 @@ val:
         figcaption: 'Botons "Estic d''acord" i "No estic d''acord" per a valorar els debats.'
       proposals:
         title: "Propostes"
+        description: "En la secció %{link} pots plantejar propostes per a que l'Ajuntament les duga a terme. Les propostes recaben avals, i si arriben als avals suficients es sotmeten a votació ciutadana. Les propostes aprovades en aquestes votacions ciutadanes son asumides per l'Ajuntament i es duen a terme."
         link: "propostes ciutadanes"
+        feature_html: "Per a crear una proposta cal registrar-se en %{org}. Les propostes que aconsegueixen l'aval de la web de l'1% de la gent amb dret a vot (%{supports} avals de persones majors de 16 anys registrades) passen a votació. Per a avalar propostes, cal verificar el teu compte."
+        image_alt: "Botó per a avalar una proposta"
       budgets:
         title: "Pressupostos Participatius"
         link: "pressupostos participatius"
