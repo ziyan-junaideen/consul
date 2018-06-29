@@ -12,6 +12,7 @@ val:
         back: Arrere
         password:
           password: Contrasenya
+          reset_email_send: Email enviat correctament.
           save: Guardar
           print: Imprimir contrasenya
     account_info:
