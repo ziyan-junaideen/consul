@@ -31,6 +31,7 @@ es-AR:
           one: Evaluador asignado
           other: "%{count} evaluadores asignados"
         no_valuators_assigned: Sin evaluador
+        table_id: ID
         table_title: Título
         table_heading_name: Nombre de la partida
         table_actions: Acciones
@@ -45,6 +46,7 @@ es-AR:
         edit_dossier: Editar informe
         price: Coste
         price_first_year: Coste en el primer año
+        currency: "€"
         feasibility: Viabilidad
         feasible: Viable
         unfeasible: Inviable
