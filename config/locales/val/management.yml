@@ -9,10 +9,14 @@ val:
       show:
         title: Compte d'usuari
       edit:
+        title: 'Editar compte d''usuari: Restablir contrasenya'
         back: Arrere
         password:
           password: Contrasenya
+          send_email: Enviar email per a restablir contrasenya
           reset_email_send: Email enviat correctament.
+          reseted: Contrasenya restablida correctament
+          random: Generar contrasenya aleatoria
           save: Guardar
           print: Imprimir contrasenya
     account_info:
