@@ -552,16 +552,30 @@ val:
       index:
         title: Enviament de newsletters
         new_newsletter: Nou butlletí informatiu
+        segment_recipient: Destinataris
+        sent: Enviat
+        actions: Accions
+        draft: Esborrany
+        edit: Editar
+        delete: Esborrar
+        preview: Vista previa
+        empty_newsletters: No hi ha butlletins informatius per a mostrar
       new:
         title: Nou butlletí informatiu
+        from: Direcció de email que apareixerà com a remitent del butlletí informatiu
       edit:
         title: Editar butlletí informatiu
       show:
+        title: Vista previa del butlletí informatiu
         send: Enviar
+        affected_users: (%{n} usuaris afectats)
         sent_at: Enviada el
         subject: Asumpte
         segment_recipient: Destinataris
+        from: Direcció de email que apareixerà com a remitent del butlletí informatiu
         body: Contingut del email
+        body_help_text: Així es com veuran el email els usuaris
+        send_alert: Estàs segur que vols enviar aquest butlletí informatiu a %{n} usuaris?
     emails_download:
       index:
         title: Descàrrega de emails
@@ -593,7 +607,12 @@ val:
         in_evaluation_count: En avaluació
         total_count: Total
         cost: Cost total
+      form:
+        edit_title: "Avaluadors: Editar avaluador"
+        update: "Actualitzar avaluador"
+        updated: "Avaluador actualitzat correctament"
       show:
+        description: "Descripció"
         email: "Email"
         group: "Grup"
         no_description: "Sense descripció"
@@ -604,7 +623,13 @@ val:
         new: "Crear grups d'avaluadors"
         name: "Nom"
         members: "Membres"
+        no_groups: "No hi ha grups d'avaluadors"
+      show:
+        title: "Grup d'avaluadors: %{group}"
+        no_valuators: "No hi ha avaluadors asignats a este grup"
       form:
+        name: "Nom del grup"
+        new: "Crear grup d'avaluadors"
         edit: "Guardar grups d'avaluadors"
     poll_officers:
       index:
