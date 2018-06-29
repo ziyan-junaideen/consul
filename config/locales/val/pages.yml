@@ -51,10 +51,14 @@ val:
         feature_3: "Els resultats de totes les votacions son vinculants per al govern municipal."
       processes:
         title: "Processos legislatius"
+        description: "En la secció de %{link} la ciutadania participa en l'elaboració i modificació de normativa que afecta a la ciutat i pot donar la seua opinió sobre les polítiques municipals en debats previs."
         link: "processos legislatius"
+        feature: "Per a participar en un procés cal %{sign_up} i consultar la pàgina de %{link} periòdicament per saver qué normatives i polítiques s'estan debatint i consultant."
         sign_up: "registrar-se en %{org}"
       faq:
         title: "Problemes tècnics?"
+        description: "Llig les preguntes freqüents i resol els teus dubtes."
+        button: "Veure les preguntes freqüents"
         page:
           title: "Preguntes Freqüents"
           faq_1_title: "Pregunta 1"
