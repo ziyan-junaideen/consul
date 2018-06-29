@@ -251,6 +251,7 @@ es-AR:
         table_title: "Título"
         table_description: "Descripción"
         table_publication_date: "Fecha de publicación"
+        table_status: Estado
         table_actions: "Acciones"
         delete: "Eliminar hito"
         no_milestones: "No hay hitos definidos"
@@ -260,6 +261,8 @@ es-AR:
       form:
         add_language: Agregar lenguaje
         remove_language: Remover lenguaje
+        admin_statuses: Administrar estados de inversión
+        no_statuses_defined: No hay estados de inversión definidos aún
       new:
         creating: Crear hito
         date: Fecha
@@ -272,6 +275,26 @@ es-AR:
         notice: Hito actualizado
       delete:
         notice: Hito borrado correctamente
+    statuses:
+      index:
+        title: Estados de inversión
+        empty_statuses: No hay estados de inversión creados
+        new_status: Crear nuevo estado de inversión
+        table_name: Nombre
+        table_description: Descripción
+        table_actions: Acciones
+        delete: Borrar
+        edit: Editar
+      edit:
+        title: Editar estados de inversión
+      update:
+        notice: Estados de inversión actualizados exitosamente
+      new:
+        title: Crear estado de inversión
+      create:
+        notice: Estado de inversión creado exitosamente
+      delete:
+        notice: Estado de inversión eliminado exitosamente
     comments:
       index:
         filter: Filtro
@@ -589,9 +612,13 @@ es-AR:
       index:
         title: Evaluadores
         name: Nombre
+        email: Correo
         description: Descripción
         no_description: Sin descripción
         no_valuators: No hay evaluadores.
+        valuator_groups: "Grupos evaluadores"
+        group: "Grupo"
+        no_group: "Sin grupo"
       valuator:
         add: Añadir como evaluador
         delete: Borrar
@@ -604,8 +631,16 @@ es-AR:
         finished_and_unfeasible_count: Finalizadas inviables
         finished_count: Finalizadas
         in_evaluation_count: En evaluación
+        total_count: Total
         cost: Coste total
+      form:
+        edit_title: "Valorador: Editar valorador"
+        update: "Actualizar valorador"
+        updated: "Valorador actualizado exitosamente"
       show:
+        description: "Descripción"
+        email: "Correo"
+        group: "Grupo"
         no_description: "Sin descripción"
         no_group: "Sin grupo"
     valuator_groups:
@@ -1218,3 +1253,5 @@ es-AR:
       cards_title: Tarjetas
       create_card: Crear tarjeta
       no_cards: No hay tarjetas.
+      cards:
+        title: Título
