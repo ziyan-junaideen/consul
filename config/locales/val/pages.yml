@@ -4,6 +4,9 @@ val:
     conditions: Condicions d'us
     general_terms: Condicions d'us
     help:
+      title: "%{org} es una plataforma de participació ciutadana"
+      subtitle: "En %{org} es poden fer propostes, votar en les consultes ciutadanes, plantejar projectes de pressupostos participatius, decidir la normativa municipal i obrir debats per a intercanviar opinions amb altres persones."
+      guide: "Esta guia explica per a qué serveixen i com funcionen cadascuna de les seccions de %{org}."
       menu:
         debates: "Debats"
         proposals: "Propostes"
