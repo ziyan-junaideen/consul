@@ -35,6 +35,8 @@ val:
         link: "pressupostos participatius"
         feature: "En este procés cada any la gent planteja, avala, i vota propostes. Els més votats passen a finançar-se amb el pressupost municipal."
         phase_1_html: "Entre gener i principis de març, les persones registrades en %{org} poden <strong>presentar propostes</strong>."
+        phase_2_html: "En març, els proponents han de reunir avals, a mode de <strong>fase de preselecció</strong>."
+        phase_3_html: "Entre abril i principis de maig, els experts de l'Ajuntament <strong>tasen els projectes</strong> per ordre de més a menys avals i comproven que son viables."
       polls:
         title: "Votacions"
         link: "votacions"
