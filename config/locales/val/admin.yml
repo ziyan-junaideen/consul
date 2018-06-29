@@ -276,6 +276,7 @@ val:
         notice: Fita eliminada correctament
     statuses:
       index:
+        title: Estat de les propostes
         table_name: Nom
         table_description: Descripció
         table_actions: Accions
