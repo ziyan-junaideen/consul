@@ -40,7 +40,9 @@ val:
         culture_and_sports: Cultura & Esports
         gender_and_diversity: Polítiques de Genere & Diversitat
         urban_development: Desenvolupament Urbà Sostenible
+        equity_and_employment: Igualtat & Ocupació
       statuses:
+        studying_project: Estudiant el projecte
         bidding: Ofertes
         executing_project: Executant el projecte
         executed: Executat
