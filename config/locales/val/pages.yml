@@ -33,6 +33,8 @@ val:
         title: "Pressupostos Participatius"
         description: "La secció de %{link} serveix per a que la gent decidisca de manera directa a qué es estina una part del pressupost municipal."
         link: "pressupostos participatius"
+        feature: "En este procés cada any la gent planteja, avala, i vota propostes. Els més votats passen a finançar-se amb el pressupost municipal."
+        phase_1_html: "Entre gener i principis de març, les persones registrades en %{org} poden <strong>presentar propostes</strong>."
       polls:
         title: "Votacions"
         link: "votacions"
