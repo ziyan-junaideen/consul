@@ -10,6 +10,9 @@ es-AR:
       budget/investment/milestone:
         one: "hito"
         other: "hitos"
+      budget/investment/status:
+        one: "Estado de Inversiones"
+        other: "Estado de Inversiones"
       comment:
         one: "Comentario"
         other: "Comentarios"
