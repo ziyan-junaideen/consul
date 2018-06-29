@@ -1125,6 +1125,7 @@ val:
         add_tag: Afegeix un nou tema de debat
         title: Temes de debat
         topic: Tema
+        help: "Quant un usuari crea una proposta se li suggerixen com a etiquetes per defecte els següents temes."
       name:
         placeholder: Escriu el nom del tema
     users:
@@ -1147,6 +1148,7 @@ val:
         title: Verificacions incompletes
     site_customization:
       content_blocks:
+        information: Informació sobre els blocs de text
         create:
           notice: Bloc creat correctament
           error: No s'ha pogut crear el bloc
