@@ -42,9 +42,12 @@ val:
       legislation: Legislació
       user:
         recommendations: Recomanacions
+        skip_verification: Ometre la verificació d'usuaris
       community: Comunitat en propostes i projectes d'inversió
       map: Geolocalització de propostes y projectes d'inversió
       allow_images: Permetre la pujada i visualització d'imatges
+      allow_attached_documents: Permetre la creació de documents adjunts
+      guides: Guies per a crear propostes o projectes d'inversió
       public_stats: Estadístiques públiques
     related_content_score_threshold: Llindar de puntuació de contingut relacionat
     map_latitude: Latitud
