@@ -558,6 +558,10 @@ val:
       proposal_authors: Autors de propostes
       investment_authors: Usuaris autors de propostes en els actuals pressupostos
     newsletters:
+      create_success: Butlletí informatiu creat correctament
+      update_success: Butlletí informatiu actualitzat correctament
+      send_success: Butlletí informatiu enviat correctament
+      delete_success: Butlletí informatiu esborrat correctament
       index:
         title: Enviament de newsletters
         new_newsletter: Nou butlletí informatiu
