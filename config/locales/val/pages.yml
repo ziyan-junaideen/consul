@@ -61,7 +61,9 @@ val:
         button: "Veure les preguntes freqüents"
         page:
           title: "Preguntes Freqüents"
+          description: "Utilitza esta pàgina per a resoldre les Preguntes freqüents als usuaris del lloc."
           faq_1_title: "Pregunta 1"
+          faq_1_description: "Aquest es un exemple per a la descripció de la pregunta u."
       other:
         title: "Altra informació d'interés"
         how_to_use: "Utilitza %{org_name} en el teu municipi"
