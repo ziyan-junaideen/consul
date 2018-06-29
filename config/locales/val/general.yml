@@ -485,6 +485,7 @@ val:
         description: Registra't per poder votar propostes ciutadanes i les qüestions que pregunta als veïns l'Ajuntament. Pren decisions municipals de forma directa.
         help_text_1: "Les votacions es convoquen quant una proposta ciutadana arriba a l'1% d'avals del cens amb dret a vot. En les votacions també es poden incloure qüestions que l'Ajuntament sotmet a decisió directa de la ciutadania."
         help_text_2: "Per participar en la pròxima votació has de regitstrar-te en %{org} i verificar el teu compte. Poden votar totes les persones empadronades en la ciutat majors de 16 anys. Els resultats de totes les votacions seran vinculants per al govern."
+      no_polls: "No hi ha votacions obertes."
     show:
       already_voted_in_booth: "Ya has participat en esta votació en urnes presencials, no pots tornar a participar."
       already_voted_in_web: "Ya has participat en esta votació. Si tornes a votar es sobreescriurà el teu vot anterior."
@@ -778,6 +779,9 @@ val:
       organization: Les organitzacions no poden votar
       unfeasible: No es poden votar propostes inviables
       not_voting_allowed: El període de votació està tancat
+      different_heading_assigned:
+        one: "Sols pots avalar projectes de %{count} districte"
+        other: "Sols pots avalar projectes de %{count} districtes"
   welcome:
     feed:
       most_active:
@@ -793,6 +797,7 @@ val:
       title: Destacades
     recommended:
       title: Recomanacions que et poden interessar
+      help: "Estes recomanacions es generen per les etiquetes dels debats i propostes que estàs seguint."
       debates:
         title: Debats recomanats
         btn_text_link: Tots els debats recomanats
