@@ -40,6 +40,10 @@ val:
         culture_and_sports: Cultura & Esports
         gender_and_diversity: Polítiques de Genere & Diversitat
         urban_development: Desenvolupament Urbà Sostenible
+      statuses:
+        bidding: Ofertes
+        executing_project: Executant el projecte
+        executed: Executat
     polls:
       current_poll: "Votació Oberta"
       current_poll_geozone_restricted: "Votació Oberta restringida per geozona"
