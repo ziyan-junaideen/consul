@@ -1255,3 +1255,20 @@ es-AR:
       no_cards: No hay tarjetas.
       cards:
         title: Título
+        description: Descripción
+        link_text: Enlace de texto
+        link_url: Enlace URL
+      feeds:
+        proposals: Propuestas
+        debates: Debates
+        processes: Procesos
+      new:
+        header_title: Nuevo encabezado
+        submit_header: Crear encabezado
+        card_title: Nueva tarjeta
+        submit_card: Crear tarjeta
+      edit:
+        header_title: Editar encabezado
+        submit_header: Guardar encabezado
+        card_title: Editar tarjeta
+        submit_card: Guardar tarjeta
