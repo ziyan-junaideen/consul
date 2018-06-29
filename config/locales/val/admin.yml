@@ -501,6 +501,8 @@ val:
       administrators: Administradors
       managers: Gestors
       moderators: Moderadors
+      newsletters: Butlletins informatius
+      emails_download: Descàrrega de emails
       valuators: Evaluadors
       poll_officers: Presidents de taula
       polls: Votacions
@@ -522,6 +524,7 @@ val:
       title_budgets: Pressupostos
       title_polls: Votacions
       title_profiles: Perfils
+      title_settings: Configuració
       title_site_customization: Personalitzar lloc
       legislation: Legislació col·laborativa
       users: Usuaris
@@ -548,6 +551,11 @@ val:
         delete: Eliminar
       search:
         title: 'Moderadors: Cerca d''usuaris'
+    segment_recipient:
+      all_users: Tots els usuaris
+      administrators: Administradors
+      proposal_authors: Autors de propostes
+      investment_authors: Usuaris autors de propostes en els actuals pressupostos
     newsletters:
       index:
         title: Enviament de newsletters
