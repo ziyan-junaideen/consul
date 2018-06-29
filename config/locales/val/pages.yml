@@ -28,8 +28,10 @@ val:
         link: "propostes ciutadanes"
         feature_html: "Per a crear una proposta cal registrar-se en %{org}. Les propostes que aconsegueixen l'aval de la web de l'1% de la gent amb dret a vot (%{supports} avals de persones majors de 16 anys registrades) passen a votació. Per a avalar propostes, cal verificar el teu compte."
         image_alt: "Botó per a avalar una proposta"
+        figcaption_html: 'Botó per a "Avalar" una proposta. <br>Quant arribe el número d''avals pasarà a votació.'
       budgets:
         title: "Pressupostos Participatius"
+        description: "La secció de %{link} serveix per a que la gent decidisca de manera directa a qué es estina una part del pressupost municipal."
         link: "pressupostos participatius"
       polls:
         title: "Votacions"
