@@ -47,6 +47,7 @@ val:
         text_comments: Comentaris
     processes:
       header:
+        additional_info: Informació adicional
         description: Descripció
         more_info: Més informació i context
       proposals:
