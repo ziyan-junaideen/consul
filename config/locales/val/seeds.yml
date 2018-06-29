@@ -1,6 +1,7 @@
 val:
   seeds:
     settings:
+      official_level_4_name: Regidor
       official_level_5_name: Alcalde
     geozones:
       north_district: Districte Nord
@@ -34,6 +35,8 @@ val:
         districts: Districtes
       valuator_groups:
         culture_and_sports: Cultura & Esports
+        gender_and_diversity: Polítiques de Genere & Diversitat
+        urban_development: Desenvolupament Urbà Sostenible
     polls:
       current_poll: "Votació Oberta"
       current_poll_geozone_restricted: "Votació Oberta restringida per geozona"
