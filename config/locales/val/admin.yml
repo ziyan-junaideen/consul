@@ -277,6 +277,7 @@ val:
     statuses:
       index:
         title: Estat de les propostes
+        new_status: Crear nou estat de la proposta
         table_name: Nom
         table_description: Descripció
         table_actions: Accions
@@ -290,6 +291,8 @@ val:
         title: Crear estat de la proposta
       create:
         notice: Estat de la proposta creat correctament
+      delete:
+        notice: Estat de la proposta esborrat correctament
     comments:
       index:
         filter: Filtre
@@ -460,6 +463,7 @@ val:
           title: Pregunta
           title_placeholder: Escriu un títol a la pregunta
           value_placeholder: Escriu una resposta
+          question_options: "Possibles respostes (opcional, per defecte respostes obertes)"
         index:
           back: Tornar
           title: Preguntes associades a aquest proces
@@ -502,6 +506,7 @@ val:
       administrators: Administradors
       managers: Gestors
       moderators: Moderadors
+      emails: Enviament d'emails
       newsletters: Butlletins informatius
       emails_download: Descàrrega de emails
       valuators: Evaluadors
@@ -557,6 +562,7 @@ val:
       administrators: Administradors
       proposal_authors: Autors de propostes
       investment_authors: Usuaris autors de propostes en els actuals pressupostos
+      invalid_recipients_segment: "El segment de destinataris es invàlid"
     newsletters:
       create_success: Butlletí informatiu creat correctament
       update_success: Butlletí informatiu actualitzat correctament
