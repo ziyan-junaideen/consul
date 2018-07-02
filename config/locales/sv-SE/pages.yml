@@ -6,7 +6,7 @@ sv:
     help:
       title: "%{org} är en plattform för medborgardeltagande"
       subtitle: "På %{org} kan du lägga förslag, delta i omröstningar, ge förslag till medborgarbudgetar, besluta i lokala frågor och debattera med andra."
-      guide: "Den här guiden förklarar vad är alla avsnitt av %{org} och hur de fungerar."
+      guide: "Den här guiden förklarar de olika delarna av %{org} och hur de fungerar."
       menu:
         debates: "Debatter"
         proposals: "Förslag"
@@ -16,24 +16,24 @@ sv:
         processes: "Processer"
       debates:
         title: "Debatter"
-        description: "I %{link}-delen kan du presentera dina åsikter och diskutera frågor som rör staden. Det är också en plats för att utveckla idéer som kan tas vidare till andra delar av %{org} och leda till konkreta åtgärder från kommunfullmäktige."
+        description: "I %{link}-delen kan du presentera dina åsikter och diskutera frågor som rör staden. Det är också en plats för att utveckla idéer som kan tas vidare till andra delar av %{org} och leda till konkreta åtgärder från kommunen."
         link: "debatter"
         feature_html: "Du kan skriva debattinlägg och kommentera och utvärdera andras inlägg med <strong>Jag håller med</strong> eller <strong>Jag håller inte med</strong>. För att göra det behöver du %{link}."
-        feature_link: "registrera i %{org}"
+        feature_link: "registrera dig på %{org}"
         image_alt: "Knappar för att betygsätta diskussioner"
         figcaption: '"Jag håller med" och "Jag håller inte med" knappar för att betygsätta debatter.'
       proposals:
         title: "Förslag"
-        description: "I %{link}-delen kan du skriva förslag som du vill att kommunfullmäktige ska genomföra. Förslagen behöver få tillräckligt med stöd för att gå vidare till omröstning. De förslag som vinner en omröstningen kommer att genomföras av kommunfullmäktige."
+        description: "I %{link}-delen kan du skriva förslag som du vill att kommunen ska genomföra. Förslagen behöver få tillräckligt med stöd för att gå vidare till omröstning. De förslag som vinner en omröstning kommer att genomföras av kommunen."
         link: "medborgarförslag"
-        feature_html: "För att skapa ett förslag behöver du registrera på %{org}. De förslag som får stöd av för 1% av de röstberättigade invånarna (%{supports} är för personer över 16 år och registrerade på webbplatsen) går vidare till omröstning. För att kunna stödja förslag behöver du ha ett verifierat konto."
-        image_alt: "Stöd ett förslag knapp"
-        figcaption_html: 'Knapp för att "Stödja" ett förslag.<br>När det fått tillräckligt med stöd går det vidare till omröstning.'
+        feature_html: "För att skapa ett förslag behöver du registrera dig på %{org}. De förslag som får stöd av 1% av de röstberättigade invånarna (%{supports} är för personer över 16 år som är registrerade på webbplatsen) går vidare till omröstning. För att kunna stödja förslag behöver du ha ett verifierat konto."
+        image_alt: "Knapp för att stödja förslag"
+        figcaption_html: 'Knapp för att "stödja" ett förslag.<br>När förslaget fått tillräckligt med stöd går det vidare till omröstning.'
       budgets:
         title: "Medborgarbudget"
-        description: "I %{link}-delen beslutar invånarna om hur delar av stadens budget ska användas."
+        description: "I %{link}-delen beslutar invånarna om hur en del av stadens budget ska användas."
         link: "medborgarbudgetar"
-        feature: "Varje år skapar, stödjer och röstar medborgarna på projekt. De projekt som fått mest stöd bekostas av stadens budget."
+        feature: "Varje år skapar, stöder och röstar medborgarna på projekt. De projekt som fått mest stöd bekostas av stadens budget."
         phase_1_html: "Från januari till början av mars kan alla som är registrerade på %{org} <strong>föreslå projekt</strong>."
         phase_2_html: "Under mars månad samlar förslagslämnarna stöd i en <strong>första urvalsprocess</strong>."
         phase_3_html: "Från april till början av maj <strong>rangordnar</strong> experter från staden projekten efter hur mycket stöd de fått, och bedömer om de är genomförbara."
