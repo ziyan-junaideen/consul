@@ -7,9 +7,9 @@ sv:
       new_password: "Nytt lösenord"
       updated: "Lösenordet har uppdaterats"
     confirmations:
-      confirmed: "Ditt konto har uppdaterats."
-      send_instructions: "Du kommer strax att få ett mail med instruktioner för att återställa ditt lösenord."
-      send_paranoid_instructions: "Om din e-postadress finns i vår databas kommer du strax att få ett mail med instruktioner för att återställa ditt lösenord."
+      confirmed: "Ditt konto har verifierats."
+      send_instructions: "Du kommer strax att få ett e-postmeddelande med instruktioner för att återställa ditt lösenord."
+      send_paranoid_instructions: "Om din e-postadress finns i vår databas kommer du strax att få ett e-postmeddelande med instruktioner för att återställa ditt lösenord."
     failure:
       already_authenticated: "Du är redan inloggad."
       inactive: "Ditt konto har inte aktiverats ännu."
@@ -18,7 +18,7 @@ sv:
       last_attempt: "Du har ett försök kvar innan ditt konto spärras."
       not_found_in_database: "Ogiltig %{authentication_keys} eller lösenord."
       timeout: "Din session har gått ut. Vänligen logga in igen för att fortsätta."
-      unauthenticated: "Du måste logga in eller registrera dig för att fortsätta."
+      unauthenticated: "Du behöver logga in eller registrera dig för att fortsätta."
       unconfirmed: "Klicka på bekräftelselänken i ditt mail för att fortsätta"
     mailer:
       confirmation_instructions:
@@ -33,9 +33,9 @@ sv:
     passwords:
       no_token: "Du kan inte komma åt denna sida utom genom en länk för återställning av lösenord. Om du har kommit hit genom en länk för återställning av lösenord, kontrollera att webbadressen är komplett."
       send_instructions: "Du kommer strax att få ett e-postmeddelande med instruktioner för att återställa ditt lösenord."
-      send_paranoid_instructions: "Om din e-postadress finns i vår databas kommer du strax att få en länk för att återställa ditt lösenord."
-      updated: "Ditt lösenord har ändrats framgångsrikt. Inloggad framgångsrikt."
-      updated_not_active: "Ditt lösenord har ändrats framgångsrikt."
+      send_paranoid_instructions: "Om din e-postadress finns i vår databas kommer du strax få en länk för att återställa ditt lösenord."
+      updated: "Ditt lösenord har ändrats."
+      updated_not_active: "Ditt lösenord har ändrats."
     registrations:
       destroyed: "Hejdå! Ditt konto har avslutats, men vi hoppas att få se dig igen snart!"
       signed_up: "Välkommen! Du har autentiserats."
