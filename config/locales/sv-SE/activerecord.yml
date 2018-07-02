@@ -8,8 +8,8 @@ sv:
         one: "Budget"
         other: "Budgetar"
       budget/investment:
-        one: "Investering"
-        other: "Investeringar"
+        one: "Budgetförslag"
+        other: "Budgetförslag"
       budget/investment/milestone:
         one: "milstolp"
         other: "milstolpar"
