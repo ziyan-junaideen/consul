@@ -36,18 +36,18 @@ sv:
       debates: Diskussioner
       polls: Omröstningar
       signature_sheets: Underskrifter
-      spending_proposals: Investeringsprojekt
+      spending_proposals: Budgetförslag
       spending_proposal_features:
-        voting_allowed: Omröstning om investeringsprojekt
+        voting_allowed: Omröstning om budgetförslag
       legislation: Lagstiftning
       user:
         recommendations: Rekommendationer
         skip_verification: Hoppa över användarverifiering
-      community: Diskussion om förslag och investeringar
-      map: Geografisk plats för förslag och investeringar
+      community: Diskussion om budgetförslag
+      map: Geografisk plats för budgetförslag
       allow_images: Tillåt uppladdning och visning av bilder
       allow_attached_documents: Tillåt uppladdning och visning av dokument
-      guides: Instruktioner för att skapa förslag och investeringsprojekt
+      guides: Instruktioner för att skapa budgetförslag
       public_stats: Offentliga statistiker
     related_content_score_threshold: Nivå för överensstämmelse med relaterat innehåll
     map_latitude: Latitud
