@@ -11,12 +11,12 @@ sv:
           one: "Du har röstat på <span>ett</span> budgetförslag."
           other: "Du har röstat på <span>%{count}</span> budgetförslag."
         voted_info_html: "Du kan ändra din röst på någon tid förrän i slutet av den här fasen.<br> Inget behov av att spendera alla pengar du har tillgängliga."
-        zero: Har du inte röstat i ett investeringsprojekt.
+        zero: Du har inte röstat på några budgetförslag.
       reasons_for_not_balloting:
         not_logged_in: Du behöver %{signin} eller %{signup} för att fortsätta.
-        not_verified: Endast godkända användare kan rösta om investeringar; %{verify_account}.
+        not_verified: Endast verifierade användare kan rösta på budgetförslag; %{verify_account}.
         organization: Organisationer är inte tillåtna att rösta
-        not_selected: Omarkerade investeringsprojekt som inte stöds
+        not_selected: Omarkerade budgetförslag kan inte stödjas
         not_enough_money_html: "Du har redan tilldelat den tillgängliga budgeten.<br><small>kom ihåg att du kan %{change_ballot} när som helst</small>"
         no_ballots_allowed: Vald fas är stängd
         different_heading_assigned_html: "Du har redan röstat under en annan rubrik: %{heading_link}"
