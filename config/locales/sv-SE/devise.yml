@@ -47,19 +47,19 @@ sv:
     sessions:
       signed_in: "Inloggad framgångsrikt."
       signed_out: "Utloggad framgångsrikt."
-      already_signed_out: "Utloggad framgångsrikt."
+      already_signed_out: "Du är utloggad."
     unlocks:
       send_instructions: "Du kommer strax att få ett e-postmeddelande med instruktioner för att låsa upp ditt konto."
-      send_paranoid_instructions: "Om du har ett konto kommer du strax att få ett mail med instruktioner för att låsa upp ditt konto."
+      send_paranoid_instructions: "Om du har ett konto kommer du strax att få ett e-postmeddelande med instruktioner för att låsa upp ditt konto."
       unlocked: "Ditt konto har låsts upp. Logga in för att fortsätta."
   errors:
     messages:
       already_confirmed: "Du har redan verifierats; försök att logga in."
-      confirmation_period_expired: "Du behöver verifiera ditt konto inom %{period}, var vänlig skicka en ny begäran."
-      expired: "är inte längre giltig, var vänlig gör en ny begäran."
-      not_found: "inte hittas."
+      confirmation_period_expired: "Du behöver verifiera ditt konto inom %{period}, var vänlig skicka en ny förfrågan."
+      expired: "är inte längre giltig, var vänlig gör en ny förfrågan."
+      not_found: "hittades inte."
       not_locked: "var inte låst."
       not_saved:
-        one: "Ett fel gjorde att %{resource} inte sparades. Kontrollera de markerade fälten för att rätta till dem:"
-        other: "%{count} fel gjorde att %{resource} inte sparades. Kontrollera de markerade fälten för att rätta till dem:"
+        one: "Ett fel gjorde att %{resource} inte kunde sparas. Kontrollera det markerade fältet för att rätta till felet:"
+        other: "%{count} fel gjorde att %{resource} inte kunde sparas. Kontrollera de markerade fälten för att rätta till felen:"
       equal_to_current_password: "måste vara annorlunda än det aktuella lösenordet."
