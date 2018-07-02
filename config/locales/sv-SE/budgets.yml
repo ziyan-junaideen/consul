@@ -8,8 +8,8 @@ sv:
         no_balloted_group_yet: "Du har inte röstat på denna grupp ännu, gå och rösta!"
         remove: Ta bort röst
         voted_html:
-          one: "Du har röstat <span></span> investeringar."
-          other: "Du har röstat <span>%{count}</span> investeringar."
+          one: "Du har röstat på <span>ett</span> budgetförslag."
+          other: "Du har röstat på <span>%{count}</span> budgetförslag."
         voted_info_html: "Du kan ändra din röst på någon tid förrän i slutet av den här fasen.<br> Inget behov av att spendera alla pengar du har tillgängliga."
         zero: Har du inte röstat i ett investeringsprojekt.
       reasons_for_not_balloting:
