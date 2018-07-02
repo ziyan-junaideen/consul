@@ -127,44 +127,44 @@ sv:
         milestone_status_changed: Investeringens status har ändrats till
         author: Förslagslämnare
         project_unfeasible_html: 'Det här investeringsprojektet <strong>har markerats som ej genomförbart</strong> och kommer inte gå vidare till omröstning.'
-        project_not_selected_html: 'Denna investering projektet <strong>har inte valts</strong> för omröstningsfas.'
+        project_not_selected_html: 'Det här investeringsprojektet <strong>har inte gått vidare</strong> till omröstning.'
       wrong_price_format: Endast heltal
       investment:
         add: Rösta
-        already_added: Du har redan lagt till detta investeringsprojekt
-        already_supported: Du har redan stött detta investeringsprojekt. Dela det!
-        support_title: Stödja detta projekt
+        already_added: Du har redan skapat det här investeringsprojektet
+        already_supported: Du stödjer redan det här investeringsprojektet. Dela det!
+        support_title: Stöd projektet
         confirm_group:
           one: "Du kan bara stödja projekt i %{count} stadsdel. Om du fortsätter kommer du inte kunna ändra valet av stadsdel. Vill du fortsätta?"
           other: "Du kan bara stödja projekt i %{count} stadsdelar. Om du fortsätter kommer du inte kunna ändra valet av stadsdel. Vill du fortsätta?"
         supports:
-          zero: Inga stöd
+          zero: Inget stöd
           one: 1 stöd
           other: "%{count} stöd"
         give_support: Stöd
       header:
         check_ballot: Kontrollera min omröstning
         different_heading_assigned_html: "Du har aktiva röster i en annan rubrik: %{heading_link}"
-        change_ballot: "Om du ändrar dig kan du ta bort dina röster i %{check_ballot} och starta igen."
+        change_ballot: "Om du ändrar dig kan du ta bort dina röster i %{check_ballot} och börja om."
         check_ballot_link: "kontrollera min omröstning"
         price: "Denna rubrik har en budget på"
     progress_bar:
-      assigned: "Du har tilldelat: "
+      assigned: "Du har fördelat: "
       available: "Tillgänglig budget: "
     show:
       group: Grupp
       phase: Aktuell fas
       unfeasible_title: Ogenomförbara investeringar
       unfeasible: Se ogenomförbara investeringar
-      unselected_title: Investeringar inte utvalda för omröstningsfas
-      unselected: Se investeringar som inte valts för omröstningsfas
-      see_results: Se resultat
+      unselected_title: Investeringar som inte gått vidare till omröstning
+      unselected: Visa investeringar som inte gått vidare till omröstning
+      see_results: Visa resultat
     results:
       link: Resultat
       page_title: "%{budget} - Resultat"
       heading: "Medborgarbudgets resultat"
       heading_selection_title: "Efter distrikt"
-      spending_proposal: Förslags titel
+      spending_proposal: Förslagets titel
       ballot_lines_count: Antal utvald
       hide_discarded_link: Gömma kasserade
       show_all_link: Visa alla
@@ -173,11 +173,11 @@ sv:
       accepted: "Accepterad utgiftsförslag: "
       discarded: "Kasserade utgiftsförslag: "
       incompatibles: Oförenliga
-      investment_proyects: Lista över alla investeringsprojekt
-      unfeasible_investment_proyects: Lista över alla ogenomförbara investeringsprojekt
-      not_selected_investment_proyects: Lista över alla investeringsprojekt som inte valts till omröstnings
+      investment_proyects: Lista över investeringsprojekt
+      unfeasible_investment_proyects: Lista över ogenomförbara investeringsprojekt
+      not_selected_investment_proyects: Lista över investeringsprojekt som inte gått vidare till omröstning
     phases:
       errors:
-        dates_range_invalid: "Startdatum kan inte vara samma eller senare än Slutdatum"
-        prev_phase_dates_invalid: "Startdatum måste infalla senare än startdatum för tidigare aktiverad fas (%{phase_name})"
-        next_phase_dates_invalid: "Slutdatum måste infalla tidigare än slutdatum för nästa aktiverad fas (%{phase_name})"
+        dates_range_invalid: "Startdatum kan inte vara samma eller senare än slutdatum"
+        prev_phase_dates_invalid: "Startdatum måste infalla senare än startdatumet för tidigare aktiverad fas (%{phase_name})"
+        next_phase_dates_invalid: "Slutdatum måste infalla tidigare än slutdatumet för nästa aktiverade fas (%{phase_name})"
