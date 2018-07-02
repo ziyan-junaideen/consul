@@ -14,7 +14,7 @@ sv:
           moderate: Moderera
         hide_comments: Dölj kommentarer
         ignore_flags: Markera som läst
-        order: Beställ
+        order: Sortera efter
         orders:
           flags: Mest flaggade
           newest: Senaste
@@ -34,13 +34,13 @@ sv:
         headers:
           debate: Diskutera
           moderate: Moderera
-        hide_debates: Göm diskussioner
+        hide_debates: Dölj debatter
         ignore_flags: Markera som läst
-        order: Ordning
+        order: Sortera efter
         orders:
           created_at: Senaste
           flags: Mest flaggade
-        title: Diskussioner
+        title: Debatter
     header:
       title: Moderering
     menu:
