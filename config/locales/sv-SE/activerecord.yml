@@ -14,8 +14,8 @@ sv:
         one: "milstolp"
         other: "milstolpar"
       budget/investment/status:
-        one: "Investeringsstatus"
-        other: "Investeringsstatus"
+        one: "Budgetförslagets status"
+        other: "Budgetförslagens status"
       comment:
         one: "Kommentar"
         other: "Kommentarer"
@@ -62,8 +62,8 @@ sv:
         one: "Medborgarförslag"
         other: "Medborgarförslag"
       spending_proposal:
-        one: "Investeringsprojekt"
-        other: "Investeringsprojekt"
+        one: "Budgetförslag"
+        other: "Budgetförslag"
       site_customization/page:
         one: Anpassad sida
         other: Anpassade sidor
@@ -126,7 +126,7 @@ sv:
         image: "Illustration av förslaget"
         image_title: "Bildtext"
       budget/investment/milestone:
-        status_id: "Nuvarande investeringsstatus (frivilligt fält)"
+        status_id: "Nuvarande status för budgetförslag (frivilligt fält)"
         title: "Titel"
         description: "Beskrivning (frivilligt fält om projektets status har ställts in)"
         publication_date: "Datum för offentliggörande"
