@@ -44,16 +44,16 @@ sv:
       empty_budgets: Det finns inga budgetar.
       section_header:
         icon_alt: Medborgarbudgetssymbol
-        title: Medborgarbudget
+        title: Medborgarbudgetar
         help: Hjälp med medborgarbudgetar
         all_phases: Se alla faser
       all_phases: Budget investerings faser
       map: Budget investeringars förslag ligger geografiskt
       investment_proyects: Lista över investeringsprojekt
       unfeasible_investment_proyects: Lista över ogenomförbara investeringsprojekt
-      not_selected_investment_proyects: Lista över investeringsprojekt som inte valts till lottning
+      not_selected_investment_proyects: Lista över investeringsprojekt som inte gått vidare till omröstning
       finished_budgets: Avslutade medborgarbudgetar
-      see_results: Se resultat
+      see_results: Visa resultat
       section_footer:
         title: Hjälp med medborgarbudgetar
         description: Med medborgarbudgeterna kan medborgarna hantera den kommunala budgeten genom att rösta på investeringsprojekt.
@@ -117,16 +117,16 @@ sv:
         organization_name_html: 'Föreslås på uppdrag av: <strong>%{name}</strong>'
         share: Dela
         title: Investeringsprojekt
-        supports: Stöd
+        supports: Stöder
         votes: Röster
         price: Kostnad
         comments_tab: Kommentarer
         milestones_tab: Milstolpar
-        no_milestones: Har inte bestämda milstolpar
-        milestone_publication_date: "Publicerade %{publication_date}"
+        no_milestones: Har inga bestämda milstolpar
+        milestone_publication_date: "Publicerad %{publication_date}"
         milestone_status_changed: Investeringens status har ändrats till
-        author: Författare
-        project_unfeasible_html: 'Denna investering projektet <strong>har markerats som ej genomförbar</strong> och kommer inte gå till omröstningsfas.'
+        author: Förslagslämnare
+        project_unfeasible_html: 'Det här investeringsprojektet <strong>har markerats som ej genomförbart</strong> och kommer inte gå vidare till omröstning.'
         project_not_selected_html: 'Denna investering projektet <strong>har inte valts</strong> för omröstningsfas.'
       wrong_price_format: Endast heltal
       investment:
