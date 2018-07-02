@@ -24,8 +24,8 @@ sv:
     groups:
       show:
         title: Välj ett alternativ
-        unfeasible_title: Ogenomförbara investeringar
-        unfeasible: Se ogenomförbara investeringar
+        unfeasible_title: Ej genomförbara budgetförslag
+        unfeasible: Se ej genomförbara budgetförslag
         unselected_title: Investeringar som inte gått vidare till omröstning
         unselected: Visa investeringar som inte gått vidare till omröstning
     phase:
@@ -47,7 +47,7 @@ sv:
         title: Medborgarbudgetar
         help: Hjälp med medborgarbudgetar
         all_phases: Se alla faser
-      all_phases: Budget investerings faser
+      all_phases: Budgetförslagets faser
       map: Budget investeringars förslag ligger geografiskt
       investment_proyects: Lista över investeringsprojekt
       unfeasible_investment_proyects: Lista över ogenomförbara investeringsprojekt
@@ -71,7 +71,7 @@ sv:
         map_location_instructions: "Navigera till platsen på kartan och placera markören."
         map_remove_marker: "Ta bort kartmarkör"
         location: "Ytterligare platsinformation"
-        map_skip_checkbox: "Denna investering har inte en konkret plats eller jag vet inte den."
+        map_skip_checkbox: "Det finns ingen specifik geografisk plats för budgetförslaget, eller jag känner inte till platsen."
       index:
         title: Medborgarbudget
         unfeasible: Ogenomförbara investeringsprojekt
@@ -94,11 +94,11 @@ sv:
           different_heading_assigned_html: "Du har aktiva röster i en annan rubrik: %{heading_link}"
           change_ballot: "Om du ändrar dig kan du ta bort dina röster i %{check_ballot} och starta igen."
           check_ballot_link: "kontrollera min omröstning"
-          zero: Du har inte röstat något investeringsprojekt i denna grupp.
+          zero: Du har inte röstat på några budgetförslag i den här gruppen.
           verified_only: "För att skapa ett nytt budgetförslag måste du %{verify}."
           verify_account: "verifiera ditt konto"
           create: "Skapa ett budgetförslag"
-          not_logged_in: "Om du vill skapa ett nytt budgetförslag måste du %{sign_in} eller %{sign_up}."
+          not_logged_in: "Om du vill skapa ett nytt budgetförslag behöver du %{sign_in} eller %{sign_up}."
           sign_in: "logga in"
           sign_up: "registrera sig"
           by_feasibility: Efter genomförbarhet
@@ -112,7 +112,7 @@ sv:
         author_deleted: Användare borttagen
         price_explanation: Kostnadsförklaring
         unfeasibility_explanation: Förklaring av ogenomförbarhet
-        code_html: 'Investeringsprojektkod: <strong>%{code}</strong>'
+        code_html: 'Kod för budgetförslag: <strong>%{code}</strong>'
         location_html: 'Plats: <strong>%{location}</strong>'
         organization_name_html: 'Föreslås på uppdrag av: <strong>%{name}</strong>'
         share: Dela
@@ -154,8 +154,8 @@ sv:
     show:
       group: Grupp
       phase: Aktuell fas
-      unfeasible_title: Ogenomförbara investeringar
-      unfeasible: Se ogenomförbara investeringar
+      unfeasible_title: Ej genomförbara budgetförslag
+      unfeasible: Visa ej genomförbara budgetförslag
       unselected_title: Investeringar som inte gått vidare till omröstning
       unselected: Visa investeringar som inte gått vidare till omröstning
       see_results: Visa resultat
