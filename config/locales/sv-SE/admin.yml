@@ -1002,11 +1002,11 @@ sv:
           valuating: Under bedömning
           valuation_finished: Bedömning avslutad
           all: Alla
-        title: Investeringsprojekt för medborgarbudget
+        title: Budgetförslag för medborgarbudget
         assigned_admin: Utsedd administratör
         no_admin_assigned: Ingen admin tilldelad
         no_valuators_assigned: Inga tilldelade bedömare
-        summary_link: "Investeringsprojektet Sammanfattning"
+        summary_link: "Sammanfattning av budgetförslag"
         valuator_summary_link: "Sammanfattning från bedömare"
         feasibility:
           feasible: "Genomförbart (%{price})"
@@ -1017,7 +1017,7 @@ sv:
         assigned_valuators: Tilldelade bedömare
         back: Tillbaka
         classification: Klassificering
-        heading: "Investeringsprojekt %{id}"
+        heading: "Budgetförslag %{id}"
         edit: Redigera
         edit_classification: Redigera klassificering
         association_name: Förening
@@ -1036,8 +1036,8 @@ sv:
         tags_placeholder: "Skriv de etiketter du vill ska separeras med kommatecken ()"
         undefined: Odefinierad
       summary:
-        title: Sammanfattning för investeringsprojekt
-        title_proposals_with_supports: Sammanfattning för investeringsprojekt med stöd
+        title: Sammanfattning av budgetförslag
+        title_proposals_with_supports: Sammanfattning av budgetförslag med stöd
         geozone_name: Omfattning
         finished_and_feasible_count: Klar och genomförbar
         finished_and_unfeasible_count: Klar och genomförbar
@@ -1108,7 +1108,7 @@ sv:
           proposal_votes: Förslagsröster
           proposals: Förslag
           budgets: Öppna budgetar
-          budget_investments: Investeringsprojekt
+          budget_investments: Budgetförslag
           spending_proposals: Förslag på utgifter
           unverified_users: Overifierade användare
           user_level_three: Nivå tre användare
