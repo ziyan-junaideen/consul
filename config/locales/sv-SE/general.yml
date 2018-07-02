@@ -129,7 +129,7 @@ sv:
         description: Starta en debatt för att diskutera frågor du är intresserad av med andra.
         help_text_1: "Utrymmet för medborgardebatter riktar sig till alla som vill ta upp frågor som berör dem och som de vill diskutera med andra."
         help_text_2: 'För att starta en debatt behöver du registrera dig på %{org}. Användare kan även kommentera i öppna debatter och betygsätta dem med knapparna för "jag håller med" eller "jag håller inte med".'
-        help_text_3: "Tänk på att en debatt inte leder till någon konkret handling. Om du vill lägga ett %{proposal} för staden eller föreslå ett investeringsprojekt för %{budget} när den fasen är öppen, gå till respektive del av hemsidan."
+        help_text_3: "Tänk på att en debatt inte leder till någon konkret handling. Om du vill lägga ett %{proposal} för staden eller ett budgetförslag för %{budget} när den fasen är öppen, gå till respektive del av hemsidan."
         proposals_link: förslag
         budget_link: deltagande budgeterande
     new:
@@ -176,7 +176,7 @@ sv:
     proposal: Förslag
     proposal_notification: "Anmälan"
     spending_proposal: Investeringsförslag
-    budget/investment: Investering
+    budget/investment: Budgetförslag
     budget/heading: Budgetrubrik
     poll/shift: Skift
     poll/question/answer: Svar
@@ -578,9 +578,9 @@ sv:
     followable:
       budget_investment:
         create:
-          notice_html: "Du följer nu det här investeringsprojektet! </br> Vi meddelar dig om alla ändringar så att du kan hålla dig uppdaterad."
+          notice_html: "Du följer nu det här budgetförslaget! </br> Vi meddelar dig om alla ändringar så att du kan hålla dig uppdaterad."
         destroy:
-          notice_html: "Du har slutat följa det här investeringsprojektet! </br> Vi kommer inte längre meddela dig om ändringar för det här projektet."
+          notice_html: "Du har slutat följa det här budgetförslaget! </br> Vi kommer inte längre meddela dig om ändringar för det här förslaget."
       proposal:
         create:
           notice_html: "Du följer nu det här medborgarförslaget! </br> Vi meddelar dig om alla ändringar så att du kan hålla dig uppdaterad."
@@ -600,9 +600,9 @@ sv:
         see_all: "Se alla"
       budget_investment:
         found:
-          one: "Det finns redan ett projekt om '%{query}'. Du kan delta i det istället för att skapa ett nytt projekt."
-          other: "Det finns redan projekt om '%{query}'. Du kan delta i dem istället för att skapa ett nytt projekt."
-        message: "Du visar %{limit} av %{count} projekt som innehåller '%{query} '"
+          one: "Det finns redan ett budgetförslag om '%{query}'. Du kan delta i det förslaget istället för att skapa ett nytt."
+          other: "Det finns redan budgetförslag om '%{query}'. Du kan delta i de förslagen istället för att skapa ett nytt."
+        message: "Du visar %{limit} av %{count} förslag som innehåller '%{query} '"
         see_all: "Se alla"
       proposal:
         found:
@@ -653,7 +653,7 @@ sv:
       title: Investeringsförslagstitel
     index:
       title: Medborgarbudget
-      unfeasible: Ogenomförbara investeringsprojekt
+      unfeasible: Ej genomförbara budgetförslag
       by_geozone: "Investeringsprojekt för område: %{geozone}"
       search_form:
         button: Sök
