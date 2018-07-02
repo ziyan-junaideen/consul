@@ -5,10 +5,10 @@ sv:
     budget_investment:
       title: "Ett budgetförslag"
       feature_1_html: "Idéer om hur att spendera en del av <strong>kommunens budget</strong>"
-      feature_2_html: "Investeringsprojekt är accepterade <strong>mellan januari och mars</strong>"
+      feature_2_html: "Budgetförslag tas emot <strong>från januari och mars</strong>"
       feature_3_html: "Om det får stöd, är genomförbart och handlar om någonting som kommunen har ansvar på, då går det till omröstningsfas"
       feature_4_html: "Om medborgarna godkänner projekten blir de verklighet"
-      new_button: Jag vill skapa en budget investering
+      new_button: Jag vill skapa ett budgetförslag
     proposal:
       title: "Ett medborgarförslag"
       feature_1_html: "Idéer om någon åtgärd kommunfullmäktigen kan ta"
