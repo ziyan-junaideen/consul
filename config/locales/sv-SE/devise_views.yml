@@ -19,18 +19,18 @@ sv:
         title: Välkommen till portalen för öppen data
         welcome: Välkommen
       reset_password_instructions:
-        change_link: Uppdatera mitt lösenord
+        change_link: Ändra mitt lösenord
         hello: Hej
         ignore_text: Ignorera det här meddelandet om du inte begärt ett nytt lösenord.
         info_text: Du behöver använda länken för att ändra ditt lösenord.
         text: 'Vi har mottagit en begäran om att ändra ditt lösenord. Du kan göra det med följande länk:'
-        title: Uppdatera ditt lösenord
+        title: Ändra ditt lösenord
       unlock_instructions:
         hello: Hej
         info_text: Ditt konto har blockerats på grund av ett alltför stort antal misslyckade inloggningsförsök.
         instructions_text: 'Klicka på länken för att låsa upp ditt konto:'
         title: Ditt konto har låsts
-        unlock_link: Låsa upp mitt konto
+        unlock_link: Lås upp mitt konto
     menu:
       login_items:
         login: Logga in
@@ -44,7 +44,7 @@ sv:
           password_confirmation_label: Bekräfta lösenord
           password_label: Lösenord
           phone_number_label: Telefonnummer
-          responsible_name_label: Fullständigt namn på personen som ansvarar för kollektivet
+          responsible_name_label: Fullständigt namn på personen som representerar gruppen
           responsible_name_note: Det här är en person som representerar organisationen/gruppen som står bakom förslagen
           submit: Registrera dig
           title: Registrera som organisation eller kollektiv
