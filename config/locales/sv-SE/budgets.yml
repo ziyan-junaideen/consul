@@ -26,8 +26,8 @@ sv:
         title: Välj ett alternativ
         unfeasible_title: Ogenomförbara investeringar
         unfeasible: Se ogenomförbara investeringar
-        unselected_title: Investeringar inte valda för lottningsfast
-        unselected: Se investeringar som inte valts för lottningsfas
+        unselected_title: Investeringar som inte gått vidare till omröstning
+        unselected: Visa investeringar som inte gått vidare till omröstning
     phase:
       drafting: Utkast (inte synligt för allmänheten)
       informing: Information
