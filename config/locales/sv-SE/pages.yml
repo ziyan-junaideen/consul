@@ -1,7 +1,7 @@
 sv:
   pages:
-    census_terms: För att verifiera kontot måste du vara 16 år eller äldre och registrera dig med ovan angivna uppgifter, vilka kommer att granskas. Genom att godkänna verifieringsprocessen bekräftar du att information är korrekt, inklusive de kontaktuppgifter som angetts. Uppgifterna kommer att införlivas och behandlas i ett register enligt användningsvillkoren för portalen.
-    conditions: Regler och villkor för användning
+    census_terms: För att verifiera kontot måste du vara 16 år eller äldre och registrera dig med ovan angivna uppgifter, vilka kommer att granskas. Genom att godkänna verifieringsprocessen bekräftar du att informationen är korrekt, inklusive de kontaktuppgifter som angetts. Uppgifterna kommer att sparas och behandlas i en databas enligt användningsvillkoren för portalen.
+    conditions: Regler och användarvillkor
     general_terms: Regler och villkor
     help:
       title: "%{org} är en plattform för medborgardeltagande"
