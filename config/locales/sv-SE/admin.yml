@@ -261,8 +261,8 @@ sv:
       form:
         add_language: Lägg till språk
         remove_language: Ta bort språk
-        admin_statuses: Administrativ status för investering
-        no_statuses_defined: Det finns ingen definierad investeringsstatus än
+        admin_statuses: Administrativ status för budgetförslag
+        no_statuses_defined: Det finns ingen definierad status för budgetförslag än
       new:
         creating: Skapa milstolpe
         date: Datum
@@ -277,24 +277,24 @@ sv:
         notice: Milstolpe raderad
     statuses:
       index:
-        title: Investeringsstatus
-        empty_statuses: Det finns ingen definierad investeringsstatus än
-        new_status: Skapa ny investeringsstatus
+        title: Status för budgetförslag
+        empty_statuses: Det finns ingen definierad status för budgetförslag än
+        new_status: Skapa ny status för budgetförslag
         table_name: Namn
         table_description: Beskrivning
         table_actions: Åtgärder
         delete: Radera
         edit: Redigera
       edit:
-        title: Redigera investeringsstatus
+        title: Redigera status för budgetförslag
       update:
-        notice: Investeringsstatusen har uppdaterats
+        notice: Status för budgetförslag har uppdaterats
       new:
-        title: Skapa investeringsstatus
+        title: Skapa status för budgetförslag
       create:
-        notice: Investeringsstatusen har skapats
+        notice: Status för budgetförslag har skapats
       delete:
-        notice: Investeringsstatusen har tagits bort
+        notice: Status för budgetförslag har tagits bort
     comments:
       index:
         filter: Filter
@@ -563,11 +563,11 @@ sv:
       all_users: Alla användare
       administrators: Administratörer
       proposal_authors: Förslagsförfattarna
-      investment_authors: Investeringarsförfattare i den aktuella budgeten
-      feasible_and_undecided_investment_authors: "Författarna till vissa investeringar i den aktuella budgeten som inte överensstämmer med: [värderingen avslutad ogenomförbar"
-      selected_investment_authors: Författarna till utvalda investeringar i den nuvarande budgeten
-      winner_investment_authors: Författarna till utvalda investeringar i den nuvarande budgeten
-      not_supported_on_current_budget: Användare som inte har stöttat investeringar i nuvarande budget
+      investment_authors: Förslagslämnare för den aktuella budgeten
+      feasible_and_undecided_investment_authors: "Förslagslämnare till budgetförslag i den aktuella budgeten som inte överensstämmer med: [valuation finished unfesasible]"
+      selected_investment_authors: Förslagslämnarna till utvalda budgetförslag i den nuvarande budgeten
+      winner_investment_authors: Förslagslämnarna till till utvalda budgetförslag i den nuvarande budgeten
+      not_supported_on_current_budget: Användare som inte har stöttat budgetförslag i den nuvarande budgeten
       invalid_recipients_segment: "Mottagaranvändarens segment är ogiltig"
     newsletters:
       create_success: Nyhetsbrev har skapats
@@ -625,7 +625,7 @@ sv:
       search:
         title: 'Bedömare: Användarsökning'
       summary:
-        title: Sammanfattning av bedömare för investeringsprojekt
+        title: Sammanfattning av bedömning av budgetförslag
         valuator_name: Bedömare
         finished_and_feasible_count: Klart och genomförbart
         finished_and_unfeasible_count: Klart och ogenomförbart
