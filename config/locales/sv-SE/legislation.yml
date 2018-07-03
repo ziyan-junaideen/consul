@@ -2,7 +2,7 @@ sv:
   legislation:
     annotations:
       comments:
-        see_all: Se alla
+        see_all: Visa alla
         see_complete: Visa förklaring
         comments_count:
           one: "%{count} kommentar"
