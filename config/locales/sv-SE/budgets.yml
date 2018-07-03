@@ -103,7 +103,7 @@ sv:
           sign_up: "registrera sig"
           by_feasibility: Efter genomförbarhet
           feasible: Genomförbara projekt
-          unfeasible: Ogenomförbara projekt
+          unfeasible: Ej genomförbara projekt
         orders:
           random: slumpmässig
           confidence_score: högst betygsatt
