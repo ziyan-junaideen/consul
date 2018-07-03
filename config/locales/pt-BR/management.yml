@@ -50,6 +50,8 @@ pt-BR:
       print_spending_proposals: Imprimir proposta de despesa
       support_spending_proposals: Apoiar proposta de despesa
       create_budget_investment: Criar um investimento orçamentário
+      user_invites: Enviar convites
+      select_user: Selecione usuário
     permissions:
       create_proposals: Criar propostas
       debates: Participar em debates
