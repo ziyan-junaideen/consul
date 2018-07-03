@@ -55,10 +55,9 @@ sv:
         document_number_help_text_html: '<strong>ID-kort</strong>: 12345678A<br> <strong>Pass</strong>: AAA000001<br> <strong>Legitimation</strong>: X1234567P'
         document_type:
           passport: Pass
-          residence_card: Uppehållskort
-          spanish_id: Dagar
-        document_type_label: Dokumenttyp
-        error_not_allowed_age: Du har inte åldern som krävs för att delta
+          spanish_id: Legitimation
+        document_type_label: Identitetshandling
+        error_not_allowed_age: Du är för ung för att delta
         error_not_allowed_postal_code: Du måste vara registrerad för att kunna verifieras.
         error_verifying_census: Folkbokföringen kunde inte bekräfta dina uppgifter. Var vänlig bekräfta dina uppgifter genom att ringa kommunen eller besöka ett %{offices}.
         error_verifying_census_offices: Citizen Support Office
