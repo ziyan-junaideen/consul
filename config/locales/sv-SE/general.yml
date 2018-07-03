@@ -654,10 +654,10 @@ sv:
     index:
       title: Medborgarbudget
       unfeasible: Ej genomförbara budgetförslag
-      by_geozone: "Investeringsprojekt för område: %{geozone}"
+      by_geozone: "Budgetförslag för område: %{geozone}"
       search_form:
         button: Sök
-        placeholder: Investeringsprojekt...
+        placeholder: Budgetförslag...
         title: Sök
       search_results:
         one: " innehåller '%{search_term}'"
@@ -666,7 +666,7 @@ sv:
         geozones: Geografiskt område
         feasibility: Genomförbarhet
         unfeasible: Ej genomförbart
-      start_spending_proposal: Skapa ett investeringsprojekt
+      start_spending_proposal: Skapa ett budgetförslag
     new:
       more_info: Hur funkar medborgarbudgetar?
       recommendation_one: Förslaget måste ge hänvisa till faktiska kostnader.
@@ -680,7 +680,7 @@ sv:
       share: Dela
     wrong_price_format: Endast heltal
     spending_proposal:
-      spending_proposal: Investeringsprojekt
+      spending_proposal: Budgetförslag
       already_supported: Du stödjer redan det här projektet. Dela det!
       support: Stöd
       support_title: Stödja detta projekt
@@ -723,10 +723,10 @@ sv:
       deleted: Raderat
       deleted_debate: Den här debatten har tagits bort
       deleted_proposal: Det här förslaget har tagits bort
-      deleted_budget_investment: Det här projektet har tagits bort
+      deleted_budget_investment: Det här budgetförslaget har tagits bort
       proposals: Förslag
       debates: Debatter
-      budget_investments: Budget investeringar
+      budget_investments: Budgetförslag
       comments: Kommentarer
       actions: Åtgärder
       filters:
@@ -740,8 +740,8 @@ sv:
           one: 1 Förslag
           other: "%{count} Förslag"
         budget_investments:
-          one: 1 Investering
-          other: "%{count} Investeringar"
+          one: 1 budgetförslag
+          other: "%{count} budgetförslag"
         follows:
           one: 1 Följer
           other: "%{count} Följer"
@@ -749,7 +749,7 @@ sv:
       no_private_messages: "Användaren tar inte emot privata meddelanden."
       private_activity: Användarens aktivitetslista är privat.
       send_private_message: "Skicka privat meddelande"
-      delete_alert: "Är du säker på att du vill radera projektet? Åtgärden kan inte ångras"
+      delete_alert: "Är du säker på att du vill ta bort budgetförslaget? Åtgärden kan inte ångras"
     proposals:
       send_notification: "Skicka notis"
       retire: "Dra tillbaka"
@@ -771,17 +771,17 @@ sv:
       not_logged_in: Du behöver %{signin} eller %{signup} för att fortsätta.
       not_verified: Endast verifierade användare kan rösta på förslag; %{verify_account}.
       organization: Organisationer kan inte rösta
-      unfeasible: Det går inte att stödja investeringsprojekt som inte godkänts
+      unfeasible: Det går inte att stödja budgetförslag som inte godkänts
       not_voting_allowed: Omröstningsfas är stäng
     budget_investments:
       not_logged_in: Du behöver %{signin} eller %{signup} för att fortsätta.
-      not_verified: Endast verifierade användare kan rösta på investeringsprojekt; %{verify_account}.
+      not_verified: Endast verifierade användare kan rösta på budgetförslag; %{verify_account}.
       organization: Organisationer kan inte rösta
-      unfeasible: Det går inte att stödja investeringsprojekt som inte godkänts
+      unfeasible: Det går inte att stödja budgetförslag som inte godkänts
       not_voting_allowed: Omröstningsfas är stäng
       different_heading_assigned:
-        one: "Du kan bara stödja investeringsprojekt i %{count} stadsdel"
-        other: "Du kan bara stödja investeringsprojekt i %{count} stadsdelar"
+        one: "Du kan bara stödja budgetförslag i %{count} stadsdel"
+        other: "Du kan bara stödja budgetförslag i %{count} stadsdelar"
   welcome:
     feed:
       most_active:
@@ -805,7 +805,7 @@ sv:
         title: Rekommenderade förslag
         btn_text_link: Alla rekommenderade förslag
       budget_investments:
-        title: Rekommenderade investeringar
+        title: Rekommenderade budgetförslag
       slide: "Se %{title}"
     verification:
       i_dont_have_an_account: Jag har inget konto
@@ -842,7 +842,7 @@ sv:
     content_title:
       proposal: "Förslag"
       debate: "Debatt"
-      budget_investment: "Budgetinvesteringar"
+      budget_investment: "Budgetförslag"
   admin/widget:
     header:
       title: Administration
