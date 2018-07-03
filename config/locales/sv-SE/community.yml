@@ -4,12 +4,12 @@ sv:
       title: Gemenskap
       description:
         proposal: Delta i gemenskapen kring detta förslag.
-        investment: Delta i gemenskapen kring denna investering.
+        investment: Delta i diskussionen om budgetförslaget.
       button_to_access: Gå med i gemenskapen
     show:
       title:
         proposal: Gemenskap kring förslaget
-        investment: Gemenskap kring investeringen
+        investment: Diskussion om budgetförslaget
       description:
         proposal: Delta i gemenskapen kring förslaget. En aktiv gemenskap kan förbättra innehållet i förslaget, göra det mer känt och öka dess stöd.
         investment: Delta i gemenskapen kring investeringen. En aktiv gemenskap kan förbättra innehållet i investeringen, göra det mer känt och öka dess stöd.
