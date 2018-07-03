@@ -122,7 +122,7 @@ sv:
         price: Kostnad
         comments_tab: Kommentarer
         milestones_tab: Milstolpar
-        no_milestones: Har inga bestämda milstolpar
+        no_milestones: Har inga definierade milstolpar
         milestone_publication_date: "Publicerad %{publication_date}"
         milestone_status_changed: Investeringens status har ändrats till
         author: Förslagslämnare
@@ -162,7 +162,7 @@ sv:
     results:
       link: Resultat
       page_title: "%{budget} - Resultat"
-      heading: "Medborgarbudgets resultat"
+      heading: "Resultat av medborgarbudget"
       heading_selection_title: "Efter distrikt"
       spending_proposal: Förslagets titel
       ballot_lines_count: Antal utvald
