@@ -3,12 +3,12 @@ sv:
     show:
       change_credentials_link: Ändra mina autentiseringsuppgifter
       email_on_comment_label: Meddela mig via e-post när någon kommenterar mina förslag eller debatter
-      email_on_comment_reply_label: Meddela mig via e-mail när någon svarar på mina kommentarer
+      email_on_comment_reply_label: Meddela mig via e-post när någon svarar på mina kommentarer
       erase_account_link: Ta bort mitt konto
       finish_verification: Slutför verifiering
       notifications: Meddelanden
       organization_name_label: Organisationsnamn
-      organization_responsible_name_placeholder: Företrädare för organisationen/kollektivet
+      organization_responsible_name_placeholder: Företrädare för organisationen/gruppen
       personal: Personlig information
       phone_number_label: Telefonnummer
       public_activity_label: Håll min lista över aktiviteter offentlig
