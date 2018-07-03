@@ -19,7 +19,7 @@ sv:
       not_found_in_database: "Ogiltig %{authentication_keys} eller lösenord."
       timeout: "Din session har gått ut. Vänligen logga in igen för att fortsätta."
       unauthenticated: "Du behöver logga in eller registrera dig för att fortsätta."
-      unconfirmed: "Klicka på bekräftelselänken i ditt mail för att fortsätta"
+      unconfirmed: "Klicka på bekräftelselänken i ditt e-postmeddelande för att fortsätta"
     mailer:
       confirmation_instructions:
         subject: "Instruktioner för att bekräfta kontot"
@@ -41,12 +41,12 @@ sv:
       signed_up: "Välkommen! Du har autentiserats."
       signed_up_but_inactive: "Din registrering lyckades, men du behöver aktivera ditt konto innan du kan logga in."
       signed_up_but_locked: "Din registrering lyckades, men du behöver aktivera ditt konto innan du kan logga in."
-      signed_up_but_unconfirmed: "Vi har skickat ett meddelande med en verifieringslänk. Vänligen klicka på länken för att aktivera ditt konto."
+      signed_up_but_unconfirmed: "Vi har skickat ett meddelande med en bekräftelselänk. Vänligen klicka på länken för att aktivera ditt konto."
       update_needs_confirmation: "Ditt konto har uppdaterats, men vi behöver verifiera din nya e-postadress. Kontrollera din e-post och klicka på länken för att slutföra verifieringen av dina nya e-postadress."
-      updated: "Ditt konto har uppdaterats framgångsrikt."
+      updated: "Ditt konto har uppdaterats."
     sessions:
-      signed_in: "Inloggad framgångsrikt."
-      signed_out: "Utloggad framgångsrikt."
+      signed_in: "Du är inloggad."
+      signed_out: "Du är utloggad."
       already_signed_out: "Du är utloggad."
     unlocks:
       send_instructions: "Du kommer strax att få ett e-postmeddelande med instruktioner för att låsa upp ditt konto."
@@ -62,4 +62,4 @@ sv:
       not_saved:
         one: "Ett fel gjorde att %{resource} inte kunde sparas. Kontrollera det markerade fältet för att rätta till felet:"
         other: "%{count} fel gjorde att %{resource} inte kunde sparas. Kontrollera de markerade fälten för att rätta till felen:"
-      equal_to_current_password: "måste vara annorlunda än det aktuella lösenordet."
+      equal_to_current_password: "måste vara annorlunda än det nuvarande lösenordet."
