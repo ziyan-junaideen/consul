@@ -115,7 +115,7 @@ sv:
       invalid: är ogiltigt
       less_than: måste vara mindre än %{count}
       less_than_or_equal_to: måste vara mindre än eller lika med %{count}
-      model_invalid: "Kontrollfel: %{errors}"
+      model_invalid: "Felmeddelanden: %{errors}"
       not_a_number: är inte ett nummer
       not_an_integer: måste vara ett heltal
       odd: måste vara ett udda tal
