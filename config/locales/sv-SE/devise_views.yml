@@ -45,7 +45,7 @@ sv:
           password_label: Lösenord
           phone_number_label: Telefonnummer
           responsible_name_label: Fullständigt namn på personen som representerar gruppen
-          responsible_name_note: Det här är en person som representerar organisationen/gruppen som står bakom förslagen
+          responsible_name_note: Det här är en person som företräder organisationen/gruppen som står bakom förslagen
           submit: Registrera dig
           title: Registrera er som organisation eller grupp
         success:
