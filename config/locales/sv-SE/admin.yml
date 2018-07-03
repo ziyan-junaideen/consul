@@ -74,7 +74,7 @@ sv:
         budget_investments: Hantera projekt
         table_name: Namn
         table_phase: Etapp
-        table_investments: Investeringar
+        table_investments: Budgetförslag
         table_edit_groups: Partigrupper
         table_edit_budget: Redigera
         edit_groups: Redigera partigrupper
@@ -95,7 +95,7 @@ sv:
         blank_dates: Datum är tomma
       destroy:
         success_notice: Budget har med framgång raderats
-        unable_notice: Du kan inte förstöra en Budget som har associerade investeringar
+        unable_notice: Du kan inte ta bort en budget som har budgetförslag
       new:
         title: Ny deltagarbudget
       show:
@@ -122,9 +122,9 @@ sv:
         population_info: "Budget rubrik befolkningen fältet används för statistiska ändamål i slutet av budgeten för att visa för varje rubrik som representerar ett område med befolkning vilken procentandel röstade. Fältet är valfritt så kan du lämna det tomt om det inte gäller."
         max_votable_headings: "Maxium antal rubriker där en användare kan rösta"
       winners:
-        calculate: Beräkna vinnande investeringar
+        calculate: Beräkna vinnande budgetförslag
         calculated: Vinnare beräknas, kan det ta en minut.
-        recalculate: Omberäkna vinnarinvesteringar
+        recalculate: Räkna om vinnande budgetförslag
     budget_phases:
       edit:
         start_date: Startdatum
@@ -167,8 +167,8 @@ sv:
           search: Sök
           filter: Filtrera
         download_current_selection: "Ladda ned nuvarande val"
-        no_budget_investments: "Det finns inga investeringsprojekt."
-        title: Investeringsprojekt
+        no_budget_investments: "Det finns inga budgetförslag."
+        title: Budgetförslag
         assigned_admin: Utsedd administratör
         no_admin_assigned: Ingen admin tilldelad
         no_valuators_assigned: Inga tilldelade bedömare
@@ -197,7 +197,7 @@ sv:
         assigned_admin: Utsedd administratör
         assigned_valuators: Tilldelade bedömare
         classification: Klassificering
-        info: "%{budget_name} - grupp: %{group_name} - investering projekt %{id}"
+        info: "%{budget_name} - grupp: %{group_name} - budgetförslag %{id}"
         edit: Redigera
         edit_classification: Redigera klassificering
         by: Av
