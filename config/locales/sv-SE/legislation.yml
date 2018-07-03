@@ -79,7 +79,7 @@ sv:
       phase_empty:
         empty: Inget har publicerats än
       process:
-        see_latest_comments: Se de senaste kommentarerna
+        see_latest_comments: Visa de senaste kommentarerna
         see_latest_comments_title: Kommentera denna process
       shared:
         key_dates: Viktiga datum
@@ -94,7 +94,7 @@ sv:
         comments_title: Öppna svar
         comments_closed: Avslutad fas
         form:
-          leave_comment: Lämna ditt svar
+          leave_comment: Svara
       question:
         comments:
           zero: Inga kommentarer
@@ -104,16 +104,16 @@ sv:
       show:
         answer_question: Skicka svar
         next_question: Nästa fråga
-        first_question: Först fråga
+        first_question: Första frågan
         share: Dela
         title: Kollaborativ lagstiftningsprocess
       participation:
         phase_not_open: Denna fas är inte öppen
         organizations: Organisationer får inte delta i debatten
         signin: Logga in
-        signup: Registrera sig
+        signup: Registrera dig
         unauthenticated: Du behöver %{signin} eller %{signup} för att kunna delta.
-        verified_only: Endast verifierade användare kan delta %{verify_account}.
+        verified_only: Endast verifierade användare kan delta, %{verify_account}.
         verify_account: verifiera ditt konto
         debate_phase_not_open: Diskussionsfasen har avslutats, och svar kan inte längre tas emot
     shared:
