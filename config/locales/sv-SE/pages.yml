@@ -18,10 +18,10 @@ sv:
         title: "Debatter"
         description: "I %{link}-delen kan du presentera dina åsikter och diskutera frågor som rör staden. Det är också en plats för att utveckla idéer som kan tas vidare till andra delar av %{org} och leda till konkreta åtgärder från kommunen."
         link: "debatter"
-        feature_html: "Du kan skriva debattinlägg och kommentera och utvärdera andras inlägg med <strong>Jag håller med</strong> eller <strong>Jag håller inte med</strong>. För att göra det behöver du %{link}."
+        feature_html: "Du kan skriva debattinlägg och kommentera och betygsätta andras inlägg med <strong>Jag håller med</strong> eller <strong>Jag håller inte med</strong>. För att göra det behöver du %{link}."
         feature_link: "registrera dig på %{org}"
-        image_alt: "Knappar för att betygsätta diskussioner"
-        figcaption: '"Jag håller med" och "Jag håller inte med" knappar för att betygsätta debatter.'
+        image_alt: "Knappar för att betygsätta debatter"
+        figcaption: '"Jag håller med"- och "Jag håller inte med"-knappar för att betygsätta debatter.'
       proposals:
         title: "Förslag"
         description: "I %{link}-delen kan du skriva förslag som du vill att kommunen ska genomföra. Förslagen behöver få tillräckligt med stöd för att gå vidare till omröstning. De förslag som vinner en omröstning kommer att genomföras av kommunen."
@@ -46,9 +46,9 @@ sv:
         description: "%{link}-delen aktiveras varje gång ett förslag får 1% stöd och går vidare till omröstning, eller när kommunfullmäktige lämnar ett förslag till omröstning."
         link: "omröstningar"
         feature_1: "För att delta i omröstningen måste du %{link} och verifiera ditt konto."
-        feature_1_link: "registrera i %{org_name}"
+        feature_1_link: "registrera dig på %{org_name}"
         feature_2: "Alla verifierade medborgare över 16 år har möjlighet att rösta."
-        feature_3: "Resultaten av alla omröstningar är bindande för kommunfullmäktige."
+        feature_3: "Resultaten av omröstningar är bindande för kommunfullmäktige."
       processes:
         title: "Processer"
         description: "I %{link}-delen är medborgare med i processen att skriva och kommentera nya policydokument som rör staden och kan kommentera existerande dokument."
