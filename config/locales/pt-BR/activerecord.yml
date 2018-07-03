@@ -116,6 +116,8 @@ pt-BR:
       budget/investment/milestone:
         title: "Título"
         publication_date: "Data de publicação"
+      budget/investment/status:
+        name: "Nome"
       budget/heading:
         name: "Título"
         price: "Preço"
@@ -149,6 +151,7 @@ pt-BR:
         name: "Nome da organização"
         responsible_name: "Pessoa responsável pelo grupo"
       spending_proposal:
+        administrator_id: "Administrador"
         association_name: "Nome da Associação"
         description: "Descrição"
         external_url: "Link para documentação adicional"
@@ -190,6 +193,7 @@ pt-BR:
         body: Corpo
       legislation/process:
         title: Título do processo
+        summary: Resumo
         description: Descrição
         additional_info: Informação adicional
         start_date: Data de início
@@ -230,6 +234,9 @@ pt-BR:
         subject: Assunto
         from: De
         body: Conteúdo do e-mail
+      widget/card:
+        title: Título
+        description: Descrição
     errors:
       models:
         user:
