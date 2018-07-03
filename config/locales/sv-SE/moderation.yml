@@ -45,7 +45,7 @@ sv:
       title: Moderering
     menu:
       flagged_comments: Kommentarer
-      flagged_debates: Diskussioner
+      flagged_debates: Debatter
       proposals: Förslag
       users: Blockera användare
     proposals:
@@ -55,7 +55,7 @@ sv:
         filter: Filtrera
         filters:
           all: Alla
-          pending_flag_review: Pågående granskning
+          pending_flag_review: Inväntar granskning
           with_ignored_flag: Markera som läst
         headers:
           moderate: Moderera
