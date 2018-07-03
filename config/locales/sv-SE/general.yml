@@ -235,7 +235,7 @@ sv:
       my_account_link: Mitt konto
       my_activity_link: Min aktivitet
       open: öppen
-      open_gov: Öppna myndigheter
+      open_gov: Open Government
       proposals: Förslag
       poll_questions: Rösta
       budgets: Medborgarbudget
@@ -325,7 +325,7 @@ sv:
       done: Genomfört
       other: Andra
     form:
-      geozone: Verksamhetsområde
+      geozone: Område
       proposal_external_url: Länk till ytterligare dokumentation
       proposal_question: Frågeställning
       proposal_question_example_html: "Ska sammanfattas i en ja- eller nej-fråga.<br>Till exempel: 'Ska vi göra om Drottninggatan till gågata?'"
@@ -356,7 +356,7 @@ sv:
         hot_score: mest aktiva
         most_commented: mest kommenterade
         relevance: relevans
-        archival_date: arkiverad
+        archival_date: arkiverade
         recommendations: rekommendationer
       recommendations:
         without_results: Finns det inga förslag som rör dina intressen
