@@ -112,13 +112,13 @@ sv:
         without_interests: Följ förslag så vi kan ge dig rekommendationer
       search_form:
         button: Sök
-        placeholder: Sök diskussioner...
+        placeholder: Sök debatter...
         title: Sök
       search_results_html:
-        one: " som innehåller ämnet <strong>'%{search_term}'</strong>"
-        other: " som innehåller ämnena <strong>'%{search_term}'</strong>"
+        one: " som innehåller <strong>'%{search_term}'</strong>"
+        other: " som innehåller <strong>'%{search_term}'</strong>"
       select_order: Sortera efter
-      start_debate: Starta en diskussion
+      start_debate: Starta en debatt
       title: Diskussioner
       section_header:
         icon_alt: Debatt ikon
@@ -136,7 +136,7 @@ sv:
       form:
         submit_button: Starta en diskussion
       info: Om du vill lägga ett förslag är det här fel avdelning, gå till %{info_link}.
-      info_link: skapa nytt förslag
+      info_link: skapa ett nytt förslag
       more_info: Mer information
       recommendation_four: Det här är din plats, du ska kunna trivas och göra din röst hörd här.
       recommendation_one: Använd inte versaler för diskussionstiteln eller för hela meningar. På internet anses detta skrika. Och gillar ingen att bli skriken på.
@@ -188,7 +188,7 @@ sv:
     image: Bild
   geozones:
     none: Hela staden
-    all: Alla ämne
+    all: Alla ämnen
   layouts:
     application:
       chrome: Google Chrome
@@ -197,16 +197,16 @@ sv:
       ie_title: Webbplatsen är inte optimerad för din webbläsare
     footer:
       accessibility: Tillgänglighet
-      conditions: Regler och villkor för användning
-      consul: CONSUL programvara
+      conditions: Regler och användarvillkor
+      consul: CONSUL
       consul_url: https://github.com/consul/consul
       contact_us: För teknisk support gå till
       copyright: CONSUL, %{year}
       description: Den här webbplatsen använder %{consul} som är %{open_source}.
       faq: teknisk support
       open_data_text: Du har tillgång till all information om kommunfullmäktige.
-      open_data_title: Öppna data
-      open_source: mjukvara med öppen källkod
+      open_data_title: Öppen data
+      open_source: program med öppen källkod
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
       participation_text: Skapa den stad du vill ha.
       participation_title: Deltagande
@@ -221,12 +221,12 @@ sv:
       collaborative_legislation: Lagstiftningsprocesser
       debates: Debatter
       external_link_blog: Blogg
-      external_link_opendata: Öppna data
-      external_link_opendata_url: https://opendata.Consul
+      external_link_opendata: Öppen data
+      external_link_opendata_url: https://opendata.consul
       external_link_transparency: Transparens
       external_link_transparency_url: https://transparency.consul
       locale: 'Språk:'
-      logo: Consuls logo
+      logo: CONSULs logotyp
       management: Förvaltning
       moderation: Moderering
       valuation: Bedömning
