@@ -90,13 +90,13 @@ sv:
         submit_button: Spara ändringar
       show_link: Visa debatt
     form:
-      debate_text: Inledande debatttext
-      debate_title: Debatttitel
-      tags_instructions: Tagga denna debatt.
+      debate_text: Inledande debatt-text
+      debate_title: Debatt-titel
+      tags_instructions: Tagga debatten.
       tags_label: Ämne
       tags_placeholder: "Skriv in de etiketter du vill använda, avgränsade med semikolon (',')"
     index:
-      featured_debates: Stjärnmarkerade
+      featured_debates: Utvalda
       filter_topic:
         one: " med ämne '%{topic} '"
         other: " med ämne '%{topic} '"
