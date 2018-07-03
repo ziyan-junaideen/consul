@@ -11,7 +11,7 @@ sv:
         one: "Budgetförslag"
         other: "Budgetförslag"
       budget/investment/milestone:
-        one: "milstolp"
+        one: "milstolpe"
         other: "milstolpar"
       budget/investment/status:
         one: "Budgetförslagets status"
@@ -20,7 +20,7 @@ sv:
         one: "Kommentar"
         other: "Kommentarer"
       debate:
-        one: "Debattera"
+        one: "Debatt"
         other: "Debatter"
       tag:
         one: "Tagg"
@@ -141,13 +141,13 @@ sv:
         body: "Kommentar"
         user: "Användare"
       debate:
-        author: "Författare"
-        description: "Åsikt"
+        author: "Debattör"
+        description: "Inlägg"
         terms_of_service: "Användarvillkor"
-        title: "Titel"
+        title: "Rubrik"
       proposal:
-        author: "Författare"
-        title: "Titel"
+        author: "Förslagslämnare"
+        title: "Rubrik"
         question: "Fråga"
         description: "Beskrivning"
         terms_of_service: "Användarvillkor"
@@ -164,14 +164,14 @@ sv:
         redeemable_code: "Mottagen bekräftelsekod"
       organization:
         name: "Organisationens namn"
-        responsible_name: "Gruppens talesperson"
+        responsible_name: "Representant för gruppen"
       spending_proposal:
         administrator_id: "Administratör"
         association_name: "Föreningens namn"
         description: "Beskrivning"
         external_url: "Länk till ytterligare dokumentation"
-        geozone_id: "Användningsområde"
-        title: "Titel"
+        geozone_id: "Verksamhetsområde"
+        title: "Rubrik"
       poll:
         name: "Namn"
         starts_at: "Startdatum"
