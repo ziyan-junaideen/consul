@@ -48,7 +48,7 @@ sv:
         help: Hjälp med medborgarbudgetar
         all_phases: Se alla faser
       all_phases: Budgetförslagets faser
-      map: Budget investeringars förslag ligger geografiskt
+      map: Geografiskt baserade budgetförslag
       investment_proyects: Lista över investeringsprojekt
       unfeasible_investment_proyects: Lista över ogenomförbara investeringsprojekt
       not_selected_investment_proyects: Lista över investeringsprojekt som inte gått vidare till omröstning
