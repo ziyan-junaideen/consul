@@ -4,11 +4,11 @@ sv:
       title: Bedömning
     menu:
       title: Bedömning
-      budgets: Medborgarbudget
+      budgets: Medborgarbudgetar
       spending_proposals: Förslag på utgifter
     budgets:
       index:
-        title: Medborgarbudget
+        title: Medborgarbudgetar
         filters:
           current: Pågående
           finished: Avslutade
@@ -28,9 +28,9 @@ sv:
         title: Budgetförslag
         edit: Redigera rapport
         valuators_assigned:
-          one: Ansvarig utvärderare
-          other: "%{count} ansvariga utvärderare"
-        no_valuators_assigned: Inga ansvariga utvärderare
+          one: Ansvarig handläggare
+          other: "%{count} ansvariga handläggare"
+        no_valuators_assigned: Inga ansvariga handläggare
         table_id: Legitimation
         table_title: Titel
         table_heading_name: Rubriknamn
@@ -38,7 +38,7 @@ sv:
       show:
         back: Tillbaka
         title: Budgetförslag
-        info: Om skribenten
+        info: Om förslagslämnaren
         by: Inskickat av
         sent: Registrerat
         heading: Rubrik
