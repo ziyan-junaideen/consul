@@ -365,11 +365,11 @@ sv:
       retired_proposals_link: "Förslag som dragits tillbaka av förslagslämnaren"
       retired_links:
         all: Alla
-        duplicated: Duplicerad
+        duplicated: Dubletter
         started: Pågående
         unfeasible: Ej genomförbart
         done: Genomfört
-        other: Andra
+        other: Annat
       search_form:
         button: Sök
         placeholder: Sök förslag...
