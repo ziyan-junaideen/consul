@@ -22,13 +22,13 @@ sv:
           offices: Citizen Support Offices
           success_html: Tack för att du begärde din <b> högsta säkerhetskod (krävs endast för slutliga röster) </b>. Om några dagar skickar vi det till adressen med de data vi har på filen. Kom ihåg att du kan samla din kod från något av %{offices}.
       edit:
-        see_all: Se förslag
+        see_all: Visa förslag
         title: Brev begärt
       errors:
         incorrect_code: Verifieringskoden är felaktig
       new:
         explanation: 'För att delta i den slutgiltiga omröstningen kan du:'
-        go_to_index: Se förslag
+        go_to_index: Visa förslag
         office: Verifiera i någon %{office}
         offices: Citizen Support Offices
         send_letter: Skicka mig ett brev med koden
