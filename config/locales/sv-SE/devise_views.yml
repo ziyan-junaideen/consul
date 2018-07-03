@@ -77,21 +77,21 @@ sv:
         login: Logga in
         new_confirmation: Har du inte fått instruktioner för att aktivera ditt konto?
         new_password: Har du glömt ditt lösenord?
-        new_unlock: Har du inte fått upplåsning instruktioner?
+        new_unlock: Har du inte fått instruktioner för att låsa upp ditt konto?
         signin_with_provider: Logga in med %{provider}
         signup: Har du inte ett konto? %{signup_link}
         signup_link: Registrera dig
     unlocks:
       new:
         email_label: E-post
-        submit: Skicka om upplåsning instruktioner
-        title: Skickade om upplåsning instruktioner
+        submit: Skicka instruktioner för att låsa upp konto igen
+        title: Har skickat instruktioner för att låsa upp konto
     users:
       registrations:
         delete_form:
-          erase_reason_label: Syfte
+          erase_reason_label: Anledning
           info: Åtgärden kan inte ångras. Kontrollera att detta är vad du vill.
-          info_reason: Om du vill kan du skriva en anledning (tillval)
+          info_reason: Om du vill kan du skriva en anledning (frivilligt)
           submit: Radera mitt konto
           title: Radera konto
         edit:
