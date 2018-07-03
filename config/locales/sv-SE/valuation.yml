@@ -73,7 +73,7 @@ sv:
         save: Spara ändringar
       notice:
         valuate: "Uppdaterad rapport"
-      valuation_comments: Bedomningskommentarer
+      valuation_comments: Kommentarer från bedömning
       not_in_valuating_phase: Budgetförslag kan endast vara värderas när budgeten är i värderingfasen
     spending_proposals:
       index:
@@ -87,11 +87,11 @@ sv:
       show:
         back: Tillbaka
         heading: Budgetförslag
-        info: Om skribenten
+        info: Om förslagslämnaren
         association_name: Förening
         by: Skickat av
         sent: Registrerat
-        geozone: Omfattning
+        geozone: Område
         dossier: Rapport
         edit_dossier: Redigera rapport
         price: Kostnad
