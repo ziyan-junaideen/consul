@@ -191,12 +191,12 @@ sv:
       site_customization/page:
         content: Innehåll
         created_at: Skapad den
-        subtitle: Undertitel
-        slug: Orsak
+        subtitle: Underrubrik
+        slug: URL
         status: Status
-        title: Titel
+        title: Rubrik
         updated_at: Uppdaterad den
-        more_info_flag: Visa i hjälpsida
+        more_info_flag: Visa i hjälpsidor
         print_content_flag: Skriv ut innehåll
         locale: Språk
       site_customization/image:
@@ -250,7 +250,7 @@ sv:
         from: Från
         body: E-postmeddelande
       widget/card:
-        label: Etikett (tillval)
+        label: Etikett (frivilligt)
         title: Titel
         description: Beskrivning
         link_text: Länktext
@@ -274,8 +274,8 @@ sv:
         image:
           attributes:
             attachment:
-              min_image_width: "Bilden måste ha en bredd om minst %{required_min_width} px"
-              min_image_height: "Bilden måste ha en höjd om minst %{required_min_height} px"
+              min_image_width: "Bilden måste vara minst %{required_min_width} px bred"
+              min_image_height: "Bilden måste vara minst %{required_min_height} px hög"
         newsletter:
           attributes:
             segment_recipient:
@@ -294,7 +294,7 @@ sv:
             end_date:
               invalid_date_range: måste vara på eller efter startdatum
             debate_end_date:
-              invalid_date_range: måste vara på eller efter startdatum för diskussionen
+              invalid_date_range: måste vara på eller efter startdatum för debatten
             allegations_end_date:
               invalid_date_range: måste vara på eller efter startdatum för utvärderingen
         proposal:
@@ -328,7 +328,7 @@ sv:
             valuation:
               cannot_comment_valuation: 'Du kan inte kommentera en värdering'
       messages:
-        record_invalid: "Kontrollfel: %{errors}"
+        record_invalid: "Felmeddelanden: %{errors}"
         restrict_dependent_destroy:
           has_one: "Kan inte radera post eftersom den beroende posten %{record} finns"
           has_many: "Kan inte radera post eftersom den beroende posten %{record} finns"
