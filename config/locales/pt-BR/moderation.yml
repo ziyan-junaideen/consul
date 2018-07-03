@@ -47,6 +47,7 @@ pt-BR:
       flagged_comments: Comentários
       flagged_debates: Debates
       proposals: Propostas
+      proposal_notifications: Notificação das propostas
       users: Bloquear usuários
     proposals:
       index:
@@ -67,6 +68,25 @@ pt-BR:
           created_at: Mais recentes
           flags: Mais sinalizado
         title: Propostas
+    proposal_notifications:
+      index:
+        block_authors: Bloquear autores
+        confirm: Você tem certeza?
+        filter: Filtrar
+        filters:
+          all: Todos
+          pending_review: Revisão pendente
+          ignored: Marcar como visto
+        headers:
+          moderate: Moderado
+          proposal_notification: Notificação da proposta
+        hide_proposal_notifications: Ocultar propostas
+        ignore_flags: Marcar com visualizado
+        order: Ordenar por
+        orders:
+          created_at: Mais recentes
+          moderated: Moderado
+        title: Notificações da proposta
     users:
       index:
         hidden: Bloqueados
