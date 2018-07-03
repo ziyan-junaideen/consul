@@ -28,21 +28,21 @@ sv:
         title: Kommentera
       version_chooser:
         seeing_version: Kommentarer för version
-        see_text: Se utkast
+        see_text: Visa utkast
     draft_versions:
       changes:
         title: Ändringar
         seeing_changelog_version: Sammanfattning av ändringar
-        see_text: Se utkast
+        see_text: Visa utkast
       show:
         loading_comments: Laddar kommentarer
         seeing_version: Du visar ett utkast
         select_draft_version: Välj utkast
-        select_version_submit: se
+        select_version_submit: visa
         updated_at: uppdaterad den %{date}
         see_changes: visa sammanfattning av ändringar
-        see_comments: Se alla kommentarer
-        text_toc: Index
+        see_comments: Visa alla kommentarer
+        text_toc: Innehållsförteckning
         text_body: Text
         text_comments: Kommentarer
     processes:
@@ -56,13 +56,13 @@ sv:
         empty_questions: Det finns inga frågor
         participate: Delta i debatten
       index:
-        filter: Filter
+        filter: Filtrera
         filters:
-          open: Öppna processer
+          open: Pågående processer
           next: Nästa
-          past: Tidigare
-        no_open_processes: Det finns inga öppna processer
-        no_next_processes: Inga planerade processer
+          past: Föregående
+        no_open_processes: Det finns inga pågående processer
+        no_next_processes: Det finns inga planerade processer
         no_past_processes: Det finns inga avslutade processer
         section_header:
           icon_alt: Ikon för lagstiftande process
