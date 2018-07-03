@@ -36,6 +36,10 @@ pt-BR:
       groups:
         all_city: Toda a cidade
         districts: Distritos
+      valuator_groups:
+        culture_and_sports: Cultura & Esportes
+      statuses:
+        executed: Executado
     polls:
       current_poll: "Votação atual"
       current_poll_geozone_restricted: "Votação atual restrita por geozona"
