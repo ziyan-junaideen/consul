@@ -504,6 +504,7 @@ val:
       hidden_comments: Comentaris ocults
       hidden_debates: Debats ocults
       hidden_proposals: Propostes ocultes
+      hidden_proposal_notifications: Notificacions de propostes ocultes
       hidden_users: Usuaris bloquejats
       administrators: Administradors
       managers: Gestors
@@ -939,6 +940,15 @@ val:
           without_confirmed_hide: Pendents
         title: Propostes ocultes
         no_hidden_proposals: No hi ha propostes ocultes.
+    proposal_notifications:
+      index:
+        filter: Filtrar
+        filters:
+          all: Totes
+          with_confirmed_hide: Confirmades
+          without_confirmed_hide: Pendents
+        title: Notificacions ocultes
+        no_hidden_proposals: No hi ha notificacions ocultes.
     settings:
       flash:
         updated: Valor actualitzat
