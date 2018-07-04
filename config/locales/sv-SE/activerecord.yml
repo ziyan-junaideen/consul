@@ -121,15 +121,15 @@ sv:
         description: "Beskrivning"
         external_url: "Länk till ytterligare dokumentation"
         administrator_id: "Administratör"
-        location: "Plats (frivilligt)"
+        location: "Plats (frivilligt fält)"
         organization_name: "Om du föreslår i namn av en kollektiv/organisation, eller åt fler personers vägnar, skriv dess namn"
-        image: "Illustration av förslaget"
+        image: "Förklarande bild till förslaget"
         image_title: "Bildtext"
       budget/investment/milestone:
         status_id: "Nuvarande status för budgetförslag (frivilligt fält)"
         title: "Titel"
         description: "Beskrivning (frivilligt fält om projektets status har ställts in)"
-        publication_date: "Datum för offentliggörande"
+        publication_date: "Publiceringsdatum"
       budget/investment/status:
         name: "Namn"
         description: "Beskrivning (frivilligt fält)"
@@ -250,7 +250,7 @@ sv:
         from: Från
         body: E-postmeddelande
       widget/card:
-        label: Etikett (frivilligt)
+        label: Etikett (frivilligt fält)
         title: Titel
         description: Beskrivning
         link_text: Länktext
