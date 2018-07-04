@@ -86,7 +86,7 @@ sv:
       hi: "Kära användare,"
       unselected_html: "Från kommunfullmäktige vill vi tacka för ditt deltagande i <strong>medborgarbudgeten</strong>. Tyvärr har ditt budgetförslag <strong>'%{title}'</strong> inte gått vidare till den slutgiltiga omröstningen."
       participate_html: "Du kan fortfarande delta i den slutgiltiga omröstningen för budgetförslag från <strong>15 maj till 30 juni</strong>."
-      participate_url: "delta i slutomröstningen"
+      participate_url: "delta i den slutgiltiga omröstningen"
       thanks: "Tack igen för att du deltar."
       sincerely: "Vänliga hälsningar"
       signatory: "FÖRVALTNINGEN FÖR MEDBORGARDELTAGANDE"
