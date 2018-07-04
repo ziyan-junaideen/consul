@@ -17,6 +17,7 @@ val:
           reset_email_send: Email enviat correctament.
           reseted: Contrasenya restablida correctament
           random: Generar contrasenya aleatoria
+          save: Guardar contrasenya
           print: Imprimir contrasenya
           print_help: Podràs imprimir la contrasenya quant s'haja guardat.
     account_info:
@@ -26,6 +27,7 @@ val:
       email_label: 'Correu electrònic:'
       identified_label: 'Identificat com:'
       username_label: 'Nom d''usuari:'
+    check: Revisa document
     dashboard:
       index:
         title: Gestió
