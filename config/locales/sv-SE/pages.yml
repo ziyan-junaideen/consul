@@ -54,16 +54,16 @@ sv:
         description: "I %{link}-delen är medborgare med i processen att skriva och kommentera nya policydokument som rör staden och kan kommentera existerande dokument."
         link: "processer"
         feature: "För att delta i processen behöver du %{sign_up} och följa %{link}-sidan för att se vilka dokument och policies som diskuteras."
-        sign_up: "registrera dig i %{org}"
+        sign_up: "registrera dig på %{org}"
       faq:
-        title: "Tekniska problem?"
+        title: "Har du tekniska problem?"
         description: "Läs de vanliga frågorna och hitta ett svar till dina."
         button: "Visa vanliga frågor"
         page:
           title: "Vanliga frågor"
-          description: "Använd denna sida för att hjälpa dina användare med deras vanligaste frågorna."
+          description: "Använd den här sidan för att hjälpa dina användare med deras vanligaste frågor."
           faq_1_title: "Fråga 1"
-          faq_1_description: "Detta är ett exempel på beskrivning till frågan ett."
+          faq_1_description: "Det här är ett exempel på beskrivning till fråga ett."
       other:
         title: "Annan information av intresse"
         how_to_use: "Använd %{org_name} i din stad"
@@ -80,12 +80,12 @@ sv:
     titles:
       accessibility: Tillgänglighet
       conditions: Användarvillkor
-      help: "Vad är %{org}? - Medborgardialog"
+      help: "Vad är %{org}? - Medborgardeltagande"
       privacy: Sekretesspolicy
     verify:
       code: Koden du fick i ett brev
       email: E-post
-      info: 'För att verifiera ditt konto måste du skriva in dina uppgifter:'
+      info: 'För att verifiera ditt konto måste du fylla i dina uppgifter:'
       info_code: 'Nu kan du skriva in koden du fick i ett brev:'
       password: Lösenord
       submit: Verifiera mitt konto
