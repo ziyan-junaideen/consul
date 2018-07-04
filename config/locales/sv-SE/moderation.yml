@@ -69,7 +69,7 @@ sv:
         title: Förslag
     users:
       index:
-        hidden: Blockerad
+        hidden: Blockerade
         hide: Blockera
         search: Sök
         search_placeholder: e-postadress eller namn på användare
