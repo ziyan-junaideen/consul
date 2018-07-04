@@ -4,9 +4,9 @@ sv:
       show:
         title: Din valsedel
         amount_spent: Spenderat belopp
-        remaining: "Du har fortfarande <span>%{amount}</span> att investera."
+        remaining: "Du har fortfarande <span>%{amount}</span> att spendera."
         no_balloted_group_yet: "Du har inte röstat på denna grupp ännu, gå och rösta!"
-        remove: Ta bort röst
+        remove: Dra tillbaka din röst
         voted_html:
           one: "Du har röstat på <span>ett</span> budgetförslag."
           other: "Du har röstat på <span>%{count}</span> budgetförslag."
@@ -15,10 +15,10 @@ sv:
       reasons_for_not_balloting:
         not_logged_in: Du behöver %{signin} eller %{signup} för att fortsätta.
         not_verified: Endast verifierade användare kan rösta på budgetförslag; %{verify_account}.
-        organization: Organisationer är inte tillåtna att rösta
+        organization: Organisationer kan inte rösta
         not_selected: Omarkerade budgetförslag kan inte stödjas
         not_enough_money_html: "Du har redan tilldelat den tillgängliga budgeten.<br><small>kom ihåg att du kan %{change_ballot} när som helst</small>"
-        no_ballots_allowed: Vald fas är stängd
+        no_ballots_allowed: Urvalsetappen är stängd
         different_heading_assigned_html: "Du har redan röstat under en annan rubrik: %{heading_link}"
         change_ballot: ändra dina röster
     groups:
