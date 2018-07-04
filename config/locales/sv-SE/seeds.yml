@@ -17,7 +17,7 @@ sv:
     categories:
       associations: Föreningar
       culture: Kultur
-      sports: Idrott
+      sports: Sport
       social_rights: Sociala rättigheter
       economy: Ekonomi
       employment: Arbetsmarknad
@@ -31,11 +31,11 @@ sv:
       security_emergencies: Säkerhet
       environment: Miljö
     budgets:
-      budget: Medborgarbudget
+      budget: Stadsdelar
       currency: kr
       groups:
         all_city: Hela staden
-        districts: Distrikter
+        districts: Stadsdelar
       valuator_groups:
         culture_and_sports: Kultur och sport
         gender_and_diversity: Jämställdhet och mångfald
