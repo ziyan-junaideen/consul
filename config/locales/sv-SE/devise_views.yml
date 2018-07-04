@@ -4,9 +4,9 @@ sv:
       new:
         email_label: E-post
         submit: Skicka instruktioner igen
-        title: Skicka om bekräftelse instruktioner
+        title: Skicka bekräftelseinstruktioner igen
       show:
-        instructions_html: Bekräftar kontot med e-postadress %{email}
+        instructions_html: Bekräftar kontot med e-postadressen %{email}
         new_password_confirmation_label: Upprepa ditt lösenord
         new_password_label: Nytt lösenord
         please_set_password: Ställ in ditt nya lösenord (för e-postadressen ovan)
