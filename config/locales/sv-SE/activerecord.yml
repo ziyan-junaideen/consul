@@ -121,7 +121,7 @@ sv:
         description: "Beskrivning"
         external_url: "Länk till ytterligare dokumentation"
         administrator_id: "Administratör"
-        location: "Plats (valfritt)"
+        location: "Plats (frivilligt)"
         organization_name: "Om du föreslår i namn av en kollektiv/organisation, eller åt fler personers vägnar, skriv dess namn"
         image: "Illustration av förslaget"
         image_title: "Bildtext"
