@@ -112,7 +112,7 @@ sv:
         heading: Rubriknamn
         add_heading: Lägga till rubrik
         amount: Antal
-        population: "Befolkning (fakultativ)"
+        population: "Befolkning (frivilligt fält)"
         population_help_text: "Dessa data används enbart för att beräkna de deltagande statistiken"
         save_heading: Spara rubrik
         no_heading: Denna grupp har inga tilldelade rubrik.
@@ -465,7 +465,7 @@ sv:
           title: Fråga
           title_placeholder: Lägg till fråga
           value_placeholder: Lägg till ett stängt svar
-          question_options: "Möjliga svar (ej obligatoriskt, öppna svar som standard)"
+          question_options: "Möjliga svar (frivilligt fält, öppna svar som standard)"
         index:
           back: Tillbaka
           title: Frågor som är associerade till denna process
