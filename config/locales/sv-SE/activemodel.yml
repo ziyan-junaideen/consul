@@ -2,13 +2,13 @@ sv:
   activemodel:
     models:
       verification:
-        residence: "Hem"
+        residence: "Adress"
         sms: "SMS"
     attributes:
       verification:
         residence:
-          document_type: "Dokumenttyp"
-          document_number: "Dokumentnummer (inklusive bokstäver)"
+          document_type: "Identitetshandling"
+          document_number: "Identitetshandlingens nummer (inklusive bokstäver)"
           date_of_birth: "Födelsedatum"
           postal_code: "Postnummer"
         sms:
