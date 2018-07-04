@@ -8,10 +8,10 @@ sv:
     official_level_5_name: "Tjänsteperson nivå 5"
     max_ratio_anon_votes_on_debates: "Maximal andel anonyma röster per diskussion"
     max_votes_for_proposal_edit: "Gräns för antal röster efter vilket ett förslag inte längre kan redigeras"
-    max_votes_for_debate_edit: "Gräns för antal röster efter vilket en diskussion inte längre kan redigeras"
+    max_votes_for_debate_edit: "Gräns för antal röster efter vilket en debatt inte längre kan redigeras"
     proposal_code_prefix: "Prefix för förslagskoder"
     votes_for_proposal_success: "Antal röster som krävs för att ett förslag ska antas"
-    months_to_archive_proposals: "Antal månader för arkivering av förslag"
+    months_to_archive_proposals: "Antal månader innan förslag arkiveras"
     email_domain_for_officials: "E-postdomän för tjänstepersoner"
     per_page_code_head: "Kod att inkludera på varje sida (<head>)"
     per_page_code_body: "Kod att inkludera på varje sida (<body>)"
@@ -33,7 +33,7 @@ sv:
       facebook_login: Facebook-inloggning
       google_login: Google-inloggning
       proposals: Förslag
-      debates: Diskussioner
+      debates: Debatter
       polls: Omröstningar
       signature_sheets: Underskrifter
       spending_proposals: Budgetförslag
@@ -48,7 +48,7 @@ sv:
       allow_images: Tillåt uppladdning och visning av bilder
       allow_attached_documents: Tillåt uppladdning och visning av dokument
       guides: Instruktioner för att skapa budgetförslag
-      public_stats: Offentliga statistiker
+      public_stats: Offentlig statistik
     related_content_score_threshold: Nivå för överensstämmelse med relaterat innehåll
     map_latitude: Latitud
     map_longitude: Longitud
