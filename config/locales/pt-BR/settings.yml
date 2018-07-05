@@ -42,9 +42,13 @@ pt-BR:
       legislation: Legislação
       user:
         recommendations: Recomendações
+        skip_verification: Ignorar confirmação de usuário
       community: Comunidade em propostas e projetos de investimento
       map: Geolocalização de propostas e projetos de investimento
       allow_images: Permitir upload e exibir imagens
+      allow_attached_documents: Permitir upload e exibir documentos anexados
+      guides: Orientações para criar propostas ou projetos de investimento
+      public_stats: Estatísticas públicas
     map_latitude: Latitude
     map_longitude: Longitude
     map_zoom: Zoom
