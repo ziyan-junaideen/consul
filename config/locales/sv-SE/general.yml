@@ -499,7 +499,7 @@ sv:
       verify_link: "verifiera ditt konto"
       cant_answer_incoming: "Omröstningen har inte börjat än."
       cant_answer_expired: "Omröstningen är avslutad."
-      cant_answer_wrong_geozone: "Den här frågan är inte tillgänglig i ditt geografiska område."
+      cant_answer_wrong_geozone: "Den här frågan är inte tillgänglig i ditt område."
       more_info_title: "Mer information"
       documents: Dokument
       zoom_plus: Expandera bild
@@ -520,7 +520,7 @@ sv:
         total: "TOTALT"
         valid: "Giltiga"
         white: "Blankröster"
-        null_votes: "Ogiltig"
+        null_votes: "Ogiltiga"
       results:
         title: "Frågor"
         most_voted_answer: "Mest utvald svar: "
@@ -615,7 +615,7 @@ sv:
       districts: "Distrikter"
       districts_list: "Distriktlist"
       categories: "Kategorier"
-    target_blank_html: " (länken öppnas i nytt fönster)"
+    target_blank_html: " (länken öppnas i ett nytt fönster)"
     you_are_in: "Du är på"
     unflag: Ta bort flagga
     unfollow_entity: "Sluta följa %{entity}"
