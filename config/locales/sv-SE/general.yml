@@ -139,13 +139,13 @@ sv:
       info_link: skapa ett nytt förslag
       more_info: Mer information
       recommendation_four: Det här är din plats, du ska kunna trivas och göra din röst hörd här.
-      recommendation_one: Använd inte versaler för diskussionstiteln eller för hela meningar. På internet anses detta skrika. Och gillar ingen att bli skriken på.
+      recommendation_one: Använd inte versaler i debattens titel eller i hela meningar i beskrivningen. På internet betyder det att skrika, och ingen gillar när folk skriker på dem.
       recommendation_three: Hänsynslös kritik välkomnas. Det här utrymmet är till för diskussion och reflektion. Men vi rekommenderar att du ändå håller diskussionen sjysst och intelligent. Världen blir en bättre plats om vi alla tänker på det.
       recommendation_two: Debattinlägg eller kommentarer som förespråkar olagliga handlingar eller försöker sabotera diskussionen kommer att raderas. Allt annat är tillåtet.
       recommendations_title: Rekommendationer för debattinlägg
-      start_new: Starta en diskussion
+      start_new: Starta en debatt
     show:
-      author_deleted: Användaren borttagen
+      author_deleted: Användaren är borttagen
       comments:
         zero: Inga kommentarer
         one: 1 kommentar
@@ -155,7 +155,7 @@ sv:
       flag: Denna debatt har flaggats som olämpligt av flera användare.
       login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
       share: Dela
-      author: Författare
+      author: Förslagslämnare
     update:
       form:
         submit_button: Spara ändringar
@@ -166,12 +166,12 @@ sv:
   form:
     accept_terms: Jag godkänner %{policy} och %{conditions}
     accept_terms_title: Jag godkänner sekretesspolicyn och användarvillkoren
-    conditions: Regler och villkor för användning
-    debate: Debatt
+    conditions: Användarvillkoren
+    debate: Debattera
     direct_message: privat meddelande
     error: fel
     errors: fel
-    not_saved_html: "förhindrade att %{resource} sparas. <br>Kontrollera och rätta till de markerade fälten:"
+    not_saved_html: "gjorde att %{resource} inte kunde sparas. <br>Kontrollera och rätta till de markerade fälten:"
     policy: Sekretesspolicy
     proposal: Förslag
     proposal_notification: "Meddelande"
@@ -401,7 +401,7 @@ sv:
       recommendation_three: Det här är din plats, du ska kunna trivas och göra din röst hörd här.
       recommendation_two: Förslag eller kommentarer som förespråkar olagliga handlingar eller försöker sabotera diskussionen kommer att raderas. Allt annat är tillåtet.
       recommendations_title: Rekommendationer för att skriva förslag
-      start_new: Skapa nytt förslag
+      start_new: Skapa ett förslag
     notice:
       retired: Förslag som dragits tillbaka
     proposal:
@@ -509,7 +509,7 @@ sv:
       videos: "Extern video"
       info_menu: "Information"
       stats_menu: "Deltagandestatistik"
-      results_menu: "Omröstningsresultat"
+      results_menu: "Röstningsresultat"
       stats:
         title: "Deltagardata"
         total_participation: "Totalt antal deltagare"
@@ -527,9 +527,9 @@ sv:
   poll_questions:
     create_question: "Skapa fråga"
     show:
-      vote_answer: "Rösta för %{answer}"
-      voted: "Du har röstat %{answer}"
-      voted_token: "Skriv ner den här verifieringskoden för att kunna kontrollera din röst i det slutgiltiga resultatet:"
+      vote_answer: "Rösta på %{answer}"
+      voted: "Du har röstat på %{answer}"
+      voted_token: "Skriv ner den här verifieringskoden för att kunna kontrollera din röst i slutresultatet:"
   proposal_notifications:
     new:
       title: "Skicka meddelande"
@@ -553,7 +553,7 @@ sv:
       date: 'Efter datum'
       date_placeholder: 'DD/MM/ÅÅÅÅ'
       date_range_blank: 'Välj ett datum'
-      date_1: 'Senaste 24 timmarna'
+      date_1: 'Det senaste dygnet'
       date_2: 'Förra veckan'
       date_3: 'Förra månaden'
       date_4: 'Förra året'
@@ -561,13 +561,13 @@ sv:
       from: 'Från'
       general: 'Med texten'
       general_placeholder: 'Skriva text'
-      search: 'Filter'
-      title: 'Avancerad sök'
+      search: 'Filtrera'
+      title: 'Avancerad sökning'
       to: 'Till'
     author_info:
-      author_deleted: Användare borttagen
+      author_deleted: Användaren är borttagen
     back: Gå tillbaka
-    check: Välja
+    check: Välj
     check_all: Alla
     check_none: Ingen
     collective: Grupp
@@ -586,7 +586,7 @@ sv:
           notice_html: "Du följer nu det här medborgarförslaget! </br> Vi meddelar dig om alla ändringar så att du kan hålla dig uppdaterad."
         destroy:
           notice_html: "Du har slutat följa det här medborgarförslaget! </br> Vi kommer inte längre meddela dig om ändringar för det här förslaget."
-    hide: Göm
+    hide: Dölj
     print:
       print_button: Skriv ut denna info
     search: Sök
@@ -737,21 +737,21 @@ sv:
           one: 1 Debatt
           other: "%{count} Debatter"
         proposals:
-          one: 1 Förslag
-          other: "%{count} Förslag"
+          one: 1 förslag
+          other: "%{count} förslag"
         budget_investments:
           one: 1 budgetförslag
           other: "%{count} budgetförslag"
         follows:
-          one: 1 Följer
-          other: "%{count} Följer"
+          one: 1 följare
+          other: "%{count} följare"
       no_activity: Användaren har ingen offentlig aktivitet
       no_private_messages: "Användaren tar inte emot privata meddelanden."
       private_activity: Användarens aktivitetslista är privat.
       send_private_message: "Skicka privat meddelande"
       delete_alert: "Är du säker på att du vill ta bort budgetförslaget? Åtgärden kan inte ångras"
     proposals:
-      send_notification: "Skicka notis"
+      send_notification: "Skicka meddelande"
       retire: "Dra tillbaka"
       retired: "Förslag som dragits tillbaka"
       see: "Visa förslag"
@@ -836,7 +836,7 @@ sv:
     error: "Länken är ogiltig. Kom ihåg att börja med %{url}."
     error_itself: "Länken är inte giltig. Du kan inte länka till det egna inlägget."
     success: "Du har lagt till nytt relaterat innehåll"
-    is_related: "Är det relaterat innehåll?"
+    is_related: "Är det här relaterat innehåll?"
     score_positive: "Ja"
     score_negative: "Nej"
     content_title:
