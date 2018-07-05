@@ -20,7 +20,7 @@ sv:
       index:
         title: Kommentarer
         comments_about: Kommentarer om
-        see_in_context: Se i sammanhang
+        see_in_context: Visa i sammanhang
         comments_count:
           one: "%{count} kommentar"
           other: "%{count} kommentarer"
