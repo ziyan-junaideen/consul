@@ -151,7 +151,7 @@ sv:
           supports: Stöder
         filters:
           all: Alla
-          without_admin: Utan tilldelad administration
+          without_admin: Utan ansvarig administratör
           without_valuator: Utan tilldelad bedömare
           under_valuation: Under bedömning
           valuation_finished: Bedömning avslutad
@@ -254,7 +254,7 @@ sv:
         table_status: Status
         table_actions: "Åtgärder"
         delete: "Ta bort milstolpe"
-        no_milestones: "Ha inte bestämda milstolpar"
+        no_milestones: "Har inga definierade milstolpar"
         image: "Bild"
         show_image: "Visa bild"
         documents: "Dokument"
@@ -270,11 +270,11 @@ sv:
       edit:
         title: Redigera milstolpe
       create:
-        notice: Ny milstolpe skapats!
+        notice: Ny milstolpe har skapats!
       update:
-        notice: Milstolpe uppdaterad
+        notice: Milstolpen har uppdaterats
       delete:
-        notice: Milstolpe raderad
+        notice: Milstolpen har tagits bort
     statuses:
       index:
         title: Status för budgetförslag
@@ -297,7 +297,7 @@ sv:
         notice: Status för budgetförslag har tagits bort
     comments:
       index:
-        filter: Filter
+        filter: Filtrera
         filters:
           all: Alla
           with_confirmed_hide: Godkända
@@ -318,7 +318,7 @@ sv:
           all: Alla
           with_confirmed_hide: Godkända
           without_confirmed_hide: Väntande
-        title: Gömd debatt
+        title: Dolda debatter
         no_hidden_debates: Det finns inga dolda kommentarer.
     hidden_users:
       index:
@@ -361,13 +361,13 @@ sv:
           end: Slut
           use_markdown: Använd Markdown för att formatera texten
           title_placeholder: Titel på processen
-          summary_placeholder: Kort sammanfattning av beskrivningen
+          summary_placeholder: Kort sammanfattning
           description_placeholder: Lägg till en beskrivning av processen
           additional_info_placeholder: Lägga till ytterligare information som du anser vara användbar
         index:
           create: Ny process
           delete: Ta bort
-          title: Samarbetslagstiftningsprocesser
+          title: Planeringsprocesser
           filters:
             open: Pågående
             next: Nästa
@@ -375,7 +375,7 @@ sv:
             all: Alla
         new:
           back: Tillbaka
-          title: Skapa nya kollaborativ lagstiftningsprocess
+          title: Skapa en ny kollaborativ planeringsprocess
           submit_button: Skapa process
         process:
           title: Process
