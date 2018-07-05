@@ -26,8 +26,8 @@ sv:
         title: Välj ett alternativ
         unfeasible_title: Ej genomförbara budgetförslag
         unfeasible: Se ej genomförbara budgetförslag
-        unselected_title: Investeringar som inte gått vidare till omröstning
-        unselected: Visa investeringar som inte gått vidare till omröstning
+        unselected_title: Budgetförslag som inte gått vidare till omröstning
+        unselected: Visa budgetförslag som inte gått vidare till omröstning
     phase:
       drafting: Utkast (inte synligt för allmänheten)
       informing: Information
@@ -49,14 +49,14 @@ sv:
         all_phases: Se alla faser
       all_phases: Budgetförslagets faser
       map: Geografiskt baserade budgetförslag
-      investment_proyects: Lista över investeringsprojekt
-      unfeasible_investment_proyects: Lista över ogenomförbara investeringsprojekt
-      not_selected_investment_proyects: Lista över investeringsprojekt som inte gått vidare till omröstning
+      investment_proyects: Lista över budgetförslag
+      unfeasible_investment_proyects: Lista över ej genomförbara budgetförslag
+      not_selected_investment_proyects: Lista över budgetförslag som inte gått vidare till omröstning
       finished_budgets: Avslutade medborgarbudgetar
       see_results: Visa resultat
       section_footer:
         title: Hjälp med medborgarbudgetar
-        description: Med medborgarbudgeterna kan medborgarna hantera den kommunala budgeten genom att rösta på investeringsprojekt.
+        description: I medborgarbudgeten bestämmer medborgarna om en del av den kommunala budgeten genom att skapa och rösta på budgetförslag.
         help_text_1: "Medborgarbudgetar är processer där medborgarna bestämmer över en del av den kommunala budgeten. Alla som är över 16 år kan lämna ett budgetförslag och samla stöd från andra medborgare."
         help_text_2: "Mest röstade projekt bedömas och går till en slutlig omröstning där medborgarna bestämmer vilka åtgärder ska genomföras av kommunfullmäktige när den kommunala budgeten för nästa år är godkänd."
         help_text_3: "Förslagen till medborgarbudgeten presenteras från januari och en och en halvmånad framåt. För att delta och skapa förslag för hela staden och / eller en stadsdel, måste du registrera dig på %{org} och bekräfta ditt konto."
@@ -74,12 +74,12 @@ sv:
         map_skip_checkbox: "Det finns ingen specifik geografisk plats för budgetförslaget, eller jag känner inte till platsen."
       index:
         title: Medborgarbudget
-        unfeasible: Ogenomförbara investeringsprojekt
+        unfeasible: Ej genomförbara budgetförslag
         unfeasible_text: "Projekten måste uppfylla vissa kriterier (juridiskt giltiga, genomförbara, vara inom stadens ansvarsområde, inte överskrida budgeten) för att förklaras giltiga och nå den slutgiltiga omröstningen. De projekt som inte uppfyller kriterierna markeras som ogiltiga och visas i följande lista, tillsammans med en förklaring av bedömningen."
-        by_heading: "Investeringsprojekt med område: %{heading}"
+        by_heading: "Budgetförslag för område: %{heading}"
         search_form:
           button: Sök
-          placeholder: Sök investeringsprojekt...
+          placeholder: Sök budgetförslag...
           title: Sök
         search_results_html:
           one: " innehåller term <strong>'%{search_term}'</strong>"
@@ -116,7 +116,7 @@ sv:
         location_html: 'Plats: <strong>%{location}</strong>'
         organization_name_html: 'Föreslås på uppdrag av: <strong>%{name}</strong>'
         share: Dela
-        title: Investeringsprojekt
+        title: Budgetförslag
         supports: Stöder
         votes: Röster
         price: Kostnad
@@ -124,10 +124,10 @@ sv:
         milestones_tab: Milstolpar
         no_milestones: Har inga definierade milstolpar
         milestone_publication_date: "Publicerad %{publication_date}"
-        milestone_status_changed: Investeringens status har ändrats till
+        milestone_status_changed: Förslagets status har ändrats till
         author: Förslagslämnare
-        project_unfeasible_html: 'Det här investeringsprojektet <strong>har markerats som ej genomförbart</strong> och kommer inte gå vidare till omröstning.'
-        project_not_selected_html: 'Det här investeringsprojektet <strong>har inte gått vidare</strong> till omröstning.'
+        project_unfeasible_html: 'Det här budgetförslaget <strong>har markerats som ej genomförbart</strong> och kommer inte gå vidare till omröstning.'
+        project_not_selected_html: 'Det här budgetförslaget <strong>har inte gått vidare</strong> till omröstning.'
       wrong_price_format: Endast heltal
       investment:
         add: Rösta
