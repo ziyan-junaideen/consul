@@ -1176,25 +1176,25 @@ sv:
       content_blocks:
         information: Information om innehållsblock
         about: Du kan skapa innehållsblock i HTML som kan infogas i sidhuvudet eller sidfoten på din CONSUL-installation.
-        top_links_html: "<strong>Header block (top_links)</strong> är block av länkar som måste ha detta format:"
+        top_links_html: "<strong>Header-block (top_links)</strong> är innehållsblock med länkar som måste ha detta format:"
         footer_html: "<strong>Sidfot-block</strong> kan ha valfritt format och kan användas för att infoga Javascript, CSS eller anpassad HTML."
         no_blocks: "Det finns inga innehållsblock."
         create:
-          notice: Innehållsblock har lyckats skapas
+          notice: Innehållsblocket har skapats
           error: Innehållsblocket kunde inte skapas
         update:
-          notice: Innehållsblock har lyckats skapas
+          notice: Innehållsblocket har uppdaterats
           error: Innehållsblocket kunde inte uppdateras
         destroy:
-          notice: Innehållsblock har lyckats raderas
+          notice: Innehållsblocket har raderats
         edit:
-          title: Redigerar innehållsblock
+          title: Redigera innehållsblock
         errors:
           form:
             error: Fel
         index:
-          create: Skapa nya innehållsblock
-          delete: Radera block
+          create: Skapa nytt innehållsblock
+          delete: Radera innehållsblock
           title: Innehållsblock
         new:
           title: Skapa nya innehållsblock
@@ -1208,7 +1208,7 @@ sv:
           delete: Ta bort
           image: Bild
         update:
-          notice: Bilden har med framgång uppdaterats
+          notice: Bilden har uppdaterats
           error: Bilden kunde inte uppdateras
         destroy:
           notice: Bilden har tagits bort
