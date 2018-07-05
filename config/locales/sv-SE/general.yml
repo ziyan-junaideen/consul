@@ -1,7 +1,7 @@
 sv:
   account:
     show:
-      change_credentials_link: Ändra mina autentiseringsuppgifter
+      change_credentials_link: Ändra mina uppgifter
       email_on_comment_label: Meddela mig via e-post när någon kommenterar mina förslag eller debatter
       email_on_comment_reply_label: Meddela mig via e-post när någon svarar på mina kommentarer
       erase_account_link: Ta bort mitt konto
@@ -11,44 +11,44 @@ sv:
       organization_responsible_name_placeholder: Företrädare för organisationen/gruppen
       personal: Personlig information
       phone_number_label: Telefonnummer
-      public_activity_label: Håll min lista över aktiviteter offentlig
-      public_interests_label: Visa etiketterna för de ämnen jag följer publikt
+      public_activity_label: Visa min lista över aktiviteter offentligt
+      public_interests_label: Visa etiketterna för de ämnen jag följer offentligt
       public_interests_my_title_list: Taggar för ämnen du följer
       public_interests_user_title_list: Taggar för ämnen den här användaren följer
       save_changes_submit: Spara ändringar
-      subscription_to_website_newsletter_label: Få relevanta uppdateringar om hemsidan med e-post
-      email_on_direct_message_label: Få e-post gällande direkta meddelanden
-      email_digest_label: Få en sammanfattning av förslagsaviseringar
+      subscription_to_website_newsletter_label: Få relevanta uppdateringar om webbplatsen med e-post
+      email_on_direct_message_label: Få e-post om direkta meddelanden
+      email_digest_label: Få en sammanfattning av meddelanden om förslag
       official_position_badge_label: Visa etikett för officiell roll
       title: Mitt konto
-      user_permission_debates: Delta på debatter
+      user_permission_debates: Delta i debatter
       user_permission_info: Med ditt konto kan du...
       user_permission_proposal: Skapa nya förslag
-      user_permission_support_proposal: Stöd förslag
+      user_permission_support_proposal: Stödja förslag
       user_permission_title: Deltagande
-      user_permission_verify: Bekräfta ditt konto för att utföra alla handlingar.
+      user_permission_verify: Verifiera ditt konto för att få tillgång till alla funktioner.
       user_permission_verify_info: "* Endast för användare skrivna i staden."
-      user_permission_votes: Delta i slutomröstningen
+      user_permission_votes: Delta i slutomröstningar
       username_label: Användarnamn
-      verified_account: Kontot verifierat
+      verified_account: Kontot är verifierat
       verify_my_account: Verifiera mitt konto
   application:
     close: Stäng
     menu: Meny
   comments:
-    comments_closed: Kommentarer är stängda
+    comments_closed: Kommentarer är avstängda
     verified_only: För att delta %{verify_account}
     verify_account: verifiera ditt konto
     comment:
       admin: Administratör
-      author: Författare
+      author: Skribent
       deleted: Den här kommentaren har tagits bort
       moderator: Moderator
       responses:
         zero: Inga svar
         one: 1 svar
         other: "%{count} svar"
-      user_deleted: Användaren borttagen
+      user_deleted: Användaren är borttagen
       votes:
         zero: Inga röster
         one: 1 röst
@@ -174,11 +174,11 @@ sv:
     not_saved_html: "förhindrade att %{resource} sparas. <br>Kontrollera och rätta till de markerade fälten:"
     policy: Sekretesspolicy
     proposal: Förslag
-    proposal_notification: "Anmälan"
+    proposal_notification: "Meddelande"
     spending_proposal: Budgetförslag
     budget/investment: Budgetförslag
     budget/heading: Budgetrubrik
-    poll/shift: Skift
+    poll/shift: Arbetspass
     poll/question/answer: Svar
     user: Konto
     verification/sms: telefon
@@ -237,37 +237,37 @@ sv:
       open: öppen
       open_gov: Open Government
       proposals: Förslag
-      poll_questions: Rösta
+      poll_questions: Omröstning
       budgets: Medborgarbudget
       spending_proposals: Budgetförslag
       notification_item:
         new_notifications:
           one: Du har %{count} nytt meddelande
           other: Du har %{count} nya meddelanden
-        notifications: Notiser
+        notifications: Meddelanden
         no_notifications: "Du har inga nya meddelanden"
     admin:
-      watch_form_message: 'Du har osparade ändringar. Vill du verkligen lämna sidan?'
+      watch_form_message: 'Du har inte sparat dina ändringar. Vill du verkligen lämna sidan?'
   legacy_legislation:
     help:
       alt: Markera texten du vill kommentera och klicka på knappen med pennan.
       text: Du behöver %{sign_in} eller %{sign_up} för att kommentera dokumentet. Markera sedan texten du vill kommentera och klicka på knappen med pennan.
       text_sign_in: logga in
-      text_sign_up: registrera sig
+      text_sign_up: registrera dig
       title: Hur kommenterar jag det här dokumentet?
   locale: Svenska
   notifications:
     index:
       empty_notifications: Du har inga nya meddelanden.
-      mark_all_as_read: Markera alla som läst
-      read: Läst
-      title: Notiser
-      unread: Oläst
+      mark_all_as_read: Markera alla som lästa
+      read: Lästa
+      title: Meddelanden
+      unread: Olästa
     notification:
       action:
         comments_on:
-          one: Någon kommenterade på
-          other: Det finns %{count} nya kommentarer på
+          one: Någon kommenterade
+          other: Det finns %{count} nya kommentarer till
         proposal_notification:
           one: Du har ett nytt meddelande om
           other: Du har %{count} nya meddelanden om
@@ -278,9 +278,9 @@ sv:
       mark_as_unread: Markera som oläst
       notifiable_hidden: Den här resursen är inte längre tillgänglig.
   map:
-    title: "Distrikter"
+    title: "Stadsdelar"
     proposal_for_district: "Skriv ett förslag för din stadsdel"
-    select_district: Verksamhetsområde
+    select_district: Område
     start_proposal: Skapa ett förslag
   omniauth:
     facebook:
