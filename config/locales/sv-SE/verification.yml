@@ -47,8 +47,8 @@ sv:
         flash:
           success: Din adress är bekräftad
       new:
-        accept_terms_text: Jag accepterar %{terms_url} för folkbokföringen
-        accept_terms_text_title: Jag accepterar villkoren för tillgång till folkbokföringen
+        accept_terms_text: Jag accepterar %{terms_url} för adressregistret
+        accept_terms_text_title: Jag accepterar villkoren för tillgång till adressregistret
         date_of_birth: Födelsedatum
         document_number: Dokumentnummber
         document_number_help_title: Hjälp
@@ -59,7 +59,7 @@ sv:
         document_type_label: Identitetshandling
         error_not_allowed_age: Du är för ung för att delta
         error_not_allowed_postal_code: Du måste vara en invånare i staden för att kunna verifieras.
-        error_verifying_census: Den adress du angett stämmer inte överens med folkbokföringen. Var vänlig bekräfta dina adressuppgifter genom att ringa kommunen eller besöka ett %{offices}.
+        error_verifying_census: Den adress du angett stämmer inte överens med adressregistret. Var vänlig kontrollera dina adressuppgifter genom att ringa kommunen eller besöka ett %{offices}.
         error_verifying_census_offices: medborgarkontor
         form_errors: gjorde att din adress inte kunde bekräftas
         postal_code: Postnummer
