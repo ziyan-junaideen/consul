@@ -24,6 +24,9 @@ de:
       hi: "Liebe/r Benutzer/in"
       new_html: "Deshalb laden wir Sie ein, einen <strong>neuen Vorschlag</strong> zu erstellen, der die Bedingungen für diesen Prozess erfüllt. Sie können dies mithilfe des folgenden Links machen: %{url}."
       new_href: "neuer Investitionsvorschlag"
+      sincerely: "Mit freundlichen Grüßen"
+      signatory: "ABTEILUNG FÜR BÜRGERBETEILIGUNG"
+      sorry: "Entschuldigung für die Unannehmlichkeiten und vielen Dank für Ihre wertvolle Beteiligung."
     proposal_notification_digest:
       share: Vorschlag teilen
       comment: Vorschlag kommentieren
