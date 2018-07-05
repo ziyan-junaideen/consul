@@ -27,7 +27,7 @@ sv:
       errors:
         incorrect_code: Verifieringskoden är felaktig
       new:
-        explanation: 'För att delta i den slutgiltiga omröstningen kan du:'
+        explanation: 'För att delta i slutomröstningen kan du:'
         go_to_index: Visa förslag
         office: Verifiera i någon %{office}
         offices: Citizen Support Offices
@@ -98,7 +98,7 @@ sv:
     user_permission_info: Genom att verifiera din information kommer du kunna...
     user_permission_proposal: Skapa nya förslag
     user_permission_support_proposal: Stödja förslag
-    user_permission_votes: Delta i slutgiltiga omröstningar*
+    user_permission_votes: Delta i slutomröstningar*
     verified_user:
       form:
         submit_button: Skicka koden
