@@ -64,7 +64,7 @@ sv:
         form_errors: gjorde att din adress inte kunde bekräftas
         postal_code: Postnummer
         postal_code_note: För att verifiera ditt konto måste du vara registrerad
-        terms: villkoren för tillträde
+        terms: användarvillkoren
         title: Bekräfta din adress
         verify_residence: Bekräfta din adress
     sms:
