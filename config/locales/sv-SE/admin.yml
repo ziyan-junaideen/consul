@@ -359,8 +359,8 @@ sv:
           proposals_phase: Förslagsfas
           start: Start
           end: Slut
-          use_markdown: Använda Markdown för att formatera texten
-          title_placeholder: Titeln på processen
+          use_markdown: Använd Markdown för att formatera texten
+          title_placeholder: Titel på processen
           summary_placeholder: Kort sammanfattning av beskrivningen
           description_placeholder: Lägg till en beskrivning av processen
           additional_info_placeholder: Lägga till ytterligare information som du anser vara användbar
@@ -371,7 +371,7 @@ sv:
           filters:
             open: Pågående
             next: Nästa
-            past: Tidigare
+            past: Föregående
             all: Alla
         new:
           back: Tillbaka
@@ -383,12 +383,12 @@ sv:
           status: Status
           creation_date: Datum för skapande
           status_open: Pågående
-          status_closed: Stängd
+          status_closed: Avslutad
           status_planned: Planerad
         subnav:
           info: Information
-          draft_texts: Utkasttexter
-          questions: Debatt
+          draft_texts: Utkast
+          questions: Diskussion
           proposals: Förslag
       proposals:
         index:
@@ -477,8 +477,8 @@ sv:
           submit_button: Skapa fråga
         table:
           title: Titel
-          question_options: Frågealternativ
-          answers_count: Antal svarade
+          question_options: Svarsalternativ
+          answers_count: Antal svar
           comments_count: Antal kommentarer
         question_option_fields:
           remove_option: Ta bort alternativ
@@ -496,14 +496,14 @@ sv:
     menu:
       activity: Moderator aktivitet
       admin: Administrationsmeny
-      banner: Hantera fälttecken
+      banner: Hantera banners
       poll_questions: Frågor
       proposals_topics: Förslag till ämnen
       budgets: Medborgarbudgetar
-      geozones: Hantera geozones
-      hidden_comments: Gömda kommentarer
-      hidden_debates: Gömda debatter
-      hidden_proposals: Gömda förslag
+      geozones: Hantera geografiska områden
+      hidden_comments: Dolda kommentarer
+      hidden_debates: Dolda debatter
+      hidden_proposals: Dolda förslag
       hidden_users: Dolda användare
       administrators: Administratörer
       managers: Chefer
@@ -516,7 +516,7 @@ sv:
       polls: Omröstningar
       poll_booths: Båslägen
       poll_booth_assignments: Bås uppgifter
-      poll_shifts: Hantera växlingar
+      poll_shifts: Hantera arbetspass
       officials: Tjänstemän
       organizations: Organisationer
       settings: Globala inställningar
@@ -585,7 +585,7 @@ sv:
         edit: Redigera
         delete: Ta bort
         preview: Förhandsvisning
-        empty_newsletters: Det finns ingen nyhetsbrev att Visa
+        empty_newsletters: Det finns inga nyhetsbrev att visa
       new:
         title: Nytt nyhetsbrev
         from: E-postadress som visas som avsändare för nyhetsbrevet
@@ -595,7 +595,7 @@ sv:
         title: Förhandsgranskning av nyhetsbrev
         send: Skicka
         affected_users: (%{n} påverkade användare)
-        sent_at: Skickat vid
+        sent_at: Skickat
         subject: Ämne
         segment_recipient: Mottagare
         from: E-postadress som visas som avsändare för nyhetsbrevet
