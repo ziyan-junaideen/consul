@@ -65,12 +65,12 @@ sv:
         no_activity: Det finns ingen moderatoraktivitet.
     budgets:
       index:
-        title: Medborgarbudget
+        title: Medborgarbudgetar
         new_link: Skapa ny budget
-        filter: Filter
+        filter: Filtrera
         filters:
           open: Pågående
-          finished: Klart
+          finished: Avslutade
         budget_investments: Hantera projekt
         table_name: Namn
         table_phase: Fas
@@ -80,9 +80,9 @@ sv:
         edit_groups: Redigera partigrupper
         edit_budget: Redigera budget
       create:
-        notice: Ny medborgarbudget skapad med framgång!
+        notice: En ny medborgarbudget har skapats!
       update:
-        notice: Deltagarbudget har uppdaterats med framgång
+        notice: Medborgarbudgeten har uppdaterats
       edit:
         title: Redigera medborgarbudget
         delete: Radera budget
@@ -91,19 +91,19 @@ sv:
         enabled: Aktiverad
         actions: Åtgärder
         edit_phase: Redigera fas
-        active: Aktiva
-        blank_dates: Datum är tomma
+        active: Pågående
+        blank_dates: Datumfälten är tomma
       destroy:
-        success_notice: Budget har med framgång raderats
+        success_notice: Budgeten raderades
         unable_notice: Du kan inte ta bort en budget som har budgetförslag
       new:
-        title: Ny deltagarbudget
+        title: Ny medborgarbudget
       show:
         groups:
           one: grupper av budgetrubriker
           other: "\"%{count}\" grupper av budgetrubriker"
       form:
-        group: Grupp namn
+        group: Gruppnamn
         no_groups: Inga grupper skapade ännu. Varje användare kommer kunna rösta i endast en rubrik per grupp.
         add_group: Lägga till grupp
         create_group: Skapa grupp
@@ -113,7 +113,7 @@ sv:
         add_heading: Lägga till rubrik
         amount: Antal
         population: "Befolkning (frivilligt fält)"
-        population_help_text: "Dessa data används enbart för att beräkna de deltagande statistiken"
+        population_help_text: "Den här informationen används uteslutande för statistik"
         save_heading: Spara rubrik
         no_heading: Denna grupp har inga tilldelade rubrik.
         table_heading: Rubrik
@@ -176,16 +176,16 @@ sv:
         feasibility:
           feasible: "Genomförbart (%{price})"
           unfeasible: "Ej genomförbart"
-          undecided: "Obeslutat"
+          undecided: "Ej beslutat"
         selected: "Vald"
         select: "Välj"
-        table_id: "ID"
+        table_id: "Legitimation"
         table_title: "Titel"
         table_supports: "Stöder"
         table_admin: "Administratör"
         table_valuator: "Bedömare"
         table_valuation_group: "Värderingsgrupp"
-        table_geozone: "Verksamhetsområde"
+        table_geozone: "Område"
         table_feasibility: "Genomförbarhet"
         table_valuation_finished: "Val. Fin."
         table_selection: "Vald"
@@ -194,8 +194,8 @@ sv:
         cannot_calculate_winners: Budgeten måste stå i fas "lottningsprojekt", "granskar valsedlar" eller "färdiga budgeter" för att kunna beräkna vinnarprojekt
         see_results: "Visa resultat"
       show:
-        assigned_admin: Utsedd administratör
-        assigned_valuators: Tilldelade bedömare
+        assigned_admin: Ansvarig administratör
+        assigned_valuators: Ansvarig bedömare
         classification: Klassificering
         info: "%{budget_name} - grupp: %{group_name} - budgetförslag %{id}"
         edit: Redigera
