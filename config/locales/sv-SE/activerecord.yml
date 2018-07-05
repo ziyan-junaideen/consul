@@ -122,7 +122,7 @@ sv:
         external_url: "Länk till ytterligare dokumentation"
         administrator_id: "Administratör"
         location: "Plats (frivilligt fält)"
-        organization_name: "Om du föreslår i namn av en kollektiv/organisation, eller åt fler personers vägnar, skriv dess namn"
+        organization_name: "Organisationen eller gruppen i vars namn du lämnar förslaget"
         image: "Förklarande bild till förslaget"
         image_title: "Bildtext"
       budget/investment/milestone:
