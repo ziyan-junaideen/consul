@@ -405,10 +405,10 @@ sv:
     notice:
       retired: Förslag som dragits tillbaka
     proposal:
-      created: "Du skapade ett förslag!"
+      created: "Du har skapat ett förslag!"
       share:
         guide: "Nu kan du dela förslaget så att folk kan börja stödja det."
-        edit: "Du kan ändra texten fram tills förslaget har delats."
+        edit: "Du kan ändra texten fram tills att förslaget har delats."
         view_proposal: Inte nu, gå till mitt förslag
       improve_info: "Få mer stöd genom att förbättra ditt förslag"
       improve_info_link: "Visa mer information"
@@ -419,9 +419,9 @@ sv:
         other: "%{count} kommentarer"
       reason_for_supports_necessary: 1% av invånarna
       support: Stöd
-      support_title: Stödja detta förslag
+      support_title: Stöd förslaget
       supports:
-        zero: Inga stöd
+        zero: Inget stöd
         one: 1 stöd
         other: "%{count} stöd"
       votes:
@@ -434,7 +434,7 @@ sv:
       successful: "Förslaget har fått tillräckligt stort stöd och kommer att gå vidare till %{voting}."
       voting: "nästa omröstning"
     show:
-      author_deleted: Användare borttagen
+      author_deleted: Användaren är borttagen
       code: 'Förslagskod:'
       comments:
         zero: Inga kommentarer
@@ -444,36 +444,36 @@ sv:
       edit_proposal_link: Redigera
       flag: Förslaget har markerats som olämpligt av flera användare.
       login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
-      notifications_tab: Notiser
+      notifications_tab: Meddelanden
       retired_warning: "Förslagslämnaren vill inte längre att förslaget ska samla stöd."
       retired_warning_link_to_explanation: Läs beskrivningen innan du röstar på förslaget.
       retired: Förslag som dragits tillbaka av förslagslämnaren
       share: Dela
-      send_notification: Skicka notis
+      send_notification: Skicka meddelande
       no_notifications: "Förslaget har inte några meddelanden."
       embed_video_title: "Video om %{proposal}"
       title_external_url: "Ytterligare dokumentation"
       title_video_url: "Extern video"
-      author: Författare
+      author: Förslagslämnare
     update:
       form:
         submit_button: Spara ändringar
   polls:
     all: "Alla"
-    no_dates: "inget datum har tilldelats"
+    no_dates: "inget datum har valts"
     dates: "Från %{open_at} till %{closed_at}"
-    final_date: "Slutgiltigt resultat"
+    final_date: "Slutresultat"
     index:
       filters:
         current: "Pågående"
         incoming: "Inkommande"
-        expired: "Avslutad"
+        expired: "Avslutade"
       title: "Omröstningar"
-      participate_button: "Delta i denna omröstning"
+      participate_button: "Delta i omröstningen"
       participate_button_incoming: "Mer information"
-      participate_button_expired: "Omröstningen är slut"
+      participate_button_expired: "Omröstningen är avslutad"
       no_geozone_restricted: "Hela staden"
-      geozone_restricted: "Distrikter"
+      geozone_restricted: "Stadsdelar"
       geozone_info: "Öppen för invånare från: "
       already_answer: "Du har redan deltagit i den här omröstningen"
       section_header:
@@ -787,7 +787,7 @@ sv:
       most_active:
         debates: "Mest aktiva debatter"
         proposals: "Mest aktiva förslag"
-        processes: "Öppna processer"
+        processes: "Pågående processer"
       see_all_debates: Visa alla debatter
       see_all_proposals: Visa alla förslag
       see_all_processes: Visa alla processer
