@@ -133,7 +133,7 @@ sv:
         summary_help_text: Denna text kommer att informera användaren om fasen. Markera kryssrutan nedan för att visa det även om fasen inte är aktiv,
         description: Beskrivning
         description_help_text: Den här texten visas i huvudet när fasen är aktiv
-        enabled: Fas aktiverad
+        enabled: Fasen är aktiverad
         enabled_help_text: Denna fas kommer att vara offentliga i budgetens faser tidslinje, samt aktiva för andra ändamål
         save_changes: Spara ändringar
     budget_investments:
@@ -141,9 +141,9 @@ sv:
         heading_filter_all: Alla rubriker
         administrator_filter_all: Alla administratörer
         valuator_filter_all: Alla bedömare
-        tags_filter_all: Alla Taggar
+        tags_filter_all: Alla taggar
         advanced_filters: Avancerade filter
-        placeholder: Söknings projekt
+        placeholder: Sök projekt
         sort_by:
           placeholder: Sortera efter
           id: Legitimation
