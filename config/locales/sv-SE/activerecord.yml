@@ -77,8 +77,8 @@ sv:
         one: "Process"
         other: "Processer"
       legislation/draft_versions:
-        one: "Utkast version"
-        other: "Utkast versioner"
+        one: "Utkastversion"
+        other: "Utkastversioner"
       legislation/draft_texts:
         one: "Utkast"
         other: "Utkast"
@@ -229,7 +229,7 @@ sv:
         title: Titel
         question_options: Alternativ
       legislation/question_option:
-        value: Värde
+        value: Kostnad
       legislation/annotation:
         text: Kommentar
       document:
@@ -279,11 +279,11 @@ sv:
         newsletter:
           attributes:
             segment_recipient:
-              invalid: "Användarmottagarens segment är ogiltigt"
+              invalid: "Mottagardelen innehåller fel"
         map_location:
           attributes:
             map:
-              invalid: Kartläge kan inte stå tomt. Placera en markör eller markera kryssrutan om den geografiska positionen inte är nödvändig
+              invalid: Geografisk position kan inte lämnas tomt. Placera en markör eller markera kryssrutan om geografisk position inte är tillämpbart
         poll/voter:
           attributes:
             document_number:
@@ -308,7 +308,7 @@ sv:
         proposal_notification:
           attributes:
             minimum_interval:
-              invalid: "Du måste ha minst %{interval} dagar mellan notifikationer"
+              invalid: "Du måste ha minst %{interval} dagar mellan meddelanden"
         signature:
           attributes:
             document_number:
@@ -326,9 +326,9 @@ sv:
         comment:
           attributes:
             valuation:
-              cannot_comment_valuation: 'Du kan inte kommentera en värdering'
+              cannot_comment_valuation: 'Du kan inte kommentera en kostnadsberäkning'
       messages:
         record_invalid: "Felmeddelanden: %{errors}"
         restrict_dependent_destroy:
-          has_one: "Kan inte radera post eftersom den beroende posten %{record} finns"
-          has_many: "Kan inte radera post eftersom den beroende posten %{record} finns"
+          has_one: "Inlägget kan inte raderas eftersom det hänger ihop med inlägget %{record}"
+          has_many: "Inlägget kan inte raderas eftersom det hänger ihop med inlägget %{record}"
