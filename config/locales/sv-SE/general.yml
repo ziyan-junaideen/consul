@@ -175,7 +175,7 @@ sv:
     policy: Sekretesspolicy
     proposal: Förslag
     proposal_notification: "Anmälan"
-    spending_proposal: Investeringsförslag
+    spending_proposal: Budgetförslag
     budget/investment: Budgetförslag
     budget/heading: Budgetrubrik
     poll/shift: Skift
@@ -239,7 +239,7 @@ sv:
       proposals: Förslag
       poll_questions: Rösta
       budgets: Medborgarbudget
-      spending_proposals: Investeringsförslag
+      spending_proposals: Budgetförslag
       notification_item:
         new_notifications:
           one: Du har %{count} nytt meddelande
@@ -412,7 +412,7 @@ sv:
         view_proposal: Inte nu, gå till mitt förslag
       improve_info: "Få mer stöd genom att förbättra ditt förslag"
       improve_info_link: "Se mer information"
-      already_supported: Du stödjer redan det här förslaget. Dela det!
+      already_supported: Du stöder redan det här förslaget. Dela det!
       comments:
         zero: Inga kommentarer
         one: 1 kommentar
@@ -650,7 +650,7 @@ sv:
       submit_buttons:
         create: Skapa
         new: Skapa
-      title: Investeringsförslagstitel
+      title: Titel på budgetförslag
     index:
       title: Medborgarbudget
       unfeasible: Ej genomförbara budgetförslag
@@ -673,7 +673,7 @@ sv:
       recommendation_three: Beskriv ditt förslag så detaljerat som möjligt, så att att de som granskar det förstår vad du menar.
       recommendation_two: Förslag som förespråkar olagliga handlingar kommer att raderas.
       recommendations_title: Så skapar du ett budgetförslag
-      start_new: Skapa investeringsförslag
+      start_new: Skapa budgetförslag
     show:
       author_deleted: Användare borttagen
       code: 'Förslagskod:'
@@ -681,7 +681,7 @@ sv:
     wrong_price_format: Endast heltal
     spending_proposal:
       spending_proposal: Budgetförslag
-      already_supported: Du stödjer redan det här projektet. Dela det!
+      already_supported: Du stöder redan det här projektet. Dela det!
       support: Stöd
       support_title: Stödja detta projekt
       supports:
@@ -822,7 +822,7 @@ sv:
       user_permission_verify: Bekräfta ditt konto för att kunna utföra alla handlingar.
       user_permission_verify_info: "* Endast för användare skrivna i staden."
       user_permission_verify_my_account: Verifiera mitt konto
-      user_permission_votes: Delta i den slutgiltiga omröstningen
+      user_permission_votes: Delta i slutomröstningen
   invisible_captcha:
     sentence_for_humans: "Ignorera det här fältet om du är en människa"
     timestamp_error_message: "Oj, det gick för snabbt! Var vänlig skicka in igen."
