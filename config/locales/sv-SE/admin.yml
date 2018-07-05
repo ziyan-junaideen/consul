@@ -208,8 +208,8 @@ sv:
         edit_dossier: Redigera rapport
         tags: Taggar
         user_tags: Användartaggar
-        undefined: Odefinierad
-        milestone: Avstämning
+        undefined: Odefinierat
+        milestone: Milstolpe
         new_milestone: Skapa ny milstolpe
         compatibility:
           title: Kompatibilitet
@@ -218,7 +218,7 @@ sv:
         selection:
           title: Urval
           "true": Vald
-          "false": Ej valt
+          "false": Ej vald
         winner:
           title: Vinnare
           "true": "Ja"
@@ -300,48 +300,48 @@ sv:
         filter: Filter
         filters:
           all: Alla
-          with_confirmed_hide: Bekräftat
+          with_confirmed_hide: Godkända
           without_confirmed_hide: Väntande
         hidden_debate: Gömd debatt
         hidden_proposal: Gömt förslag
-        title: Gömda kommentarer
+        title: Dolda kommentarer
         no_hidden_comments: Det finns inga dolda kommentarer.
     dashboard:
       index:
         back: Gå tillbaka till %{org}
         title: Administration
-        description: Välkommen till %{org} administrationspanel.
+        description: Välkommen till administrationspanelen för %{org}.
     debates:
       index:
-        filter: Filter
+        filter: Filtrera
         filters:
           all: Alla
-          with_confirmed_hide: Bekräftat
+          with_confirmed_hide: Godkända
           without_confirmed_hide: Väntande
         title: Gömd debatt
         no_hidden_debates: Det finns inga dolda kommentarer.
     hidden_users:
       index:
-        filter: Filter
+        filter: Filtrera
         filters:
           all: Alla
-          with_confirmed_hide: Bekräftat
+          with_confirmed_hide: Godkända
           without_confirmed_hide: Väntande
         title: Dolda användare
         user: Användare
         no_hidden_users: Det finns inga dolda kommentarer.
       show:
         email: 'E-post:'
-        hidden_at: 'Dolda vid:'
-        registered_at: 'Registrerade vid:'
+        hidden_at: 'Dold:'
+        registered_at: 'Registrerad:'
         title: Aktivitet från användaren (%{user})
     legislation:
       processes:
         create:
-          notice: 'Processen skapad med framgång. <a href="%{link}">Click to visit</a>'
+          notice: 'Processen har skapats. <a href="%{link}">Klicka här för att visa den</a>'
           error: Processen kunde inte skapas
         update:
-          notice: 'Fråga skapad. <a href="%{link}">Klicka för att besöka</a>'
+          notice: 'Frågan har skapats. <a href="%{link}">Klicka här för att besöka den</a>'
           error: Processen kunde inte uppdateras
         destroy:
           notice: Processen raderades
@@ -354,7 +354,7 @@ sv:
         form:
           enabled: Aktiverad
           process: Process
-          debate_phase: Debatt fas
+          debate_phase: Diskussionsfas
           allegations_phase: Utkastsfas
           proposals_phase: Förslagsfas
           start: Start
@@ -935,7 +935,7 @@ sv:
         filter: Filtrera
         filters:
           all: Alla
-          with_confirmed_hide: Bekräftad
+          with_confirmed_hide: Godkända
           without_confirmed_hide: Väntande
         title: Gömda förslag
         no_hidden_proposals: Det finns inga gömma förslag.
