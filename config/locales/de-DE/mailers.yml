@@ -22,7 +22,8 @@ de:
       title: Neue Antwort auf Ihren Kommentar
     unfeasible_spending_proposal:
       hi: "Liebe/r Benutzer/in"
-      new_href: "neues Investitionsprojekt"
+      new_html: "Deshalb laden wir Sie ein, einen <strong>neuen Vorschlag</strong> zu erstellen, der die Bedingungen für diesen Prozess erfüllt. Sie können dies mithilfe des folgenden Links machen: %{url}."
+      new_href: "neuer Investitionsvorschlag"
     proposal_notification_digest:
       share: Vorschlag teilen
       comment: Vorschlag kommentieren
