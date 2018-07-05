@@ -11,7 +11,7 @@ sv:
           one: "%{count} svar"
           other: "%{count} svar"
         cancel: Avbryt
-        publish_comment: Publicera Commentar
+        publish_comment: Publicera kommentar
       form:
         phase_not_open: Fasen är inte öppen
         login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
@@ -80,7 +80,7 @@ sv:
         empty: Inget har publicerats än
       process:
         see_latest_comments: Visa de senaste kommentarerna
-        see_latest_comments_title: Kommentera denna process
+        see_latest_comments_title: Kommentera till den här processen
       shared:
         key_dates: Viktiga datum
         debate_dates: Debatt
