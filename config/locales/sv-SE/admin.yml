@@ -1054,7 +1054,7 @@ sv:
       geozone:
         name: Namn
         external_code: Extern kod
-        census_code: Folkräkningskod
+        census_code: Områdeskod
         coordinates: Koordinater
       errors:
         form:
@@ -1095,8 +1095,8 @@ sv:
         unverified:
           one: "Det finns %{count} ogiltiga signaturer"
           other: "Det finns %{count} ogiltiga signaturer"
-        unverified_error: (Inte verifierad av folkräkningen)
-        loading: "Det finns fortfarande signaturer som kontrolleras av folkräkningen, vänligen uppdatera sidan om en stund"
+        unverified_error: (Ej verifierad adress)
+        loading: "Det finns fortfarande underskrifter som kontrolleras mot adressregistret, vänligen uppdatera sidan om en stund"
     stats:
       show:
         stats_title: Statistik
