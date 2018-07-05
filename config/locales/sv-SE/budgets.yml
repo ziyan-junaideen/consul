@@ -5,27 +5,27 @@ sv:
         title: Din valsedel
         amount_spent: Spenderat belopp
         remaining: "Du har fortfarande <span>%{amount}</span> att spendera."
-        no_balloted_group_yet: "Du har inte röstat på denna grupp ännu, gå och rösta!"
+        no_balloted_group_yet: "Du har inte röstat i den här gruppen ännu, gå och rösta!"
         remove: Dra tillbaka din röst
         voted_html:
           one: "Du har röstat på <span>ett</span> budgetförslag."
           other: "Du har röstat på <span>%{count}</span> budgetförslag."
-        voted_info_html: "Du kan ändra din röst på någon tid förrän i slutet av den här fasen.<br> Inget behov av att spendera alla pengar du har tillgängliga."
+        voted_info_html: "Du kan ändra din röst när som helst under den här fasen.<br> Du behöver inte spendera hela din budget."
         zero: Du har inte röstat på några budgetförslag.
       reasons_for_not_balloting:
         not_logged_in: Du behöver %{signin} eller %{signup} för att fortsätta.
         not_verified: Endast verifierade användare kan rösta på budgetförslag; %{verify_account}.
         organization: Organisationer kan inte rösta
         not_selected: Omarkerade budgetförslag kan inte stödjas
-        not_enough_money_html: "Du har redan tilldelat den tillgängliga budgeten.<br><small>kom ihåg att du kan %{change_ballot} när som helst</small>"
-        no_ballots_allowed: Urvalsetappen är stängd
+        not_enough_money_html: "Du har redan använt hela din budget.<br><small>Kom ihåg att du kan %{change_ballot} när som helst</small>"
+        no_ballots_allowed: Urvalsfasen är stängd
         different_heading_assigned_html: "Du har redan röstat under en annan rubrik: %{heading_link}"
         change_ballot: ändra dina röster
     groups:
       show:
         title: Välj ett alternativ
         unfeasible_title: Ej genomförbara budgetförslag
-        unfeasible: Se ej genomförbara budgetförslag
+        unfeasible: Visa ej genomförbara budgetförslag
         unselected_title: Budgetförslag som inte gått vidare till omröstning
         unselected: Visa budgetförslag som inte gått vidare till omröstning
     phase:
@@ -46,7 +46,7 @@ sv:
         icon_alt: Medborgarbudgetssymbol
         title: Medborgarbudgetar
         help: Hjälp med medborgarbudgetar
-        all_phases: Se alla faser
+        all_phases: Visa alla faser
       all_phases: Budgetförslagets faser
       map: Geografiskt baserade budgetförslag
       investment_proyects: Lista över budgetförslag
@@ -58,15 +58,15 @@ sv:
         title: Hjälp med medborgarbudgetar
         description: I medborgarbudgeten bestämmer medborgarna om en del av den kommunala budgeten genom att skapa och rösta på budgetförslag.
         help_text_1: "Medborgarbudgetar är processer där medborgarna bestämmer över en del av den kommunala budgeten. Alla som är över 16 år kan lämna ett budgetförslag och samla stöd från andra medborgare."
-        help_text_2: "Mest röstade projekt bedömas och går till en slutlig omröstning där medborgarna bestämmer vilka åtgärder ska genomföras av kommunfullmäktige när den kommunala budgeten för nästa år är godkänd."
-        help_text_3: "Förslagen till medborgarbudgeten presenteras från januari och en och en halvmånad framåt. För att delta och skapa förslag för hela staden och / eller en stadsdel, måste du registrera dig på %{org} och bekräfta ditt konto."
-        help_text_4: "Välj en beskrivande och tydlig rubrik för ditt förslag för att få så många röster som möjligt. I de följande fälten finns möjlighet att ge en detaljerad beskrivning av ditt förslag. Använd gärna dokument och bilder för att hjälpa andra att förstå ditt förslag."
+        help_text_2: "De projekt som fått flest röster granskas och går sedan vidare till en slutomröstning där medborgarna bestämmer vilka förslag som ska genomföras av staden inom nästa års budget."
+        help_text_3: "Förslagen till medborgarbudgeten presenteras från januari och en och en halvmånad framåt. För att delta och skapa förslag för hela staden och/eller en stadsdel, behöer du registrera dig på %{org} och verifiera ditt konto."
+        help_text_4: "Välj en beskrivande och tydlig rubrik för ditt förslag för att få så många röster som möjligt. I de övriga fälten finns möjlighet att ge en detaljerad beskrivning av ditt förslag. Använd gärna dokument och bilder för att hjälpa andra att förstå ditt förslag."
     investments:
       form:
         tag_category_label: "Kategorier"
-        tags_instructions: "Tagga detta förslag. Du kan välja från föreslagna kategorier eller lägga till dina egna"
+        tags_instructions: "Tagga detta förslag. Du kan välja från de föreslagna kategorier eller lägga till egna"
         tags_label: Taggar
-        tags_placeholder: "Skriv in taggarna du vill använda, avgränsade med semikolon (',')"
+        tags_placeholder: "Skriv taggarna du vill använda, avgränsade med semikolon (',')"
         map_location: "Kartposition"
         map_location_instructions: "Navigera till platsen på kartan och placera markören."
         map_remove_marker: "Ta bort kartmarkör"
@@ -82,7 +82,7 @@ sv:
           placeholder: Sök budgetförslag...
           title: Sök
         search_results_html:
-          one: " innehåller term <strong>'%{search_term}'</strong>"
+          one: " som innehåller <strong>'%{search_term}'</strong>"
           other: " innehåller termer <strong>'%{search_term}'</strong>"
         sidebar:
           my_ballot: Min röst
