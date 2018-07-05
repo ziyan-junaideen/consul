@@ -399,13 +399,13 @@ sv:
           custom_categories_description: Kategorier som användare kan välja när de skapar förslaget.
       draft_versions:
         create:
-          notice: 'Utkast skapat. <a href="%{link}">Klicka för att besöka</a>'
-          error: Utkast kunde inte skapas
+          notice: 'Utkastet har skapats. <a href="%{link}">Klicka här för att visa det</a>'
+          error: Utkastet kunde inte skapas
         update:
-          notice: 'Utkast uppdaterat. <a href="%{link}">Klicka för att besöka</a>'
-          error: Utkast till kunde inte uppdateras
+          notice: 'Utkastet har uppdaterats. <a href="%{link}">Klicka här för att visa det</a>'
+          error: Utkastet kunde inte uppdateras
         destroy:
-          notice: Utkast raderat
+          notice: Utkastet har raderats
         edit:
           back: Tillbaka
           submit_button: Spara ändringar
@@ -414,8 +414,8 @@ sv:
           form:
             error: Fel
         form:
-          title_html: 'Redigerar <span class="strong">%{draft_version_title}</span> från processen <span class="strong">%{process_title}</span>'
-          launch_text_editor: Starta textredigerare
+          title_html: 'Redigera <span class="strong">%{draft_version_title}</span> från processen <span class="strong">%{process_title}</span>'
+          launch_text_editor: Öppna textredigerare
           close_text_editor: Stäng textredigerare
           use_markdown: Använda Markdown för att formatera texten
           hints:
@@ -423,7 +423,7 @@ sv:
             status:
               draft: Du kan förhandsgranska som administratör, ingen annan kan se det
               published: Synligt för alla
-          title_placeholder: Skriv titeln på utkastet
+          title_placeholder: Skriv titel på utkastet
           changelog_placeholder: Lägg till de viktigaste förändringarna från föregående version
           body_placeholder: Skriv ner utkastet till text
         index:
@@ -534,7 +534,7 @@ sv:
       title_profiles: Profiler
       title_settings: Inställningar
       title_site_customization: Webbplatsens innehåll
-      legislation: Kollaborativ lagstiftning
+      legislation: Kollaborativ planering
       users: Användare
     administrators:
       index:
@@ -547,7 +547,7 @@ sv:
         delete: Ta bort
         restricted_removal: "Tyvärr, du kan inte ta bort dig själv från administratörerna"
       search:
-        title: "Administratörer: Användare Sök"
+        title: "Administratörer: Sök användare"
     moderators:
       index:
         title: Moderatorer
@@ -558,11 +558,11 @@ sv:
         add: Lägg till
         delete: Ta bort
       search:
-        title: 'Moderatorer: Användarsökning'
+        title: 'Moderatorer: Sök användare'
     segment_recipient:
       all_users: Alla användare
       administrators: Administratörer
-      proposal_authors: Förslagsförfattarna
+      proposal_authors: Förslagslämnarna
       investment_authors: Förslagslämnare för den aktuella budgeten
       feasible_and_undecided_investment_authors: "Förslagslämnare till budgetförslag i den aktuella budgeten som inte överensstämmer med: [valuation finished unfesasible]"
       selected_investment_authors: Förslagslämnarna till utvalda budgetförslag i den nuvarande budgeten
@@ -570,10 +570,10 @@ sv:
       not_supported_on_current_budget: Användare som inte har stöttat budgetförslag i den nuvarande budgeten
       invalid_recipients_segment: "Mottagaranvändarens segment är ogiltig"
     newsletters:
-      create_success: Nyhetsbrev har skapats
-      update_success: Nyhetsbrev har uppdaterats
-      send_success: Nyhetsbrev har skickats
-      delete_success: Nyhetsbrev raderad
+      create_success: Nyhetsbrevet har skapats
+      update_success: Nyhetsbrevet har uppdaterats
+      send_success: Nyhetsbrevet har skickats
+      delete_success: Nyhetsbrevet har tagits bort
       index:
         title: Nyhetsbrev
         new_newsletter: Nytt nyhetsbrev
@@ -654,7 +654,7 @@ sv:
         title: "Bedömargrupp: %{group}"
         no_valuators: "Det finns inga bedömare som tilldelats denna grupp"
       form:
-        name: "Grupp namn"
+        name: "Gruppnamn"
         new: "Skapa bedömargrupp"
         edit: "Spara bedömargrupp"
     poll_officers:
@@ -711,11 +711,11 @@ sv:
     booth_assignments:
       manage_assignments: Hantera tilldelningar
       manage:
-        assignments_list: "Uppdrag för poll '%{poll} '"
+        assignments_list: "Uppdrag för omröstningen '%{poll} '"
         status:
           assign_status: Uppdrag
           assigned: Tilldelad
-          unassigned: Otilldelad
+          unassigned: Ej tilldelad
         actions:
           assign: Tilldela monter
           unassign: Ta bort tilldelning monter
@@ -732,7 +732,7 @@ sv:
         officers: "Valarbetare"
         officers_list: "Lista över valarbetare för denna vallokal"
         no_officers: "Det finns inga valarbetare i denna vallokal"
-        recounts: "Omräkningar"
+        recounts: "Rösträkning"
         recounts_list: "Räkna om lista för denna monter"
         results: "Resultat"
         date: "Datum"
@@ -748,7 +748,7 @@ sv:
       index:
         title: "Lista över aktiva omröstningar"
         no_polls: "Det finns inga kommande omröstningar."
-        create: "Skapa opinionsundersökning"
+        create: "Skapa omröstning"
         name: "Namn"
         dates: "Datum"
         geozone_restricted: "Begränsade till stadsdelar"
@@ -758,22 +758,22 @@ sv:
         show_results: "Visa resultat"
         show_stats: "Visa statistik"
         results_and_stats_reminder: "Markerar dessa kryssrutor av resultat och/eller statistik för denna enkät kommer att vara allmänt tillgängliga och varje användare kommer att se dem."
-        submit_button: "Skapa opinionsundersökning"
+        submit_button: "Skapa omröstning"
       edit:
-        title: "Redigera opinionsundersökning"
-        submit_button: "Uppdatera opinionsundersökning"
+        title: "Redigera omröstning"
+        submit_button: "Uppdatera omröstning"
       show:
         questions_tab: Frågor
         booths_tab: Röstbås
         officers_tab: Valarbetare
-        recounts_tab: Omräkningar
+        recounts_tab: Rösträkning
         results_tab: Resultat
-        no_questions: "Det finns inga frågor till denna opinionsundersökning."
+        no_questions: "Det finns inga frågor till den här omröstningen."
         questions_title: "Lista med frågor"
         table_title: "Titel"
       flash:
-        question_added: "Fråga har lagts till denna enkät"
-        error_on_question_added: "Frågan kunde inte tilldelas till denna enkät"
+        question_added: "Frågan har lagts till i omröstningen"
+        error_on_question_added: "Frågan kunde inte läggas till i omröstningen"
     questions:
       index:
         title: "Frågor"
@@ -821,13 +821,13 @@ sv:
         title: Titel
         description: Beskrivning
         images: Bilder
-        images_list: Bildlista
+        images_list: Lista med bilder
         edit: Redigera svar
       edit:
         title: Redigera svar
       videos:
         index:
-          title: Videoklipp
+          title: Videor
           add_video: Lägg till video
           video_title: Titel
           video_url: Extern video
@@ -838,14 +838,14 @@ sv:
     recounts:
       index:
         title: "Rösträkning"
-        no_recounts: "Det finns inget att räkna om"
+        no_recounts: "Det finns inga röster att räkna"
         table_booth_name: "Vallokal"
         table_total_recount: "Totala omräkningen (av ämbetsman)"
-        table_system_count: "Röster (automatisk)"
+        table_system_count: "Röster (automatiskt)"
     results:
       index:
         title: "Resultat"
-        no_results: "Det finns inga resultat"
+        no_results: "Det finns inga resultat att visa"
       result:
         table_whites: "Blankröster"
         table_nulls: "Ogiltiga röster"
