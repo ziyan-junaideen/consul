@@ -60,9 +60,9 @@ sv:
       create_proposal: Skapa förslag
       print_proposals: Skriv ut förslag
       support_proposals: Stöd förslag
-      create_spending_proposal: Skapa investeringsförslag
-      print_spending_proposals: Skriv ut investeringsförslag
-      support_spending_proposals: Stöd investeringsförslag
+      create_spending_proposal: Skapa budgetförslag
+      print_spending_proposals: Skriv ut budgetförslag
+      support_spending_proposals: Stöd budgetförslag
       create_budget_investment: Skapa budgetförslag
       user_invites: Skicka inbjudningar
     permissions:
