@@ -32,10 +32,13 @@ de:
       comment: Vorschlag kommentieren
       unsubscribe_account: Mein Benutzerkonto
     direct_message_for_receiver:
-      reply: Antwort an %{sender}
+      subject: "Sie haben eine neue persönliche Nachricht erhalten"
+      reply: Auf %{sender} antworten
+      unsubscribe: "Wenn Sie keine direkten Nachrichten erhalten möchten, besuchen Sie %{account} und deaktivieren Sie \"E-Mails zu Direktnachrichten empfangen\"."
       unsubscribe_account: Mein Benutzerkonto
     direct_message_for_sender:
-      subject: "Sie haben eine private Nachricht versendet"
+      subject: "Sie haben eine neue persönliche Nachricht versendet"
+      title_html: "Sie haben eine neue persönliche Nachricht versendet an <strong>%{receiver}</strong> mit dem Inhalt:"
     user_invite:
       thanks: "Vielen Dank."
       title: "Willkommen zu %{org}"
