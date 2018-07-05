@@ -622,31 +622,31 @@ sv:
     outline:
       budget: Medborgarbudget
       searcher: Sökmotor
-    go_to_page: "Gå till sidan av "
+    go_to_page: "Gå till sidan för "
     share: Dela
     orbit:
       previous_slide: Föregående sida
       next_slide: Nästa sida
     documentation: Ytterligare dokumentation
     view_mode:
-      title: Visningsmod
+      title: Visningsläge
       cards: Kort
       list: Lista
   social:
     blog: "%{org} Blogg"
-    facebook: "%{org} Facebook"
-    twitter: "%{org} Twitter"
-    youtube: "%{org} YouTube"
+    facebook: "%{org} på Facebook"
+    twitter: "%{org} på Twitter"
+    youtube: "%{org} på YouTube"
     whatsapp: WhatsApp
-    telegram: "%{org} telegram"
-    instagram: "%{org} Instagram"
+    telegram: "%{org} på Telegram"
+    instagram: "%{org} på Instagram"
   spending_proposals:
     form:
       association_name_label: 'Namn på grupp eller organisation som förslaget kommer från'
       association_name: 'Föreningens namn'
       description: Beskrivning
       external_url: Länk till ytterligare dokumentation
-      geozone: Geografiskt område
+      geozone: Område
       submit_buttons:
         create: Skapa
         new: Skapa
@@ -660,8 +660,8 @@ sv:
         placeholder: Budgetförslag...
         title: Sök
       search_results:
-        one: " innehåller '%{search_term}'"
-        other: " innehåller '%{search_term}'"
+        one: " som innehåller '%{search_term}'"
+        other: " som innehåller '%{search_term}'"
       sidebar:
         geozones: Geografiskt område
         feasibility: Genomförbarhet
@@ -669,13 +669,13 @@ sv:
       start_spending_proposal: Skapa ett budgetförslag
     new:
       more_info: Hur funkar medborgarbudgetar?
-      recommendation_one: Förslaget måste ge hänvisa till faktiska kostnader.
+      recommendation_one: Förslaget måste hänvisa till faktiska kostnader.
       recommendation_three: Beskriv ditt förslag så detaljerat som möjligt, så att att de som granskar det förstår vad du menar.
       recommendation_two: Förslag som förespråkar olagliga handlingar kommer att raderas.
       recommendations_title: Så skapar du ett budgetförslag
       start_new: Skapa budgetförslag
     show:
-      author_deleted: Användare borttagen
+      author_deleted: Användaren är borttagen
       code: 'Förslagskod:'
       share: Dela
     wrong_price_format: Endast heltal
@@ -762,7 +762,7 @@ sv:
     disagree: Jag håller inte med
     organizations: Organisationer kan inte rösta
     signin: Logga in
-    signup: Registrera sig
+    signup: Registrera dig
     supports: Stöd
     unauthenticated: Du behöver %{signin} eller %{signup} för att fortsätta.
     verified_only: Endast verifierade användare kan rösta på förslag; %{verify_account}.
