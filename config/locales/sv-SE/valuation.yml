@@ -13,7 +13,7 @@ sv:
           current: Pågående
           finished: Avslutade
         table_name: Namn
-        table_phase: Etapp
+        table_phase: Fas
         table_assigned_investments_valuation_open: Tilldelade budgetförslag öppna för bedömning
         table_actions: Åtgärder
         evaluate: Utvärdering
