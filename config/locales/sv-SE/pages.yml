@@ -40,7 +40,7 @@ sv:
         phase_4_html: "Från maj till juni kan medborgare slutligen <strong>rösta</strong> på de projekt de gillar bäst."
         phase_5_html: "Från det att budgeten för kommande år godkänts börjar stadsfullmäktige genomföra de vinnande projekten."
         image_alt: "Olika faser av en medborgarbudget"
-        figcaption_html: '"Stöd" och "Omröstning" faser av en medborgarbudget.'
+        figcaption_html: '"Stöd"- och "Omröstnings"-faser av en medborgarbudget.'
       polls:
         title: "Omröstningar"
         description: "%{link}-delen aktiveras varje gång ett förslag får 1% stöd och går vidare till omröstning, eller när kommunfullmäktige lämnar ett förslag till omröstning."
@@ -57,7 +57,7 @@ sv:
         sign_up: "registrera dig på %{org}"
       faq:
         title: "Har du tekniska problem?"
-        description: "Läs de vanliga frågorna och hitta ett svar till dina."
+        description: "Läs de vanligaste frågorna och svaren."
         button: "Visa vanliga frågor"
         page:
           title: "Vanliga frågor"
