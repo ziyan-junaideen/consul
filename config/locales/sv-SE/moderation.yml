@@ -74,4 +74,4 @@ sv:
         search: Sök
         search_placeholder: e-postadress eller namn på användare
         title: Blockera användare
-      notice_hide: Användaren blockerades. Alla användarens diskussioner och kommentarer har dolts.
+      notice_hide: Användaren blockerades. Alla användarens inlägg och kommentarer har dolts.
