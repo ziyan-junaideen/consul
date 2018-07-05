@@ -3,6 +3,8 @@ de:
     page_entries_info:
       entry:
         zero: Einträge
+        one: Eintrag
+        other: Einträge
       one_page:
         display_entries:
           zero: "%{entry_name} kann nicht gefunden werden"
@@ -13,3 +15,4 @@ de:
       last: Letzte
       next: Nächste
       previous: Vorherige
+      truncate: "&hellip;"
