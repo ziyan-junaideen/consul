@@ -56,10 +56,10 @@ sv:
     form:
       comment_as_admin: Kommentera som admin
       comment_as_moderator: Kommentera som moderator
-      leave_comment: Lämna din kommentar
+      leave_comment: Kommentera
     orders:
       most_voted: Flest röster
-      newest: Nyaste först
+      newest: Senaste först
       oldest: Äldsta först
       most_commented: Mest kommenterade
     select_order: Sortera efter
@@ -94,14 +94,14 @@ sv:
       debate_title: Debatt-titel
       tags_instructions: Tagga debatten.
       tags_label: Ämne
-      tags_placeholder: "Skriv in de etiketter du vill använda, avgränsade med semikolon (',')"
+      tags_placeholder: "Skriv taggarna du vill använda, avgränsade med komma (',')"
     index:
       featured_debates: Utvalda
       filter_topic:
         one: " med ämne '%{topic} '"
         other: " med ämne '%{topic} '"
       orders:
-        confidence_score: högst betygsatt
+        confidence_score: högst betyg
         created_at: senaste
         hot_score: mest aktiva
         most_commented: mest kommenterade
@@ -119,22 +119,22 @@ sv:
         other: " som innehåller <strong>'%{search_term}'</strong>"
       select_order: Sortera efter
       start_debate: Starta en debatt
-      title: Diskussioner
+      title: Debatter
       section_header:
-        icon_alt: Debatt ikon
-        title: Diskussioner
-        help: Hjälp kring debatter
+        icon_alt: Debatt-ikon
+        title: Debatter
+        help: Hjälp med debatter
       section_footer:
-        title: Hjälp kring debatter
+        title: Hjälp med debatter
         description: Starta en debatt för att diskutera frågor du är intresserad av med andra.
         help_text_1: "Utrymmet för medborgardebatter riktar sig till alla som vill ta upp frågor som berör dem och som de vill diskutera med andra."
         help_text_2: 'För att starta en debatt behöver du registrera dig på %{org}. Användare kan även kommentera i öppna debatter och betygsätta dem med knapparna för "jag håller med" eller "jag håller inte med".'
         help_text_3: "Tänk på att en debatt inte leder till någon konkret handling. Om du vill lägga ett %{proposal} för staden eller ett budgetförslag för %{budget} när den fasen är öppen, gå till respektive del av hemsidan."
         proposals_link: förslag
-        budget_link: deltagande budgeterande
+        budget_link: medborgarbudget
     new:
       form:
-        submit_button: Starta en diskussion
+        submit_button: Starta en debatt
       info: Om du vill lägga ett förslag är det här fel avdelning, gå till %{info_link}.
       info_link: skapa ett nytt förslag
       more_info: Mer information
