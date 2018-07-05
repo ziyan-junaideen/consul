@@ -27,7 +27,7 @@ sv:
       user_permission_support_proposal: Stöd förslag
       user_permission_title: Deltagande
       user_permission_verify: Bekräfta ditt konto för att utföra alla handlingar.
-      user_permission_verify_info: "* Endast för användare på folkräkningen."
+      user_permission_verify_info: "* Endast för användare skrivna i staden."
       user_permission_votes: Delta i slutomröstningen
       username_label: Användarnamn
       verified_account: Kontot verifierat
@@ -417,7 +417,7 @@ sv:
         zero: Inga kommentarer
         one: 1 kommentar
         other: "%{count} kommentarer"
-      reason_for_supports_necessary: 1% av folkräkningen
+      reason_for_supports_necessary: 1% av invånarna
       support: Stöd
       support_title: Stödja detta förslag
       supports:
@@ -483,7 +483,7 @@ sv:
       section_footer:
         title: Hjälp om omröstning
         description: Registrera dig för att kunna rösta på medborgarförslag och förslag från staden. Bli direkt delaktig i lokala beslut.
-        help_text_1: "Förslag som får stöd 1% av invånarna går vidare till omröstning. Även förslag från kommunfullmäktige kan gå till omröstning."
+        help_text_1: "Förslag som får stöd av 1% av invånarna går vidare till omröstning. Även förslag från kommunfullmäktige kan gå till omröstning."
         help_text_2: "För att delta i nästa omröstning behöver du registrera dig på %{org} och verifiera ditt konto. Alla stadens invånare över 16 får rösta. Resultatet av omröstningen är bindande för kommunfullmäktige."
       no_polls: "Det finns inga pågående omröstningar."
     show:
