@@ -709,7 +709,7 @@ sv:
       vote_collection: Samla röster
       recount_scrutiny: Rösträkning och granskning
     booth_assignments:
-      manage_assignments: Hantera tilldelningar
+      manage_assignments: Hantera uppdrag
       manage:
         assignments_list: "Uppdrag för omröstningen '%{poll} '"
         status:
@@ -779,8 +779,8 @@ sv:
         title: "Frågor"
         create: "Skapa fråga"
         no_questions: "Det finns inga frågor."
-        filter_poll: Filtrera efter enkät
-        select_poll: Välj opinionssökning
+        filter_poll: Filtrera efter omröstning
+        select_poll: Välj omröstning
         questions_tab: "Frågor"
         successful_proposals_tab: "Framgångsrika förslag"
         create_question: "Skapa fråga"
@@ -909,7 +909,7 @@ sv:
           all: Alla
           pending: Väntande
           rejected: Avvisade
-          verified: Verifierad
+          verified: Verifierade
         hidden_count_html:
           one: Det finns också <strong>en organisation</strong> med inga användare eller med en dold användare.
           other: Det finns också <strong>%{count} en organisationer</strong> med inga användare eller med en dold användare.
@@ -919,12 +919,12 @@ sv:
         responsible_name: Ansvarig
         status: Status
         no_organizations: Det finns inga organisationer.
-        reject: Avvisa
+        reject: Ge avslag
         rejected: Avvisade
         search: Sök
         search_placeholder: Namn, e-post eller telefonnummer
         title: Organisationer
-        verified: Verifierad
+        verified: Verifierade
         verify: Kontrollera
         pending: Väntande
       search:
@@ -982,7 +982,7 @@ sv:
         button: Sök
         placeholder: Sök användare efter namn eller e-post
       search_results: "Sökresultat"
-      no_search_results: "Inga resultat."
+      no_search_results: "Inget resultat."
       actions: Åtgärder
       title: Titel
       description: Beskrivning
@@ -994,17 +994,17 @@ sv:
         geozone_filter_all: Alla områden
         administrator_filter_all: Alla administratörer
         valuator_filter_all: Alla bedömare
-        tags_filter_all: Alla Taggar
+        tags_filter_all: Alla taggar
         filters:
           valuation_open: Pågående
-          without_admin: Utan tilldelade admin
+          without_admin: Utan ansvarig administratör
           managed: Hanterade
           valuating: Under bedömning
           valuation_finished: Bedömning avslutad
           all: Alla
         title: Budgetförslag för medborgarbudget
         assigned_admin: Ansvarig administratör
-        no_admin_assigned: Ingen admin tilldelad
+        no_admin_assigned: Saknar ansvarig administratör
         no_valuators_assigned: Inga tilldelade bedömare
         summary_link: "Sammanfattning av budgetförslag"
         valuator_summary_link: "Sammanfattning från bedömare"
@@ -1013,7 +1013,7 @@ sv:
           not_feasible: "Ej genomförbart"
           undefined: "Odefinierad"
       show:
-        assigned_admin: Utsedd administratör
+        assigned_admin: Ansvarig administratör
         assigned_valuators: Tilldelade bedömare
         back: Tillbaka
         classification: Klassificering
@@ -1033,7 +1033,7 @@ sv:
         assigned_valuators: Bedömare
         submit_button: Uppdatera
         tags: Taggar
-        tags_placeholder: "Skriv de etiketter du vill ska separeras med kommatecken ()"
+        tags_placeholder: "Fyll i taggar separerade med kommatecken (,)"
         undefined: Odefinierad
       summary:
         title: Sammanfattning av budgetförslag
@@ -1074,7 +1074,7 @@ sv:
         error: Detta område kan inte raderas eftersom det finns element fäst vid den
     signature_sheets:
       author: Förslagslämnare
-      created_at: Skapningsdatum
+      created_at: Skapad den
       name: Namn
       no_signature_sheets: "Det finns inga signatur_blanketter"
       index:
@@ -1082,11 +1082,11 @@ sv:
         new: Nya underskriftspapper
       new:
         title: Nya underskriftspapper
-        document_numbers_note: "Skriv de siffror separerade av kommatecken ()"
+        document_numbers_note: "Fyll i siffrorna separerade med kommatecken (,)"
         submit: Skapa signatur ark
       show:
         created_at: Skapad
-        author: Författare
+        author: Förslagslämnare
         documents: Dokument
         document_count: "Antal dokument:"
         verified:
@@ -1146,10 +1146,10 @@ sv:
           origin_total: Totalt antal deltagare
     tags:
       create: Skapa ämne
-      destroy: Förstör ämne
+      destroy: Ta bort ämne
       index:
-        add_tag: Lägg till ett nytt förslag till ämne
-        title: Ämnesförslag
+        add_tag: Lägg till ett nytt ämne för förslag
+        title: Ämnesområden för förslag
         topic: Ämne
         help: "När en användare skapar ett förslag föreslås de följande ämnena som taggar."
       name:
@@ -1160,7 +1160,7 @@ sv:
         email: E-post
         document_number: Dokumentnummer
         roles: Roller
-        verification_level: Kontroll nivå
+        verification_level: Rättighetsnivå
       index:
         title: Användare
         no_users: Det finns inga användare.
