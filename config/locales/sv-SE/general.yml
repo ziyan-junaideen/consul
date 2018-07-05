@@ -772,13 +772,13 @@ sv:
       not_verified: Endast verifierade användare kan rösta på förslag; %{verify_account}.
       organization: Organisationer kan inte rösta
       unfeasible: Det går inte att stödja budgetförslag som inte godkänts
-      not_voting_allowed: Omröstningsfas är stäng
+      not_voting_allowed: Omröstningsfasen är avslutad
     budget_investments:
       not_logged_in: Du behöver %{signin} eller %{signup} för att fortsätta.
       not_verified: Endast verifierade användare kan rösta på budgetförslag; %{verify_account}.
       organization: Organisationer kan inte rösta
       unfeasible: Det går inte att stödja budgetförslag som inte godkänts
-      not_voting_allowed: Omröstningsfas är stäng
+      not_voting_allowed: Omröstningsfasen är avslutad
       different_heading_assigned:
         one: "Du kan bara stödja budgetförslag i %{count} stadsdel"
         other: "Du kan bara stödja budgetförslag i %{count} stadsdelar"
@@ -818,14 +818,14 @@ sv:
       user_permission_debates: Delta i debatter
       user_permission_info: Med ditt konto kan du...
       user_permission_proposal: Skapa nya förslag
-      user_permission_support_proposal: Stöd förslag
-      user_permission_verify: Bekräfta ditt konto för att kunna utföra alla handlingar.
+      user_permission_support_proposal: Stödja förslag*
+      user_permission_verify: Verifiera ditt konto för att få tillgång till alla funktioner.
       user_permission_verify_info: "* Endast för användare skrivna i staden."
       user_permission_verify_my_account: Verifiera mitt konto
       user_permission_votes: Delta i slutomröstningen
   invisible_captcha:
     sentence_for_humans: "Ignorera det här fältet om du är en människa"
-    timestamp_error_message: "Oj, det gick för snabbt! Var vänlig skicka in igen."
+    timestamp_error_message: "Oj, där gick det lite för snabbt! Var vänlig skicka in igen."
   related_content:
     title: "Relaterat innehåll"
     add: "Lägg till relaterat innehåll"
@@ -833,7 +833,7 @@ sv:
     placeholder: "%{url}"
     help: "Du kan lägga till länkar till %{models} i %{org}."
     submit: "Lägg till"
-    error: "Länken är inte giltig. Kom ihåg att börja med %{url}."
+    error: "Länken är ogiltig. Kom ihåg att börja med %{url}."
     error_itself: "Länken är inte giltig. Du kan inte länka till det egna inlägget."
     success: "Du har lagt till nytt relaterat innehåll"
     is_related: "Är det relaterat innehåll?"
