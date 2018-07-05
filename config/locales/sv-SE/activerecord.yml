@@ -287,7 +287,7 @@ sv:
         poll/voter:
           attributes:
             document_number:
-              not_in_census: "Finns inte i folkbokföringen"
+              not_in_census: "Finns inte i adressregistret"
               has_voted: "Användaren har redan röstat"
         legislation/process:
           attributes:
@@ -312,7 +312,7 @@ sv:
         signature:
           attributes:
             document_number:
-              not_in_census: 'Ej bekräftad i folkbokföringen'
+              not_in_census: 'Ej verifierad adress'
               already_voted: 'Har redan röstat om förslaget'
         site_customization/page:
           attributes:
