@@ -69,7 +69,7 @@ sv:
         new_link: Skapa ny budget
         filter: Filter
         filters:
-          open: Öppna
+          open: Pågående
           finished: Klart
         budget_investments: Hantera projekt
         table_name: Namn
@@ -1107,7 +1107,7 @@ sv:
           debates: Debatter
           proposal_votes: Förslagsröster
           proposals: Förslag
-          budgets: Öppna budgetar
+          budgets: Pågående budgetar
           budget_investments: Budgetförslag
           spending_proposals: Förslag på utgifter
           unverified_users: Overifierade användare
