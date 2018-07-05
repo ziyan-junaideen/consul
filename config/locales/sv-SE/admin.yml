@@ -520,7 +520,7 @@ sv:
       officials: Tjänstemän
       organizations: Organisationer
       settings: Globala inställningar
-      spending_proposals: Investeringsförslag
+      spending_proposals: Budgetförslag
       stats: Statistik
       signature_sheets: Underskrifter
       site_customization:
@@ -977,7 +977,7 @@ sv:
         placeholder: Sök förslag efter titel, kod, beskrivning eller fråga
       spending_proposal_search:
         button: Sök
-        placeholder: Sök investeringsförslag efter titel eller beskrivning
+        placeholder: Sök budgetförslag efter titel eller beskrivning
       user_search:
         button: Sök
         placeholder: Sök användare efter namn eller e-post
