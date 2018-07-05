@@ -411,7 +411,7 @@ sv:
         edit: "Du kan ändra texten fram tills förslaget har delats."
         view_proposal: Inte nu, gå till mitt förslag
       improve_info: "Få mer stöd genom att förbättra ditt förslag"
-      improve_info_link: "Se mer information"
+      improve_info_link: "Visa mer information"
       already_supported: Du stöder redan det här förslaget. Dela det!
       comments:
         zero: Inga kommentarer
@@ -597,19 +597,19 @@ sv:
           one: "Det finns redan en debatt om '%{query}'. Du kan delta i den istället för att starta en ny debatt."
           other: "Det finns redan debatter om '%{query}'. Du kan delta i dem istället för att starta en ny debatt."
         message: "Du visar %{limit} av %{count} debatter som innehåller '%{query} '"
-        see_all: "Se alla"
+        see_all: "Visa alla"
       budget_investment:
         found:
           one: "Det finns redan ett budgetförslag om '%{query}'. Du kan delta i det förslaget istället för att skapa ett nytt."
           other: "Det finns redan budgetförslag om '%{query}'. Du kan delta i de förslagen istället för att skapa ett nytt."
         message: "Du visar %{limit} av %{count} förslag som innehåller '%{query} '"
-        see_all: "Se alla"
+        see_all: "Visa alla"
       proposal:
         found:
           one: "Det finns redan ett förslag om '%{query}'. Du kan delta i det istället för att skapa ett nytt förslag"
           other: "Det finns redan förslag om '%{query}'. Du kan delta i dem istället för att skapa ett nytt förslag"
         message: "Du visar %{limit} av %{count} förslag som innehåller '%{query} '"
-        see_all: "Se alla"
+        see_all: "Visa alla"
     tags_cloud:
       tags: Populära
       districts: "Distrikter"
@@ -754,7 +754,7 @@ sv:
       send_notification: "Skicka notis"
       retire: "Dra tillbaka"
       retired: "Förslag som dragits tillbaka"
-      see: "Se förslag"
+      see: "Visa förslag"
   votes:
     agree: Jag håller med
     anonymous: För många anonyma röster för att godkänna omröstningen %{verify_account}.
@@ -788,11 +788,11 @@ sv:
         debates: "Mest aktiva debatter"
         proposals: "Mest aktiva förslag"
         processes: "Öppna processer"
-      see_all_debates: Se alla debatter
-      see_all_proposals: Se alla förslag
-      see_all_processes: Se alla processer
+      see_all_debates: Visa alla debatter
+      see_all_proposals: Visa alla förslag
+      see_all_processes: Visa alla processer
       process_label: Process
-      see_process: Se process
+      see_process: Visa process
     cards:
       title: Stjärnmarkerade
     recommended:
@@ -806,14 +806,14 @@ sv:
         btn_text_link: Alla rekommenderade förslag
       budget_investments:
         title: Rekommenderade budgetförslag
-      slide: "Se %{title}"
+      slide: "Visa %{title}"
     verification:
       i_dont_have_an_account: Jag har inget konto
       i_have_an_account: Jag har redan ett konto
       question: Har du redan ett konto på %{org_name}?
       title: Kontoverifiering
     welcome:
-      go_to_index: Se förslag och debatter
+      go_to_index: Visa förslag och debatter
       title: Delta
       user_permission_debates: Delta i debatter
       user_permission_info: Med ditt konto kan du...
