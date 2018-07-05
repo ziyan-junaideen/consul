@@ -847,9 +847,9 @@ sv:
         title: "Resultat"
         no_results: "Det finns inga resultat"
       result:
-        table_whites: "Helt tomma röstsedlar"
-        table_nulls: "Ogiltiga röstsedlar"
-        table_total: "Totala röstsedlar"
+        table_whites: "Blankröster"
+        table_nulls: "Ogiltiga röster"
+        table_total: "Totalt antal röster"
         table_answer: Svar
         table_votes: Röster
       results_by_booth:
@@ -937,8 +937,8 @@ sv:
           all: Alla
           with_confirmed_hide: Godkända
           without_confirmed_hide: Väntande
-        title: Gömda förslag
-        no_hidden_proposals: Det finns inga gömma förslag.
+        title: Dolda förslag
+        no_hidden_proposals: Det finns inga dolda förslag.
     settings:
       flash:
         updated: Uppdaterad värde
@@ -1003,7 +1003,7 @@ sv:
           valuation_finished: Bedömning avslutad
           all: Alla
         title: Budgetförslag för medborgarbudget
-        assigned_admin: Utsedd administratör
+        assigned_admin: Ansvarig administratör
         no_admin_assigned: Ingen admin tilldelad
         no_valuators_assigned: Inga tilldelade bedömare
         summary_link: "Sammanfattning av budgetförslag"
@@ -1023,7 +1023,7 @@ sv:
         association_name: Förening
         by: Av
         sent: Skickat
-        geozone: Omfattning
+        geozone: Område
         dossier: Rapport
         edit_dossier: Redigera rapport
         tags: Taggar
@@ -1038,17 +1038,17 @@ sv:
       summary:
         title: Sammanfattning av budgetförslag
         title_proposals_with_supports: Sammanfattning av budgetförslag med stöd
-        geozone_name: Omfattning
-        finished_and_feasible_count: Klar och genomförbar
-        finished_and_unfeasible_count: Klar och genomförbar
+        geozone_name: Område
+        finished_and_feasible_count: Avslutat och genomförbart
+        finished_and_unfeasible_count: Avslutat och ej genomförbart
         finished_count: Avslutat
         in_evaluation_count: Utvärderas
         total_count: Totalt
         cost_for_geozone: Kostnad
     geozones:
       index:
-        title: Distrikt
-        create: Skapa distrikt
+        title: Geografiskt område
+        create: Skapa geografiskt område
         edit: Redigera
         delete: Ta bort
       geozone:
@@ -1064,16 +1064,16 @@ sv:
       edit:
         form:
           submit_button: Spara ändringar
-        editing: Redigerar distrikt
+        editing: Redigera geografiskt område
         back: Gå tillbaka
       new:
         back: Gå tillbaka
-        creating: Skapa distrikt
+        creating: Skapa område
       delete:
-        success: Distriktsområde har tagits bort
+        success: Området har tagits bort
         error: Detta område kan inte raderas eftersom det finns element fäst vid den
     signature_sheets:
-      author: Författare
+      author: Förslagslämnare
       created_at: Skapningsdatum
       name: Namn
       no_signature_sheets: "Det finns inga signatur_blanketter"
