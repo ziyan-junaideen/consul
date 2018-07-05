@@ -477,11 +477,11 @@ sv:
       geozone_info: "Öppen för invånare från: "
       already_answer: "Du har redan deltagit i den här omröstningen"
       section_header:
-        icon_alt: Omröstnings ikon
+        icon_alt: Omröstningsikon
         title: Omröstning
-        help: Hjälp om omröstning
+        help: Hjälp med omröstning
       section_footer:
-        title: Hjälp om omröstning
+        title: Hjälp med omröstning
         description: Registrera dig för att kunna rösta på medborgarförslag och förslag från staden. Bli direkt delaktig i lokala beslut.
         help_text_1: "Förslag som får stöd av 1% av invånarna går vidare till omröstning. Även förslag från kommunfullmäktige kan gå till omröstning."
         help_text_2: "För att delta i nästa omröstning behöver du registrera dig på %{org} och verifiera ditt konto. Alla stadens invånare över 16 får rösta. Resultatet av omröstningen är bindande för kommunfullmäktige."
@@ -494,7 +494,7 @@ sv:
       comments_tab: Kommentarer
       login_to_comment: Du behöver %{signin} eller %{signup} för att kunna kommentera.
       signin: Logga in
-      signup: Registrera sig
+      signup: Registrera dig
       cant_answer_verify_html: "Du måste %{verify_link} för att svara."
       verify_link: "verifiera ditt konto"
       cant_answer_incoming: "Omröstningen har inte börjat än."
