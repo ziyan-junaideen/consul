@@ -48,6 +48,7 @@ de:
       header:
         additional_info: Weitere Informationen
         description: Beschreibung
+        more_info: Mehr Information
       proposals:
         empty_proposals: Es gibt keine Vorschläge
       debate:
