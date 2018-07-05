@@ -113,7 +113,7 @@ sv:
         description_balloting: "Beskrivning under omröstningsfasen"
         description_reviewing_ballots: "Beskrivning när röstsedlarna granskas"
         description_finished: "Beskrivning när budgeten är klar"
-        phase: "Etapp"
+        phase: "Fas"
         currency_symbol: "Valuta"
       budget/investment:
         heading_id: "Rubrik"
