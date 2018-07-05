@@ -599,15 +599,15 @@ sv:
         subject: Ämne
         segment_recipient: Mottagare
         from: E-postadress som visas som avsändare för nyhetsbrevet
-        body: E-post innehåll
-        body_help_text: Detta är hur användarna kommer att se e-post
-        send_alert: Är du säker du vill sända detta nyhetsbrev till %{n} användare?
+        body: E-postmeddelande
+        body_help_text: Så här kommer e-postmeddelandet se ut för mottagarna
+        send_alert: Är du säker att du vill skicka nyhetsbrevet till %{n} mottagare?
     emails_download:
       index:
-        title: E-post nedladdning
+        title: Hämta e-postadresser
         download_segment: Hämta e-postadresser
         download_segment_help_text: Hämta i CSV-format
-        download_emails_button: Ladda ned e-post lista
+        download_emails_button: Ladda ner lista med e-postadresser
     valuators:
       index:
         title: Bedömare
@@ -627,9 +627,9 @@ sv:
       summary:
         title: Sammanfattning av bedömning av budgetförslag
         valuator_name: Bedömare
-        finished_and_feasible_count: Klart och genomförbart
+        finished_and_feasible_count: Avslutat och genomförbart
         finished_and_unfeasible_count: Avslutat och ej genomförbart
-        finished_count: Färdig
+        finished_count: Avslutade
         in_evaluation_count: Utvärderas
         total_count: Totalt
         cost: Kostnad
@@ -683,13 +683,13 @@ sv:
         no_assignments: "Denna användare har inga officing förändringar i denna enkät."
     poll_shifts:
       new:
-        add_shift: "Lägg till Skift"
+        add_shift: "Lägg till arbetspass"
         shift: "Uppdrag"
         shifts: "Växlingar i denna monter"
         date: "Datum"
         task: "Uppgift"
-        edit_shifts: Redigera växlingar
-        new_shift: "Ny skiftning"
+        edit_shifts: Redigera arbetspass
+        new_shift: "Nytt arbetspass"
         no_shifts: "Denna monter har inga växlingar"
         officer: "Valarbetare"
         remove_shift: "Ta bort"
@@ -699,12 +699,12 @@ sv:
         select_date: "Välj dag"
         no_voting_days: "Omröstningen har avslutats"
         select_task: "Välj uppgift"
-        table_shift: "Skift"
+        table_shift: "Arbetspass"
         table_email: "E-post"
         table_name: "Namn"
       flash:
-        create: "Skift har lagts till"
-        destroy: "Skift borttaget"
+        create: "Arbetspasset har lagts till"
+        destroy: "Arbetspasset har tagits bort"
         date_missing: "Ett datum måste väljas"
       vote_collection: Samla röster
       recount_scrutiny: Omräkning & granskning
@@ -837,7 +837,7 @@ sv:
           title: Redigera video
     recounts:
       index:
-        title: "Omräkningar"
+        title: "Rösträkning"
         no_recounts: "Det finns inget att räkna om"
         table_booth_name: "Vallokal"
         table_total_recount: "Totala omräkningen (av ämbetsman)"
@@ -876,7 +876,7 @@ sv:
       show:
         location: "Plats"
       booth:
-        shifts: "Hantera växlingar"
+        shifts: "Hantera arbetspass"
         edit: "Redigera monter"
     officials:
       edit:
