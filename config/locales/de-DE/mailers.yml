@@ -40,11 +40,18 @@ de:
       subject: "Sie haben eine neue persönliche Nachricht versendet"
       title_html: "Sie haben eine neue persönliche Nachricht versendet an <strong>%{receiver}</strong> mit dem Inhalt:"
     user_invite:
+      ignore: "Wenn Sie diese Einladung nicht angefordert haben, können Sie diese E-Mail einfach ignorieren."
+      text: "Danke für Ihre Anmeldung bei %{org}! In wenigen Sekunden können Sie damit beginnen Ihre Stadt mitzugestalten. Füllen Sie einfach vorher das untenstehende Formular aus:"
       thanks: "Vielen Dank."
       title: "Willkommen zu %{org}"
       button: Registrierung abschließen
       subject: "Einladung an %{org_name}"
     budget_investment_created:
+      subject: "Danke, dass Sie einen Budgetvorschlag erstellt haben!"
+      title: "Danke, dass Sie einen Budgetvorschlag erstellt haben!"
+      intro_html: "Hallo <strong>%{author}</strong>,"
+      text_html: "Vielen Dank, dass Sie einen Budgetvorschlag <strong>%{investment}</strong> für den Bürgerhaushalt erstellt haben <strong>%{budget}</strong>."
+      follow_html: "Wir werden Sie über den Fortgang des Prozesses informieren, dem Sie auch über folgenden <strong>%{link}</strong> folgen können."
       share: "Teilen Sie ihr Projekt"
     budget_investment_unfeasible:
       new_href: "neues Investitionsprojekt"
