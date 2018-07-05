@@ -6,8 +6,8 @@ sv:
       actions: Åtgärder
       confirm: Är du säker?
       confirm_hide: Bekräfta moderering
-      hide: Göm
-      hide_author: Göm författare
+      hide: Dölj
+      hide_author: Dölj författare
       restore: Återställ
       mark_featured: Stjärnmarkera
       unmark_featured: Ta bort stjärnmarkering
@@ -16,12 +16,12 @@ sv:
       delete: Ta bort
     banners:
       index:
-        title: Banner
+        title: Banners
         create: Skapa banner
         edit: Redigera banner
         delete: Radera banner
         filters:
-          all: Att göra
+          all: Alla
           with_active: Aktiva
           with_inactive: Inaktiva
         preview: Förhandsvisning
@@ -40,8 +40,8 @@ sv:
       errors:
         form:
           error:
-            one: "det gick inte att spara detta banner"
-            other: "det gick inte att spara detta banner"
+            one: "det gick inte att spara bannern"
+            other: "det gick inte att spara bannern"
       new:
         creating: Skapa banner
     activity:
@@ -55,12 +55,12 @@ sv:
         content: Innehåll
         filter: Visa
         filters:
-          all: Att göra
+          all: Alla
           on_comments: Kommentarer
-          on_debates: Diskussioner
+          on_debates: Debatter
           on_proposals: Förslag
           on_users: Användare
-        title: Moderatoråtgärder
+        title: Moderatoraktivitet
         type: Typ
         no_activity: Det finns ingen moderatoraktivitet.
     budgets:
@@ -239,18 +239,18 @@ sv:
         assigned_valuators: Bedömare
         select_heading: Välj rubrik
         submit_button: Uppdatera
-        user_tags: Etiketter som tilldelats användaren
+        user_tags: Användarens taggar
         tags: Taggar
-        tags_placeholder: "Skriv de etiketter du vill ska separeras med kommatecken ()"
+        tags_placeholder: "Fyll i taggar separerade med kommatecken (,)"
         undefined: Odefinierad
         user_groups: "Grupper"
-      search_unfeasible: Sök omöjligt
+      search_unfeasible: Sökningen misslyckades
     milestones:
       index:
-        table_id: "ID"
+        table_id: "Legitimation"
         table_title: "Titel"
         table_description: "Beskrivning"
-        table_publication_date: "Datum för offentliggörande"
+        table_publication_date: "Publiceringsdatum"
         table_status: Status
         table_actions: "Åtgärder"
         delete: "Ta bort milstolpe"
@@ -409,7 +409,7 @@ sv:
         edit:
           back: Tillbaka
           submit_button: Spara ändringar
-          warning: Du har redigerat texten, glöm inte att klicka på Spara för att spara ändringarna permanent.
+          warning: Du har redigerat texten, glöm inte att klicka på Spara för att spara dina ändringar.
         errors:
           form:
             error: Fel
@@ -440,19 +440,19 @@ sv:
           published: Publicerad
         table:
           title: Titel
-          created_at: Skapad på
+          created_at: Skapad
           comments: Kommentarer
-          final_version: Slutlig version
+          final_version: Slutversion
           status: Status
       questions:
         create:
-          notice: 'Fråga skapad. <a href="%{link}">Klicka för att besöka</a>'
+          notice: 'Frågan har skapats. <a href="%{link}">Klicka här för att visa den</a>'
           error: Frågan kunde inte skapas
         update:
-          notice: 'Fråga uppdaterad. <a href="%{link}">Klicka för att besöka</a>'
+          notice: 'Frågan har uppdaterats. <a href="%{link}">Klicka här för att visa den</a>'
           error: Frågan kunde inte uppdateras
         destroy:
-          notice: Fråga raderad
+          notice: Frågan har raderats
         edit:
           back: Tillbaka
           title: "Redigera ”%{question_title}”"
@@ -494,7 +494,7 @@ sv:
       search:
         title: 'Chefer: Användarsökning'
     menu:
-      activity: Moderator aktivitet
+      activity: Moderatoraktivitet
       admin: Administrationsmeny
       banner: Hantera banners
       poll_questions: Frågor
@@ -510,7 +510,7 @@ sv:
       moderators: Moderatorer
       emails: Skickar iväg e-postmeddelanden
       newsletters: Nyhetsbrev
-      emails_download: E-post Ladda ner
+      emails_download: Hämta e-postadresser
       valuators: Bedömare
       poll_officers: Valarbetare
       polls: Omröstningar
@@ -667,7 +667,7 @@ sv:
         email: E-post
         entry_name: valarbetare
       search:
-        email_placeholder: Sök användare via e-post
+        email_placeholder: Sök användare efter e-post
         search: Sök
         user_not_found: Användaren hittades inte
     poll_officer_assignments:
@@ -705,9 +705,9 @@ sv:
       flash:
         create: "Arbetspasset har lagts till"
         destroy: "Arbetspasset har tagits bort"
-        date_missing: "Ett datum måste väljas"
+        date_missing: "Datum är obligatoriskt"
       vote_collection: Samla röster
-      recount_scrutiny: Omräkning & granskning
+      recount_scrutiny: Rösträkning och granskning
     booth_assignments:
       manage_assignments: Hantera tilldelningar
       manage:
