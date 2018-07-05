@@ -2,8 +2,8 @@ sv:
   management:
     account:
       menu:
-        reset_password_email: Återställ lösenord med e-post
-        reset_password_manually: Återställa lösenord manuellt
+        reset_password_email: Återställ lösenordet med e-post
+        reset_password_manually: Återställa lösenordet manuellt
       alert:
         unverified_user: Ingen verifierad användare inloggad än
       show:
@@ -17,7 +17,7 @@ sv:
           reset_email_send: E-post skickat.
           reseted: Lösenordet återställd
           random: Generera nytt slumpmässigt lösenord
-          print: Skriv ut lösenord
+          print: Visa lösenord
           print_help: Du kommer kunna skriva ut lösenordet när det har sparats.
     account_info:
       change_user: Ändra användare
@@ -35,7 +35,7 @@ sv:
     document_verifications:
       already_verified: Detta användarkonto är redan verifierad.
       has_no_account_html: För att skapa ett konto, gå till %{link} och klicka <b>'Registrera'</b> i övre vänstra hörnet.
-      link: Consul
+      link: CONSUL
       in_census_has_following_permissions: 'Den här användaren har följande rättigheter på webbplatsen:'
       not_in_census: Identitetshandlingen är inte registrerad.
       not_in_census_info: 'De som inte är invånare i staden kan ändå göra det här på webbplatsen:'
