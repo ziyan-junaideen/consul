@@ -73,7 +73,7 @@ sv:
           finished: Klart
         budget_investments: Hantera projekt
         table_name: Namn
-        table_phase: Etapp
+        table_phase: Fas
         table_investments: Budgetförslag
         table_edit_groups: Partigrupper
         table_edit_budget: Redigera
@@ -86,7 +86,7 @@ sv:
       edit:
         title: Redigera medborgarbudget
         delete: Radera budget
-        phase: Etapp
+        phase: Fas
         dates: Datum
         enabled: Aktiverad
         actions: Åtgärder
@@ -192,7 +192,7 @@ sv:
         table_evaluation: "Visa till bedömare"
         table_incompatible: "Oförenlig"
         cannot_calculate_winners: Budgeten måste stå i fas "lottningsprojekt", "granskar valsedlar" eller "färdiga budgeter" för att kunna beräkna vinnarprojekt
-        see_results: "Se resultat"
+        see_results: "Visa resultat"
       show:
         assigned_admin: Utsedd administratör
         assigned_valuators: Tilldelade bedömare
@@ -224,10 +224,10 @@ sv:
           "true": "Ja"
           "false": "Nej"
         image: "Bild"
-        see_image: "Se bild"
+        see_image: "Visa bild"
         no_image: "Utan bild"
         documents: "Dokument"
-        see_documents: "Se dokument (%{count})"
+        see_documents: "Visa dokument (%{count})"
         no_documents: "Utan dokument"
         valuator_groups: "Värderingsorgan"
       edit:
@@ -628,7 +628,7 @@ sv:
         title: Sammanfattning av bedömning av budgetförslag
         valuator_name: Bedömare
         finished_and_feasible_count: Klart och genomförbart
-        finished_and_unfeasible_count: Klart och ogenomförbart
+        finished_and_unfeasible_count: Avslutat och ej genomförbart
         finished_count: Färdig
         in_evaluation_count: Utvärderas
         total_count: Totalt
@@ -855,7 +855,7 @@ sv:
       results_by_booth:
         booth: Monter
         results: Resultat
-        see_results: Se resultat
+        see_results: Visa resultat
         title: "Resultat av monter"
     booths:
       index:
@@ -1233,7 +1233,7 @@ sv:
           create: Skapa ny sida
           delete: Ta bort sida
           title: Anpassade sidor
-          see_page: Se sida
+          see_page: Visa sida
         new:
           title: Skapa ny custom sida
         page:
