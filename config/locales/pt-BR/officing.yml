@@ -6,6 +6,7 @@ pt-BR:
       index:
         title: Presidir votação
         info: Aqui você pode validar os documentos do usuário e guardar os resultados dos votos
+        no_shifts: Você não tem turnos como presidente hoje.
     menu:
       voters: Validar documento
       total_recounts: Recontagem total e resultados
