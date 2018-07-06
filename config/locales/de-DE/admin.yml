@@ -167,26 +167,30 @@ de:
           search: Suche
           filter: Filter
         download_current_selection: "Download der aktuellen Auswahl"
-        no_budget_investments: "Es gibt keine Investitionsvorhaben."
-        title: Investitionsprojekte
+        no_budget_investments: "Keine Ausgabenvorschläge vorhanden."
+        title: Ausgabenvorschläge
         assigned_admin: Zugewiesener Administrator
         no_admin_assigned: Kein Administrator zugewiesen
-        no_valuators_assigned: Keine Gutacher zugewiesen
+        no_valuators_assigned: Keine Begutacher/innen zugewiesen
+        no_valuation_groups: Keine Bewertungsgruppen zugewiesen
         feasibility:
           feasible: "Durchführbar (%{price})"
-          unfeasible: "Nicht machbar"
+          unfeasible: "Undurchführbar"
           undecided: "Offen"
         selected: "Ausgewählt"
         select: "Auswählen"
         table_id: "ID"
         table_title: "Titel"
-        table_supports: "Unterstützung"
+        table_supports: "Unterstützer/innen"
         table_admin: "Administrator"
-        table_valuator: "Gutachter"
-        table_geozone: "Handlungsspielraum"
+        table_valuator: "Begutachter/in"
+        table_valuation_group: "Bewertungsgruppe"
+        table_geozone: "Tätigkeitsfeld"
         table_feasibility: "Durchführbarkeit"
+        table_valuation_finished: "Bew. Fin."
         table_selection: "Ausgewählt"
-        table_incompatible: "Inkompatibel"
+        table_evaluation: "Den Begutachtern/Begutachterinnen zeigen"
+        table_incompatible: "Unvereinbar"
         see_results: "Ergebnisse anzeigen"
       show:
         assigned_admin: Zugewiesener Administrator
