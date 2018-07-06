@@ -75,9 +75,9 @@ de:
         table_name: Name
         table_phase: Phase
         table_investments: Ausgabenvorschläge
-        table_edit_groups: Gruppierungen von Kategorien
+        table_edit_groups: Gruppierungen von Rubriken
         table_edit_budget: Bearbeiten
-        edit_groups: Gruppierungen von Kategorien bearbeiten
+        edit_groups: Gruppierungen von Rubriken bearbeiten
         edit_budget: Budget bearbeiten
       create:
         notice: Ein neues Bürgerbudget wurde erfolgreich erstellt!
@@ -100,35 +100,37 @@ de:
         title: Neues Bürgerbudget
       show:
         groups:
-          one: 1 Gruppe von Budgetkategorien
+          one: 1 Gruppe von Budgetrubriken
           other: "%{count} Gruppen von Budgetkategorien"
       form:
         group: Gruppenname
-        no_groups: Bisher wurden noch keine Gruppen erstellt. Jede/r Benutzer/in darf nur in einer Kategorie per Gruppe wählen.
+        no_groups: Bisher wurden noch keine Gruppen erstellt. Jede/r Benutzer/in darf nur in einer Rubrik per Gruppe wählen.
         add_group: Neue Gruppe hinzufügen
         create_group: Gruppe erstellen
         edit_group: Gruppe bearbeiten
         submit: Gruppe speichern
         heading: Name der Rubrik
-        add_heading: Überschrift hinzufügen
+        add_heading: Rubrik hinzufügen
         amount: Menge
         population: "Bevölkerung (optional)"
         population_help_text: "Diese Daten dienen ausschließlich dazu, die Beteiligungsstatistiken zu berechnen"
         save_heading: Rubrik speichern
         no_heading: Diese Gruppe hat noch keine zugewiesene Rubrik.
         table_heading: Rubrik
-        table_amount: Betrag
+        table_amount: Menge
         table_population: Bevölkerung
+        population_info: "Das Feld 'Bevölkerung' in den Budgetrubriken wird nur für statistische Zwecke verwendet mit dem Ziel, den Prozentsatz der Stimmen in jeder Rubrik anzuzeigen, die ein Bevölkerungsgebiet darstellt. Es ist ein optionales Feld, daher können Sie es leer lassen, wenn es nicht zutrifft."
+        max_votable_headings: "Maximale Anzahl von Rubriken, in der ein/e Benutzer/in abstimmen kann"
       winners:
-        calculate: Gewinner-Investitionen berechnen
+        calculate: Meistbewertete Budgetvorschläge berechnen
         calculated: Die Gewinner werden ermittelt, es kann einen Moment dauern.
-        recalculate: Gewinner-Investitionen neu berechnen
+        recalculate: Meistbewertete Budgetvorschläge neu berechnen
     budget_phases:
       edit:
-        start_date: Startdatum
+        start_date: Anfangsdatum
         end_date: Enddatum
         summary: Zusammenfassung
-        summary_help_text: Dieser Text informiert die Benutzer über die Phase. Um den Text anzuzeigen, auch wenn die Phase nicht aktiv ist, klicken sie das Kästchen unten an
+        summary_help_text: Dieser Text informiert die Benutzer über die jeweilige Phase. Um den Text anzuzeigen, auch wenn die Phase nicht aktiv ist, klicken sie das Kästchen unten an
         description: Beschreibung
         description_help_text: Dieser Text erscheint als Überschrift, wenn die Phase aktiv ist
         enabled: Phase aktiviert
