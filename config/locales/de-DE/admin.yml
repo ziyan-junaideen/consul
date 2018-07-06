@@ -75,9 +75,9 @@ de:
         table_name: Name
         table_phase: Phase
         table_investments: Ausgabenvorschläge
-        table_edit_groups: Gruppierungen von Posten
+        table_edit_groups: Gruppierungen von Kategorien
         table_edit_budget: Bearbeiten
-        edit_groups: Gruppierungen von Posten bearbeiten
+        edit_groups: Gruppierungen von Kategorien bearbeiten
         edit_budget: Budget bearbeiten
       create:
         notice: Ein neues Bürgerbudget wurde erfolgreich erstellt!
@@ -100,11 +100,11 @@ de:
         title: Neues Bürgerbudget
       show:
         groups:
-          one: 1 Gruppe von Budgetposten
-          other: "%{count} Gruppen von Budgetposten"
+          one: 1 Gruppe von Budgetkategorien
+          other: "%{count} Gruppen von Budgetkategorien"
       form:
         group: Gruppenname
-        no_groups: Bisher wurden noch keine Gruppen erstellt. Jeder Benutzer darf in nur einer Rubrik in jeder Gruppe wählen.
+        no_groups: Bisher wurden noch keine Gruppen erstellt. Jede/r Benutzer/in darf nur in einer Kategorie per Gruppe wählen.
         add_group: Neue Gruppe hinzufügen
         create_group: Gruppe erstellen
         edit_group: Gruppe bearbeiten
