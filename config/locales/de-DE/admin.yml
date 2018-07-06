@@ -261,6 +261,7 @@ de:
       form:
         add_language: Sprache hinzufügen
         remove_language: Sprache entfernen
+        admin_statuses: Admin Anlagestatus
       new:
         creating: Meilenstein erstellen
         date: Datum
