@@ -229,7 +229,7 @@ de:
         documents: "Dokumente"
         see_documents: "Dokumente anzeigen (%{count})"
         no_documents: "Ohne Dokumente"
-        valuator_groups: "Valuator Gruppen"
+        valuator_groups: "Gutachter Gruppen"
       edit:
         classification: Klassifizierung
         compatibility: Kompatibilität
@@ -555,14 +555,19 @@ de:
         draft: Entwurf
         edit: Bearbeiten
       show:
+        send: Senden
+        sent_at: Gesendet um
         subject: Betreff
         segment_recipient: Empfänger
+        body: Inhalt der E-Mail
         send_alert: Sind Sie sicher, dass Sie diesen Newsletter an %{n} Benutzer senden möchten?
     emails_download:
       index:
+        title: E-Mails herunterladen
         download_segment: E-Mail-Adressen herunterladen
     valuators:
       index:
+        title: Gutachter
         name: Name
         email: E-Mail
         description: Beschreibung
