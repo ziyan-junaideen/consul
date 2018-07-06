@@ -286,28 +286,28 @@ de:
         map_location:
           attributes:
             map:
-              invalid: Der Kartenstandort darf nicht leer sein. Platzieren Sie einen Marker oder aktivieren Sie das Kontrollkästchen, wenn keine Lokalisierung erforderlich ist
+              invalid: Der Kartenstandort darf nicht leer sein. Platzieren Sie einen Marker oder aktivieren Sie das Kontrollkästchen, wenn eine Standorterkennung nich möglich ist
         poll/voter:
           attributes:
             document_number:
-              not_in_census: "Nicht in Zählung zu erfassen"
-              has_voted: "Benutzer hat bereits abgestimmt"
+              not_in_census: "Dokument scheint nicht im Melderegister auf"
+              has_voted: "Der/Die Benutzer/in hat bereits abgestimmt"
         legislation/process:
           attributes:
             end_date:
-              invalid_date_range: muss am oder nach dem Startdatum
+              invalid_date_range: muss an oder nach dem Anfangsdatum erfolgen
             debate_end_date:
-              invalid_date_range: muss am oder nach dem Debatten-Startdatum
+              invalid_date_range: muss an oder nach dem Anfangsdatum der Diskussion erfolgen
             allegations_end_date:
-              invalid_date_range: muss am oder nach dem Behauptungsstartdatum
+              invalid_date_range: muss an oder nach dem Anfangsdatum der Überprüfung erfolgen
         proposal:
           attributes:
             tag_list:
-              less_than_or_equal_to: "Kennzeichnungen müssen kleiner oder gleich %{count} sein"
+              less_than_or_equal_to: "Markierungen müssen kleiner als oder gleich %{count} sein"
         budget/investment:
           attributes:
             tag_list:
-              less_than_or_equal_to: "Kennzeichnungen müssen kleiner oder gleich %{count} sein"
+              less_than_or_equal_to: "Markierungen müssen kleiner als oder gleich %{count} sein"
         proposal_notification:
           attributes:
             minimum_interval:
@@ -315,23 +315,23 @@ de:
         signature:
           attributes:
             document_number:
-              not_in_census: 'nicht überprüft durch Zählung'
-              already_voted: 'Bereits abgestimmter Vorschlag'
+              not_in_census: 'Nicht durch das Melderegister überprüft'
+              already_voted: 'Hat bereits für diesen Vorschlag abgestimmt'
         site_customization/page:
           attributes:
             slug:
-              slug_format: "muss sein Buchstaben, Ziffern, _ und -"
+              slug_format: "muss Buchstaben, Ziffern, _ und - enthalten"
         site_customization/image:
           attributes:
             image:
-              image_width: "Breite muss %{required_width}px sein"
-              image_height: "Höhe muss %{required_height}px sein"
+              image_width: "Die Breite muss %{required_width}px betragen"
+              image_height: "Die Höhe muss %{required_height}px betragen"
         comment:
           attributes:
             valuation:
-              cannot_comment_valuation: 'Sie können keine Bewertung kommentieren'
+              cannot_comment_valuation: 'Sie können keine Überprüfung kommentieren'
       messages:
         record_invalid: "Validierung fehlgeschlagen: %{errors}"
         restrict_dependent_destroy:
-          has_one: "Datensatz kann nicht gelöscht werden, da ein abhängiger %{record} vorhanden ist"
-          has_many: "Datensatz kann nicht gelöscht werden, da abhängiger %{record} vorhanden ist"
+          has_one: "Datensatz kann nicht gelöscht werden, da dieser mit %{record} verbunden ist"
+          has_many: "Datensatz kann nicht gelöscht werden, da dieser mit %{record} verbunden ist"
