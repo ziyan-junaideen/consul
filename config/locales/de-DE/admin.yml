@@ -229,6 +229,7 @@ de:
         documents: "Dokumente"
         see_documents: "Dokumente anzeigen (%{count})"
         no_documents: "Ohne Dokumente"
+        valuator_groups: "Valuator Gruppen"
       edit:
         classification: Klassifizierung
         compatibility: Kompatibilität
@@ -250,6 +251,7 @@ de:
         table_title: "Titel"
         table_description: "Beschreibung"
         table_publication_date: "Datum der Veröffentlichung"
+        table_status: Status
         table_actions: "Aktionen"
         delete: "Meilenstein löschen"
         no_milestones: "Keine definierten Meilensteine haben"
