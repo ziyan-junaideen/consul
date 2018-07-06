@@ -13,12 +13,15 @@ de:
       budget/investment/milestone:
         one: "Meilenstein"
         other: "Meilensteine"
+      budget/investment/status:
+        one: "Status des Ausgabenvorschlags"
+        other: "Status der Ausgabenvorschläge"
       comment:
         one: "Kommentar"
         other: "Kommentare"
       debate:
         one: "Diskussion"
-        other: "Debatten"
+        other: "Diskussionen"
       tag:
         one: "Markierung"
         other: "Markierungen"
