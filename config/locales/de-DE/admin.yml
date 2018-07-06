@@ -191,6 +191,7 @@ de:
         table_selection: "Ausgewählt"
         table_evaluation: "Den Begutachtern/Begutachterinnen zeigen"
         table_incompatible: "Unvereinbar"
+        cannot_calculate_winners: Das Budget muss in der Pahse "Finale Abstimmung", "Abstimmung beendet" oder "Ergebnisse" stehen, um Gewinnervorschläge berechnen zu können
         see_results: "Ergebnisse anzeigen"
       show:
         assigned_admin: Zugewiesener Administrator
