@@ -31,8 +31,8 @@ de:
         target_url: Link
         style: Stil
         image: Bild
-        post_started_at: Veröffentlicht am
-        post_ended_at: Veröffentlichung endete am
+        post_started_at: Eintrag veröffentlicht am
+        post_ended_at: Eintrag beendet am
       edit:
         editing: Banner bearbeiten
         form:
