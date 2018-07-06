@@ -276,6 +276,7 @@ de:
         notice: Meilenstein erfolgreich gelöscht
     statuses:
       index:
+        new_status: Neuen Anlagestatus kreieren
         table_name: Name
         table_description: Beschreibung
         table_actions: Aktionen
@@ -283,6 +284,12 @@ de:
         edit: Bearbeiten
       edit:
         title: Anlagestatus bearbeiten
+      update:
+        notice: Anlage-Status wurde erfolgreich aktualisiert
+      new:
+        title: Anlagestatus kreieren
+      create:
+        notice: Anlagestatus wurde erfolgreich kreiert
     comments:
       index:
         filter: Filter
@@ -410,6 +417,7 @@ de:
               published: Sichtbar für alle
           title_placeholder: Geben Sie den Titel der Entwurfsversion ein
         index:
+          title: Entwurfsversionen
           create: Version erstellen
           delete: Löschen
           preview: Vorschau
@@ -489,6 +497,7 @@ de:
       administrators: Administratoren
       managers: Managers
       moderators: Moderatoren
+      emails: Versenden von emails
       newsletters: Newsletter
       emails_download: E-Mails herunterladen
       valuators: Gutachter
@@ -499,6 +508,7 @@ de:
       poll_shifts: Schichten verwalten
       officials: Beamte
       organizations: Organisationen
+      settings: Globale Einstellungen
       spending_proposals: Ausgabenvorschläge
       stats: Statistiken
       signature_sheets: Signatur-Blätter
@@ -513,6 +523,7 @@ de:
       title_profiles: Profile
       title_settings: Einstellungen
       title_site_customization: Seiten Inhalt
+      title_booths: Wahlkabinen
       legislation: Partizipative Gesetzgebung
       users: Benutzer
     administrators:
@@ -554,8 +565,17 @@ de:
         actions: Aktionen
         draft: Entwurf
         edit: Bearbeiten
+        delete: Löschen
+        preview: Vorschau
+        empty_newsletters: Es gibt keine Newsletter zum anzeigen
+      new:
+        title: Neuer Newsletter
+      edit:
+        title: Newsletter bearbeiten
       show:
+        title: Newsletter Vorschau
         send: Senden
+        affected_users: (%{n} betroffener Nutzer)
         sent_at: Gesendet um
         subject: Betreff
         segment_recipient: Empfänger
@@ -565,6 +585,8 @@ de:
       index:
         title: E-Mails herunterladen
         download_segment: E-Mail-Adressen herunterladen
+        download_segment_help_text: Im CSV-format herunterladen
+        download_emails_button: Email-Liste herunterladen
     valuators:
       index:
         title: Gutachter
@@ -572,14 +594,18 @@ de:
         email: E-Mail
         description: Beschreibung
         no_description: Keine Beschreibung
+        valuator_groups: "Gutachter Gruppen"
         group: "Gruppe"
         no_group: "Keine Gruppe"
       valuator:
+        add: Zu Gutachern hinzufügen
         delete: Löschen
       summary:
         finished_and_feasible_count: Abgeschlossen und durchführbar
         finished_and_unfeasible_count: Abgeschlossen und undurchführbar
         finished_count: Abgeschlossen
+        total_count: Insgesamt
+        cost: Kosten
       show:
         description: "Beschreibung"
         email: "E-Mail"
