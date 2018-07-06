@@ -722,10 +722,33 @@ de:
           assign: Zuweisungs Stand
           unassign: Zuweisungs Aufhebungs Stand
     poll_booth_assignments:
+      alert:
+        shifts: "Diesem Stand sind Schichten zugewiesen. Wenn du die Standzuweisung entfernst, werden die Schichten gelöscht. Fortfahren?"
+      flash:
+        destroy: "Stand nicht mehr zugewiesen"
+        create: "Stand zugewiesen"
+        error_destroy: "Ein Fehler trat auf, als die Zuweisung zum stand zurückgezogen wurde"
+        error_create: "Ein Fehler ist aufgetreten, als der Stand zu der Umfrage zugefügt wurde"
+      show:
+        location: "Lage"
+        officers: "Beamte/innen"
+        officers_list: "Beamten Liste für diesen Stand"
+        no_officers: "Es gibt keine Beamten für diesen Stand"
+        recounts: "Nachzählungen"
+        recounts_list: "Nachzählungs Liste für diesen Stand"
+        results: "Ergebnisse"
+        date: "Datum"
+        count_final: "Endgültige Nachzählung (vom Beamten)"
+        count_by_system: "Stimmen (automatisch)"
+        total_system: Gesamtstimmen (automatisch)
       index:
+        booths_title: "Liste der Stände"
+        no_booths: "Es sind keine Stände dieser Umfrage zugewiesen."
         table_name: "Name"
+        table_location: "Lage"
     polls:
       index:
+        title: "Liste der aktiven Umfragen"
         create: "Umfrage erstellen"
         name: "Name"
         dates: "Datum"
@@ -829,6 +852,7 @@ de:
     organizations:
       index:
         filters:
+          all: Alle
           pending: Ausstehend
           rejected: Abgelehnt
           verified: Überprüft
@@ -861,10 +885,23 @@ de:
           without_confirmed_hide: Ausstehend
         title: Verborgene Vorschläge
         no_hidden_proposals: Es gibt keine verborgenen Vorschläge.
+    proposal_notifications:
+      index:
+        filter: Filter
+        filters:
+          all: Alle
+          with_confirmed_hide: Bestätigt
+          without_confirmed_hide: Ausstehend
+        title: Versteckte Benachrichtigungen
+        no_hidden_proposals: Es gibt keine versteckten Benachrichtigungen.
     settings:
       flash:
         updated: Wert aktualisiert
       index:
+        banners: Banner-Stile
+        banner_imgs: Banner-Bilder
+        no_banners_images: Keine Banner-Bilder
+        no_banners_styles: Keine Banner-Stile
         title: Konfigurationseinstellungen
         update_setting: Update
         feature_flags: Funktionen
