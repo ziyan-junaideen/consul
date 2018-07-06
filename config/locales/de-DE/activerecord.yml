@@ -109,7 +109,7 @@ de:
     attributes:
       budget:
         name: "Name"
-        description_accepting: "Beschreibung während Akzeptierungsphase"
+        description_accepting: "Beschreibung während der Präsentationsphase"
         description_reviewing: "Beschreibung während Überprüfungsphase"
         description_selecting: "Beschreibung während Auswahlphase"
         description_valuating: "Beschreibung während Bewertungsphase"
@@ -123,23 +123,28 @@ de:
         title: "Titel"
         description: "Beschreibung"
         external_url: "Link zu weiterer Dokumentation"
-        administrator_id: "Administrator"
+        administrator_id: "Administrator/in"
         location: "Standort (optional)"
-        organization_name: "Wenn Sie einen Vorschlag im Namen eines Kollektivs/einer Organisation, oder von mehreren Menschen machen, nennen Sie bitte dessen/deren Name/n"
+        organization_name: "Wenn Sie einen Vorschlag im Namen einer Gruppe, Organisation oder mehreren Personen einreichen, nennen Sie bitte dessen/deren Name/n"
         image: "Vorschlag beschreibendes Bild"
         image_title: "Bildtitel"
       budget/investment/milestone:
+        status_id: "Derzeitiger Status des Ausgabenvorschlags (optional)"
         title: "Titel"
+        description: "Beschreibung (optional, wenn kein Status zugewiesen ist)"
         publication_date: "Datum der Veröffentlichung"
+      budget/investment/status:
+        name: "Name"
+        description: "Beschreibung (optional)"
       budget/heading:
         name: "Name der Überschrift"
         price: "Preis"
         population: "Bevölkerung"
       comment:
         body: "Kommentar"
-        user: "Benutzer"
+        user: "Benutzer/in"
       debate:
-        author: "Autor"
+        author: "Autor/in"
         description: "Meinung"
         terms_of_service: "Nutzungsbedingungen"
         title: "Titel"
