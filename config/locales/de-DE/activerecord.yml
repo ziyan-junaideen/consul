@@ -163,22 +163,23 @@ de:
         current_password: "Aktuelles Passwort"
         phone_number: "Telefonnummer"
         official_position: "Beamter/Beamtin"
-        official_level: "Offizielle Ebene"
+        official_level: "Amtsebene"
         redeemable_code: "Bestätigungscode per E-Mail erhalten"
       organization:
         name: "Name der Organisation"
         responsible_name: "Der/die Gruppenverantwortliche"
       spending_proposal:
+        administrator_id: "Administrator/in"
         association_name: "Vereinsname"
         description: "Beschreibung"
         external_url: "Link zu weiterer Dokumentation"
-        geozone_id: "Einsatzumfang"
+        geozone_id: "Tätigkeitsfeld"
         title: "Titel"
       poll:
         name: "Name"
-        starts_at: "Startdatum"
-        ends_at: "Abgabetermin"
-        geozone_restricted: "beschränkt auf Verwaltungsgebiet"
+        starts_at: "Anfangsdatum"
+        ends_at: "Einsendeschluss"
+        geozone_restricted: "Beschränkt auf Gebiete"
         summary: "Zusammenfassung"
         description: "Beschreibung"
       poll/question:
@@ -187,48 +188,49 @@ de:
         description: "Beschreibung"
         external_url: "Link zu weiterer Dokumentation"
       signature_sheet:
-        signable_type: "Handschrift"
-        signable_id: "zu unterzeichnender Ausweis"
+        signable_type: "Unterschriftentyp"
+        signable_id: "ID des Bürgervorschlags"
         document_numbers: "Dokumentennummern"
       site_customization/page:
         content: Inhalt
         created_at: Erstellt am
         subtitle: Untertitel
-        slug: Slug
+        slug: URL
         status: Status
         title: Titel
         updated_at: Aktualisiert am
-        more_info_flag: In der Hilfeseite anzeigen
-        print_content_flag: Taste Inhaltdrucken
+        more_info_flag: Auf der Hilfeseite anzeigen
+        print_content_flag: Taste Inhalt drucken
         locale: Sprache
       site_customization/image:
         name: Name
         image: Bild
       site_customization/content_block:
         name: Name
-        locale: Gebietsschema
-        body: Körper
+        locale: Sprache
+        body: Inhalt
       legislation/process:
-        title: Prozesstitel
+        title: Titel des Verfahrens
+        summary: Zusammenfassung
         description: Beschreibung
-        additional_info: zusätzliche Information
-        start_date: Startdatum
+        additional_info: Zusätzliche Information
+        start_date: Anfangsdatum
         end_date: Enddatum
-        debate_start_date: Startdatum Diskussion
+        debate_start_date: Anfangsdatum Diskussion
         debate_end_date: Enddatum Diskussion
-        draft_publication_date: Entwurf-Veröffentlichungsdatum
-        allegations_start_date: Behauptung-Startdatum
-        allegations_end_date: Behauptung-Enddatum
+        draft_publication_date: Veröffentlichungsdatum Entwurf
+        allegations_start_date: Anfangsdatum Überprüfung
+        allegations_end_date: Enddatum Überprüfung
         result_publication_date: Veröffentlichungsdatum Endergebnis
       legislation/draft_version:
-        title: Version-Titel
+        title: Titel der Fassung
         body: Text
         changelog: Änderungen
         status: Status
         final_version: Endgültige Fassung
       legislation/question:
         title: Titel
-        question_options: Optionen
+        question_options: Antwortmöglichkeiten
       legislation/question_option:
         value: Wert
       legislation/annotation:
@@ -244,22 +246,30 @@ de:
         description: Beschreibung
       poll/question/answer/video:
         title: Titel
-        url: Externe Videos
+        url: Externes Video
       newsletter:
         segment_recipient: Empfänger
         subject: Betreff
         from: Von
         body: Inhalt der E-Mail
+      widget/card:
+        label: Kennzeichen (optional)
+        title: Titel
+        description: Beschreibung
+        link_text: Linktext
+        link_url: Link URL
+      widget/feed:
+        limit: Anzahl der Elemente
     errors:
       models:
         user:
           attributes:
             email:
-              password_already_set: "Dieser Benutzer hat bereits ein Passwort"
+              password_already_set: "Diese/r Benutzer/in hat bereits ein Passwort"
         debate:
           attributes:
             tag_list:
-              less_than_or_equal_to: "Kennzeichen müssen kleiner als oder gleich %{count} sein"
+              less_than_or_equal_to: "Markierungen müssen kleiner als oder gleich %{count} sein"
         direct_message:
           attributes:
             max_per_day:
