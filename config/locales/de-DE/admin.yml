@@ -274,6 +274,15 @@ de:
         notice: Neuer Meilenstein wurde erfolgreich aktualisiert!
       delete:
         notice: Meilenstein erfolgreich gelöscht
+    statuses:
+      index:
+        table_name: Name
+        table_description: Beschreibung
+        table_actions: Aktionen
+        delete: Löschen
+        edit: Bearbeiten
+      edit:
+        title: Anlagestatus bearbeiten
     comments:
       index:
         filter: Filter
@@ -503,6 +512,7 @@ de:
       title_polls: Abstimmungen
       title_profiles: Profile
       title_settings: Einstellungen
+      title_site_customization: Seiten Inhalt
       legislation: Partizipative Gesetzgebung
       users: Benutzer
     administrators:
@@ -538,6 +548,12 @@ de:
       index:
         title: Newsletters
         new_newsletter: Neuer Newsletter
+        subject: Betreff
+        segment_recipient: Empfänger
+        sent: Gesendet
+        actions: Aktionen
+        draft: Entwurf
+        edit: Bearbeiten
       show:
         subject: Betreff
         segment_recipient: Empfänger
