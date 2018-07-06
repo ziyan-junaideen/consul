@@ -34,6 +34,12 @@ de:
       administrator:
         one: "Administrator"
         other: "Administratoren"
+      valuator:
+        one: "Begutachter/in"
+        other: "Begutachter/innen"
+      valuator_group:
+        one: "Bewertungsgruppe"
+        other: "Bewertungsgruppen"
       manager:
         one: "Manager"
         other: "Manager"
