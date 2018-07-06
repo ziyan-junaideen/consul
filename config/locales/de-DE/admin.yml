@@ -1,7 +1,7 @@
 de:
   admin:
     header:
-      title: Verwaltung
+      title: Administration
     actions:
       actions: Aktionen
       confirm: Sind Sie sich sicher?
@@ -9,7 +9,7 @@ de:
       hide: Ausblenden
       hide_author: Autor verbergen
       restore: Wiederherstellen
-      mark_featured: Befähigt
+      mark_featured: Markiert
       unmark_featured: Markierung aufheben
       edit: Bearbeiten
       configure: Konfigurieren
