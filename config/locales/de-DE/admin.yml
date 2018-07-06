@@ -387,6 +387,7 @@ de:
           status_planned: Geplant
         subnav:
           info: Information
+          draft_texts: Ausarbeitung
           questions: Diskussion
           proposals: Vorschläge
       proposals:
@@ -563,6 +564,7 @@ de:
     segment_recipient:
       all_users: Alle Benutzer
       administrators: Administratoren
+      proposal_authors: Vorschlags Autoren
     newsletters:
       create_success: Newsletter erfolgreich erstellt
       update_success: Newsletter erfolgreich aktualisiert
