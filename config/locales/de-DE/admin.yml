@@ -60,12 +60,12 @@ de:
           on_debates: Diskussionen
           on_proposals: Vorschläge
           on_users: Benutzer
-        title: Moderator-Aktivität
+        title: Aktivität des/der Moderator/in
         type: Typ
-        no_activity: Hier sind keine Moderatoren aktiv.
+        no_activity: Hier sind keine Moderatoren/Moderatorinnen aktiv.
     budgets:
       index:
-        title: partizipative Haushaltsmittel
+        title: Bürgerbudgets
         new_link: Neues Budget erstellen
         filter: Filter
         filters:
@@ -74,7 +74,7 @@ de:
         budget_investments: Projekte verwalten
         table_name: Name
         table_phase: Phase
-        table_investments: Investitionen
+        table_investments: Ausgabenvorschläge
         table_edit_groups: Überschriften-Gruppen
         table_edit_budget: Bearbeiten
         edit_groups: Überschriften-Gruppen
