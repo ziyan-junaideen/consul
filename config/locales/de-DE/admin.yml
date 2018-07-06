@@ -75,16 +75,16 @@ de:
         table_name: Name
         table_phase: Phase
         table_investments: Ausgabenvorschläge
-        table_edit_groups: Überschriften-Gruppen
+        table_edit_groups: Gruppierungen von Posten
         table_edit_budget: Bearbeiten
-        edit_groups: Überschriften-Gruppen
+        edit_groups: Gruppierungen von Posten bearbeiten
         edit_budget: Budget bearbeiten
       create:
-        notice: Neue partizipative Haushaltsmittel wurden erfolgreich erstellt!
+        notice: Ein neues Bürgerbudget wurde erfolgreich erstellt!
       update:
-        notice: Partizipative Haushaltsmittel wurden erfolgreich aktualisiert
+        notice: Bürgerbudget wurde erfolgreich aktualisiert
       edit:
-        title: Partizipative Haushaltsmittel bearbeiten
+        title: Bürgerbudget bearbeiten
         delete: Budget löschen
         phase: Phase
         dates: Datum
@@ -92,12 +92,12 @@ de:
         actions: Aktionen
         edit_phase: Phase bearbeiten
         active: Aktiv
-        blank_dates: Termine sind leer
+        blank_dates: Das Datumfeld ist leer
       destroy:
         success_notice: Budget erfolgreich gelöscht
-        unable_notice: Sie können ein Budget mit zugehörigen Projekten nicht löschen
+        unable_notice: Sie können ein Budget mit zugehörigem Ausgabenvorschlag nicht löschen
       new:
-        title: Neue partizipativen Haushaltsmittel
+        title: Neues Bürgerbudget
       show:
         groups:
           one: 1 Gruppe von Budgetposten
