@@ -132,7 +132,7 @@ de:
         summary: Zusammenfassung
         summary_help_text: Dieser Text informiert die Benutzer über die jeweilige Phase. Um den Text anzuzeigen, auch wenn die Phase nicht aktiv ist, klicken sie das Kästchen unten an
         description: Beschreibung
-        description_help_text: Dieser Text erscheint als Überschrift, wenn die Phase aktiv ist
+        description_help_text: Dieser Text erscheint in der Kopfzeile, wenn die Phase aktiv ist
         enabled: Phase aktiviert
         enabled_help_text: Diese Phase wird öffentlich in der Zeitleiste der Budgetphasen angezeigt und ist auch für andere Zwecke aktiv
         save_changes: Änderungen speichern
@@ -140,15 +140,15 @@ de:
       index:
         heading_filter_all: Alle Rubriken
         administrator_filter_all: Alle Administratoren
-        valuator_filter_all: Alle Gutachter
-        tags_filter_all: Alle Kennzeichen
+        valuator_filter_all: Alle Begutachter/innen
+        tags_filter_all: Alle Markierungen
         advanced_filters: Erweiterte Filter
         placeholder: Suche Projekte
         sort_by:
           placeholder: Sortieren nach
           id: ID
           title: Titel
-          supports: Unterstützung
+          supports: Unterstützer/innen
         filters:
           all: Alle
           without_admin: Ohne zugewiesenen Administrator
@@ -159,6 +159,7 @@ de:
           selected: Ausgewählt
           undecided: Unentschieden
           unfeasible: Undurchführbar
+          max_per_heading: Maximale Unterstützer/innen pro Rubrik
           winners: Gewinner
           one_filter_html: "Aktuell angewendete Filter: <b><em>%{filter}</em></b>"
           two_filters_html: "Aktuell angewendete Filter: <b><em>%{filter},%{advanced_filters}</em></b>"
