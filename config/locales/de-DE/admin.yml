@@ -565,6 +565,12 @@ de:
       all_users: Alle Benutzer
       administrators: Administratoren
       proposal_authors: Vorschlags Autoren
+      investment_authors: Investitions Autoren im aktuellen Budget
+      feasible_and_undecided_investment_authors: "Autoren von Investitionen im aktuellen Budget welches nicht [valuation finished unfesasble] erfüllt"
+      selected_investment_authors: Autoren ausgewählter Investitionen im aktuellen Busget
+      winner_investment_authors: Autoren von siegreichen Investitionen im aktuellen Budget
+      not_supported_on_current_budget: Benutzer die nicht Investitionen im aktuellen Budget unterstützt haben
+      invalid_recipients_segment: "Empfängers Nutzersegment ist ungültig"
     newsletters:
       create_success: Newsletter erfolgreich erstellt
       update_success: Newsletter erfolgreich aktualisiert
@@ -618,10 +624,15 @@ de:
       valuator:
         add: Zu Gutachern hinzufügen
         delete: Löschen
+      search:
+        title: 'Gutacher: Benutzersuche'
       summary:
+        title: Gutachter Zusammenfassung für Investitionsprojekte
+        valuator_name: Gutachter
         finished_and_feasible_count: Abgeschlossen und durchführbar
         finished_and_unfeasible_count: Abgeschlossen und undurchführbar
         finished_count: Abgeschlossen
+        in_evaluation_count: In Auswertung
         total_count: Insgesamt
         cost: Kosten
       show:
