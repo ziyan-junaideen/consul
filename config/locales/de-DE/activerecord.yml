@@ -60,16 +60,19 @@ de:
         other: "Beamte/innen"
       proposal:
         one: "Bürgerantrag"
-        other: "Bürgeranträge"
+        other: "Bürgervorschläge"
+      spending_proposal:
+        one: "Ausgabenvorschlag"
+        other: "Ausgabenvorschläge"
       site_customization/page:
-        one: Benutzerwebseite
-        other: Benutzerwebseiten
+        one: Meine Seite
+        other: Meine Seiten
       site_customization/image:
         one: Benutzerbild
-        other: Benutzerbilder
+        other: Bilder
       site_customization/content_block:
-        one: Benutzerspezifischer Inhaltsdatenblock
-        other: Benutzerspezifische Inhaltsdatenblöcke
+        one: Benutzer*spezifischer Inhaltsdatenblock
+        other: Benutzer*spezifische Inhaltsdatenblöcke
       legislation/process:
         one: "Prozess"
         other: "Prozesse"
@@ -100,6 +103,9 @@ de:
       poll:
         one: "Abstimmung"
         other: "Abstimmungen"
+      proposal_notification:
+        one: "Benachrichtigung zu einem Vorschlag"
+        other: "Benachrichtigungen zu einem Vorschlag"
     attributes:
       budget:
         name: "Name"
