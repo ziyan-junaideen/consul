@@ -635,6 +635,10 @@ de:
         in_evaluation_count: In Auswertung
         total_count: Insgesamt
         cost: Kosten
+      form:
+        edit_title: "Gutachter: Gutachter bearbeiten"
+        update: "Update Gutachter"
+        updated: "Gutachter erfolgreich aktualisiert"
       show:
         description: "Beschreibung"
         email: "E-Mail"
@@ -643,10 +647,17 @@ de:
         no_group: "Ohne Gruppe"
     valuator_groups:
       index:
+        title: "Gutachter Gruppen"
+        new: "Gutacher Gruppe erstellen"
         name: "Name"
         members: "Mitglieder"
+        no_groups: "Es gibt keine Gutachter Gruppen"
+      show:
+        title: "Gutachter Gruppe: %{group}"
+        no_valuators: "Es gibt keine Gutachter, die dieser Gruppe zugeordnet sind"
       form:
         name: "Gruppenname"
+        new: "Gutacher Gruppe erstellen"
     poll_officers:
       index:
         title: Vorsitzende der Abstimmung
