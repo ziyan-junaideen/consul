@@ -262,6 +262,7 @@ de:
         add_language: Sprache hinzufügen
         remove_language: Sprache entfernen
         admin_statuses: Admin Anlagestatus
+        no_statuses_defined: Es gibt noch keine definierten Investmentstatus
       new:
         creating: Meilenstein erstellen
         date: Datum
@@ -276,6 +277,8 @@ de:
         notice: Meilenstein erfolgreich gelöscht
     statuses:
       index:
+        title: Investmentstatus
+        empty_statuses: Es wurden noch keine Investmentstatus kreiert
         new_status: Neuen Anlagestatus kreieren
         table_name: Name
         table_description: Beschreibung
