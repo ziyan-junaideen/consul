@@ -149,7 +149,7 @@ de:
         terms_of_service: "Nutzungsbedingungen"
         title: "Titel"
       proposal:
-        author: "Autor"
+        author: "Autor/in"
         title: "Titel"
         question: "Frage"
         description: "Beschreibung"
@@ -162,7 +162,7 @@ de:
         password: "Passwort"
         current_password: "Aktuelles Passwort"
         phone_number: "Telefonnummer"
-        official_position: "Öffentliches Amt"
+        official_position: "Beamter/Beamtin"
         official_level: "Offizielle Ebene"
         redeemable_code: "Bestätigungscode per E-Mail erhalten"
       organization:
