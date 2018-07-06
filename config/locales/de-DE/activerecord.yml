@@ -273,12 +273,12 @@ de:
         direct_message:
           attributes:
             max_per_day:
-              invalid: "Sie haben die maximale Anzahl an Privatnachrichten pro Tag erreicht"
+              invalid: "Sie haben die maximale Anzahl an persönlichen Nachrichten pro Tag erreicht"
         image:
           attributes:
             attachment:
-              min_image_width: "Bildbreite muss mindestens %{required_min_width}px betragen"
-              min_image_height: "Bildhöhe muss mindestens %{required_min_height}px betragen"
+              min_image_width: "Die Bildbreite muss mindestens %{required_min_width}px betragen"
+              min_image_height: "Die Bildhöhe muss mindestens %{required_min_height}px betragen"
         newsletter:
           attributes:
             segment_recipient:
