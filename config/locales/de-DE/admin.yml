@@ -658,6 +658,7 @@ de:
       form:
         name: "Gruppenname"
         new: "Gutacher Gruppe erstellen"
+        edit: "Gutachter Gruppe speichern"
     poll_officers:
       index:
         title: Vorsitzende der Abstimmung
@@ -680,6 +681,8 @@ de:
       by_officer:
         date: "Datum"
         booth: "Wahlurne"
+        assignments: "Officing Schichten in dieser Umfrage"
+        no_assignments: "Dieser Benutzer hat keine Officing-Schichten in dieser Umfrage."
     poll_shifts:
       new:
         add_shift: "Schicht hinzufügen"
@@ -689,12 +692,16 @@ de:
         task: "Aufgabe"
         edit_shifts: Schicht zuordnen
         new_shift: "Neue Schicht"
+        no_shifts: "Dieser Stand hat keine Schichten"
         officer: "Beamter/in"
         remove_shift: "Entfernen"
         search_officer_button: Suche
         search_officer_placeholder: Suche nach Beamter/in
+        search_officer_text: Suche nach einem Offizier um eine neue Schicht zuzuweisen
         select_date: "Tag auswählen"
         no_voting_days: "Abstimmungsphase beendet"
+        select_task: "Aufgabe auswählen"
+        table_shift: "Schicht"
         table_email: "E-Mail"
         table_name: "Name"
       flash:
@@ -711,6 +718,9 @@ de:
           assign_status: Zuordnung
           assigned: Zugeordnet
           unassigned: Nicht zugewiesen
+        actions:
+          assign: Zuweisungs Stand
+          unassign: Zuweisungs Aufhebungs Stand
     poll_booth_assignments:
       index:
         table_name: "Name"
