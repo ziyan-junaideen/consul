@@ -290,6 +290,8 @@ de:
         title: Anlagestatus kreieren
       create:
         notice: Anlagestatus wurde erfolgreich kreiert
+      delete:
+        notice: Anlagestatus wurde erfolgreich gelöscht
     comments:
       index:
         filter: Filter
@@ -350,6 +352,7 @@ de:
           enabled: Aktiviert
           process: Prozess
           debate_phase: Diskussionsphase
+          allegations_phase: Entwurfsphase
           proposals_phase: Phase für Vorschläge
           start: Beginn
           end: Ende
@@ -407,6 +410,7 @@ de:
           form:
             error: Fehler
         form:
+          title_html: 'Bearbeiten von <span class="strong">-%{draft_version_title}-</span> vom Prozess <span class="strong">%{process_title}</span>'
           launch_text_editor: Texteditor öffnen
           close_text_editor: Texteditor schließen
           use_markdown: Verwenden Sie Markdowns, um den Text zu formationen
@@ -416,6 +420,8 @@ de:
               draft: Als Admin können Sie eine Vorschau anzeigen, die niemand sonst sieht
               published: Sichtbar für alle
           title_placeholder: Geben Sie den Titel der Entwurfsversion ein
+          changelog_placeholder: Füge die Hauptänderungen zur vorherigen Version hinzu
+          body_placeholder: Notieren Sie sich den Entwurf
         index:
           title: Entwurfsversionen
           create: Version erstellen
@@ -455,6 +461,7 @@ de:
           title: Frage
           title_placeholder: Frage hinzufügen
           value_placeholder: Eine geschlossene Antwort hinzufügen
+          question_options: "Mögliche Antworten (optional, standardmäßig offene Antworten)"
         index:
           back: Zurück
           title: Fragen im Zusammenhang mit diesem Prozess
@@ -493,6 +500,7 @@ de:
       hidden_comments: Verborgene Kommentare
       hidden_debates: Verborgene Diskussionen
       hidden_proposals: Verborgene Vorschläge
+      hidden_proposal_notifications: Versteckte Vorschlagsbenachrichtigung
       hidden_users: Verborgene Benutzer
       administrators: Administratoren
       managers: Managers
@@ -543,6 +551,7 @@ de:
         title: Moderatoren
         name: Name
         email: E-Mail
+        no_moderators: Es gibt keine Gutacher.
       moderator:
         add: Hinzufügen
         delete: Löschen
@@ -570,6 +579,7 @@ de:
         empty_newsletters: Es gibt keine Newsletter zum anzeigen
       new:
         title: Neuer Newsletter
+        from: E-Mail-Adresse, die angezeigt wird, beim Versand des Newsletters
       edit:
         title: Newsletter bearbeiten
       show:
@@ -579,7 +589,9 @@ de:
         sent_at: Gesendet um
         subject: Betreff
         segment_recipient: Empfänger
+        from: E-Mail-Adresse, die angezeigt wird, beim Versand des Newsletters
         body: Inhalt der E-Mail
+        body_help_text: Dies ist, wie dem Benutzer die E-mail angezeigt wird
         send_alert: Sind Sie sicher, dass Sie diesen Newsletter an %{n} Benutzer senden möchten?
     emails_download:
       index:
@@ -594,6 +606,7 @@ de:
         email: E-Mail
         description: Beschreibung
         no_description: Keine Beschreibung
+        no_valuators: Es gibt keine Gutacher.
         valuator_groups: "Gutachter Gruppen"
         group: "Gruppe"
         no_group: "Keine Gruppe"
