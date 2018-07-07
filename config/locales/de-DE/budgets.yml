@@ -45,7 +45,9 @@ de:
       section_header:
         icon_alt: Symbol für partizipative Haushaltsmittel
         title: partizipative Haushaltsmittel
+        help: Hilfe mit partizipativen Haushaltsmitteln
         all_phases: Alle Phasen anzeigen
+      all_phases: Haushaltsmittel Investitionsphasen
       investment_proyects: Liste aller Investitionsprojekte
       see_results: Ergebnisse anzeigen
       section_footer:
