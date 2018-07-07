@@ -1099,6 +1099,9 @@ de:
         add_tag: Neues Vorschlagsthema hinzufügen
         title: Themen für Vorschläge
         topic: Thema
+        help: "Wenn ein Nutzer einen Vorschlag erstellt, werden die folgen Themen als automatisch als tag vorgeschlagen."
+      name:
+        placeholder: Gebe den Namen des Themas ein
     users:
       columns:
         name: Name
@@ -1116,8 +1119,12 @@ de:
       index:
         phone_not_given: Telefon nicht angegeben
         sms_code_not_confirmed: Der SMS-Code konnte nicht bestätigt werden
+        title: Unvollständige Überprüfungen
     site_customization:
       content_blocks:
+        information: Informationen zu Inhalts Blöcken
+        about: Du kannst HTML Inhalts Blöcke kreieren, die in die Kopf- oder Fußzeile deiner CONSUL eingefügt werden.
+        top_links_html: "<strong>Kopfzeilen-Blöcke (Top_links)</strong> sind Blöcke von Links, die dieses Format haben müssen:"
         errors:
           form:
             error: Fehler
