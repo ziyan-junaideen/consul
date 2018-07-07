@@ -988,6 +988,7 @@ de:
         placeholder: Suche Vorschläge nach Titel, Code, Beschreibung oder Frage
       spending_proposal_search:
         button: Suchen
+        placeholder: Suche nach austehendem Vorschlag bei Titel oder Beschreibung
       user_search:
         button: Suchen
         placeholder: Benutzer nach Name oder E-Mail suchen
