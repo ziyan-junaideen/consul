@@ -1099,6 +1099,7 @@ de:
           one: "Es gibt %{count} gültige Unterschriften"
           other: "Es gibt %{count} gültige Unterschriften"
         unverified_error: (Nicht durch Volkszählung bestätigt)
+        loading: "Es gibt immer noch Unterschriften, die bei der Volkszählung bestätigt werden. Bitte aktualisiere die seite in ein paar Momenten"
     stats:
       show:
         stats_title: Statistiken
@@ -1109,8 +1110,15 @@ de:
           debates: Diskussionen
           proposal_votes: Bewertungen Vorschlag
           proposals: Vorschläge
+          budgets: Offene Haushalte
+          budget_investments: Investitions Projekte
+          spending_proposals: Ausgabenvorschläge
           unverified_users: Benutzer nicht verifziert
+          user_level_three: Stufe drei Nutzer
+          user_level_two: Stufe zwei Nutzer
+          users: Gesamanzahl Nutzer
           verified_users: Verifizierte Benutzer
+          verified_users_who_didnt_vote_proposals: Bestätigte Nutzer, die nicht für Vorschläge gestimmt haben
           visits: Besuche
           votes: Gesamt stimmen
         spending_proposals_title: Ausgabenvorschläge
