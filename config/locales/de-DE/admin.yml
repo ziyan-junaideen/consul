@@ -1188,6 +1188,10 @@ de:
         update:
           notice: Inhaltsblock erfolgreich aktualisiert
           error: Inhaltsblock konnten nicht aktualisiert werden
+        destroy:
+          notice: Inhalsblock erfolgreich gelöscht
+        edit:
+          title: Inhaltsblock bearbeiten
         errors:
           form:
             error: Fehler
