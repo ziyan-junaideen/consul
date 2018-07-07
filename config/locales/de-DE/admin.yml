@@ -1195,10 +1195,18 @@ de:
         errors:
           form:
             error: Fehler
+        index:
+          create: Neuen Inhaltsblock erstellen
+          delete: Block löschen
+          title: Inhaltsblöcke
+        new:
+          title: Neuen Inhaltsblock erstellen
         content_block:
+          body: Körper
           name: Name
       images:
         index:
+          title: Benutzerdefinierte Bilder
           update: Update
           delete: Löschen
           image: Bild
@@ -1227,15 +1235,24 @@ de:
         index:
           create: Neue Seite erstellen
           delete: Seite löschen
+          title: Benutzerdefinierte Seiten
           see_page: Seite anzeigen
+        new:
+          title: Neue benutzerdefinierte Seite erstellen
         page:
+          created_at: Erstellt am
           status: Status
+          title: Titel
           updated_at: Letzte Aktualisierung
           status_draft: Entwurf
           status_published: Veröffentlicht
           locale: Sprache
     homepage:
       title: Homepage
+      description: Die aktiven Module erscheinen auf der startseite in der selben Reihenfolge wie hier.
+      header_title: Überschrift
+      no_header: Es gibt keine Überschrift.
+      create_header: Überschrift erstellen
       cards:
         title: Titel
         description: Beschreibung
