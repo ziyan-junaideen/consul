@@ -862,14 +862,51 @@ de:
     booths:
       index:
         title: "Liste der aktiven Wahlkabinen"
+        no_booths: "Es gibt keine aktiven Wahlkabinen für irgendwelche bevorstehenden Umfragen."
+        add_booth: "Wahlkabine hinzufügen"
         name: "Name"
+        location: "Lage"
+        no_location: "Kein Standpunkt"
       new:
+        title: "Neue Wahlkabine"
         name: "Name"
+        location: "Standpunkt"
+        submit_button: "Wahlkabine erstellen"
+      edit:
+        title: "Wahlkabine bearbeiten"
+        submit_button: "Wahlkabine aktualisieren"
+      show:
+        location: "Standpunkt"
+      booth:
+        shifts: "Schichten verwalten"
+        edit: "Wahlkabine bearbeiten"
     officials:
+      edit:
+        destroy: '"Offiziellen" Status entfernen'
+        title: 'Beamte: Nutzer bearbeiten'
+      flash:
+        official_destroyed: 'Details gespeichert: Der Nutzer ist nicht länger ein Beamter'
+        official_updated: Details des Beamtens gespeichert
       index:
+        title: Beamte
+        no_officials: Es gibt keine Beamten.
         name: Name
+        official_position: Offizielle position
+        official_level: Ebene
+      level_0: Nicht offiziell
+      level_1: Stufe 1
+      level_2: Stufe 2
+      level_3: Stufe 3
+      level_4: Stufe 4
+      level_5: Stufe 5
+      search:
+        edit_official: Beamten bearbeiten
+        make_official: Beamten erstellen
+        title: 'Offizielle Positionen: Benutzer Suche'
+        no_results: Offizielle Positionen nicht gefunden.
     organizations:
       index:
+        filter: Filter
         filters:
           all: Alle
           pending: Ausstehend
@@ -1028,6 +1065,8 @@ de:
           unverified_users: Benutzer nicht verifziert
           verified_users: Verifizierte Benutzer
           visits: Besuche
+          votes: Gesamt stimmen
+        spending_proposals_title: Ausgabenvorschläge
         visits_title: Besuche
         direct_messages: Direktnachrichten
         proposal_notifications: Vorschlagsbenachrichtigung
