@@ -1095,6 +1095,9 @@ de:
         author: Autor
         documents: Dokumente
         document_count: "Anzahl von Dokumenten:"
+        verified:
+          one: "Es gibt %{count} gültige Unterschrift"
+          other: "Es gibt %{count} gültige Unterschrift"
         unverified:
           one: "Es gibt %{count} gültige Unterschriften"
           other: "Es gibt %{count} gültige Unterschriften"
@@ -1259,3 +1262,19 @@ de:
       cards:
         title: Titel
         description: Beschreibung
+        link_text: Text verlinken
+        link_url: URL verlinken
+      feeds:
+        proposals: Vorschläge
+        debates: Diskussionen
+        processes: Prozesse
+      new:
+        header_title: Neue Überschrift
+        submit_header: Überschrift erstellen
+        card_title: Neue Karte
+        submit_card: Karte erstellen
+      edit:
+        header_title: Überschrift bearbeiten
+        submit_header: Überschrift speichern
+        card_title: Karte bearbeiten
+        submit_card: Karte speichern
