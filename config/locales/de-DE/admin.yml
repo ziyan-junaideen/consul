@@ -1088,6 +1088,17 @@ de:
         new: Neue Unterschriftenblätter
       new:
         title: Neue Unterschriftenblätter
+        document_numbers_note: "Schreib die Zahlen durch Kommas (,) getrennt"
+        submit: Unterschriftenblatt erstellen
+      show:
+        created_at: Erstellt
+        author: Autor
+        documents: Dokumente
+        document_count: "Anzahl von Dokumenten:"
+        unverified:
+          one: "Es gibt %{count} gültige Unterschriften"
+          other: "Es gibt %{count} gültige Unterschriften"
+        unverified_error: (Nicht durch Volkszählung bestätigt)
     stats:
       show:
         stats_title: Statistiken
