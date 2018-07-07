@@ -1067,15 +1067,25 @@ de:
           visits: Besuche
           votes: Gesamt stimmen
         spending_proposals_title: Ausgabenvorschläge
+        budgets_title: Partizipative Haushaltsplanung
         visits_title: Besuche
         direct_messages: Direktnachrichten
         proposal_notifications: Vorschlagsbenachrichtigung
+        incomplete_verifications: Unvollständige Überprüfungen
         polls: Umfragen
       direct_messages:
         title: Direktnachrichten
+        total: Insgesamt
+        users_who_have_sent_message: Nutzer, die eine private Nachricht verschickt haben
+      proposal_notifications:
+        title: Benachrichtigungen zu einem Vorschlag
+        total: Insgesamt
+        proposals_with_notifications: Vorschläge mit Benachrichtigungen
       polls:
         title: Umfrage Statistik
         all: Umfragen
+        web_participants: Web-Teilnehmer
+        total_participants: Gesamtanzahl TeilnehmerInnen
         table:
           poll_name: Umfrage
           question_name: Frage
