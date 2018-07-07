@@ -49,8 +49,12 @@ de:
         all_phases: Alle Phasen anzeigen
       all_phases: Haushaltsmittel Investitionsphasen
       investment_proyects: Liste aller Investitionsprojekte
+      unfeasible_investment_proyects: Liste aller undurchführbaren Investitionsprojekte
+      not_selected_investment_proyects: Liste aller ainvestitionsprojekte, die nicht zur Abstimmung ausgewählt wurden
+      finished_budgets: Abgeschlossene participative Haushalte
       see_results: Ergebnisse anzeigen
       section_footer:
+        title: Hilfe mit partizipativen Haushaltsmitteln
         description: Mit partizipativen Haushaltsmitteln können Bürger entscheiden an welche Projekte, die durch Nachbarn vorgeschlagen wurden, ein bestimmter Teil des kommunalen Haushaltes geht.
         help_text_1: "Partizipative Haushaltsmittel sind Prozesse durch welche Bürger direkt entscheiden wofür ein Teil des kommunalen Haushaltes ausgegeben wird. Jede registrierte Person über 16 Jahre kann ein Investitionsprojekt vorschlagen, welches in einer Vorauswahlsphase Unterstützung durch Mitbürger finden muss."
         help_text_2: "Die Projekte mit den meisten Stimmen werden ausgewertet und weitergeleitet zur finalen Abstimmung, in welcher entschieden wird welche Tätigkeiten der Stadtrat ausführen wird, wenn der kommunale Haushalt für das folgende Jahr genehmigt wurde."
