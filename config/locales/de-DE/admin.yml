@@ -1086,11 +1086,19 @@ de:
         all: Umfragen
         web_participants: Web-Teilnehmer
         total_participants: Gesamtanzahl TeilnehmerInnen
+        poll_questions: "Fragen der Umfrage: %{poll}"
         table:
           poll_name: Umfrage
           question_name: Frage
+          origin_web: Web-Teilnehmer
+          origin_total: Gesamtanzahl TeilnehmerInnen
     tags:
       create: Thema erstellen
+      destroy: Thema zerstören
+      index:
+        add_tag: Neues Vorschlagsthema hinzufügen
+        title: Themen für Vorschläge
+        topic: Thema
     users:
       columns:
         name: Name
