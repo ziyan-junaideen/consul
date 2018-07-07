@@ -749,21 +749,29 @@ de:
     polls:
       index:
         title: "Liste der aktiven Umfragen"
+        no_polls: "Keine kommenden Umfragen."
         create: "Umfrage erstellen"
         name: "Name"
         dates: "Datum"
+        geozone_restricted: "Beschränkt auf Bezirke"
       new:
         title: "Neue Umfrage"
         show_results_and_stats: "Zeige Ergebnisse und Statistiken"
         show_results: "Zeige Ergebnisse"
+        show_stats: "Statistiken anzeigen"
+        results_and_stats_reminder: "Mit dem markieren dieses Kontrollkästchens werden die Resultate und/oder Statistiken dieser Umfrage öffentlich abrufbar und jeder Nutzer wird sie sehen."
         submit_button: "Umfrage erstellen"
       edit:
         title: "Umfrage bearbeiten"
         submit_button: "Umfrage aktualisieren"
       show:
         questions_tab: Fragen
+        booths_tab: Wahlkabinen
+        officers_tab: Beamte/innen
+        recounts_tab: Nachzählen
         results_tab: Ergebnisse
         no_questions: "Es gibt keine Fragen zu dieser Umfrage."
+        questions_title: "Liste der Fragen"
         table_title: "Titel"
       flash:
         question_added: "Frage zu dieser Umfrage hinzugefügt"
@@ -833,12 +841,21 @@ de:
       index:
         title: "Zählungen"
         no_recounts: "Es gibt nichts nachzuzählen"
+        table_booth_name: "Wahlkabine"
+        table_total_recount: "Endgültige Nachzählung (vom Beamten)"
+        table_system_count: "Stimmen (automatisch)"
     results:
       index:
         title: "Ergebnisse"
+        no_results: "Es gibt keine Resultate"
       result:
+        table_whites: "Völlig leeren Stimmzettel"
+        table_nulls: "Ungültige Stimmzettel"
+        table_total: "Insgesamte Stimmzettel"
         table_answer: Antwort
+        table_votes: Stimmen
       results_by_booth:
+        booth: Wahlkabine
         results: Ergebnisse
         see_results: Ergebnisse anzeigen
     booths:
