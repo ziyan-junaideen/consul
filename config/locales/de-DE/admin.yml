@@ -912,17 +912,24 @@ de:
           disable: "Deaktivieren"
         map:
           title: Kartenkonfiguration
+          help: Hier kannst du die Art, in welcher die Karte angezeigt wird, anpassen. Ziehe die Kartenmakoerung oder klicke irgendwohin, setze den gewünschten Zoom und klicke den "Aktualisieren" Knopf.
+          flash:
+            update: Kartenkonfiguration erfolgreich aktualisiert.
           form:
             submit: Update
     shared:
       booths_search:
         button: Suche
+        placeholder: Sucha Stand nach Namen
       poll_officers_search:
         button: Suche
+        placeholder: Suche nach Umfrage Beamten
       poll_questions_search:
         button: Suchen
+        placeholder: Suche Umfrage Frage
       proposal_search:
         button: Suchen
+        placeholder: Suche Vorschläge nach Titel, Code, Beschreibung oder Frage
       spending_proposal_search:
         button: Suchen
       user_search:
