@@ -1184,6 +1184,10 @@ de:
         no_blocks: "Es gibt keine Inhalts Blöcke."
         create:
           notice: Inhalts Block erfolgreich erstellt
+          error: Inhaltsblock konnte nicht erstellt werden
+        update:
+          notice: Inhaltsblock erfolgreich aktualisiert
+          error: Inhaltsblock konnten nicht aktualisiert werden
         errors:
           form:
             error: Fehler
