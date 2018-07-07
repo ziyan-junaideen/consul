@@ -63,6 +63,7 @@ de:
     investments:
       form:
         tag_category_label: "Kategorien"
+        tags_instructions: "Diesen vorschlag markieren. Sie können von vorgeschlagenen Kategorien wählen, oder Ihre eigenen hinzufügen"
         tags_label: Tags
       index:
         search_form:
