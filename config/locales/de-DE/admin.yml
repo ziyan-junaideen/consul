@@ -1253,6 +1253,9 @@ de:
       header_title: Überschrift
       no_header: Es gibt keine Überschrift.
       create_header: Überschrift erstellen
+      cards_title: Karten
+      create_card: Karte erstellen
+      no_cards: Es gibt keine Karten.
       cards:
         title: Titel
         description: Beschreibung
