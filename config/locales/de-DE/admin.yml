@@ -858,8 +858,10 @@ de:
         booth: Wahlkabine
         results: Ergebnisse
         see_results: Ergebnisse anzeigen
+        title: "Ergebnisse nach Wahlkabine"
     booths:
       index:
+        title: "Liste der aktiven Wahlkabinen"
         name: "Name"
       new:
         name: "Name"
