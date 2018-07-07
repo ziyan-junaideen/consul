@@ -1077,6 +1077,17 @@ de:
         creating: Bezirk anlegen
       delete:
         success: Geo zone erfolgreich gelöscht
+        error: Diese Geo Zone kann nicht gelöscht werden, da Elemente an sie angehängt sind
+    signature_sheets:
+      author: Autor
+      created_at: Erstellungsdatum
+      name: Name
+      no_signature_sheets: "Es gibt keine signature_sheets"
+      index:
+        title: Unterschriftenblätter
+        new: Neue Unterschriftenblätter
+      new:
+        title: Neue Unterschriftenblätter
     stats:
       show:
         stats_title: Statistiken
