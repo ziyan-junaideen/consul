@@ -1028,9 +1028,11 @@ de:
         assigned_valuators: Zugewiesene Gutachter
         back: Zurück
         classification: Klassifizierung
+        heading: "Investitionsprojekt %{id}"
         edit: Bearbeiten
         edit_classification: Klassifizierung bearbeiten
         association_name: Verband
+        by: Durch
         sent: Gesendet
         geozone: Rahmen
         dossier: Dossier
@@ -1039,29 +1041,42 @@ de:
         undefined: Undefiniert
       edit:
         classification: Klassifizierung
+        assigned_valuators: Gutachter
         submit_button: Update
         tags: Tags
         tags_placeholder: "Trennen Sie die Tags mit einem Komma (,)"
         undefined: Undefiniert
       summary:
+        title: Zusammenfassung der Investitionsprojekte
+        title_proposals_with_supports: Zusammenfassung für Investitionsprojekte mit Unterstützungen
         geozone_name: Rahmen
         finished_and_feasible_count: Fertig und durchführbar
         finished_and_unfeasible_count: Fertig und undurchführbar
         finished_count: Fertig
+        in_evaluation_count: In Auswertung
+        total_count: Gesamt
+        cost_for_geozone: Kosten
     geozones:
       index:
+        title: Geo Zone
+        create: Großartige Geo Zone
         edit: Bearbeiten
         delete: Löschen
       geozone:
         name: Name
+        external_code: Externer Code
+        census_code: Volkszählungs Code
         coordinates: Koordinaten
       edit:
         form:
           submit_button: Änderungen speichern
+        editing: Geo Zone bearbeiten
         back: Zurück
       new:
         back: Zurück
         creating: Bezirk anlegen
+      delete:
+        success: Geo zone erfolgreich gelöscht
     stats:
       show:
         stats_title: Statistiken
