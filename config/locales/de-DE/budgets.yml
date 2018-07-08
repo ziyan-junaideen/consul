@@ -88,6 +88,8 @@ de:
           different_heading_assigned_html: "Sie haben aktive Stimmen in einer anderen Überschrift: %{heading_link}"
           change_ballot: "Wenn Sie Ihre Meinung ändern, können Sie Ihre Stimme in %{check_ballot} zurückziehen und von vorne beginnen."
           check_ballot_link: "meine Abstimmung überprüfen"
+          zero: Sie haben für keine Investitionsprojekte in dieser Gruppe abgestimmt.
+          verified_only: "Um eine neue Haushalts Investition zu kreieren %{verify}."
           verify_account: "verifizieren Sie Ihr Benutzerkonto"
           create: "Budgetinvestitionen erstellen"
           sign_in: "anmelden"
