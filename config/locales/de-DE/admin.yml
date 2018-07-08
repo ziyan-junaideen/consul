@@ -726,24 +726,24 @@ de:
         shifts: "Diesem Stand sind Schichten zugewiesen. Wenn du die Standzuweisung entfernst, werden die Schichten gelöscht. Fortfahren?"
       flash:
         destroy: "Stand nicht mehr zugewiesen"
-        create: "Stand zugewiesen"
-        error_destroy: "Ein Fehler trat auf, als die Zuweisung zum stand zurückgezogen wurde"
-        error_create: "Ein Fehler ist aufgetreten, als der Stand zu der Umfrage zugefügt wurde"
+        create: "Wahlkabine zugewiesen"
+        error_destroy: "Ein Fehler trat auf, als die Zuweisung zur Wahlkabine zurückgezogen wurde"
+        error_create: "Ein Fehler ist aufgetreten, als die Wahlkabine zu der Umfrage zugefügt wurde"
       show:
         location: "Lage"
         officers: "Beamte/innen"
-        officers_list: "Beamten Liste für diesen Stand"
+        officers_list: "Beamten Liste für diese Wahlkabine"
         no_officers: "Es gibt keine Beamten für diesen Stand"
         recounts: "Nachzählungen"
-        recounts_list: "Nachzählungs Liste für diesen Stand"
+        recounts_list: "Liste der Nachzählungen für diese Wahlkabine"
         results: "Ergebnisse"
         date: "Datum"
         count_final: "Endgültige Nachzählung (vom Beamten)"
         count_by_system: "Stimmen (automatisch)"
         total_system: Gesamtstimmen (automatisch)
       index:
-        booths_title: "Liste der Stände"
-        no_booths: "Es sind keine Stände dieser Umfrage zugewiesen."
+        booths_title: "Liste der Wahlkabinen"
+        no_booths: "Dieser Umfrage sind keine Wahlkabinen zugeordnet."
         table_name: "Name"
         table_location: "Lage"
     polls:
@@ -882,7 +882,7 @@ de:
         edit: "Wahlkabine bearbeiten"
     officials:
       edit:
-        destroy: '"Offiziellen" Status entfernen'
+        destroy: '"Beamten" Status entfernen'
         title: 'Beamte: Nutzer bearbeiten'
       flash:
         official_destroyed: 'Details gespeichert: Der Nutzer ist nicht länger ein Beamter'
@@ -968,7 +968,7 @@ de:
           disable: "Deaktivieren"
         map:
           title: Kartenkonfiguration
-          help: Hier kannst du die Art, in welcher die Karte angezeigt wird, anpassen. Ziehe die Kartenmakoerung oder klicke irgendwohin, setze den gewünschten Zoom und klicke den "Aktualisieren" Knopf.
+          help: Hier können Sie die Art, in welcher die Karte angezeigt wird, anpassen. Ziehe die Kartenmakierung oder klicke irgendwohin, setze den gewünschten Zoom und klicke den "Aktualisieren" Knopf.
           flash:
             update: Kartenkonfiguration erfolgreich aktualisiert.
           form:
@@ -976,7 +976,7 @@ de:
     shared:
       booths_search:
         button: Suche
-        placeholder: Sucha Stand nach Namen
+        placeholder: Suche Wahlkabine bei Namen
       poll_officers_search:
         button: Suche
         placeholder: Suche nach Umfrage Beamten
@@ -1123,7 +1123,7 @@ de:
           verified_users: Verifizierte Benutzer
           verified_users_who_didnt_vote_proposals: Bestätigte Nutzer, die nicht für Vorschläge gestimmt haben
           visits: Besuche
-          votes: Gesamt stimmen
+          votes: Gesamtstimmen
         spending_proposals_title: Ausgabenvorschläge
         budgets_title: Partizipative Haushaltsplanung
         visits_title: Besuche
