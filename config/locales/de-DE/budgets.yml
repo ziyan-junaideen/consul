@@ -65,6 +65,7 @@ de:
         tag_category_label: "Kategorien"
         tags_instructions: "Diesen vorschlag markieren. Sie können von vorgeschlagenen Kategorien wählen, oder Ihre eigenen hinzufügen"
         tags_label: Tags
+        tags_placeholder: "Geben Sie die Schlagwörter ein, die Sie benutzen möchten, getrennt bei Kommas (',')"
       index:
         search_form:
           button: Suche
