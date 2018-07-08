@@ -590,7 +590,7 @@ de:
         empty_newsletters: Es gibt keine Newsletter zum anzeigen
       new:
         title: Neuer Newsletter
-        from: E-Mail-Adresse, die angezeigt wird, beim Versand des Newsletters
+        from: E-Mail-Adresse, die beim Versand des Newsletters angezeigt wird
       edit:
         title: Newsletter bearbeiten
       show:
@@ -600,7 +600,7 @@ de:
         sent_at: Gesendet um
         subject: Betreff
         segment_recipient: Empfänger
-        from: E-Mail-Adresse, die angezeigt wird, beim Versand des Newsletters
+        from: E-Mail-Adresse, die beim Versand des Newsletters angezeigt wird
         body: Inhalt der E-Mail
         body_help_text: Dies ist, wie dem Benutzer die E-mail angezeigt wird
         send_alert: Sind Sie sicher, dass Sie diesen Newsletter an %{n} Benutzer senden möchten?
@@ -681,8 +681,8 @@ de:
       by_officer:
         date: "Datum"
         booth: "Wahlurne"
-        assignments: "Officing Schichten in dieser Umfrage"
-        no_assignments: "Dieser Benutzer hat keine Officing-Schichten in dieser Umfrage."
+        assignments: "Beamten Schichten in dieser Umfrage"
+        no_assignments: "Dieser Benutzer hat keine Beamten Schichten in dieser Umfrage."
     poll_shifts:
       new:
         add_shift: "Schicht hinzufügen"
@@ -692,12 +692,12 @@ de:
         task: "Aufgabe"
         edit_shifts: Schicht zuordnen
         new_shift: "Neue Schicht"
-        no_shifts: "Dieser Stand hat keine Schichten"
+        no_shifts: "Diese Wahlkabine hat keine Schichten"
         officer: "Beamter/in"
         remove_shift: "Entfernen"
         search_officer_button: Suche
         search_officer_placeholder: Suche nach Beamter/in
-        search_officer_text: Suche nach einem Offizier um eine neue Schicht zuzuweisen
+        search_officer_text: Suche nach einem Beamten um eine neue Schicht zuzuweisen
         select_date: "Tag auswählen"
         no_voting_days: "Abstimmungsphase beendet"
         select_task: "Aufgabe auswählen"
@@ -719,13 +719,13 @@ de:
           assigned: Zugeordnet
           unassigned: Nicht zugewiesen
         actions:
-          assign: Zuweisungs Stand
-          unassign: Zuweisungs Aufhebungs Stand
+          assign: Wahlkabine zuweisen
+          unassign: Zuweisung der Wahlkabine aufheben
     poll_booth_assignments:
       alert:
-        shifts: "Diesem Stand sind Schichten zugewiesen. Wenn du die Standzuweisung entfernst, werden die Schichten gelöscht. Fortfahren?"
+        shifts: "Dieser Wahlkabine sind Schichten zugewiesen. Wenn Sie die Kabinenzuweisung entfernen, werden die Schichten gelöscht. Fortfahren?"
       flash:
-        destroy: "Stand nicht mehr zugewiesen"
+        destroy: "Wahlkabine nicht mehr zugewiesen"
         create: "Wahlkabine zugewiesen"
         error_destroy: "Ein Fehler trat auf, als die Zuweisung zur Wahlkabine zurückgezogen wurde"
         error_create: "Ein Fehler ist aufgetreten, als die Wahlkabine zu der Umfrage zugefügt wurde"
@@ -1114,7 +1114,7 @@ de:
           proposal_votes: Bewertungen Vorschlag
           proposals: Vorschläge
           budgets: Offene Haushalte
-          budget_investments: Investitions Projekte
+          budget_investments: Investitionsprojekte
           spending_proposals: Ausgabenvorschläge
           unverified_users: Benutzer nicht verifziert
           user_level_three: Stufe drei Nutzer
@@ -1183,10 +1183,10 @@ de:
         information: Informationen zu Inhaltsblöcken
         about: Sie können HTML Inhaltsblöcke kreieren, die in die Kopf- oder Fußzeile deiner CONSUL eingefügt werden.
         top_links_html: "<strong>Kopfzeilen-Blöcke (Top_links)</strong> sind Blöcke von Links, die dieses Format haben müssen:"
-        footer_html: "<strong>Fußzeilen Blöcke</strong> kann jegliches format haben und kann in Javaskript, CSS, oder benutzerdefiniertem HTML eingefügt werden."
-        no_blocks: "Es gibt keine Inhalts Blöcke."
+        footer_html: "<strong>Fußzeilen Blöcke</strong> können jegliches format haben und können in Javaskript, CSS, oder benutzerdefiniertem HTML eingefügt werden."
+        no_blocks: "Es gibt keine Inhaltsblöcke."
         create:
-          notice: Inhalts Block erfolgreich erstellt
+          notice: Inhaltsblock erfolgreich erstellt
           error: Inhaltsblock konnte nicht erstellt werden
         update:
           notice: Inhaltsblock erfolgreich aktualisiert
@@ -1252,10 +1252,10 @@ de:
           locale: Sprache
     homepage:
       title: Homepage
-      description: Die aktiven Module erscheinen auf der startseite in der selben Reihenfolge wie hier.
-      header_title: Überschrift
-      no_header: Es gibt keine Überschrift.
-      create_header: Überschrift erstellen
+      description: Die aktiven Module erscheinen auf der Startseite in der selben Reihenfolge wie hier.
+      header_title: Kopfzeile
+      no_header: Es gibt keine Kopfzeile.
+      create_header: Kopfzeile erstellen
       cards_title: Karten
       create_card: Karte erstellen
       no_cards: Es gibt keine Karten.
@@ -1269,12 +1269,12 @@ de:
         debates: Diskussionen
         processes: Prozesse
       new:
-        header_title: Neue Überschrift
-        submit_header: Überschrift erstellen
+        header_title: Neue Kopfzeile
+        submit_header: Kopfzeile erstellen
         card_title: Neue Karte
         submit_card: Karte erstellen
       edit:
-        header_title: Überschrift bearbeiten
-        submit_header: Überschrift speichern
+        header_title: Kopfzeile bearbeiten
+        submit_header: Kopfzeile speichern
         card_title: Karte bearbeiten
         submit_card: Karte speichern
