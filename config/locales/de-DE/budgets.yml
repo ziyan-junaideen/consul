@@ -70,7 +70,10 @@ de:
         map_location_instructions: "Navigieren Sie die Karte zu dem standpunkt und plazieren sie die Marke."
         map_remove_marker: "Entfernen Sie die Kartenmarkierung"
         location: "Weitere Ortsangaben"
+        map_skip_checkbox: "Dieses Investment hat keinen konkreten Standpunkt oder mir ist keiner bewusst."
       index:
+        title: Partizipative Haushaltsplanung
+        unfeasible: Undurchführbare Investitionsprojekte
         search_form:
           button: Suche
           title: Suche
