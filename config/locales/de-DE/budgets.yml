@@ -83,6 +83,7 @@ de:
           title: Suche
         sidebar:
           my_ballot: Mein Stimmzettel
+          voted_info: Sie können bis zur Schließung der Phase uederzeit %{link}. Es gibt keinen Grund sämtliches verfügbares Geld auszugeben.
           voted_info_link: Bewertung ändern
           verify_account: "verifizieren Sie Ihr Benutzerkonto"
           create: "Budgetinvestitionen erstellen"
