@@ -74,6 +74,7 @@ de:
       index:
         title: Partizipative Haushaltsplanung
         unfeasible: Undurchführbare Investitionsprojekte
+        unfeasible_text: "Die Investition muss eine gewisse Anzahl von Anforderungen erfüllen (Legalität, Gegenständlichkeit, die Verantwortung der Stadt sein, nicht das Limit des Haushaltes überschreiten) um für durchführbar erklärt zu werden und das Stadium der finalen Wahl zu erreichen. Alle Investitionen, die diese Kriterien nicht erfüllen, sind als undurchführbar markiert und stehen in der folgenden Liste, zusammen mit ihrem Report zur Unausführbarkeit."
         search_form:
           button: Suche
           title: Suche
