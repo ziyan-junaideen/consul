@@ -66,6 +66,10 @@ de:
         tags_instructions: "Diesen vorschlag markieren. Sie können von vorgeschlagenen Kategorien wählen, oder Ihre eigenen hinzufügen"
         tags_label: Tags
         tags_placeholder: "Geben Sie die Schlagwörter ein, die Sie benutzen möchten, getrennt bei Kommas (',')"
+        map_location: "Kartenposition"
+        map_location_instructions: "Navigieren Sie die Karte zu dem standpunkt und plazieren sie die Marke."
+        map_remove_marker: "Entfernen Sie die Kartenmarkierung"
+        location: "Weitere Ortsangaben"
       index:
         search_form:
           button: Suche
