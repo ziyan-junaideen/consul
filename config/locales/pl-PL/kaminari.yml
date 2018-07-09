@@ -1,0 +1,8 @@
+pl:
+  views:
+    pagination:
+      current: Jesteś na stronie
+      first: Pierwszy
+      last: Ostatni
+      next: Następny
+      previous: Poprzedni
