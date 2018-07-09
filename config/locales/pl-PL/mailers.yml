@@ -1,0 +1,15 @@
+pl:
+  mailers:
+    comment:
+      hi: Cześć
+    email_verification:
+      subject: Potwierdź swój adres e-mail
+    reply:
+      hi: Cześć
+    proposal_notification_digest:
+      unsubscribe_account: Moje konto
+    direct_message_for_receiver:
+      unsubscribe_account: Moje konto
+    budget_investment_created:
+      intro_html: "Cześć <strong>%{author}</strong>,"
+      follow_link: "Budżety partycypacyjne"
