@@ -370,15 +370,15 @@ de:
           title: Kollaborative Gesetzgebungsprozesse
           filters:
             open: Offen
-            next: Nächste
+            next: Nächste/r
             past: Vorherige
             all: Alle
         new:
           back: Zurück
           title: Erstellen Sie ein neues kollaboratives Gesetzgebungsverfahren
-          submit_button: Prozess erstellen
+          submit_button: Beteiligungsverfahren erstellen
         process:
-          title: Prozess
+          title: Beteiligungsverfahren
           comments: Kommentare
           status: Status
           creation_date: Erstellungsdatum
@@ -396,13 +396,13 @@ de:
           back: Zurück
         form:
           custom_categories: Kategorien
-          custom_categories_description: Kategorien, die Benutzer auswählen können, um einen Vorschlag zu erstellen.
+          custom_categories_description: Kategorien, die Benutzer*innen bei der Erstellung eines Vorschlags auswählen können.
       draft_versions:
         create:
-          notice: 'Entwurf erfolgreich erstellt. <a href="%{link}">Klicken, um zu besuchen</a>'
-          error: Entwurf konnte nich erstellt werden
+          notice: 'Entwurf erfolgreich erstellt. <a href="%{link}">Jetzt besuchen</a>'
+          error: Entwurf konnte nicht erstellt werden
         update:
-          notice: 'Entwurf erfolgreich aktualisiert. <a href="%{link}">Klicken, um zu besuchen</a>'
+          notice: 'Entwurf erfolgreich aktualisiert. <a href="%{link}">Jetzt besuchen</a>'
           error: Entwurf konnte nicht aktualisiert werden
         destroy:
           notice: Entwurf erfolgreich gelöscht
