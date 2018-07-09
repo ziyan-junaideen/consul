@@ -424,7 +424,7 @@ de:
               draft: Als Admin können Sie eine Vorschau anzeigen lassen, die niemand sonst sehen kann
               published: Sichtbar für alle
           title_placeholder: Geben Sie den Titel der Entwurfsversion ein
-          changelog_placeholder: Fügen Sie die Hauptänderungen zur vorherigen Version hinzu
+          changelog_placeholder: Beschreiben Sie alle relevanten Änderungen der vorherigen Version
           body_placeholder: Notieren Sie sich den Entwurf
         index:
           title: Entwurfsversionen
@@ -461,14 +461,14 @@ de:
           form:
             error: Fehler
         form:
-          add_option: Option hinzufügen
+          add_option: Antwortmöglichkeit hinzufügen
           title: Frage
           title_placeholder: Frage hinzufügen
-          value_placeholder: Eine geschlossene Antwort hinzufügen
+          value_placeholder: Antwortmöglichkeit hinzufügen
           question_options: "Mögliche Antworten (optional, standardmäßig offene Antworten)"
         index:
           back: Zurück
-          title: Fragen im Zusammenhang mit diesem Prozess
+          title: Fragen, die mit diesem Beteiligungsverfahren zusammenhängen
           create: Frage erstellen
           delete: Löschen
         new:
@@ -481,10 +481,10 @@ de:
           answers_count: Anzahl der Antworten
           comments_count: Anzahl der Kommentare
         question_option_fields:
-          remove_option: Option entfernen
+          remove_option: Entfernen
     managers:
       index:
-        title: Managers
+        title: Manager
         name: Name
         email: E-Mail
         no_managers: Es gibt keine Manager.
@@ -492,19 +492,19 @@ de:
         add: Hinzufügen
         delete: Löschen
       search:
-        title: 'Managers: Benutzersuche'
+        title: 'Manager: Benutzer*suche'
     menu:
-      activity: Moderator-Aktivität
-      admin: Administrator-Menü
-      banner: Verwalten von Bannern
+      activity: Moderatoren*aktivität
+      admin: Administrator*-Menü
+      banner: Banner verwalten
       poll_questions: Fragen
       proposals_topics: Themen für Vorschläge
-      budgets: Partizipative Haushaltsmittel
-      geozones: Distrikte verwalten
+      budgets: Bürgerhaushalt
+      geozones: Stadtteile verwalten
       hidden_comments: Verborgene Kommentare
       hidden_debates: Verborgene Diskussionen
       hidden_proposals: Verborgene Vorschläge
-      hidden_proposal_notifications: Angebotsbenachrichtigungen
+      hidden_proposal_notifications: Verborgene Benachrichtigungen
       hidden_users: Verborgene Benutzer
       administrators: Administratoren
       managers: Managers
@@ -594,15 +594,15 @@ de:
       edit:
         title: Newsletter bearbeiten
       show:
-        title: Newsletter Vorschau
+        title: Newsletter-Vorschau
         send: Senden
-        affected_users: (%{n} betroffener Nutzer)
+        affected_users: (%{n} betroffene Nutzer)
         sent_at: Gesendet um
         subject: Betreff
         segment_recipient: Empfänger
         from: E-Mail-Adresse, die beim Versand des Newsletters angezeigt wird
         body: Inhalt der E-Mail
-        body_help_text: Dies ist, wie dem Benutzer die E-mail angezeigt wird
+        body_help_text: So sehen die Nutzer die E-Mail
         send_alert: Sind Sie sicher, dass Sie diesen Newsletter an %{n} Benutzer senden möchten?
     emails_download:
       index:
@@ -759,7 +759,7 @@ de:
         show_results_and_stats: "Zeige Ergebnisse und Statistiken"
         show_results: "Zeige Ergebnisse"
         show_stats: "Statistiken anzeigen"
-        results_and_stats_reminder: "Mit dem markieren dieses Kontrollkästchens werden die Resultate und/oder Statistiken dieser Umfrage öffentlich abrufbar und jeder Nutzer wird sie sehen."
+        results_and_stats_reminder: "Mit dem Markieren dieses Kontrollkästchens werden die Resultate und/oder Statistiken dieser Umfrage öffentlich abrufbar und jeder Nutzer wird sie sehen."
         submit_button: "Umfrage erstellen"
       edit:
         title: "Umfrage bearbeiten"
@@ -849,9 +849,9 @@ de:
         title: "Ergebnisse"
         no_results: "Es gibt keine Resultate"
       result:
-        table_whites: "Völlig leeren Stimmzettel"
+        table_whites: "Völlig leere Stimmzettel"
         table_nulls: "Ungültige Stimmzettel"
-        table_total: "Insgesamte Stimmzettel"
+        table_total: "Gesamtzahl der Stimmzettel"
         table_answer: Antwort
         table_votes: Stimmen
       results_by_booth:
@@ -866,7 +866,7 @@ de:
         add_booth: "Wahlkabine hinzufügen"
         name: "Name"
         location: "Lage"
-        no_location: "Kein Standpunkt"
+        no_location: "Kein Standort"
       new:
         title: "Neue Wahlkabine"
         name: "Name"
