@@ -106,7 +106,11 @@ de:
         author_deleted: Benutzer gelöscht
         price_explanation: Preis Erklärung
         unfeasibility_explanation: Erläuterung der Undurchführbarkeit
+        code_html: 'Investitions Projekt Code: <strong>%{code}</strong>'
+        location_html: 'Lage: <strong>%{location}</strong>'
+        organization_name_html: 'Vorgeschlagen im Namen von: <strong>%{name}</strong>'
         share: Teilen
+        title: Investitionsprojekt
         supports: Unterstützung
         votes: Stimmen
         price: Preis
@@ -114,6 +118,7 @@ de:
         milestones_tab: Meilensteine
         no_milestones: Keine Meilensteine definiert
         milestone_publication_date: "Veröffentlicht %{publication_date}"
+        milestone_status_changed: Investitionsstatus geändert zu
         author: Autor
       wrong_price_format: Nur ganze Zahlen
       investment:
