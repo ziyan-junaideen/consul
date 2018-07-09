@@ -1,0 +1,25 @@
+pl:
+  admin:
+    budgets:
+      index:
+        filters:
+          open: Otwórz
+        table_edit_budget: Edytuj
+        edit_budget: Edytuj budżet
+      create:
+        notice: Nowy budżet partycypacyjny został pomyślnie utworzony!
+      update:
+        notice: Budżet partycypacyjny został pomyślnie zaktualizowany
+      edit:
+        title: Edytuj budżet partycypacyjny
+        delete: Usuń budżet
+      form:
+        add_group: Dodaj nową grupę
+        create_group: Utwórz grupę
+        edit_group: Edytuj grupę
+        submit: Zapisz grupę
+    budget_phases:
+      edit:
+        start_date: Data rozpoczęcia
+        end_date: Data zakończenia
+        description: Opis
