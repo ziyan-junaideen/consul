@@ -1,9 +1,48 @@
 pl:
   admin:
+    actions:
+      edit: Edytuj
+      delete: Usuń
+    banners:
+      index:
+        title: Banery
+        create: Utwórz baner
+        edit: Edytuj baner
+        delete: Usuń baner
+        filters:
+          with_active: Aktywny
+          with_inactive: Nieaktywny
+        preview: Podgląd
+      banner:
+        title: Tytuł
+        description: Opis
+        target_url: Link
+        style: Styl
+        image: Obraz
+      edit:
+        editing: Edytuj baner
+        form:
+          submit_button: Zapisz zmiany
+      new:
+        creating: Utwórz baner
+    activity:
+      show:
+        actions:
+          block: Zablokowany
+          hide: Ukryty
+        by: Moderowany przez
+        filter: Pokaż
+        filters:
+          all: Wszystko
+          on_comments: Komentarze
     budgets:
       index:
+        new_link: Utwórz nowy budżet
+        filter: Filtr
         filters:
           open: Otwórz
+          finished: Zakończony
+        table_name: Nazwa
         table_edit_budget: Edytuj
         edit_budget: Edytuj budżet
       create:
@@ -14,12 +53,51 @@ pl:
         title: Edytuj budżet partycypacyjny
         delete: Usuń budżet
       form:
+        group: Nazwa grupy
         add_group: Dodaj nową grupę
         create_group: Utwórz grupę
         edit_group: Edytuj grupę
         submit: Zapisz grupę
+        table_population: Populacja
     budget_phases:
       edit:
         start_date: Data rozpoczęcia
         end_date: Data zakończenia
         description: Opis
+    budget_investments:
+      index:
+        buttons:
+          search: Szukaj
+          filter: Filtr
+        selected: "Wybrany"
+        select: "Wybierz"
+        table_title: "Tytuł"
+        table_selection: "Wybrany"
+      show:
+        edit: Edytuj
+        tags: Tagi
+        winner:
+          "true": "Tak"
+          "false": "Nie"
+        image: "Obraz"
+        see_image: "Zobacz obraz"
+        no_image: "Bez obrazu"
+        documents: "Dokumenty"
+        see_documents: "Zobacz dokumenty (%{count})"
+        no_documents: "Bez dokumentów"
+      edit:
+        submit_button: Zaktualizuj
+        tags: Tagi
+    milestones:
+      index:
+        show_image: "Pokaż obraz"
+        documents: "Dokumenty"
+      form:
+        add_language: Dodaj język
+        remove_language: Usuń język
+      new:
+        description: Opis
+    statuses:
+      index:
+        delete: Usuń
+        edit: Edytuj
