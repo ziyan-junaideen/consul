@@ -1088,7 +1088,7 @@ de:
         new: Neue Unterschriftenblätter
       new:
         title: Neue Unterschriftenblätter
-        document_numbers_note: "Schreib die Zahlen durch Kommas (,) getrennt"
+        document_numbers_note: "Schreiben Sie die Zahlen durch Kommas (,) getrennt"
         submit: Unterschriftenblatt erstellen
       show:
         created_at: Erstellt
@@ -1102,7 +1102,7 @@ de:
           one: "Es gibt %{count} gültige Unterschriften"
           other: "Es gibt %{count} gültige Unterschriften"
         unverified_error: (Nicht durch Volkszählung bestätigt)
-        loading: "Es gibt immer noch Unterschriften, die bei der Volkszählung bestätigt werden. Bitte aktualisiere die seite in ein paar Momenten"
+        loading: "Es gibt immer noch Unterschriften, die von der Volkszählung bestätigt werden. Bitte aktualisiere die Seite in ein paar Momenten"
     stats:
       show:
         stats_title: Statistiken
