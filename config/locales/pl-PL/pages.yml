@@ -1,0 +1,25 @@
+pl:
+  pages:
+    general_terms: Regulamin
+    help:
+      menu:
+        debates: "Debaty"
+        budgets: "Budżety partycypacyjne"
+        polls: "Ankiety"
+      debates:
+        title: "Debaty"
+      polls:
+        title: "Ankiety"
+        link: "ankiety"
+      faq:
+        description: "Przeczytaj FAQ, aby znaleźć odpowiedzi na swoje pytania."
+        button: "Zobacz najczęściej zadawane pytania"
+        page:
+          title: "FAQ - najczęściej zadawane pytania"
+    privacy: Polityka prywatności
+    titles:
+      privacy: Polityka prywatności
+    verify:
+      email: Adres e-mail
+      password: Hasło
+      title: Zweryfikuj swoje konto
