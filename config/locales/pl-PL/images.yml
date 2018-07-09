@@ -1,0 +1,8 @@
+pl:
+  images:
+    remove_image: Usuń obraz
+    form:
+      attachment_label: Wybierz obraz
+      delete_button: Usuń obraz
+      add_new_image: Dodaj obraz
+      admin_title: "Obraz"
