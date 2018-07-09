@@ -681,8 +681,8 @@ de:
       by_officer:
         date: "Datum"
         booth: "Wahlurne"
-        assignments: "Beamten Schichten in dieser Umfrage"
-        no_assignments: "Dieser Benutzer hat keine Beamten Schichten in dieser Umfrage."
+        assignments: "Amtswechsel in dieser Umfrage"
+        no_assignments: "Dieser Benutzer hat keine Amtswechsel in dieser Umfrage."
     poll_shifts:
       new:
         add_shift: "Schicht hinzufügen"
