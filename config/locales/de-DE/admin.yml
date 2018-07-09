@@ -627,17 +627,17 @@ de:
       search:
         title: 'Gutacher: Benutzersuche'
       summary:
-        title: Gutachter Zusammenfassung für Investitionsprojekte
+        title: Gutachter-Zusammenfassung für Investitionsprojekte
         valuator_name: Gutachter
         finished_and_feasible_count: Abgeschlossen und durchführbar
         finished_and_unfeasible_count: Abgeschlossen und undurchführbar
         finished_count: Abgeschlossen
         in_evaluation_count: In Auswertung
-        total_count: Insgesamt
+        total_count: Gesamt
         cost: Kosten
       form:
         edit_title: "Gutachter: Gutachter bearbeiten"
-        update: "Update Gutachter"
+        update: "Gutachter aktualisieren"
         updated: "Gutachter erfolgreich aktualisiert"
       show:
         description: "Beschreibung"
@@ -647,18 +647,18 @@ de:
         no_group: "Ohne Gruppe"
     valuator_groups:
       index:
-        title: "Gutachter Gruppen"
-        new: "Gutacher Gruppe erstellen"
+        title: "Gutachtergruppen"
+        new: "Gutachergruppe erstellen"
         name: "Name"
         members: "Mitglieder"
-        no_groups: "Es gibt keine Gutachter Gruppen"
+        no_groups: "Es gibt keine Gutachtergruppen"
       show:
-        title: "Gutachter Gruppe: %{group}"
+        title: "Gutachtergruppe: %{group}"
         no_valuators: "Es gibt keine Gutachter, die dieser Gruppe zugeordnet sind"
       form:
         name: "Gruppenname"
-        new: "Gutacher Gruppe erstellen"
-        edit: "Gutachter Gruppe speichern"
+        new: "Gutachergruppe erstellen"
+        edit: "Gutachtergruppe speichern"
     poll_officers:
       index:
         title: Vorsitzende der Abstimmung
