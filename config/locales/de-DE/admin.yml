@@ -339,12 +339,12 @@ de:
       processes:
         create:
           notice: 'Verfahren erfolgreich erstellt. <a href="%{link}"> Klicken Sie, um zu besuchen</a>'
-          error: Verfahren konnte nicht erstellt werden
+          error: Beteiligungsverfahren konnte nicht erstellt werden
         update:
-          notice: 'Verfahren erfolgreich aktualisiert. <a href="%{link}"> Klicken Sie, um zu besuchen</a>'
-          error: Verfahren konnte nicht aktualisiert werden
+          notice: 'Beteiligungsverfahren erfolgreich aktualisiert. <a href="%{link}"> Jetzt besuchen </a>'
+          error: Beteiligungsverfahren konnte nicht aktualisiert werden
         destroy:
-          notice: Verfahren erfolgreich gelöscht
+          notice: Beteiligungsverfahren erfolgreich gelöscht
         edit:
           back: Zurück
           submit_button: Änderungen speichern
@@ -360,12 +360,12 @@ de:
           start: Beginn
           end: Ende
           use_markdown: Verwenden Sie Markdown, um den Text zu formatieren
-          title_placeholder: Der Titel des Verfahrens
+          title_placeholder: Titel des Beteiligungsverfahrens
           summary_placeholder: Kurzzusammenfassung der Beschreibung
-          description_placeholder: Fügen Sie eine Verfahrensbeschreibung hinzu
-          additional_info_placeholder: Fügen Sie zusätzliche Information hinzu, die von Interesse sein könnte
+          description_placeholder: Fügen Sie eine Beschreibung des Beteiligungsverfahrens hinzu
+          additional_info_placeholder: Fügen Sie zusätzliche Informationen hinzu, die von Interesse sein könnte
         index:
-          create: Neues Verfahren
+          create: Neues Beteiligungsverfahren
           delete: Löschen
           title: Kollaborative Gesetzgebungsprozesse
           filters:
