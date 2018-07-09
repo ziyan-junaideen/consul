@@ -618,7 +618,7 @@ de:
         description: Beschreibung
         no_description: Keine Beschreibung
         no_valuators: Es gibt keine Gutacher.
-        valuator_groups: "Gutachter Gruppen"
+        valuator_groups: "Gutachtergruppen"
         group: "Gruppe"
         no_group: "Keine Gruppe"
       valuator:
