@@ -505,54 +505,54 @@ de:
       hidden_debates: Verborgene Diskussionen
       hidden_proposals: Verborgene Vorschläge
       hidden_proposal_notifications: Verborgene Benachrichtigungen
-      hidden_users: Verborgene Benutzer
-      administrators: Administratoren
-      managers: Managers
-      moderators: Moderatoren
-      emails: Versenden von Emails
+      hidden_users: Verborgene Benutzer*innen
+      administrators: Administrator*innen
+      managers: Manager*innen
+      moderators: Moderator*innen
+      emails: Versenden von E-Mails
       newsletters: Newsletter
       emails_download: E-Mails herunterladen
-      valuators: Gutachter
+      valuators: Begutachter*innen
       poll_officers: Vorsitzende der Abstimmung
       polls: Abstimmungen
-      poll_booths: Standort der Wahlurnen
-      poll_booth_assignments: Zuordnungen der Wahlurnen
+      poll_booths: Standort der Wahlkabinen
+      poll_booth_assignments: Zuordnung der Wahlurnen
       poll_shifts: Schichten verwalten
-      officials: Beamte
+      officials: Öffentliche Ämter
       organizations: Organisationen
       settings: Globale Einstellungen
       spending_proposals: Ausgabenvorschläge
       stats: Statistiken
-      signature_sheets: Signatur-Blätter
+      signature_sheets: Unterschriftenbogen
       site_customization:
         homepage: Homepage
-        pages: Benutzerwebseiten
-        images: Benutzerbilder
-        content_blocks: Nutzerspezifische Inhaltsdatenblöcke
-      title_moderated_content: Moderater Inhalte
+        pages: Benutzerdefinierte Seiten
+        images: Benutzerdefinierte Bilder
+        content_blocks: Benutzer*spezifische Inhaltsdatenblöcke
+      title_moderated_content: Moderierte Inhalte
       title_budgets: Budgets
       title_polls: Abstimmungen
       title_profiles: Profile
       title_settings: Einstellungen
       title_site_customization: Seiteninhalt
       title_booths: Wahlkabinen
-      legislation: Partizipative Gesetzgebung
-      users: Benutzer
+      legislation: Kollaborative Gesetzgebung
+      users: Benutzer*innen
     administrators:
       index:
-        title: Administratoren
+        title: Administrator*innen
         name: Name
         email: E-Mail
-        no_administrators: Es gibt keine Administratoren.
+        no_administrators: Keine Administrator*innen vorhanden.
       administrator:
         add: Hinzufügen
         delete: Löschen
         restricted_removal: "Entschuldigung, Sie können sich nicht von der Liste entfernen"
       search:
-        title: "Administratoren: Benutzersuche"
+        title: "Administrator*innen: Benutzersuche"
     moderators:
       index:
-        title: Moderatoren
+        title: Moderator*innen
         name: Name
         email: E-Mail
         no_moderators: Es gibt keine Gutacher.
@@ -876,22 +876,22 @@ de:
         title: "Wahlkabine bearbeiten"
         submit_button: "Wahlkabine aktualisieren"
       show:
-        location: "Standpunkt"
+        location: "Standort"
       booth:
         shifts: "Schichten verwalten"
         edit: "Wahlkabine bearbeiten"
     officials:
       edit:
-        destroy: '"Beamten" Status entfernen'
+        destroy: Status "Beamter" entfernen
         title: 'Beamte: Nutzer bearbeiten'
       flash:
         official_destroyed: 'Details gespeichert: Der Nutzer ist nicht länger ein Beamter'
-        official_updated: Details des Beamtens gespeichert
+        official_updated: Details des Beamten gespeichert
       index:
         title: Beamte
         no_officials: Es gibt keine Beamten.
         name: Name
-        official_position: Offizielle position
+        official_position: Offizielle Position
         official_level: Ebene
       level_0: Nicht offiziell
       level_1: Stufe 1
@@ -902,7 +902,7 @@ de:
       search:
         edit_official: Beamten bearbeiten
         make_official: Beamten erstellen
-        title: 'Offizielle Positionen: Benutzer Suche'
+        title: 'Offizielle Positionen: Benutzersuche'
         no_results: Offizielle Positionen nicht gefunden.
     organizations:
       index:
@@ -1097,9 +1097,9 @@ de:
         document_count: "Anzahl von Dokumenten:"
         verified:
           one: "Es gibt %{count} gültige Unterschrift"
-          other: "Es gibt %{count} gültige Unterschrift"
+          other: "Es gibt %{count} gültige Unterschriften"
         unverified:
-          one: "Es gibt %{count} gültige Unterschriften"
+          one: "Es gibt %{count} ungültige Unterschrift"
           other: "Es gibt %{count} gültige Unterschriften"
         unverified_error: (Nicht durch Volkszählung bestätigt)
         loading: "Es gibt immer noch Unterschriften, die von der Volkszählung bestätigt werden. Bitte aktualisiere die Seite in ein paar Momenten"
