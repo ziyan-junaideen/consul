@@ -141,7 +141,7 @@ de:
         heading_filter_all: Alle Rubriken
         administrator_filter_all: Alle Administratoren
         valuator_filter_all: Alle Begutachter/innen
-        tags_filter_all: Alle Markierungen
+        tags_filter_all: Alle Tags
         advanced_filters: Erweiterte Filter
         placeholder: Suche Projekte
         sort_by:
@@ -190,27 +190,27 @@ de:
         table_valuation_finished: "Bew. Fin."
         table_selection: "Ausgewählt"
         table_evaluation: "Den Begutachtern/Begutachterinnen zeigen"
-        table_incompatible: "Unvereinbar"
-        cannot_calculate_winners: Das Budget muss in der Pahse "Finale Abstimmung", "Abstimmung beendet" oder "Ergebnisse" stehen, um Gewinnervorschläge berechnen zu können
+        table_incompatible: "Inkompatibel"
+        cannot_calculate_winners: Das Budget muss in einer der Phasen "Finale Abstimmung", "Abstimmung beendet" oder "Ergebnisse" stehen, um Gewinnervorschläge berechnen zu können
         see_results: "Ergebnisse anzeigen"
       show:
-        assigned_admin: Zugewiesener Administrator
-        assigned_valuators: Zugewiesene Gutachter
+        assigned_admin: Zugewiesene/r Administrator/in
+        assigned_valuators: Zugewiesene/r Begutachter/innen
         classification: Klassifizierung
-        info: "%{budget_name} - Gruppe: %{group_name} - Investitionsprojekt %{id}"
+        info: "%{budget_name} - Gruppe: %{group_name} - Ausgabenvorschlag %{id}"
         edit: Bearbeiten
         edit_classification: Klassifizierung bearbeiten
-        by: Durch
+        by: Von
         sent: Gesendet
         group: Gruppe
-        heading: Überschrift
-        dossier: Dossier
-        edit_dossier: Dossier bearbeiten
-        tags: Kennzeichen
-        user_tags: Benutzerkennzeichen
+        heading: Rubrik
+        dossier: Bericht
+        edit_dossier: Bericht bearbeiten
+        tags: Tags
+        user_tags: Benutzertags
         undefined: Nicht definiert
         milestone: Meilenstein
-        new_milestone: Neuen Meilensteil erstellen
+        new_milestone: Neuen Meilenstein erstellen
         compatibility:
           title: Kompatibilität
           "true": Inkompatibel
@@ -229,18 +229,18 @@ de:
         documents: "Dokumente"
         see_documents: "Dokumente anzeigen (%{count})"
         no_documents: "Ohne Dokumente"
-        valuator_groups: "Gutachter Gruppen"
+        valuator_groups: "Bewertungsgruppen"
       edit:
         classification: Klassifizierung
         compatibility: Kompatibilität
         mark_as_incompatible: Als inkompatibel markieren
         selection: Auswahl
-        mark_as_selected: Als ausgewählte markieren
-        assigned_valuators: Gutachter
+        mark_as_selected: Als ausgewählt markieren
+        assigned_valuators: Begutachter/innen
         select_heading: Wählen Sie eine Rubrik
-        submit_button: Update
-        user_tags: Benutzer zugewiesene Kennzeichen
-        tags: Kennzeichen
+        submit_button: Aktualisieren
+        user_tags: Benutzerzugewiesene Tags
+        tags: Tags
         tags_placeholder: "Schreiben Sie die Kennzeichen, die Sie wollen durch Kommas (,) getrennt"
         undefined: Nicht definiert
         user_groups: "Gruppen"
