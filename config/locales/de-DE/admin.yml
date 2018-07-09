@@ -424,7 +424,7 @@ de:
               draft: Als Admin können Sie eine Vorschau anzeigen, die niemand sonst sieht
               published: Sichtbar für alle
           title_placeholder: Geben Sie den Titel der Entwurfsversion ein
-          changelog_placeholder: Füge die Hauptänderungen zur vorherigen Version hinzu
+          changelog_placeholder: Fügen Sie die Hauptänderungen zur vorherigen Version hinzu
           body_placeholder: Notieren Sie sich den Entwurf
         index:
           title: Entwurfsversionen
@@ -504,12 +504,12 @@ de:
       hidden_comments: Verborgene Kommentare
       hidden_debates: Verborgene Diskussionen
       hidden_proposals: Verborgene Vorschläge
-      hidden_proposal_notifications: Versteckte Vorschlagsbenachrichtigung
+      hidden_proposal_notifications: Angebotsbenachrichtigungen
       hidden_users: Verborgene Benutzer
       administrators: Administratoren
       managers: Managers
       moderators: Moderatoren
-      emails: Versenden von emails
+      emails: Versenden von Emails
       newsletters: Newsletter
       emails_download: E-Mails herunterladen
       valuators: Gutachter
@@ -534,7 +534,7 @@ de:
       title_polls: Abstimmungen
       title_profiles: Profile
       title_settings: Einstellungen
-      title_site_customization: Seiten Inhalt
+      title_site_customization: Seiteninhalt
       title_booths: Wahlkabinen
       legislation: Partizipative Gesetzgebung
       users: Benutzer
@@ -564,7 +564,7 @@ de:
     segment_recipient:
       all_users: Alle Benutzer
       administrators: Administratoren
-      proposal_authors: Vorschlags Autoren
+      proposal_authors: Antragsteller
       investment_authors: Investitions Autoren im aktuellen Budget
       feasible_and_undecided_investment_authors: "Autoren von Investitionen im aktuellen Budget welches nicht [valuation finished unfesasble] erfüllt"
       selected_investment_authors: Autoren ausgewählter Investitionen im aktuellen Busget
