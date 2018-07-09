@@ -1,0 +1,24 @@
+pl:
+  account:
+    show:
+      erase_account_link: Usuń moje konto
+      notifications: Powiadomienia
+      organization_name_label: Nazwa organizacji
+      phone_number_label: Numer telefonu
+      title: Moje konto
+      verify_my_account: Zweryfikuj swoje konto
+  application:
+    close: Zamknij
+    menu: Menu
+  comments:
+    verify_account: zweryfikuj swoje konto
+    comment:
+      admin: Administrator
+      responses:
+        zero: Brak odpowiedzi
+        one: 1 odpowiedź
+        few: "%{count} odpowiedzi"
+        many: "%{count} odpowiedzi"
+        other: "%{count} odpowiedzi"
+      votes:
+        zero: Brak głosów
