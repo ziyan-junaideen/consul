@@ -353,19 +353,19 @@ de:
             error: Fehler
         form:
           enabled: Aktiviert
-          process: Prozess
+          process: Verfahren
           debate_phase: Diskussionsphase
           allegations_phase: Entwurfsphase
           proposals_phase: Phase für Vorschläge
           start: Beginn
           end: Ende
-          use_markdown: Verwenden Sie Preisabschlag, um den Text zu formatieren
-          title_placeholder: Der Titel des Prozesses
-          summary_placeholder: Kurze Zusammenfassung der Beschreibung
-          description_placeholder: Fügen Sie eine Prozessbeschreibung hinzu
-          additional_info_placeholder: Fügen Sie eine zusätzliche Information, die Sie für nützlich halten
+          use_markdown: Verwenden Sie Markdown, um den Text zu formatieren
+          title_placeholder: Der Titel des Verfahrens
+          summary_placeholder: Kurzzusammenfassung der Beschreibung
+          description_placeholder: Fügen Sie eine Verfahrensbeschreibung hinzu
+          additional_info_placeholder: Fügen Sie zusätzliche Information hinzu, die von Interesse sein könnte
         index:
-          create: Neuer Prozess
+          create: Neues Verfahren
           delete: Löschen
           title: Kollaborative Gesetzgebungsprozesse
           filters:
