@@ -92,14 +92,19 @@ de:
           verified_only: "Um eine neue Haushalts Investition zu kreieren %{verify}."
           verify_account: "verifizieren Sie Ihr Benutzerkonto"
           create: "Budgetinvestitionen erstellen"
+          not_logged_in: "Um eine neue Haushalts Investition zu kreieren müssen Sie %{sign_in} oder %{sign_up}."
           sign_in: "anmelden"
           sign_up: "registrieren"
+          by_feasibility: Nach Durchführbarkeit
+          feasible: Durchführbare Projekte
           unfeasible: Undurchführbare Projekte
         orders:
           random: zufällig
           confidence_score: am besten bewertet
+          price: nach Preis
       show:
         author_deleted: Benutzer gelöscht
+        price_explanation: Preis Erklärung
         unfeasibility_explanation: Erläuterung der Undurchführbarkeit
         share: Teilen
         supports: Unterstützung
