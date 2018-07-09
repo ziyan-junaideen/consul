@@ -979,16 +979,16 @@ de:
         placeholder: Suche Wahlkabine nach Namen
       poll_officers_search:
         button: Suche
-        placeholder: Suche nach Umfrage Beamten
+        placeholder: Suche nach Umfragebeamten
       poll_questions_search:
         button: Suchen
-        placeholder: Suche Umfrage Frage
+        placeholder: Suche Umfrage-Fragen
       proposal_search:
         button: Suchen
         placeholder: Suche Vorschläge nach Titel, Code, Beschreibung oder Frage
       spending_proposal_search:
         button: Suchen
-        placeholder: Suche nach austehendem Vorschlag bei Titel oder Beschreibung
+        placeholder: Ausgabenvorschläge nach Titel oder Beschreibung durchsuchen
       user_search:
         button: Suchen
         placeholder: Benutzer nach Name oder E-Mail suchen
@@ -1017,8 +1017,8 @@ de:
         assigned_admin: Zugewiesener Administrator
         no_admin_assigned: Kein Administrator zugewiesen
         no_valuators_assigned: Keine GutachterInnen zugewiesen
-        summary_link: "Investitions Projekt Zusammenfassung"
-        valuator_summary_link: "Gutachter zusammenfassung"
+        summary_link: "Investitionsprojektübersicht"
+        valuator_summary_link: "Zusammenfassung des Gutachters"
         feasibility:
           feasible: "Durchführbar (%{price})"
           not_feasible: "Nicht durchführbar"
@@ -1058,15 +1058,20 @@ de:
         cost_for_geozone: Kosten
     geozones:
       index:
-        title: Geo Zone
-        create: Großartige Geo Zone
+        title: Geo-Zone
+        create: Geo-Zone erstellen
         edit: Bearbeiten
         delete: Löschen
       geozone:
         name: Name
         external_code: Externer Code
-        census_code: Volkszählungs Code
+        census_code: Volkszählungs-Code
         coordinates: Koordinaten
+      errors:
+        form:
+          error:
+            one: "ein Fehler verhinderte, dass diese Geo-Zone gespeichert wurde"
+            other: 'ein Fehler verhinderte, dass diese Geo-Zone gespeichert wurde'
       edit:
         form:
           submit_button: Änderungen speichern
