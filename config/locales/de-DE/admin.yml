@@ -563,9 +563,9 @@ de:
         title: 'Moderatoren: Benutzersuche'
     segment_recipient:
       all_users: Alle Benutzer
-      administrators: Administratoren
-      proposal_authors: Antragsteller
-      investment_authors: Investmentautoren im aktuellen Budget
+      administrators: Administrator*innen
+      proposal_authors: Antragsteller*innen
+      investment_authors: Antragsteller*innen im aktuellen Budget
       feasible_and_undecided_investment_authors: "Autoren von Investitionen im aktuellen Budget, welches nicht [valuation finished unfesasble] erfüllt"
       selected_investment_authors: Autoren ausgewählter Investitionen im aktuellen Budget
       winner_investment_authors: Autoren der prämierten Investitionen im aktuellen Budget
@@ -1100,7 +1100,7 @@ de:
           other: "Es gibt %{count} gültige Unterschriften"
         unverified:
           one: "Es gibt %{count} ungültige Unterschrift"
-          other: "Es gibt %{count} gültige Unterschriften"
+          other: "Es gibt %{count} ungültige Unterschriften"
         unverified_error: (Nicht durch Volkszählung bestätigt)
         loading: "Es gibt immer noch Unterschriften, die von der Volkszählung bestätigt werden. Bitte aktualisiere die Seite in ein paar Momenten"
     stats:
