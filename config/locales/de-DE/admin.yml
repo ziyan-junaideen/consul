@@ -1071,28 +1071,28 @@ de:
         form:
           error:
             one: "ein Fehler verhinderte, dass diese Geo-Zone gespeichert wurde"
-            other: 'ein Fehler verhinderte, dass diese Geo-Zone gespeichert wurde'
+            other: 'Fehler verhinderten, dass diese Geo-Zone gespeichert wurde'
       edit:
         form:
           submit_button: Änderungen speichern
-        editing: Geo Zone bearbeiten
+        editing: Geo-Zone bearbeiten
         back: Zurück
       new:
         back: Zurück
         creating: Bezirk anlegen
       delete:
-        success: Geo zone erfolgreich gelöscht
-        error: Diese Geo Zone kann nicht gelöscht werden, da Elemente an sie angehängt sind
+        success: Geo-Zone erfolgreich gelöscht
+        error: Diese Geo-Zone kann nicht gelöscht werden, da Elemente an sie angehängt sind
     signature_sheets:
       author: Autor
       created_at: Erstellungsdatum
       name: Name
       no_signature_sheets: "Es gibt keine signature_sheets"
       index:
-        title: Unterschriftenblätter
-        new: Neue Unterschriftenblätter
+        title: Unterschriftenseiten
+        new: Neue Unterschriftenseiten
       new:
-        title: Neue Unterschriftenblätter
+        title: Neue Unterschriftenseiten
         document_numbers_note: "Schreiben Sie die Zahlen durch Kommas (,) getrennt"
         submit: Unterschriftenseite erstellen
       show:
