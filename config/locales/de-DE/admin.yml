@@ -327,24 +327,24 @@ de:
           all: Alle
           with_confirmed_hide: Bestätigt
           without_confirmed_hide: Ausstehend
-        title: Blockierte Benutzer/innen
+        title: Verborgene Benutzer/innen
         user: Benutzer/in
         no_hidden_users: Es gibt keine verborgenen Benutzer/innen.
       show:
         email: 'E-Mail:'
-        hidden_at: 'Versteckt am:'
+        hidden_at: 'Verborgen am:'
         registered_at: 'Registriert am:'
-        title: Aktivität des Benutzers (%{user})
+        title: Aktivität des Benutzers/der Benutzerin (%{user})
     legislation:
       processes:
         create:
-          notice: 'Prozess wurde erfolgreich erstellt. <a href="%{link}"> Klicken Sie, um zu besuchen</a>'
-          error: Prozess konnte nicht erstellt werden
+          notice: 'Verfahren erfolgreich erstellt. <a href="%{link}"> Klicken Sie, um zu besuchen</a>'
+          error: Verfahren konnte nicht erstellt werden
         update:
-          notice: 'Prozess wurde erfolgreich aktualisiert. <a href="%{link}"> Klicken Sie, um zu besuchen</a>'
-          error: Prozess konnte nicht aktualisiert werden
+          notice: 'Verfahren erfolgreich aktualisiert. <a href="%{link}"> Klicken Sie, um zu besuchen</a>'
+          error: Verfahren konnte nicht aktualisiert werden
         destroy:
-          notice: Prozess erfolgreich gelöscht
+          notice: Verfahren erfolgreich gelöscht
         edit:
           back: Zurück
           submit_button: Änderungen speichern
