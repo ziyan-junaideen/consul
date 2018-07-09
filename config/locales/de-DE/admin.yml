@@ -244,7 +244,7 @@ de:
         tags_placeholder: "Schreiben Sie die Kennzeichen, die Sie wollen durch Kommas (,) getrennt"
         undefined: Nicht definiert
         user_groups: "Gruppen"
-      search_unfeasible: Suche nicht durchführbar
+      search_unfeasible: Suchen Sie nicht durchführbar
     milestones:
       index:
         table_id: "Ausweis"
@@ -254,15 +254,15 @@ de:
         table_status: Status
         table_actions: "Aktionen"
         delete: "Meilenstein löschen"
-        no_milestones: "Keine definierten Meilensteine haben"
+        no_milestones: "Keine definierten Meilensteine vorhanden"
         image: "Bild"
         show_image: "Bild anzeigen"
         documents: "Dokumente"
       form:
         add_language: Sprache hinzufügen
         remove_language: Sprache entfernen
-        admin_statuses: Admin Anlagestatus
-        no_statuses_defined: Es gibt noch keine definierten Investmentstatus
+        admin_statuses: Status der Ausgabenvorschläge verwalten
+        no_statuses_defined: Kein definierter Status der Ausgabenvorschläge bislang vorhanden
       new:
         creating: Meilenstein erstellen
         date: Datum
@@ -272,12 +272,12 @@ de:
       create:
         notice: Neuer Meilenstein wurde erfolgreich erstellt!
       update:
-        notice: Neuer Meilenstein wurde erfolgreich aktualisiert!
+        notice: Meilenstein wurde erfolgreich aktualisiert
       delete:
         notice: Meilenstein erfolgreich gelöscht
     statuses:
       index:
-        title: Investmentstatus
+        title: Status der Ausgabenvorschläge
         empty_statuses: Es wurden noch keine Investmentstatus kreiert
         new_status: Neuen Anlagestatus kreieren
         table_name: Name
