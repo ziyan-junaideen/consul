@@ -185,7 +185,7 @@ de:
         table_admin: "Administrator"
         table_valuator: "Begutachter/in"
         table_valuation_group: "Bewertungsgruppe"
-        table_geozone: "Tätigkeitsfeld"
+        table_geozone: "Tätigkeitsbereich"
         table_feasibility: "Durchführbarkeit"
         table_valuation_finished: "Bew. Fin."
         table_selection: "Ausgewählt"
