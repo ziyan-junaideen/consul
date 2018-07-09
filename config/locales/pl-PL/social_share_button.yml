@@ -1,8 +1,10 @@
 pl:
   social_share_button:
+    share_to: "Udostępnij na %{name}"
     twitter: "Twitter"
     facebook: "Facebook"
     google_plus: "Google +"
     tumblr: "Tumblr"
     pinterest: "Pinterest"
     email: "Adres e-mail"
+    telegram: "Telegram"
