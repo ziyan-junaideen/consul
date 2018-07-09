@@ -278,23 +278,23 @@ de:
     statuses:
       index:
         title: Status der Ausgabenvorschläge
-        empty_statuses: Es wurden noch keine Investmentstatus kreiert
-        new_status: Neuen Anlagestatus kreieren
+        empty_statuses: Es wurden noch kein Status für Ausgabenvorschläge erstellt
+        new_status: Neuen Status för Ausgabenvorschläge erstellen
         table_name: Name
         table_description: Beschreibung
         table_actions: Aktionen
         delete: Löschen
         edit: Bearbeiten
       edit:
-        title: Anlagestatus bearbeiten
+        title: Status für Ausgabenvorschlag bearbeiten
       update:
-        notice: Anlage-Status wurde erfolgreich aktualisiert
+        notice: Status für Ausgabenvorschlag erfolgreich aktualisiert
       new:
-        title: Anlagestatus kreieren
+        title: Status für Ausgabenvorschlag erstellen
       create:
-        notice: Anlagestatus wurde erfolgreich kreiert
+        notice: Status für Ausgabenvorschlag erfolgreich erstellt
       delete:
-        notice: Anlagestatus wurde erfolgreich gelöscht
+        notice: Status für Ausgabenvorschlag erfolgreich gelöscht
     comments:
       index:
         filter: Filter
@@ -302,14 +302,14 @@ de:
           all: Alle
           with_confirmed_hide: Bestätigt
           without_confirmed_hide: Ausstehend
-        hidden_debate: Verborgene Diskussionen
+        hidden_debate: Verborgene Diskussion
         hidden_proposal: Verborgener Vorschlag
         title: Verborgene Kommentare
         no_hidden_comments: Es gibt keine verborgenen Kommentare.
     dashboard:
       index:
-        back: Zurück zur %{org}
-        title: Verwaltung
+        back: Zurück zu %{org}
+        title: Administration
         description: Herzlich Willkommen auf dem %{org}-Admin-Panel.
     debates:
       index:
@@ -327,9 +327,9 @@ de:
           all: Alle
           with_confirmed_hide: Bestätigt
           without_confirmed_hide: Ausstehend
-        title: Verborgene Benutzer
-        user: Benutzer
-        no_hidden_users: Es gibt keine verborgenen Benutzer.
+        title: Blockierte Benutzer/innen
+        user: Benutzer/in
+        no_hidden_users: Es gibt keine verborgenen Benutzer/innen.
       show:
         email: 'E-Mail:'
         hidden_at: 'Versteckt am:'
