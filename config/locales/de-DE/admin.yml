@@ -730,26 +730,26 @@ de:
         error_destroy: "Ein Fehler trat auf, als die Zuweisung zur Wahlkabine zurückgezogen wurde"
         error_create: "Ein Fehler ist aufgetreten, als die Wahlkabine zu der Umfrage zugefügt wurde"
       show:
-        location: "Lage"
+        location: "Standort"
         officers: "Beamte/innen"
-        officers_list: "Beamten Liste für diese Wahlkabine"
-        no_officers: "Es gibt keine Beamten für diesen Stand"
+        officers_list: "Beamtenliste für diese Wahlkabine"
+        no_officers: "Es gibt keine Beamten für diese Wahlkabine"
         recounts: "Nachzählungen"
         recounts_list: "Liste der Nachzählungen für diese Wahlkabine"
         results: "Ergebnisse"
         date: "Datum"
-        count_final: "Endgültige Nachzählung (vom Beamten)"
+        count_final: "Endgültige Nachzählung (des Beamten)"
         count_by_system: "Stimmen (automatisch)"
         total_system: Gesamtstimmen (automatisch)
       index:
         booths_title: "Liste der Wahlkabinen"
         no_booths: "Dieser Umfrage sind keine Wahlkabinen zugeordnet."
         table_name: "Name"
-        table_location: "Lage"
+        table_location: "Standort"
     polls:
       index:
         title: "Liste der aktiven Umfragen"
-        no_polls: "Keine kommenden Umfragen."
+        no_polls: "Keine zukünftigen Umfragen."
         create: "Umfrage erstellen"
         name: "Name"
         dates: "Datum"
@@ -968,7 +968,7 @@ de:
           disable: "Deaktivieren"
         map:
           title: Kartenkonfiguration
-          help: Hier können Sie die Art, in welcher die Karte angezeigt wird, anpassen. Ziehe die Kartenmakierung oder klicke irgendwohin, setze den gewünschten Zoom und klicke den "Aktualisieren" Knopf.
+          help: Hier können Sie die Art, in welcher die Karte angezeigt wird, anpassen. Ziehen Sie die Kartenmakierung oder klicken Sie irgendwohin, setzen Sie den gewünschten Zoom und klicken auf anschließend den Knopf "Aktualisieren".
           flash:
             update: Kartenkonfiguration erfolgreich aktualisiert.
           form:
@@ -976,7 +976,7 @@ de:
     shared:
       booths_search:
         button: Suche
-        placeholder: Suche Wahlkabine bei Namen
+        placeholder: Suche Wahlkabine nach Namen
       poll_officers_search:
         button: Suche
         placeholder: Suche nach Umfrage Beamten
@@ -1089,7 +1089,7 @@ de:
       new:
         title: Neue Unterschriftenblätter
         document_numbers_note: "Schreiben Sie die Zahlen durch Kommas (,) getrennt"
-        submit: Unterschriftenblatt erstellen
+        submit: Unterschriftenseite erstellen
       show:
         created_at: Erstellt
         author: Autor
@@ -1252,7 +1252,7 @@ de:
           locale: Sprache
     homepage:
       title: Homepage
-      description: Die aktiven Module erscheinen auf der Startseite in der selben Reihenfolge wie hier.
+      description: Die aktiven Module erscheinen auf der Startseite in derselben Reihenfolge wie hier.
       header_title: Kopfzeile
       no_header: Es gibt keine Kopfzeile.
       create_header: Kopfzeile erstellen
