@@ -415,13 +415,13 @@ de:
             error: Fehler
         form:
           title_html: 'Bearbeiten von <span class="strong">-%{draft_version_title}-</span> vom Prozess <span class="strong">%{process_title}</span>'
-          launch_text_editor: Texteditor öffnen
-          close_text_editor: Texteditor schließen
-          use_markdown: Verwenden Sie Markdowns, um den Text zu formationen
+          launch_text_editor: Textbearbeitung öffnen
+          close_text_editor: Textbearbeitung schließen
+          use_markdown: Verwenden Sie Markdown, um den Text zu formationen
           hints:
-            final_version: Diese Version wird als Endergebnis für diesen Prozess veröffenlicht. Kommentare sind in dieser Version nicht erlaubt.
+            final_version: Diese Version wird als Endergebnis dieses Beteiligungsverfahrens veröffenlicht. Kommentare sind daher in dieser Version nicht erlaubt.
             status:
-              draft: Als Admin können Sie eine Vorschau anzeigen, die niemand sonst sieht
+              draft: Als Admin können Sie eine Vorschau anzeigen lassen, die niemand sonst sehen kann
               published: Sichtbar für alle
           title_placeholder: Geben Sie den Titel der Entwurfsversion ein
           changelog_placeholder: Fügen Sie die Hauptänderungen zur vorherigen Version hinzu
@@ -565,12 +565,12 @@ de:
       all_users: Alle Benutzer
       administrators: Administratoren
       proposal_authors: Antragsteller
-      investment_authors: Investitions Autoren im aktuellen Budget
-      feasible_and_undecided_investment_authors: "Autoren von Investitionen im aktuellen Budget welches nicht [valuation finished unfesasble] erfüllt"
-      selected_investment_authors: Autoren ausgewählter Investitionen im aktuellen Busget
-      winner_investment_authors: Autoren von siegreichen Investitionen im aktuellen Budget
-      not_supported_on_current_budget: Benutzer die nicht Investitionen im aktuellen Budget unterstützt haben
-      invalid_recipients_segment: "Empfängers Nutzersegment ist ungültig"
+      investment_authors: Investmentautoren im aktuellen Budget
+      feasible_and_undecided_investment_authors: "Autoren von Investitionen im aktuellen Budget, welches nicht [valuation finished unfesasble] erfüllt"
+      selected_investment_authors: Autoren ausgewählter Investitionen im aktuellen Budget
+      winner_investment_authors: Autoren der prämierten Investitionen im aktuellen Budget
+      not_supported_on_current_budget: Benutzer, die keine Investitionen aus dem aktuellen Budget unterstützt haben
+      invalid_recipients_segment: "Das Empfänger-Benutzer-Segment ist ungültig"
     newsletters:
       create_success: Newsletter erfolgreich erstellt
       update_success: Newsletter erfolgreich aktualisiert
@@ -587,7 +587,7 @@ de:
         edit: Bearbeiten
         delete: Löschen
         preview: Vorschau
-        empty_newsletters: Es gibt keine Newsletter zum anzeigen
+        empty_newsletters: Es gibt keine Newsletter zum Anzeigen
       new:
         title: Neuer Newsletter
         from: E-Mail-Adresse, die beim Versand des Newsletters angezeigt wird
