@@ -6,3 +6,6 @@ pl:
       delete_button: Usuń obraz
       add_new_image: Dodaj obraz
       admin_title: "Obraz"
+    actions:
+      destroy:
+        notice: Obraz został pomyślnie usunięty.
