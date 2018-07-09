@@ -1117,8 +1117,8 @@ de:
           budget_investments: Investitionsprojekte
           spending_proposals: Ausgabenvorschläge
           unverified_users: Benutzer nicht verifziert
-          user_level_three: Stufe drei Nutzer
-          user_level_two: Stufe zwei Nutzer
+          user_level_three: Stufe-Drei-Nutzer
+          user_level_two: Stufe-Zwei-Nutzer
           users: Gesamanzahl Nutzer
           verified_users: Verifizierte Benutzer
           verified_users_who_didnt_vote_proposals: Bestätigte Nutzer, die nicht für Vorschläge gestimmt haben
@@ -1133,11 +1133,11 @@ de:
         polls: Umfragen
       direct_messages:
         title: Direktnachrichten
-        total: Insgesamt
+        total: Gesamt
         users_who_have_sent_message: Nutzer, die eine private Nachricht verschickt haben
       proposal_notifications:
         title: Benachrichtigungen zu einem Vorschlag
-        total: Insgesamt
+        total: Gesamt
         proposals_with_notifications: Vorschläge mit Benachrichtigungen
       polls:
         title: Umfrage Statistik
@@ -1152,14 +1152,14 @@ de:
           origin_total: Gesamtanzahl TeilnehmerInnen
     tags:
       create: Thema erstellen
-      destroy: Thema zerstören
+      destroy: Thema löschen
       index:
-        add_tag: Neues Vorschlagsthema hinzufügen
-        title: Themen für Vorschläge
+        add_tag: Neues Antragsthema hinzufügen
+        title: Themen für Anträge
         topic: Thema
         help: "Wenn ein Nutzer einen Vorschlag erstellt, werden die folgen Themen automatisch als tag vorgeschlagen."
       name:
-        placeholder: Gebe den Namen des Themas ein
+        placeholder: Geben Sie den Namen des Themas ein
     users:
       columns:
         name: Name
@@ -1181,9 +1181,9 @@ de:
     site_customization:
       content_blocks:
         information: Informationen zu Inhaltsblöcken
-        about: Sie können HTML Inhaltsblöcke kreieren, die in die Kopf- oder Fußzeile deiner CONSUL eingefügt werden.
+        about: Sie können HTML-Inhaltsblöcke erstellen, die in die Kopf- oder Fußzeile Ihrer CONSUL eingefügt werden.
         top_links_html: "<strong>Kopfzeilen-Blöcke (Top_links)</strong> sind Blöcke von Links, die dieses Format haben müssen:"
-        footer_html: "<strong>Fußzeilen Blöcke</strong> können jegliches format haben und können in Javaskript, CSS, oder benutzerdefiniertem HTML eingefügt werden."
+        footer_html: "<strong>Fußzeilenblöcke</strong> können jedes beliebige Format haben und zum Einfügen von Javascript, CSS oder benutzerdefiniertem HTML verwendet werden."
         no_blocks: "Es gibt keine Inhaltsblöcke."
         create:
           notice: Inhaltsblock erfolgreich erstellt
