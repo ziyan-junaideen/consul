@@ -999,18 +999,18 @@ de:
       description: Beschreibung
       image: Bild
       show_image: Bild anzeigen
-      moderated_content: "Überprüfe den Inhalt der von den Moderatoren moderiert wurde und bestätige, ob die Moderation korrekt ausgeführt wurde."
+      moderated_content: "Überprüfen Sie den von den Moderator*innen moderierten Inhalt und bestätigen Sie, ob die Moderation korrekt ausgeführt wurde."
     spending_proposals:
       index:
-        geozone_filter_all: Alle Zonen
-        administrator_filter_all: Alle Administratoren
-        valuator_filter_all: Alle Gutachter
+        geozone_filter_all: Alle Bereiche
+        administrator_filter_all: Alle Administrator*innen
+        valuator_filter_all: Alle Begutachter*innen
         tags_filter_all: Alle Tags
         filters:
           valuation_open: Offen
-          without_admin: Ohne zugewiesenen Administrator
+          without_admin: Ohne zugewiesene*n Administrator*in
           managed: Verwaltet
-          valuating: Unter Bewertung
+          valuating: In der Bewertungsphase
           valuation_finished: Bewertung beendet
           all: Alle
         title: Investitionsvorhaben für die partizipative Haushaltsführung
