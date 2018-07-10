@@ -67,6 +67,10 @@ fr:
           created_at: Les plus récents
           flags: Les plus signalés
         title: Propositions
+    proposal_notifications:
+      index:
+        confirm: Êtes-vous sûr(e) ?
+        filter: Filtre
     users:
       index:
         hidden: Bloqué
