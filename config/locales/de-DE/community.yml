@@ -26,9 +26,13 @@ de:
         new_topic: Thema erstellen
       topic:
         edit: Thema bearbeiten
+        destroy: Thema zerstören
         comments:
           zero: Keine Kommentare
+          one: 1 Kommentar
+          other: "%{count} Kommentare"
       author: Autor
+      back: Zurück zu %{community} %{proposal}
     topic:
       create: Thema erstellen
       edit: Thema bearbeiten
@@ -50,6 +54,7 @@ de:
         recommendations_title: Empfehlungen zum Erstellen eines Themas
         recommendation_one: Schreiben Sie den Themen-Titel oder ganze Sätze nicht in Großbuchstaben. Im Internet wird das als Geschrei betrachtet (und niemand wird gerne angeschrien).
         recommendation_two: Themen oder Kommentare, die illegale Handlungen beinhalten, werden gelöscht. Auch diejenigen, die die Diskussionen absichtlich sabotieren. Alles andere ist erlaubt.
+        recommendation_three: Genießen Sie diesen Ort, die Stimmen, die ihn füllen, es ist auch Ihrer.
   topics:
     show:
       login_to_comment: Sie müssen sich %{signin} oder %{signup}, um einen Kommentar zu hinterlassen.
