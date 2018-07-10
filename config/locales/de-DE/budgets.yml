@@ -10,24 +10,24 @@ de:
         voted_html:
           one: "Sie haben über <span>einen</span> Vorschlag abgestimmt."
           other: "Sie haben über <span>%{count}</span> Vorschläge abgestimmt."
-        voted_info_html: "Sie können Ihre Stimme bis zum Ende dieser Phase jederzeit ändern. <br> Es ist nicht von Nöten, alle verfügbaren Mittel auszugeben."
-        zero: Sie haben über keinen Investitionsvorschlag abgestimmt.
+        voted_info_html: "Sie können Ihre Stimme bis zum Ende dieser Phase jederzeit ändern. <br> Sie müssen nicht das gesamte verfügbare Geld ausgeben."
+        zero: Sie haben noch nicht für einen Ausgabenvorschlag abgestimmt.
       reasons_for_not_balloting:
         not_logged_in: Sie müssen sich %{signin} oder %{signup}, um fortfahren zu können.
-        not_verified: Nur verifizierte Benutzer können über eine Investition abstimmen; %{verify_account}.
+        not_verified: Nur verifizierte Benutzer*innen können über einen Ausgabenvorschlag abstimmen; %{verify_account}.
         organization: Organisationen dürfen nicht abstimmen
-        not_selected: Ungewählte Investitionen können nicht unterstützt werden
-        not_enough_money_html: "Sie haben schon das verfügbare Budget zugewiesen.<br><small>Bitte denken Sie daran, dass Sie %{change_ballot} jederzeit</small>ändern können."
+        not_selected: Für undurchführbare Ausgabenvorschläge kann nicht abgestimmt werden
+        not_enough_money_html: "Sie haben bereits das verfügbare Budget zugewiesen.<br><small>Bitte denken Sie daran, dass Sie dies %{change_ballot} jederzeit</small>ändern können"
         no_ballots_allowed: Auswahlphase ist abgeschlossen
-        different_heading_assigned_html: "Sie haben bereits für eine andere Überschrift gestimmt: %{heading_link}"
-        change_ballot: ändern Sie Ihre Abstimmungen
+        different_heading_assigned_html: "Sie haben bereits für eine andere Rubrik gestimmt: %{heading_link}"
+        change_ballot: Ändern Sie Ihre Stimmen
     groups:
       show:
         title: Wählen Sie eine Option
-        unfeasible_title: undurchführbare Investitionen
-        unfeasible: Undurchführbare Investitionen anzeigen
-        unselected_title: Investitionen, die nicht für die Abstimmungsphase ausgewählt wurden
-        unselected: Investitionen, die nicht für die Abstimmungsphase ausgewählt wurden, anzeigen
+        unfeasible_title: Undurchführbare Ausgabenvorschläge
+        unfeasible: Undurchführbare Ausgabenvorschläge anzeigen
+        unselected_title: Ausgabenvorschläge, die nicht für die Abstimmungsphase ausgewählt wurden
+        unselected: Ausgabenvorschläge, die nicht für die Abstimmungsphase ausgewählt wurden, anzeigen
     phase:
       drafting: Entwurf (nicht für die Öffentlichkeit sichtbar)
       informing: Information
