@@ -913,17 +913,17 @@ de:
           rejected: Abgelehnt
           verified: Überprüft
         hidden_count_html:
-          one: Es gibt auch <strong>eine Organisation</strong> ohne Benutzer oder verborgene Benutzer.
+          one: Es gibt auch <strong>%{count} eine Organisation </strong> ohne Benutzer*in oder mit verborgenem/r Benutzer*in.
           other: Es gibt auch <strong>%{count} Organisationen</strong> ohne Benutzer oder verborgene Benutzer.
         name: Name
         email: E-Mail
         phone_number: Telefon
-        responsible_name: Verantwortlich
+        responsible_name: Verantwortliche*r
         status: Status
-        no_organizations: Es gibt keine Organisationen.
+        no_organizations: Keine Organisationen vorhanden.
         reject: Ablehnen
         rejected: Abgelehnt
-        search: Suche
+        search: Suchen
         search_placeholder: Name, E-Mail oder Telefonnummer
         title: Organisationen
         verified: Überprüft
@@ -940,7 +940,7 @@ de:
           with_confirmed_hide: Bestätigt
           without_confirmed_hide: Ausstehend
         title: Verborgene Vorschläge
-        no_hidden_proposals: Es gibt keine verborgenen Vorschläge.
+        no_hidden_proposals: Keine verborgenen Vorschläge vorhanden.
     proposal_notifications:
       index:
         filter: Filter
@@ -948,18 +948,18 @@ de:
           all: Alle
           with_confirmed_hide: Bestätigt
           without_confirmed_hide: Ausstehend
-        title: Versteckte Benachrichtigungen
-        no_hidden_proposals: Es gibt keine versteckten Benachrichtigungen.
+        title: Verborgene Benachrichtigungen
+        no_hidden_proposals: Keine verborgenen Benachrichtigungen vorhanden.
     settings:
       flash:
         updated: Wert aktualisiert
       index:
-        banners: Banner-Stile
+        banners: Stil des Banners
         banner_imgs: Banner-Bilder
         no_banners_images: Keine Banner-Bilder
         no_banners_styles: Keine Banner-Stile
         title: Konfigurationseinstellungen
-        update_setting: Update
+        update_setting: Aktualisieren
         feature_flags: Funktionen
         features:
           enabled: "Funktion aktiviert"
