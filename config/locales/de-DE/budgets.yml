@@ -2,14 +2,14 @@ de:
   budgets:
     ballots:
       show:
-        title: Ihre Wahl
-        amount_spent: Ausgaben
+        title: Meine Stimmen
+        amount_spent: Gesamtausgaben
         remaining: "Sie haben noch <span>%{amount}</span> auszugeben."
-        no_balloted_group_yet: "Sie haben in dieser Gruppe noch nicht gewählt, wählen Sie!"
+        no_balloted_group_yet: "Sie haben in dieser Gruppe noch nicht abgestimmt. Stimmen Sie jetzt ab!"
         remove: Stimme entfernen
         voted_html:
-          one: "Sie haben über <span> einen <span> Vorschlag abgestimmt."
-          other: "Sie haben über <span>%{count}<span> Vorschlag abgestimmt."
+          one: "Sie haben über <span>einen</span> Vorschlag abgestimmt."
+          other: "Sie haben über <span>%{count}</span> Vorschläge abgestimmt."
         voted_info_html: "Sie können Ihre Stimme bis zum Ende dieser Phase jederzeit ändern. <br> Es ist nicht von Nöten, alle verfügbaren Mittel auszugeben."
         zero: Sie haben über keinen Investitionsvorschlag abgestimmt.
       reasons_for_not_balloting:
