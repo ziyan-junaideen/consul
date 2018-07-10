@@ -968,30 +968,30 @@ de:
           disable: "Deaktivieren"
         map:
           title: Kartenkonfiguration
-          help: Hier können Sie die Art, in welcher die Karte angezeigt wird, anpassen. Ziehen Sie die Kartenmakierung oder klicken Sie irgendwohin, setzen Sie den gewünschten Zoom und klicken auf anschließend den Knopf "Aktualisieren".
+          help: Hier können Sie festlegen, wie die Karte den Benutzer*innen angezeigt wird. Bewegen Sie den Marker oder klicken Sie auf einen beliebigen Teil der Karte, passen Sie den Zoom an und klicken Sie auf die Schaltfläche "Aktualisieren".
           flash:
             update: Kartenkonfiguration erfolgreich aktualisiert.
           form:
-            submit: Update
+            submit: Aktualisieren
     shared:
       booths_search:
-        button: Suche
-        placeholder: Suche Wahlkabine nach Namen
+        button: Suchen
+        placeholder: Suche Wahlurne nach Name
       poll_officers_search:
-        button: Suche
-        placeholder: Suche nach Umfragebeamten
+        button: Suchen
+        placeholder: Suche Wahlvorsteher*innen
       poll_questions_search:
         button: Suchen
-        placeholder: Suche Umfrage-Fragen
+        placeholder: Suche Fragen
       proposal_search:
         button: Suchen
         placeholder: Suche Vorschläge nach Titel, Code, Beschreibung oder Frage
       spending_proposal_search:
         button: Suchen
-        placeholder: Ausgabenvorschläge nach Titel oder Beschreibung durchsuchen
+        placeholder: Suche Ausgabenvorschläge nach Titel oder Beschreibung
       user_search:
         button: Suchen
-        placeholder: Benutzer nach Name oder E-Mail suchen
+        placeholder: Suche Benutzer*in nach Name oder E-Mail
       search_results: "Suchergebnisse"
       no_search_results: "Es wurden keine Ergebnisse gefunden."
       actions: Aktionen
