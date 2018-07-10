@@ -27,6 +27,7 @@ de:
         title: Ändern Sie Ihr Passwort
       unlock_instructions:
         hello: Hallo
+        info_text: Ihr Benutzerkonto wurde blockiert, wegen einer übermäßigen Anzahl an fehlgeschlagenen Anmeldeversuchen.
         instructions_text: 'Bitte klicken Sie auf folgenden Link, um Ihr Benutzerkonto zu entsperren:'
         title: Ihr Konto wurde gesperrt
         unlock_link: Mein Benutzerkonto entsperren
@@ -43,6 +44,7 @@ de:
           password_confirmation_label: Passwort bestätigen
           password_label: Passwort
           phone_number_label: Telefonnummer
+          responsible_name_label: Vollständiger Name der Person, verantwortlich für das Kollektiv
           submit: Registrieren
         success:
           back_to_index: Verstanden, zurück zur Startseite
