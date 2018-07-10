@@ -654,7 +654,7 @@ de:
         no_groups: "Keine Bewertungsgruppen vorhanden"
       show:
         title: "Bewertungsgruppe: %{group}"
-        no_valuators: "Es gibt keine Gutachter, die dieser Gruppe zugeordnet sind"
+        no_valuators: "Dieser Gruppe sind keine Begutachter*innen zugeordnet"
       form:
         name: "Gruppenname"
         new: "Bewertungsgruppe erstellen"
@@ -675,28 +675,28 @@ de:
     poll_officer_assignments:
       index:
         officers_title: "Liste der zugewiesenen Wahlvorsteher*innen"
-        no_officers: "Es gibt keine Beamten/innen, die dieser Umfrage zugeordnet sind."
+        no_officers: "Dieser Abstimmung sind keine Wahlvorsteher*innen zugeordnet."
         table_name: "Name"
         table_email: "E-Mail"
       by_officer:
         date: "Datum"
         booth: "Wahlurne"
-        assignments: "Amtswechsel in dieser Umfrage"
-        no_assignments: "Dieser Benutzer hat keine Amtswechsel in dieser Umfrage."
+        assignments: "Der/Die Wahlvorsteher*in wechselt in dieser Abstimmung"
+        no_assignments: "In dieser Abstimmung gibt es keinen Schichtwechsel des/der Wahlvorsteher*in."
     poll_shifts:
       new:
-        add_shift: "Schicht hinzufügen"
+        add_shift: "Arbeitsschicht hinzufügen"
         shift: "Zuordnung"
-        shifts: "In diese Wahlurne verschieben"
+        shifts: "Arbeitsschichten für dieser Wahlurne"
         date: "Datum"
         task: "Aufgabe"
-        edit_shifts: Schicht zuordnen
-        new_shift: "Neue Schicht"
-        no_shifts: "Diese Wahlkabine hat keine Schichten"
-        officer: "Beamter/in"
+        edit_shifts: Arbeitsschicht zuordnen
+        new_shift: "Neue Arbeitsschicht"
+        no_shifts: "Dieser Wahlurne wurden keine Arbeitsschichten zugeordnet"
+        officer: "Wahlvorsteher*in"
         remove_shift: "Entfernen"
-        search_officer_button: Suche
-        search_officer_placeholder: Suche nach Beamter/in
+        search_officer_button: Suchen
+        search_officer_placeholder: Wahlvorsteher*in suchen
         search_officer_text: Suche nach einem Beamten um eine neue Schicht zuzuweisen
         select_date: "Tag auswählen"
         no_voting_days: "Abstimmungsphase beendet"
@@ -705,8 +705,8 @@ de:
         table_email: "E-Mail"
         table_name: "Name"
       flash:
-        create: "Schicht hinzugefügt"
-        destroy: "Schicht entfernt"
+        create: "Arbeitsschicht für Wahlvorsteher*in hinzugefügt"
+        destroy: "Arbeitsschicht für Wahlvorsteher*in entfernt"
         date_missing: "Ein Datum muss ausgewählt werden"
       vote_collection: Stimmen sammeln
       recount_scrutiny: Nachzählung & Kontrolle
