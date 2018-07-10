@@ -657,8 +657,8 @@ de:
         no_valuators: "Es gibt keine Gutachter, die dieser Gruppe zugeordnet sind"
       form:
         name: "Gruppenname"
-        new: "Gutachergruppe erstellen"
-        edit: "Gutachtergruppe speichern"
+        new: "Bewertungsgruppe erstellen"
+        edit: "Bewertungsgruppe speichern"
     poll_officers:
       index:
         title: Vorsitzende der Abstimmung
@@ -667,14 +667,14 @@ de:
         delete: Position löschen
         name: Name
         email: E-Mail
-        entry_name: Beamter/in
+        entry_name: Wahlvorsteher*in
       search:
-        email_placeholder: Suche Benutzer per E-Mail
-        search: Suche
-        user_not_found: Benutzer wurde nicht gefunden
+        email_placeholder: Benutzer*in via E-Mail suchen
+        search: Suchen
+        user_not_found: Benutzer*in wurde nicht gefunden
     poll_officer_assignments:
       index:
-        officers_title: "Liste der Beamten/innen"
+        officers_title: "Liste der zugewiesenen Wahlvorsteher*innen"
         no_officers: "Es gibt keine Beamten/innen, die dieser Umfrage zugeordnet sind."
         table_name: "Name"
         table_email: "E-Mail"
