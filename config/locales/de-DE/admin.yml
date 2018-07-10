@@ -1259,20 +1259,20 @@ de:
       title: Homepage
       description: Die aktiven Module erscheinen auf der Startseite in derselben Reihenfolge wie hier.
       header_title: Kopfzeile
-      no_header: Es gibt keine Kopfzeile.
+      no_header: Keine Kopfzeile vorhanden.
       create_header: Kopfzeile erstellen
       cards_title: Karten
       create_card: Karte erstellen
-      no_cards: Es gibt keine Karten.
+      no_cards: Keine Karten vorhanden.
       cards:
         title: Titel
         description: Beschreibung
-        link_text: Text verlinken
-        link_url: URL verlinken
+        link_text: Linktext
+        link_url: URL des Links
       feeds:
         proposals: Vorschläge
         debates: Diskussionen
-        processes: Prozesse
+        processes: Beteiligungsverfahren
       new:
         header_title: Neue Kopfzeile
         submit_header: Kopfzeile erstellen
