@@ -9,12 +9,14 @@ de:
         instructions_html: Das Konto per E-Mail %{email} bestätigen 
         new_password_confirmation_label: Zugangspasswort wiederholen
         new_password_label: Neues Zugangspasswort
+        please_set_password: Bitte wählen Sie Ihr neues Passwort (dieses ermöglicht Ihnen die Anmeldung mit der oben genannten E-mail-Adresse)
         submit: Bestätigen
         title: Bestätige mein Benutzerkonto
     mailer:
       confirmation_instructions:
         confirm_link: Bestätige mein Benutzerkonto
         text: 'Sie können Ihre E-Mail unter folgenden Link bestätigen:'
+        title: Wilkommen zum offenen Regierungs Portal
         welcome: Willkommen
       reset_password_instructions:
         change_link: Mein Passwort ändern
