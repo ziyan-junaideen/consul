@@ -886,24 +886,24 @@ de:
         title: 'Beamte: Benutzer*in bearbeiten'
       flash:
         official_destroyed: 'Daten gespeichert: Der/Die Benutzer*in ist nicht länger ein/e Beamte/r'
-        official_updated: Details des Beamten gespeichert
+        official_updated: Details des/r Beamten* gespeichert
       index:
         title: Beamte
-        no_officials: Es gibt keine Beamten.
+        no_officials: Keine Beamten vorhanden.
         name: Name
-        official_position: Offizielle Position
-        official_level: Ebene
-      level_0: Nicht offiziell
+        official_position: Beamte*r
+        official_level: Stufe
+      level_0: Kein/e Beamte*r
       level_1: Stufe 1
       level_2: Stufe 2
       level_3: Stufe 3
       level_4: Stufe 4
       level_5: Stufe 5
       search:
-        edit_official: Beamten bearbeiten
-        make_official: Beamten erstellen
-        title: 'Offizielle Positionen: Benutzersuche'
-        no_results: Offizielle Positionen nicht gefunden.
+        edit_official: Beamte*n bearbeiten
+        make_official: Beamte*n erstellen
+        title: 'Beamte: Benutzer*innensuche'
+        no_results: Keine Beamten gefunden.
     organizations:
       index:
         filter: Filter
