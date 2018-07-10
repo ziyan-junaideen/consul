@@ -738,37 +738,37 @@ de:
         recounts_list: "Liste der Nachzählungen für diese Wahlurne"
         results: "Ergebnisse"
         date: "Datum"
-        count_final: "Endgültige Nachzählung (des Beamten)"
+        count_final: "Endgültige Nachzählung (Wahlvorsteher*in)"
         count_by_system: "Stimmen (automatisch)"
-        total_system: Gesamtstimmen (automatisch)
+        total_system: Gesamtanzahl der gesammelten Stimmen (automatisch)
       index:
-        booths_title: "Liste der Wahlkabinen"
-        no_booths: "Dieser Umfrage sind keine Wahlkabinen zugeordnet."
+        booths_title: "Liste der zugewiesenen Wahlurnen"
+        no_booths: "Dieser Abstimmung sind keine Wahlvorsteher*innen zugeordnet."
         table_name: "Name"
         table_location: "Standort"
     polls:
       index:
-        title: "Liste der aktiven Umfragen"
-        no_polls: "Keine zukünftigen Umfragen."
-        create: "Umfrage erstellen"
+        title: "Liste der aktiven Abstimmungen"
+        no_polls: "Keine Abstimmung geplant."
+        create: "Abstimmung erstellen"
         name: "Name"
         dates: "Datum"
         geozone_restricted: "Beschränkt auf Bezirke"
       new:
-        title: "Neue Umfrage"
-        show_results_and_stats: "Zeige Ergebnisse und Statistiken"
-        show_results: "Zeige Ergebnisse"
+        title: "Neue Abstimmung"
+        show_results_and_stats: "Ergebnisse und Statistiken anzeigen"
+        show_results: "Ergebnisse anzeigen"
         show_stats: "Statistiken anzeigen"
-        results_and_stats_reminder: "Mit dem Markieren dieses Kontrollkästchens werden die Resultate und/oder Statistiken dieser Umfrage öffentlich abrufbar und jeder Nutzer wird sie sehen."
-        submit_button: "Umfrage erstellen"
+        results_and_stats_reminder: "Durch das Markieren dieses Kontrollkästchens werden die Resultate und/oder Statistiken dieser Abstimmung öffentlich abrufbar und für alle Benutzer*innen sichtbar."
+        submit_button: "Abstimmung erstellen"
       edit:
-        title: "Umfrage bearbeiten"
-        submit_button: "Umfrage aktualisieren"
+        title: "Abstimmung bearbeiten"
+        submit_button: "Abstimmung aktualisieren"
       show:
         questions_tab: Fragen
-        booths_tab: Wahlkabinen
-        officers_tab: Beamte/innen
-        recounts_tab: Nachzählen
+        booths_tab: Wahlurnen
+        officers_tab: Wahlvorsteher*innen
+        recounts_tab: Nachzählung
         results_tab: Ergebnisse
         no_questions: "Es gibt keine Fragen zu dieser Umfrage."
         questions_title: "Liste der Fragen"
