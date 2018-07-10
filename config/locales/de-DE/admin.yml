@@ -1013,41 +1013,41 @@ de:
           valuating: In der Bewertungsphase
           valuation_finished: Bewertung beendet
           all: Alle
-        title: Investitionsvorhaben für die partizipative Haushaltsführung
-        assigned_admin: Zugewiesener Administrator
-        no_admin_assigned: Kein Administrator zugewiesen
-        no_valuators_assigned: Keine GutachterInnen zugewiesen
-        summary_link: "Investitionsprojektübersicht"
-        valuator_summary_link: "Zusammenfassung des Gutachters"
+        title: Ausgabenvorschläge für den Bürgerhaushalt
+        assigned_admin: Zugewiesene*r Administrator*in
+        no_admin_assigned: Kein*e Administrator*in zugewiesen
+        no_valuators_assigned: Keine Begutacher*innen zugewiesen
+        summary_link: "Zusammenfassung der Ausgabenvorschläge"
+        valuator_summary_link: "Zusammenfassung der Begutachter*innen"
         feasibility:
           feasible: "Durchführbar (%{price})"
           not_feasible: "Nicht durchführbar"
-          undefined: "Undefiniert"
+          undefined: "Nicht definiert"
       show:
-        assigned_admin: Zugewiesener Administrator
-        assigned_valuators: Zugewiesene Gutachter
+        assigned_admin: Zugewiesene*r Administrator*in
+        assigned_valuators: Zugewiesene Begutachter*innen
         back: Zurück
         classification: Klassifizierung
-        heading: "Investitionsprojekt %{id}"
+        heading: "Ausgabenvorschlag %{id}"
         edit: Bearbeiten
         edit_classification: Klassifizierung bearbeiten
-        association_name: Verband
-        by: Durch
+        association_name: Verein
+        by: Von
         sent: Gesendet
-        geozone: Rahmen
-        dossier: Dossier
-        edit_dossier: Dossier bearbeiten
+        geozone: Bereich
+        dossier: Bericht
+        edit_dossier: Bericht bearbeiten
         tags: Tags
         undefined: Undefiniert
       edit:
         classification: Klassifizierung
-        assigned_valuators: Gutachter
-        submit_button: Update
+        assigned_valuators: Begutachter*innen
+        submit_button: Aktualisieren
         tags: Tags
-        tags_placeholder: "Trennen Sie die Tags mit einem Komma (,)"
+        tags_placeholder: "Geben Sie die gewünschten Tags durch Kommas (,) getrennt ein"
         undefined: Undefiniert
       summary:
-        title: Zusammenfassung der Investitionsprojekte
+        title: Zusammenfassung der Ausgabenvorschläge
         title_proposals_with_supports: Zusammenfassung für Investitionsprojekte mit Unterstützungen
         geozone_name: Rahmen
         finished_and_feasible_count: Fertig und durchführbar
