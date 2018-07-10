@@ -81,6 +81,9 @@ de:
           button: Suche
           placeholder: Suche Investitionsprojekte...
           title: Suche
+        search_results_html:
+          one: " enthält den Begriff <strong>'%{search_term}'</strong>"
+          other: " enthält die Begriffe <strong>'%{search_term}'</strong>"
         sidebar:
           my_ballot: Mein Stimmzettel
           voted_info: Sie können bis zur Schließung der Phase uederzeit %{link}. Es gibt keinen Grund sämtliches verfügbares Geld auszugeben.
@@ -173,3 +176,5 @@ de:
     phases:
       errors:
         dates_range_invalid: "Das Startdatum kann nicht gleich oder später als das Enddatum sein"
+        prev_phase_dates_invalid: "Startdatum muss zu einem späteren Zeitpunkt, als das Startdatum der zuvor freigegebenden Phase (%{phase_name}, liegen"
+        next_phase_dates_invalid: "Abschlussdatum muss vor dem Abschlussdatum der nächsten freigegebenen Phase (%{phase_name}) liegen"
