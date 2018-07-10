@@ -708,34 +708,34 @@ de:
         create: "Arbeitsschicht für Wahlvorsteher*in hinzugefügt"
         destroy: "Arbeitsschicht für Wahlvorsteher*in entfernt"
         date_missing: "Ein Datum muss ausgewählt werden"
-      vote_collection: Stimmen sammeln
+      vote_collection: Stimmen einsammeln
       recount_scrutiny: Nachzählung & Kontrolle
     booth_assignments:
-      manage_assignments: Aufgaben verwalten
+      manage_assignments: Zuordnungen verwalten
       manage:
         assignments_list: "Zuweisungen für Umfrage \"%{poll}\""
         status:
           assign_status: Zuordnung
           assigned: Zugeordnet
-          unassigned: Nicht zugewiesen
+          unassigned: Nicht zugeordnet
         actions:
-          assign: Wahlkabine zuweisen
-          unassign: Zuweisung der Wahlkabine aufheben
+          assign: Wahlurne zuordnen
+          unassign: Zuweisung der Wahlurne aufheben
     poll_booth_assignments:
       alert:
-        shifts: "Dieser Wahlkabine sind Schichten zugewiesen. Wenn Sie die Kabinenzuweisung entfernen, werden die Schichten gelöscht. Fortfahren?"
+        shifts: "Dieser Wahlurne sind bereits Arbeitsschichten zugeordnet. Wenn Sie die Urnenzuweisung entfernen, werden die Arbeitsschichten gelöscht. Wollen Sie dennoch fortfahren?"
       flash:
-        destroy: "Wahlkabine nicht mehr zugewiesen"
-        create: "Wahlkabine zugewiesen"
+        destroy: "Wahlurne nicht mehr zugeordnet"
+        create: "Wahlurne zugeordnet"
         error_destroy: "Ein Fehler trat auf, als die Zuweisung zur Wahlkabine zurückgezogen wurde"
-        error_create: "Ein Fehler ist aufgetreten, als die Wahlkabine zu der Umfrage zugefügt wurde"
+        error_create: "Beim Aufheben der Zuweisung der Wahlurne ist ein Fehler aufgetreten"
       show:
         location: "Standort"
-        officers: "Beamte/innen"
-        officers_list: "Beamtenliste für diese Wahlkabine"
-        no_officers: "Es gibt keine Beamten für diese Wahlkabine"
+        officers: "Wahlvorsteher*innen"
+        officers_list: "Liste der Wahlvorsteher*innen für diese Wahlurne"
+        no_officers: "Es gibt keine Wahlvorsteher*innen für diese Wahlurne"
         recounts: "Nachzählungen"
-        recounts_list: "Liste der Nachzählungen für diese Wahlkabine"
+        recounts_list: "Liste der Nachzählungen für diese Wahlurne"
         results: "Ergebnisse"
         date: "Datum"
         count_final: "Endgültige Nachzählung (des Beamten)"
