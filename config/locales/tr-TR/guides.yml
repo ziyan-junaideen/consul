@@ -1,0 +1,13 @@
+tr:
+  guides:
+    title: "%{org} için bir fikriniz var mı?"
+    subtitle: "Oluşturmak istediğin şeyi seç"
+    budget_investment:
+      title: "Bir yatırım projesi"
+      feature_1_html: "<strong>Belediye bütçelerini</strong> nasıl harcayacağın ile ilgili fikirler"
+      feature_2_html: "Yatırım projeleri, <strong>Ocak ve Mart ayları arasında</strong> kabul edilir"
+      new_button: Bir bütçe yatırımı oluşturmak istiyorum
+    proposal:
+      title: "Bir vatandaşın önerisi"
+      feature_3_html: "İstediğiniz zaman başlatın, destek almak için <strong>bir yılınız</strong> var"
+      new_button: Bir öneride bulunmak istiyorum
