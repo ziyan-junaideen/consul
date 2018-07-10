@@ -50,6 +50,7 @@ de:
           title: Als Organisation oder Kollektiv anmelden
         success:
           back_to_index: Verstanden, zurück zur Startseite
+          instructions_1_html: "<b>wir werden Sie bald kontaktieren</b> um zu bestätigen, dass Sie tatsächlich das Kollektiv repräsentieren."
     passwords:
       edit:
         change_submit: Mein Passwort ändern
