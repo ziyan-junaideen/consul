@@ -128,6 +128,9 @@ de:
         already_added: Sie haben dieses Investitionsprojekt schon hinzugefügt
         already_supported: Sie haben dieses Investitionsprojekt bereits unterstützt. Teilen Sie es!
         support_title: Unterstützen Sie dieses Projekt
+        confirm_group:
+          one: "Sie können nur Investitionen im %{count} Bezirk unterstützen. Wenn Sie fortfahren, können Sie ihren Wahlbezirk nicht ändern. Sind Sie sicher?"
+          other: "Sie können nur Investitionen im %{count} Bezirk unterstützen. Wenn sie fortfahren, können sie ihren Wahlbezirk nicht ändern. Sind sie sicher?"
         supports:
           zero: Keine Unterstützung
           one: 1 Befürworter/in
@@ -138,6 +141,10 @@ de:
         different_heading_assigned_html: "Sie haben aktive Abstimmungen in einem anderen Bereich: %{heading_link}"
         change_ballot: "Wenn Sie Ihre Meinung ändern, können Sie Ihre Stimme unter %{check_ballot} entfernen und von vorne beginnen."
         check_ballot_link: "Überprüfung meiner Abstimmung"
+        price: "Diese Überschrift hat einen Haushalt von"
+    progress_bar:
+      assigned: "Sie haben zugeordnet: "
+      available: "Verfügbare Haushaltsmittel: "
     show:
       group: Gruppe
       phase: Aktuelle Phase
@@ -160,6 +167,9 @@ de:
       accepted: "Zugesagter Ausgabenvorschlag:"
       discarded: "Gelöschter Ausgabenvorschlag: "
       incompatibles: Unvereinbarkeiten
+      investment_proyects: Liste aller Investitionsprojekte
+      unfeasible_investment_proyects: Liste aller undurchführbaren Investitionsprojekte
+      not_selected_investment_proyects: Liste aller Investitionsprojekte, die nicht zur Abstimmung ausgewählt wurden
     phases:
       errors:
         dates_range_invalid: "Das Startdatum kann nicht gleich oder später als das Enddatum sein"
