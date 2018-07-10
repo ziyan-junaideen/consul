@@ -515,7 +515,7 @@ de:
       valuators: Begutachter*innen
       poll_officers: Vorsitzende der Abstimmung
       polls: Abstimmungen
-      poll_booths: Standort der Wahlkabinen
+      poll_booths: Standort der Wahlurnen
       poll_booth_assignments: Zuordnung der Wahlurnen
       poll_shifts: Schichten verwalten
       officials: Öffentliche Ämter
@@ -523,19 +523,19 @@ de:
       settings: Globale Einstellungen
       spending_proposals: Ausgabenvorschläge
       stats: Statistiken
-      signature_sheets: Unterschriftenbogen
+      signature_sheets: Unterschriftenbögen
       site_customization:
         homepage: Homepage
-        pages: Benutzerdefinierte Seiten
-        images: Benutzerdefinierte Bilder
+        pages: Benutzer*definierte Seiten
+        images: Benutzer*definierte Bilder
         content_blocks: Benutzer*spezifische Inhaltsdatenblöcke
-      title_moderated_content: Moderierte Inhalte
+      title_moderated_content: Moderierter Inhalt
       title_budgets: Budgets
       title_polls: Abstimmungen
       title_profiles: Profile
       title_settings: Einstellungen
       title_site_customization: Seiteninhalt
-      title_booths: Wahlkabinen
+      title_booths: Wahlurnen
       legislation: Kollaborative Gesetzgebung
       users: Benutzer*innen
     administrators:
@@ -549,22 +549,22 @@ de:
         delete: Löschen
         restricted_removal: "Entschuldigung, Sie können sich nicht von der Liste entfernen"
       search:
-        title: "Administrator*innen: Benutzersuche"
+        title: "Administrator*innen: Benutzer*innensuche"
     moderators:
       index:
         title: Moderator*innen
         name: Name
         email: E-Mail
-        no_moderators: Es gibt keine Gutacher.
+        no_moderators: Keine Moderator*innen vorhanden.
       moderator:
         add: Hinzufügen
         delete: Löschen
       search:
-        title: 'Moderatoren: Benutzersuche'
+        title: 'Moderator*innen: Benutzer*innensuche'
     segment_recipient:
-      all_users: Alle Benutzer
+      all_users: Alle Benutzer*innen
       administrators: Administrator*innen
-      proposal_authors: Antragsteller*innen
+      proposal_authors: Verfasser*innen der Vorschläge
       investment_authors: Antragsteller*innen im aktuellen Budget
       feasible_and_undecided_investment_authors: "Autoren von Investitionen im aktuellen Budget, welches nicht [valuation finished unfesasble] erfüllt"
       selected_investment_authors: Autoren ausgewählter Investitionen im aktuellen Budget
