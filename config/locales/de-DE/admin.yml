@@ -587,22 +587,22 @@ de:
         edit: Bearbeiten
         delete: Löschen
         preview: Vorschau
-        empty_newsletters: Es gibt keine Newsletter zum Anzeigen
+        empty_newsletters: Keine Newsletter zum Anzeigen vorhanden
       new:
         title: Neuer Newsletter
-        from: E-Mail-Adresse, die beim Versand des Newsletters angezeigt wird
+        from: E-Mail-Adresse, die als Verfasser des Newsletters angezeigt wird
       edit:
         title: Newsletter bearbeiten
       show:
-        title: Newsletter-Vorschau
+        title: Vorschau des Newsletters
         send: Senden
-        affected_users: (%{n} betroffene Nutzer)
+        affected_users: (%{n} betroffene Benutzer*innen)
         sent_at: Gesendet um
         subject: Betreff
-        segment_recipient: Empfänger
+        segment_recipient: Empfänger*innen
         from: E-Mail-Adresse, die beim Versand des Newsletters angezeigt wird
         body: Inhalt der E-Mail
-        body_help_text: So sehen die Nutzer die E-Mail
+        body_help_text: So sieht die E-Mail für Benutzer*innen aus
         send_alert: Sind Sie sicher, dass Sie diesen Newsletter an %{n} Benutzer senden möchten?
     emails_download:
       index:
@@ -617,17 +617,17 @@ de:
         email: E-Mail
         description: Beschreibung
         no_description: Keine Beschreibung
-        no_valuators: Es gibt keine Gutacher.
-        valuator_groups: "Gutachtergruppen"
+        no_valuators: Keine Begutachter*innen vorhanden.
+        valuator_groups: "Bewertungsgruppe"
         group: "Gruppe"
-        no_group: "Keine Gruppe"
+        no_group: "Ohne Gruppe"
       valuator:
         add: Zu Gutachern hinzufügen
         delete: Löschen
       search:
         title: 'Gutacher: Benutzersuche'
       summary:
-        title: Gutachter-Zusammenfassung für Investitionsprojekte
+        title: Zusammenfassung der Bewertungen der Ausgabenvorschläge
         valuator_name: Gutachter
         finished_and_feasible_count: Abgeschlossen und durchführbar
         finished_and_unfeasible_count: Abgeschlossen und undurchführbar
@@ -637,7 +637,7 @@ de:
         cost: Kosten
       form:
         edit_title: "Gutachter: Gutachter bearbeiten"
-        update: "Gutachter aktualisieren"
+        update: "Begutachter*in aktualisieren"
         updated: "Gutachter erfolgreich aktualisiert"
       show:
         description: "Beschreibung"
@@ -647,13 +647,13 @@ de:
         no_group: "Ohne Gruppe"
     valuator_groups:
       index:
-        title: "Gutachtergruppen"
-        new: "Gutachergruppe erstellen"
+        title: "Bewertungsgruppen"
+        new: "Bewertungsgruppe erstellen"
         name: "Name"
         members: "Mitglieder"
-        no_groups: "Es gibt keine Gutachtergruppen"
+        no_groups: "Keine Bewertungsgruppen vorhanden"
       show:
-        title: "Gutachtergruppe: %{group}"
+        title: "Bewertungsgruppe: %{group}"
         no_valuators: "Es gibt keine Gutachter, die dieser Gruppe zugeordnet sind"
       form:
         name: "Gruppenname"
