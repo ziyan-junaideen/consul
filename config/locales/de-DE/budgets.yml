@@ -31,20 +31,20 @@ de:
     phase:
       drafting: Entwurf (nicht für die Öffentlichkeit sichtbar)
       informing: Information
-      accepting: Angenommene Projekte
-      reviewing: Interne Prüfung der Projekte
+      accepting: Präsentation der Projekte
+      reviewing: Interne Überprüfung der Projekte
       selecting: Auswahlphase
-      valuating: Evaluierung der Projekte
+      valuating: Bewertung der Projekte
       publishing_prices: Veröffentlichung der Projektpreise
       balloting: Finale Abstimmung
-      reviewing_ballots: Abstimmung überprüfen
+      reviewing_ballots: Finale Abstimmung
       finished: Ergebnisse
     index:
-      title: partizipative Haushaltsmittel
-      empty_budgets: Es gibt keine Haushaltsmittel.
+      title: Bürgerhaushalte
+      empty_budgets: Kein Budget vorhanden.
       section_header:
-        icon_alt: Symbol für partizipative Haushaltsmittel
-        title: partizipative Haushaltsmittel
+        icon_alt: Symbol für Bürgerhaushalte
+        title: Bürgerhaushalte
         help: Hilfe mit partizipativen Haushaltsmitteln
         all_phases: Alle Phasen anzeigen
       all_phases: Haushaltsmittel Investitionsphasen
