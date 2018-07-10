@@ -16,3 +16,9 @@ tr:
       comment:
         one: "Yorum"
         other: "Yorumlar"
+      administrator:
+        one: "Yönetici"
+        other: "Yöneticiler"
+      vote:
+        one: "Oy"
+        other: "Oylar"
