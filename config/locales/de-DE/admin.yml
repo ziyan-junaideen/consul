@@ -770,19 +770,19 @@ de:
         officers_tab: Wahlvorsteher*innen
         recounts_tab: Nachzählung
         results_tab: Ergebnisse
-        no_questions: "Es gibt keine Fragen zu dieser Umfrage."
+        no_questions: "Dieser Abstimmung sind keine Fragen zugeordnet."
         questions_title: "Liste der Fragen"
         table_title: "Titel"
       flash:
-        question_added: "Frage zu dieser Umfrage hinzugefügt"
-        error_on_question_added: "Frage konnte diese Umfrage nicht zugewiesen werden"
+        question_added: "Frage zu dieser Abstimmung hinzugefügt"
+        error_on_question_added: "Frage konnte dieser Abstimmung nicht zugeordnet werden"
     questions:
       index:
         title: "Fragen"
         create: "Frage erstellen"
-        no_questions: "Es gibt keine Fragen."
-        filter_poll: Filtern nach Umfrage
-        select_poll: Umfrage auswählen
+        no_questions: "Keine Fragen vorhanden."
+        filter_poll: Filtern nach Abstimmung
+        select_poll: Abstimmung auswählen
         questions_tab: "Fragen"
         successful_proposals_tab: "Erfolgreiche Vorschläge"
         create_question: "Frage erstellen"
@@ -798,8 +798,8 @@ de:
           add_image: "Bild hinzufügen"
           save_image: "Bild speichern"
       show:
-        proposal: Ursprüngliche Vorschlag
-        author: Autor
+        proposal: Ursprünglicher Vorschlag
+        author: Verfasser*in
         question: Frage
         edit_question: Frage bearbeiten
         valid_answers: Gültige Antworten
@@ -809,9 +809,9 @@ de:
           title: Antwort
           description: Beschreibung
           videos: Videos
-          video_list: Video-Liste
+          video_list: Liste der Videos
           images: Bilder
-          images_list: Bilder-Liste
+          images_list: Liste der Bilder
           documents: Dokumente
           documents_list: Liste der Dokumente
           document_title: Titel
@@ -823,7 +823,7 @@ de:
         title: Titel
         description: Beschreibung
         images: Bilder
-        images_list: Bilder-Liste
+        images_list: Liste der Bilder
         edit: Antwort bearbeiten
       edit:
         title: Antwort bearbeiten
@@ -834,20 +834,20 @@ de:
           video_title: Titel
           video_url: Externes Video
         new:
-          title: Neues video
+          title: Neues Video
         edit:
           title: Video bearbeiten
     recounts:
       index:
-        title: "Zählungen"
-        no_recounts: "Es gibt nichts nachzuzählen"
-        table_booth_name: "Wahlkabine"
-        table_total_recount: "Endgültige Nachzählung (vom Beamten)"
+        title: "Nachzählungen"
+        no_recounts: "Es gibt nichts zum Nachzählen"
+        table_booth_name: "Wahlurne"
+        table_total_recount: "Endgültige Nachzählung (Wahlvorsteher*in)"
         table_system_count: "Stimmen (automatisch)"
     results:
       index:
         title: "Ergebnisse"
-        no_results: "Es gibt keine Resultate"
+        no_results: "Keine Ergebnisse vorhanden"
       result:
         table_whites: "Völlig leere Stimmzettel"
         table_nulls: "Ungültige Stimmzettel"
