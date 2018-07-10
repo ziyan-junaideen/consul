@@ -851,41 +851,41 @@ de:
       result:
         table_whites: "Völlig leere Stimmzettel"
         table_nulls: "Ungültige Stimmzettel"
-        table_total: "Gesamtzahl der Stimmzettel"
+        table_total: "Gesamtanzahl der Stimmzettel"
         table_answer: Antwort
         table_votes: Stimmen
       results_by_booth:
-        booth: Wahlkabine
+        booth: Wahlurne
         results: Ergebnisse
         see_results: Ergebnisse anzeigen
-        title: "Ergebnisse nach Wahlkabine"
+        title: "Ergebnisse nach Wahlurne"
     booths:
       index:
-        title: "Liste der aktiven Wahlkabinen"
-        no_booths: "Es gibt keine aktiven Wahlkabinen für irgendwelche bevorstehenden Umfragen."
-        add_booth: "Wahlkabine hinzufügen"
+        title: "Liste der aktiven Wahlurnen"
+        no_booths: "Es gibt keine aktiven Wahlurnen für bevorstehende Abstimmungen."
+        add_booth: "Wahlurne hinzufügen"
         name: "Name"
-        location: "Lage"
-        no_location: "Kein Standort"
+        location: "Standort"
+        no_location: "Ohne Standort"
       new:
-        title: "Neue Wahlkabine"
+        title: "Neue Wahlurne"
         name: "Name"
-        location: "Standpunkt"
-        submit_button: "Wahlkabine erstellen"
+        location: "Standort"
+        submit_button: "Wahlurne erstellen"
       edit:
-        title: "Wahlkabine bearbeiten"
-        submit_button: "Wahlkabine aktualisieren"
+        title: "Wahlurne bearbeiten"
+        submit_button: "Wahlurne aktualisieren"
       show:
         location: "Standort"
       booth:
-        shifts: "Schichten verwalten"
-        edit: "Wahlkabine bearbeiten"
+        shifts: "Arbeitsschichten verwalten"
+        edit: "Wahlurne bearbeiten"
     officials:
       edit:
-        destroy: Status "Beamter" entfernen
-        title: 'Beamte: Nutzer bearbeiten'
+        destroy: Status "Beamte/r" entfernen
+        title: 'Beamte: Benutzer*in bearbeiten'
       flash:
-        official_destroyed: 'Details gespeichert: Der Nutzer ist nicht länger ein Beamter'
+        official_destroyed: 'Daten gespeichert: Der/Die Benutzer*in ist nicht länger ein/e Beamte/r'
         official_updated: Details des Beamten gespeichert
       index:
         title: Beamte
