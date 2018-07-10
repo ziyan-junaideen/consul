@@ -270,9 +270,9 @@ de:
       edit:
         title: Meilenstein bearbeiten
       create:
-        notice: Neuer Meilenstein wurde erfolgreich erstellt!
+        notice: Neuer Meilenstein erfolgreich erstellt!
       update:
-        notice: Meilenstein wurde erfolgreich aktualisiert
+        notice: Meilenstein erfolgreich aktualisiert
       delete:
         notice: Meilenstein erfolgreich gelöscht
     statuses:
@@ -305,7 +305,7 @@ de:
         hidden_debate: Verborgene Diskussion
         hidden_proposal: Verborgener Vorschlag
         title: Verborgene Kommentare
-        no_hidden_comments: Es gibt keine verborgenen Kommentare.
+        no_hidden_comments: Keine verborgenen Kommentare vorhanden.
     dashboard:
       index:
         back: Zurück zu %{org}
@@ -319,7 +319,7 @@ de:
           with_confirmed_hide: Bestätigt
           without_confirmed_hide: Ausstehend
         title: Verborgene Diskussionen
-        no_hidden_debates: Es gibt keine verborgenen Diskussionen.
+        no_hidden_debates: Keine verborgenen Diskussionen vorhanden.
     hidden_users:
       index:
         filter: Filter
