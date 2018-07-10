@@ -21,10 +21,13 @@ pl:
         few: "%{count} odpowiedzi"
         many: "%{count} odpowiedzi"
         other: "%{count} odpowiedzi"
+      user_deleted: Użytkownik usunięty
       votes:
         zero: Brak głosów
     form:
       leave_comment: Zostaw swój komentarz
+    orders:
+      most_commented: Najczęściej komentowane
   debates:
     edit:
       form:
