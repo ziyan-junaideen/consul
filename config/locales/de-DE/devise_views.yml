@@ -45,7 +45,9 @@ de:
           password_label: Passwort
           phone_number_label: Telefonnummer
           responsible_name_label: Vollständiger Name der Person, verantwortlich für das Kollektiv
+          responsible_name_note: Dies wäre die Person, die den Verein oder das Kollektiv repräsentiert und in dessen Namen der Vorschlag präsentiert wird
           submit: Registrieren
+          title: Als Organisation oder Kollektiv anmelden
         success:
           back_to_index: Verstanden, zurück zur Startseite
     passwords:
