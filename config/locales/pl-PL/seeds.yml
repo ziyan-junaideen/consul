@@ -1,0 +1,18 @@
+pl:
+  seeds:
+    organizations:
+      human_rights: Prawa Człowieka
+    categories:
+      associations: Stowarzyszenia
+      culture: Kultura
+      sports: Sport
+      participation: Partycypacja
+      mobility: Transport
+      media: Media
+      transparency: Przejrzystość
+    budgets:
+      budget: Budżet partycypacyjny
+      groups:
+        districts: Dzielnice
+      valuator_groups:
+        culture_and_sports: Kultura i sport
