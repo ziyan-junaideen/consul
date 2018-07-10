@@ -1133,50 +1133,50 @@ de:
         budgets_title: Bürgerhaushalt
         visits_title: Besuche
         direct_messages: Direktnachrichten
-        proposal_notifications: Vorschlagsbenachrichtigung
+        proposal_notifications: Benachrichtigungen zu einem Vorschlag
         incomplete_verifications: Unvollständige Überprüfungen
-        polls: Umfragen
+        polls: Abstimmungen
       direct_messages:
         title: Direktnachrichten
         total: Gesamt
-        users_who_have_sent_message: Nutzer, die eine private Nachricht verschickt haben
+        users_who_have_sent_message: Benutzer*innen, die eine persönliche Nachricht versendet haben
       proposal_notifications:
         title: Benachrichtigungen zu einem Vorschlag
         total: Gesamt
         proposals_with_notifications: Vorschläge mit Benachrichtigungen
       polls:
-        title: Umfrage Statistik
-        all: Umfragen
-        web_participants: Web-Teilnehmer
-        total_participants: Gesamtanzahl TeilnehmerInnen
-        poll_questions: "Fragen der Umfrage: %{poll}"
+        title: Abstimmungsstatistik
+        all: Abstimmungen
+        web_participants: Web-Teilnehmer*innen
+        total_participants: Gesamtanzahl Teilnehmer*innen
+        poll_questions: "Fragen der Abstimmung: %{poll}"
         table:
-          poll_name: Umfrage
+          poll_name: Abstimmung
           question_name: Frage
-          origin_web: Web-Teilnehmer
-          origin_total: Gesamtanzahl TeilnehmerInnen
+          origin_web: Web-Teilnehmer*innen
+          origin_total: Gesamtanzahl Teilnehmer*innen
     tags:
       create: Thema erstellen
       destroy: Thema löschen
       index:
-        add_tag: Neues Antragsthema hinzufügen
-        title: Themen für Anträge
+        add_tag: Neues Vorschlagsthema hinzufügen
+        title: Themen der Vorschläge
         topic: Thema
-        help: "Wenn ein Nutzer einen Vorschlag erstellt, werden die folgen Themen automatisch als tag vorgeschlagen."
+        help: "Wenn ein*e Benutzer*in einen Vorschlag erstellt, werden die folgenden Themen als Standard-Tags vorgeschlagen."
       name:
         placeholder: Geben Sie den Namen des Themas ein
     users:
       columns:
         name: Name
         email: E-Mail
-        document_number: Dokumentennummern
+        document_number: Ausweis/Pass/Aufenthaltsbetätigung
         roles: Rollen
         verification_level: Überprüfungsstatus
       index:
-        title: Benutzer
-        no_users: Es gibt keine Benutzer.
+        title: Benutzer*in
+        no_users: Keine Benutzer*innen vorhanden.
       search:
-        placeholder: Benutzer nach E-Mail, Name oder Dokumentennummer suchen
+        placeholder: Suche Benutzer*in nach E-Mail, Name oder Ausweis suchen
         search: Suchen
     verifications:
       index:
@@ -1186,16 +1186,16 @@ de:
     site_customization:
       content_blocks:
         information: Informationen zu Inhaltsblöcken
-        about: Sie können HTML-Inhaltsblöcke erstellen, die in die Kopf- oder Fußzeile Ihrer CONSUL eingefügt werden.
+        about: Sie können HTML-Inhaltsblöcke erstellen, die in die Kopf- oder Fußzeile von CONSUL eingefügt werden.
         top_links_html: "<strong>Kopfzeilen-Blöcke (Top_links)</strong> sind Blöcke von Links, die dieses Format haben müssen:"
         footer_html: "<strong>Fußzeilenblöcke</strong> können jedes beliebige Format haben und zum Einfügen von Javascript, CSS oder benutzerdefiniertem HTML verwendet werden."
-        no_blocks: "Es gibt keine Inhaltsblöcke."
+        no_blocks: "Keine Inhaltsblöcke vorhanden."
         create:
           notice: Inhaltsblock erfolgreich erstellt
           error: Inhaltsblock konnte nicht erstellt werden
         update:
           notice: Inhaltsblock erfolgreich aktualisiert
-          error: Inhaltsblock konnten nicht aktualisiert werden
+          error: Inhaltsblock konnte nicht aktualisiert werden
         destroy:
           notice: Inhalsblock erfolgreich gelöscht
         edit:
