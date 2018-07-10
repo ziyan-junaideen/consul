@@ -1210,12 +1210,12 @@ de:
         new:
           title: Neuen Inhaltsblock erstellen
         content_block:
-          body: Körper
+          body: Inhalt
           name: Name
       images:
         index:
-          title: Benutzerdefinierte Bilder
-          update: Update
+          title: Benutzer*definierte Bilder
+          update: Aktualisieren
           delete: Löschen
           image: Bild
         update:
@@ -1243,10 +1243,10 @@ de:
         index:
           create: Neue Seite erstellen
           delete: Seite löschen
-          title: Benutzerdefinierte Seiten
+          title: Benutzer*definierte Seiten
           see_page: Seite anzeigen
         new:
-          title: Neue benutzerdefinierte Seite erstellen
+          title: Neue benutzer*definierte Seite erstellen
         page:
           created_at: Erstellt am
           status: Status
