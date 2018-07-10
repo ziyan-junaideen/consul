@@ -71,6 +71,8 @@ fr:
       index:
         confirm: Êtes-vous sûr(e) ?
         filter: Filtre
+        filters:
+          all: Tout
     users:
       index:
         hidden: Bloqué
