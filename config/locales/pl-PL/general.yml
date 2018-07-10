@@ -22,3 +22,106 @@ pl:
         other: "%{count} odpowiedzi"
       votes:
         zero: Brak głosów
+    form:
+      leave_comment: Zostaw swój komentarz
+  debates:
+    edit:
+      form:
+        submit_button: Zapisz zmiany
+    form:
+      tags_label: Tematy
+    index:
+      orders:
+        created_at: najnowsze
+        most_commented: najczęściej komentowane
+        recommendations: rekomendacje
+      search_form:
+        button: Szukaj
+        title: Szukaj
+      section_footer:
+        budget_link: budżety partycypacyjne
+    new:
+      more_info: Więcej informacji
+    show:
+      comments_title: Komentarze
+      edit_debate_link: Edytuj
+  form:
+    policy: Polityka prywatności
+    verification/sms: telefon
+    document: Dokument
+    topic: Temat
+    image: Obraz
+  layouts:
+    application:
+      chrome: Google Chrome
+      firefox: Firefox
+    footer:
+      consul: Aplikacja CONSUL
+      consul_url: https://github.com/consul/consul
+      copyright: CONSUL, %{year}
+      open_data_title: Otwarte dane
+      participation_title: Partycypacja
+      privacy: Polityka prywatności
+      transparency_title: Przejrzystość
+      transparency_url: https://transparency.consul
+    header:
+      available_locales: Dostępne wersje językowe
+      collaborative_legislation: Procesy legislacyjne
+      external_link_blog: Blog
+      external_link_opendata: Otwarte dane
+      external_link_opendata_url: https://opendata.consul
+      external_link_transparency: Przejrzystość
+      external_link_transparency_url: https://transparency.consul
+  locale: angielski
+  notifications:
+    index:
+      empty_notifications: Nie masz nowych powiadomień.
+      mark_all_as_read: Zaznacz wszystkie jako przeczytane.
+      title: Powiadomienia
+    notification:
+      mark_as_read: Zaznacz wszystkie jako przeczytane.
+  omniauth:
+    facebook:
+      name: Facebook
+    google_oauth2:
+      name: Google
+    twitter:
+      name: Twitter
+    or_fill: "Lub wypełnij formularz:"
+  proposals:
+    edit:
+      form:
+        submit_button: Zapisz zmiany
+    retire_options:
+      other: Inne
+    form:
+      tags_label: Tagi
+    index:
+      orders:
+        created_at: najnowsze
+        most_commented: najczęściej komentowane
+      retired_links:
+        other: Inne
+      search_form:
+        button: Szukaj
+        title: Szukaj
+    show:
+      comments:
+        zero: Brak komentarzy
+      comments_tab: Komentarze
+      edit_proposal_link: Edytuj
+      share: Udostępnij
+  polls:
+    index:
+      title: "Ankiety"
+      no_geozone_restricted: "Wszystkie miasta"
+      geozone_restricted: "Dzielnice"
+    show:
+      back: Wróć do głosowania
+      comments_tab: Komentarze
+      verify_link: "zweryfikuj swoje konto"
+      more_info_title: "Więcej informacji"
+  proposal_notifications:
+    new:
+      title_label: "Tytuł"
+      body_label: "Wiadomość"
