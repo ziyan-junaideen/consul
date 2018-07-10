@@ -7,11 +7,14 @@ pl:
       phone_number_label: Numer telefonu
       save_changes_submit: Zapisz zmiany
       title: Moje konto
+      username_label: Nazwa użytkownika/użytkowniczki
+      verified_account: Konto zweryfikowane
       verify_my_account: Zweryfikuj swoje konto
   application:
     close: Zamknij
     menu: Menu
   comments:
+    comments_closed: Komentarze są wyłączone
     verify_account: zweryfikuj swoje konto
     comment:
       admin: Administrator
@@ -28,7 +31,12 @@ pl:
       leave_comment: Zostaw swój komentarz
     orders:
       most_commented: Najczęściej komentowane
+  comments_helper:
+    reply_link: Odpowiedz
   debates:
+    debate:
+      comments:
+        zero: Brak komentarzy
     edit:
       form:
         submit_button: Zapisz zmiany
