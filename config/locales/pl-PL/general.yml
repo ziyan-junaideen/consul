@@ -5,6 +5,7 @@ pl:
       notifications: Powiadomienia
       organization_name_label: Nazwa organizacji
       phone_number_label: Numer telefonu
+      save_changes_submit: Zapisz zmiany
       title: Moje konto
       verify_my_account: Zweryfikuj swoje konto
   application:
