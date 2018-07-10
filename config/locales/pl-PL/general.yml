@@ -125,3 +125,64 @@ pl:
     new:
       title_label: "Tytuł"
       body_label: "Wiadomość"
+      submit_button: "Wyślij wiadomość"
+  shared:
+    edit: 'Edytuj'
+    advanced_search:
+      date_placeholder: 'DD/MM/RRRR'
+      date_range_blank: 'Wybierz datę'
+      date_1: 'Ostatnie 24 godziny'
+      date_2: 'Ostatni tydzień'
+      date_3: 'Ostatni miesiąc'
+      date_4: 'Ostatni rok'
+    back: Wróć
+    check: Wybierz
+    check_all: Wszystko
+    hide: Ukryj
+    search: Szukaj
+    show: Pokaż
+    tags_cloud:
+      districts: "Dzielnice"
+      districts_list: "Lista dzielnic"
+      categories: "Kategorie"
+    you_are_in: "Jesteś w"
+    outline:
+      budget: Budżet partycypacyjny
+  spending_proposals:
+    form:
+      description: Opis
+      submit_buttons:
+        create: Utwórz
+        new: Utwórz
+    index:
+      search_form:
+        button: Szukaj
+        title: Szukaj
+    show:
+      share: Udostępnij
+  stats:
+    index:
+      comments: Komentarze
+  users:
+    direct_messages:
+      new:
+        body_label: Wiadomość
+        submit_button: Wyślij wiadomość
+        title: Wyślij prywatną wiadomość do %{receiver}
+        title_label: Tytuł
+    show:
+      comments: Komentarze
+  votes:
+    agree: Zgadzam się
+    disagree: Nie zgadzam się
+    verify_account: zweryfikuj swoje konto
+  welcome:
+    verification:
+      title: Weryfikacja konta
+    welcome:
+      user_permission_verify_my_account: Zweryfikuj moje konto
+  related_content:
+    placeholder: "%{url}"
+    submit: "Dodaj"
+    score_positive: "Tak"
+    score_negative: "Nie"
