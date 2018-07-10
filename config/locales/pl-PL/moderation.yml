@@ -1,0 +1,28 @@
+pl:
+  moderation:
+    comments:
+      index:
+        filters:
+          all: Wszystkie
+          pending_flag_review: Oczekujące
+        headers:
+          comment: Skomentuj
+        hide_comments: Ukryj komentarze
+        orders:
+          newest: Najnowsze
+        title: Komentarze
+    dashboard:
+      index:
+        title: Moderacja
+    debates:
+      index:
+        confirm: Jesteś pewny/a?
+    menu:
+      flagged_comments: Komentarze
+    users:
+      index:
+        hidden: Zablokowany
+        hide: Blokuj
+        search: Szukaj
+        search_placeholder: e-mail lub nazwa użytkownika
+      notice_hide: Użytkownik jest zablokowany. Wszystkie dyskusje i komentarze tego użytkownika zostały ukryte.
