@@ -564,20 +564,20 @@ de:
     segment_recipient:
       all_users: Alle Benutzer*innen
       administrators: Administrator*innen
-      proposal_authors: Verfasser*innen der Vorschläge
+      proposal_authors: Antragsteller*innen
       investment_authors: Antragsteller*innen im aktuellen Budget
-      feasible_and_undecided_investment_authors: "Autoren von Investitionen im aktuellen Budget, welches nicht [valuation finished unfesasble] erfüllt"
-      selected_investment_authors: Autoren ausgewählter Investitionen im aktuellen Budget
-      winner_investment_authors: Autoren der prämierten Investitionen im aktuellen Budget
-      not_supported_on_current_budget: Benutzer, die keine Investitionen aus dem aktuellen Budget unterstützt haben
-      invalid_recipients_segment: "Das Empfänger-Benutzer-Segment ist ungültig"
+      feasible_and_undecided_investment_authors: "Antragsteller*innen im aktuellen Budget, welches nicht [valuation finished unfesasble] erfüllt"
+      selected_investment_authors: Antragsteller*innen ausgewählter Vorschläge im aktuellen Budget
+      winner_investment_authors: Antragsteller*innen der ausgewählten Vorschläge im aktuellen Budget
+      not_supported_on_current_budget: Benutzer*innen, die keine Vorschläge im aktuellen Budget unterstützt haben
+      invalid_recipients_segment: "Das Empfänger*innnensegment ist ungültig"
     newsletters:
       create_success: Newsletter erfolgreich erstellt
       update_success: Newsletter erfolgreich aktualisiert
-      send_success: Newsletter erfolgreich ausgeschickt
+      send_success: Newsletter erfolgreich versendet
       delete_success: Newsletter erfolreich gelöscht
       index:
-        title: Newsletters
+        title: Newsletter
         new_newsletter: Neuer Newsletter
         subject: Betreff
         segment_recipient: Empfänger
