@@ -51,6 +51,8 @@ de:
         success:
           back_to_index: Verstanden, zurück zur Startseite
           instructions_1_html: "<b>wir werden Sie bald kontaktieren</b> um zu bestätigen, dass Sie tatsächlich das Kollektiv repräsentieren."
+          instructions_2_html: Während Ihre <b>E-Mail überprüft wird</b>, haben wir Ihnen einen <b>Link zum bestätigen Ihres Benutzerkontos</b> geschickt.
+          instructions_3_html: Wenn bestätigt, können Sie beginnen sich als unbestätigtes Kollektiv zu beteiligen.
     passwords:
       edit:
         change_submit: Mein Passwort ändern
