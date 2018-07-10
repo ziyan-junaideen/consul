@@ -327,9 +327,9 @@ de:
           all: Alle
           with_confirmed_hide: Bestätigt
           without_confirmed_hide: Ausstehend
-        title: Verborgene Benutzer/innen
-        user: Benutzer/in
-        no_hidden_users: Es gibt keine verborgenen Benutzer/innen.
+        title: Verborgene Benutzer*innen
+        user: Benutzer*in
+        no_hidden_users: Keine verborgenen Benutzer*innen vorhanden.
       show:
         email: 'E-Mail:'
         hidden_at: 'Verborgen am:'
@@ -375,7 +375,7 @@ de:
             all: Alle
         new:
           back: Zurück
-          title: Erstellen Sie ein neues kollaboratives Gesetzgebungsverfahren
+          title: Neues kollaboratives Gesetzgebungsverfahren erstellen
           submit_button: Beteiligungsverfahren erstellen
         process:
           title: Beteiligungsverfahren
@@ -399,10 +399,10 @@ de:
           custom_categories_description: Kategorien, die Benutzer*innen bei der Erstellung eines Vorschlags auswählen können.
       draft_versions:
         create:
-          notice: 'Entwurf erfolgreich erstellt. <a href="%{link}">Jetzt besuchen</a>'
+          notice: 'Entwurf erfolgreich erstellt. <a href="%{link}">Zum Anzeigen hier klicken</a>'
           error: Entwurf konnte nicht erstellt werden
         update:
-          notice: 'Entwurf erfolgreich aktualisiert. <a href="%{link}">Jetzt besuchen</a>'
+          notice: 'Entwurf erfolgreich aktualisiert. <a href="%{link}">Zum Anzeigen hier klicken</a>'
           error: Entwurf konnte nicht aktualisiert werden
         destroy:
           notice: Entwurf erfolgreich gelöscht
@@ -414,7 +414,7 @@ de:
           form:
             error: Fehler
         form:
-          title_html: 'Bearbeiten von <span class="strong">-%{draft_version_title}-</span> vom Prozess <span class="strong">%{process_title}</span>'
+          title_html: 'Bearbeiten des <span class="strong">-%{draft_version_title}-</span> Beteiligungsverfahrens <span class="strong">%{process_title}</span>'
           launch_text_editor: Textbearbeitung öffnen
           close_text_editor: Textbearbeitung schließen
           use_markdown: Verwenden Sie Markdown, um den Text zu formationen
@@ -484,18 +484,18 @@ de:
           remove_option: Entfernen
     managers:
       index:
-        title: Manager
+        title: Manager*innen
         name: Name
         email: E-Mail
-        no_managers: Es gibt keine Manager.
+        no_managers: Keine Manager vorhanden.
       manager:
         add: Hinzufügen
         delete: Löschen
       search:
-        title: 'Manager: Benutzer*suche'
+        title: 'Manager: Benutzer*innensuche'
     menu:
       activity: Moderatoren*aktivität
-      admin: Administrator*-Menü
+      admin: Administrator*innen-Menü
       banner: Banner verwalten
       poll_questions: Fragen
       proposals_topics: Themen für Vorschläge
@@ -504,7 +504,7 @@ de:
       hidden_comments: Verborgene Kommentare
       hidden_debates: Verborgene Diskussionen
       hidden_proposals: Verborgene Vorschläge
-      hidden_proposal_notifications: Verborgene Benachrichtigungen
+      hidden_proposal_notifications: Benachrichtigungen zu verborgenen Vorschlägen
       hidden_users: Verborgene Benutzer*innen
       administrators: Administrator*innen
       managers: Manager*innen
