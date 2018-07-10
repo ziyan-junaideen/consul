@@ -1048,56 +1048,56 @@ de:
         undefined: Undefiniert
       summary:
         title: Zusammenfassung der Ausgabenvorschläge
-        title_proposals_with_supports: Zusammenfassung für Investitionsprojekte mit Unterstützungen
-        geozone_name: Rahmen
-        finished_and_feasible_count: Fertig und durchführbar
-        finished_and_unfeasible_count: Fertig und undurchführbar
-        finished_count: Fertig
+        title_proposals_with_supports: Zusammenfassung der Ausgabenvorschläge, die die Unterstützungsphase passiert haben
+        geozone_name: Bereich
+        finished_and_feasible_count: Abgeschlossen und durchführbar
+        finished_and_unfeasible_count: Abgeschlossen und undurchführbar
+        finished_count: Abgeschlossen
         in_evaluation_count: In Auswertung
         total_count: Gesamt
-        cost_for_geozone: Kosten
+        cost_for_geozone: Gesamtkosten
     geozones:
       index:
-        title: Geo-Zone
-        create: Geo-Zone erstellen
+        title: Bezirke
+        create: Bezirk erstellen
         edit: Bearbeiten
         delete: Löschen
       geozone:
         name: Name
         external_code: Externer Code
-        census_code: Volkszählungs-Code
+        census_code: Melderegister Code
         coordinates: Koordinaten
       errors:
         form:
           error:
             one: "ein Fehler verhinderte, dass diese Geo-Zone gespeichert wurde"
-            other: 'Fehler verhinderten, dass diese Geo-Zone gespeichert wurde'
+            other: 'Fehler verhinderten, dass dieser Bezirk werden konnten'
       edit:
         form:
           submit_button: Änderungen speichern
-        editing: Geo-Zone bearbeiten
+        editing: Bezirk bearbeiten
         back: Zurück
       new:
         back: Zurück
         creating: Bezirk anlegen
       delete:
-        success: Geo-Zone erfolgreich gelöscht
-        error: Diese Geo-Zone kann nicht gelöscht werden, da Elemente an sie angehängt sind
+        success: Bezirk erfolgreich gelöscht
+        error: Der Bezirk kann nicht gelöscht werden, da ihm bereits Elemente zugeordnet sind
     signature_sheets:
-      author: Autor
+      author: Verfasser*in
       created_at: Erstellungsdatum
       name: Name
-      no_signature_sheets: "Es gibt keine signature_sheets"
+      no_signature_sheets: "Keine Unterschriftenbögen vorhanden"
       index:
-        title: Unterschriftenseiten
-        new: Neue Unterschriftenseiten
+        title: Unterschriftenbögen
+        new: Neue Unterschriftenbögen
       new:
-        title: Neue Unterschriftenseiten
-        document_numbers_note: "Schreiben Sie die Zahlen durch Kommas (,) getrennt"
-        submit: Unterschriftenseite erstellen
+        title: Neue Unterschriftenbögen
+        document_numbers_note: "Geben Sie die Nummern durch Kommas (,) getrennt ein"
+        submit: Unterschriftenbogen erstellen
       show:
         created_at: Erstellt
-        author: Autor
+        author: Verfasser*in
         documents: Dokumente
         document_count: "Anzahl von Dokumenten:"
         verified:
