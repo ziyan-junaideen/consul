@@ -86,6 +86,9 @@ de:
           other: " enthält die Begriffe <strong>'%{search_term}'</strong>"
         sidebar:
           my_ballot: Mein Stimmzettel
+          voted_html:
+            one: "<strong>Sie haben für einen Vorschlag mit Kosten von %{amount_spent}-</strong> gestimmt"
+            other: "<strong>Sie haben für Vorschläge mit Kosten von %{amount_spent}</strong> gestimmt %{count}"
           voted_info: Sie können bis zur Schließung der Phase uederzeit %{link}. Es gibt keinen Grund sämtliches verfügbares Geld auszugeben.
           voted_info_link: Bewertung ändern
           different_heading_assigned_html: "Sie haben aktive Stimmen in einer anderen Überschrift: %{heading_link}"
