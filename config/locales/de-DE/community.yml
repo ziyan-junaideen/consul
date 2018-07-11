@@ -34,7 +34,7 @@ de:
       author: Autor
       back: Zurück zu %{community} %{proposal}
     topic:
-      create: Thema erstellen
+      create: Ein Thema erstellen
       edit: Thema bearbeiten
       form:
         topic_title: Titel
@@ -52,7 +52,7 @@ de:
           comments_tab: Kommentare
       sidebar:
         recommendations_title: Empfehlungen zum Erstellen eines Themas
-        recommendation_one: Schreiben Sie den Themen-Titel oder ganze Sätze nicht in Großbuchstaben. Im Internet wird das als Geschrei betrachtet (und niemand wird gerne angeschrien).
+        recommendation_one: Schreiben Sie den Themen-Titel oder ganze Sätze nicht in Großbuchstaben. Im Internet wird dies als Geschrei betrachtet. Und niemand wird gerne angeschrien.
         recommendation_two: Themen oder Kommentare, die illegale Handlungen beinhalten, werden gelöscht. Auch diejenigen, die die Diskussionen absichtlich sabotieren. Alles andere ist erlaubt.
         recommendation_three: Genießen Sie diesen Ort, die Stimmen, die ihn füllen, es ist auch Ihrer.
   topics:
