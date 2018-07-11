@@ -13,10 +13,10 @@ de:
         voted_info_html: "Sie können Ihre Stimme bis zum Ende dieser Phase jederzeit ändern. <br> Sie müssen nicht das gesamte verfügbare Geld ausgeben."
         zero: Sie haben noch nicht für einen Ausgabenvorschlag abgestimmt.
       reasons_for_not_balloting:
-        not_logged_in: Sie müssen sich %{signin} oder %{signup}, um fortfahren zu können.
-        not_verified: Nur verifizierte Benutzer*innen können über einen Ausgabenvorschlag abstimmen; %{verify_account}.
+        not_logged_in: Sie müssen %{signin} oder %{signup} um fortfahren zu können.
+        not_verified: Nur verifizierte NutzerInnen können für Inestitionen abstimmen; %{verify_account}.
         organization: Organisationen dürfen nicht abstimmen
-        not_selected: Für undurchführbare Ausgabenvorschläge kann nicht abgestimmt werden
+        not_selected: Nicht ausgewählte Investitionen können nicht unterstützt werden
         not_enough_money_html: "Sie haben bereits das verfügbare Budget zugewiesen.<br><small>Bitte denken Sie daran, dass Sie dies %{change_ballot} jederzeit</small>ändern können"
         no_ballots_allowed: Auswahlphase ist abgeschlossen
         different_heading_assigned_html: "Sie haben bereits für eine andere Rubrik gestimmt: %{heading_link}"
