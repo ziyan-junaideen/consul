@@ -1,0 +1,10 @@
+pl:
+  budgets:
+    ballots:
+      show:
+        amount_spent: Łączna wartość wybranych projektów
+        zero: Nie wybrałeś/aś jeszcze żadnego projektu.
+      reasons_for_not_balloting:
+        not_verified: W głosowaniu mogą wziąć udział tylko zweryfikowani użytkownicy. %{verify_account}.
+    phase:
+      drafting: Wersja robocza (niewidoczna dla pozostałych użytkowników)
