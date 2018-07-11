@@ -8,3 +8,14 @@ pl:
         not_verified: W głosowaniu mogą wziąć udział tylko zweryfikowani użytkownicy. %{verify_account}.
     phase:
       drafting: Wersja robocza (niewidoczna dla pozostałych użytkowników)
+    index:
+      see_results: Zobacz wyniki
+    investments:
+      index:
+        sidebar:
+          create: "Utwórz nowy projekt"
+          feasible: Projekty uznane za możliwe do realizacji
+          unfeasible: Projekty uznane za niemożliwe do realizacji
+      show:
+        price: Koszt
+        comments_tab: Komentarze
