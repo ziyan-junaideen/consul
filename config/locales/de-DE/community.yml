@@ -3,13 +3,13 @@ de:
     sidebar:
       title: Community
       description:
-        proposal: Werden Sie ein Teil der Vorschlags-Community.
-        investment: Nehmen Sie teil in der Benutzer-Community zu dieser Investierung.
-      button_to_access: Treten Sie der Community bei
+        proposal: Beteiligen Sie sich in der Nutzergemeinde für diesen Vorschlag.
+        investment: Beteiligen Sie sich in der Nutzergemeinde dieser Investition.
+      button_to_access: Treten Sie der Gemeinde bei
     show:
       title:
-        proposal: Vorschlags-Community
-        investment: Budgetinvestitions-Community
+        proposal: Vorschlags Gemeinde
+        investment: Haushaltsimvestitions Gemeinde
       description:
         proposal: Nehmen Sie teil an der Community zu diesem Vorschlag. Eine aktive Community kann helfen den Inhalt des Vorschlags zu verbessern und die Verbreitung des Vorschlags zu vergrößern um mehr Unterstützung zu bekommen.
         investment: Nehmen Sie an der Community dieser Budgetinvestition teil. Eine aktive Community kann helfen den Inhalt der Budgetinvestition zu verbessern und die Verbreitung des Vorschlags zu vergrößern um mehr Unterstützung zu bekommen.
