@@ -24,14 +24,14 @@ de:
     groups:
       show:
         title: Wählen Sie eine Option
-        unfeasible_title: Undurchführbare Ausgabenvorschläge
-        unfeasible: Undurchführbare Ausgabenvorschläge anzeigen
-        unselected_title: Ausgabenvorschläge, die nicht für die Abstimmungsphase ausgewählt wurden
-        unselected: Ausgabenvorschläge, die nicht für die Abstimmungsphase ausgewählt wurden, anzeigen
+        unfeasible_title: undurchführbare Investitionen
+        unfeasible: Undurchführbare Investitionen anzeigen
+        unselected_title: Investitionen, die nicht für die Abstimmungsphase ausgewählt wurden
+        unselected: Investitionen, die nicht für die Abstimmungsphase ausgewählt wurden, anzeigen
     phase:
       drafting: Entwurf (nicht für die Öffentlichkeit sichtbar)
-      informing: Information
-      accepting: Präsentation der Projekte
+      informing: Informationen
+      accepting: Projekte annehmen
       reviewing: Interne Überprüfung der Projekte
       selecting: Auswahlphase
       valuating: Bewertung der Projekte
