@@ -54,7 +54,7 @@ de:
   errors:
     messages:
       already_confirmed: "Sie wurden bereits verifziert. Bitte melden Sie sich nun an."
-      confirmation_period_expired: "Sie müssen innerhalb von %{period} bestätigt werden: Bitte stellen sie eine neue Anfrage."
+      confirmation_period_expired: "Sie müssen innerhalb von %{period} bestätigt werden: Bitte stellen Sie eine neue Anfrage."
       expired: "ist abgelaufen; bitte stellen sie eine neue Anfrage."
       not_found: "nicht gefunden."
       not_locked: "wurde nicht gesperrt."
