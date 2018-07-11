@@ -56,7 +56,7 @@ de:
       see_results: Ergebnisse anzeigen
       section_footer:
         title: Hilfe mit dem Bürgerhaushalt
-        description: Mit partizipativen Haushaltsmitteln können Bürger entscheiden an welche Projekte, die durch Nachbarn vorgeschlagen wurden, ein bestimmter Teil des kommunalen Haushaltes geht.
+        description: Durch den Bürgerhaushalt können Bürger*innen entscheiden an welche Projekte, die durch Nachbarn vorgeschlagen wurden, ein bestimmter Teil des kommunalen Budgets geht.
         help_text_1: "Partizipative Haushaltsmittel sind Prozesse durch welche Bürger direkt entscheiden wofür ein Teil des kommunalen Haushaltes ausgegeben wird. Jede registrierte Person über 16 Jahre kann ein Investitionsprojekt vorschlagen, welches in einer Vorauswahlsphase Unterstützung durch Mitbürger finden muss."
         help_text_2: "Die Projekte mit den meisten Stimmen werden ausgewertet und weitergeleitet zur finalen Abstimmung, in welcher entschieden wird welche Tätigkeiten der Stadtrat ausführen wird, wenn der kommunale Haushalt für das folgende Jahr genehmigt wurde."
         help_text_3: "Die Vorstellung der Projekte für die partizipativen Haushaltsmittel beginnt im Januar und dauert eineinhalb Monate. Um teilzunehmen und Projektvorschläge, die die ganze Stadt und/oder ein Stadtviertel betreffen, einzureichen, müssen Sie sich auf %{org} registrieren und Ihr Benutzerkonto bestätigen."
