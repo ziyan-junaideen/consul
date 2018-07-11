@@ -33,23 +33,23 @@ de:
       informing: Informationen
       accepting: Projekte annehmen
       reviewing: Interne Überprüfung der Projekte
-      selecting: Auswahlphase
-      valuating: Bewertung der Projekte
-      publishing_prices: Veröffentlichung der Projektpreise
-      balloting: Finale Abstimmung
-      reviewing_ballots: Finale Abstimmung
-      finished: Ergebnisse
+      selecting: Projekte auswählen
+      valuating: Projekte Bewerten
+      publishing_prices: Preise der Projekte veröffentlichen
+      balloting: Wahlprojekte
+      reviewing_ballots: Wahl überprüfen
+      finished: Abgeschlossener Haushalt
     index:
-      title: Bürgerhaushalte
+      title: partizipative Haushaltsmittel
       empty_budgets: Kein Budget vorhanden.
       section_header:
-        icon_alt: Symbol für Bürgerhaushalte
-        title: Bürgerhaushalte
+        icon_alt: Symbol für partizipative Haushaltsmittel
+        title: partizipative Haushaltsmittel
         help: Hilfe mit dem Bürgerhaushalt
         all_phases: Alle Phasen anzeigen
-      all_phases: Phasen des Bürgerhaushalts
+      all_phases: Investitionsphasen des Haushalts
       map: Geographisch lokalisierbare Projekte
-      investment_proyects: Liste aller Ausgabenvorschläge
+      investment_proyects: Liste aller Investitionsprojekte
       unfeasible_investment_proyects: Liste aller undurchführbaren Ausgabenvorschläge
       not_selected_investment_proyects: Liste aller Ausgabenvorschläge, die nicht zur Abstimmung ausgewählt wurden
       finished_budgets: Abgeschlossene Bürgerhaushalte
