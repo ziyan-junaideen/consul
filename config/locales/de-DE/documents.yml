@@ -1,5 +1,6 @@
 de:
   documents:
+    title: Dokumente
     max_documents_allowed_reached_html: Sie haben die maximale Anzahl der erlaubten Unterlagen erreicht! <strong>Um einen anderen hochladen zu können, müssen sie eines löschen.</strong>
     form:
       title: Unterlagen
