@@ -98,14 +98,14 @@ de:
           current_password_label: Aktuelles Passwort
           edit: Bearbeiten
           email_label: E-Mail
-          leave_blank: Bitte freilassen, wenn Sie nichts verändern möchten
-          need_current: Wir brauchen Ihr aktuelle Passwort, um die Änderungen zu bestätigen
+          leave_blank: Freilassen, wenn Sie nichts verändern möchten
+          need_current: Wir brauchen Ihr aktuelles Passwort, um die Änderungen zu bestätigen
           password_confirmation_label: Neues Passwort bestätigen
           password_label: Neues Passwort
           update_submit: Update
           waiting_for: 'Warten auf Bestätigung von:'
         new:
-          cancel: Login abbrechen
+          cancel: Anmeldung abbrechen
           email_label: E-Mail
           organization_signup: Vertreten Sie eine Organisation oder ein Kollektiv? %{signup_link}
           organization_signup_link: Registrieren Sie sich hier
@@ -122,8 +122,8 @@ de:
           username_label: Benutzername
           username_note: Namen, der neben Ihren Beiträgen angezeigt wird
         success:
-          back_to_index: Ich verstehe; zurück zur Hauptseite
-          instructions_1_html: Bitte <b>überprüfen Sie Ihren E-Maileingang</b> - wir haben Ihnen einen <b>Link zur Bestätigung Ihres Kontos</b> geschickt.
-          instructions_2_html: Nach der Bestätigung können Sie beginnen teilzunehmen.
+          back_to_index: Verstanden; zurück zur Hauptseite
+          instructions_1_html: Bitte <b>überprüfen Sie Ihren E-Maileingang</b> - wir haben Ihnen einen <b>Link zur Bestätigung Ihres Benutzerkontos</b> geschickt.
+          instructions_2_html: Nach der Bestätigung können Sie mit der Teilnahme beginnen.
           thank_you_html: Danke für Ihre Registrierung für diese Website. Sie müssen nun <b>Ihre E-Mail-Adresse bestätigen</b>.
           title: Ihre E-Mail-Adresse ändern
