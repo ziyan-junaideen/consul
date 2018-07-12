@@ -14,7 +14,7 @@ de:
         zero: Sie haben noch nicht für einen Ausgabenvorschlag abgestimmt.
       reasons_for_not_balloting:
         not_logged_in: Sie müssen %{signin} oder %{signup} um fortfahren zu können.
-        not_verified: Nur verifizierte NutzerInnen können für Inestitionen abstimmen; %{verify_account}.
+        not_verified: Nur verifizierte NutzerInnen können für Investitionen abstimmen; %{verify_account}.
         organization: Organisationen dürfen nicht abstimmen
         not_selected: Nicht ausgewählte Investitionen können nicht unterstützt werden
         not_enough_money_html: "Sie haben bereits das verfügbare Budget zugewiesen.<br><small>Bitte denken Sie daran, dass Sie dies %{change_ballot} jederzeit</small>ändern können"
@@ -34,7 +34,7 @@ de:
       accepting: Projekte annehmen
       reviewing: Interne Überprüfung der Projekte
       selecting: Projekte auswählen
-      valuating: Projekte Bewerten
+      valuating: Projekte bewerten
       publishing_prices: Preise der Projekte veröffentlichen
       balloting: Wahlprojekte
       reviewing_ballots: Wahl überprüfen
