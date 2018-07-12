@@ -312,6 +312,8 @@ de:
       show_link: Vorschlag anzeigen
     retire_form:
       title: Vorschlag zurückziehen
+      warning: "Wenn Sie den Vorschlag zurückziehen, würde er weiterhin Unterstützung aktzeptieren, wird jedoch von der Hauptliste entfernt und eine Nachricht wird sichtbar für alle Nutzer, die besagt, dass der Autor des Vorschlages denkt, er sollte nocht mehr unterstützt werden"
+      retired_reason_label: Grund für das Zurückziehen des Vorschlages
       retired_reason_blank: Option auswählen
       retired_explanation_label: Erläuterung
       retired_explanation_placeholder: Erläutern Sie kurz, warum der Vorschlag nicht weiter unterstützt werden sollte
@@ -325,6 +327,7 @@ de:
     form:
       geozone: Rahmenbedingungen
       proposal_external_url: Link zur weiteren Dokumentation
+      proposal_question: Vorschlags Frage
       proposal_question_example_html: "Muss in eine Frage zusammengefasst werden, die mit Ja oder Nein beantwortet werden kann. <br> Z.B. \"Sind Sie damit einverstanden, dass die Große Straße zur Fußgängerzone wird?\""
       proposal_responsible_name: Vollständiger Name der Person, die den Vorschlag einreicht
       proposal_responsible_name_note: "(Einzelperson oder Vertreter/in eines Kollektivs; wird nicht öffentlich angezeigt)"
@@ -339,10 +342,14 @@ de:
       tags_label: Tags
       tags_placeholder: "Trennen Sie die Tags mit einem Komma (',')"
       map_location: "Kartenposition"
+      map_location_instructions: "Navigieren Sie die Karte zu dem Standpunkt und plazieren sie die Markierung."
       map_remove_marker: "Entfernen Sie die Kartenmarkierung"
       map_skip_checkbox: "Dieser Vorschlag hat keinen konkreten Ort oder ich kenne ihn nicht."
     index:
       featured_proposals: Hervorgehoben
+      filter_topic:
+        one: " mit Thema '%{topic} '"
+        other: " mit Thema '%{topic} '"
       orders:
         confidence_score: am besten bewertet
         created_at: neuste
