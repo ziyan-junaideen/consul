@@ -1,13 +1,26 @@
 de:
   settings:
-    months_to_archive_proposals: "Monate, um Vorschläge zu archivieren"
-    twitter_handle: "Twitter handle"
+    comments_body_max_length: "Maximale Länge der Kommentare"
+    official_level_1_name: "Beamte*r Stufe 1"
+    official_level_2_name: "Beamte*r Stufe 2"
+    official_level_3_name: "Beamte*r Stufe 3"
+    official_level_4_name: "Beamte*r Stufe 4"
+    official_level_5_name: "Beamte*r Stufe 5"
+    max_ratio_anon_votes_on_debates: "Maximale Anzahl von anonymen Stimmen per Diskussion"
+    max_votes_for_proposal_edit: "Anzahl von Stimmen bei der ein Vorschlag nicht länger bearbeitet werden kann"
+    max_votes_for_debate_edit: "Anzahl von Stimmen bei der eine Diskussion nicht länger bearbeitet werden kann"
+    proposal_code_prefix: "Präfix für Vorschlag-Codes"
+    votes_for_proposal_success: "Anzahl der notwendigen Stimmen zur Genehmigung eines Vorschlags"
+    months_to_archive_proposals: "Anzahl der Monate, um Vorschläge zu archivieren"
+    email_domain_for_officials: "E-Mail-Domäne für Beamte"
+    twitter_handle: "Twitter Benutzer*name"
     twitter_hashtag: "Twitter hashtag"
-    facebook_handle: "Facebook handle"
-    youtube_handle: "Youtube handle"
-    telegram_handle: "Telegram handle"
+    facebook_handle: "Facebook Benutzer*name"
+    youtube_handle: "Benutzer*name für Youtube"
+    telegram_handle: "Benutzer*name für Telegram"
     instagram_handle: "Instagram handle"
     blog_url: "Blog URL"
+    org_name: "Name der Organisation"
     feature:
       twitter_login: Twitter login
       facebook_login: Facebook login
