@@ -37,6 +37,7 @@ de:
       updated: "Ihr Passwort wurde erfolgreich geändert. Authentifizierung erfolgreich."
       updated_not_active: "Ihr Passwort wurde erfolgreich geändert."
     registrations:
+      destroyed: "Auf Wiedersehen! Ihr Benutzerkonto wurde gekündigt. Wir hoffen Sie bald wiederzusehen. Gemäß Ihrem Gesuch, wurden Ihre persönlichen Daten als Nutzer der Seite, und Teil der Datei 'Datei' unter der Verantwortung der 'Verantworlichen', nach den Bestimmungen von Artikel 16 der Ley Orgánica 15/1999 de Protección de Datos de Carácter und Artikel 31 der Reglamento de desarrollo (RD 1720/2007) gekündigt."
       signed_up: "Willkommen! Sie wurden authentifiziert."
       signed_up_but_inactive: "Ihre Registrierung war erfolgreich, aber Sie konnten nicht angemeldet werden, da Ihr Benutzerkonto nicht aktiviert wurde."
       signed_up_but_locked: "Ihre Registrierung war erfolgreich, aber Sie konnten nicht angemeldet werden, weil Ihr Benutzerkonto gesperrt ist."
