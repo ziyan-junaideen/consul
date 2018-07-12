@@ -27,7 +27,7 @@ de:
         title: Ändern Sie Ihr Passwort
       unlock_instructions:
         hello: Hallo
-        info_text: Ihr Benutzerkonto wurde blockiert, wegen einer übermäßigen Anzahl an fehlgeschlagenen Anmeldeversuchen.
+        info_text: Ihr Benutzerkonto wurde, wegen einer übermäßigen Anzahl an fehlgeschlagenen Anmeldeversuchen, blockiert.
         instructions_text: 'Bitte klicken Sie auf folgenden Link, um Ihr Benutzerkonto zu entsperren:'
         title: Ihr Konto wurde gesperrt
         unlock_link: Mein Benutzerkonto entsperren
@@ -52,7 +52,7 @@ de:
           back_to_index: Verstanden, zurück zur Startseite
           instructions_1_html: "<b>wir werden Sie bald kontaktieren</b> um zu bestätigen, dass Sie tatsächlich das Kollektiv repräsentieren."
           instructions_2_html: Während Ihre <b>E-Mail überprüft wird</b>, haben wir Ihnen einen <b>Link zum bestätigen Ihres Benutzerkontos</b> geschickt.
-          instructions_3_html: Wenn bestätigt, können Sie beginnen sich als unbestätigtes Kollektiv zu beteiligen.
+          instructions_3_html: Nach der Bestätigung können Sie anfangen, sich als ein ungeprüftes Kollektiv zu beteiligen.
           thank_you_html: Vielen Dank für die Registrierung Ihres Kollektivs auf der Webseite. Sie muss jetzt <b>verifiziert</b> werden.
     passwords:
       edit:
