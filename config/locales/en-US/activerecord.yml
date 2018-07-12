@@ -19,3 +19,6 @@ en-US:
       moderator:
         one: "Moderator,Gesprächsleiter"
         other: "Moderatoren,Gesprächsleiter"
+      administrator:
+        one: "Administrator(in),Verwaltungsleiter(in)"
+        other: "Administrator(in),Verwaltungsleiter(in)"
