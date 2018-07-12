@@ -97,6 +97,9 @@ de:
       tags_placeholder: "Geben Sie die Schlagwörter ein, die Sie benutzen möchten, getrennt durch Kommas (',')"
     index:
       featured_debates: Hervorgehoben
+      filter_topic:
+        one: " mit Thema '%{topic} '"
+        other: " mit Thema '%{topic} '"
       orders:
         confidence_score: am besten bewertet
         created_at: neuste
@@ -111,6 +114,9 @@ de:
         button: Suche
         placeholder: Suche Diskussionen...
         title: Suche
+      search_results_html:
+        one: " enthält den Begriff <strong>'%{search_term}'</strong>"
+        other: " enthält die Begriffe <strong>'%{search_term}'</strong>"
       select_order: Sortieren nach
       start_debate: Starten Sie eine Diskussion
       title: Diskussionen
