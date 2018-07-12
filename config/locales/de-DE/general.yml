@@ -392,11 +392,13 @@ de:
         description: Machen Sie einen Bürger Vorschlag. Wenn dieser genügend unterstützt wird wird er zur Wahlphase übergehen. So können alle BürgerInnen entscheiden, wie sie möchten, dass ihre Stadt sein soll.
         help_text_1: "Bürgervorschläge sind eine Chance für Nachbarn und Gemeinschaften direkt zu mitzuentscheiden, wie Sie ihre Stadt gestalten wollen. Jede Person kann einen Vorschlag zu einem Thema oder Anliegen Ihres Interesses bei der Stadtverwaltung einbringen, nachdem dieser ausreichend Unterstützung bekommen hat und die Abstimmungsphase passiert hat."
         help_text_2: "Um einen Vorschlag einzubringen, müssen Sie sich auf %{org} registrieren. Vorschläge, die Unterstützung von anderen Benutzern im Netz erhalten haben, gehen weiter in die Abstimmungsphase. Um Vorschläge unterstützen zu können, ist ein verifierziertes Benutzerkonto notwendig."
+        help_text_3: "Eine Bürgerwahl wird gefeiert, wenn der Vorschlag die notwendige Unterstützung bekommt. Sobald der Vorschlag gefeier ist und mehr Stimmen dafür als dagegen gestimmt haben, nimmt der Stadtrat den Vorschlag an und führt ihn durch."
     new:
       form:
         submit_button: Vorschlag erstellen
       more_info: Wie funktionieren die Bürger Vorschläge?
       recommendation_one: Verwenden Sie bitte nicht ausschließlich Großbuchstaben für die Überschrift oder für komplette Sätze. Im Internet gilt das als Schreien und niemand möchte angeschrien werden.
+      recommendation_three: Genießen Sie diesen Ort, die Stimmen, die ihn füllen, es ist auch Ihrer.
       recommendation_two: Diskussionen oder Kommentare, die illegale Handlungen beinhalten, werden gelöscht sowie diejenigen, die die Diskussionen absichtlich sabotieren. Alles andere ist erlaubt.
       recommendations_title: Empfehlungen zum Erstellen eines Vorschlags
       start_new: Neuen Vorschlag erstellen
@@ -415,6 +417,7 @@ de:
         zero: Keine Kommentare
         one: 1 Kommentar
         other: "%{count} Kommentare"
+      reason_for_supports_necessary: 1 % der Volkszählung
       support: Unterstützung
       support_title: Vorschlag unterstützen
       supports:
@@ -432,6 +435,7 @@ de:
       voting: "Nächste Abstimmung"
     show:
       author_deleted: Benutzer gelöscht
+      code: 'Vorschlag Code:'
       comments:
         zero: Keine Kommentare
         one: 1 Kommentar
