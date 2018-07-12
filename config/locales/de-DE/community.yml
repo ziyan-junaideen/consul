@@ -9,13 +9,13 @@ de:
     show:
       title:
         proposal: Vorschlags Gemeinde
-        investment: Haushaltsimvestitions Gemeinde
+        investment: Haushaltsinvestitions Gemeinde
       description:
         proposal: Beteiligen sie sich in der Gemeinde zu diesem Vorschlag. Eine aktive Gemeinde kann helfen den Inhalt des Vorschlags zu verbessern und seine Verbreitung zu vergrößern um mehr Unterstützung zu bekommen.
-        investment: Beteiligen Sie sich an dieser Budgetinvestition. Eine aktive Gemeinde kann helfen den Inhalt der Budgetinvestition zu verbessern und seine Verbreitung zu vergrößern um mehr Unterstützung zu bekommen.
+        investment: Beteiligen Sie sich an dieser Haushaltsinvestition. Eine aktive Gemeinde kann helfen den Inhalt der Haushaltsinvestition zu verbessern und seine Verbreitung zu vergrößern um mehr Unterstützung zu bekommen.
       create_first_community_topic:
-        first_theme_not_logged_in: Es ist kein Anliegen verfügbar, beteiligen Sie indem Sie das erste erstellen.
-        first_theme: Erstellen Sie das erste Gemeine Thema
+        first_theme_not_logged_in: Es ist kein Anliegen verfügbar, beteiligen Sie sich, indem Sie das erste erstellen.
+        first_theme: Erstellen Sie das erste Gemeinde Thema
         sub_first_theme: "Um ein Thema zu erstellen, müssen Sie %{sign_in} o %{sign_up}."
         sign_in: "Anmelden"
         sign_up: "registrieren"
