@@ -59,6 +59,6 @@ de:
       not_found: "nicht gefunden."
       not_locked: "wurde nicht gesperrt."
       not_saved:
-        one: "Ein Fehler verhinderte das speichern dieser %{resource}. Bitte markieren Sie die gekennzeichneten Felder um zu erfahren wie dieser behebt werden kann:"
-        other: "%{count} Fehler verhinderten das speichern dieser %{resource}. Bitte markieren Sie die gekennzeichneten Felder um zu erfahren wie diese behebt werden können:"
+        one: "Ein Fehler verhinderte das Speichern dieser %{resource}. Bitte markieren Sie die gekennzeichneten Felder um zu erfahren wie dieser behebt werden kann:"
+        other: "%{count} Fehler verhinderten das Speichern dieser %{resource}. Bitte markieren Sie die gekennzeichneten Felder um zu erfahren wie diese behebt werden können:"
       equal_to_current_password: "muss sich vom aktuellen Kennwort unterscheiden."
