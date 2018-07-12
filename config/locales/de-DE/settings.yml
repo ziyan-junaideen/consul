@@ -21,13 +21,23 @@ de:
     instagram_handle: "Instagram handle"
     blog_url: "Blog URL"
     org_name: "Name der Organisation"
+    place_name: "Name des Ortes"
     feature:
+      budgets: Bürgerhaushalt
       twitter_login: Twitter login
       facebook_login: Facebook login
       google_login: Google login
       proposals: Vorschläge
       debates: Diskussionen
       polls: Umfragen
+      signature_sheets: Unterschriftenbögen
+      legislation: Gesetzgebung
+      user:
+        recommendations: Empfehlungen
+        skip_verification: Benutzer*überprüfung überspringen
+      allow_images: Upload und Anzeigen von Bildern erlauben
+      allow_attached_documents: Upload und Anzeigen von angehängten Dokumenten erlauben
+      public_stats: Öffentliche Statistiken
     map_zoom: Zoom
     mailer_from_address: Herkunft-E-Mailadresse
     min_age_to_participate: erforderliches Mindestalter zur Teilnahme
