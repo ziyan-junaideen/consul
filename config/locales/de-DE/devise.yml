@@ -14,7 +14,7 @@ de:
       already_authenticated: "Sie sind bereits angemeldet."
       inactive: "Ihr Benutzerkonto wurde noch nicht aktiviert."
       invalid: "Ungültiger %{authentication_keys} oder Passwort."
-      locked: "Ihr Konto wurde gesperrt."
+      locked: "Ihr Benutzerkonto wurde gesperrt."
       last_attempt: "Sie haben noch einen weiteren Versuch bevor Ihr Benutzerkonto gesperrt wird."
       not_found_in_database: "Ungültiger %{authentication_keys} oder Passwort."
       timeout: "Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an, um fortzufahren."
@@ -34,7 +34,7 @@ de:
       no_token: "Nur über einen Link zum Zurücksetzen Ihres Passworts können Sie auf diese Seite zugreifen. Falls Sie diesen Link verwendet haben, überprüfen Sie bitte, ob die URL vollständig ist."
       send_instructions: "In wenigen Minuten erhalten Sie eine E-Mail mit Anweisungen zum Zurücksetzen Ihres Passworts."
       send_paranoid_instructions: "Wenn sich Ihre E-Mail-Adresse in unserer Datenbank befindet, erhalten Sie in wenigen Minuten eine E-Mail mit Anweisungen zum Zurücksetzen Ihres Passworts."
-      updated: "Ihr Passwort wurde geändert. Authentifizierung erfolgreich."
+      updated: "Ihr Passwort wurde erfolgreich geändert. Authentifizierung erfolgreich."
       updated_not_active: "Ihr Passwort wurde erfolgreich geändert."
     registrations:
       signed_up: "Willkommen! Sie wurden authentifiziert."
