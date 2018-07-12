@@ -8,7 +8,7 @@ de:
       updated: "Passwort erfolgreich aktualisiert"
     confirmations:
       confirmed: "Ihr Benutzerkonto wurde bestätigt."
-      send_instructions: "In wenigen Minuten erhalten Sie eine E-Mail mit Anweisungen zum Zurücksetzen Ihres Passworts."
+      send_instructions: "In wenigen Minuten erhalten Sie eine E-Mail mit einer Anleitung zum Zurücksetzen Ihres Passworts."
       send_paranoid_instructions: "Wenn sich Ihre E-Mail-Adresse in unserer Datenbank befindet, erhalten Sie in wenigen Minuten eine E-Mail mit Anweisungen zum Zurücksetzen Ihres Passworts."
     failure:
       already_authenticated: "Sie sind bereits angemeldet."
