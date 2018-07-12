@@ -127,14 +127,18 @@ de:
       section_footer:
         title: Hilfe zu Diskussionen
         description: Teilen Sie ihre Meinung mit anderen in einer Diskussion über Themen, die Sie interessieren.
+        help_text_1: "Der Raum für Bürgerdebatten zielt auf jeden ab, welcher Anlässe zur Sorge aufdecken kann und jene, die ihre Meinung mit anderen teilen möchten."
         help_text_2: 'Um eine Diskussion zu eröffnen, müssen Sie sich auf %{org} registrieren. Benutzer können auch offene Diskussionen kommentieren und sie über "Ich stimme zu" oder "Ich stimme nicht zu" Buttons bewerten.'
+        help_text_3: "Denken Sie daran, dass eine Debatte keine bestimmte Aktion auslöst. Wenn sie ein %{proposal} für die Stadt machen oder ein Investitionsprojekt von %{budget} erhöhen möchten, sobald die Phase offen ist, gehen Sie zum entsprechenden Abschnitt."
         proposals_link: Vorschlag
+        budget_link: partizipative Haushaltsplanung
     new:
       form:
         submit_button: Starten Sie eine Diskussion
       info: Wenn Sie einen Vorschlag veröffentlichen möchten, sind Sie hier falsch, gehen Sie zu %{info_link}.
       info_link: neuen Vorschlag erstellen
       more_info: Weitere Informationen
+      recommendation_four: Genießen Sie diesen Ort, die Stimmen, die ihn füllen, es ist auch Ihrer.
       recommendation_one: Verwenden Sie bitte nicht ausschließlich Großbuchstaben für die Überschrift oder für komplette Sätze. Im Internet gilt das als schreien. Und niemand mächte angeschrien werden.
       recommendation_three: Kritik ist sehr willkommen. Denn dies ist ein Raum für unterschiedliche Betrachtungen. Aber wir empfehlen Ihnen, sich an sprachlicher Eleganz und Intelligenz zu halten. Die Welt ist ein besserer Ort mit diesen Tugenden.
       recommendation_two: Diskussionen oder Kommentare, die illegale Handlungen beinhalten, werden gelöscht sowie diejenigen, die die Diskussionen absichtlich sabotieren. Alles andere ist erlaubt.
@@ -167,11 +171,14 @@ de:
     direct_message: Private Nachricht
     error: Fehler
     errors: Fehler
+    not_saved_html: "verhinderte das Speichern dieser %{resource}. <br>Bitte überprüfen Sie die gekennzeichneten Felder, um herauszufinden wie diese korrigiert werden können:"
     policy: Datenschutzbestimmungen
     proposal: Vorschlag
     proposal_notification: "Benachrichtigung"
     spending_proposal: Ausgabenvorschlag
     budget/investment: Investitionsvorschlag
+    budget/heading: Haushaltslinie
+    poll/shift: Schicht
     poll/question/answer: Antwort
     user: Benutzerkonto
     verification/sms: Telefon
@@ -222,6 +229,8 @@ de:
       logo: Consul-Logo
       management: Management
       moderation: Moderation
+      valuation: Bewertung
+      officing: Abstimmungs Beamte
       help: Hilfe
       my_account_link: Mein Benutzerkonto
       my_activity_link: Meine Aktivität
@@ -229,6 +238,7 @@ de:
       open_gov: Open Government
       proposals: Vorschläge
       poll_questions: Abstimmung
+      budgets: Partizipative Haushaltsplanung
       spending_proposals: Ausgabenvorschläge
       notification_item:
         new_notifications:
