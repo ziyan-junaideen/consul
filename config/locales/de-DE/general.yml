@@ -94,6 +94,7 @@ de:
       debate_title: Titel der Diskussion
       tags_instructions: Diskussion markieren.
       tags_label: Inhalte
+      tags_placeholder: "Geben Sie die Schlagwörter ein, die Sie benutzen möchten, getrennt durch Kommas (',')"
     index:
       featured_debates: Hervorgehoben
       orders:
