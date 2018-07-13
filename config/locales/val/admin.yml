@@ -29,8 +29,6 @@ val:
         title: Títol
         description: Descripció
         target_url: Enllaç
-        style: Estil
-        image: Imatge
         post_started_at: Inici de publicació
         post_ended_at: Fi de publicació
       edit:
