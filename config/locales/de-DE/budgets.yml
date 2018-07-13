@@ -89,16 +89,16 @@ de:
           voted_html:
             one: "<strong>Sie haben für einen Antrag mit Kosten von %{amount_spent}-</strong> gestimmt"
             other: "<strong>Sie haben für Vorschläge mit Kosten von %{amount_spent}</strong> gestimmt %{count}"
-          voted_info: Sie können bis zur Schließung der Phase uederzeit %{link}. Es gibt keinen Grund sämtliches verfügbares Geld auszugeben.
+          voted_info: Sie können bis zur Schließung der Phase jederzeit %{link}. Es gibt keinen Grund sämtliches verfügbares Geld auszugeben.
           voted_info_link: Bewertung ändern
-          different_heading_assigned_html: "Sie haben aktive Stimmen in einer anderen Überschrift: %{heading_link}"
+          different_heading_assigned_html: "Sie haben aktive Stimmen in einer anderen Rubrik: %{heading_link}"
           change_ballot: "Wenn Sie Ihre Meinung ändern, können Sie Ihre Stimme in %{check_ballot} zurückziehen und von vorne beginnen."
           check_ballot_link: "meine Abstimmung überprüfen"
           zero: Sie haben für keine Investitionsprojekte in dieser Gruppe abgestimmt.
-          verified_only: "Um eine neue Haushalts Investition zu kreieren %{verify}."
+          verified_only: "Um ein neues Budget zu erstellen %{verify}."
           verify_account: "verifizieren Sie Ihr Benutzerkonto"
           create: "Budgetinvestitionen erstellen"
-          not_logged_in: "Um eine neue Haushalts Investition zu kreieren müssen Sie %{sign_in} oder %{sign_up}."
+          not_logged_in: "Um ein neues Budget zu erstellen, müssen Sie %{sign_in} oder %{sign_up}."
           sign_in: "anmelden"
           sign_up: "registrieren"
           by_feasibility: Nach Durchführbarkeit
@@ -110,9 +110,9 @@ de:
           price: nach Preis
       show:
         author_deleted: Benutzer gelöscht
-        price_explanation: Preis Erklärung
+        price_explanation: Preiserklärung
         unfeasibility_explanation: Erläuterung der Undurchführbarkeit
-        code_html: 'Investitions Projekt Code: <strong>%{code}</strong>'
+        code_html: 'Investitionsprojektcode: <strong>%{code}</strong>'
         location_html: 'Lage: <strong>%{location}</strong>'
         organization_name_html: 'Vorgeschlagen im Namen von: <strong>%{name}</strong>'
         share: Teilen
