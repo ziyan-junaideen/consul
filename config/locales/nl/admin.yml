@@ -27,8 +27,6 @@ nl:
         title: Titel
         description: Beschrijving
         target_url: Link
-        style: Stijl
-        image: Afbeelding
         post_started_at: Geplaatst op
         post_ended_at: Gesloten op
       edit:
