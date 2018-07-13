@@ -17,7 +17,6 @@ it:
         preview: Anteprima
       banner:
         target_url: Link
-        style: Stile
         post_started_at: Post iniziato alle
         post_ended_at: Post terminato alle
     activity:
