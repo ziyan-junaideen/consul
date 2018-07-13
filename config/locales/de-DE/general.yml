@@ -451,6 +451,7 @@ de:
       share: Teilen
       send_notification: Benachrichtigung senden
       no_notifications: "Dieser Vorschlag enthält keine Benachrichtigungen."
+      embed_video_title: "Video üner %{proposal}"
       title_external_url: "Zusätzliche Dokumentation"
       title_video_url: "Externes Video"
       author: Autor
@@ -461,6 +462,7 @@ de:
     all: "Alle"
     no_dates: "kein Datum zugewiesen"
     dates: "Von %{open_at} bis %{closed_at}"
+    final_date: "Endgültige Nachzählungen/Ergebnisse"
     index:
       filters:
         current: "Offen"
@@ -472,13 +474,17 @@ de:
       participate_button_expired: "Umfrage beendet"
       no_geozone_restricted: "Ganze Stadt"
       geozone_restricted: "Bezirke"
+      geozone_info: "Können BürgerInnen an folgender Volkszählung teilnehmen: "
       already_answer: "Sie haben bereits an dieser Abstimmung teilgenommen"
       section_header:
+        icon_alt: Wahl Symbol
         title: Abstimmung
         help: Hilfe zur Abstimmung
       section_footer:
         title: Hilfe zur Abstimmung
+        description: Registrieren Sie sich um für Bürger Vorschläge und Fragen des Stadtrates an die Nachbarn zu stimmen. Treffen Sie kommunale Entscheidungen direkt.
         help_text_1: "Eine Abstimmung findet dann statt, wenn ein Bürgervorschlag von 1% der Stimmberechtigten in der Volkszählung unterstützt wird. Eine Abstimmung kann außerdem eine Bürgerbefragung durch die Stadtverwaltung beinhalten."
+        help_text_2: "Um an der nächsten Wahl teilzunehmen müssen sie sich auf %{org} registrieren und Ihr Benutzerkonto bestätigen. Alle registrierten Wähler der Stadt über dem alter von 16 Jahren können abstimmen. Das Ergebniss aller Stimmen ist verbindlich für die Regierung."
       no_polls: "Keine offenen Abstimmungen."
     show:
       already_voted_in_booth: "Sie haben bereits in einer physischen Wahlkabine teilgenommen. Sie können nicht nochmal teilnehmen."
