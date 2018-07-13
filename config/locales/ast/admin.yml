@@ -17,7 +17,6 @@ ast:
         preview: Vista previa
       banner:
         target_url: Enllaz
-        style: Estilu
         post_started_at: Entamu de publicación
         post_ended_at: Fin de publicación
     activity:
