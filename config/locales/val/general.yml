@@ -505,7 +505,6 @@ val:
       zoom_plus: Ampliar imatge
       read_more: "Llegir més sobre %{answer}"
       read_less: "Llegir menys sobre %{answer}"
-      participate_in_other_polls: Participar en altres votacions
       videos: "Video extern"
       info_menu: "Informació"
       stats_menu: "Estadístiques de participació"
