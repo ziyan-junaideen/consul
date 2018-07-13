@@ -22,8 +22,6 @@ he:
         title: שם
         description: תיאור
         target_url: קישור
-        style: עיצוב
-        image: תמונה
         post_started_at: החל מ
         post_ended_at: עד
       edit:
