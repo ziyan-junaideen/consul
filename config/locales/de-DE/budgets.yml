@@ -45,7 +45,7 @@ de:
       section_header:
         icon_alt: Symbol für partizipative Haushaltsmittel
         title: partizipative Haushaltsmittel
-        help: Hilfe mit partizipativen Budgets
+        help: Hilfe mit partizipativen Haushaltsmitteln
         all_phases: Alle Phasen anzeigen
       all_phases: Investitionsphasen des Haushalts
       map: Geographisch verteilte Budget-Investitionsvorschläge
@@ -64,14 +64,14 @@ de:
     investments:
       form:
         tag_category_label: "Kategorien"
-        tags_instructions: "Diesen vorschlag markieren. Sie können von vorgeschlagenen Kategorien wählen, oder Ihre eigenen hinzufügen"
+        tags_instructions: "Diesen Vorschlag markieren. Sie können aus vorgeschlagenen Kategorien wählen, oder Ihre eigenen hinzufügen"
         tags_label: Tags
-        tags_placeholder: "Geben Sie die Schlagwörter ein, die Sie benutzen möchten, getrennt bei Kommas (',')"
+        tags_placeholder: "Geben Sie die Schlagwörter ein, die Sie benutzen möchten, getrennt durch Kommas (',')"
         map_location: "Kartenposition"
-        map_location_instructions: "Navigieren Sie die Karte zu dem standpunkt und plazieren sie die Marke."
+        map_location_instructions: "Navigieren Sie auf der Karte zum Standort und setzen Sie die Markierung."
         map_remove_marker: "Entfernen Sie die Kartenmarkierung"
         location: "Weitere Ortsangaben"
-        map_skip_checkbox: "Dieses Investment hat keinen konkreten Standpunkt oder mir ist keiner bewusst."
+        map_skip_checkbox: "Dieses Investment hat keinen konkreten Standort oder mir ist keiner bewusst."
       index:
         title: Partizipative Haushaltsplanung
         unfeasible: Undurchführbare Investitionsprojekte
