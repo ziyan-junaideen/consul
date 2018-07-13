@@ -593,10 +593,21 @@ de:
     show: Zeigen
     suggest:
       debate:
+        found:
+          one: "Es gibt eine Debatte mit dem Begriff '%{query}', Sie können darin teilnehmen, statt eine Neue zu eröffnen."
+          other: "Es gibt Debatten mit dem Begriff '%{query}', Sie können darin teilnehmen, statt eine Neue zu eröffnen."
+        message: "Sie sehen %{limit} %{count} Debatten mit dem Begriff \"%{query}\""
         see_all: "Alle anzeigen"
       budget_investment:
+        found:
+          one: "Es gibt eine Investition mit dem Begriff '%{query}', Sie können darin teilnehmen, statt eine Neue zu eröffnen."
+          other: "Es gibt Investitionen mit dem Begriff '%{query}', Sie können in diesen teilnehmen, statt eine Neue zu eröffnen."
+        message: "Sie sehen %{limit} %{count} Investitionen mit dem Begriff \"%{query}\""
         see_all: "Alle anzeigen"
       proposal:
+        found:
+          one: "Es gibt einen Antrag mit dem Begriff '%{query}', Sie können an diesem mitwirken, statt einen Neuen zu kreieren"
+          other: "Es gibt Anträge mit dem Begriff '%{query}', Sie können an diesen mitwirken, statt einen Neuen zu kreieren"
         see_all: "Alle anzeigen"
     tags_cloud:
       tags: Trending
