@@ -29,8 +29,6 @@ de:
         title: Titel
         description: Beschreibung
         target_url: Link
-        style: Stil
-        image: Bild
         post_started_at: Eintrag veröffentlicht am
         post_ended_at: Eintrag beendet am
       edit:
