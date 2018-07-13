@@ -312,8 +312,8 @@ de:
       show_link: Vorschlag anzeigen
     retire_form:
       title: Vorschlag zurückziehen
-      warning: "Wenn Sie den Vorschlag zurückziehen, würde er weiterhin Unterstützung aktzeptieren, wird jedoch von der Hauptliste entfernt und eine Nachricht wird sichtbar für alle Nutzer, die besagt, dass der Autor des Vorschlages denkt, er sollte nocht mehr unterstützt werden"
-      retired_reason_label: Grund für das Zurückziehen des Vorschlages
+      warning: "Wenn Sie den Antrag zurückziehen, würde er weiterhin Unterstützung akzeptieren, wird jedoch von der Hauptliste entfernt und eine Nachricht wird sichtbar für alle Nutzer, die besagt, dass der Autor des Vorschlages denkt, er sollte nicht mehr unterstützt werden"
+      retired_reason_label: Grund für das Zurückziehen des Antrags
       retired_reason_blank: Option auswählen
       retired_explanation_label: Erläuterung
       retired_explanation_placeholder: Erläutern Sie kurz, warum der Vorschlag nicht weiter unterstützt werden sollte
@@ -327,7 +327,7 @@ de:
     form:
       geozone: Rahmenbedingungen
       proposal_external_url: Link zur weiteren Dokumentation
-      proposal_question: Vorschlags Frage
+      proposal_question: Antrags Frage
       proposal_question_example_html: "Muss in eine Frage zusammengefasst werden, die mit Ja oder Nein beantwortet werden kann. <br> Z.B. \"Sind Sie damit einverstanden, dass die Große Straße zur Fußgängerzone wird?\""
       proposal_responsible_name: Vollständiger Name der Person, die den Vorschlag einreicht
       proposal_responsible_name_note: "(Einzelperson oder Vertreter/in eines Kollektivs; wird nicht öffentlich angezeigt)"
@@ -389,10 +389,10 @@ de:
         help: Hilfe zu Vorschlägen
       section_footer:
         title: Hilfe zu Vorschlägen
-        description: Machen Sie einen Bürger Vorschlag. Wenn dieser genügend unterstützt wird wird er zur Wahlphase übergehen. So können alle BürgerInnen entscheiden, wie sie möchten, dass ihre Stadt sein soll.
+        description: Machen Sie einen Bürgerantrag. Wenn dieser genügend unterstützt wird wird er zur Wahlphase übergehen. So können alle BürgerInnen entscheiden, wie sie möchten, dass ihre Stadt sein soll.
         help_text_1: "Bürgervorschläge sind eine Chance für Nachbarn und Gemeinschaften direkt zu mitzuentscheiden, wie Sie ihre Stadt gestalten wollen. Jede Person kann einen Vorschlag zu einem Thema oder Anliegen Ihres Interesses bei der Stadtverwaltung einbringen, nachdem dieser ausreichend Unterstützung bekommen hat und die Abstimmungsphase passiert hat."
         help_text_2: "Um einen Vorschlag einzubringen, müssen Sie sich auf %{org} registrieren. Vorschläge, die Unterstützung von anderen Benutzern im Netz erhalten haben, gehen weiter in die Abstimmungsphase. Um Vorschläge unterstützen zu können, ist ein verifierziertes Benutzerkonto notwendig."
-        help_text_3: "Eine Bürgerwahl wird gefeiert, wenn der Vorschlag die notwendige Unterstützung bekommt. Sobald der Vorschlag gefeier ist und mehr Stimmen dafür als dagegen gestimmt haben, nimmt der Stadtrat den Vorschlag an und führt ihn durch."
+        help_text_3: "Eine Bürgerwahl wird gefeiert, wenn der Antrag die notwendige Unterstützung bekommt. Sobald der Antrag gefeiert wird und mehr Stimmen dafür als dagegen gestimmt haben, nimmt der Stadtrat den Antrag an und führt ihn durch."
     new:
       form:
         submit_button: Vorschlag erstellen
@@ -435,7 +435,7 @@ de:
       voting: "Nächste Abstimmung"
     show:
       author_deleted: Benutzer gelöscht
-      code: 'Vorschlag Code:'
+      code: 'Antrags Code:'
       comments:
         zero: Keine Kommentare
         one: 1 Kommentar
@@ -482,7 +482,7 @@ de:
         help: Hilfe zur Abstimmung
       section_footer:
         title: Hilfe zur Abstimmung
-        description: Registrieren Sie sich um für Bürger Vorschläge und Fragen des Stadtrates an die Nachbarn zu stimmen. Treffen Sie kommunale Entscheidungen direkt.
+        description: Registrieren Sie sich um für Bürgeranträge und Fragen des Stadtrates an die Nachbarn zu stimmen. Treffen Sie kommunale Entscheidungen direkt.
         help_text_1: "Eine Abstimmung findet dann statt, wenn ein Bürgervorschlag von 1% der Stimmberechtigten in der Volkszählung unterstützt wird. Eine Abstimmung kann außerdem eine Bürgerbefragung durch die Stadtverwaltung beinhalten."
         help_text_2: "Um an der nächsten Wahl teilzunehmen müssen sie sich auf %{org} registrieren und Ihr Benutzerkonto bestätigen. Alle registrierten Wähler der Stadt über dem alter von 16 Jahren können abstimmen. Das Ergebniss aller Stimmen ist verbindlich für die Regierung."
       no_polls: "Keine offenen Abstimmungen."
