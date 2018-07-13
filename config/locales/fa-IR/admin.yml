@@ -28,8 +28,6 @@ fa:
         title: عنوان
         description: توضیحات
         target_url: لینک
-        style: سبک
-        image: تصویر
         post_started_at: پست شروع شد در
         post_ended_at: پست پایان رسید در
       edit:
