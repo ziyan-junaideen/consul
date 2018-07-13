@@ -6,10 +6,6 @@ tr:
       actions: Aksiyon
       confirm: Emin misiniz?
       edit: Düzenleme
-    banners:
-      banner:
-        style: Stil
-        image: Fotoğraf
     budgets:
       index:
         filters:
