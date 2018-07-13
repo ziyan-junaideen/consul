@@ -608,6 +608,7 @@ de:
         found:
           one: "Es gibt einen Antrag mit dem Begriff '%{query}', Sie können an diesem mitwirken, statt einen Neuen zu kreieren"
           other: "Es gibt Anträge mit dem Begriff '%{query}', Sie können an diesen mitwirken, statt einen Neuen zu kreieren"
+        message: "Sie sehen %{limit} %{count} Anträge mit dem Begriff \"%{query}\""
         see_all: "Alle anzeigen"
     tags_cloud:
       tags: Trending
@@ -615,12 +616,22 @@ de:
       districts_list: "Liste der Bezirke"
       categories: "Kategorien"
     target_blank_html: " (Link öffnet im neuen Fenster)"
+    you_are_in: "Sie befinden sich in"
     unflag: Demarkieren
     unfollow_entity: "Nicht länger folgen %{entity}"
+    outline:
+      budget: Partizipative Haushaltsmittel
+      searcher: Sucher
+    go_to_page: "Gehe zur Seite von "
     share: Teilen
     orbit:
       previous_slide: Vorherige Folie
       next_slide: Nächste Folie
+    documentation: Zusätzliche dokumentation
+    view_mode:
+      title: Ansicht Modus
+      cards: Karten
+      list: Liste
   social:
     blog: "%{org} Blog"
     facebook: "%{org} Facebook"
@@ -632,13 +643,16 @@ de:
   spending_proposals:
     form:
       association_name_label: 'Wenn Sie einen Vorschlag im Namen eines Vereins oder Verbands äußern, fügen Sie bitte den Namen hinzu'
+      association_name: 'Vereinsname'
       description: Beschreibung
       external_url: Link zur weiteren Dokumentation
       geozone: Rahmenbedingungen
       submit_buttons:
         create: Erstellen
         new: Erstellen
+      title: Titel des Ausgabenantrags
     index:
+      title: Partizipative Haushaltsplanung
       unfeasible: Undurchführbare Investitionsvorschläge
       by_geozone: "Investitionsvorschläge im Bereich: %{geozone}"
       search_form:
@@ -654,12 +668,15 @@ de:
         unfeasible: Undurchführbar
       start_spending_proposal: Investitionsprojekt erstellen
     new:
+      more_info: Wie funktioniert partizipative Haushaltsplanung?
+      recommendation_one: Es ist wingend notwendig das der Antrag auf eine berechenbare Handlung hinweist.
       recommendation_three: Versuchen Sie Ihren Ausgabenvorschlag so detailliert wie möglich zu beschreiben, damit das Überprüfungsteam ihre Argumente leicht versteht.
       recommendation_two: Jeder Vorschlag oder Kommentar der auf verbotene Handlung abzielt, wird gelöscht.
       recommendations_title: Wie erstelle ich einen Ausgabenvorschlag
       start_new: Ausgabenvorschlag erstellen
     show:
       author_deleted: Benutzer gelöscht
+      code: 'Antrags Code:'
       share: Teilen
     wrong_price_format: Nur ganze Zahlen
     spending_proposal:
@@ -709,6 +726,7 @@ de:
       deleted_budget_investment: Dieses Investitionsprojekt wurde gelöscht
       proposals: Vorschläge
       debates: Diskussionen
+      budget_investments: Haushalts Investitionen
       comments: Kommentare
       actions: Aktionen
       filters:
@@ -718,6 +736,9 @@ de:
         budget_investments:
           one: 1 Investition
           other: "%{count} Investitionen"
+        follows:
+          one: 1 folgend
+          other: "%{count} folgend"
       no_activity: Benutzer hat keine öffentliche Aktivität
       no_private_messages: "Der Benutzer akzeptiert keine privaten Nachrichten."
       private_activity: Dieser Benutzer hat beschlossen die Aktivitätsliste geheim zu halten.
@@ -730,6 +751,7 @@ de:
       see: "Vorschlag anzeigen"
   votes:
     agree: Ich stimme zu
+    anonymous: Zu viele anonyme Stimmen um die Wahl anzuerkennen %{verify_account}.
     comment_unauthenticated: Sie müssen sich %{signin} oder %{signup}, um abzustimmen.
     disagree: Ich stimme nicht zu
     organizations: Organisationen ist es nicht erlaubt abzustimmen
