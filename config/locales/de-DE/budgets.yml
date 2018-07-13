@@ -36,7 +36,7 @@ de:
       selecting: Projekte auswählen
       valuating: Projekte bewerten
       publishing_prices: Preise der Projekte veröffentlichen
-      balloting: Wahlprojekte
+      balloting: Abstimmung für Projekte
       reviewing_ballots: Wahl überprüfen
       finished: Abgeschlossener Haushalt
     index:
@@ -45,17 +45,17 @@ de:
       section_header:
         icon_alt: Symbol für partizipative Haushaltsmittel
         title: partizipative Haushaltsmittel
-        help: Hilfe mit dem Bürgerhaushalt
+        help: Hilfe mit partizipativen Budgets
         all_phases: Alle Phasen anzeigen
       all_phases: Investitionsphasen des Haushalts
-      map: Geographisch lokalisierbare Projekte
+      map: Geographisch verteilte Budget-Investitionsvorschläge
       investment_proyects: Liste aller Investitionsprojekte
-      unfeasible_investment_proyects: Liste aller undurchführbaren Ausgabenvorschläge
-      not_selected_investment_proyects: Liste aller Ausgabenvorschläge, die nicht zur Abstimmung ausgewählt wurden
-      finished_budgets: Abgeschlossene Bürgerhaushalte
+      unfeasible_investment_proyects: Liste aller undurchführbaren Investitionsprojekte
+      not_selected_investment_proyects: Liste aller Investitionsprojekte, die nicht zur Abstimmung ausgewählt wurden
+      finished_budgets: Abgeschlossene participative Haushalte
       see_results: Ergebnisse anzeigen
       section_footer:
-        title: Hilfe mit dem Bürgerhaushalt
+        title: Hilfe mit partizipativen Haushaltsmitteln
         description: Durch den Bürgerhaushalt können Bürger*innen entscheiden an welche Projekte, die durch Nachbarn vorgeschlagen wurden, ein bestimmter Teil des kommunalen Budgets geht.
         help_text_1: "Bürgerhaushalte sind Beteiligungsverfahren, die es Bürger*innen ermöglicht direkt mitzuentscheiden wofür ein Teil des kommunalen Budgets ausgegeben wird. Jede registrierte Person über 16 Jahre kann einen Ausgabenvorschlag einreichen, dass dann in einer Vorauswahlphase Unterstützung von Mitbürger*innen benötigt."
         help_text_2: "Die Projekte mit den meisten Stimmen werden ausgewertet und gelangen anschließend in eine finale Abstimmung, in welcher entschieden wird, welche Vorschläge der Stadtrat umsetzen wird, wenn das kommunale Budget für das folgende Jahr genehmigt wurde."
