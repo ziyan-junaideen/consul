@@ -733,6 +733,12 @@ de:
         comments:
           one: 1 Kommentar
           other: "%{count} Kommentare"
+        debates:
+          one: 1 Debatte
+          other: "%{count} Debatten"
+        proposals:
+          one: 1 Antrag
+          other: "%{count} Anträge"
         budget_investments:
           one: 1 Investition
           other: "%{count} Investitionen"
@@ -791,6 +797,7 @@ de:
       title: Hervorgehoben
     recommended:
       title: Empfehlungen, die Sie vielleicht interessieren
+      help: "Diese Empfehlungen werden durch die Schlagwörter der Debatten und Anträgee, denen Sie folgen, generiert."
       debates:
         title: Empfohlene Diskussionen
         btn_text_link: Alle empfohlenen Diskussionen
@@ -813,6 +820,7 @@ de:
       user_permission_proposal: Neuen Vorschlag erstellen
       user_permission_support_proposal: Vorschläge unterstützen*
       user_permission_verify: Damit Sie alle Funktionen nutzen können, müssen Sie ihr Konto verifizieren.
+      user_permission_verify_info: "* Nur für in der Volkszählung registrierte Nutzer."
       user_permission_verify_my_account: Mein Konto verifizieren
       user_permission_votes: An finaler Abstimmung teilnehmen
   invisible_captcha:
@@ -834,6 +842,14 @@ de:
     content_title:
       proposal: "Vorschlag"
       debate: "Diskussion"
+      budget_investment: "Haushalts Investitionen"
   admin/widget:
     header:
       title: Verwaltung
+  annotator:
+    help:
+      alt: Wählen Sie den Text, den Sie kommentieren möchten, und drücken Sie den Schalter mit dem Bleistift.
+      text: Um dieses Dokument zu kommentieren, müssen Sie %{sign_in} oder %{sign_up}. Dann wählen Sie den Text aus, den Sie kommentieren möchten, und klicken auf den Schalter mit dem Bleistift.
+      text_sign_in: Anmeldung
+      text_sign_up: registrieren
+      title: Wie kann ich dieses Dokument kommentieren?
