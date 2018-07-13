@@ -37,7 +37,7 @@ de:
       updated: "Ihr Passwort wurde erfolgreich geändert. Authentifizierung erfolgreich."
       updated_not_active: "Ihr Passwort wurde erfolgreich geändert."
     registrations:
-      destroyed: "Auf Wiedersehen! Ihr Benutzerkonto wurde gekündigt. Wir hoffen Sie bald wiederzusehen. Gemäß Ihrem Gesuch, wurden Ihre persönlichen Daten als Nutzer der Seite, und Teil der Datei 'Datei' unter der Verantwortung der 'Verantworlichen', nach den Bestimmungen von Artikel 16 der Ley Orgánica 15/1999 de Protección de Datos de Carácter und Artikel 31 der Reglamento de desarrollo (RD 1720/2007) gekündigt."
+      destroyed: "Auf Wiedersehen! Ihr Konto wurde gelöscht. Wir hoffen, Sie bald wiederzusehen. In Übereinstimmung mit Ihrer Anfrage, persönliche Daten, die als Benutzer der Website registriert und Teil der Datei \"Datei\" unter der Verantwortung des \"Verantwortlichen\" sind, wurden sie gemäß den Bestimmungen von Artikel 16 des Ley Orgánica 15/1999 de Protección de Datos de Carácter Personal und Artikel 31 des Reglamento de desarrollo (RD 1720/2007) gelöscht."
       signed_up: "Willkommen! Sie wurden authentifiziert."
       signed_up_but_inactive: "Ihre Registrierung war erfolgreich, aber Sie konnten nicht angemeldet werden, da Ihr Benutzerkonto nicht aktiviert wurde."
       signed_up_but_locked: "Ihre Registrierung war erfolgreich, aber Sie konnten nicht angemeldet werden, weil Ihr Benutzerkonto gesperrt ist."
@@ -56,10 +56,10 @@ de:
     messages:
       already_confirmed: "Sie wurden bereits verifziert. Bitte melden Sie sich nun an."
       confirmation_period_expired: "Sie müssen innerhalb von %{period} bestätigt werden: Bitte stellen Sie eine neue Anfrage."
-      expired: "ist abgelaufen; bitte stellen sie eine neue Anfrage."
+      expired: "ist abgelaufen; bitte stellen Sie eine neue Anfrage."
       not_found: "nicht gefunden."
       not_locked: "wurde nicht gesperrt."
       not_saved:
-        one: "Ein Fehler verhinderte das Speichern dieser %{resource}. Bitte markieren Sie die gekennzeichneten Felder um zu erfahren wie dieser behebt werden kann:"
-        other: "%{count} Fehler verhinderten das Speichern dieser %{resource}. Bitte markieren Sie die gekennzeichneten Felder um zu erfahren wie diese behebt werden können:"
+        one: "Ein Fehler verhinderte das Speichern dieser %{resource}. Bitte markieren Sie die gekennzeichneten Felder, um zu erfahren wie dieser behoben werden kann:"
+        other: "%{count} Fehler verhinderten das Speichern dieser %{resource}. Bitte markieren Sie die gekennzeichneten Felder, um zu erfahren wie diese behoben werden können:"
       equal_to_current_password: "muss sich vom aktuellen Passwort unterscheiden."
