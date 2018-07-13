@@ -27,8 +27,6 @@ gl:
         title: Título
         description: Descrición
         target_url: Ligazón
-        style: Estilo
-        image: Imaxe
         post_started_at: Inicio de publicación
         post_ended_at: Fin de publicación
       edit:
