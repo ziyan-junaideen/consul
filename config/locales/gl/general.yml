@@ -482,7 +482,6 @@ gl:
       zoom_plus: Ampliar imaxe
       read_more: "Ler máis sobre %{answer}"
       read_less: "Ler menos sobre %{answer}"
-      participate_in_other_polls: Participar noutras votacións
       videos: "Vídeo externo"
       info_menu: "Información"
       stats_menu: "Estatísticas de participación"
