@@ -27,8 +27,6 @@ ar:
         title: عنوان
         description: الوصف
         target_url: رابط
-        style: شكل
-        image: صورة
         post_started_at: المشاركة بدأت في
         post_ended_at: المشاركة انتهت في
       edit:
