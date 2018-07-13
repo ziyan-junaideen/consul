@@ -29,8 +29,6 @@ sv:
         title: Titel
         description: Beskrivning
         target_url: Länk
-        style: Stil
-        image: Bild
         post_started_at: Inlägget påbörjades
         post_ended_at: Inlägget avslutades
       edit:
