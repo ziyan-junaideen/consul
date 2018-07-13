@@ -27,8 +27,6 @@ es-VE:
         title: Título
         description: Descripción
         target_url: Enlace
-        style: Estilo
-        image: Imagen
         post_started_at: Inicio de publicación
         post_ended_at: Fin de publicación
       edit:
