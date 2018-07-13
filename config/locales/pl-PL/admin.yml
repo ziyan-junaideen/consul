@@ -17,8 +17,6 @@ pl:
         title: Tytuł
         description: Opis
         target_url: Link
-        style: Styl
-        image: Obraz
       edit:
         editing: Edytuj baner
         form:
