@@ -28,8 +28,6 @@ id:
         title: Judul
         description: Deskripsi
         target_url: Tautan
-        style: Gaya
-        image: Gambar
         post_started_at: Postingan yang dimulai pada
         post_ended_at: Postingan yang berakhir pada
       edit:
