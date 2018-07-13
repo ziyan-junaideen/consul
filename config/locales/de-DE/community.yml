@@ -3,19 +3,19 @@ de:
     sidebar:
       title: Community
       description:
-        proposal: Beteiligen Sie sich in der Nutzergemeinde für diesen Antrag.
+        proposal: An der Benutzer-Community dieses Vorschlags teilnehmen.
         investment: Beteiligen Sie sich in der Nutzergemeinde dieser Investition.
-      button_to_access: Treten Sie der Gemeinde bei
+      button_to_access: Treten Sie der Community bei
     show:
       title:
-        proposal: Antrags Gemeinde
-        investment: Haushaltsinvestitions Gemeinde
+        proposal: Antragsgemeinschaft
+        investment: Haushaltsinvestitions-Gemeinschaft
       description:
-        proposal: Beteiligen sie sich in der Gemeinde zu diesem Antrag. Eine aktive Gemeinde kann helfen den Inhalt des Antrags zu verbessern und seine Verbreitung zu vergrößern um mehr Unterstützung zu bekommen.
-        investment: Beteiligen Sie sich an dieser Haushaltsinvestition. Eine aktive Gemeinde kann helfen den Inhalt der Haushaltsinvestition zu verbessern und seine Verbreitung zu vergrößern um mehr Unterstützung zu bekommen.
+        proposal: Beteiligen Sie sich an der Community dieses Vorschlags. Eine aktive Gemeinschaft kann dazu beitragen, den Inhalt des Vorschlags zu verbessern und seine Verbreitung zu fördern, um mehr Unterstützung zu erhalten.
+        investment: Beteiligen Sie sich an der Community dieser Budget-Investition. Eine aktive Gemeinschaft kann dazu beitragen, den Inhalt der Haushaltsinvestitionen zu verbessern und ihre Verbreitung zu fördern, um mehr Unterstützung zu erhalten.
       create_first_community_topic:
         first_theme_not_logged_in: Es ist kein Anliegen verfügbar, beteiligen Sie sich, indem Sie das erste erstellen.
-        first_theme: Erstellen Sie das erste Gemeinde Thema
+        first_theme: Erstellen Sie das erste Community-Thema
         sub_first_theme: "Um ein Thema zu erstellen, müssen Sie %{sign_in} o %{sign_up}."
         sign_in: "Anmelden"
         sign_up: "registrieren"
@@ -26,7 +26,7 @@ de:
         new_topic: Thema erstellen
       topic:
         edit: Thema bearbeiten
-        destroy: Thema zerstören
+        destroy: Thema löschen
         comments:
           zero: Keine Kommentare
           one: 1 Kommentar
@@ -54,7 +54,7 @@ de:
         recommendations_title: Empfehlungen zum Erstellen eines Themas
         recommendation_one: Schreiben Sie den Themen-Titel oder ganze Sätze nicht in Großbuchstaben. Im Internet wird dies als Geschrei betrachtet. Und niemand wird gerne angeschrien.
         recommendation_two: Themen oder Kommentare, die illegale Handlungen beinhalten, werden gelöscht. Auch diejenigen, die die Diskussionen absichtlich sabotieren. Alles andere ist erlaubt.
-        recommendation_three: Genießen Sie diesen Ort, die Stimmen, die ihn füllen, es ist auch Ihrer.
+        recommendation_three: Genießen Sie diesen Ort, die Stimmen, die ihn füllen, sind auch Ihre.
   topics:
     show:
       login_to_comment: Sie müssen sich %{signin} oder %{signup}, um einen Kommentar zu hinterlassen.
