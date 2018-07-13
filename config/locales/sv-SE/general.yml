@@ -505,7 +505,6 @@ sv:
       zoom_plus: Expandera bild
       read_more: "Läs mer om %{answer}"
       read_less: "Visa mindre om %{answer}"
-      participate_in_other_polls: Delta i andra omröstningar
       videos: "Extern video"
       info_menu: "Information"
       stats_menu: "Deltagandestatistik"
