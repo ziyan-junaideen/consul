@@ -3,15 +3,15 @@ de:
     sidebar:
       title: Community
       description:
-        proposal: Beteiligen Sie sich in der Nutzergemeinde für diesen Vorschlag.
+        proposal: Beteiligen Sie sich in der Nutzergemeinde für diesen Antrag.
         investment: Beteiligen Sie sich in der Nutzergemeinde dieser Investition.
       button_to_access: Treten Sie der Gemeinde bei
     show:
       title:
-        proposal: Vorschlags Gemeinde
+        proposal: Antrags Gemeinde
         investment: Haushaltsinvestitions Gemeinde
       description:
-        proposal: Beteiligen sie sich in der Gemeinde zu diesem Vorschlag. Eine aktive Gemeinde kann helfen den Inhalt des Vorschlags zu verbessern und seine Verbreitung zu vergrößern um mehr Unterstützung zu bekommen.
+        proposal: Beteiligen sie sich in der Gemeinde zu diesem Antrag. Eine aktive Gemeinde kann helfen den Inhalt des Antrags zu verbessern und seine Verbreitung zu vergrößern um mehr Unterstützung zu bekommen.
         investment: Beteiligen Sie sich an dieser Haushaltsinvestition. Eine aktive Gemeinde kann helfen den Inhalt der Haushaltsinvestition zu verbessern und seine Verbreitung zu vergrößern um mehr Unterstützung zu bekommen.
       create_first_community_topic:
         first_theme_not_logged_in: Es ist kein Anliegen verfügbar, beteiligen Sie sich, indem Sie das erste erstellen.
