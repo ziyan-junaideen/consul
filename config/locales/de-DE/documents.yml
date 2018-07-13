@@ -17,7 +17,7 @@ de:
         confirm: Sind Sie sicher, dass Sie die Unterlagen löschen möchten? Diese Aktion kann nicht widerrufen werden!
     buttons:
       download_document: Download-Datei
-      destroy_document: Dokument zerstören
+      destroy_document: Dokument löschen
     errors:
       messages:
         in_between: müssen in zwischen %{min} und %{max} sein
