@@ -16,7 +16,6 @@ ca:
         preview: vista prèvia
       banner:
         target_url: enllaç
-        style: estil
         post_started_at: Inici de publicació
         post_ended_at: Fi de publicació
     activity:
