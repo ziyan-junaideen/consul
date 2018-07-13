@@ -27,8 +27,6 @@ pt-BR:
         title: Título
         description: Descrição
         target_url: Link
-        style: Estilo
-        image: Imagem
         post_started_at: Post iniciado em
         post_ended_at: Post finalizado em
       edit:
