@@ -389,10 +389,10 @@ de:
         help: Hilfe zu Vorschlägen
       section_footer:
         title: Hilfe zu Vorschlägen
-        description: Machen Sie einen Bürgerantrag. Wenn dieser genügend unterstützt wird wird er zur Wahlphase übergehen. So können alle BürgerInnen entscheiden, wie sie möchten, dass ihre Stadt sein soll.
+        description: Stellen Sie einen Bürgerantrag. Wenn dieser genügend unterstützt wird, wird er zur Wahlphase übergehen. So können alle BürgerInnen entscheiden, wie sie möchten, dass ihre Stadt sein soll.
         help_text_1: "Bürgervorschläge sind eine Chance für Nachbarn und Gemeinschaften direkt zu mitzuentscheiden, wie Sie ihre Stadt gestalten wollen. Jede Person kann einen Vorschlag zu einem Thema oder Anliegen Ihres Interesses bei der Stadtverwaltung einbringen, nachdem dieser ausreichend Unterstützung bekommen hat und die Abstimmungsphase passiert hat."
         help_text_2: "Um einen Vorschlag einzubringen, müssen Sie sich auf %{org} registrieren. Vorschläge, die Unterstützung von anderen Benutzern im Netz erhalten haben, gehen weiter in die Abstimmungsphase. Um Vorschläge unterstützen zu können, ist ein verifierziertes Benutzerkonto notwendig."
-        help_text_3: "Eine Bürgerwahl wird gefeiert, wenn der Antrag die notwendige Unterstützung bekommt. Sobald der Antrag gefeiert wird und mehr Stimmen dafür als dagegen gestimmt haben, nimmt der Stadtrat den Antrag an und führt ihn durch."
+        help_text_3: "Eine Bürgerwahl wird gefeiert, wenn der Antrag die notwendige Unterstützung bekommen hat. Sobald der Antrag gefeiert wird und mehr Stimmen dafür als dagegen gestimmt haben, nimmt der Stadtrat den Antrag an und führt ihn durch."
     new:
       form:
         submit_button: Vorschlag erstellen
