@@ -6,6 +6,7 @@ de:
       title_placeholder: Fügen Sie einen aussagekräftigen Titel für das Bild hinzu
       attachment_label: Bild auswählen
       delete_button: Bild entfernen
+      note: "Sie können ein Bild der folgenden Inhaltstypen hochladen: %{accepted_content_types}, bis zu %{max_file_size} MB."
       add_new_image: Bild hinzufügen
       admin_title: "Bild"
       admin_alt_text: "Alternativer Text für das Bild"
@@ -14,3 +15,7 @@ de:
         notice: Das Bild wurde erfolgreich gelöscht.
         alert: Das Bild kann nicht entfernt werden.
         confirm: Sind sie sicher, dass Sie das Bild löschen möchten? Diese Aktion kann nicht widerrufen werden!
+    errors:
+      messages:
+        in_between: muss zwischen %{min} und %{max} liegen
+        wrong_content_type: Inhaltstyp %{content_type} stimmt mit keiner der akzeptierten Inhaltstypen überein %{accepted_content_types}
