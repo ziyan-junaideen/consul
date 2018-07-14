@@ -127,7 +127,7 @@ de:
       section_footer:
         title: Hilfe zu Diskussionen
         description: Teilen Sie ihre Meinung mit anderen in einer Diskussion über Themen, die Sie interessieren.
-        help_text_1: "Der Raum für Bürgerdebatten zielt auf jeden ab, welcher Anlässe zur Sorge aufdecken kann und jene, die ihre Meinung mit anderen teilen möchten."
+        help_text_1: "Der Raum für Bürgerdebatten richtet sich an alle, die ihr Anliegen darlegen können und sich mit anderen Menschen austauschen wollen."
         help_text_2: 'Um eine Diskussion zu eröffnen, müssen Sie sich auf %{org} registrieren. Benutzer können auch offene Diskussionen kommentieren und sie über "Ich stimme zu" oder "Ich stimme nicht zu" Buttons bewerten.'
         help_text_3: "Denken Sie daran, dass eine Debatte keine bestimmte Aktion auslöst. Wenn sie ein %{proposal} für die Stadt machen oder ein Investitionsprojekt von %{budget} erhöhen möchten, sobald die Phase offen ist, gehen Sie zum entsprechenden Abschnitt."
         proposals_link: Vorschlag
