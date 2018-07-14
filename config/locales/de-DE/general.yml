@@ -116,7 +116,7 @@ de:
         title: Suche
       search_results_html:
         one: " enthält den Begriff <strong>'%{search_term}'</strong>"
-        other: " enthält die Begriffe <strong>'%{search_term}'</strong>"
+        other: " enthält den Begriff <strong>'%{search_term}'</strong>"
       select_order: Sortieren nach
       start_debate: Starten Sie eine Diskussion
       title: Diskussionen
