@@ -9,9 +9,9 @@ de:
     show:
       title:
         proposal: Antragsgemeinschaft
-        investment: Haushaltsinvestitions-Gemeinschaft
+        investment: Budgetinvestitions-Gemeinschaft
       description:
-        proposal: Beteiligen Sie sich an der Community dieses Vorschlags. Eine aktive Gemeinschaft kann dazu beitragen, den Inhalt des Vorschlags zu verbessern und seine Verbreitung zu fördern, um mehr Unterstützung zu erhalten.
+        proposal: Beteiligen Sie sich an der Community dieses Antrags. Eine aktive Gemeinschaft kann dazu beitragen, den Inhalt des Vorschlags zu verbessern und seine Verbreitung zu fördern, um mehr Unterstützung zu erhalten.
         investment: Beteiligen Sie sich an der Community dieser Budget-Investition. Eine aktive Gemeinschaft kann dazu beitragen, den Inhalt der Haushaltsinvestitionen zu verbessern und ihre Verbreitung zu fördern, um mehr Unterstützung zu erhalten.
       create_first_community_topic:
         first_theme_not_logged_in: Es ist kein Anliegen verfügbar, beteiligen Sie sich, indem Sie das erste erstellen.
