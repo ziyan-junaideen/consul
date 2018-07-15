@@ -599,8 +599,8 @@ de:
         see_all: "Alle anzeigen"
       budget_investment:
         found:
-          one: "Es gibt eine Investition mit dem Begriff '%{query}', Sie können darin teilnehmen, statt eine Neue zu eröffnen."
-          other: "Es gibt Investitionen mit dem Begriff '%{query}', Sie können in diesen teilnehmen, statt eine Neue zu eröffnen."
+          one: "Es gibt eine Investition mit dem Begriff '%{query}', Sie können daran teilnehmen, anstatt ein neues zu eröffnen."
+          other: "Es gibt Investitionen mit dem Begriff '%{query}', Sie können an diesen teilnehmen, anstatt ein neues zu eröffnen."
         message: "Sie sehen %{limit} %{count} Investitionen mit dem Begriff \"%{query}\""
         see_all: "Alle anzeigen"
       proposal:
