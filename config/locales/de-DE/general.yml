@@ -605,8 +605,8 @@ de:
         see_all: "Alle anzeigen"
       proposal:
         found:
-          one: "Es gibt einen Antrag mit dem Begriff '%{query}', Sie können an diesem mitwirken, statt einen neuen zu erstellen"
-          other: "Es gibt Anträge mit dem Begriff '%{query}', Sie können an diesen mitwirken, statt einen Neuen zu kreieren"
+          one: "Es gibt einen Antrag mit dem Begriff '%{query}', Sie können an diesem mitwirken, anstatt einen neuen zu erstellen"
+          other: "Es gibt Anträge mit dem Begriff '%{query}', Sie können an diesen mitwirken, anstatt einen neuen zu erstellen"
         message: "Sie sehen %{limit} %{count} Anträge mit dem Begriff \"%{query}\""
         see_all: "Alle anzeigen"
     tags_cloud:
@@ -626,9 +626,9 @@ de:
     orbit:
       previous_slide: Vorherige Folie
       next_slide: Nächste Folie
-    documentation: Zusätzliche dokumentation
+    documentation: Zusätzliche Dokumentation
     view_mode:
-      title: Ansicht Modus
+      title: Ansichtsmodus
       cards: Karten
       list: Liste
   social:
@@ -675,7 +675,7 @@ de:
       start_new: Ausgabenvorschlag erstellen
     show:
       author_deleted: Benutzer gelöscht
-      code: 'Antrags Code:'
+      code: 'Antrags-Code:'
       share: Teilen
     wrong_price_format: Nur ganze Zahlen
     spending_proposal:
@@ -725,7 +725,7 @@ de:
       deleted_budget_investment: Dieses Investitionsprojekt wurde gelöscht
       proposals: Vorschläge
       debates: Diskussionen
-      budget_investments: Haushalts Investitionen
+      budget_investments: Haushaltsinvestitionen
       comments: Kommentare
       actions: Aktionen
       filters:
@@ -756,7 +756,7 @@ de:
       see: "Vorschlag anzeigen"
   votes:
     agree: Ich stimme zu
-    anonymous: Zu viele anonyme Stimmen um die Wahl anzuerkennen %{verify_account}.
+    anonymous: Zu viele anonyme Stimmen, um die Wahl anzuerkennen %{verify_account}.
     comment_unauthenticated: Sie müssen sich %{signin} oder %{signup}, um abzustimmen.
     disagree: Ich stimme nicht zu
     organizations: Organisationen ist es nicht erlaubt abzustimmen
@@ -796,7 +796,7 @@ de:
       title: Hervorgehoben
     recommended:
       title: Empfehlungen, die Sie vielleicht interessieren
-      help: "Diese Empfehlungen werden durch die Schlagwörter der Debatten und Anträgee, denen Sie folgen, generiert."
+      help: "Diese Empfehlungen werden durch die Schlagwörter der Debatten und Anträge, denen Sie folgen, generiert."
       debates:
         title: Empfohlene Diskussionen
         btn_text_link: Alle empfohlenen Diskussionen
@@ -841,14 +841,14 @@ de:
     content_title:
       proposal: "Vorschlag"
       debate: "Diskussion"
-      budget_investment: "Haushalts Investitionen"
+      budget_investment: "Haushaltsinvestitionen"
   admin/widget:
     header:
       title: Verwaltung
   annotator:
     help:
-      alt: Wählen Sie den Text, den Sie kommentieren möchten, und drücken Sie den Schalter mit dem Bleistift.
-      text: Um dieses Dokument zu kommentieren, müssen Sie %{sign_in} oder %{sign_up}. Dann wählen Sie den Text aus, den Sie kommentieren möchten, und klicken auf den Schalter mit dem Bleistift.
+      alt: Wählen Sie den Text, den Sie kommentieren möchten und drücken Sie die Schaltfläche mit dem Stift.
+      text: Um dieses Dokument zu kommentieren, müssen Sie %{sign_in} oder %{sign_up}. Dann wählen Sie den Text aus, den Sie kommentieren möchten, und klicken mit dem Stift auf die Schaltfläche.
       text_sign_in: Anmeldung
       text_sign_up: registrieren
       title: Wie kann ich dieses Dokument kommentieren?
