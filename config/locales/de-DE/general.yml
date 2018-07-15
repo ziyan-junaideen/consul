@@ -605,7 +605,7 @@ de:
         see_all: "Alle anzeigen"
       proposal:
         found:
-          one: "Es gibt einen Antrag mit dem Begriff '%{query}', Sie können an diesem mitwirken, statt einen Neuen zu kreieren"
+          one: "Es gibt einen Antrag mit dem Begriff '%{query}', Sie können an diesem mitwirken, statt einen neuen zu erstellen"
           other: "Es gibt Anträge mit dem Begriff '%{query}', Sie können an diesen mitwirken, statt einen Neuen zu kreieren"
         message: "Sie sehen %{limit} %{count} Anträge mit dem Begriff \"%{query}\""
         see_all: "Alle anzeigen"
