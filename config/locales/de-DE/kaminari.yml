@@ -5,6 +5,8 @@ de:
         zero: Einträge
         one: Eintrag
         other: Einträge
+      more_pages:
+        display_entries: Es wird <strong>%{first}&nbsp;&nbsp;%{last}</strong> von <strong>%{total}%{entry_name}</strong> angrzeigt
       one_page:
         display_entries:
           zero: "%{entry_name} kann nicht gefunden werden"
