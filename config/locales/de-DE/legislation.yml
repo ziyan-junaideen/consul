@@ -40,6 +40,7 @@ de:
         select_draft_version: Entwurf auswählen
         select_version_submit: sehen
         updated_at: aktualisiert am %{date}
+        see_changes: Zusammenfassung der Änderungen ansehen
         see_comments: Alle Kommentare anzeigen
         text_toc: Inhaltsverzeichnis
         text_body: Text
@@ -61,6 +62,7 @@ de:
           next: Geplante
           past: Vorherige
         no_open_processes: Es gibt keine offenen Verfahren
+        no_next_processes: Es gibt keine geplanten Prozesse
         no_past_processes: Es gibt keine vergangene Prozesse
         section_header:
           icon_alt: Gesetzgebungsverfahren Icon
