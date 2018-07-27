@@ -681,6 +681,20 @@ feature 'Budget Investments' do
       end
     end
 
+    scenario 'Order is random if budget is finished' do
+      10.times { create(:budget_investment) }
+
+      budget.update(phase: 'finished')
+
+      visit budget_investments_path(budget, heading_id: heading.id)
+      order = all(".budget-investment h3").collect {|i| i.text }
+
+      visit budget_investments_path(budget, heading_id: heading.id)
+      new_order = eq(all(".budget-investment h3").collect {|i| i.text })
+
+      expect(order).not_to eq(new_order)
+    end
+
     def investments_order
       all(".budget-investment h3").collect {|i| i.text }
     end
@@ -868,6 +882,10 @@ feature 'Budget Investments' do
 
           expect(page).to have_content(investment.formatted_price)
           expect(page).to have_content(investment.price_explanation)
+
+          if budget.finished?
+            investment.update(winner: true)
+          end
 
           visit budget_investments_path(budget)
 
@@ -1063,6 +1081,24 @@ feature 'Budget Investments' do
     expect(page).not_to have_content("Local government is not competent in this matter")
   end
 
+  scenario "Show (unfeasible budget investment with valuation not finished)" do
+    user = create(:user)
+    login_as(user)
+
+    investment = create(:budget_investment,
+                        :unfeasible,
+                        valuation_finished: false,
+                        budget: budget,
+                        group: group,
+                        heading: heading,
+                        unfeasibility_explanation: 'Local government is not competent in this matter')
+
+    visit budget_investment_path(budget_id: budget.id, id: investment.id)
+
+    expect(page).not_to have_content("Unfeasibility explanation")
+    expect(page).not_to have_content("Local government is not competent in this matter")
+  end
+
   scenario "Show milestones", :js do
     user = create(:user)
     investment = create(:budget_investment)
@@ -1114,6 +1150,20 @@ feature 'Budget Investments' do
     within("#tab-milestones") do
       expect(page).to have_content("Don't have defined milestones")
     end
+  end
+
+  scenario "Only winner investments are show when budget is finished" do
+    3.times { create(:budget_investment, heading: heading) }
+
+    Budget::Investment.first.update(feasibility: 'feasible', selected: true, winner: true)
+    Budget::Investment.second.update(feasibility: 'feasible', selected: true, winner: true)
+    budget.update(phase: 'finished')
+
+    visit budget_investments_path(budget, heading_id: heading.id)
+
+    expect(page).to have_content("#{Budget::Investment.first.title}")
+    expect(page).to have_content("#{Budget::Investment.second.title}")
+    expect(page).not_to have_content("#{Budget::Investment.third.title}")
   end
 
   it_behaves_like "followable", "budget_investment", "budget_investment_path", { "budget_id": "budget_id", "id": "id" }
