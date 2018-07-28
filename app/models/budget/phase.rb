@@ -1,6 +1,6 @@
 class Budget
   class Phase < ActiveRecord::Base
-    PHASE_KINDS = %w(drafting informing ideas_posting project_formation accepting reviewing selecting valuating publishing_prices balloting
+    PHASE_KINDS = %w(drafting informing ideas formation accepting reviewing selecting valuating publishing_prices balloting
                 reviewing_ballots finished).freeze
     PUBLISHED_PRICES_PHASES = %w(publishing_prices balloting reviewing_ballots finished).freeze
     SUMMARY_MAX_LENGTH = 1000
