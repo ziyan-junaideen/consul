@@ -31,8 +31,8 @@ es:
     phase:
       drafting: Borrador (No visible para el público)
       informing: Información
-      ideas: Publicación de ideas
-      formation: Formación de proyectos
+      ideas_posting: Publicación de ideas
+      project_forming: Formación de proyectos
       accepting: Presentación de proyectos
       reviewing: Revisión inicial de proyectos
       selecting: Fase de apoyos

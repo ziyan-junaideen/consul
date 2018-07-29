@@ -1,6 +1,6 @@
 class Budget
   class Phase < ActiveRecord::Base
-    PHASE_KINDS = %w(drafting informing ideas formation accepting reviewing selecting valuating publishing_prices balloting
+    PHASE_KINDS = %w(drafting informing ideas_posting project_forming accepting reviewing selecting valuating publishing_prices balloting
                 reviewing_ballots finished).freeze
     PUBLISHED_PRICES_PHASES = %w(publishing_prices balloting reviewing_ballots finished).freeze
     SUMMARY_MAX_LENGTH = 1000
@@ -27,14 +27,16 @@ class Budget
     scope :published,         -> { enabled.where.not(kind: 'drafting') }
     scope :drafting,          -> { find_by_kind('drafting') }
     scope :informing,         -> { find_by_kind('informing') }
-    scope :accepting,         -> { find_by_kind('accepting')}
-    scope :reviewing,         -> { find_by_kind('reviewing')}
-    scope :selecting,         -> { find_by_kind('selecting')}
-    scope :valuating,         -> { find_by_kind('valuating')}
-    scope :publishing_prices, -> { find_by_kind('publishing_prices')}
-    scope :balloting,         -> { find_by_kind('balloting')}
-    scope :reviewing_ballots, -> { find_by_kind('reviewing_ballots')}
-    scope :finished,          -> { find_by_kind('finished')}
+    scope :ideas_posting,     -> { find_by_kind('ideas_posting') }
+    scope :project_forming,   -> { find_by_kind('project_forming') }
+    scope :accepting,         -> { find_by_kind('accepting') }
+    scope :reviewing,         -> { find_by_kind('reviewing') }
+    scope :selecting,         -> { find_by_kind('selecting') }
+    scope :valuating,         -> { find_by_kind('valuating') }
+    scope :publishing_prices, -> { find_by_kind('publishing_prices') }
+    scope :balloting,         -> { find_by_kind('balloting') }
+    scope :reviewing_ballots, -> { find_by_kind('reviewing_ballots') }
+    scope :finished,          -> { find_by_kind('finished') }
 
     def next_enabled_phase
       next_phase&.enabled? ? next_phase : next_phase&.next_enabled_phase

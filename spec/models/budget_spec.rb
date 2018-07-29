@@ -63,6 +63,12 @@ describe Budget do
       budget.phase = "drafting"
       expect(budget).to be_drafting
 
+      budget.phase = "ideas_posting"
+      expect(budget).to be_ideas_posting
+
+      budget.phase = "project_forming"
+      expect(budget).to be_project_forming
+
       budget.phase = "accepting"
       expect(budget).to be_accepting
 

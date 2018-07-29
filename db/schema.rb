@@ -273,8 +273,8 @@ ActiveRecord::Schema.define(version: 20180728164239) do
     t.text     "description_drafting"
     t.text     "description_publishing_prices"
     t.text     "description_informing"
-    t.text     "description_ideas"
-    t.text     "description_formation"
+    t.text     "description_ideas_posting"
+    t.text     "description_project_forming"
   end
 
   create_table "campaigns", force: :cascade do |t|

@@ -22,6 +22,8 @@ class Budget < ActiveRecord::Base
 
   scope :drafting, -> { where(phase: "drafting") }
   scope :informing, -> { where(phase: "informing") }
+  scope :ideas_posting, -> { where(phase: "ideas_posting") }
+  scope :project_forming, -> { where(phase: "project_forming") }
   scope :accepting, -> { where(phase: "accepting") }
   scope :reviewing, -> { where(phase: "reviewing") }
   scope :selecting, -> { where(phase: "selecting") }
@@ -67,6 +69,14 @@ class Budget < ActiveRecord::Base
 
   def informing?
     phase == "informing"
+  end
+
+  def ideas_posting?
+    phase == "ideas_posting"
+  end
+
+  def project_forming?
+    phase == "project_forming"
   end
 
   def accepting?
