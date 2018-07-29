@@ -229,6 +229,8 @@ FactoryBot.define do
     phase 'accepting'
     description_drafting  "This budget is drafting"
     description_informing "This budget is informing"
+    description_ideas_posting "This budget is ideas posting"
+    description_project_forming "This budget is project forming"
     description_accepting "This budget is accepting"
     description_reviewing "This budget is reviewing"
     description_selecting "This budget is selecting"
