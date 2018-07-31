@@ -82,6 +82,7 @@ es:
         budget_investments: Gestionar proyectos de gasto
         table_name: Nombre
         table_phase: Fase
+        table_ideas: Ideas
         table_investments: Proyectos de gasto
         table_edit_groups: Grupos de partidas
         table_edit_budget: Editar

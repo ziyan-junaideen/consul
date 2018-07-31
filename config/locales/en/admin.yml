@@ -82,6 +82,7 @@ en:
         budget_investments: Manage projects
         table_name: Name
         table_phase: Phase
+        table_ideas: Ideas
         table_investments: Investments
         table_edit_groups: Headings groups
         table_edit_budget: Edit

@@ -13,6 +13,7 @@
     <tr>
       <th><%= t("admin.budgets.index.table_name") %></th>
       <th><%= t("admin.budgets.index.table_phase") %></th>
+      <th><%= t("admin.budgets.index.table_ideas") %></th>
       <th><%= t("admin.budgets.index.table_investments") %></th>
       <th><%= t("admin.budgets.index.table_edit_groups") %></th>
       <th><%= t("admin.budgets.index.table_edit_budget") %></th>
@@ -26,6 +27,9 @@
         </td>
         <td class="small">
           <%= t("budgets.phase.#{budget.phase}") %>
+        </td>
+        <td>
+          <%= budget.investments.idea.count %>
         </td>
         <td>
           <%= link_to t("admin.budgets.index.budget_investments"),
