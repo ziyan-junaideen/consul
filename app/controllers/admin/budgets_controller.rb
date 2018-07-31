@@ -6,6 +6,8 @@ class Admin::BudgetsController < Admin::BaseController
 
   load_and_authorize_resource
 
+  IDEA_ATTRIBUTES = %i[post_idea_uri commitee_list_uri volunteer_form_uri delgate_form_uri].freeze
+
   def index
     @budgets = Budget.send(@current_filter).order(created_at: :desc).page(params[:page])
   end
@@ -56,6 +58,7 @@ class Admin::BudgetsController < Admin::BaseController
     def budget_params
       descriptions = Budget::Phase::PHASE_KINDS.map{|p| "description_#{p}"}.map(&:to_sym)
       valid_attributes = [:name, :phase, :currency_symbol] + descriptions
+      valid_attributes += IDEA_ATTRIBUTES if Setting['feature.ideas']
       params.require(:budget).permit(*valid_attributes)
     end
 
