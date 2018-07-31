@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180731042039) do
+ActiveRecord::Schema.define(version: 20180731053636) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -276,6 +276,10 @@ ActiveRecord::Schema.define(version: 20180731042039) do
     t.text     "description_informing"
     t.text     "description_ideas"
     t.text     "description_formation"
+    t.string   "post_idea_uri"
+    t.string   "commitee_list_uri"
+    t.string   "volunteer_form_uri"
+    t.string   "delegate_form_uri"
   end
 
   create_table "campaigns", force: :cascade do |t|
