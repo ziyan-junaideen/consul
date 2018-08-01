@@ -364,6 +364,10 @@ FactoryBot.define do
       feasibility "feasible"
       valuation_finished true
     end
+    
+    trait :idea do
+      kind 'project'
+    end
 
      trait :hidden do
        hidden_at Time.current
