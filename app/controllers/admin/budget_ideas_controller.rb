@@ -89,7 +89,7 @@ class Admin::BudgetIdeasController < Admin::BaseController
     end
 
     def load_budget
-      @budget = Budget.includes(:groups).project.find(params[:budget_id])
+      @budget = Budget.includes(:groups).find(params[:budget_id])
     end
 
     def load_investment
