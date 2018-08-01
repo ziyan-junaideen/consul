@@ -80,6 +80,7 @@ es:
           open: Abiertos
           finished: Terminados
         budget_investments: Gestionar proyectos de gasto
+        budget_ideas: Ideas de presupuesto
         table_name: Nombre
         table_phase: Fase
         table_ideas: Ideas

@@ -80,6 +80,7 @@ en:
           open: Open
           finished: Finished
         budget_investments: Manage projects
+        budget_ideas: Manage ideas
         table_name: Name
         table_phase: Phase
         table_ideas: Ideas

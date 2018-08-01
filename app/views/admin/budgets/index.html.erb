@@ -12,8 +12,8 @@
   <thead>
     <tr>
       <th><%= t("admin.budgets.index.table_name") %></th>
-      <% if Setting["feature.ideas"] %><th><%= t("admin.budgets.index.table_phase") %></th><% end %>
-      <th><%= t("admin.budgets.index.table_ideas") %></th>
+      <th><%= t("admin.budgets.index.table_phase") %></th>
+      <% if Setting["feature.ideas"] %><th><%= t("admin.budgets.index.table_ideas") %></th><% end %>
       <th><%= t("admin.budgets.index.table_investments") %></th>
       <th><%= t("admin.budgets.index.table_edit_groups") %></th>
       <th><%= t("admin.budgets.index.table_edit_budget") %></th>
@@ -30,7 +30,9 @@
         </td>
         <% if Setting["feature.ideas"] %>
           <td>
-            <%= budget.investments.idea.count %>
+            <%= link_to t("admin.budgets.index.budget_ideas"),
+                          admin_budget_budget_ideas_path(budget_id: budget.id),
+                          class: "button hollow medium" %>
           </td>
         <% end %>
         <td>
