@@ -1,4 +1,4 @@
-class Admin::BudgetInvestmentsController < Admin::BaseController
+class Admin::BudgetInvestmentIdeasController < Admin::BaseController
   include FeatureFlags
   include CommentableActions
 
