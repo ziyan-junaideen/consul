@@ -382,6 +382,10 @@ FactoryBot.define do
      trait :with_confirmed_hide do
        confirmed_hide_at Time.current
      end
+
+    trait :idea do
+      kind 'idea'
+    end
   end
 
   factory :budget_phase, class: 'Budget::Phase' do

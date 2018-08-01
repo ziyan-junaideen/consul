@@ -6,6 +6,6 @@ class SetupIdeasFeatureInSettings < ActiveRecord::Migration
   end
 
   def down
-    SEtting.where(key: KEY).delete_all
+    Setting.where(key: KEY).delete_all
   end
 end
