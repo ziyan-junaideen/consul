@@ -1,4 +1,4 @@
-class Admin::BudgetInvestmentIdeasController < Admin::BaseController
+class Admin::BudgetIdeasController < Admin::BaseController
   include FeatureFlags
   include CommentableActions
 
@@ -76,7 +76,7 @@ class Admin::BudgetInvestmentIdeasController < Admin::BaseController
     end
 
     def load_investments
-      @investments = Budget::Investment.project.scoped_filter(params, @current_filter)
+      @investments = Budget::Investment.idea.scoped_filter(params, @current_filter)
       @investments = @investments.order_filter(params[:sort_by]) if params[:sort_by].present?
       @investments = @investments.page(params[:page]) unless request.format.csv?
     end
@@ -93,7 +93,7 @@ class Admin::BudgetInvestmentIdeasController < Admin::BaseController
     end
 
     def load_investment
-      @investment = Budget::Investment.project.by_budget(@budget).find(params[:id])
+      @investment = Budget::Investment.idea.by_budget(@budget).find(params[:id])
     end
 
     def load_admins
@@ -109,7 +109,7 @@ class Admin::BudgetInvestmentIdeasController < Admin::BaseController
     end
 
     def load_tags
-      @tags = Budget::Investment.project.tags_on(:valuation).order(:name).uniq
+      @tags = Budget::Investment.idea.tags_on(:valuation).order(:name).uniq
     end
 
     def load_ballot

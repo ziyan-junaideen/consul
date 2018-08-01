@@ -66,6 +66,11 @@ namespace :admin do
       member { patch :toggle_selection }
     end
 
+    resources :budget_ideas, only: [:index, :show, :edit, :update] do
+      resources :budget_investment_milestones
+      member { patch :toggle_selection }
+    end
+
     resources :budget_phases, only: [:edit, :update]
   end
 
