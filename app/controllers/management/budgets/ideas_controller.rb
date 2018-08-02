@@ -1,4 +1,4 @@
-class Management::Budgets::InvestmentsController < Management::BaseController
+class Management::Budgets::IdeasController < Management::BaseController
 
   load_resource :budget
   load_resource :investment, through: :budget, class: 'Budget::Investment'
