@@ -49,7 +49,7 @@ namespace :management do
       get :print, on: :collection
     end
 
-    resources :ideas, only: [:index, :new, :create, :show, :destroy], controller: 'budgets/investments' do
+    resources :ideas, only: [:index, :new, :create, :show, :destroy], controller: 'budgets/ideas' do
       post :vote, on: :member
       get :print, on: :collection
     end
