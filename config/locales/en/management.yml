@@ -66,6 +66,7 @@ en:
       print_spending_proposals: Print spending proposals
       support_spending_proposals: Support spending proposals
       create_budget_investment: Create budget investment
+      create_budget_idea: Create budget idea
       print_budget_investments: Print budget investments
       support_budget_investments: Support budget investments
       users: Users management
