@@ -18,10 +18,11 @@ class Management::Budgets::IdeasController < Management::BaseController
   def create
     @investment.terms_of_service = "1"
     @investment.author = managed_user
+    @investment.kind = 'idea'
 
     if @investment.save
       notice = t('flash.actions.create.notice', resource_name: Budget::Investment.model_name.human, count: 1)
-      redirect_to management_budget_investment_path(@budget, @investment), notice: notice
+      redirect_to management_budget_idea_path(@budget, @investment), notice: notice
     else
       render :new
     end
@@ -35,7 +36,7 @@ class Management::Budgets::IdeasController < Management::BaseController
     @investment.register_selection(managed_user)
     load_investment_votes(@investment)
     respond_to do |format|
-      format.html { redirect_to management_budget_investments_path(heading_id: @investment.heading.id) }
+      format.html { redirect_to management_budget_ideas_path(heading_id: @investment.heading.id) }
       format.js
     end
   end
