@@ -1,7 +1,7 @@
 class Management::Budgets::IdeasController < Management::BaseController
 
   load_resource :budget
-  load_resource :investment, through: :budget, class: 'Budget::Investment'
+  load_resource :investment, through: :budget, class: 'Budget::Investment', parent: false
 
   before_action :only_verified_users, except: :print
   before_action :load_heading, only: [:index, :show, :print]
