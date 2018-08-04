@@ -7,7 +7,7 @@ class Management::Budgets::IdeasController < Management::BaseController
   before_action :load_heading, only: [:index, :show, :print]
 
   def index
-    @investments = @investments.apply_filters_and_search(@budget, params).page(params[:page])
+    @investments = @investments.idea.apply_filters_and_search(@budget, params).page(params[:page])
     load_investment_votes(@investments)
   end
 

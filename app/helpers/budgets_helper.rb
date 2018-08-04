@@ -26,18 +26,26 @@ module BudgetsHelper
   end
 
   def namespaced_budget_investment_path(investment, options = {})
-    case namespace
-    when "management/budgets"
+    key = "#{namespace}##{investment.kind}"
+
+    case key
+    when "management/budgets#project"
       management_budget_investment_path(investment.budget, investment, options)
+    when "management/budgets#idea"
+      management_budget_idea_path(investment.budget, investment, options)
     else
       budget_investment_path(investment.budget, investment, options)
     end
   end
 
   def namespaced_budget_investment_vote_path(investment, options = {})
-    case namespace
-    when "management/budgets"
+    key = "#{namespace}##{investment.kind}"
+
+    case key
+    when "management/budgets#project"
       vote_management_budget_investment_path(investment.budget, investment, options)
+    when "management/budgets#idea"
+      vote_management_budget_idea_path(investment.budget, investment, options)
     else
       vote_budget_investment_path(investment.budget, investment, options)
     end
