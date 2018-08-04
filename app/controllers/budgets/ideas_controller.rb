@@ -7,7 +7,7 @@ module Budgets
     before_action :authenticate_user!, except: [:index, :show, :json_data]
 
     load_and_authorize_resource :budget, except: :json_data
-    load_and_authorize_resource :investment, through: :budget, class: "Budget::Investment",
+    load_and_authorize_resource :investment, through: :budget, class: "Budget::Investment", parent: false,
                                 except: :json_data
 
     before_action -> { flash.now[:notice] = flash[:notice].html_safe if flash[:html_safe] && flash[:notice] }
