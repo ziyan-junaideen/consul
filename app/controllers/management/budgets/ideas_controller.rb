@@ -16,6 +16,8 @@ class Management::Budgets::IdeasController < Management::BaseController
   end
 
   def create
+    load_categories
+
     @investment.terms_of_service = "1"
     @investment.author = managed_user
     @investment.kind = 'idea'
@@ -53,7 +55,7 @@ class Management::Budgets::IdeasController < Management::BaseController
     end
 
     def investment_params
-      params.require(:budget_investment).permit(:title, :description, :external_url, :heading_id, :tag_list, :organization_name, :location)
+      params.require(:budget_investment).permit(:title, :description, :external_url, :heading_id, :tag_list, :organization_name, :location, :skip_map, map_location_attributes: %i[id latitude longitude zoom])
     end
 
     def only_verified_users
