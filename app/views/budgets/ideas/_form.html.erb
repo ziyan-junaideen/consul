@@ -74,7 +74,7 @@
     <% end %>
 
     <div class="actions small-12 medium-6 large-4 end column">
-      <%= f.submit(nil, class: "button expanded") %>
+      <%= f.submit(t("budgets.ideas.#{@investment.persisted? ? 'edit' : 'new'}.submit_button"), class: "button expanded") %>
     </div>
   </div>
 <% end %>
