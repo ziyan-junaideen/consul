@@ -112,6 +112,18 @@ en:
       search_results:
         one: " containing the term '%{search_term}'"
         other: " containing the term '%{search_term}'"
+    budget_ideas:
+      alert:
+        unverified_user: User is not verified
+      create: Create a budget idea
+      filters:
+        heading: Concepto
+        unfeasible: Unfeasible idea
+      print:
+        print_button: Print
+      search_results:
+        one: " containing the term '%{search_term}'"
+        other: " containing the term '%{search_term}'"
     spending_proposals:
       alert:
         unverified_user: User is not verified
