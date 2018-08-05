@@ -74,7 +74,7 @@ module Abilities
 
         can :create, Budget::Investment,               budget: { phase: "accepting" }
         can :suggest, Budget::Investment,              budget: { phase: ["accepting", "ideas_posting"] }
-        can :destroy, Budget::Investment,              budget: { phase: ["accepting", "reviewing"] }, author_id: user.id
+        can :destroy, Budget::Investment,              budget: { phase: ["accepting", "ideas_posting", "reviewing"] }, author_id: user.id
         can :vote, Budget::Investment,                 budget: { phase: "selecting" }
 
         can [:show, :create], Budget::Ballot,          budget: { phase: "balloting" }

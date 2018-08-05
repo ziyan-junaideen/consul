@@ -33,6 +33,8 @@ module BudgetsHelper
       management_budget_investment_path(investment.budget, investment, options)
     when "management/budgets#idea"
       management_budget_idea_path(investment.budget, investment, options)
+    when "budgets#idea"
+      budget_idea_path(investment.budget, investment, options)
     else
       budget_investment_path(investment.budget, investment, options)
     end
@@ -46,6 +48,8 @@ module BudgetsHelper
       vote_management_budget_investment_path(investment.budget, investment, options)
     when "management/budgets#idea"
       vote_management_budget_idea_path(investment.budget, investment, options)
+    when "budgets#idea"
+      vote_budget_idea_path(investment.budget, investment, options)
     else
       vote_budget_investment_path(investment.budget, investment, options)
     end
