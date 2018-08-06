@@ -25,6 +25,17 @@ module BudgetsHelper
     Budget::CURRENCY_SYMBOLS.map { |cs| [ cs, cs ] }
   end
 
+  def namespaced_budget_investments_path(budget, options = {})
+    key = "#{namespace}##{investment.kind}"
+
+    case key
+    when "budgets#idea"
+      budget_ideas_path(budget, options)
+    else
+      budget_investments_path(budget, options)
+    end
+  end
+
   def namespaced_budget_investment_path(investment, options = {})
     key = "#{namespace}##{investment.kind}"
 
