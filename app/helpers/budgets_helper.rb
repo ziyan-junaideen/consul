@@ -25,11 +25,8 @@ module BudgetsHelper
     Budget::CURRENCY_SYMBOLS.map { |cs| [ cs, cs ] }
   end
 
-  def namespaced_budget_investments_path(budget, options = {})
-    key = "#{namespace}##{investment.kind}"
-
-    case key
-    when "budgets#idea"
+  def kind_sensitive_budget_investments_path(budget, options = {})
+    if budget.ideas_posting?
       budget_ideas_path(budget, options)
     else
       budget_investments_path(budget, options)
