@@ -133,6 +133,8 @@ es:
         edit: "Editar grupo"
         name: "Nombre del grupo"
         submit: "Guardar grupo"
+        voting_style: "Estilo de votación"
+        number_votes_per_heading: "Número de votos que se pueden realizar por partida"
     budget_headings:
       name: "Nombre"
       no_headings: "No hay partidas creadas todavía. Cada usuario podrá votar en una sola partida de cada grupo."
