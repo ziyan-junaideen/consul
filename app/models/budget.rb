@@ -220,4 +220,5 @@ class Budget < ApplicationRecord
   def generate_slug?
     slug.nil? || drafting?
   end
+
 end
