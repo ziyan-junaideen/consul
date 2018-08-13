@@ -15,7 +15,7 @@ class UsersController < ApplicationController
       @activity_counts = HashWithIndifferentAccess.new(
                           proposals: Proposal.where(author_id: @user.id).count,
                           debates: (Setting['feature.debates'] ? Debate.where(author_id: @user.id).count : 0),
-                          budget_investments: (Setting['feature.budgets'] ? Budget::Investment.where(author_id: @user.id).count : 0),
+                          budget_investments: (Setting['feature.budgets'] ? Budget::Investment.project.where(author_id: @user.id).count : 0),
                           comments: only_active_commentables.count,
                           follows: @user.follows.map(&:followable).compact.count,
                           budget_ideas: (Setting['feature.ideas'] ? Budget::Investment.idea.where(author_id: @user.id).count : 0))
