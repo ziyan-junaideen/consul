@@ -1,6 +1,6 @@
 <% provide :social_media_meta_tags do %>
 <%= render "shared/social_media_meta_tags",
-            social_url: budget_investments_path(investment),
+            social_url: budget_ideas_path(investment),
             social_title: investment.title,
             social_description: investment.description,
             twitter_image_url: (investment.image.present? ? investment.image_url(:thumb) : nil),
@@ -11,7 +11,7 @@
 
   <div class="row">
     <div class="small-12 medium-9 column">
-      <%= back_link_to budget_investments_path(investment.budget, heading_id: investment.heading) %>
+      <%= back_link_to budget_ideas_path(investment.budget, heading_id: investment.heading) %>
 
       <h1><%= investment.title %></h1>
 
@@ -29,7 +29,7 @@
       <%= render_image(investment.image, :large, true) if investment.image.present? %>
 
       <p id="investment_code">
-        <%= t("budgets.investments.show.code_html", code: investment.id) %>
+        <%= t("budgets.ideas.show.code_html", code: investment.id) %>
       </p>
 
       <%= safe_html_with_links investment.description.html_safe %>
@@ -42,13 +42,13 @@
 
       <% if investment.location.present? %>
         <p>
-          <%= t("budgets.investments.show.location_html", location: investment.location) %>
+          <%= t("budgets.ideas.show.location_html", location: investment.location) %>
         </p>
       <% end %>
 
       <% if investment.organization_name.present? %>
         <p>
-          <%= t("budgets.investments.show.organization_name_html", name: investment.organization_name) %>
+          <%= t("budgets.ideas.show.organization_name_html", name: investment.organization_name) %>
         </p>
       <% end %>
 
@@ -66,7 +66,7 @@
       <% end %>
 
       <% if investment.should_show_price_explanation? %>
-        <h2><%= t('budgets.investments.show.price_explanation') %></h2>
+        <h2><%= t('budgets.ideas.show.price_explanation') %></h2>
         <p><%= investment.price_explanation %></p>
       <% end %>
 
@@ -96,7 +96,7 @@
               <%= render partial: '/budgets/investments/votes', locals: {
                 investment: investment,
                 investment_votes: investment_votes,
-                vote_url: vote_budget_investment_path(investment.budget, investment, value: 'yes')
+                vote_url: vote_budget_idea_path(investment.budget, investment, value: 'yes')
               } %>
             </div>
           </div>
@@ -106,14 +106,14 @@
           <div class="text-center">
             <span class="total-supports">
               <strong>
-                <%= t("budgets.investments.investment.supports",
+                <%= t("budgets.ideas.investment.supports",
                     count: investment.total_votes) %>
               </strong>
             </span>
           </div>
         <% elsif investment.should_show_ballots? %>
           <div class="sidebar-divider"></div>
-          <h2><%= t("budgets.investments.show.votes") %></h2>
+          <h2><%= t("budgets.ideas.show.votes") %></h2>
           <div class="text-center">
             <div id="<%= dom_id(investment) %>_ballot">
               <%= render partial: 'ballot', locals: {
@@ -127,31 +127,31 @@
       <% else %>
         <div class="float-right">
           <span class="label-budget-investment float-left">
-            <%= t("budgets.investments.show.title") %>
+            <%= t("budgets.ideas.show.title") %>
           </span>
           <span class="icon-budget"></span>
         </div>
         <br>
         <% if investment.unfeasible? %>
           <div class="callout warning">
-            <%= t("budgets.investments.show.project_unfeasible_html") %>
+            <%= t("budgets.ideas.show.project_unfeasible_html") %>
           </div>
         <% elsif investment.winner? %>
           <div class="callout success">
-            <strong><%= t("budgets.investments.show.project_winner") %></strong>
+            <strong><%= t("budgets.ideas.show.project_winner") %></strong>
           </div>
         <% elsif investment.selected? %>
           <div class="callout success">
-            <%= t("budgets.investments.show.project_selected_html") %>
+            <%= t("budgets.ideas.show.project_selected_html") %>
           </div>
         <% elsif !investment.selected? %>
           <div class="callout warning">
-            <%= t("budgets.investments.show.project_not_selected_html") %>
+            <%= t("budgets.ideas.show.project_not_selected_html") %>
           </div>
         <% end %>
         <% if investment.should_show_price? %>
           <div class="sidebar-divider"></div>
-          <h2><%= t("budgets.investments.show.price") %></h2>
+          <h2><%= t("budgets.ideas.show.price") %></h2>
           <div class="supports text-center">
             <p class="investment-project-amount">
               <%= investment.formatted_price %>
@@ -160,10 +160,10 @@
         <% end %>
       <% end %>
       <%= render partial: 'shared/social_share', locals: {
-        share_title: t("budgets.investments.show.share"),
+        share_title: t("budgets.ideas.show.share"),
         title: investment.title,
         image_url: image_absolute_url(investment.image, :thumb),
-        url: budget_investment_url(investment.budget, investment),
+        url: budget_idea_url(investment.budget, investment),
         description: investment.title
       } %>
 

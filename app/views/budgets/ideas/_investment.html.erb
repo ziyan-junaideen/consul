@@ -27,7 +27,7 @@
               <% if investment.author.hidden? || investment.author.erased? %>
                 <span class="bullet">&nbsp;&bull;&nbsp;</span>
                 <span class="author">
-                  <%= t("budgets.investments.show.author_deleted") %>
+                  <%= t("budgets.ideas.show.author_deleted") %>
                 </span>
               <% else %>
                 <span class="bullet">&nbsp;&bull;&nbsp;</span>
@@ -60,7 +60,7 @@
           <div id="<%= dom_id(investment) %>_votes"
                class="small-12 medium-3 column text-center"
                <%= 'data-equalizer-watch' if feature?(:allow_images) && investment.image.present? %>>
-               <%= render partial: '/budgets/investments/votes', locals: {
+               <%= render partial: '/budgets/ideas/votes', locals: {
                  investment: investment,
                  investment_votes: investment_votes,
                  vote_url: namespaced_budget_investment_vote_path(investment, value: 'yes')
