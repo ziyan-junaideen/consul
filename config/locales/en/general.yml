@@ -740,6 +740,9 @@ en:
         follows:
           one: 1 Following
           other: "%{count} Following"
+        budget_ideas:
+          one: 1 Idea
+          other: "%{count} Ideas"
       no_activity: User has no public activity
       no_private_messages: "This user doesn't accept private messages."
       private_activity: This user decided to keep the activity list private.
