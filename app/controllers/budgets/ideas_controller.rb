@@ -57,11 +57,12 @@ module Budgets
 
     def create
       @investment.author = current_user
+      @investment.kind = 'idea'
 
       if @investment.save
         Mailer.budget_investment_created(@investment).deliver_later
-        redirect_to budget_investment_path(@budget, @investment),
-                    notice: t('flash.actions.create.budget_investment')
+        redirect_to budget_idea_path(@budget, @investment),
+                    notice: t('flash.actions.create.budget_idea')
       else
         render :new
       end
@@ -69,14 +70,14 @@ module Budgets
 
     def destroy
       @investment.destroy
-      redirect_to user_path(current_user, filter: 'budget_investments'), notice: t('flash.actions.destroy.budget_investment')
+      redirect_to user_path(current_user, filter: 'budget_ideas'), notice: t('flash.actions.destroy.budget_investment')
     end
 
     def vote
       @investment.register_selection(current_user)
       load_investment_votes(@investment)
       respond_to do |format|
-        format.html { redirect_to budget_investments_path(heading_id: @investment.heading.id) }
+        format.html { redirect_to budget_ideas_path(heading_id: @investment.heading.id) }
         format.js
       end
     end

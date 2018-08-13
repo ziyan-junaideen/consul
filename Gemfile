@@ -72,6 +72,7 @@ group :development, :test do
   gem 'quiet_assets', '~> 1.1.0'
   gem 'spring', '~> 2.0.1'
   gem 'spring-commands-rspec', '~> 1.0.4'
+  gem 'xray-rails'
 end
 
 group :test do
