@@ -14,6 +14,7 @@ en:
         proposal_notification: "Your message has been sent correctly."
         spending_proposal: "Spending proposal created successfully. You can access it from %{activity}"
         budget_investment: "Budget Investment created successfully."
+        budget_idea: "Budget Idea created successfully."
         signature_sheet: "Signature sheet created successfully"
         topic: "Topic created successfully."
         valuator_group: "Valuator group created successfully"
