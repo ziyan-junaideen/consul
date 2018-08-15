@@ -10,6 +10,9 @@ en:
       budget/investment:
         one: "Investment"
         other: "Investments"
+      budget/idea:
+        one: "Idea"
+        other: "Ideas"
       budget/investment/milestone:
         one: "milestone"
         other: "milestones"
