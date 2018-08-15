@@ -572,6 +572,11 @@ en:
           notice_html: "You are now following this investment project! </br> We will notify you of changes as they occur so that you are up-to-date."
         destroy:
           notice_html: "You have stopped following this investment project! </br> You will no longer receive notifications related to this project."
+      budget_idea:
+        create:
+          notice_html: "You are now following this idea project! </br> We will notify you of changes as they occur so that you are up-to-date."
+        destroy:
+          notice_html: "You have stopped following this idea project! </br> You will no longer receive notifications related to this project."
       proposal:
           create:
             notice_html: "Now you are following this citizen proposal! </br> We will notify you of changes as they occur so that you are up-to-date."
