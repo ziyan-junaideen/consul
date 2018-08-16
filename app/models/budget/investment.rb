@@ -107,7 +107,11 @@ class Budget
     end
 
     def url
-      budget_investment_path(budget, self)
+      if idea?
+        budget_idea_path(budget, self)
+      else
+        budget_investment_path(budget, self)
+      end
     end
 
     def self.filter_params(params)
