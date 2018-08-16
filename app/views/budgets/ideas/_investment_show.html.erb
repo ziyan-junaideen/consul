@@ -45,7 +45,7 @@
       <% end %>
 
       <% if investment.should_show_unfeasibility_explanation? %>
-        <h2><%= t('budgets.investments.show.unfeasibility_explanation') %></h2>
+        <h2><%= t('budgets.ideas.show.unfeasibility_explanation') %></h2>
         <p><%= investment.unfeasibility_explanation %></p>
       <% end %>
 
@@ -60,7 +60,7 @@
     <aside class="small-12 medium-3 column">
       <% if can_destroy_image?(investment) %>
         <div class="sidebar-divider"></div>
-        <h2><%= t("budgets.investments.show.author") %></h2>
+        <h2><%= t("budgets.ideas.show.author") %></h2>
         <div class="show-actions-menu">
           <%= link_to image_path(investment.image, from: request.url),
                       method: :delete,

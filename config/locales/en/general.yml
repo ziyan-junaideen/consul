@@ -847,6 +847,7 @@ en:
       proposal: "Proposal"
       debate: "Debate"
       budget_investment: "Budget investment"
+      budget_idea: "Budget idea"
   admin/widget:
     header:
       title: Administration
