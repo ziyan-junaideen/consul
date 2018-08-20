@@ -1,14 +1,14 @@
-<%= form_tag(admin_budget_budget_investments_path(budget: @budget), method: :get) do %>
+<%= form_tag(admin_budget_budget_ideas_path(budget: @budget), method: :get) do %>
   <div class="small-12 medium-3 column">
-    <%= select_tag :sort_by, options_for_select(budget_investments_sorting_options, params[:sort_by]),
-                   { prompt: t("admin.budget_investments.index.sort_by.placeholder"),
+    <%= select_tag :sort_by, options_for_select(budget_ideas_sorting_options, params[:sort_by]),
+                   { prompt: t("admin.budget_ideas.index.sort_by.placeholder"),
                      label: false,
                      class: "js-submit-on-change" } %>
   </div>
 <% end %>
 
-<%= link_to t("admin.budget_investments.index.download_current_selection"),
-            admin_budget_budget_investments_path(csv_params),
+<%= link_to t("admin.budget_ideas.index.download_current_selection"),
+            admin_budget_budget_ideas_path(csv_params),
             class: "float-right small clear" %>
 
 <% if params[:filter] == 'winners' %>
@@ -22,7 +22,7 @@
       <%= t("admin.budgets.winners.calculate")%>
     </span>
     <div class="callout warning clear">
-      <%= t("admin.budget_investments.index.cannot_calculate_winners") %>
+      <%= t("admin.budget_ideas.index.cannot_calculate_winners") %>
     </div>
   <% end %>
 <% end %>
@@ -30,26 +30,26 @@
 <% if @investments.any? %>
   <h3 class="inline-block"><%= page_entries_info @investments %></h3><br>
 
-  <%= render "filters_description", i18n_namespace: "admin.budget_investments.index" %>
+  <%= render "filters_description", i18n_namespace: "admin.budget_ideas.index" %>
 
   <table class="table-for-mobile">
     <thead>
       <tr>
-        <th><%= t("admin.budget_investments.index.list.id") %></th>
-        <th class="small-3"><%= t("admin.budget_investments.index.list.title") %></th>
-        <th><%= t("admin.budget_investments.index.list.supports") %></th>
-        <th><%= t("admin.budget_investments.index.list.admin") %></th>
+        <th><%= t("admin.budget_ideas.index.list.id") %></th>
+        <th class="small-3"><%= t("admin.budget_ideas.index.list.title") %></th>
+        <th><%= t("admin.budget_ideas.index.list.supports") %></th>
+        <th><%= t("admin.budget_ideas.index.list.admin") %></th>
         <th>
-          <%= t("admin.budget_investments.index.list.valuation_group") %>
-          <%= t("admin.budget_investments.index.list.valuator") %>
+          <%= t("admin.budget_ideas.index.list.valuation_group") %>
+          <%= t("admin.budget_ideas.index.list.valuator") %>
         </th>
-        <th><%= t("admin.budget_investments.index.list.geozone") %></th>
-        <th><%= t("admin.budget_investments.index.list.feasibility") %></th>
-        <th class="text-center"><%= t("admin.budget_investments.index.list.valuation_finished") %></th>
-        <th class="text-center"><%= t("admin.budget_investments.index.list.visible_to_valuators") %></th>
-        <th class="text-center"><%= t("admin.budget_investments.index.list.selected") %></th>
+        <th><%= t("admin.budget_ideas.index.list.geozone") %></th>
+        <th><%= t("admin.budget_ideas.index.list.feasibility") %></th>
+        <th class="text-center"><%= t("admin.budget_ideas.index.list.valuation_finished") %></th>
+        <th class="text-center"><%= t("admin.budget_ideas.index.list.visible_to_valuators") %></th>
+        <th class="text-center"><%= t("admin.budget_ideas.index.list.selected") %></th>
         <% if params[:filter]  == "selected" %>
-          <th class="text-center"><%= t("admin.budget_investments.index.list.incompatible") %></th>
+          <th class="text-center"><%= t("admin.budget_ideas.index.list.incompatible") %></th>
         <% end %>
       </tr>
     </thead>
@@ -62,7 +62,7 @@
           </td>
           <td>
             <%= link_to investment.title,
-                        admin_budget_budget_investment_path(budget_id: @budget.id,
+                        admin_budget_budget_idea_path(budget_id: @budget.id,
                                                             id: investment.id,
                                                             params: Budget::Investment.filter_params(params)),
                                                             target: "_blank" %>
@@ -72,25 +72,25 @@
           </td>
           <td class="small">
             <% if investment.administrator.present? %>
-              <span title="<%= t("admin.budget_investments.index.assigned_admin") %>">
+              <span title="<%= t("admin.budget_ideas.index.assigned_admin") %>">
                 <%= investment.administrator.name %>
               </span>
             <% else %>
-              <%= t("admin.budget_investments.index.no_admin_assigned") %>
+              <%= t("admin.budget_ideas.index.no_admin_assigned") %>
             <% end %>
           </td>
           <td class="small">
-            <% no_valuation_groups = t("admin.budget_investments.index.no_valuation_groups") %>
+            <% no_valuation_groups = t("admin.budget_ideas.index.no_valuation_groups") %>
             <%= investment.assigned_valuation_groups || no_valuation_groups %>
             <br>
-            <% no_valuators_assigned = t("admin.budget_investments.index.no_valuators_assigned") %>
+            <% no_valuators_assigned = t("admin.budget_ideas.index.no_valuators_assigned") %>
             <%= investment.assigned_valuators || no_valuators_assigned %>
           </td>
           <td class="small">
             <%= investment.heading.name %>
           </td>
           <td class="small">
-            <%= t("admin.budget_investments.index.feasibility.#{investment.feasibility}",
+            <%= t("admin.budget_ideas.index.feasibility.#{investment.feasibility}",
                   price: investment.formatted_price) %>
           </td>
           <td class="small text-center">
@@ -107,7 +107,7 @@
           <td class="small text-center">
             <% if investment.selected? %>
               <%= link_to_unless investment.budget.finished?,
-                                 t("admin.budget_investments.index.selected"),
+                                 t("admin.budget_ideas.index.selected"),
                                  toggle_selection_admin_budget_budget_investment_path(@budget,
                                                                                       investment,
                                                                                       filter: params[:filter],
@@ -120,7 +120,7 @@
                                  class: "button small expanded" %>
             <% elsif investment.feasible? && investment.valuation_finished? %>
               <%= link_to_unless investment.budget.finished?,
-                                 t("admin.budget_investments.index.select"),
+                                 t("admin.budget_ideas.index.select"),
                                  toggle_selection_admin_budget_budget_investment_path(@budget,
                                                                                       investment,
                                                                                       filter: params[:filter],
@@ -146,6 +146,6 @@
   <%= paginate @investments %>
 <% else %>
   <div class="callout primary clear">
-    <%= t("admin.budget_investments.index.no_budget_investments") %>
+    <%= t("admin.budget_ideas.index.no_budget_ideas") %>
   </div>
 <% end %>
