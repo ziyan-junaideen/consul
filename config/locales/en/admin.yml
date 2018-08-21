@@ -331,6 +331,19 @@ en:
         edit_dossier: Edit dossier
         tags: Tags
         user_tags: User tags
+        compatibility:
+          title: Support
+          "true": Incompatible
+          "false": Compatible
+        selection:
+          title: Projects
+          "true": Selected
+          "false": Not selected
+        winner:
+          title: Winner
+          "true": "Yes"
+          "false": "No"
+
     milestones:
       index:
         table_id: "ID"
