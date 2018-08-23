@@ -210,7 +210,7 @@ ActiveRecord::Schema.define(version: 20180731053636) do
     t.datetime "confirmed_hide_at"
     t.datetime "ignored_flag_at"
     t.integer  "flags_count",                                 default: 0
-    t.integer  "variety",                                     default: 0
+    t.integer  "kind",                                        default: 0
   end
 
   add_index "budget_investments", ["administrator_id"], name: "index_budget_investments_on_administrator_id", using: :btree
@@ -274,8 +274,8 @@ ActiveRecord::Schema.define(version: 20180731053636) do
     t.text     "description_drafting"
     t.text     "description_publishing_prices"
     t.text     "description_informing"
-    t.text     "description_ideas"
-    t.text     "description_formation"
+    t.text     "description_ideas_posting"
+    t.text     "description_project_forming"
     t.string   "post_idea_uri"
     t.string   "commitee_list_uri"
     t.string   "volunteer_form_uri"
