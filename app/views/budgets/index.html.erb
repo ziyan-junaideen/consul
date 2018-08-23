@@ -34,7 +34,7 @@
               <% if current_user.level_two_or_three_verified? %>
                 <% if current_budget.ideas_posting? %>
                   <%= link_to t("budgets.ideas.index.sidebar.create"),
-                              (current_budget.post_idea_uri || new_budget_idea_path(current_budget)),
+                              current_budget_ideas_posting_url,
                               class: "button margin-top expanded" %>
                 <% else %>
                   <%= link_to t("budgets.investments.index.sidebar.create"),

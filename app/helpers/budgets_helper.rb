@@ -106,4 +106,12 @@ module BudgetsHelper
       t("admin.budgets.winners.recalculate")
     end
   end
+
+  def current_budget_ideas_posting_url
+    if current_budget.post_idea_uri.to_s.empty?
+      new_budget_idea_path(current_budget)
+    else
+      current_budget.post_idea_uri
+    end
+  end
 end
