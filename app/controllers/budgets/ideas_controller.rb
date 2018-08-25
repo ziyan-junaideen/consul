@@ -11,6 +11,7 @@ module Budgets
                                 except: :json_data
 
     before_action -> { flash.now[:notice] = flash[:notice].html_safe if flash[:html_safe] && flash[:notice] }
+    before_action :confirm_ideas_enabled
     before_action :load_ballot, only: [:index, :show]
     before_action :load_heading, only: [:index, :show]
     before_action :set_random_seed, only: :index
@@ -166,6 +167,12 @@ module Budgets
           @investments.apply_filters_and_search(@budget, params, @current_filter)
                       .send("sort_by_#{@current_order}")
         end
+      end
+
+      def confirm_ideas_enabled
+        return if Setting['feature.ideas']
+        redirect_to budgets_path,
+          notice: t('flash.features.disabled.ideas')
       end
 
   end

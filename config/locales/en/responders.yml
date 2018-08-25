@@ -38,3 +38,7 @@ en:
         topic: "Topic deleted successfully."
         poll_question_answer_video: "Answer video deleted successfully."
         valuator_group: "Valuator group deleted successfully"
+    features:
+      disabled:
+        ideas: Ideas feature has been disabled
+
