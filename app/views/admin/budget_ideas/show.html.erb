@@ -1,4 +1,4 @@
-<%= link_to admin_budget_budget_investments_path(Budget::Investment.filter_params(params)),
+<%= link_to admin_budget_budget_ideas_path(Budget::Investment.filter_params(params)),
             class: "back", data: {no_turbolink: true} do %>
   <span class="icon-angle-left"></span><%= t("shared.back") %>
 <% end %>
@@ -6,5 +6,5 @@
 <%= render 'written_by_author' %>
 
 <%= link_to t("admin.budget_ideas.show.edit"),
-            edit_admin_budget_budget_investment_path(@budget, @investment,
+            edit_admin_budget_budget_idea_path(@budget, @investment,
                                                 Budget::Investment.filter_params(params)) unless @budget.finished? %>
