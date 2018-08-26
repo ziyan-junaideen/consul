@@ -346,6 +346,21 @@ en:
           title: Winner
           "true": "Yes"
           "false": "No"
+      edit:
+        classification: Classification
+        compatibility: Compatibility
+        mark_as_incompatible: Mark as incompatible
+        selection: Selection
+        mark_as_selected: Mark as selected
+        assigned_valuators: Valuators
+        select_heading: Select heading
+        submit_button: Update
+        user_tags: User assigned tags
+        tags: Tags
+        tags_placeholder: "Write the tags you want separated by commas (,)"
+        undefined: Undefined
+        user_groups: "Groups"
+      search_unfeasible: Search unfeasible
       kaminari:
         entry_names:
           idea: 'idea'
