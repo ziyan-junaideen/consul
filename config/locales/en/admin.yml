@@ -315,6 +315,8 @@ en:
           author_username: Author username
           incompatible: Incompatible
           related: Related Projects
+          heading: Heading
+          tags: Tags
         cannot_calculate_winners: The budget has to stay on phase "Balloting projects", "Reviewing Ballots" or "Finished budget" in order to calculate winners projects
         see_results: "See results"
       show:
@@ -344,7 +346,9 @@ en:
           title: Winner
           "true": "Yes"
           "false": "No"
-
+      kaminari:
+        entry_names:
+          idea: 'idea'
     milestones:
       index:
         table_id: "ID"

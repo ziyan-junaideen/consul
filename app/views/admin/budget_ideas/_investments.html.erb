@@ -28,7 +28,7 @@
 <% end %>
 
 <% if @investments.any? %>
-  <h3 class="inline-block"><%= page_entries_info @investments %></h3><br>
+  <h3 class="inline-block"><%= page_entries_info @investments, entry_name: t("admin.budget_ideas.kaminari.entry_names.idea") %></h3><br>
 
   <%= render "filters_description", i18n_namespace: "admin.budget_ideas.index" %>
 
@@ -39,13 +39,8 @@
         <th class="small-3"><%= t("admin.budget_ideas.index.list.title") %></th>
         <th><%= t("admin.budget_ideas.index.list.supports") %></th>
         <th><%= t("admin.budget_ideas.index.list.related") %></th>
-        <th>
-          <%= t("admin.budget_ideas.index.list.valuation_group") %>
-          <%= t("admin.budget_ideas.index.list.valuator") %>
-        </th>
-        <th><%= t("admin.budget_ideas.index.list.geozone") %></th>
-        <th><%= t("admin.budget_ideas.index.list.feasibility") %></th>
-        <th class="text-center"><%= t("admin.budget_ideas.index.list.valuation_finished") %></th>
+        <th><%= t("admin.budget_ideas.index.list.heading") %></th>
+        <th><%= t("admin.budget_ideas.index.list.tags") %></th>
         <th class="text-center"><%= t("admin.budget_ideas.index.list.visible_to_valuators") %></th>
         <th class="text-center"><%= t("admin.budget_ideas.index.list.selected") %></th>
         <% if params[:filter]  == "selected" %>
@@ -73,23 +68,8 @@
           <td>
             <%= investment.related_contents.length %>
           </td>
-          <td class="small">
-            <% no_valuation_groups = t("admin.budget_ideas.index.no_valuation_groups") %>
-            <%= investment.assigned_valuation_groups || no_valuation_groups %>
-            <br>
-            <% no_valuators_assigned = t("admin.budget_ideas.index.no_valuators_assigned") %>
-            <%= investment.assigned_valuators || no_valuators_assigned %>
-          </td>
-          <td class="small">
-            <%= investment.heading.name %>
-          </td>
-          <td class="small">
-            <%= t("admin.budget_ideas.index.feasibility.#{investment.feasibility}",
-                  price: investment.formatted_price) %>
-          </td>
-          <td class="small text-center">
-            <%= investment.valuation_finished? ? t("shared.yes"): t("shared.no") %>
-          </td>
+          <td><%= investment.heading&.name %></td>
+          <td><%= investment.tag_list.to_sentence %></td>
           <td class="small text-center">
             <%= form_for [:admin, investment.budget, investment], remote: true do |f| %>
               <%= f.check_box :visible_to_valuators,
