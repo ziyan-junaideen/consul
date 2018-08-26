@@ -34,7 +34,7 @@
 
         <%= render 'shared/tags', taggable: @debate %>
 
-        <%= render 'relationable/related_content', relationable: @debate %>
+        <%= render 'relationable/related_content', relationable: @debate, namespace: nil %>
 
         <div class="js-moderator-debate-actions margin">
           <%= render 'actions', debate: @debate %>

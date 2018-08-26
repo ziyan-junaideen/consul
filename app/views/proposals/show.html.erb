@@ -124,7 +124,7 @@
 
         <%= render 'shared/geozone', geozonable: @proposal %>
 
-        <%= render 'relationable/related_content', relationable: @proposal %>
+        <%= render 'relationable/related_content', relationable: @proposal, namespace: nil %>
 
         <div class="js-moderator-proposal-actions margin">
           <%= render 'proposals/actions', proposal: @proposal %>

@@ -84,7 +84,7 @@
           <p><%= investment.price_explanation %></p>
         <% end %>
 
-        <%= render 'relationable/related_content', relationable: @investment %>
+        <%= render 'relationable/related_content', relationable: @investment, namespace: nil %>
 
         <div class="js-moderator-investment-actions margin">
           <%= render "budgets/investments/actions", investment: @investment %>
