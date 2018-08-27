@@ -80,6 +80,10 @@ module BudgetsHelper
     Budget::Investment.by_budget(budget).tags_on(:valuation).order(:name).select(:name).distinct
   end
 
+  def idea_tags_select_options(budget)
+    Budget::Investment.by_budget(budget).idea.tags_on(:tags).order(:name).select(:name).distinct
+  end
+
   def budget_published?(budget)
     !budget.drafting? || current_user&.administrator?
   end

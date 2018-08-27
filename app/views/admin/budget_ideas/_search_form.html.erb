@@ -31,7 +31,7 @@
     </div>
     <div class="small-12 medium-3 column">
       <%= select_tag :tag_name,
-                     options_for_select(investment_tags_select_options(@budget), params[:tag_name]),
+                     options_for_select(idea_tags_select_options(@budget), params[:tag_name]),
                      { prompt: t("admin.budget_ideas.index.tags_filter_all"),
                        label: false} %>
     </div>
