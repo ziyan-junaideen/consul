@@ -109,7 +109,7 @@ class Admin::BudgetIdeasController < Admin::BaseController
     end
 
     def load_tags
-      @tags = Budget::Investment.idea.tags_on(:valuation).order(:name).uniq
+      @tags = Budget::Investment.idea.tags_on(:tags).order(:name).uniq
     end
 
     def load_ballot

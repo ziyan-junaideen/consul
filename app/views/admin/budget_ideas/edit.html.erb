@@ -50,14 +50,14 @@
 
 
     <div class="small-12 column">
-      <%= f.label :valuation_tag_list, t("admin.budget_ideas.edit.tags") %>
+      <%= f.label :tag_list, t("admin.budget_ideas.edit.tags") %>
       <div class="tags">
         <% @tags.each do |tag| %>
           <a class="js-add-tag-link"><%= tag.name %></a>
         <% end %>
       </div>
       <%= f.text_field :valuation_tag_list,
-                        value: @investment.tag_list_on(:valuation).sort.join(','),
+                        value: @investment.tag_list.sort.join(','),
                         label: false,
                         placeholder: t("admin.budget_ideas.edit.tags_placeholder"),
                         class: 'js-tag-list' %>
