@@ -89,9 +89,9 @@ module BudgetsHelper
     if current_budget.ideas_posting?
       investments = current_budget.investments.idea
     elsif current_budget.valuating_or_later?
-      investments = current_budget.investments.selected
+      investments = current_budget.investments.project.selected
     else
-      investments = current_budget.investments
+      investments = current_budget.investments.project
     end
 
     MapLocation.where(investment_id: investments).map { |l| l.json_data }
