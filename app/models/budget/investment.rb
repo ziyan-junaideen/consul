@@ -97,6 +97,8 @@ class Budget
 
     scope :for_render, -> { includes(:heading) }
 
+    scope :published, -> { where(published: true) }
+
     before_save :calculate_confidence_score
     after_save :recalculate_heading_winners if :incompatible_changed?
     before_validation :set_responsible_name

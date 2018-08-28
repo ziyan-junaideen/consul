@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180731053636) do
+ActiveRecord::Schema.define(version: 20180828174710) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -211,6 +211,7 @@ ActiveRecord::Schema.define(version: 20180731053636) do
     t.datetime "ignored_flag_at"
     t.integer  "flags_count",                                 default: 0
     t.integer  "kind",                                        default: 0
+    t.boolean  "published",                                   default: true
   end
 
   add_index "budget_investments", ["administrator_id"], name: "index_budget_investments_on_administrator_id", using: :btree
@@ -280,6 +281,7 @@ ActiveRecord::Schema.define(version: 20180731053636) do
     t.string   "commitee_list_uri"
     t.string   "volunteer_form_uri"
     t.string   "delegate_form_uri"
+    t.text     "related_links"
   end
 
   create_table "campaigns", force: :cascade do |t|
