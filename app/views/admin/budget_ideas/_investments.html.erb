@@ -41,7 +41,7 @@
         <th><%= t("admin.budget_ideas.index.list.related") %></th>
         <th><%= t("admin.budget_ideas.index.list.heading") %></th>
         <th><%= t("admin.budget_ideas.index.list.tags") %></th>
-        <th class="text-center"><%= t("admin.budget_ideas.index.list.visible_to_valuators") %></th>
+        <th class="text-center"><%= t("admin.budget_ideas.index.list.published") %></th>
       </tr>
     </thead>
 
@@ -67,8 +67,8 @@
           <td><%= investment.heading&.name %></td>
           <td><%= investment.tag_list.to_sentence %></td>
           <td class="small text-center">
-            <%= form_for [:admin, investment.budget, investment], remote: true do |f| %>
-              <%= f.check_box :visible_to_valuators,
+            <%= form_for investment, url: admin_budget_budget_idea_path(investment.budget, investment), remote: true do |f| %>
+              <%= f.check_box :published,
                               label: false,
                               class: "js-submit-on-change",
                               id: "budget_investment_visible_to_valuators" %>
