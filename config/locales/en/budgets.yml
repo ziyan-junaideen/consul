@@ -166,12 +166,12 @@ en:
         submit_button: Update Idea
       index:
         title: Participatory budgeting
-        unfeasible: Unfeasible investment projects
-        unfeasible_text: "The investments must meet a number of criteria (legality, concreteness, be the responsibility of the city, not exceed the limit of the budget) to be declared viable and reach the stage of final vote. All investments don't meet these criteria are marked as unfeasible and published in the following list, along with its report of infeasibility."
-        by_heading: "Investment projects with scope: %{heading}"
+        unfeasible: Unfeasible idea projects
+        unfeasible_text: "The ideas must meet a number of criteria (legality, concreteness, be the responsibility of the city, not exceed the limit of the budget) to be declared viable and reach the stage of final vote. All ideas don't meet these criteria are marked as unfeasible and published in the following list, along with its report of infeasibility."
+        by_heading: "idea projects with scope: %{heading}"
         search_form:
           button: Search
-          placeholder: Search investment projects...
+          placeholder: Search idea projects...
           title: Search
         search_results_html:
           one: " containing the term <strong>'%{search_term}'</strong>"
@@ -186,11 +186,11 @@ en:
           different_heading_assigned_html: "You have active votes in another heading: %{heading_link}"
           change_ballot: "If your change your mind you can remove your votes in %{check_ballot} and start again."
           check_ballot_link: "check my ballot"
-          zero: You have not voted any investment project in this group.
-          verified_only: "To create a new budget investment %{verify}."
+          zero: You have not voted any idea project in this group.
+          verified_only: "To create a new budget idea %{verify}."
           verify_account: "verify your account"
           create: "Post an idea"
-          not_logged_in: "To create a new budget investment you must %{sign_in} or %{sign_up}."
+          not_logged_in: "To create a new budget idea you must %{sign_in} or %{sign_up}."
           sign_in: "sign in"
           sign_up: "sign up"
           by_feasibility: By feasibility
@@ -204,11 +204,11 @@ en:
         author_deleted: User deleted
         price_explanation: Price explanation
         unfeasibility_explanation: Unfeasibility explanation
-        code_html: 'Investment project code: <strong>%{code}</strong>'
+        code_html: 'idea project code: <strong>%{code}</strong>'
         location_html: 'Location: <strong>%{location}</strong>'
         organization_name_html: 'Proposed on behalf of: <strong>%{name}</strong>'
         share: Share
-        title: Investment project
+        title: idea
         supports: Supports
         votes: Votes
         price: Price
@@ -216,21 +216,21 @@ en:
         milestones_tab: Milestones
         no_milestones: Don't have defined milestones
         milestone_publication_date: "Published %{publication_date}"
-        milestone_status_changed: Investment status changed to
+        milestone_status_changed: idea status changed to
         author: Author
-        project_unfeasible_html: 'This investment project <strong>has been marked as not feasible</strong> and will not go to balloting phase.'
-        project_selected_html: 'This investment project <strong>has been selected</strong> for balloting phase.'
-        project_winner: 'Winning investment project'
-        project_not_selected_html: 'This investment project <strong>has not been selected</strong> for balloting phase.'
+        project_unfeasible_html: 'This idea project <strong>has been marked as not feasible</strong> and will not go to balloting phase.'
+        project_selected_html: 'This idea project <strong>has been selected</strong> for balloting phase.'
+        project_winner: 'Winning idea project'
+        project_not_selected_html: 'This idea project <strong>has not been selected</strong> for balloting phase.'
       wrong_price_format: Only integer numbers
-      investment:
+      idea:
         add: Vote
-        already_added: You have already added this investment project
-        already_supported: You have already supported this investment project. Share it!
+        already_added: You have already added this idea project
+        already_supported: You have already supported this idea project. Share it!
         support_title: Support this project
         confirm_group:
-          one: "You can only support investments in %{count} district. If you continue you cannot change the election of your district. Are you sure?"
-          other: "You can only support investments in %{count} district. If you continue you cannot change the election of your district. Are you sure?"
+          one: "You can only support ideas in %{count} district. If you continue you cannot change the election of your district. Are you sure?"
+          other: "You can only support ideas in %{count} district. If you continue you cannot change the election of your district. Are you sure?"
         supports:
           one: 1 support
           other: "%{count} supports"
@@ -242,6 +242,8 @@ en:
         change_ballot: "If your change your mind you can remove your votes in %{check_ballot} and start again."
         check_ballot_link: "check my ballot"
         price: "This heading have a budget of"
+
+    # ideas
     progress_bar:
       assigned: "You have assigned: "
       available: "Available budget: "
