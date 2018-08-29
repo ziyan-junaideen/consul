@@ -22,7 +22,11 @@ module FollowablesHelper
   end
 
   def followable_class_name(followable)
-    followable.class.to_s.parameterize('_')
+    if followable.is_a?(Budget::Investment) && followable.idea?
+      'budget_idea'
+    else
+      followable.class.to_s.parameterize('_')
+    end
   end
 
   def find_or_build_follow(user, followable)
