@@ -59,12 +59,6 @@ class Admin::BudgetIdeasController < Admin::BaseController
     load_investments
   end
 
-  def toggle_published
-    @investment.toggle :published
-    @investment.save
-    load_investments
-  end
-
   private
 
     def load_comments
