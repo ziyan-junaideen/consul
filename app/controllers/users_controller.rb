@@ -71,6 +71,13 @@ class UsersController < ApplicationController
 
     def load_follows
       @follows = @user.follows.group_by(&:followable_type)
+
+      investments = @follows['Budget::Investment']
+      projects = investments.select { |follow| follow.followable.project? }
+      ideas = investments.select { |follow| follow.followable.idea? }
+
+      @follows.delete 'Budget::Investment' if projects.empty?
+      @follows['Budget::Idea'] = ideas if ideas.any?
     end
 
     def load_budget_ideas
