@@ -34,9 +34,9 @@ module Budgets
 
     def index
       if @budget.finished?
-        @investments = investments.idea.winners.page(params[:page]).per(10).for_render
+        @investments = investments.idea.published.winners.page(params[:page]).per(10).for_render
       else
-        @investments = investments.idea.page(params[:page]).per(10).for_render
+        @investments = investments.idea.published.page(params[:page]).per(10).for_render
       end
 
       @investment_ids = @investments.pluck(:id)
