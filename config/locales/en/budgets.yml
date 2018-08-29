@@ -151,7 +151,7 @@ en:
     ideas:
       form:
         tag_category_label: "Categories"
-        tags_instructions: "Add categories to your idea so it is easier to find."
+        tags_instructions: "Tag this proposal. You can choose from proposed categories or add your own"
         tags_label: Tags
         tags_placeholder: "Enter the tags you would like to use, separated by commas (',')"
         map_location: "Map location"
@@ -242,8 +242,6 @@ en:
         change_ballot: "If your change your mind you can remove your votes in %{check_ballot} and start again."
         check_ballot_link: "check my ballot"
         price: "This heading have a budget of"
-      related_content:
-        title: Related Links
     progress_bar:
       assigned: "You have assigned: "
       available: "Available budget: "
