@@ -36,7 +36,14 @@
                        label: false} %>
     </div>
 
-    <div class="medium-push-6 column"></div>
+    <div class="small-12 medium-3 column">
+      <%= select_tag :published,
+                     options_for_select(idea_published_select_options, params[:published]),
+                     { prompt: t("admin.budget_ideas.index.published_all"),
+                       label: false} %>
+    </div>
+
+    <div class="medium-push-3 column"></div>
   </div>
   <div class="row" >
     <div class="small-12 medium-6 column">
