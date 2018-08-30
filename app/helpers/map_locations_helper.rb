@@ -24,12 +24,12 @@ module MapLocationsHelper
     "remove-marker-link-#{dom_id(map_location)}"
   end
 
-  def render_map(map_location, parent_class, editable, remove_marker_label, investments_coordinates=nil)
+  def render_map(map_location, parent_class, editable, remove_marker_label, investments_coordinates=nil, resource=map_resource_type)
     map_location = MapLocation.new if map_location.nil?
     map = content_tag_for :div,
                           map_location,
                           class: "map",
-                          data: prepare_map_settings(map_location, editable, parent_class, investments_coordinates)
+                          data: prepare_map_settings(map_location, editable, parent_class, investments_coordinates, map_resource_type)
     map += map_location_remove_marker(map_location, remove_marker_label) if editable
     map
   end
@@ -45,9 +45,13 @@ module MapLocationsHelper
     end
   end
 
+  def map_resource_type
+    current_budget.ideas_posting? ? 'ideas' : 'investments'
+  end
+
   private
 
-  def prepare_map_settings(map_location, editable, parent_class, investments_coordinates=nil)
+  def prepare_map_settings(map_location, editable, parent_class, investments_coordinates=nil, resource_type=nil)
     options = {
       map: "",
       map_center_latitude: map_location_latitude(map_location),
@@ -60,7 +64,8 @@ module MapLocationsHelper
       latitude_input_selector: "##{map_location_input_id(parent_class, 'latitude')}",
       longitude_input_selector: "##{map_location_input_id(parent_class, 'longitude')}",
       zoom_input_selector: "##{map_location_input_id(parent_class, 'zoom')}",
-      marker_investments_coordinates: investments_coordinates
+      marker_investments_coordinates: investments_coordinates,
+      resource_type: resource_type
     }
     options[:marker_latitude] = map_location.latitude if map_location.latitude.present?
     options[:marker_longitude] = map_location.longitude if map_location.longitude.present?
