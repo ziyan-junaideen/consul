@@ -20,7 +20,7 @@ class Admin::BudgetPhasesController < Admin::BaseController
   end
 
   def budget_phase_params
-    valid_attributes = [:starts_at, :ends_at, :summary, :description, :enabled]
+    valid_attributes = [:starts_at, :ends_at, :summary, :description, :enabled, :title]
     params.require(:budget_phase).permit(*valid_attributes)
   end
 
