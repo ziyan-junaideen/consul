@@ -93,6 +93,7 @@ class Budget
     scope :by_admin,          ->(admin_id)    { where(administrator_id: admin_id) }
     scope :by_tag,            ->(tag_name)    { tagged_with(tag_name) }
     scope :by_valuator,       ->(valuator_id) { where("budget_valuator_assignments.valuator_id = ?", valuator_id).joins(:valuator_assignments) }
+    scope :by_published,      ->(published)   { where(published: published) }
     scope :by_valuator_group, ->(valuator_group_id) { where("budget_valuator_group_assignments.valuator_group_id = ?", valuator_group_id).joins(:valuator_group_assignments) }
 
     scope :for_render, -> { includes(:heading) }
@@ -132,6 +133,7 @@ class Budget
       results = results.by_valuator(params[:valuator_id])                  if params[:valuator_id].present?
       results = results.by_valuator_group(params[:valuator_group_id])      if params[:valuator_group_id].present?
       results = results.by_admin(params[:administrator_id])                if params[:administrator_id].present?
+      results = results.by_published(params[:published])                   if params[:published].present?
       results = advanced_filters(params, results)                          if params[:advanced_filters].present?
       results = search_by_title_or_id(params[:title_or_id].strip, results) if params[:title_or_id]
 
