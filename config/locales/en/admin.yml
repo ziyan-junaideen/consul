@@ -142,6 +142,8 @@ en:
         end_date: End date
         summary: Summary
         summary_help_text: This text will inform the user about the phase. To show it even if the phase is not active, select the checkbox below
+        title: Tilte
+        title_help_text: "If a title is provided, budget list views will use the title instead of the default title available. (warning: no translation support)"
         description: Description
         description_help_text: This text will appear in the header when the phase is active
         enabled: Phase enabled
