@@ -67,7 +67,7 @@
         <%= back_link_to budget_path(@budget) %>
 
         <h2 class="margin-top">
-          <%= t("budgets.ideas.index.title") %>
+          <%= current_budget_phase.description || t("budgets.ideas.index.title") %>
         </h2>
       </div>
     </div>
