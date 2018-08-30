@@ -670,6 +670,11 @@
 .proposals-list,
 .investment-projects-list,
 .budget-investments-list {
+  .floating-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 
   @include breakpoint(medium) {
     margin-bottom: rem-calc(48);
@@ -979,7 +984,6 @@
 }
 
 .budget-investment-show {
-
   .label-budget-investment {
     background: none;
     clear: both;

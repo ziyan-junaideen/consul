@@ -1,5 +1,6 @@
-<div id="<%= dom_id(investment) %>" class="budget-investment clear">
+<div id="<%= dom_id(investment) %>" class="budget-investment clear relative">
   <div class="panel <%= ('with-image' if feature?(:allow_images) && investment.image.present?) %>">
+    <span class="investment-project-info floating-label">Idea</span>
 
     <% if feature?(:allow_images) && investment.image.present? %>
     <div class="row" data-equalizer>
