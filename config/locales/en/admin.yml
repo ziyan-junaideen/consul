@@ -347,6 +347,11 @@ en:
           title: Winner
           "true": "Yes"
           "false": "No"
+        published:
+          title: Published 
+          "true": "Yes"
+          "false": "No"
+        
       edit:
         classification: Classification
         compatibility: Compatibility
