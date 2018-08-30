@@ -124,4 +124,12 @@ module BudgetsHelper
       current_budget.post_idea_uri
     end
   end
+
+  def budget_idea_title_by_heading(heading_name)
+    if current_budget_phase.title
+      "#{current_budget_phase.title}: #{heading_name}"
+    else
+      t("budgets.ideas.index.by_heading", heading: heading_name)
+    end
+  end
 end
