@@ -84,6 +84,10 @@ module BudgetsHelper
     Budget::Investment.by_budget(budget).idea.tags_on(:tags).order(:name).select(:name).distinct
   end
 
+  def idea_published_select_options
+    [['Published', true], ['Not Published', false]]
+  end
+
   def budget_published?(budget)
     !budget.drafting? || current_user&.administrator?
   end
