@@ -51,7 +51,7 @@
                         data: {js_url: suggest_tags_path} %>
     </div>
 
-    <% unless current_user.manager? %>
+    <% if current_user && !current_user.manager? %>
 
       <div class="small-12 column">
         <%= f.label :terms_of_service do %>
