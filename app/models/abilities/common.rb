@@ -57,8 +57,6 @@ module Abilities
 
       can [:create, :destroy], DirectUpload
 
-      can :create, Budget::Investment, kind: 1, budget: { phase: ['ideas_posting'] }
-
       unless user.organization?
         can :vote, Debate
         can :vote, Comment

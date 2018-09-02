@@ -4,15 +4,15 @@ module Budgets
     include CommentableActions
     include FlagActions
 
-    before_action :authenticate_user!, except: [:index, :show, :new, :json_data]
+    before_action :authenticate_user!, except: [:index, :show, :new, :create, :json_data]
 
-    load_and_authorize_resource :budget, except: :json_data    
+    load_and_authorize_resource :budget, except: :json_data
     load_and_authorize_resource :investment, through: :budget, class: "Budget::Investment", parent: false,
-                                except: [:json_data, :new]
+                                except: [:json_data, :new, :create]
 
     before_action -> { flash.now[:notice] = flash[:notice].html_safe if flash[:html_safe] && flash[:notice] }
 
-    before_action :load_idea, only: [:new]
+    before_action :load_idea, only: [:new, :create]
     before_action :confirm_ideas_enabled
     before_action :load_ballot, only: [:index, :show]
     before_action :load_heading, only: [:index, :show]
@@ -59,8 +59,12 @@ module Budgets
     end
 
     def create
+      @investment.assign_attributes(investment_params)
       @investment.author = current_user
       @investment.kind = 'idea'
+
+      authorize! :create, @investment
+
 
       if @investment.save
         Mailer.budget_investment_created(@investment).deliver_later

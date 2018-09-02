@@ -1,7 +1,6 @@
 class Ability
   include CanCan::Ability
-
-  def initialize(user)
+ def initialize(user)
     # If someone can hide something, he can also hide it
     # from the moderation screen
     alias_action :hide_in_moderation_screen, to: :hide
