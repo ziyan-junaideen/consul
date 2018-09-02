@@ -66,6 +66,18 @@
 
     <% end %>
 
+    <% unless current_user %>
+      <div class="small-12 column">
+        <%= f.fields_for @investment.author do |author_fields| %>
+          <%= author_fields.label :username %>
+          <p class="help-text" id="username-help-text"><%= t("devise_views.users.registrations.new.username_note") %></p>
+          <%= author_fields.text_field :username, label: false %>
+
+          <%= author_fields.email_field :email, placeholder: t("devise_views.users.registrations.new.email_label") %>
+        <% end %>
+      </div>
+    <% end %>
+
     <div class="actions small-12 medium-6 large-4 end column">
       <%= f.submit(t("budgets.ideas.#{@investment.persisted? ? 'edit' : 'new'}.submit_button"), class: "button expanded") %>
     </div>

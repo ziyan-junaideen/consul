@@ -47,6 +47,7 @@ module Budgets
     end
 
     def new
+      @investment.build_author unless @investment.author
     end
 
     def show
@@ -60,11 +61,13 @@ module Budgets
 
     def create
       @investment.assign_attributes(investment_params)
-      @investment.author = current_user
+
+      author = current_user || User.first_or_initialize_for_email(user_params)
+
+      @investment.author = author
       @investment.kind = 'idea'
 
       authorize! :create, @investment
-
 
       if @investment.save
         Mailer.budget_investment_created(@investment).deliver_later
@@ -139,6 +142,12 @@ module Budgets
                       image_attributes: [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy],
                       documents_attributes: [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy],
                       map_location_attributes: [:latitude, :longitude, :zoom])
+      end
+
+      def user_params
+        params.require(:budget_investment)
+              .permit(author_attributes: [:username, :email])
+              .dig :author_attributes
       end
 
       def load_ballot
