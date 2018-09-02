@@ -89,6 +89,17 @@ class User < ActiveRecord::Base
     )
   end
 
+  # Finds existing user or initializes a user for use in idea guest submission.
+  def self.first_or_initializefor_idea(params)
+    email_user = User.find_by(email: params[:email])
+
+    email_user || User.new(
+      username: params.username,
+      email: params.email,
+      terms_of_service: '1',
+    )
+  end
+
   def name
     organization? ? organization.name : username
   end
