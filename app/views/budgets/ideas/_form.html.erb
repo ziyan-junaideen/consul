@@ -68,7 +68,7 @@
 
     <% unless current_user %>
       <div class="small-12 column">
-        <%= f.fields_for @investment.author do |author_fields| %>
+        <%= f.fields_for :author do |author_fields| %>
           <%= author_fields.label :username %>
           <p class="help-text" id="username-help-text"><%= t("devise_views.users.registrations.new.username_note") %></p>
           <%= author_fields.text_field :username, label: false %>

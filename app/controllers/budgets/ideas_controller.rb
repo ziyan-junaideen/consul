@@ -62,10 +62,11 @@ module Budgets
     def create
       @investment.assign_attributes(investment_params)
 
-      author = current_user || User.first_or_initialize_for_email(user_params)
+      author = current_user || User.first_or_initialize_for_email(author_params)
 
       @investment.author = author
       @investment.kind = 'idea'
+      @investment.terms_of_service = '1'
 
       authorize! :create, @investment
 
@@ -144,10 +145,10 @@ module Budgets
                       map_location_attributes: [:latitude, :longitude, :zoom])
       end
 
-      def user_params
+      def author_params
         params.require(:budget_investment)
-              .permit(author_attributes: [:username, :email])
-              .dig :author_attributes
+              .permit(author: [:username, :email])
+              .dig :author
       end
 
       def load_ballot

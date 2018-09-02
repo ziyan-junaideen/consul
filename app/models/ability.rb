@@ -5,6 +5,8 @@ class Ability
     # from the moderation screen
     alias_action :hide_in_moderation_screen, to: :hide
 
+    can :create, Budget::Investment
+
     if user # logged-in users
       merge Abilities::Valuator.new(user) if user.valuator?
 
