@@ -282,7 +282,6 @@ ActiveRecord::Schema.define(version: 20180902134129) do
     t.string   "commitee_list_uri"
     t.string   "volunteer_form_uri"
     t.string   "delegate_form_uri"
-    t.text     "related_links"
   end
 
   create_table "campaigns", force: :cascade do |t|

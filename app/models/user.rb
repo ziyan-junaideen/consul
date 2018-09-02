@@ -90,13 +90,14 @@ class User < ActiveRecord::Base
   end
 
   # Finds existing user or initializes a user for use in idea guest submission.
-  def self.first_or_initializefor_idea(params)
+  def self.first_or_initialize_for_email(params)
     email_user = User.find_by(email: params[:email])
 
     email_user || User.new(
-      username: params.username,
-      email: params.email,
+      username: params[:username],
+      email: params[:email],
       terms_of_service: '1',
+      complete: false
     )
   end
 
@@ -268,6 +269,7 @@ class User < ActiveRecord::Base
 
   def password_required?
     return false if skip_password_validation
+    return false unless complete?
     super
   end
 

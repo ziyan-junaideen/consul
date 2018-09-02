@@ -690,4 +690,30 @@ describe User do
 
   end
 
+  describe 'self.first_or_initialize_for_email' do
+    it 'finds existing user' do
+      user = create(:user)
+
+      params = {
+        username: user.username,
+        email: user.email
+      }
+
+      result = User.first_or_initialize_for_email(params)
+      expect(result).to eq(user)
+    end
+
+    it 'initializes new user' do
+      user = build(:user)
+
+      params = {
+        username: user.username,
+        email: user.email
+      }
+
+      result = User.first_or_initialize_for_email(params)
+      expect(result).to be_valid
+    end
+  end
+
 end
