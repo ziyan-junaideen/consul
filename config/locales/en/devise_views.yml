@@ -15,7 +15,9 @@ en:
     mailer:
       confirmation_instructions:
         confirm_link: Confirm my account
+        confirm_and_login_link: Confirm and login
         text: 'You can confirm your email account at the following link:'
+        login_text: 'You can confirm your email and login to your account at the following link:'
         title: Welcome
         welcome: Welcome
       reset_password_instructions:
