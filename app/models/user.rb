@@ -361,4 +361,12 @@ class User < ActiveRecord::Base
       validator.validate(self)
     end
 
+    # def send_on_create_confirmation_instructions
+    #   if complete?
+    #     super
+    #   else
+    #     byebug
+    #   end
+    # end
+
 end
