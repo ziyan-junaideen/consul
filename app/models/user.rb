@@ -97,7 +97,7 @@ class User < ActiveRecord::Base
       username: params[:username],
       email: params[:email],
       terms_of_service: '1',
-      complete: false
+      skip_password_validation: '1'
     )
   end
 
@@ -360,13 +360,5 @@ class User < ActiveRecord::Base
         maximum: User.username_max_length)
       validator.validate(self)
     end
-
-    # def send_on_create_confirmation_instructions
-    #   if complete?
-    #     super
-    #   else
-    #     byebug
-    #   end
-    # end
 
 end
