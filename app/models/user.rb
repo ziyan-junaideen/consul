@@ -269,7 +269,6 @@ class User < ActiveRecord::Base
 
   def password_required?
     return false if skip_password_validation
-    return false unless complete?
     super
   end
 
