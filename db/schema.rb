@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180902134129) do
+ActiveRecord::Schema.define(version: 20180830114725) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -282,6 +282,7 @@ ActiveRecord::Schema.define(version: 20180902134129) do
     t.string   "commitee_list_uri"
     t.string   "volunteer_form_uri"
     t.string   "delegate_form_uri"
+    t.text     "related_links"
   end
 
   create_table "campaigns", force: :cascade do |t|
@@ -1195,7 +1196,6 @@ ActiveRecord::Schema.define(version: 20180902134129) do
     t.boolean  "public_interests",                          default: false
     t.boolean  "recommended_debates",                       default: true
     t.boolean  "recommended_proposals",                     default: true
-    t.boolean  "complete",                                  default: true
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
