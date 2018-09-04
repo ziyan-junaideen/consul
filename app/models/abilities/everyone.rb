@@ -29,6 +29,8 @@ module Abilities
       can [:read], Legislation::Question
       can [:read, :map, :share], Legislation::Proposal
       can [:search, :comments, :read, :create, :new_comment], Legislation::Annotation
+
+      can :create, Budget::Investment, kind: 1, budget: { phase: ['ideas_posting'] }
     end
   end
 end
