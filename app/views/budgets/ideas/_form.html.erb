@@ -7,14 +7,14 @@
     </div>
 
     <div class="small-12 column">
-      <%= f.text_field :title, maxlength: SpendingProposal.title_max_length, data: { js_suggest_result: "js_suggest_result", js_suggest: "#js-suggest", js_url: suggest_budget_investments_path(@budget) }%>
+      <%= f.text_field :title, label: t('budgets.ideas.form.title'), maxlength: SpendingProposal.title_max_length, data: { js_suggest_result: "js_suggest_result", js_suggest: "#js-suggest", js_url: suggest_budget_investments_path(@budget) }%>
     </div>
     <div id="js-suggest"></div>
 
     <%= f.invisible_captcha :subtitle %>
 
     <div class="ckeditor small-12 column">
-      <%= f.cktext_area :description, maxlength: SpendingProposal.description_max_length, ckeditor: { language: I18n.locale } %>
+      <%= f.cktext_area :description, label: t('budgets.ideas.form.description'), maxlength: SpendingProposal.description_max_length, ckeditor: { language: I18n.locale } %>
     </div>
 
     <% if feature?(:map) %>
@@ -69,17 +69,17 @@
     <% unless current_user %>
       <div class="small-12 column">
         <%= f.fields_for :author do |author_fields| %>
-          <%= author_fields.label :username %>
-          <p class="help-text" id="username-help-text"><%= t("devise_views.users.registrations.new.username_note") %></p>
-          <%= author_fields.text_field :username, label: false %>
+          <%= author_fields.text_field :username, label: t("budgets.ideas.form.author.username") %>
+          <p class="help-text" id="username-help-text"><%= t("budgets.ideas.form.author.username_help") %></p>
 
-          <%= author_fields.email_field :email, placeholder: t("devise_views.users.registrations.new.email_label") %>
+          <%= author_fields.email_field :email, label: t("budgets.ideas.form.author.email") %>
+          <p class="help-text" id="username-help-text"><%= t("budgets.ideas.form.author.email_help") %></p>
         <% end %>
       </div>
     <% end %>
 
     <div class="actions small-12 medium-6 large-4 end column">
-      <%= f.submit(t("budgets.ideas.#{@investment.persisted? ? 'edit' : 'new'}.submit_button"), class: "button expanded") %>
+      <%= f.submit(t("budgets.ideas.form.submit"), class: "button expanded") %>
     </div>
   </div>
 <% end %>

@@ -151,7 +151,7 @@ en:
     ideas:
       form:
         tag_category_label: "Categories"
-        tags_instructions: "Tag this proposal. You can choose from proposed categories or add your own"
+        tags_instructions: "Tag this idea with up to 6 categories. You can choose from proposed categories or add your own"
         tags_label: Tags
         tags_placeholder: "Enter the tags you would like to use, separated by commas (',')"
         map_location: "Map location"
@@ -159,11 +159,16 @@ en:
         map_remove_marker: "Remove map marker"
         location: "Location additional info"
         map_skip_checkbox: "This idea doesn't have a concrete location or I'm not aware of it."
+        title: My project idea is...
+        description: So that people could...
+        submit: Submit My Idea
+        author:
+          username: Your name
+          username_help: Required and will be shown next to your ideas and comments.
+          email: Your email
+          email_help: Required and will not be shown on the site.
       new:
         title: Post an idea
-        submit_button: Create Idea
-      edit:
-        submit_button: Update Idea
       index:
         title: Participatory budgeting
         unfeasible: Unfeasible idea projects
