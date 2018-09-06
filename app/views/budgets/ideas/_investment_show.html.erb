@@ -30,6 +30,12 @@
 
       <%= safe_html_with_links investment.description.html_safe %>
 
+      <% if feature?(:map) && map_location_available?(@investment.map_location) %>
+        <div class="margin">
+          <%= render_map(@investment.map_location, "budget_investment", false, nil) %>
+        </div>
+      <% end %>
+
       <% if investment.organization_name.present? %>
         <p>
           <%= t("budgets.ideas.show.organization_name_html", name: investment.organization_name) %>
