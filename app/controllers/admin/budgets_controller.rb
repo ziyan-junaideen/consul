@@ -6,7 +6,7 @@ class Admin::BudgetsController < Admin::BaseController
 
   load_and_authorize_resource
 
-  IDEA_ATTRIBUTES = %i[post_idea_uri commitee_list_uri volunteer_form_uri delgate_form_uri].freeze
+  IDEA_ATTRIBUTES = %i[post_idea_uri commitee_list_uri volunteer_form_uri delgate_form_uri guest_ideas].freeze
 
   def index
     @budgets = Budget.send(@current_filter).order(created_at: :desc).page(params[:page])
