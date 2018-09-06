@@ -36,5 +36,13 @@ describe Abilities::Everyone do
   it { should be_able_to(:read_results, finished_budget) }
   it { should_not be_able_to(:read_results, reviewing_ballot_budget) }
 
-  it { should be_able_to(:create, ideas_posting_budget.investments.idea.new) }
+  it 'can create idea when guest idea posting enabled' do
+    allow(ideas_posting_budget).to receive(:guest_ideas).and_return(true)
+    should be_able_to(:create, ideas_posting_budget.investments.idea.new)
+  end
+  
+  it 'cant create idea when guest idea posting disabled' do
+    allow(ideas_posting_budget).to receive(:guest_ideas).and_return(false)
+    should_not be_able_to(:create, ideas_posting_budget.investments.idea.new)
+  end
 end
