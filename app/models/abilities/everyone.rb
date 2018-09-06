@@ -30,7 +30,7 @@ module Abilities
       can [:read, :map, :share], Legislation::Proposal
       can [:search, :comments, :read, :create, :new_comment], Legislation::Annotation
 
-      can :create, Budget::Investment, kind: 1, budget: { phase: ['ideas_posting'], guest_ideas: true }
+      can :create, Budget::Investment, kind: Budget::Investment.kinds[:idea], budget: { phase: ['ideas_posting'], guest_ideas: true }
     end
   end
 end
