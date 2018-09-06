@@ -50,7 +50,7 @@
                 </div>
               <% end %>
             <% else %>
-              <% if current_budget.ideas_posting? %>
+              <% if current_budget.ideas_posting? && current_budget.guest_ideas? %>
                 <%= link_to t("budgets.ideas.index.sidebar.create"),
                             current_budget_ideas_posting_url,
                             class: "button margin-top expanded" %>
