@@ -144,7 +144,7 @@ class Budget
       results = results.by_valuator_group(params[:valuator_group_id])      if params[:valuator_group_id].present?
       results = results.by_admin(params[:administrator_id])                if params[:administrator_id].present?
       results = results.by_published(params[:published])                   if params[:published].present?
-      results = results.
+      results = results.by_has_map(params[:has_map])                       if params[:has_map].present?
       results = advanced_filters(params, results)                          if params[:advanced_filters].present?
       results = search_by_title_or_id(params[:title_or_id].strip, results) if params[:title_or_id]
 
