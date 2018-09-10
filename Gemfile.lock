@@ -478,6 +478,7 @@ GEM
     uniform_notifier (1.11.0)
     user_agent_parser (2.3.1)
     uuidtools (2.1.5)
+    wannabe_bool (0.7.1)
     warden (1.2.7)
       rack (>= 1.0)
     wasabi (3.5.0)
@@ -578,6 +579,7 @@ DEPENDENCIES
   turnout (~> 2.4.0)
   uglifier (~> 4.1.2)
   unicorn (~> 5.4.0)
+  wannabe_bool
   web-console (~> 3.3.0)
   whenever (~> 0.10.0)
   xray-rails

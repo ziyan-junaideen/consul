@@ -88,6 +88,10 @@ module BudgetsHelper
     [['Published', true], ['Not Published', false]]
   end
 
+  def idea_map_select_options
+    [['Yes', true], ['No', false]]
+  end
+
   def budget_published?(budget)
     !budget.drafting? || current_user&.administrator?
   end

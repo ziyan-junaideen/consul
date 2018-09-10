@@ -1122,5 +1122,33 @@ describe Budget::Investment do
 
     end
 
+    describe '#by_has_map' do
+      let(:investment_location) { create(:map_location, :budget_investment_map_location) }
+
+      let(:investment_with_map) { investment_location.investment }
+      let(:investment_without_map) { create(:budget_investment) }
+
+      before do
+        investment_with_map
+        investment_without_map
+      end
+
+      it 'includes records with map' do
+        expect(Budget::Investment.by_has_map(true)).to include(investment_with_map)
+      end
+
+      it 'includes records without map' do
+        expect(Budget::Investment.by_has_map(false)).to include(investment_without_map)
+      end
+
+      it 'filters records with map' do
+        expect(Budget::Investment.by_has_map(true)).to_not include(investment_without_map)
+      end 
+
+      it 'filters records without map' do
+        expect(Budget::Investment.by_has_map(false)).to_not include(investment_with_map)
+      end
+    end
+
   end
 end

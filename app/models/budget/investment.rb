@@ -96,6 +96,16 @@ class Budget
     scope :by_published,      ->(published)   { where(published: published) }
     scope :by_valuator_group, ->(valuator_group_id) { where("budget_valuator_group_assignments.valuator_group_id = ?", valuator_group_id).joins(:valuator_group_assignments) }
 
+    scope :by_has_map,        ->(has_map) do
+      has_map = has_map.to_b
+      scope = includes(:map_location)
+      if has_map
+        scope.where.not(map_locations: { id: nil })
+      else
+        scope.where(map_locations: { id: nil })
+      end
+    end
+
     scope :for_render, -> { includes(:heading) }
 
     scope :published, -> { where(published: true) }
@@ -134,6 +144,7 @@ class Budget
       results = results.by_valuator_group(params[:valuator_group_id])      if params[:valuator_group_id].present?
       results = results.by_admin(params[:administrator_id])                if params[:administrator_id].present?
       results = results.by_published(params[:published])                   if params[:published].present?
+      results = results.
       results = advanced_filters(params, results)                          if params[:advanced_filters].present?
       results = search_by_title_or_id(params[:title_or_id].strip, results) if params[:title_or_id]
 

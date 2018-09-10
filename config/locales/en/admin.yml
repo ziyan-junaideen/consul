@@ -267,6 +267,7 @@ en:
         valuator_filter_all: All valuators
         tags_filter_all: All tags
         published_all: Published or Not Published
+        map_all: Has Location
         advanced_filters: Advanced filters
         placeholder: Search projects
         sort_by:
