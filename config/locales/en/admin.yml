@@ -270,6 +270,7 @@ en:
         map_all: Has Location
         advanced_filters: Advanced filters
         placeholder: Search projects
+        tags: Tags
         sort_by:
           placeholder: Sort by
           id: ID
@@ -315,12 +316,15 @@ en:
           feasibility: Feasibility
           valuation_finished: Val. Fin.
           selected: Selected
+          visible_to_valuators: Show to valuators
           author_username: Author username
           incompatible: Incompatible
           related: Related Projects
           heading: Heading
           tags: Tags
           published: Published
+          created_at: Date
+          description: Description
         cannot_calculate_winners: The budget has to stay on phase "Balloting projects", "Reviewing Ballots" or "Finished budget" in order to calculate winners projects
         see_results: "See results"
       show:

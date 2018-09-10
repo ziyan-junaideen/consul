@@ -1,4 +1,4 @@
-class Budget::Investment::Exporters::Project < Budget::Investment::Exporters::Base
+class Budget::Investment::Exporters::Idea < Budget::Investment::Exporters::Base
   private
 
   def headers
@@ -18,8 +18,8 @@ class Budget::Investment::Exporters::Project < Budget::Investment::Exporters::Ba
       I18n.t("admin.budget_ideas.index.list.created_at"),
       I18n.t("admin.budget_ideas.index.list.description"),
       I18n.t("admin.budget_ideas.index.list.tags"),
-      I18n.t("settings.latitude"),
-      I18n.t("settings.longitude"),
+      I18n.t("settings.map_latitude"),
+      I18n.t("settings.map_longitude"),
     ]
   end
 
@@ -40,8 +40,8 @@ class Budget::Investment::Exporters::Project < Budget::Investment::Exporters::Ba
       investment.created_at,
       investment.description,
       investment.tag_list.join(','),
-      map_location&.latitude,
-      map_location&.longitude
+      investment.map_location&.latitude,
+      investment.map_location&.longitude
     ]
   end
 end
