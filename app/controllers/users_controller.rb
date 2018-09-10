@@ -72,7 +72,7 @@ class UsersController < ApplicationController
     def load_follows
       @follows = @user.follows.group_by(&:followable_type)
 
-      investments = @follows.delete 'Budget::Investment'
+      investments = @follows.delete('Budget::Investment') || []
       projects = investments.select { |follow| follow.followable.project? }
       ideas = investments.select { |follow| follow.followable.idea? }
 
