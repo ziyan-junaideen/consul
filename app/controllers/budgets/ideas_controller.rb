@@ -7,12 +7,12 @@ module Budgets
     before_action :authenticate_user!, except: [:index, :show, :new, :create, :json_data]
 
     load_and_authorize_resource :budget, except: :json_data
+    before_action :load_idea, only: [:new, :create]
     load_and_authorize_resource :investment, through: :budget, class: "Budget::Investment", parent: false,
-                                except: [:json_data, :new, :create]
+                                except: [:json_data]
 
     before_action -> { flash.now[:notice] = flash[:notice].html_safe if flash[:html_safe] && flash[:notice] }
 
-    before_action :load_idea, only: [:new, :create]
     before_action :confirm_ideas_enabled
     before_action :load_ballot, only: [:index, :show]
     before_action :load_heading, only: [:index, :show]
@@ -192,7 +192,8 @@ module Budgets
       end
 
       def load_idea
-        @investment = @budget.investments.idea.new
+        options = params[:budget_investment].present? ? investment_params : {}
+        @investment = @budget.investments.idea.new(options)
       end
 
   end
