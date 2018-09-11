@@ -246,7 +246,9 @@ feature 'Tags' do
       end
     end
 
-    scenario "Filter by user tags" do
+    scenario "Filter by user tags", :js do
+      Setting['feature.ideas'] = true
+
       Budget::Phase::PHASE_KINDS.each do |phase|
         budget.update(phase: phase)
 
@@ -260,8 +262,23 @@ feature 'Tags' do
           end
         end
 
+        # Ideas posting will have a kind idea
+        if budget.ideas_posting?
+          [investment1, investment2, investment3].each do |investment|
+            investment.update(kind: 'idea')
+          end
+        end
+
+        # Undo the idea flag
+        if budget.project_forming?
+          [investment1, investment2, investment3].each do |investment|
+            investment.update(kind: 'project')
+          end
+        end
+
         login_as(admin) if budget.drafting?
         visit budget_path(budget)
+
         click_link group.name
 
         within "#tag-cloud" do
@@ -297,7 +314,9 @@ feature 'Tags' do
       end
     end
 
-    scenario "Filter by category tags" do
+    scenario "Filter by category tags", :js do
+      Setting['feature.ideas'] = true
+
       Budget::Phase::PHASE_KINDS.each do |phase|
         budget.update(phase: phase)
 
@@ -308,6 +327,20 @@ feature 'Tags' do
         if budget.finished?
           [investment1, investment2, investment3].each do |investment|
             investment.update(selected: true, feasibility: "feasible", winner: true)
+          end
+        end
+        
+        # Investments are created in ideas posting with kind = idea
+        if budget.ideas_posting?
+          [investment1, investment2, investment3].each do |investment|
+            investment.update(kind: 'idea')
+          end
+        end
+        
+        # Undo the idea flag
+        if budget.project_forming?
+          [investment1, investment2, investment3].each do |investment|
+            investment.update(kind: 'project')
           end
         end
 
