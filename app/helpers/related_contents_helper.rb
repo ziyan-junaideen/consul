@@ -1,9 +1,13 @@
 module RelatedContentsHelper
+  # i18n-tasks-use t('related_content.content_title.proposal')
+  # i18n-tasks-use t('related_content.content_title.debate')
+  # i18n-tasks-use t('related_content.content_title.budget_investment')
+  # i18n-tasks-use t('related_content.content_title.budget_idea')
   def related_content_title_i18n_key(relationable)
     if budget_idea?(relationable)
-      'budget_idea'
+      t("related_content.content_title.budget_idea")
     else
-      relationable.model_name.singular
+      t("related_content.content_title.#{relationable.model_name.singular}")
     end
   end
 

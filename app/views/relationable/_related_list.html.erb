@@ -7,7 +7,7 @@
           <%= render 'relationable/score', related: related_content %>
         </span>
       <% end %>
-      <span class="related-content-title"><%= t("related_content.content_title.#{related_content_title_i18n_key(related)}") %></span><br>
+      <span class="related-content-title"><%= t(related_content_title_i18n_key(related)) %></span><br>
       <h3 class="inline-block">
         <%= link_to related.title, related.url %>
       </h3>
