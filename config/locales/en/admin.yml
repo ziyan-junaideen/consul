@@ -1372,16 +1372,16 @@ en:
       index:
         delete: Delete
         edit: Edit
-        empty_statuses: There are no idea statuses created
-        new_status: Create new idea status
+        empty_statuses: There are no investment statuses created
+        new_status: Create new investment status
         table_actions: Actions
         table_description: Description
         table_name: Name
-        title: Idea statuses
+        title: Investment statuses
       new:
-        title: Create idea status
+        title: Create Investment status
       update:
-        notice: Idea status updated successfully
+        notice: Investment status updated successfully
     system_emails:
       preview_pending:
         action: Preview Pending
