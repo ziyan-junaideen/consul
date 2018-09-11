@@ -228,7 +228,7 @@ en:
         project_winner: 'Winning idea project'
         project_not_selected_html: 'This idea project <strong>has not been selected</strong> for balloting phase.'
       wrong_price_format: Only integer numbers
-      idea:
+      investment:
         add: Vote
         already_added: You have already added this idea project
         already_supported: You have already supported this idea project. Share it!

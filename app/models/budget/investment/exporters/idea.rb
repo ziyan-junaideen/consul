@@ -18,8 +18,8 @@ class Budget::Investment::Exporters::Idea < Budget::Investment::Exporters::Base
       I18n.t("admin.budget_ideas.index.list.created_at"),
       I18n.t("admin.budget_ideas.index.list.description"),
       I18n.t("admin.budget_ideas.index.list.tags"),
-      I18n.t("settings.map_latitude"),
-      I18n.t("settings.map_longitude"),
+      I18n.t("admin.budget_ideas.index.map_latitude"),
+      I18n.t("admin.budget_ideas.index.map_longitude"),
     ]
   end
 

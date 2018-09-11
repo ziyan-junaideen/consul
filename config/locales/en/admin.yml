@@ -271,6 +271,8 @@ en:
         advanced_filters: Advanced filters
         placeholder: Search projects
         tags: Tags
+        map_latitude: Latitude
+        map_longitude: Longitude
         sort_by:
           placeholder: Sort by
           id: ID
@@ -293,7 +295,7 @@ en:
         buttons:
           filter: Filter
         download_current_selection: "Download current selection"
-        no_budget_investments: "There are no idea projects."
+        no_budget_ideas: "There are no idea projects."
         title: Ideas
         assigned_admin: Assigned administrator
         no_admin_assigned: No admin assigned
@@ -358,6 +360,12 @@ en:
           title: Published 
           "true": "Yes"
           "false": "No"
+        image: "Image"
+        see_image: "See image"
+        no_image: "Without image"
+        documents: "Documents"
+        see_documents: "See documents (%{count})"
+        no_documents: "Without documents"
         
       edit:
         classification: Classification
