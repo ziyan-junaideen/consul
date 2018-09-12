@@ -3,6 +3,7 @@ class Budget::Investment::Exporters::Idea < Budget::Investment::Exporters::Base
 
   def headers
     [
+      I18n.t("admin.budget_ideas.index.list.budget_id"),
       I18n.t("admin.budget_ideas.index.list.id"),
       I18n.t("admin.budget_ideas.index.list.title"),
       I18n.t("admin.budget_ideas.index.list.supports"),
@@ -19,12 +20,13 @@ class Budget::Investment::Exporters::Idea < Budget::Investment::Exporters::Base
       I18n.t("admin.budget_ideas.index.list.description"),
       I18n.t("admin.budget_ideas.index.list.tags"),
       I18n.t("admin.budget_ideas.index.map_latitude"),
-      I18n.t("admin.budget_ideas.index.map_longitude"),
+      I18n.t("admin.budget_ideas.index.map_longitude")
     ]
   end
 
   def csv_values(investment)
     [
+      investment.budget.id,
       investment.id.to_s,
       investment.title,
       investment.total_votes.to_s,

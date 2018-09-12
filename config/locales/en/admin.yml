@@ -203,6 +203,7 @@ en:
         list:
           admin: Administrator
           author_username: Author username
+          budget_id: Process ID
           created_at: Date
           description: Description
           feasibility: Feasibility
