@@ -553,7 +553,7 @@ en:
       proposal: Proposal
     error: Link not valid. Remember to start with %{url}.
     error_idea: Link not valid. You can only relate ideas and proposals.
-    error_itself: Link not valid. You cannot relate a link to itself.
+    error_itself: Link not valid. You cannot relate a content to itself.
     help: You can add links of %{models} inside of %{org}.
     is_related: "¿Is it related link?"
     label: Link to related link
