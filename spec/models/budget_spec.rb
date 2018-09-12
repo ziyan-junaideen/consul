@@ -2,6 +2,10 @@ require 'rails_helper'
 
 describe Budget do
 
+  before do
+    Setting['feature.ideas'] = true
+  end
+
   let(:budget) { create(:budget) }
 
   it_behaves_like "sluggable", updatable_slug_trait: :drafting
