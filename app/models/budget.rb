@@ -6,7 +6,7 @@ class Budget < ActiveRecord::Base
   CURRENCY_SYMBOLS = %w(€ $ £ ¥).freeze
 
   validates :name, presence: true, uniqueness: true
-  validates :phase, inclusion: { in: Budget::Phase.phase_kinds }
+  validates :phase, inclusion: { in: -> (_) { Budget::Phase.phase_kinds } }
   validates :currency_symbol, presence: true
   validates :slug, presence: true, format: /\A[a-z0-9\-_]+\z/
 
