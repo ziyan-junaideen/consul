@@ -233,7 +233,7 @@ feature 'Tags' do
     let!(:investment3) { create(:budget_investment, heading: heading, tag_list: newer_tag) }
 
     scenario 'Display user tags' do
-      Budget::Phase::PHASE_KINDS.each do |phase|
+      Budget::Phase.phase_kinds.each do |phase|
         budget.update(phase: phase)
 
         login_as(admin) if budget.drafting?
@@ -249,7 +249,7 @@ feature 'Tags' do
     scenario "Filter by user tags", :js do
       Setting['feature.ideas'] = true
 
-      Budget::Phase::PHASE_KINDS.each do |phase|
+      Budget::Phase.phase_kinds.each do |phase|
         budget.update(phase: phase)
 
         [investment1, investment2, investment3].each do |investment|
@@ -301,7 +301,7 @@ feature 'Tags' do
     let!(:investment3) { create(:budget_investment, heading: heading, tag_list: tag_economia.name) }
 
     scenario 'Display category tags' do
-      Budget::Phase::PHASE_KINDS.each do |phase|
+      Budget::Phase.phase_kinds.each do |phase|
         budget.update(phase: phase)
 
         login_as(admin) if budget.drafting?
@@ -317,7 +317,7 @@ feature 'Tags' do
     scenario "Filter by category tags", :js do
       Setting['feature.ideas'] = true
 
-      Budget::Phase::PHASE_KINDS.each do |phase|
+      Budget::Phase.phase_kinds.each do |phase|
         budget.update(phase: phase)
 
         [investment1, investment2, investment3].each do |investment|

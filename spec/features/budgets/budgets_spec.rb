@@ -102,7 +102,7 @@ feature 'Budgets' do
       group = create(:budget_group, budget: budget)
       heading = create(:budget_heading, group: group)
       phases_without_links = ['drafting','informing']
-      not_allowed_phase_list = Budget::Phase::PHASE_KINDS -
+      not_allowed_phase_list = Budget::Phase.phase_kinds -
                                phases_without_links -
                                allowed_phase_list
 

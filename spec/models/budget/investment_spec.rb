@@ -141,7 +141,7 @@ describe Budget::Investment do
     end
 
     it "returns false in any other phase" do
-      Budget::Phase::PHASE_KINDS.reject {|phase| phase == "selecting"}.each do |phase|
+      Budget::Phase.phase_kinds.reject {|phase| phase == "selecting"}.each do |phase|
         budget = create(:budget, phase: phase)
         investment = create(:budget_investment, budget: budget)
 
@@ -159,7 +159,7 @@ describe Budget::Investment do
     end
 
     it "returns false in any other phase" do
-      Budget::Phase::PHASE_KINDS.reject {|phase| phase == "valuating"}.each do |phase|
+      Budget::Phase.phase_kinds.reject {|phase| phase == "valuating"}.each do |phase|
         budget = create(:budget, phase: phase)
         investment = create(:budget_investment, budget: budget)
 
@@ -184,7 +184,7 @@ describe Budget::Investment do
     end
 
     it "returns false in any other phase" do
-      Budget::Phase::PHASE_KINDS.reject {|phase| phase == "balloting"}.each do |phase|
+      Budget::Phase.phase_kinds.reject {|phase| phase == "balloting"}.each do |phase|
         budget = create(:budget, phase: phase)
         investment = create(:budget_investment, :selected, budget: budget)
 
@@ -208,7 +208,7 @@ describe Budget::Investment do
     end
 
     it "returns false in any other phase" do
-      (Budget::Phase::PHASE_KINDS - Budget::Phase::PUBLISHED_PRICES_PHASES).each do |phase|
+      (Budget::Phase.phase_kinds - Budget::Phase::PUBLISHED_PRICES_PHASES).each do |phase|
         budget.update(phase: phase)
 
         expect(investment.should_show_price?).to eq(false)
@@ -243,7 +243,7 @@ describe Budget::Investment do
     end
 
     it "returns false in any other phase" do
-      (Budget::Phase::PHASE_KINDS - Budget::Phase::PUBLISHED_PRICES_PHASES).each do |phase|
+      (Budget::Phase.phase_kinds - Budget::Phase::PUBLISHED_PRICES_PHASES).each do |phase|
         budget.update(phase: phase)
 
         expect(investment.should_show_price_explanation?).to eq(false)
@@ -1008,7 +1008,7 @@ describe Budget::Investment do
       end
 
       it "returns false if budget is not balloting phase" do
-        Budget::Phase::PHASE_KINDS.reject {|phase| phase == "balloting"}.each do |phase|
+        Budget::Phase.phase_kinds.reject {|phase| phase == "balloting"}.each do |phase|
           budget.update(phase: phase)
           investment = create(:budget_investment, budget: budget)
 

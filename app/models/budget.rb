@@ -6,7 +6,7 @@ class Budget < ActiveRecord::Base
   CURRENCY_SYMBOLS = %w(€ $ £ ¥).freeze
 
   validates :name, presence: true, uniqueness: true
-  validates :phase, inclusion: { in: Budget::Phase::PHASE_KINDS }
+  validates :phase, inclusion: { in: Budget::Phase.phase_kinds }
   validates :currency_symbol, presence: true
   validates :slug, presence: true, format: /\A[a-z0-9\-_]+\z/
 
@@ -183,14 +183,14 @@ class Budget < ActiveRecord::Base
 
   def sanitize_descriptions
     s = WYSIWYGSanitizer.new
-    Budget::Phase::PHASE_KINDS.each do |phase|
+    Budget::Phase.phase_kinds.each do |phase|
       sanitized = s.sanitize(send("description_#{phase}"))
       send("description_#{phase}=", sanitized)
     end
   end
 
   def generate_phases
-    Budget::Phase::PHASE_KINDS.each do |phase|
+    Budget::Phase.phase_kinds.each do |phase|
       Budget::Phase.create(
         budget: self,
         kind: phase,

@@ -894,7 +894,7 @@ feature 'Budget Investments' do
       end
 
       scenario "Price & explanation isn't shown when Budget is not on published prices phase" do
-        (Budget::Phase::PHASE_KINDS - Budget::Phase::PUBLISHED_PRICES_PHASES).each do |phase|
+        (Budget::Phase.phase_kinds - Budget::Phase::PUBLISHED_PRICES_PHASES).each do |phase|
           budget.update(phase: phase)
           visit budget_investment_path(budget_id: budget.id, id: investment.id)
 
@@ -915,7 +915,7 @@ feature 'Budget Investments' do
       end
 
       scenario "Price & explanation isn't shown for any Budget's phase" do
-        Budget::Phase::PHASE_KINDS.each do |phase|
+        Budget::Phase.phase_kinds.each do |phase|
           budget.update(phase: phase)
           visit budget_investment_path(budget_id: budget.id, id: investment.id)
 
