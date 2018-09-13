@@ -251,7 +251,8 @@ en:
       unfeasible_investment_proyects: List of all unfeasible investment projects
     show:
       group: Group
-      phase: Current phase
+      phase: Actual phase
+      phase_ideas: Current phase
       see_results: See results
       unfeasible: See unfeasible investments
       unfeasible_title: Unfeasible investments

@@ -17,7 +17,7 @@
           <div class="description">
             <%= safe_html_with_links(current_budget.description) %>
           </div>
-          <% unless current_budget.ideas_posting? %>
+          <% unless (current_budget.ideas_posting? || current_budget.project_forming?) %>
             <p>
               <%= link_to t("budgets.index.section_header.help"), "#section_help" %>
             </p>
@@ -26,7 +26,13 @@
         </div>
         <div class="small-12 medium-3 column info padding" data-equalizer-watch>
           <p>
-            <strong><%= t("budgets.show.phase") %></strong>
+            <strong>
+              <% if current_budget.ideas_posting? || current_budget.project_forming? %>
+                <%= t("budgets.show.phase_ideas") %>
+              <% else %>
+                <%= t("budgets.show.phase") %>
+              <% end %>
+            </strong>
           </p>
           <h2><%= t("budgets.phase.#{current_budget.phase}") %></h2>
 
