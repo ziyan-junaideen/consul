@@ -36,7 +36,7 @@
           </p>
           <h2><%= t("budgets.phase.#{current_budget.phase}") %></h2>
 
-          <%= link_to t("budgets.index.section_header.all_phases"), "#all_phases" unless current_budget.ideas_posting? || current_budget.project_forming? %>
+          <%= link_to t("budgets.index.section_header.all_phases"), "#all_phases" unless ideas_phases? %>
 
           <% if current_budget.accepting? || current_budget.ideas_posting? %>
             <% if current_user %>
