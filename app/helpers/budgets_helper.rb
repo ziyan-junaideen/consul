@@ -1,7 +1,22 @@
 module BudgetsHelper
+  def ideas_phases?(budget = current_budget)
+    %w[ideas_posting project_forming].include? budget.phase
+  end
 
   def show_links_to_budget_investments(budget)
     ['balloting', 'reviewing_ballots', 'finished'].include? budget.phase
+  end
+
+  def show_links_to_unfesable_budget_investments(budget)
+    %w[
+      reviewing
+      selecting
+      valuating
+      publishing_prices
+      balloting
+      reviewing_balots
+      finished
+    ].include? budget.phase
   end
 
   def heading_name_and_price_html(heading, budget)
