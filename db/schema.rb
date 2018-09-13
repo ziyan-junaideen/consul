@@ -282,7 +282,6 @@ ActiveRecord::Schema.define(version: 20180906070538) do
     t.string   "commitee_list_uri"
     t.string   "volunteer_form_uri"
     t.string   "delegate_form_uri"
-    t.text     "related_links"
     t.boolean  "guest_ideas",                              default: false
   end
 

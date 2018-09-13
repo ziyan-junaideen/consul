@@ -52,12 +52,5 @@
                                   title: t("shared.go_to_page") + t("layouts.header.budgets") %>
       </li>
     <% end %>
-    <li>
-      <%= link_to t("layouts.header.help"),
-                    help_path,
-                    accesskey: "6",
-                    class: ("is-active" if current_page?(help_path)),
-                    title: t("shared.go_to_page") + t("layouts.header.help") %>
-    </li>
   </ul>
 </div>
