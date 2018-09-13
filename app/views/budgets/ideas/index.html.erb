@@ -27,7 +27,7 @@
         <div class="small-12 column">
           <h2><%= t("shared.search_results") %></h2>
           <p>
-            <%= page_entries_info @investments %>
+            <%= page_entries_info @investments, entry_name: 'idea' %>
             <%= t("budgets.ideas.index.search_results_html",
                    count: @investments.size,
                    search_term: params[:search]) %>
