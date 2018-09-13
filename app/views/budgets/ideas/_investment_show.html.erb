@@ -122,23 +122,6 @@
           <span class="icon-budget"></span>
         </div>
         <br>
-        <% if investment.unfeasible? %>
-          <div class="callout warning">
-            <%= t("budgets.ideas.show.project_unfeasible_html") %>
-          </div>
-        <% elsif investment.winner? %>
-          <div class="callout success">
-            <strong><%= t("budgets.ideas.show.project_winner") %></strong>
-          </div>
-        <% elsif investment.selected? %>
-          <div class="callout success">
-            <%= t("budgets.ideas.show.project_selected_html") %>
-          </div>
-        <% elsif !investment.selected? %>
-          <div class="callout warning">
-            <%= t("budgets.ideas.show.project_not_selected_html") %>
-          </div>
-        <% end %>
         <% if investment.should_show_price? %>
           <div class="sidebar-divider"></div>
           <h2><%= t("budgets.ideas.show.price") %></h2>
