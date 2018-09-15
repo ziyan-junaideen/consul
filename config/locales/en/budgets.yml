@@ -38,7 +38,7 @@ en:
           username_help: Required and will be shown next to your ideas and comments.
         description: So that people could...
         map_location: Map location
-        map_location_instructions: Navigate the map to the location and place the marker.
+        map_location_instructions: Navigate the map to your idea's location. Click once on the map to place a blue marker on the location of your pointer.
         map_remove_marker: Remove map marker
         map_skip_checkbox: This idea doesn’t have a specific location or I’m not aware of it.
         submit: Submit My Idea
