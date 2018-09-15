@@ -63,6 +63,7 @@ module Budgets
       @investment.assign_attributes(investment_params)
 
       author = current_user || User.first_or_initialize_for_email(author_params)
+      author.volunteer = author_params[:volunteer] == '1'
 
       @investment.author = author
       @investment.kind = 'idea'
@@ -147,7 +148,7 @@ module Budgets
 
       def author_params
         params.require(:budget_investment)
-              .permit(author: [:username, :email])
+              .permit(author: [:username, :email, :volunteer])
               .dig :author
       end
 

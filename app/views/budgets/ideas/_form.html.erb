@@ -77,6 +77,18 @@
       </div>
     <% end %>
 
+    <div class="small-12 column">
+      <%= f.fields_for :author do |author_fields| %>
+        <%= author_fields.label :volunteer do %>
+          <%= author_fields.check_box :volunteer, label: false %>
+
+          <span class="checkbox">
+            <%= t("budget.ideas.form.author.volunteer") %>
+          </span>
+        <% end %>
+      <% end %>
+    </div>
+
     <div class="actions small-12 medium-6 large-4 end column">
       <%= f.submit(t("budgets.ideas.form.submit"), class: "button expanded") %>
     </div>
