@@ -31,6 +31,10 @@
   min-height: 5rem;
 }
 
+.top-bar-title {
+  margin-left: 0.5rem;
+}
+
 @media only screen and (max-width: 40em) {
   .large-mobile-checkboxes {
     input[type='checkbox'] {
