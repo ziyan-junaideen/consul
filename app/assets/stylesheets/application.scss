@@ -30,3 +30,12 @@
 .footer {
   min-height: 5rem;
 }
+
+@media only screen and (max-width: 40em) {
+  .large-mobile-checkboxes {
+    input[type='checkbox'] {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
