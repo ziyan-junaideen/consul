@@ -71,11 +71,12 @@ module Budgets
 
       authorize! :create, @investment
 
-      if @investment.save
+      if author.valid? && @investment.save
         Mailer.budget_investment_created(@investment).deliver_later
         redirect_to budget_idea_path(@budget, @investment),
                     notice: t('flash.actions.create.budget_idea')
       else
+        @investment.valid?
         render :new
       end
     end
