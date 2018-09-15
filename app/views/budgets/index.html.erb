@@ -134,14 +134,16 @@
           </p>
         <% end %>
 
+        <% unless ideas_phases? %>
         <div id="all_phases">
           <h2><%= t("budgets.index.all_phases") %></h2>
-          <%= render "phases", budget: current_budget unless ideas_phases? %>
+          <%= render "phases", budget: current_budget %>
         </div>
+        <% end %>
       </div>
     </div>
 
-    <% if @finished_budgets.present? %>
+    <% if @finished_budgets.present? && !ideas_phases? %>
       <div class="row margin-top">
         <div class="small-12 medium-9 column">
           <ul class="no-bullet submenu">
@@ -199,6 +201,7 @@
   </div>
 <% end %>
 
+<% unless ideas_phases? %>
 <div class="row">
   <div class="small-12 column">
     <div id="section_help" class="margin" data-magellan-target="section_help">
@@ -208,4 +211,5 @@
       <p><%= t("budgets.index.section_footer.description") %></p>
     </div>
   </div>
+  <% end %>
 </div>
