@@ -68,10 +68,10 @@
     <% unless current_user %>
       <div class="small-12 column">
         <%= f.fields_for :author do |author_fields| %>
-          <%= author_fields.text_field :username, label: t("budgets.ideas.form.author.username") %>
+          <%= author_fields.text_field :username, label: t("budgets.ideas.form.author.username"), required: true %>
           <p class="help-text" id="username-help-text"><%= t("budgets.ideas.form.author.username_help") %></p>
 
-          <%= author_fields.email_field :email, label: t("budgets.ideas.form.author.email") %>
+          <%= author_fields.email_field :email, label: t("budgets.ideas.form.author.email"), required: true %>
           <p class="help-text" id="username-help-text"><%= t("budgets.ideas.form.author.email_help") %></p>
         <% end %>
       </div>
