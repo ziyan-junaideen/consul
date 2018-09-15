@@ -20,3 +20,13 @@
 @import 'autocomplete_overrides';
 @import 'jquery-ui/sortable';
 @import 'leaflet';
+
+
+// NYC - Customization
+.wrapper {
+  margin-bottom: -5rem;
+}
+
+.footer {
+  min-height: 5rem;
+}
