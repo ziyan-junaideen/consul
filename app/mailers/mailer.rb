@@ -116,6 +116,10 @@ class Mailer < ApplicationMailer
     end
   end
 
+  def budget_idea_created(investment)
+    budget_investment_created(investment)
+  end
+
   def budget_investment_unselected(investment)
     @investment = investment
     @author = investment.author
