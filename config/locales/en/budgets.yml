@@ -110,7 +110,8 @@ en:
       empty_budgets: There are no budgets.
       finished_budgets: Finished participatory budgets
       investment_proyects: List of all investment projects
-      map: Budget investments' proposals located geographically
+      map: Map of all ideas and projects
+      map_ideas: Map of all ideas
       not_selected_investment_proyects: List of all investment projects not selected for balloting
       section_footer:
         description: With the participatory budgets the citizens decide to which projects is destined a part of the budget.
