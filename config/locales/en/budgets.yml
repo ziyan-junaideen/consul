@@ -36,7 +36,6 @@ en:
           email_help: Required and will not be shown on the site.
           username: Your name
           username_help: Required and will be shown next to your ideas and comments.
-          volunteer: Volunteer
         description: So that people could...
         map_location: Map location
         map_location_instructions: Navigate the map to your idea's location. Click once on the map to place a blue marker on the location of your pointer.
@@ -53,7 +52,7 @@ en:
         check_ballot: Check my ballot
         check_ballot_link: check my ballot
         different_heading_assigned_html: 'You have active votes in another heading: %{heading_link}'
-        price: This heading have a budget of
+        price: This district has a budget of
       index:
         by_heading: 'Idea projects with scope: %{heading}'
         search_form:
