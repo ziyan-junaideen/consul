@@ -719,6 +719,17 @@ en:
         delete: Delete
       search:
         title: 'Managers: User search'
+    volunteers:
+      index:
+        email: Email
+        name: Name
+        no_volunteers: There are no volunteers.
+        title: Volunteers
+      manager:
+        add: Add
+        delete: Delete
+      search:
+        title: 'Volunteers: User search'
     menu:
       activity: Moderator activity
       admin: Admin menu

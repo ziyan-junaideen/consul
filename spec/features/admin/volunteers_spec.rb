@@ -15,21 +15,21 @@ feature 'Admin volunteers' do
     expect(page).not_to have_content @user.name
   end
 
-  scenario 'Create Manager', :js do
+  scenario 'Create Voluteer', :js do
     fill_in 'name_or_email', with: @user.email
     click_button 'Search'
 
     expect(page).to have_content @user.name
     click_link 'Add'
-    within("#managers") do
+    within("#volunteers") do
       expect(page).to have_content @user.name
     end
   end
 
-  scenario 'Delete Manager' do
+  scenario 'Delete Voluteer' do
     click_link 'Delete'
 
-    within("#managers") do
+    within("#volunteers") do
       expect(page).not_to have_content @volunteer.name
     end
   end
@@ -39,9 +39,9 @@ feature 'Admin volunteers' do
     background do
       user  = create(:user, username: 'Taylor Swift', email: 'taylor@swift.com')
       user2 = create(:user, username: 'Stephanie Corneliussen', email: 'steph@mrrobot.com')
-      @volunteer1 = create(:manager, user: user)
-      @volunteer2 = create(:manager, user: user2)
-      visit admin_managers_path
+      @volunteer1 = create(:volunteer, user: user)
+      @volunteer2 = create(:volunteer, user: user2)
+      visit admin_volunteers_path
     end
 
     scenario 'returns no results if search term is empty' do
@@ -51,7 +51,7 @@ feature 'Admin volunteers' do
       fill_in 'name_or_email', with: ' '
       click_button 'Search'
 
-      expect(page).to have_content('Managers: User search')
+      expect(page).to have_content('Volunteers: User search')
       expect(page).to have_content('No results found')
       expect(page).not_to have_content(@volunteer1.name)
       expect(page).not_to have_content(@volunteer2.name)
@@ -64,7 +64,7 @@ feature 'Admin volunteers' do
       fill_in 'name_or_email', with: 'Taylor'
       click_button 'Search'
 
-      expect(page).to have_content('Managers: User search')
+      expect(page).to have_content('Volunteers: User search')
       expect(page).to have_content(@volunteer1.name)
       expect(page).not_to have_content(@volunteer2.name)
     end
@@ -76,7 +76,7 @@ feature 'Admin volunteers' do
       fill_in 'name_or_email', with: @volunteer2.email
       click_button 'Search'
 
-      expect(page).to have_content('Managers: User search')
+      expect(page).to have_content('Volunteers: User search')
       expect(page).to have_content(@volunteer2.email)
       expect(page).not_to have_content(@volunteer1.email)
     end
