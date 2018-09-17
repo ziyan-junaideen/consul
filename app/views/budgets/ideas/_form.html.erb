@@ -73,10 +73,6 @@
         <% end %>
       <% end %>
     </div>
-
-    <div class="actions small-12 medium-6 large-4 end column">
-      <%= f.submit(t("budgets.ideas.form.submit"), class: "button expanded") %>
-    </div>
     
     <% unless current_user&.manager? %>
 
@@ -92,5 +88,9 @@
       </div>
 
     <% end %>
+    
+    <div class="actions small-12 medium-6 large-4 end column">
+      <%= f.submit(t("budgets.ideas.form.submit"), class: "button expanded") %>
+    </div>
   </div>
 <% end %>
