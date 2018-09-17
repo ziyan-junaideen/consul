@@ -158,6 +158,18 @@ describe User do
     end
   end
 
+  describe "volunteer?" do
+    it "is false when the user is not a volunteer" do
+      expect(subject.volunteer?).to be false
+    end
+
+    it "is true when the user is a volunteer" do
+      subject.save
+      create(:volunteer, user: subject)
+      expect(subject.volunteer?).to be true
+    end
+  end
+
   describe "poll_officer?" do
     it "is false when the user is not a poll officer" do
       expect(subject.poll_officer?).to be false

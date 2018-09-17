@@ -158,6 +158,10 @@ class User < ActiveRecord::Base
     manager.present?
   end
 
+  def volunteer?
+    volunteer.present?
+  end
+
   def poll_officer?
     poll_officer.present?
   end
