@@ -716,4 +716,16 @@ describe User do
     end
   end
 
+  describe 'Setting up volunteer records after create' do
+    it 'does not create volunteer record by default' do
+      user = create(:user)
+      expect(user.volunteer).to be_nil
+    end
+
+    it 'creates volunteer record if requested' do
+      user = create(:user, setup_as_volunteer: true)
+      expect(user.volunteer).to_not be_nil
+    end
+  end
+
 end

@@ -51,6 +51,7 @@ class User < ActiveRecord::Base
   attr_accessor :skip_password_validation
   attr_accessor :use_redeemable_code
   attr_accessor :login
+  attr_accessor :setup_as_volunteer
 
   scope :administrators, -> { joins(:administrator) }
   scope :moderators,     -> { joins(:moderator) }
@@ -73,6 +74,7 @@ class User < ActiveRecord::Base
   end
 
   before_validation :clean_document_number
+  after_create :create_volunteer
 
   # Get the existing user by email if the provider gives us a verified email.
   def self.first_or_initialize_for_oauth(auth)
@@ -359,6 +361,11 @@ class User < ActiveRecord::Base
         attributes: :username,
         maximum: User.username_max_length)
       validator.validate(self)
+    end
+  
+    def create_volunteer
+      return unless setup_as_volunteer.to_b
+      Volunteer.create(user_id: id)
     end
 
 end
