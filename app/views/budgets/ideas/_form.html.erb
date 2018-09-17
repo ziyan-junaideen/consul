@@ -80,7 +80,7 @@
     <div class="small-12 column">
       <%= f.fields_for :author do |author_fields| %>
         <%= author_fields.label :setup_as_volunteer do %>
-          <%= author_fields.check_box :setup_as_volunteer, label: false %>
+          <%= author_fields.check_box :setup_as_volunteer, label: false, checked: !author_fields.object.volunteer.nil? %>
 
           <span class="checkbox">
             <%= t("budgets.ideas.form.author.setup_as_volunteer") %>
