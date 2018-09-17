@@ -117,6 +117,10 @@ namespace :admin do
     get :search, on: :collection
   end
 
+  resources :volunteers, only: [:index, :create, :destroy] do
+    get :search, on: :collection
+  end
+
   resources :users, only: [:index, :show]
 
   scope module: :poll do
