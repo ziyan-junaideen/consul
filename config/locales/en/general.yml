@@ -179,7 +179,7 @@ en:
       invalid_date_range: Invalid date range
       user_not_found: User not found
   form:
-    accept_terms: I agree to the %{policy} and the %{conditions}
+    accept_terms: I agree to the %{policy}
     accept_terms_title: I agree to the Privacy Policy and the Terms and conditions of use
     budget/heading: Budget Heading
     budget/investment: Investment

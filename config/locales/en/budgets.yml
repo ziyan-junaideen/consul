@@ -47,7 +47,7 @@ en:
         tags_instructions: Tag this idea with up to 6 categories. You can choose from proposed categories or add your own
         tags_placeholder: Enter the tags you would like to use, separated by commas (',')
         title: My project idea is...
-        heading_id: Select Your City Council District
+        heading_id: Select Your District <small>%{link}</small>
       header:
         change_ballot: If your change your mind you can remove your votes in %{check_ballot} and start again.
         check_ballot: Check my ballot
