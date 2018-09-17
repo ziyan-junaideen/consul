@@ -50,21 +50,6 @@
                         data: {js_url: suggest_tags_path} %>
     </div>
 
-    <% if current_user && !current_user.manager? %>
-
-      <div class="small-12 column">
-        <%= f.label :terms_of_service do %>
-          <%= f.check_box :terms_of_service, title: t('form.accept_terms_title'), label: false %>
-          <span class="checkbox">
-            <%= t("form.accept_terms",
-                policy: link_to(t("form.policy"), "/privacy", target: "blank"),
-                conditions: link_to(t("form.conditions"), "/conditions", target: "blank")).html_safe %>
-          </span>
-        <% end %>
-      </div>
-
-    <% end %>
-
     <% unless current_user %>
       <div class="small-12 column">
         <%= f.fields_for :author do |author_fields| %>
@@ -92,5 +77,20 @@
     <div class="actions small-12 medium-6 large-4 end column">
       <%= f.submit(t("budgets.ideas.form.submit"), class: "button expanded") %>
     </div>
+    
+    <% unless current_user&.manager? %>
+
+      <div class="small-12 column">
+        <%= f.label :terms_of_service do %>
+          <%= f.check_box :terms_of_service, title: t('form.accept_terms_title'), label: false %>
+          <span class="checkbox">
+            <%= t("form.accept_terms",
+                policy: link_to(t("form.policy"), "/privacy", target: "blank"),
+                conditions: link_to(t("form.conditions"), "/conditions", target: "blank")).html_safe %>
+          </span>
+        <% end %>
+      </div>
+
+    <% end %>
   </div>
 <% end %>
