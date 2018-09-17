@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180915104635) do
+ActiveRecord::Schema.define(version: 20180917113459) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -80,6 +80,18 @@ ActiveRecord::Schema.define(version: 20180915104635) do
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end
+
+  create_table "banner_translations", force: :cascade do |t|
+    t.integer  "banner_id",   null: false
+    t.string   "locale",      null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "title"
+    t.text     "description"
+  end
+
+  add_index "banner_translations", ["banner_id"], name: "index_banner_translations_on_banner_id", using: :btree
+  add_index "banner_translations", ["locale"], name: "index_banner_translations_on_locale", using: :btree
 
   create_table "banners", force: :cascade do |t|
     t.string   "title",            limit: 80
@@ -1196,7 +1208,6 @@ ActiveRecord::Schema.define(version: 20180915104635) do
     t.boolean  "public_interests",                          default: false
     t.boolean  "recommended_debates",                       default: true
     t.boolean  "recommended_proposals",                     default: true
-    t.boolean  "volunteer",                                 default: false
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
@@ -1272,6 +1283,14 @@ ActiveRecord::Schema.define(version: 20180915104635) do
 
   add_index "visits", ["started_at"], name: "index_visits_on_started_at", using: :btree
   add_index "visits", ["user_id"], name: "index_visits_on_user_id", using: :btree
+
+  create_table "volunteers", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "volunteers", ["user_id"], name: "index_volunteers_on_user_id", using: :btree
 
   create_table "votes", force: :cascade do |t|
     t.integer  "votable_id"
@@ -1354,4 +1373,5 @@ ActiveRecord::Schema.define(version: 20180915104635) do
   add_foreign_key "related_content_scores", "users"
   add_foreign_key "users", "geozones"
   add_foreign_key "valuators", "users"
+  add_foreign_key "volunteers", "users"
 end
