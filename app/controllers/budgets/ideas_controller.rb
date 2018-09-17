@@ -62,17 +62,15 @@ module Budgets
     def create
       @investment.assign_attributes(investment_params)
 
-      author = current_user || User.first_or_initialize_for_email(author_params)
-      author.volunteer = author_params[:volunteer] == '1'
+      @investment.author.terms_of_service = '1'
+      @investment.author.skip_password_validation = '1'
 
-      @investment.author = author
       @investment.kind = 'idea'
       @investment.terms_of_service = '1'
 
       authorize! :create, @investment
 
-      if author.valid? && @investment.save
-        author.save
+      if @investment.save
         Mailer.budget_idea_created(@investment).deliver_later
         redirect_to budget_idea_path(@budget, @investment),
                     notice: t('flash.actions.create.budget_idea')
