@@ -36,7 +36,7 @@ en:
           email_help: Required and will not be shown on the site.
           username: Your name
           username_help: Required and will be shown next to your ideas and comments.
-          setup_as_volunteer: Volunteer
+          setup_as_volunteer: I would like to volunteer
         description: So that people could...
         map_location: Map location
         map_location_instructions: Navigate the map to your idea's location. Click once on the map to place a blue marker on the location of your pointer.
