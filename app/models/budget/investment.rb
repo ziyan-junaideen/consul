@@ -26,6 +26,8 @@ class Budget
     include Flaggable
 
     belongs_to :author, -> { with_hidden }, class_name: 'User', foreign_key: 'author_id'
+    accepts_nested_attributes_for :author
+
     belongs_to :heading
     belongs_to :group
     belongs_to :budget
