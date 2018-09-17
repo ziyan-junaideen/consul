@@ -1,0 +1,51 @@
+<h2><%= t("admin.volunteers.index.title") %></h2>
+
+<%= render 'admin/shared/user_search', url: search_admin_volunteers_path %>
+
+<div id="volunteers">
+  <% if @volunteers.any? %>
+    <h3 class="margin"><%= page_entries_info @volunteers %></h3>
+
+    <table>
+      <thead>
+        <th scope="col"><%= t("admin.volunteers.index.name") %></th>
+        <th scope="col"><%= t("admin.volunteers.index.email") %></th>
+        <th scope="col" class="small-3"><%= t("admin.shared.actions") %></th>
+      </thead>
+      <tbody>
+        <% @volunteers.each do |volunteer| %>
+          <tr>
+            <td>
+              <%= volunteer.name %>
+            </td>
+            <td>
+              <%= volunteer.email %>
+            </td>
+            <td>
+              <% if volunteer.persisted? %>
+                <%= link_to t('admin.volunteers.volunteer.delete'),
+                  admin_volunteer_path(volunteer),
+                  method: :delete,
+                  class: "button hollow alert expanded"
+                %>
+              <% else %>
+                <%= link_to t('admin.volunteers.volunteer.add'),
+                             { controller: "admin/volunteers",
+                               action: :create,
+                               user_id: volunteer.user_id },
+                               method: :post,
+                               class: "button success expanded" %>
+              <% end %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <%= paginate @volunteers %>
+  <% else %>
+    <div class="callout primary">
+      <%= t("admin.volunteers.index.no_volunteers") %>
+    </div>
+  <% end %>
+</div>
