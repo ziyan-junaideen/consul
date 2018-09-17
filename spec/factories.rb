@@ -556,6 +556,10 @@ FactoryBot.define do
     user
   end
 
+  factory :volunteer do
+    user
+  end
+
   factory :poll_officer, class: 'Poll::Officer' do
     user
   end
