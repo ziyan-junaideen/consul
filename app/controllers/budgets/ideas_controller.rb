@@ -64,9 +64,7 @@ module Budgets
 
       @investment.author.terms_of_service = '1'
       @investment.author.skip_password_validation = '1'
-
       @investment.kind = 'idea'
-      @investment.terms_of_service = '1'
 
       authorize! :create, @investment
 
