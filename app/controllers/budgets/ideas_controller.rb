@@ -145,13 +145,8 @@ module Budgets
                       :organization_name, :location, :terms_of_service, :skip_map,
                       image_attributes: [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy],
                       documents_attributes: [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy],
-                      map_location_attributes: [:latitude, :longitude, :zoom])
-      end
-
-      def author_params
-        params.require(:budget_investment)
-              .permit(author: [:username, :email, :volunteer])
-              .dig :author
+                      map_location_attributes: [:latitude, :longitude, :zoom],
+                      author_attributes: [:username, :email, :setup_as_volunteer] )
       end
 
       def load_ballot
