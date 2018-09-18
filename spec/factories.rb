@@ -365,28 +365,24 @@ FactoryBot.define do
       valuation_finished true
     end
     
-    trait :idea do
-      kind 'project'
-    end
-
-     trait :hidden do
+    trait :hidden do
        hidden_at Time.current
      end
 
-     trait :with_ignored_flag do
-       ignored_flag_at Time.current
+    trait :with_ignored_flag do
+      ignored_flag_at Time.current
      end
 
     trait :flagged do
-       after :create do |investment|
-         Flag.flag(create(:user), investment)
-       end
-     end
+      after :create do |investment|
+        Flag.flag(create(:user), investment)
+      end
+    end
 
-     trait :with_confirmed_hide do
-       confirmed_hide_at Time.current
-     end
-
+    trait :with_confirmed_hide do
+      confirmed_hide_at Time.current
+    end
+    
     trait :idea do
       kind 'idea'
     end
