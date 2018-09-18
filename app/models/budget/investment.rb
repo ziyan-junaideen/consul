@@ -45,7 +45,7 @@ class Budget
     has_many :milestones
 
     validates :title, presence: true
-    validates :author, presence: { unless: :idea? }
+    validates :author, presence: true
     validates :description, presence: true
     validates :heading_id, presence: true
     validates :unfeasibility_explanation, presence: { if: :unfeasibility_explanation_required? }
