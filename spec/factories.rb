@@ -386,6 +386,10 @@ FactoryBot.define do
     trait :idea do
       kind 'idea'
     end
+
+    trait :not_published do
+      published false
+    end
   end
 
   factory :budget_phase, class: 'Budget::Phase' do

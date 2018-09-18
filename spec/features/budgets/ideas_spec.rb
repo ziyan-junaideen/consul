@@ -1,44 +1,40 @@
 require 'rails_helper'
 require 'sessions_helper'
 
-feature 'Budget Investments' do
-
-
-  let(:author)  { create(:user, :level_two, username: 'Isabel') }
-  let(:budget)  { create(:budget, name: "Big Budget") }
-  let(:other_budget) { create(:budget, name: "What a Budget!") }
-  let(:group) { create(:budget_group, name: "Health", budget: budget) }
-  let!(:heading) { create(:budget_heading, name: "More hospitals", price: 666666, group: group) }
+feature 'Budget ideas' do
 
   before do
     Setting['feature.allow_images'] = true
+    Setting['feature.ideas'] = true
   end
 
   after do
     Setting['feature.allow_images'] = nil
+    Setting['feature.ideas'] = nil
   end
+  
+  let(:author)  { create(:user, :level_two, username: 'Isabel') }
+  let(:budget)  { create(:budget, name: "Big Budget", phase: 'ideas_posting') }
+  let(:other_budget) { create(:budget, name: "What a Budget!", phase: 'ideas_posting') }
+  let(:group) { create(:budget_group, name: "Health", budget: budget) }
+  let!(:heading) { create(:budget_heading, name: "More hospitals", price: 666666, group: group) }
 
-  context "Concerns" do
-    it_behaves_like 'notifiable in-app', Budget::Investment
-    it_behaves_like 'relationable', Budget::Investment
-  end
+  scenario 'Index', :js do
+    ideas = [create(:budget_investment, :idea, heading: heading),
+                   create(:budget_investment, :idea, heading: heading)]
 
-  scenario 'Index' do
-    investments = [create(:budget_investment, heading: heading),
-                   create(:budget_investment, heading: heading),
-                   create(:budget_investment, :feasible, heading: heading)]
-
-    unfeasible_investment = create(:budget_investment, :unfeasible, heading: heading)
+    not_published_idea = create(:budget_investment, :idea, :not_published, heading: heading)
 
     visit budget_path(budget)
     click_link "Health"
 
-    expect(page).to have_selector('#budget-investments .budget-investment', count: 3)
-    investments.each do |investment|
+    expect(page).to have_selector('#budget-investments .budget-investment', count: 2)
+
+    ideas.each do |idea|
       within('#budget-investments') do
-        expect(page).to have_content investment.title
-        expect(page).to have_css("a[href='#{budget_investment_path(budget_id: budget.id, id: investment.id)}']", text: investment.title)
-        expect(page).not_to have_content(unfeasible_investment.title)
+        expect(page).to have_content idea.title
+        expect(page).to have_css("a[href='#{budget_idea_path(budget_id: budget.id, id: idea.id)}']", text: idea.title)
+        expect(page).not_to have_content(not_published_idea.title)
       end
     end
   end
