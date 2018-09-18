@@ -61,10 +61,18 @@ module Budgets
 
     def create
       @investment.assign_attributes(investment_params)
-
-      @investment.author.terms_of_service = '1'
-      @investment.author.skip_password_validation = '1'
       @investment.kind = 'idea'
+
+      email = investment_params.dig(:author_attributes, :email)
+
+      if current_user
+        @investment.author = current_user
+      elsif email && (author = User.find_by_email(email))
+        @investment.author = author
+      else
+        @investment.author.terms_of_service = '1'
+        @investment.author.skip_password_validation = '1'
+      end
 
       authorize! :create, @investment
 
