@@ -35,6 +35,7 @@ class User < ActiveRecord::Base
   has_many :follows
   belongs_to :geozone
 
+  validates :email, presence: true
   validates :username, presence: true, if: :username_required?
   validates :username, uniqueness: { scope: :registering_with_oauth }, if: :username_required?
   validates :document_number, uniqueness: { scope: :document_type }, allow_nil: true

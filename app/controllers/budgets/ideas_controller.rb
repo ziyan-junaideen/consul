@@ -67,7 +67,7 @@ module Budgets
 
       if current_user
         @investment.author = current_user
-      elsif email && (author = User.find_by_email(email))
+      elsif email.to_b && (author = User.find_by_email(email))
         @investment.author = author
       else
         @investment.author.terms_of_service = '1'
