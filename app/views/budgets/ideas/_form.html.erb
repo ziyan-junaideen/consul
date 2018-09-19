@@ -3,7 +3,7 @@
 
   <div class="row">
     <div class="small-12 medium-8 column">
-      <%= f.label :heading_id, t('budgets.ideas.form.heading_id', link: link_to('(Find Your District)', 'https://council.nyc.gov/districts/', target: :_blank)).html_safe %>
+      <%= f.label :heading_id, t('budgets.ideas.form.heading_id') %>
       <p class="help-text" id="heading-id-help-text"><%= t("budgets.ideas.form.heading_id_help", link: link_to('here', 'https://council.nyc.gov/districts/', target: :_blank)).html_safe %></p>
       <%= f.select :heading_id, budget_heading_select_options(@budget), {include_blank: true, label: false} %>
     </div>
