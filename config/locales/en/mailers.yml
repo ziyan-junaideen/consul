@@ -17,7 +17,7 @@ en:
       share: Share your idea
       sincerely: Sincerely,
       subject: Thank you for creating an idea!
-      text_html: Thank you for creating your idea <strong>%{investment}</strong> for Participatory Budgets <strong>%{budget}</strong>.
+      text_html: Thank you for creating your idea <strong>%{investment}</strong> for <strong>%{budget}</strong> which you can also follow by visiting %{link}.
       title: Thank you for creating an idea!
     budget_investment_selected:
       hi: Dear user,

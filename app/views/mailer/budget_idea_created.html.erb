@@ -12,11 +12,7 @@
   <p style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif;font-size: 14px;font-weight: normal;line-height: 24px;">
     <%= t("mailers.budget_idea_created.text_html",
            investment: @investment.title,
-           budget: @investment.budget.name).html_safe %>
-  </p>
-
-  <p style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif;font-size: 14px;font-weight: normal;line-height: 24px;">
-    <%= t("mailers.budget_idea_created.follow_html",
+           budget: @investment.budget.name,
            link: link_to(t("mailers.budget_idea_created.follow_link"), budgets_url)).html_safe %>
   </p>
 
