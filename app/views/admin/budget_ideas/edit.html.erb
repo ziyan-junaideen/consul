@@ -51,33 +51,6 @@
     </div>
   </div>
 
-  <div class="row expanded margin-top">
-
-    <div class="small-12 column">
-      <h2 id="classification"><%= t("admin.budget_ideas.edit.classification") %></h2>
-
-      <div class="small-12 medium-6">
-        <%= f.select(:administrator_id,
-                       @admins.collect{ |a| [a.name_and_email, a.id ] },
-                       { include_blank: t("admin.budget_ideas.edit.undefined") }) %>
-      </div>
-    </div>
-
-
-    <div class="small-12 column">
-      <%= f.label :tag_list, t("admin.budget_ideas.edit.tags") %>
-      <div class="tags">
-        <% @tags.each do |tag| %>
-          <a class="js-add-tag-link"><%= tag.name %></a>
-        <% end %>
-      </div>
-      <%= f.text_field :valuation_tag_list,
-                        value: @investment.tag_list.sort.join(','),
-                        label: false,
-                        placeholder: t("admin.budget_ideas.edit.tags_placeholder"),
-                        class: 'js-tag-list' %>
-    </div>
-
   <div class="small-12 column margin-top">
     <%= f.submit(class: "button", value: t("admin.budget_ideas.edit.submit_button")) %>
   </div>
