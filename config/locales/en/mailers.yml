@@ -15,8 +15,9 @@ en:
       follow_link: Participatory Budgets
       intro_html: Hi <strong>%{author}</strong>,
       share: Share your idea
-      sincerely: Sincerely,
+      sincerely: Thanks,
       subject: Thank you for creating an idea!
+      team: The PBNYC Team
       text_html: Thank you for creating your idea <strong>%{investment}</strong> for <strong>%{budget}</strong> which you can also follow by visiting %{link}.
       title: Thank you for creating an idea!
     budget_investment_selected:
