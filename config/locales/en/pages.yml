@@ -1,4 +1,3 @@
----
 en:
   pages:
     conditions: Terms and conditions of use
@@ -64,7 +63,7 @@ en:
       title: "%{org} is a platform for citizen participation"
       titles:
         how_to_use: Use it in your local government
-    privacy: Privacy Policy
+    privacy: Privacy Notice
     titles:
       accessibility: Accessibility
       conditions: Terms of use
