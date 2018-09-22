@@ -55,8 +55,6 @@
         </div>
       <% end %>
 
-      <%= render("shared/advanced_search", search_path: budget_ideas_url(@budget)) %>
-
       <%= render('shared/order_links', i18n_namespace: "budgets.ideas.index") unless @current_filter == "unfeasible" %>
 
       <% if investments_default_view? %>
