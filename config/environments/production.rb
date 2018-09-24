@@ -70,11 +70,11 @@ Rails.application.configure do
   # Uncomment the following block of code and add your SMTP service credentials
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: ENV['smtp_address'],
-    port: ENV['smtp_port'],
-    domain: ENV['smtp_domain'],
-    user_name: ENV['smtp_user_name'],
-    password: ENV['smtp_password'],
+    address: ENV['SMTP_ADDRESS'],
+    port: ENV['SMTP_PORT'],
+    domain: ENV['SMTP_DOMAIN'],
+    user_name: ENV['SMTP_USER_NAME'],
+    password: ENV['SMTP_PASSWORD'],
     authentication: "plain",
     enable_starttls_auto: true,
   }
