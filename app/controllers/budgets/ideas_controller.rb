@@ -7,7 +7,10 @@ module Budgets
     before_action :authenticate_user!, except: [:index, :show, :new, :create, :json_data]
 
     load_and_authorize_resource :budget, except: :json_data
+
     before_action :load_idea, only: [:new, :create]
+    before_action :load_published_idea, only: [:show]
+
     load_and_authorize_resource :investment, through: :budget, class: "Budget::Investment", parent: false,
                                 except: [:json_data]
 
@@ -196,6 +199,10 @@ module Budgets
       def load_idea
         options = params[:budget_investment].present? ? investment_params : {}
         @investment = @budget.investments.idea.new(options)
+      end
+
+      def load_published_idea
+        @investment = @budget.investments.idea.published.find(params[:id])
       end
 
   end
