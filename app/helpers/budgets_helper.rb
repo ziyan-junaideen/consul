@@ -114,7 +114,7 @@ module BudgetsHelper
   def current_budget_map_locations
     return unless current_budget.present?
     if current_budget.ideas_posting?
-      investments = current_budget.investments.idea
+      investments = current_budget.investments.idea.published
     elsif current_budget.valuating_or_later?
       investments = current_budget.investments.project.selected
     else
