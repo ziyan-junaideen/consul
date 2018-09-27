@@ -1,6 +1,15 @@
 ---
 en:
   mailers:
+    budget_idea_created:
+      follow_link: Participatory Budgets
+      intro_html: Hi <strong>%{author}</strong>,
+      share: Share your idea
+      sincerely: Thanks,
+      subject: Thank you for creating an idea!
+      team: The PBNYC Team
+      text_html: Thank you for creating your idea <strong>%{investment}</strong> for <strong>%{budget}</strong> which you can also follow by visiting %{link}.
+      title: Thank you for creating an idea!
     budget_investment_created:
       follow_html: We will inform you about how the process progresses, which you can also follow on <strong>%{link}</strong>.
       follow_link: Participatory Budgets
@@ -10,16 +19,6 @@ en:
       subject: Thank you for creating an investment!
       text_html: Thank you for creating your investment <strong>%{investment}</strong> for Participatory Budgets <strong>%{budget}</strong>.
       title: Thank you for creating an investment!
-    budget_idea_created:
-      follow_html: We will inform you about how the process progresses, which you can also follow on <strong>%{link}</strong>.
-      follow_link: Participatory Budgets
-      intro_html: Hi <strong>%{author}</strong>,
-      share: Share your idea
-      sincerely: Thanks,
-      subject: Thank you for creating an idea!
-      team: The PBNYC Team
-      text_html: Thank you for creating your idea <strong>%{investment}</strong> for <strong>%{budget}</strong> which you can also follow by visiting %{link}.
-      title: Thank you for creating an idea!
     budget_investment_selected:
       hi: Dear user,
       share: Start to get votes, share your investment project on social networks. Share is essential to make it a reality.

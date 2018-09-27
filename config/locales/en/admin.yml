@@ -172,12 +172,8 @@ en:
         location: Location
     budget_ideas:
       edit:
-        classification: Classification
         select_heading: Select heading
         submit_button: Update
-        tags: Tags
-        tags_placeholder: Write the tags you want separated by commas (,)
-        undefined: Undefined
         user_tags: User assigned tags
       index:
         advanced_filters: Advanced filters
@@ -719,17 +715,6 @@ en:
         delete: Delete
       search:
         title: 'Managers: User search'
-    volunteers:
-      index:
-        email: Email
-        name: Name
-        no_volunteers: There are no volunteers.
-        title: Volunteers
-      manager:
-        add: Add
-        delete: Delete
-      search:
-        title: 'Volunteers: User search'
     menu:
       activity: Moderator activity
       admin: Admin menu
@@ -747,7 +732,6 @@ en:
       hidden_users: Hidden users
       legislation: Collaborative Legislation
       managers: Managers
-      volunteers: Volunteers
       messaging_users: Messages to users
       moderators: Moderators
       newsletters: Newsletters
@@ -792,6 +776,7 @@ en:
       title_site_customization: Site content
       users: Users
       valuators: Valuators
+      volunteers: Volunteers
     milestones:
       create:
         notice: New milestone created successfully!
@@ -1484,3 +1469,14 @@ en:
         phone_not_given: Phone not given
         sms_code_not_confirmed: Has not confirmed the sms code
         title: Incomplete verifications
+    volunteers:
+      index:
+        email: Email
+        name: Name
+        no_volunteers: There are no volunteers.
+        title: Volunteers
+      search:
+        title: 'Volunteers: User search'
+      volunteer:
+        add: Add
+        delete: Delete

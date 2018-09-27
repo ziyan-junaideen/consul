@@ -34,10 +34,12 @@ en:
         author:
           email: Your email
           email_help: Required and will not be shown on the site.
+          setup_as_volunteer: I would like to volunteer
           username: Your name
           username_help: Required and will be shown next to your ideas and comments.
-          setup_as_volunteer: I would like to volunteer
         description: So that people could...
+        heading_id: Select Your District
+        heading_id_help: Don't know your district? Click %{link} to find it.
         map_location: Map location
         map_location_instructions: Navigate the map to your idea's location. Click once on the map to place a blue marker on the location of your pointer.
         map_remove_marker: Remove map marker
@@ -47,8 +49,6 @@ en:
         tags_instructions: Tag this idea with up to 6 categories. You can choose from proposed categories or add your own
         tags_placeholder: Enter the tags you would like to use, separated by commas (',')
         title: My project idea is...
-        heading_id: Select Your District
-        heading_id_help: Don't know your district? Click %{link} to find it.
       header:
         change_ballot: If your change your mind you can remove your votes in %{check_ballot} and start again.
         check_ballot: Check my ballot
@@ -57,10 +57,6 @@ en:
         price: This district has a budget of
       index:
         by_heading: 'Idea projects with scope: %{heading}'
-        orders:
-          confidence_score: recently added
-          price: by price
-          random: random
         search_form:
           button: Search
           placeholder: Search idea projects...
@@ -103,10 +99,6 @@ en:
         organization_name_html: 'Proposed on behalf of: <strong>%{name}</strong>'
         price: Price
         price_explanation: Price explanation
-        project_not_selected_html: This idea project <strong>has not been selected</strong> for balloting phase.
-        project_selected_html: This idea project <strong>has been selected</strong> for balloting phase.
-        project_unfeasible_html: This idea project <strong>has been marked as not feasible</strong> and will not go to balloting phase.
-        project_winner: Winning idea project
         share: Share
         title: idea
         unfeasibility_explanation: Unfeasibility explanation
@@ -116,8 +108,6 @@ en:
       empty_budgets: There are no budgets.
       finished_budgets: Finished participatory budgets
       investment_proyects: List of all investment projects
-      map: Map of all ideas and projects
-      map_ideas: Map of all ideas
       not_selected_investment_proyects: List of all investment projects not selected for balloting
       section_footer:
         description: With the participatory budgets the citizens decide to which projects is destined a part of the budget.
