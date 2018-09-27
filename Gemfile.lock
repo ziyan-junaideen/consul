@@ -321,6 +321,7 @@ GEM
       arel (>= 6)
     powerpack (0.1.1)
     public_suffix (3.0.1)
+    puma (3.12.0)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.10)
@@ -351,6 +352,11 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (4.2.10)
       actionpack (= 4.2.10)
       activesupport (= 4.2.10)
@@ -554,10 +560,12 @@ DEPENDENCIES
   paranoia (~> 2.4.0)
   pg (~> 0.21.0)
   pg_search (~> 2.0.1)
+  puma
   quiet_assets (~> 1.1.0)
   rails (= 4.2.10)
   rails-assets-leaflet!
   rails-assets-markdown-it (~> 8.2.1)!
+  rails_12factor
   redcarpet (~> 3.4.0)
   responders (~> 2.4.0)
   rinku (~> 2.0.2)
@@ -585,4 +593,4 @@ DEPENDENCIES
   xray-rails
 
 BUNDLED WITH
-   1.16.3
+   1.16.5
