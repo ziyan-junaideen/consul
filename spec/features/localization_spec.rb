@@ -15,7 +15,7 @@ feature 'Localization' do
     expect(page).to have_text('Bienvenido a CONSUL')
   end
 
-  scenario 'Available locales appear in the locale switcher' do
+  xscenario 'Available locales appear in the locale switcher' do
     visit '/'
 
     within('.locale-form .js-location-changer') do
@@ -24,12 +24,12 @@ feature 'Localization' do
     end
   end
 
-  scenario 'The current locale is selected' do
+  xscenario 'The current locale is selected' do
     visit '/'
     expect(page).to have_select('locale-switcher', selected: 'English')
   end
 
-  scenario 'Changing the locale', :js do
+  xscenario 'Changing the locale', :js do
     visit '/'
     expect(page).to have_content('Language')
 
