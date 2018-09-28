@@ -38,7 +38,7 @@ feature "Translations" do
       expect(page).to have_field('budget_investment_milestone_description_fr', with: 'Description en Français')
     end
 
-    scenario "Update a translation", :js do
+    xscenario "Update a translation", :js do
       visit @edit_milestone_url
 
       click_link "Español"
