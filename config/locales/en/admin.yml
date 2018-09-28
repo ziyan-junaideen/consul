@@ -171,6 +171,7 @@ en:
       show:
         location: Location
     budget_ideas:
+      heading_link: New Idea
       edit:
         select_heading: Select heading
         submit_button: Update

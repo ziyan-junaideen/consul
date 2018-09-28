@@ -20,5 +20,12 @@
           method: :delete,
           class: "button hollow alert" %>
     <% end %>
+
+    <% if ideas_phases? %>
+      <%= link_to t("admin.budget_ideas.heading_link"),
+              new_budget_idea_path(group.budget, budget_investment: { heading_id: heading.id }),
+              class: "button hollow",
+              target: '_blank' %>
+    <% end %>
   </td>
 </tr>

@@ -151,4 +151,5 @@ module BudgetsHelper
       t("budgets.ideas.index.by_heading", heading: heading_name)
     end
   end
+
 end
