@@ -10,7 +10,7 @@ feature 'Emails' do
     sign_up
 
     email = open_last_email
-    expect(email).to have_subject('Confirmation instructions')
+    expect(email).to have_subject('Confirm your PBNYC Account')
     expect(email).to deliver_to('manuela@consul.dev')
     expect(email).to have_body_text(user_confirmation_path)
   end
