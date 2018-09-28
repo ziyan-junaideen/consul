@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.10'
 
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 gem 'acts-as-taggable-on', '~> 5.0.0'
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'ahoy_matey', '~> 1.6.0'
