@@ -51,7 +51,7 @@ module Budgets
 
     def new
       @investment.build_author unless @investment.author
-      @investment.heading_id = params[:heading_id] if params[:heading_id]
+      @investment.heading_id = params[:heading] if params[:heading]
     end
 
     def show
