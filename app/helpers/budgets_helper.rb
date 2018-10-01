@@ -1,5 +1,6 @@
 module BudgetsHelper
   def ideas_phases?(budget = current_budget)
+    return unless budget
     %w[ideas_posting project_forming].include? budget.phase
   end
 
