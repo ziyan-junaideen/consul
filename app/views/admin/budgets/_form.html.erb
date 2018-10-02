@@ -4,11 +4,31 @@
     <%= f.text_field :name, maxlength: Budget.title_max_length %>
   </div>
 
+  <% if Setting["feature.ideas"] %>
+    <div class="margin-top">
+      <div class="small-12 medium-6 column">
+        <%= f.url_field :post_idea_uri %>
+      </div>
+      <div class="small-12 medium-6 column">
+        <%= f.url_field :commitee_list_uri %>
+      </div>
+      <div class="small-12 medium-6 column">
+        <%= f.url_field :volunteer_form_uri %>
+      </div>
+      <div class="small-12 medium-6 column">
+        <%= f.url_field :delegate_form_uri %>
+      </div>
+      <div class="small-12 medium-6 column end">
+        <%= f.select :guest_ideas, options_for_select([['Enabled', true], ['Disabled', false]], @budget.guest_ideas)  %>
+      </div>
+    </div>
+  <% end %>
+
   <div class="margin-top">
-    <div class="small-12 medium-6 column">
+    <div class="small-12 medium-7 column">
       <%= f.select :phase, budget_phases_select_options, selected: "drafting" %>
     </div>
-    <div class="small-12 medium-3 column end">
+    <div class="small-12 medium-5 column">
       <%= f.select :currency_symbol, budget_currency_symbol_select_options %>
     </div>
   </div>
@@ -74,6 +94,7 @@
                     budget_results_path(@budget),
                     class: "button hollow margin-left" %>
       <% end %>
+
       <% if @budget.persisted? %>
         <%= link_to t("admin.budgets.edit.delete"),
             admin_budget_path(@budget),

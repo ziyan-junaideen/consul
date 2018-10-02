@@ -318,6 +318,7 @@ GEM
       arel (>= 6)
     powerpack (0.1.2)
     public_suffix (3.0.1)
+    puma (3.12.0)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.10)
@@ -348,6 +349,11 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (4.2.10)
       actionpack (= 4.2.10)
       activesupport (= 4.2.10)
@@ -474,6 +480,7 @@ GEM
     uniform_notifier (1.11.0)
     user_agent_parser (2.3.1)
     uuidtools (2.1.5)
+    wannabe_bool (0.7.1)
     warden (1.2.7)
       rack (>= 1.0)
     wasabi (3.5.0)
@@ -487,6 +494,8 @@ GEM
       chronic (>= 0.6.3)
     xpath (3.0.0)
       nokogiri (~> 1.8)
+    xray-rails (0.3.1)
+      rails (>= 3.1.0)
 
 PLATFORMS
   ruby
@@ -547,10 +556,12 @@ DEPENDENCIES
   paranoia (~> 2.4.1)
   pg (~> 0.21.0)
   pg_search (~> 2.0.1)
+  puma
   quiet_assets (~> 1.1.0)
   rails (= 4.2.10)
   rails-assets-leaflet!
   rails-assets-markdown-it (~> 8.2.1)!
+  rails_12factor
   redcarpet (~> 3.4.0)
   responders (~> 2.4.0)
   rinku (~> 2.0.2)
@@ -572,8 +583,10 @@ DEPENDENCIES
   turnout (~> 2.4.0)
   uglifier (~> 4.1.2)
   unicorn (~> 5.4.1)
+  wannabe_bool
   web-console (~> 3.3.0)
   whenever (~> 0.10.0)
+  xray-rails
 
 BUNDLED WITH
-   1.16.2
+   1.16.3

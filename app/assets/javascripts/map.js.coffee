@@ -27,6 +27,7 @@ App.Map =
     removeMarkerSelector     = $(element).data('marker-remove-selector')
     addMarkerInvestments     = $(element).data('marker-investments-coordinates')
     editable                 = $(element).data('marker-editable')
+    resourceType             = $(element).data('resource-type')
     marker                   = null;
     markerIcon               = L.divIcon(
                                   className: 'map-marker'
@@ -74,14 +75,14 @@ App.Map =
     openMarkerPopup = (e) ->
       marker = e.target
 
-      $.ajax 'investments/' + marker.options['id'] + '/json_data',
+      $.ajax "#{resourceType}/#{marker.options['id']}/json_data",
         type: 'GET'
         dataType: 'json'
         success: (data) ->
           e.target.bindPopup(getPopupContent(data)).openPopup()
 
     getPopupContent = (data) ->
-      content = "<a href='/budgets/#{data['budget_id']}/investments/#{data['investment_id']}'>#{data['investment_title']}</a>"
+      content = "<a href='/budgets/#{data['budget_id']}/#{resourceType}/#{data['investment_id']}'>#{data['investment_title']}</a>"
       return content
 
     mapCenterLatLng  = new (L.LatLng)(mapCenterLatitude, mapCenterLongitude)

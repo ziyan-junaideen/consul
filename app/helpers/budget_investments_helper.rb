@@ -5,6 +5,8 @@ module BudgetInvestmentsHelper
     end
   end
 
+  alias_method :budget_ideas_sorting_options, :budget_investments_sorting_options
+
   def budget_investments_advanced_filters(params)
     params.map { |af| t("admin.budget_investments.index.filters.#{af}") }.join(', ')
   end

@@ -18,6 +18,16 @@
   </div>
 
   <div class="small-12 column">
+    <%= f.label :description, t("admin.budget_phases.edit.title") %>
+
+    <span class="help-text" id="phase-description-help-text">
+      <%= t("admin.budget_phases.edit.title_help_text") %>
+    </span>
+    
+    <%= f.text_field :title, label: false %>
+  </div>
+
+  <div class="small-12 column">
     <%= f.label :description, t("admin.budget_phases.edit.description") %>
 
     <span class="help-text" id="phase-description-help-text">

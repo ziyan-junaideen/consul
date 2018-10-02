@@ -168,7 +168,7 @@ en:
       user_not_found: User not found
       invalid_date_range: "Invalid date range"
   form:
-    accept_terms: I agree to the %{policy} and the %{conditions}
+    accept_terms: I agree to the %{policy}
     accept_terms_title: I agree to the Privacy Policy and the Terms and conditions of use
     conditions: Terms and conditions of use
     debate: Debate
@@ -570,6 +570,11 @@ en:
     following: "Following"
     follow_entity: "Follow %{entity}"
     followable:
+      budget_idea:
+        create:
+          notice_html: You are now following this idea project! </br> We will notify you of changes as they occur so that you are up-to-date.
+        destroy:
+          notice_html: You have stopped following this idea project! </br> You will no longer receive notifications related to this project.
       budget_investment:
         create:
           notice_html: "You are now following this investment project! </br> We will notify you of changes as they occur so that you are up-to-date."
@@ -727,6 +732,7 @@ en:
       budget_investments: Budget investments
       comments: Comments
       actions: Actions
+      budget_ideas: Budget ideas
       filters:
         comments:
           one: 1 Comment
@@ -743,6 +749,9 @@ en:
         follows:
           one: 1 Following
           other: "%{count} Following"
+        budget_ideas:
+          one: 1 Idea
+          other: "%{count} Ideas"
       no_activity: User has no public activity
       no_private_messages: "This user doesn't accept private messages."
       private_activity: This user decided to keep the activity list private.
@@ -811,27 +820,28 @@ en:
       question: Do you already have an account in %{org_name}?
       title: Account verification
     welcome:
-      go_to_index: See proposals and debates
-      title: Participate
-      user_permission_debates: Participate on debates
-      user_permission_info: With your account you can...
-      user_permission_proposal: Create new proposals
-      user_permission_support_proposal: Support proposals*
+      go_to_index: Participate
+      title: Account Verified
+      user_permission_debates: Sharing ideas for improving your community or neighborhood
+      user_permission_info: 'Participate by:'
+      user_permission_proposal: Viewing and commenting on ideas shared by others
+      user_permission_support_proposal: Following the ideas that interest you
       user_permission_verify: To perform all the actions verify your account.
       user_permission_verify_info: "* Only for users on Census."
       user_permission_verify_my_account: Verify my account
-      user_permission_votes: Participate on final voting
+      user_permission_votes: Voting for projects
   invisible_captcha:
     sentence_for_humans: "If you are human, ignore this field"
     timestamp_error_message: "Sorry, that was too quick! Please resubmit."
   related_content:
     title: "Related content"
-    add: "Add related content"
+    add: "Add related link"
     label: "Link to related content"
     placeholder: "%{url}"
     help: "You can add links of %{models} inside of %{org}."
     submit: "Add"
     error: "Link not valid. Remember to start with %{url}."
+    error_idea: Link not valid. You can only relate ideas and proposals.    
     error_itself: "Link not valid. You cannot relate a content to itself."
     success: "You added a new related content"
     is_related: "¿Is it related content?"
@@ -841,6 +851,7 @@ en:
       proposal: "Proposal"
       debate: "Debate"
       budget_investment: "Budget investment"
+      budget_idea: Budget idea
   admin/widget:
     header:
       title: Administration

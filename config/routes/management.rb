@@ -41,9 +41,15 @@ namespace :management do
       get :create_investments
       get :support_investments
       get :print_investments
+      get :create_ideas
     end
 
     resources :investments, only: [:index, :new, :create, :show, :destroy], controller: 'budgets/investments' do
+      post :vote, on: :member
+      get :print, on: :collection
+    end
+
+    resources :ideas, only: [:index, :new, :create, :show, :destroy], controller: 'budgets/ideas' do
       post :vote, on: :member
       get :print, on: :collection
     end

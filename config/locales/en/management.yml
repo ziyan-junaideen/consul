@@ -59,6 +59,7 @@ en:
       introduce_email: 'Please introduce the email used on the account:'
       send_email: Send verification email
     menu:
+      create_budget_idea: Create budget idea
       create_proposal: Create proposal
       print_proposals: Print proposals
       support_proposals: Support proposals
@@ -91,6 +92,7 @@ en:
       index:
         title: Support proposals
     budgets:
+      create_new_idea: Create budget idea
       create_new_investment: Create budget investment
       print_investments: Print budget investments
       support_investments: Support budget investments
@@ -148,3 +150,5 @@ en:
       create:
         success_html: <strong>%{count} invitations</strong> have been sent.
         title: Send invitations
+    budget_ideas:
+      create: Create a budget idea

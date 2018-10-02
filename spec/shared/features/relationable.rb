@@ -29,7 +29,7 @@ shared_examples "relationable" do |relationable_model_name|
     visit relationable.url
 
     expect(page).to have_selector('#related_content', visible: false)
-    click_on("Add related content")
+    click_on("Add related link")
     expect(page).to have_selector('#related_content', visible: true)
 
     within("#related_content") do
@@ -61,7 +61,7 @@ shared_examples "relationable" do |relationable_model_name|
     login_as(user)
     visit relationable.url
 
-    click_on("Add related content")
+    click_on("Add related link")
 
     within("#related_content") do
       fill_in 'url', with: "http://invalidurl.com"
@@ -75,7 +75,7 @@ shared_examples "relationable" do |relationable_model_name|
     login_as(user)
     visit relationable.url
 
-    click_on("Add related content")
+    click_on("Add related link")
 
     within("#related_content") do
       fill_in 'url', with: Setting[:url] + relationable.url.to_s

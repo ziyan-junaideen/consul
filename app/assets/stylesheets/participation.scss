@@ -670,6 +670,11 @@
 .proposals-list,
 .investment-projects-list,
 .budget-investments-list {
+  .floating-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 
   @include breakpoint(medium) {
     margin-bottom: rem-calc(48);
@@ -754,9 +759,10 @@
       font-weight: bold;
       margin-top: $line-height / 2;
 
-      a {
-        color: $text;
-      }
+      // Budget idea list view customization - links black
+      // a {
+      //   color: $text;
+      // }
     }
 
     &.past-budgets {
@@ -987,7 +993,6 @@
 }
 
 .budget-investment-show {
-
   .label-budget-investment {
     background: none;
     clear: both;
@@ -1248,6 +1253,7 @@
 
   &.budget {
     background: $budget;
+    color: $white;
 
     h1,
     h2,

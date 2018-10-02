@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.10'
 
+gem 'rails_12factor', group: :production
 gem 'acts-as-taggable-on', '~> 5.0.0'
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'ahoy_matey', '~> 1.6.0'
@@ -38,6 +39,7 @@ gem 'paperclip', '~> 5.2.1'
 gem 'paranoia', '~> 2.4.1'
 gem 'pg', '~> 0.21.0'
 gem 'pg_search', '~> 2.0.1'
+gem 'puma'
 gem 'redcarpet', '~> 3.4.0'
 gem 'responders', '~> 2.4.0'
 gem 'rinku', '~> 2.0.2', require: 'rails_rinku'
@@ -54,6 +56,7 @@ gem 'unicorn', '~> 5.4.1'
 gem 'whenever', '~> 0.10.0', require: false
 gem 'globalize', '~> 5.0.0'
 gem 'globalize-accessors', '~> 0.2.1'
+gem 'wannabe_bool'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-leaflet'
@@ -72,6 +75,7 @@ group :development, :test do
   gem 'quiet_assets', '~> 1.1.0'
   gem 'spring', '~> 2.0.1'
   gem 'spring-commands-rspec', '~> 1.0.4'
+  gem 'xray-rails'
 end
 
 group :test do

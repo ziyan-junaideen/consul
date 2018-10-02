@@ -91,7 +91,7 @@ feature 'Budgets' do
         visit budgets_path
 
         expect(page).to have_content(I18n.t("budgets.index.investment_proyects"))
-        expect(page).to have_content(I18n.t("budgets.index.unfeasible_investment_proyects"))
+        # expect(page).to have_content(I18n.t("budgets.index.unfeasible_investment_proyects"))
         expect(page).to have_content(I18n.t("budgets.index.not_selected_investment_proyects"))
       end
     end
@@ -102,7 +102,7 @@ feature 'Budgets' do
       group = create(:budget_group, budget: budget)
       heading = create(:budget_heading, group: group)
       phases_without_links = ['drafting','informing']
-      not_allowed_phase_list = Budget::Phase::PHASE_KINDS -
+      not_allowed_phase_list = Budget::Phase.phase_kinds -
                                phases_without_links -
                                allowed_phase_list
 
@@ -112,7 +112,7 @@ feature 'Budgets' do
         visit budgets_path
 
         expect(page).not_to have_content(I18n.t("budgets.index.investment_proyects"))
-        expect(page).to have_content(I18n.t("budgets.index.unfeasible_investment_proyects"))
+        # expect(page).to have_content(I18n.t("budgets.index.unfeasible_investment_proyects"))
         expect(page).not_to have_content(I18n.t("budgets.index.not_selected_investment_proyects"))
       end
     end

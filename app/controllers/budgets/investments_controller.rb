@@ -7,6 +7,7 @@ module Budgets
     before_action :authenticate_user!, except: [:index, :show, :json_data]
 
     load_and_authorize_resource :budget, except: :json_data
+    before_action :load_project, only: [:new, :create]
     load_and_authorize_resource :investment, through: :budget, class: "Budget::Investment",
                                 except: :json_data
 
@@ -33,9 +34,9 @@ module Budgets
 
     def index
       if @budget.finished?
-        @investments = investments.winners.page(params[:page]).per(10).for_render
+        @investments = investments.project.winners.page(params[:page]).per(10).for_render
       else
-        @investments = investments.page(params[:page]).per(10).for_render
+        @investments = investments.project.page(params[:page]).per(10).for_render
       end
 
       @investment_ids = @investments.pluck(:id)
@@ -165,6 +166,11 @@ module Budgets
           @investments.apply_filters_and_search(@budget, params, @current_filter)
                       .send("sort_by_#{@current_order}")
         end
+      end
+
+      def load_project
+        options = params[:budget_investment].present? ? investment_params : {}
+        @investment = @budget.investments.project.new(options)
       end
 
   end
