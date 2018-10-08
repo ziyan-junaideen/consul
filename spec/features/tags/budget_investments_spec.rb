@@ -233,7 +233,7 @@ feature 'Tags' do
     let!(:investment3) { create(:budget_investment, heading: heading, tag_list: newer_tag) }
 
     scenario 'Display user tags' do
-      Budget::Phase::PHASE_KINDS.each do |phase|
+      Budget::Phase.phase_kinds.each do |phase|
         budget.update(phase: phase)
 
         login_as(admin) if budget.drafting?
@@ -246,10 +246,8 @@ feature 'Tags' do
       end
     end
 
-    scenario "Filter by user tags" do
-      Budget::Phase::PHASE_KINDS.each do |phase|
-        budget.update(phase: phase)
-
+    scenario "Filter by user tags", :js do
+      Budget::Phase.phase_kinds.each do |phase|
         [investment1, investment2, investment3].each do |investment|
           investment.update(selected: true, feasibility: "feasible")
         end
@@ -262,8 +260,9 @@ feature 'Tags' do
 
         login_as(admin) if budget.drafting?
         visit budget_path(budget)
-        click_link group.name
 
+        click_link group.name
+        
         within "#tag-cloud" do
           click_link new_tag
         end
@@ -284,7 +283,7 @@ feature 'Tags' do
     let!(:investment3) { create(:budget_investment, heading: heading, tag_list: tag_economia.name) }
 
     scenario 'Display category tags' do
-      Budget::Phase::PHASE_KINDS.each do |phase|
+      Budget::Phase.phase_kinds.each do |phase|
         budget.update(phase: phase)
 
         login_as(admin) if budget.drafting?
@@ -297,8 +296,8 @@ feature 'Tags' do
       end
     end
 
-    scenario "Filter by category tags" do
-      Budget::Phase::PHASE_KINDS.each do |phase|
+    scenario "Filter by category tags", :js do
+      Budget::Phase.phase_kinds.each do |phase|
         budget.update(phase: phase)
 
         [investment1, investment2, investment3].each do |investment|

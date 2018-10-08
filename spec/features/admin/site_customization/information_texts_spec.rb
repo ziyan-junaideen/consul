@@ -31,7 +31,7 @@ feature "Admin custom information texts" do
     expect(page).to have_content 'Results'
 
     click_link 'Layouts'
-    expect(page).to have_content 'Accessibility'
+    expect(page).to have_content 'Google Chrome'
 
     click_link 'Emails'
     expect(page).to have_content 'Confirm your email'

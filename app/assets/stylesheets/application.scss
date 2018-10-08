@@ -20,3 +20,48 @@
 @import 'autocomplete_overrides';
 @import 'jquery-ui/sortable';
 @import 'leaflet';
+
+
+// NYC - Customization
+.wrapper {
+  margin-bottom: -5rem;
+}
+
+.footer {
+  min-height: 5rem;
+}
+
+.top-bar-title {
+  margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 40em) {
+  .large-mobile-checkboxes {
+    input[type='checkbox'] {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+.max-headings-label {
+  color: white;
+
+  .current-of-max-headings {
+    color: #ccc;
+  }
+}
+
+.logo img {
+  width: inherit;
+}
+
+@media only screen and (min-width: 64em) and (max-width: 85em) {
+  .button {
+    &.button-facebook, &.button-twitter, &.button-google {
+      &::before {
+        padding: 0 0.25em;
+      }
+    }
+  }
+}

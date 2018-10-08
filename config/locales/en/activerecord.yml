@@ -7,6 +7,9 @@ en:
       budget:
         one: "Budget"
         other: "Budgets"
+      budget/idea:
+        one: "Idea"
+        other: "Ideas"
       budget/investment:
         one: "Investment"
         other: "Investments"

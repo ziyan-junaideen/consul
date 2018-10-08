@@ -14,6 +14,10 @@ class Management::BudgetsController < Management::BaseController
     end
   end
 
+  def create_ideas
+    @budgets = Budget.ideas_posting.order(created_at: :desc).page(params[:page])
+  end
+
   def support_investments
     @budgets = Budget.selecting.order(created_at: :desc).page(params[:page])
   end

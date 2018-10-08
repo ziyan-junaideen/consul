@@ -1,0 +1,87 @@
+<%= form_tag(admin_budget_budget_ideas_path(budget: @budget), method: :get) do %>
+  <div class="small-12 medium-3 column">
+    <%= select_tag :sort_by, options_for_select(budget_ideas_sorting_options, params[:sort_by]),
+                   { prompt: t("admin.budget_ideas.index.sort_by.placeholder"),
+                     label: false,
+                     class: "js-submit-on-change" } %>
+  </div>
+<% end %>
+
+<%= link_to t("admin.budget_ideas.index.download_current_selection"),
+            admin_budget_budget_ideas_path(csv_params),
+            class: "float-right small clear" %>
+
+<% if params[:filter] == 'winners' %>
+  <% if display_calculate_winners_button?(@budget) %>
+    <%= link_to calculate_winner_button_text(@budget),
+                calculate_winners_admin_budget_path(@budget),
+                method: :put,
+                class: "button hollow float-right clear" %>
+  <% else %>
+    <span class="button hollow disabled float-right clear">
+      <%= t("admin.budgets.winners.calculate")%>
+    </span>
+    <div class="callout warning clear">
+      <%= t("admin.budget_ideas.index.cannot_calculate_winners") %>
+    </div>
+  <% end %>
+<% end %>
+
+<% if @investments.any? %>
+  <h3 class="inline-block"><%= page_entries_info @investments, entry_name: t("admin.budget_ideas.kaminari.entry_names.idea") %></h3><br>
+
+  <%= render "filters_description", i18n_namespace: "admin.budget_ideas.index" %>
+
+  <table class="table-for-mobile">
+    <thead>
+      <tr>
+        <th><%= t("admin.budget_ideas.index.list.id") %></th>
+        <th class="small-3"><%= t("admin.budget_ideas.index.list.title") %></th>
+        <th><%= t("admin.budget_ideas.index.list.supports") %></th>
+        <th><%= t("admin.budget_ideas.index.list.related") %></th>
+        <th><%= t("admin.budget_ideas.index.list.heading") %></th>
+        <th><%= t("admin.budget_ideas.index.list.tags") %></th>
+        <th class="text-center"><%= t("admin.budget_ideas.index.list.published") %></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @investments.each do |investment| %>
+        <tr id="<%= dom_id(investment) %>" class="budget_investment">
+          <td class="text-right">
+            <strong><%= investment.id %></strong>
+          </td>
+          <td>
+            <%= link_to investment.title,
+                        admin_budget_budget_idea_path(budget_id: @budget.id,
+                                                            id: investment.id,
+                                                            params: Budget::Investment.filter_params(params)),
+                                                            target: "_blank" %>
+          </td>
+          <td class="text-center">
+            <%= investment.total_votes %>
+          </td>
+          <td>
+            <%= investment.related_contents.length %>
+          </td>
+          <td><%= investment.heading&.name %></td>
+          <td><%= investment.tag_list.to_sentence %></td>
+          <td class="small text-center">
+            <%= form_for investment, url: admin_budget_budget_idea_path(investment.budget, investment), remote: true do |f| %>
+              <%= f.check_box :published,
+                              label: false,
+                              class: "js-submit-on-change",
+                              id: "budget_investment_visible_to_valuators" %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <%= paginate @investments %>
+<% else %>
+  <div class="callout primary clear">
+    <%= t("admin.budget_ideas.index.no_budget_ideas") %>
+  </div>
+<% end %>

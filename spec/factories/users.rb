@@ -78,6 +78,10 @@ FactoryBot.define do
     user
   end
 
+  factory :volunteer do
+    user
+  end
+
   factory :follow do
     association :user, factory: :user
 

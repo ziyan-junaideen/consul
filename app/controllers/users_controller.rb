@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  has_filters %w{proposals debates budget_investments comments follows}, only: :show
+  has_filters %w{proposals debates budget_investments comments follows budget_ideas}, only: :show
 
   load_and_authorize_resource
   helper_method :author?
@@ -15,9 +15,10 @@ class UsersController < ApplicationController
       @activity_counts = HashWithIndifferentAccess.new(
                           proposals: Proposal.where(author_id: @user.id).count,
                           debates: (Setting['feature.debates'] ? Debate.where(author_id: @user.id).count : 0),
-                          budget_investments: (Setting['feature.budgets'] ? Budget::Investment.where(author_id: @user.id).count : 0),
+                          budget_investments: (Setting['feature.budgets'] ? Budget::Investment.project.where(author_id: @user.id).count : 0),
                           comments: only_active_commentables.count,
-                          follows: @user.follows.map(&:followable).compact.count)
+                          follows: @user.follows.map(&:followable).compact.count,
+                          budget_ideas: (Setting['feature.ideas'] ? Budget::Investment.idea.published.where(author_id: @user.id).count : 0))
     end
 
     def load_filtered_activity
@@ -28,6 +29,7 @@ class UsersController < ApplicationController
       when "budget_investments" then load_budget_investments
       when "comments" then load_comments
       when "follows" then load_follows
+      when "budget_ideas" then load_budget_ideas
       else load_available_activity
       end
     end
@@ -69,6 +71,17 @@ class UsersController < ApplicationController
 
     def load_follows
       @follows = @user.follows.group_by(&:followable_type)
+
+      investments = @follows.delete('Budget::Investment') || []
+      projects = investments.select { |follow| follow.followable.project? }
+      ideas = investments.select { |follow| follow.followable.idea? }
+
+      @follows['Budget::Investment'] = projects if projects.any?
+      @follows['Budget::Idea'] = ideas if ideas.any?
+    end
+
+    def load_budget_ideas
+      @budget_ideas = Budget::Investment.idea.published.where(author_id: @user.id).order(created_at: :desc).page(params[:page])
     end
 
     def valid_access?

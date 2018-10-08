@@ -2,6 +2,8 @@ class Budget
   class Phase < ActiveRecord::Base
     PHASE_KINDS = %w(drafting informing accepting reviewing selecting valuating publishing_prices balloting
                 reviewing_ballots finished).freeze
+    IDEA_PHASE_KINDS = %w(drafting informing ideas_posting project_forming accepting reviewing selecting valuating publishing_prices balloting
+                reviewing_ballots finished).freeze
     PUBLISHED_PRICES_PHASES = %w(publishing_prices balloting reviewing_ballots finished).freeze
     SUMMARY_MAX_LENGTH = 1000
     DESCRIPTION_MAX_LENGTH = 2000
@@ -9,9 +11,9 @@ class Budget
     belongs_to :budget
     belongs_to :next_phase, class_name: 'Budget::Phase', foreign_key: :next_phase_id
     has_one :prev_phase, class_name: 'Budget::Phase', foreign_key: :next_phase_id
-
+    
     validates :budget, presence: true
-    validates :kind, presence: true, uniqueness: { scope: :budget }, inclusion: { in: PHASE_KINDS }
+    validates :kind, presence: true, uniqueness: { scope: :budget }, inclusion: { in: ->(phase) { phase.phase_kinds } }
     validates :summary, length: { maximum: SUMMARY_MAX_LENGTH }
     validates :description, length: { maximum: DESCRIPTION_MAX_LENGTH }
     validate :invalid_dates_range?
@@ -27,14 +29,16 @@ class Budget
     scope :published,         -> { enabled.where.not(kind: 'drafting') }
     scope :drafting,          -> { find_by_kind('drafting') }
     scope :informing,         -> { find_by_kind('informing') }
-    scope :accepting,         -> { find_by_kind('accepting')}
-    scope :reviewing,         -> { find_by_kind('reviewing')}
-    scope :selecting,         -> { find_by_kind('selecting')}
-    scope :valuating,         -> { find_by_kind('valuating')}
-    scope :publishing_prices, -> { find_by_kind('publishing_prices')}
-    scope :balloting,         -> { find_by_kind('balloting')}
-    scope :reviewing_ballots, -> { find_by_kind('reviewing_ballots')}
-    scope :finished,          -> { find_by_kind('finished')}
+    scope :ideas_posting,     -> { find_by_kind('ideas_posting') }
+    scope :project_forming,   -> { find_by_kind('project_forming') }
+    scope :accepting,         -> { find_by_kind('accepting') }
+    scope :reviewing,         -> { find_by_kind('reviewing') }
+    scope :selecting,         -> { find_by_kind('selecting') }
+    scope :valuating,         -> { find_by_kind('valuating') }
+    scope :publishing_prices, -> { find_by_kind('publishing_prices') }
+    scope :balloting,         -> { find_by_kind('balloting') }
+    scope :reviewing_ballots, -> { find_by_kind('reviewing_ballots') }
+    scope :finished,          -> { find_by_kind('finished') }
 
     def next_enabled_phase
       next_phase&.enabled? ? next_phase : next_phase&.next_enabled_phase
@@ -48,6 +52,14 @@ class Budget
       if starts_at.present? && ends_at.present? && starts_at >= ends_at
         errors.add(:starts_at, I18n.t('budgets.phases.errors.dates_range_invalid'))
       end
+    end
+
+    def phase_kinds
+      self.class.phase_kinds
+    end
+
+    def self.phase_kinds
+      Setting['feature.ideas'] ? IDEA_PHASE_KINDS : PHASE_KINDS
     end
 
     private
