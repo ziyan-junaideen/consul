@@ -178,7 +178,7 @@ feature "Custom Pages" do
       expect(page).to have_field('site_customization_page_title_pt_br', with: 'Titulo em Português')
     end
 
-    scenario "Update a translation", :js do
+    xscenario "Update a translation", :js do
       visit @edit_page_url
 
       click_link "Español"
