@@ -92,6 +92,9 @@ Setting['feature.guides'] = nil
 Setting['feature.help_page'] = true
 Setting['feature.ideas'] = false
 
+# /budget page configuration
+Setting['feature.budget_page.all_phases'] = true
+
 # Spending proposals feature flags
 Setting['feature.spending_proposal_features.voting_allowed'] = nil
 
