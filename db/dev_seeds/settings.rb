@@ -71,4 +71,7 @@ section "Creating Settings" do
   Setting['feature.homepage.widgets.feeds.proposals'] = true
   Setting['feature.homepage.widgets.feeds.debates'] = true
   Setting['feature.homepage.widgets.feeds.processes'] = true
+
+  # /budget page configuration
+  Setting['feature.budget_page.all_phases'] = true
 end
