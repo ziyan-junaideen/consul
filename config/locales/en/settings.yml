@@ -124,3 +124,5 @@ en:
       budget_page:
         all_phases: 'Budget Page - Show phases'
         all_phases_description: 'Displays all phases link and list of phases for budget under map'
+        footer: Show Page - Show footer
+        footer_description: This will hide the 'Help with participatory budgets section at the bottom of the page'
