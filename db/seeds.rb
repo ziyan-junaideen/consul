@@ -93,6 +93,7 @@ Setting['feature.ideas'] = false
 
 # /budget page configuration
 Setting['feature.budget_page.all_phases'] = true
+Setting['feature.budget_page.footer'] = true
 
 # Spending proposals feature flags
 Setting['feature.spending_proposal_features.voting_allowed'] = nil
