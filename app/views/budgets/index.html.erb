@@ -17,7 +17,7 @@
           <div class="description">
             <%= safe_html_with_links(current_budget.description) %>
           </div>
-          <% unless ideas_phases? %>
+          <% if Setting['feature.budget_page.footer'] %>
             <p>
               <%= link_to t("budgets.index.section_header.help"), "#section_help" %>
             </p>
