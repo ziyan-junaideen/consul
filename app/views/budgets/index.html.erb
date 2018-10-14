@@ -143,7 +143,7 @@
       </div>
     </div>
 
-    <% if @finished_budgets.present? && !ideas_phases? %>
+    <% if Setting['feature.budget_page.finished_budgets'] && @finished_budgets.present? %>
       <div class="row margin-top">
         <div class="small-12 medium-9 column">
           <ul class="no-bullet submenu">
