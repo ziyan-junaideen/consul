@@ -17,7 +17,7 @@
           <div class="description">
             <%= safe_html_with_links(current_budget.description) %>
           </div>
-          <% unless ideas_phases? %>
+          <% if Setting['feature.budget_page.footer'] %>
             <p>
               <%= link_to t("budgets.index.section_header.help"), "#section_help" %>
             </p>
@@ -143,7 +143,7 @@
       </div>
     </div>
 
-    <% if @finished_budgets.present? && !ideas_phases? %>
+    <% if Setting['feature.budget_page.finished_budgets'] && @finished_budgets.present? %>
       <div class="row margin-top">
         <div class="small-12 medium-9 column">
           <ul class="no-bullet submenu">
@@ -201,15 +201,15 @@
   </div>
 <% end %>
 
-<% unless ideas_phases? %>
-<div class="row">
-  <div class="small-12 column">
-    <div id="section_help" class="margin" data-magellan-target="section_help">
-      <p class="lead">
-        <strong><%= t("budgets.index.section_footer.title") %></strong>
-      </p>
-      <p><%= t("budgets.index.section_footer.description") %></p>
+<% if Setting['feature.budget_page.footer'] %>
+  <div class="row">
+    <div class="small-12 column">
+      <div id="section_help" class="margin" data-magellan-target="section_help">
+        <p class="lead">
+          <strong><%= t("budgets.index.section_footer.title") %></strong>
+        </p>
+        <p><%= t("budgets.index.section_footer.description") %></p>
+      </div>
     </div>
-  </div>
   <% end %>
 </div>

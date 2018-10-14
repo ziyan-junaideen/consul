@@ -39,6 +39,8 @@ en:
       balloting: Voting projects
       reviewing_ballots: Reviewing voting
       finished: Finished budget
+      ideas_posting: Ideas collection
+      project_forming: Project development
     index:
       title: Participatory budgets
       empty_budgets: There are no budgets.

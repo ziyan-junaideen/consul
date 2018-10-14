@@ -74,4 +74,6 @@ section "Creating Settings" do
 
   # /budget page configuration
   Setting['feature.budget_page.all_phases'] = true
+  Setting['feature.budget_page.footer'] = true
+  Setting['feature.budget_page.finished_budgets'] = true
 end
