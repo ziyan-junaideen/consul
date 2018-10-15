@@ -10,12 +10,13 @@ module BudgetsHelper
 
   def show_links_to_unfesable_budget_investments(budget)
     %w[
+      accepting
       reviewing
       selecting
       valuating
       publishing_prices
       balloting
-      reviewing_balots
+      reviewing_ballots
       finished
     ].include? budget.phase
   end
