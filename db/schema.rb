@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20181014033823) do
+=======
+ActiveRecord::Schema.define(version: 20180810211514) do
+>>>>>>> pr-2845
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -143,9 +147,11 @@ ActiveRecord::Schema.define(version: 20181014033823) do
 
   create_table "budget_groups", force: :cascade do |t|
     t.integer "budget_id"
-    t.string  "name",                 limit: 50
+    t.string  "name",                     limit: 50
     t.string  "slug"
-    t.integer "max_votable_headings",            default: 1
+    t.integer "max_votable_headings",                default: 1
+    t.string  "voting_style",                        default: "knapsack"
+    t.integer "number_votes_per_heading",            default: 1
   end
 
   add_index "budget_groups", ["budget_id"], name: "index_budget_groups_on_budget_id", using: :btree
@@ -1442,6 +1448,7 @@ ActiveRecord::Schema.define(version: 20181014033823) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "widget_card_translations", force: :cascade do |t|
     t.integer  "widget_card_id", null: false
     t.string   "locale",         null: false
@@ -1456,6 +1463,8 @@ ActiveRecord::Schema.define(version: 20181014033823) do
   add_index "widget_card_translations", ["locale"], name: "index_widget_card_translations_on_locale", using: :btree
   add_index "widget_card_translations", ["widget_card_id"], name: "index_widget_card_translations_on_widget_card_id", using: :btree
 
+=======
+>>>>>>> pr-2845
   create_table "widget_cards", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
