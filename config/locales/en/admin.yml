@@ -134,7 +134,7 @@ en:
         name: "Group name"
         submit: "Save group"
         voting_style: "Voting style"
-        number_votes_per_heading: "Number of votes user can cast under each heading"
+        number_votes_per_heading: "Number of votes a user can cast under each heading"
     budget_headings:
       name: "Name"
       no_headings: "No headings created yet. Each user will be able to vote in only one heading per group."
