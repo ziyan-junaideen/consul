@@ -16,7 +16,7 @@
 
   <% if group.persisted? %>
     <div class="row">
-      <div class="columns small-12 medium-4 large-4">
+      <div class="columns small-12 medium-4 column">
         <%= f.select :voting_style,
                      budget_voting_style_select_options,
                      { label: t("admin.budgets.form.voting_style") },
