@@ -4,21 +4,31 @@
 
   <%= render "shared/errors", resource: @budget %>
 
-  <div class="small-12 medium-9 column">
-    <%= f.translatable_fields do |translations_form| %>
-    <%= translations_form.text_field :name,
-        label: t("activerecord.attributes.budget.name"),
-        maxlength: Budget.title_max_length,
-        placeholder: t("activerecord.attributes.budget.name") %>
-    <% end %>
+  <div class="row">
+    <div class="small-12 medium-9 column end">
+      <%= f.translatable_fields do |translations_form| %>
+      <%= translations_form.text_field :name,
+          label: t("activerecord.attributes.budget.name"),
+          maxlength: Budget.title_max_length,
+          placeholder: t("activerecord.attributes.budget.name") %>
+      <% end %>
+    </div>
   </div>
 
-  <div class="margin-top">
-    <div class="small-12 medium-6 column">
-      <%= f.select :phase, budget_phases_select_options %>
-    </div>
-    <div class="small-12 medium-3 column end">
-      <%= f.select :currency_symbol, budget_currency_symbol_select_options %>
+  <div class="row">
+    <div class="margin-top">
+      <div class="small-12 medium-3 column">
+        <%= f.select :phase, budget_phases_select_options %>
+      </div>
+      <div class="small-12 medium-3 column">
+        <%= f.select :voting_style, budget_voting_styles_select_options %>
+      </div>
+      <div class="small-12 medium-3 column approval-wrapper" style="<%= 'display: none;' unless @budget.approval_voting? %>">
+        <%= f.select :money_bounded, [['Yes', true], ['No', false]] %>
+      </div>
+      <div class="small-12 medium-3 column end">
+        <%= f.select :currency_symbol, budget_currency_symbol_select_options %>
+      </div>
     </div>
   </div>
 
@@ -97,3 +107,21 @@
   </div>
 
 <% end %>
+
+
+<script>
+  $(function(){
+    var votingStyle = $("#budget_voting_style");
+    var approvalWrappers = $('.approval-wrapper');
+
+    votingStyle.on('change', function(){
+      if ($(this).val() === 'approval') {
+        console.log('show');
+        approvalWrappers.show();
+      } else {
+        console.log('hide');
+        approvalWrappers.hide();
+      }
+    });
+  });
+</script>

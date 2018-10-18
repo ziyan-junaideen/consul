@@ -137,6 +137,8 @@ en:
         description_finished: "Description when the budget is finished"
         phase: "Phase"
         currency_symbol: "Currency"
+        voting_style: "Voting Style"
+        money_bounded: "Voter can't exceed budget"
       budget/investment:
         heading_id: "Heading"
         title: "Title"
@@ -171,6 +173,7 @@ en:
         name: "Heading name"
         price: "Price"
         population: "Population"
+        max_votes: "Number of votes a user can cast under each heading"
       comment:
         body: "Comment"
         user: "User"

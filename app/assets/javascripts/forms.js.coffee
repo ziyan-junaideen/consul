@@ -50,9 +50,9 @@ App.Forms =
           $("#globalize_locales").show()
 
     $("[name='progress_bar[kind]']").change()
-    
+
   toggleSelect: ->
-    $('.js-toggle-select').unbind('change').on('change', ->
+    $('.js-toggle-select').on('change', ->
       dropdown = $(this)
       target = $(dropdown.data('toggle-selector'))
 

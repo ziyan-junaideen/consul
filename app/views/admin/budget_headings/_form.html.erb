@@ -38,6 +38,9 @@
                       label: t("admin.budget_headings.form.longitude"),
                       maxlength: 22,
                       placeholder: "longitude" %>
+
+    <%= f.number_field :max_votes if @heading.budget.approval_voting? %>
+
     <p class="help-text" id="budgets-coordinates-help-text">
       <%= t("admin.budget_headings.form.coordinates_info") %>
     </p>
@@ -49,4 +52,5 @@
 
     <%= f.submit t("admin.budget_headings.form.#{action}"), class: "button success" %>
   <% end %>
+  
 </div>
