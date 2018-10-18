@@ -2,12 +2,12 @@
   <%= @budget.formatted_heading_price(@heading) %>
 </span>
 
-<% if @heading.group_approval_voting? %>
+<% if @heading.group.approval_voting? %>
   <div class="panel">
     <p style="padding:2rem">
       <%= t('budgets.progress_bar.remaining_votes_html',
             casted_votes: @ballot.investments.count,
-            votes_available: @heading.group_number_votes_per_heading ) %>
+            votes_available: @heading.group.number_votes_per_heading ) %>
 
     </p>
   </div>
