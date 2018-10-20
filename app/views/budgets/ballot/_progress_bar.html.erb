@@ -3,8 +3,8 @@
 </span>
 
 <% if @heading.group.approval_voting? %>
-  <div class="panel">
-    <p class="padding-top">
+  <div class="panel clear">
+    <p>
       <%= t('budgets.progress_bar.remaining_votes_html',
             casted_votes: @ballot.investments.count,
             votes_available: @heading.group.number_votes_per_heading ) %>
