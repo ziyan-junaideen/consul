@@ -58,7 +58,9 @@ namespace :admin do
     end
 
     resources :budget_groups do
-      resources :budget_headings
+      resources :budget_headings do
+        resource :import, only: [:new, :create]
+      end
     end
 
     resources :budget_investments, only: [:index, :show, :edit, :update] do
