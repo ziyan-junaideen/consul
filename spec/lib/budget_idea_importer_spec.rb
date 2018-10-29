@@ -26,8 +26,6 @@ RSpec.describe BudgetIdeaImporter do
       expect(investment.author.phone_number).to eq('917-498-1234')
     end
 
-    it 'Breaks down the '
-
     it 'creates map location if present' do
       expect { subject }.to change { MapLocation.count }.by(2)
     end
