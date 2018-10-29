@@ -1,13 +1,15 @@
 require 'csv'
 
 class BudgetIdeaImporter
-  attr_accessor :heading, :default_author
+  attr_accessor :heading, :default_author, :success, :error
 
   delegate :budget, :group, to: :heading
 
   def initialize(heading, default_author)
     @heading = heading
     @default_author = default_author
+    @error = []
+    @success = []
   end
 
   def import(file_path)
@@ -15,21 +17,30 @@ class BudgetIdeaImporter
 
     @csv.each_with_index do |row, index|
       author = author_from_row(row) || default_author
+      title = title_from_row(row)
+      description = description_from_row(row)
 
       options = {
         kind: 'idea',
         heading: heading,
         group: group,
-        title: row['Title'],
-        description: row['Description'],
+        title: title,
+        description: description,
         author: author,
         terms_of_service: '1',
-        location: row['Location']
+        location: row['Location'],
+        tag_list: row['Categories']
       }
 
       add_map(options, row)
 
-      budget.investments.create!(options)
+      investment = budget.investments.create(options)
+
+      if investment.persisted?
+        @success << investment
+      else
+        @error << investment
+      end
     end
   end
 
@@ -77,5 +88,13 @@ class BudgetIdeaImporter
         zoom: 14
       }
     end
+  end
+
+  def title_from_row(row)
+    row['Idea'].split(' ')[0..5].join(' ')
+  end
+
+  def description_from_row(row)
+    row['Idea']
   end
 end

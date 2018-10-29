@@ -16,8 +16,8 @@ RSpec.describe BudgetIdeaImporter do
       subject
       investment = heading.investments.idea.first
 
-      expect(investment.title).to eq('Increase planted trees')
-      expect(investment.description).to eq('Increase planted trees description')
+      expect(investment.title).to eq('increase number of planted trees along')
+      expect(investment.description).to eq('increase number of planted trees along 4th Avenue increase number of planted trees along 4th Avenue')
       expect(investment.location).to eq('Park Slope to Gowanus')
       expect(investment.map_location.latitude).to eq(40.672014)
       expect(investment.map_location.longitude).to eq(-73.987251)
@@ -25,6 +25,8 @@ RSpec.describe BudgetIdeaImporter do
       expect(investment.author.email).to eq('rex.tang@gmail.com')
       expect(investment.author.phone_number).to eq('917-498-1234')
     end
+
+    it 'Breaks down the '
 
     it 'creates map location if present' do
       expect { subject }.to change { MapLocation.count }.by(2)
