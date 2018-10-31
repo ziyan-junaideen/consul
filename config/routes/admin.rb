@@ -58,14 +58,13 @@ namespace :admin do
     end
 
     resources :budget_groups do
-      resources :budget_headings do
-        resource :import, only: [:new, :create]
-      end
+      resources :budget_headings
     end
 
     resources :budget_investments, only: [:index, :show, :edit, :update] do
       resources :budget_investment_milestones
       member { patch :toggle_selection }
+      resource :budget_investment_importer, only: [:new, :create]
     end
 
     resources :budget_ideas, only: [:index, :show, :edit, :update] do
