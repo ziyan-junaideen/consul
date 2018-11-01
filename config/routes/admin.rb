@@ -64,13 +64,14 @@ namespace :admin do
     resources :budget_investments, only: [:index, :show, :edit, :update] do
       resources :budget_investment_milestones
       member { patch :toggle_selection }
-      resource :budget_investment_importer, only: [:new, :create]
     end
 
     resources :budget_ideas, only: [:index, :show, :edit, :update] do
       resources :budget_investment_milestones
       member { patch :toggle_selection }
     end
+      
+    resource :budget_investment_importer, only: [:new, :create]
 
     resources :budget_phases, only: [:edit, :update]
   end

@@ -1,4 +1,6 @@
-class Admin::BudgetInvestmentImporterController < ApplicationController
+class Admin::BudgetInvestmentImportersController < ApplicationController
+  before_action :load_budget
+
   def new
     @importer = Budget::Investment::Importer.new
   end
@@ -19,5 +21,9 @@ class Admin::BudgetInvestmentImporterController < ApplicationController
 
   def importer_attributes
     params.require(:budget_investment_importer).permit(:budget_id, :heading_id, :default_author_id, :file)
+  end
+
+  def load_budget
+    @budget = Budget.find(params[:budget_id])
   end
 end
