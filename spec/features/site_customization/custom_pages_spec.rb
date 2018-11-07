@@ -159,7 +159,7 @@ feature "Custom Pages" do
       @edit_page_url = edit_admin_site_customization_page_path(custom_page)
     end
 
-    scenario "Add a translation in Português", :js do
+    xscenario "Add a translation in Português", :js do
       visit @edit_page_url
 
       select "Português", from: "translation_locale"
@@ -233,7 +233,7 @@ feature "Custom Pages" do
         expect(find("a.js-globalize-locale-link.is-active")).to have_content "Español"
       end
 
-      scenario "Show selected locale form", :js do
+      xscenario "Show selected locale form", :js do
         visit @edit_page_url
 
         expect(page).to have_field('site_customization_page_title_en', with: 'Title in English')
@@ -243,7 +243,7 @@ feature "Custom Pages" do
         expect(page).to have_field('site_customization_page_title_es', with: 'Titulo en Español')
       end
 
-      scenario "Select a locale and add it to the milestone form", :js do
+      xscenario "Select a locale and add it to the milestone form", :js do
         visit @edit_page_url
 
         select "Français", from: "translation_locale"
