@@ -2,6 +2,10 @@ require 'rails_helper'
 
 describe Budget do
 
+  before do
+    Setting['feature.ideas'] = true
+  end
+
   let(:budget) { create(:budget) }
 
   it_behaves_like "sluggable", updatable_slug_trait: :drafting
@@ -23,7 +27,7 @@ describe Budget do
       end
 
       it "changes depending on the phase, falling back to budget description attributes" do
-        Budget::Phase::PHASE_KINDS.each do |phase_kind|
+        Budget::Phase.phase_kinds.each do |phase_kind|
           budget.phase = phase_kind
           expect(budget.description).to eq(budget.send("description_#{phase_kind}"))
           expect(budget.description).to be_html_safe
@@ -40,7 +44,7 @@ describe Budget do
       end
 
       it "changes depending on the phase" do
-        Budget::Phase::PHASE_KINDS.each do |phase_kind|
+        Budget::Phase.phase_kinds.each do |phase_kind|
           budget.phase = phase_kind
           expect(budget.description).to eq(phase_kind.humanize)
         end
@@ -50,7 +54,7 @@ describe Budget do
 
   describe "phase" do
     it "is validated" do
-      Budget::Phase::PHASE_KINDS.each do |phase|
+      Budget::Phase.phase_kinds.each do |phase|
         budget.phase = phase
         expect(budget).to be_valid
       end
@@ -63,6 +67,12 @@ describe Budget do
       budget.phase = "drafting"
       expect(budget).to be_drafting
 
+      budget.phase = "ideas_posting"
+      expect(budget).to be_ideas_posting
+
+      budget.phase = "project_forming"
+      expect(budget).to be_project_forming
+
       budget.phase = "accepting"
       expect(budget).to be_accepting
 
@@ -74,8 +84,8 @@ describe Budget do
 
       budget.phase = "valuating"
       expect(budget).to be_valuating
-
       budget.phase = "publishing_prices"
+
       expect(budget).to be_publishing_prices
 
       budget.phase = "balloting"
@@ -146,7 +156,7 @@ describe Budget do
   describe "#open" do
 
     it "returns all budgets that are not in the finished phase" do
-      (Budget::Phase::PHASE_KINDS - ["finished"]).each do |phase|
+      (Budget::Phase.phase_kinds - ["finished"]).each do |phase|
         budget = create(:budget, phase: phase)
         expect(described_class.open).to include(budget)
       end
@@ -205,6 +215,8 @@ describe Budget do
   describe "#generate_phases" do
     let(:drafting_phase)          { budget.phases.drafting }
     let(:informing_phase)         { budget.phases.informing }
+    let(:ideas_posting_phase)     { budget.phases.ideas_posting }
+    let(:project_forming_phase)   { budget.phases.project_forming }
     let(:accepting_phase)         { budget.phases.accepting }
     let(:reviewing_phase)         { budget.phases.reviewing }
     let(:selecting_phase)         { budget.phases.selecting }
@@ -215,10 +227,12 @@ describe Budget do
     let(:finished_phase)          { budget.phases.finished }
 
     it "generates all phases linked in correct order" do
-      expect(budget.phases.count).to eq(Budget::Phase::PHASE_KINDS.count)
+      expect(budget.phases.count).to eq(Budget::Phase.phase_kinds.count)
 
       expect(drafting_phase.next_phase).to eq(informing_phase)
-      expect(informing_phase.next_phase).to eq(accepting_phase)
+      expect(informing_phase.next_phase).to eq(ideas_posting_phase)
+      expect(ideas_posting_phase.next_phase).to eq(project_forming_phase)
+      expect(project_forming_phase.next_phase).to eq(accepting_phase)
       expect(accepting_phase.next_phase).to eq(reviewing_phase)
       expect(reviewing_phase.next_phase).to eq(selecting_phase)
       expect(selecting_phase.next_phase).to eq(valuating_phase)
@@ -230,7 +244,9 @@ describe Budget do
 
       expect(drafting_phase.prev_phase).to eq(nil)
       expect(informing_phase.prev_phase).to eq(drafting_phase)
-      expect(accepting_phase.prev_phase).to eq(informing_phase)
+      expect(ideas_posting_phase.prev_phase).to eq(informing_phase)
+      expect(project_forming_phase.prev_phase).to eq(ideas_posting_phase)
+      expect(accepting_phase.prev_phase).to eq(project_forming_phase)
       expect(reviewing_phase.prev_phase).to eq(accepting_phase)
       expect(selecting_phase.prev_phase).to eq(reviewing_phase)
       expect(valuating_phase.prev_phase).to eq(selecting_phase)

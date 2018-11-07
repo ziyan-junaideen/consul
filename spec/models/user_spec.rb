@@ -158,6 +158,18 @@ describe User do
     end
   end
 
+  describe "volunteer?" do
+    it "is false when the user is not a volunteer" do
+      expect(subject.volunteer?).to be false
+    end
+
+    it "is true when the user is a volunteer" do
+      subject.save
+      create(:volunteer, user: subject)
+      expect(subject.volunteer?).to be true
+    end
+  end
+
   describe "poll_officer?" do
     it "is false when the user is not a poll officer" do
       expect(subject.poll_officer?).to be false
@@ -700,6 +712,44 @@ describe User do
       10.times { create(:user) }
       user = User.last
       expect(User.find_by_manager_login("admin_user_#{user.id}")).to eq user
+    end
+  end
+
+  describe 'self.first_or_initialize_for_email' do
+    it 'finds existing user' do
+      user = create(:user)
+
+      params = {
+        username: user.username,
+        email: user.email
+      }
+
+      result = User.first_or_initialize_for_email(params)
+      expect(result).to eq(user)
+    end
+
+    it 'initializes new user' do
+      user = build(:user)
+
+      params = {
+        username: user.username,
+        email: user.email
+      }
+
+      result = User.first_or_initialize_for_email(params)
+      expect(result).to be_valid
+    end
+  end
+
+  describe 'Setting up volunteer records after create' do
+    it 'does not create volunteer record by default' do
+      user = create(:user)
+      expect(user.volunteer).to be_nil
+    end
+
+    it 'creates volunteer record if requested' do
+      user = create(:user, setup_as_volunteer: true)
+      expect(user.volunteer).to_not be_nil
     end
   end
 

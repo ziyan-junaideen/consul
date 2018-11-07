@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
   has_one :valuator
   has_one :manager
   has_one :poll_officer, class_name: "Poll::Officer"
+  has_one :volunteer
   has_one :organization
   has_one :lock
   has_many :flags
@@ -34,6 +35,7 @@ class User < ActiveRecord::Base
   has_many :follows
   belongs_to :geozone
 
+  validates :email, presence: true, if: :email_required?
   validates :username, presence: true, if: :username_required?
   validates :username, uniqueness: { scope: :registering_with_oauth }, if: :username_required?
   validates :document_number, uniqueness: { scope: :document_type }, allow_nil: true
@@ -50,6 +52,7 @@ class User < ActiveRecord::Base
   attr_accessor :skip_password_validation
   attr_accessor :use_redeemable_code
   attr_accessor :login
+  attr_accessor :setup_as_volunteer
 
   scope :administrators, -> { joins(:administrator) }
   scope :moderators,     -> { joins(:moderator) }
@@ -72,6 +75,7 @@ class User < ActiveRecord::Base
   end
 
   before_validation :clean_document_number
+  after_create :create_volunteer
 
   # Get the existing user by email if the provider gives us a verified email.
   def self.first_or_initialize_for_oauth(auth)
@@ -86,6 +90,18 @@ class User < ActiveRecord::Base
       password: Devise.friendly_token[0, 20],
       terms_of_service: '1',
       confirmed_at: oauth_email_confirmed ? DateTime.current : nil
+    )
+  end
+
+  # Finds existing user or initializes a user for use in idea guest submission.
+  def self.first_or_initialize_for_email(params)
+    email_user = User.find_by(email: params[:email])
+
+    email_user || User.new(
+      username: params[:username],
+      email: params[:email],
+      terms_of_service: '1',
+      skip_password_validation: '1'
     )
   end
 
@@ -141,6 +157,10 @@ class User < ActiveRecord::Base
 
   def manager?
     manager.present?
+  end
+
+  def volunteer?
+    volunteer.present?
   end
 
   def poll_officer?
@@ -350,6 +370,11 @@ class User < ActiveRecord::Base
         attributes: :username,
         maximum: User.username_max_length)
       validator.validate(self)
+    end
+  
+    def create_volunteer
+      return unless setup_as_volunteer.to_b
+      Volunteer.create(user_id: id)
     end
 
 end

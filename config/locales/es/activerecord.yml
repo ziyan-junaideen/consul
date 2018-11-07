@@ -8,14 +8,14 @@ es:
         one: "Presupuesto participativo"
         other: "Presupuestos participativos"
       budget/investment:
-        one: "Proyecto de inversión"
-        other: "Proyectos de inversión"
+        one: "Proyecto de gasto"
+        other: "Proyectos de gasto"
       budget/investment/milestone:
         one: "hito"
         other: "hitos"
       budget/investment/status:
-        one: "Estado de proyecto"
-        other: "Estados de proyecto"
+        one: "Estado del proyecto"
+        other: "Estados del proyecto"
       comment:
         one: "Comentario"
         other: "Comentarios"
@@ -63,7 +63,7 @@ es:
         other: "Propuestas ciudadanas"
       spending_proposal:
         one: "Proyecto de inversión"
-        other: "Proyectos de inversión"
+        other: "Proyectos de gasto"
       site_customization/page:
         one: Página
         other: Páginas
@@ -108,7 +108,7 @@ es:
         other: "Votaciones"
       proposal_notification:
         one: "Notificación de propuesta"
-        other: "Notificaciones de propuestas"
+        other: "Notificaciones de propuesta"
     attributes:
       budget:
         name: "Nombre"
@@ -129,12 +129,12 @@ es:
         administrator_id: "Administrador"
         location: "Ubicación (opcional)"
         organization_name: "Si estás proponiendo en nombre de una organización o colectivo, o en nombre de más gente, escribe su nombre"
-        image: "Imagen descriptiva de la propuesta de inversión"
+        image: "Imagen descriptiva del proyecto de gasto"
         image_title: "Título de la imagen"
       budget/investment/milestone:
         status_id: "Estado actual del proyecto (opcional)"
         title: "Título"
-        description: "Descripción (opcional si se ha asignado un estado de proyecto)"
+        description: "Descripción (opcional si hay un estado asignado)"
         publication_date: "Fecha de publicación"
       budget/investment/status:
         name: "Nombre"
@@ -185,14 +185,20 @@ es:
         geozone_restricted: "Restringida por zonas"
         summary: "Resumen"
         description: "Descripción"
+      poll/translation:
+        name: "Nombre"
+        summary: "Resumen"
+        description: "Descripción"
       poll/question:
         title: "Pregunta"
         summary: "Resumen"
         description: "Descripción"
         external_url: "Enlace a documentación adicional"
+      poll/question/translation:
+        title: "Pregunta"
       signature_sheet:
         signable_type: "Tipo de hoja de firmas"
-        signable_id: "ID Propuesta ciudadana/Propuesta inversión"
+        signable_id: "ID Propuesta ciudadana/Proyecto de gasto"
         document_numbers: "Números de documentos"
       site_customization/page:
         content: Contenido
@@ -205,6 +211,10 @@ es:
         more_info_flag: Mostrar en la página de ayuda
         print_content_flag: Botón de imprimir contenido
         locale: Idioma
+      site_customization/page/translation:
+        title: Título
+        subtitle: Subtítulo
+        content: Contenido
       site_customization/image:
         name: Nombre
         image: Imagen
@@ -225,12 +235,21 @@ es:
         allegations_start_date: Fecha de inicio de alegaciones
         allegations_end_date: Fecha de fin de alegaciones
         result_publication_date: Fecha de publicación del resultado final
+      legislation/process/translation:
+        title: Título del proceso
+        summary: Resumen
+        description: En qué consiste
+        additional_info: Información adicional
       legislation/draft_version:
         title: Título de la version
         body: Texto
         changelog: Cambios
         status: Estado
         final_version: Versión final
+      legislation/draft_version/translation:
+        title: Título de la versión
+        body: Texto
+        changelog: Cambios
       legislation/question:
         title: Título
         question_options: Respuestas
@@ -247,6 +266,9 @@ es:
       poll/question/answer:
         title: Respuesta
         description: Descripción
+      poll/question/answer/translation:
+        title: Respuesta
+        description: Descripción
       poll/question/answer/video:
         title: Título
         url: Vídeo externo
@@ -255,12 +277,25 @@ es:
         subject: Asunto
         from: Enviado por
         body: Contenido del email
+      admin_notification:
+        segment_recipient: Destinatarios
+        title: Título
+        link: Enlace
+        body: Texto
+      admin_notification/translation:
+        title: Título
+        body: Texto
       widget/card:
         label: Etiqueta (opcional)
         title: Título
         description: Descripción
         link_text: Texto del enlace
         link_url: URL del enlace
+      widget/card/translation:
+        label: Etiqueta (opcional)
+        title: Título
+        description: Descripción
+        link_text: Texto del enlace
       widget/feed:
         limit: Número de elementos
     errors:
@@ -285,11 +320,11 @@ es:
         newsletter:
           attributes:
             segment_recipient:
-              invalid: "El segmento de usuarios es inválido"
+              invalid: "El usuario del destinatario es inválido"
         admin_notification:
           attributes:
             segment_recipient:
-              invalid: "El segmento de usuarios es inválido"
+              invalid: "El usuario del destinatario es inválido"
         map_location:
           attributes:
             map:

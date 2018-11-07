@@ -1,0 +1,12 @@
+<tr id="budget_idea_<%= budget_idea.id %>">
+  <td>
+    <%= link_to budget_idea.title, budget_idea_path(budget_idea.budget, budget_idea) %>
+  </td>
+  <td>
+    <% if can? :destroy, budget_idea %>
+      <%= link_to t('shared.delete'), budget_idea_path(budget_idea.budget, budget_idea),
+                  method: :delete, class: "button hollow alert expanded",
+                  data: {confirm: "#{t('users.show.delete_alert')}"} %>
+    <% end %>
+  </td>
+</tr>

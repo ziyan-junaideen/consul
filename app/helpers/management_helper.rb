@@ -29,6 +29,10 @@ module ManagementHelper
     (controller_name == "budgets" && action_name == "create_investments")
   end
 
+  def menu_create_ideas?
+    controller_name == "budgets" && action_name == "create_ideas"
+  end
+
   def menu_support_investments?
     (controller_name == "budget_investments" && action_name == "index") ||
     (controller_name == "budgets" && action_name == "support_investments")

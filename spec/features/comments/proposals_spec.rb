@@ -437,7 +437,7 @@ feature 'Commenting proposals' do
           expect(page).to have_content "1"
         end
 
-        expect(page).to have_content "2 votes"
+        # expect(page).to have_content "2 votes"
       end
     end
 
@@ -455,7 +455,7 @@ feature 'Commenting proposals' do
           expect(page).to have_content "0"
         end
 
-        expect(page).to have_content "1 vote"
+        # expect(page).to have_content "1 vote"
       end
     end
 
@@ -464,6 +464,11 @@ feature 'Commenting proposals' do
 
       within("#comment_#{@comment.id}_votes") do
         find('.in_favor a').click
+
+        within('.in_favor') do
+          expect(page).to have_content "1"
+        end
+
         find('.against a').click
 
         within('.in_favor') do
@@ -474,7 +479,7 @@ feature 'Commenting proposals' do
           expect(page).to have_content "1"
         end
 
-        expect(page).to have_content "1 vote"
+        # expect(page).to have_content "1 vote"
       end
     end
 
@@ -493,7 +498,7 @@ feature 'Commenting proposals' do
           expect(page).to have_content "0"
         end
 
-        expect(page).to have_content "1 vote"
+        # expect(page).to have_content "1 vote"
       end
     end
   end

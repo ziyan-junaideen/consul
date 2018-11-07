@@ -234,6 +234,8 @@ ActiveRecord::Schema.define(version: 20180924071722) do
     t.datetime "confirmed_hide_at"
     t.datetime "ignored_flag_at"
     t.integer  "flags_count",                                 default: 0
+    t.integer  "kind",                                        default: 0
+    t.boolean  "published",                                   default: true
   end
 
   add_index "budget_investments", ["administrator_id"], name: "index_budget_investments_on_administrator_id", using: :btree
@@ -251,6 +253,7 @@ ActiveRecord::Schema.define(version: 20180924071722) do
     t.datetime "starts_at"
     t.datetime "ends_at"
     t.boolean  "enabled",       default: true
+    t.string   "title"
   end
 
   add_index "budget_phases", ["ends_at"], name: "index_budget_phases_on_ends_at", using: :btree
@@ -297,6 +300,13 @@ ActiveRecord::Schema.define(version: 20180924071722) do
     t.text     "description_drafting"
     t.text     "description_publishing_prices"
     t.text     "description_informing"
+    t.text     "description_ideas_posting"
+    t.text     "description_project_forming"
+    t.string   "post_idea_uri"
+    t.string   "commitee_list_uri"
+    t.string   "volunteer_form_uri"
+    t.string   "delegate_form_uri"
+    t.boolean  "guest_ideas",                              default: false
   end
 
   create_table "campaigns", force: :cascade do |t|
@@ -580,7 +590,7 @@ ActiveRecord::Schema.define(version: 20180924071722) do
     t.string   "locale",                       null: false
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
-    t.text     "title"
+    t.string   "title"
     t.text     "changelog"
     t.text     "body"
     t.text     "body_html"
@@ -1163,17 +1173,17 @@ ActiveRecord::Schema.define(version: 20180924071722) do
   add_index "site_customization_images", ["name"], name: "index_site_customization_images_on_name", unique: true, using: :btree
 
   create_table "site_customization_page_translations", force: :cascade do |t|
-      t.integer  "site_customization_page_id", null: false
-      t.string   "locale",                     null: false
-      t.datetime "created_at",                 null: false
-      t.datetime "updated_at",                 null: false
-      t.string   "title"
-      t.string   "subtitle"
-      t.text     "content"
-    end
+    t.integer  "site_customization_page_id", null: false
+    t.string   "locale",                     null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "title"
+    t.string   "subtitle"
+    t.text     "content"
+  end
 
-    add_index "site_customization_page_translations", ["locale"], name: "index_site_customization_page_translations_on_locale", using: :btree
-    add_index "site_customization_page_translations", ["site_customization_page_id"], name: "index_7fa0f9505738cb31a31f11fb2f4c4531fed7178b", using: :btree
+  add_index "site_customization_page_translations", ["locale"], name: "index_site_customization_page_translations_on_locale", using: :btree
+  add_index "site_customization_page_translations", ["site_customization_page_id"], name: "index_7fa0f9505738cb31a31f11fb2f4c4531fed7178b", using: :btree
 
   create_table "site_customization_pages", force: :cascade do |t|
     t.string   "slug",                                 null: false
@@ -1401,6 +1411,14 @@ ActiveRecord::Schema.define(version: 20180924071722) do
   add_index "visits", ["started_at"], name: "index_visits_on_started_at", using: :btree
   add_index "visits", ["user_id"], name: "index_visits_on_user_id", using: :btree
 
+  create_table "volunteers", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "volunteers", ["user_id"], name: "index_volunteers_on_user_id", using: :btree
+
   create_table "votes", force: :cascade do |t|
     t.integer  "votable_id"
     t.string   "votable_type"
@@ -1417,6 +1435,12 @@ ActiveRecord::Schema.define(version: 20180924071722) do
   add_index "votes", ["signature_id"], name: "index_votes_on_signature_id", using: :btree
   add_index "votes", ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope", using: :btree
   add_index "votes", ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope", using: :btree
+
+  create_table "web_sections", force: :cascade do |t|
+    t.text     "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "widget_card_translations", force: :cascade do |t|
     t.integer  "widget_card_id", null: false
@@ -1448,12 +1472,6 @@ ActiveRecord::Schema.define(version: 20180924071722) do
     t.integer  "limit",      default: 3
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
-  end
-
-  create_table "web_sections", force: :cascade do |t|
-    t.text     "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "administrators", "users"
@@ -1496,4 +1514,5 @@ ActiveRecord::Schema.define(version: 20180924071722) do
   add_foreign_key "related_content_scores", "users"
   add_foreign_key "users", "geozones"
   add_foreign_key "valuators", "users"
+  add_foreign_key "volunteers", "users"
 end

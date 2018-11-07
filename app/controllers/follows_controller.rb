@@ -22,6 +22,7 @@ class FollowsController < ApplicationController
   end
 
   def followable_translation_key(followable)
+    return 'budget_idea' if followable.is_a?(Budget::Investment) && followable.idea?
     followable.class.name.parameterize("_")
   end
 

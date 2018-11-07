@@ -31,7 +31,7 @@ feature "Admin custom information texts" do
     expect(page).to have_content 'Results'
 
     click_link 'Layouts'
-    expect(page).to have_content 'Accessibility'
+    expect(page).to have_content 'Google Chrome'
 
     click_link 'Emails'
     expect(page).to have_content 'Confirm your email'
@@ -50,7 +50,8 @@ feature "Admin custom information texts" do
     visit admin_site_customization_information_texts_path
 
     click_link 'Proposals'
-    expect(find("a[href=\"/admin/site_customization/information_texts?tab=proposals\"].is-active")).to have_content "Proposals"
+    expect(find("a[href=\"/admin/site_customization/information_texts?tab=proposals\"].is-active"))
+          .to have_content "Proposals"
   end
 
   context "Globalization" do

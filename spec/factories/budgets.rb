@@ -14,6 +14,8 @@ FactoryBot.define do
     phase 'accepting'
     description_drafting  "This budget is drafting"
     description_informing "This budget is informing"
+    description_ideas_posting "This budget is ideas posting"
+    description_project_forming "This budget is project forming"
     description_accepting "This budget is accepting"
     description_reviewing "This budget is reviewing"
     description_selecting "This budget is selecting"
@@ -62,6 +64,7 @@ FactoryBot.define do
     trait :finished do
       phase 'finished'
     end
+
   end
 
   factory :budget_group, class: 'Budget::Group' do
@@ -165,6 +168,15 @@ FactoryBot.define do
      trait :with_confirmed_hide do
        confirmed_hide_at { Time.current }
      end
+
+    trait :idea do
+      kind 'idea'
+    end
+
+    trait :not_published do
+      published false
+    end
+
   end
 
   factory :budget_phase, class: 'Budget::Phase' do

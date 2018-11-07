@@ -1,0 +1,57 @@
+<%= link_to admin_budget_budget_idea_path(@budget, @investment, Budget::Investment.filter_params(params)), class: 'back' do %>
+  <span class="icon-angle-left"></span> <%= t("shared.back") %>
+<% end %>
+
+<%= form_for @investment,
+             url: admin_budget_budget_idea_path(@budget, @investment) do |f| %>
+
+  <% Budget::Investment.filter_params(params).each do |filter_name, filter_value| %>
+   <%= hidden_field_tag filter_name, filter_value %>
+  <% end %>
+
+  <div class="row expanded">
+    <div class="small-12 column">
+      <%= f.text_field :title, maxlength: Budget::Investment.title_max_length %>
+    </div>
+
+    <div class="ckeditor small-12 column">
+      <%= f.cktext_area :description, maxlength: Budget::Investment.description_max_length, ckeditor: { language: I18n.locale } %>
+    </div>
+
+    <% if feature?(:map) %>
+      <div class="small-12 column">
+
+        <%= render 'map_locations/form_fields',
+                   form:     f,
+                   map_location: @investment.map_location || MapLocation.new,
+                   label:    t("budgets.ideas.form.map_location"),
+                   help:     t("budgets.ideas.form.map_location_instructions"),
+                   remove_marker_label: t("budgets.ideas.form.map_remove_marker"),
+                   parent_class: "budget_investment",
+                   i18n_namespace: "budgets.ideas" %>
+
+      </div>
+    <% end %>
+
+    <div class="small-12 column">
+      <%= f.label :tag_list, t("admin.budget_ideas.edit.user_tags") %>
+      <%= f.text_field :tag_list,
+                       value: @investment.tag_list.sort.join(','),
+                       label: false %>
+    </div>
+
+    <div class="small-12 column">
+      <div class="small-12 medium-6">
+        <%= f.text_field :external_url %>
+      </div>
+
+      <div class="small-12 medium-6">
+        <%= f.select :heading_id, budget_heading_select_options(@budget), include_blank: t("admin.budget_ideas.edit.select_heading") %>
+      </div>
+    </div>
+  </div>
+
+  <div class="small-12 column margin-top">
+    <%= f.submit(class: "button", value: t("admin.budget_ideas.edit.submit_button")) %>
+  </div>
+<% end %>

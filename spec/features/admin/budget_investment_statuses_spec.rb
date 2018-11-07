@@ -23,7 +23,7 @@ feature 'Admin budget investment statuses' do
       expect(page).to have_content status2.description
     end
 
-    scenario 'Displaying no statuses text' do
+    scenario 'Displaying no statuses text', :js do
       visit admin_budget_investment_statuses_path
 
       expect(page).to have_content("There are no investment statuses created")

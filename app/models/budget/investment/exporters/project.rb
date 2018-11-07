@@ -1,17 +1,4 @@
-class Budget::Investment::Exporter
-  require 'csv'
-
-  def initialize(investments)
-    @investments = investments
-  end
-
-  def to_csv
-    CSV.generate(headers: true) do |csv|
-      csv << headers
-      @investments.each { |investment| csv << csv_values(investment) }
-    end
-  end
-
+class Budget::Investment::Exporters::Project < Budget::Investment::Exporters::Base
   private
 
   def headers
@@ -46,18 +33,5 @@ class Budget::Investment::Exporter
       investment.visible_to_valuators? ? I18n.t('shared.yes') : I18n.t('shared.no'),
       investment.author.username
     ]
-  end
-
-  def admin(investment)
-    if investment.administrator.present?
-      investment.administrator.name
-    else
-      I18n.t("admin.budget_investments.index.no_admin_assigned")
-    end
-  end
-
-  def price(investment)
-    price_string = "admin.budget_investments.index.feasibility.#{investment.feasibility}"
-    I18n.t(price_string, price: investment.formatted_price)
   end
 end
