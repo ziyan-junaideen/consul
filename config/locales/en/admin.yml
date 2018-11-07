@@ -87,6 +87,7 @@ en:
         table_edit_budget: Edit
         edit_groups: Edit headings groups
         edit_budget: Edit budget
+        no_budgets: "There are no open budgets."
       create:
         notice: New participatory budget created successfully!
       update:
@@ -641,6 +642,9 @@ en:
         title: Newsletter preview
         send: Send
         affected_users: (%{n} affected users)
+        sent_emails:
+          one: 1 email sent
+          other: "%{count} emails sent"
         sent_at: Sent at
         subject: Subject
         segment_recipient: Recipients
