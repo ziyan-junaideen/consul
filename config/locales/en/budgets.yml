@@ -210,6 +210,10 @@ en:
         price: This district has a budget of
       index:
         by_heading: 'Idea projects with scope: %{heading}'
+        orders:
+          confidence_score: recently added
+          price: by price
+          random: random
         search_form:
           button: Search
           placeholder: Search idea projects...
