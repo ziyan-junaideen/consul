@@ -11,6 +11,8 @@ class Moderation::Budgets::InvestmentsController < Moderation::BaseController
 
   load_and_authorize_resource class: 'Budget::Investment'
 
+  before_action :filter_projects
+
   private
 
     def resource_name
@@ -19,6 +21,10 @@ class Moderation::Budgets::InvestmentsController < Moderation::BaseController
 
     def resource_model
       Budget::Investment
+    end
+
+    def filter_projects
+      @resources = @resources.project
     end
 
 end
