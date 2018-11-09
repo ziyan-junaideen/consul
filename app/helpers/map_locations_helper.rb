@@ -29,7 +29,8 @@ module MapLocationsHelper
     map = content_tag_for :div,
                           map_location,
                           class: "map",
-                          data: prepare_map_settings(map_location, editable, parent_class, investments_coordinates, resource)
+                          data: prepare_map_settings(map_location, editable, parent_class, investments_coordinates, resource),
+                          style: map_styles
     map += map_location_remove_marker(map_location, remove_marker_label) if editable
     map
   end
