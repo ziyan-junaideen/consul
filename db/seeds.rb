@@ -69,6 +69,9 @@ Setting["meta_title"] = nil
 Setting["meta_description"] = nil
 Setting["meta_keywords"] = nil
 
+# Map configuration
+Setting['map_height'] = '350'
+
 # Feature flags
 Setting['feature.debates'] = true
 Setting['feature.proposals'] = true
