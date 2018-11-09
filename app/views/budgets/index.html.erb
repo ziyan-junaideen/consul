@@ -47,7 +47,7 @@
                               class: "button margin-top expanded" %>
                 <% else %>
                   <%= link_to t("budgets.investments.index.sidebar.create"),
-                              new_budget_investment_guide,
+                              new_budget_investment_path(current_budget),
                               class: "button margin-top expanded" %>
                 <% end %>
               <% else %>
