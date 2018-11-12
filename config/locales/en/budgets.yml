@@ -51,6 +51,7 @@ en:
         all_phases: See all phases
       all_phases: Budget investment's phases
       map: Budget investments' proposals located geographically
+      map_ideas: Map of Ideas
       investment_proyects: List of all investment projects
       unfeasible_investment_proyects: List of all unfeasible investment projects
       not_selected_investment_proyects: List of all investment projects not selected for balloting
