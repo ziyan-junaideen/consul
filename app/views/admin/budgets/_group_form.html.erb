@@ -1,16 +1,4 @@
 <%= form_for [:admin, budget, group], html: {id: id, style: display_budget_goup_form(group), class: css_class}, remote: true do |f| %>
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="medium-5 cell">
-        <%= f.label :name do %>
-          <%= t("admin.budgets.form.group") %>
-          <%= f.text_field :name,
-                            label: false,
-                            maxlength: 50,
-                            placeholder: t("admin.budgets.form.group"),
-                            class: "input-group-field" %>
-        <% end %>
-      </div>
 
   <%= f.label :name, t("admin.budgets.form.group") %>
 
