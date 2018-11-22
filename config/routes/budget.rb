@@ -21,6 +21,7 @@ resources :budgets, only: [:show, :index] do
   end
 
   resource :results, only: :show, controller: "budgets/results"
+  resource :executions, only: :show, controller: 'budgets/executions'
 end
 
 scope '/participatory_budget' do

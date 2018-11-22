@@ -88,6 +88,7 @@ class Budget
     scope :last_week,                   -> { where("created_at >= ?", 7.days.ago)}
     scope :sort_by_flags,               -> { order(flags_count: :desc, updated_at: :desc) }
     scope :sort_by_created_at,          -> { reorder(created_at: :desc) }
+    scope :with_milestones,             -> { joins(:milestones).distinct }
 
     scope :by_budget,         ->(budget)      { where(budget: budget) }
     scope :by_group,          ->(group_id)    { where(group_id: group_id) }
@@ -255,6 +256,7 @@ class Budget
       return :not_selected                    unless selected?
       return :no_ballots_allowed              unless budget.balloting?
       return :different_heading_assigned_html unless ballot.valid_heading?(heading)
+      return :not_enough_available_votes_html if heading.group.approval_voting? && ballot.investments.count == heading.group.number_votes_per_heading
       return :not_enough_money_html           if ballot.present? && !enough_money?(ballot)
     end
 
