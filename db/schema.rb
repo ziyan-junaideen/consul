@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181109125610) do
+ActiveRecord::Schema.define(version: 20181205123021) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -140,6 +140,14 @@ ActiveRecord::Schema.define(version: 20181109125610) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "budget_delegates", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "budget_delegates", ["user_id"], name: "index_budget_delegates_on_user_id", using: :btree
 
   create_table "budget_groups", force: :cascade do |t|
     t.integer "budget_id"
@@ -1477,6 +1485,7 @@ ActiveRecord::Schema.define(version: 20181109125610) do
   add_foreign_key "administrators", "users"
   add_foreign_key "annotations", "legacy_legislations"
   add_foreign_key "annotations", "users"
+  add_foreign_key "budget_delegates", "users"
   add_foreign_key "budget_investments", "communities"
   add_foreign_key "documents", "users"
   add_foreign_key "failed_census_calls", "poll_officers"
