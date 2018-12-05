@@ -27,17 +27,27 @@ App.Map =
     removeMarkerSelector     = $(element).data('marker-remove-selector')
     addMarkerInvestments     = $(element).data('marker-investments-coordinates')
     editable                 = $(element).data('marker-editable')
-    resourceType             = $(element).data('resource-type')
     marker                   = null;
+
     markerIcon               = L.divIcon(
                                   className: 'map-marker'
                                   iconSize:     [30, 30]
                                   iconAnchor:   [15, 40]
                                   html: '<div class="map-icon"></div>')
 
-    createMarker = (latitude, longitude) ->
+    ideaMarkerIcon           = L.divIcon(
+                                  className: 'map-marker'
+                                  iconSize:     [30, 30]
+                                  iconAnchor:   [15, 40]
+                                  html: '<div class="map-icon idea"></div>')
+
+    createMarker = (latitude, longitude, kind) ->
       markerLatLng  = new (L.LatLng)(latitude, longitude)
-      marker  = L.marker(markerLatLng, { icon: markerIcon, draggable: editable })
+      resourceType = if kind == 'idea' then 'ideas' else 'investments'
+      icon = if kind == 'idea' then ideaMarkerIcon else markerIcon
+      marker  = L.marker(markerLatLng, { icon: icon, draggable: editable })
+      marker['resourceType'] = resourceType
+
       if editable
         marker.on 'dragend', updateFormfields
       marker.addTo(map)
@@ -52,6 +62,7 @@ App.Map =
       return
 
     moveOrPlaceMarker = (e) ->
+      console.log e
       if marker
         marker.setLatLng(e.latlng)
       else
@@ -74,14 +85,15 @@ App.Map =
 
     openMarkerPopup = (e) ->
       marker = e.target
+      resourceType = marker['resourceType']
 
       $.ajax "#{resourceType}/#{marker.options['id']}/json_data",
         type: 'GET'
         dataType: 'json'
         success: (data) ->
-          e.target.bindPopup(getPopupContent(data)).openPopup()
+          e.target.bindPopup(getPopupContent(data, resourceType)).openPopup()
 
-    getPopupContent = (data) ->
+    getPopupContent = (data, resourceType) ->
       content = "<a href='/budgets/#{data['budget_id']}/#{resourceType}/#{data['investment_id']}'>#{data['investment_title']}</a>"
       return content
 
@@ -100,7 +112,7 @@ App.Map =
     if addMarkerInvestments
       for i in addMarkerInvestments
         if App.Map.validCoordinates(i)
-          marker = createMarker(i.lat, i.long)
+          marker = createMarker(i.lat, i.long, i.investment_kind)
           marker.options['id'] = i.investment_id
 
           marker.on 'click', openMarkerPopup
