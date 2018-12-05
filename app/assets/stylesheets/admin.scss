@@ -1118,6 +1118,16 @@ table {
       position: absolute;
       border-radius: 50%;
     }
+
+    .map-icon.idea::after {
+      content: '';
+      width: 14px;
+      height: 14px;
+      margin: 8px 0 0 8px;
+      background: #7e328a;
+      position: absolute;
+      border-radius: 50%;
+    }
   }
 
   .map-attributtion {
