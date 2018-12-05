@@ -157,4 +157,14 @@ module BudgetsHelper
     end
   end
 
+  def budgets_map_title
+    if ideas_phases?
+      t("budgets.index.map_ideas")
+    elsif current_budget.accepting?
+      t("budgets.index.map_accepting")
+    else
+      t("budgets.index.map")
+    end
+  end
+
 end

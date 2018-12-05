@@ -110,7 +110,7 @@
 
         <% unless current_budget.informing? %>
           <div id="map">
-            <h3><%= t("budgets.index.map#{ '_ideas' if ideas_phases? }") %></h3>
+            <h3><%= budgets_map_title %></h3>
             <%= render_map(nil, "budgets", false, nil, @budgets_coordinates, map_resource_type_for(current_budget)) %>
           </div>
 
