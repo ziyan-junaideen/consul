@@ -618,6 +618,7 @@ en:
       activity: Moderator activity
       admin: Admin menu
       banner: Manage banners
+      budget_delegates: Budget delegates
       poll_questions: Questions
       proposals_topics: Proposals topics
       budgets: Participatory budgets
@@ -687,6 +688,18 @@ en:
         restricted_removal: "Sorry, you can't remove yourself from the administrators"
       search:
         title: "Administrators: User search"
+    budget_delegates:
+      index:
+        title: Budget Delegates
+        name: Name
+        email: Email
+        no_administrators: There are no budget delegates.
+      administrator:
+        add: Add
+        delete: Delete
+        restricted_removal: "Sorry, you can't remove yourself from the budget delegates"
+      search:
+        title: "Budget Delegates: User search"
     moderators:
       index:
         title: Moderators

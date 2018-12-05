@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
   has_one :manager
   has_one :poll_officer, class_name: "Poll::Officer"
   has_one :volunteer
+  has_one :budget_delegate
   has_one :organization
   has_one :lock
   has_many :flags
@@ -177,6 +178,10 @@ class User < ActiveRecord::Base
 
   def official?
     official_level && official_level > 0
+  end
+
+  def budget_delegate?
+    budget_delegate.present?
   end
 
   def add_official_position!(position, level)

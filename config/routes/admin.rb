@@ -121,6 +121,10 @@ namespace :admin do
     get :search, on: :collection
   end
 
+  resources :budget_delegates, only: [:index, :create, :destroy] do
+    get :search, on: :collection
+  end
+
   resources :users, only: [:index, :show]
 
   scope module: :poll do

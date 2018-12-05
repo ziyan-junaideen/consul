@@ -56,6 +56,7 @@ module Abilities
       can [:search, :show, :edit, :update, :create, :index, :destroy, :summary], ::Valuator
       can [:search, :create, :index, :destroy], ::Manager
       can [:search, :create, :index, :destroy], ::Volunteer
+      can [:search, :create, :index, :destroy], ::BudgetDelegate
       can [:search, :index], ::User
 
       can :manage, Annotation
