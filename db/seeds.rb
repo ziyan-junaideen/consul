@@ -92,7 +92,7 @@ Setting['feature.map'] = nil
 Setting['feature.allow_images'] = true
 Setting['feature.allow_attached_documents'] = true
 Setting['feature.help_page'] = true
-Setting['feature.ideas'] = false
+Setting['feature.ideas'] = true
 
 # /budget page configuration
 Setting['feature.budget_page.all_phases'] = true
