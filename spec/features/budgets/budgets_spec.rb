@@ -479,6 +479,22 @@ feature 'Budgets' do
     end
 
     context "Permissions" do
+      scenario "Verified user, budget_delegate_only true", :js do
+        budget = create(:budget, phase: 'accepting', budget_delegate_only: true)
+        login_as(level_two_user)
+
+        visit budgets_path
+        expect(page).to_not have_link "Create a budget investment"
+      end
+
+      scenario "Budget delegate verified user with budget set to budget_delegate_only true", :js do
+        create(:budget_delegate, user: level_two_user)
+        budget = create(:budget, phase: 'accepting', budget_delegate_only: true)
+        login_as(level_two_user)
+
+        visit budgets_path
+        expect(page).to have_link "Create a budget investment"
+      end
 
       scenario "Verified user" do
         login_as(level_two_user)

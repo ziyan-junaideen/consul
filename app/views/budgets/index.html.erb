@@ -38,14 +38,14 @@
 
           <%= link_to t("budgets.index.section_header.all_phases"), "#all_phases" if Setting['feature.budget_page.all_phases'] %>
 
-          <% if current_user && current_user.budget_delegate? && (current_budget.accepting? || current_budget.ideas_posting?) %>
+          <% if current_budget.accepting? || current_budget.ideas_posting? %>
             <% if current_user %>
               <% if current_user.level_two_or_three_verified? %>
                 <% if current_budget.ideas_posting? %>
                   <%= link_to t("budgets.ideas.index.sidebar.create"),
                               current_budget_ideas_posting_url,
                               class: "button margin-top expanded" %>
-                <% else %>
+                <% elsif can? :create, current_budget.investments.new %>
                   <%= link_to t("budgets.investments.index.sidebar.create"),
                               new_budget_investment_path(current_budget),
                               class: "button margin-top expanded" %>
