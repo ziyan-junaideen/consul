@@ -55,6 +55,8 @@
         </div>
       <% end %>
 
+      <%= render("shared/advanced_search", search_path: budget_investments_url(@budget)) %>
+
       <%= render('shared/order_links', i18n_namespace: "budgets.ideas.index") unless @current_filter == "unfeasible" %>
 
       <% if investments_default_view? %>
@@ -89,3 +91,10 @@
 
   </div>
 </main>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    console.log('here');
+    $('#js-advanced-search').slideToggle()
+  });
+</script>
