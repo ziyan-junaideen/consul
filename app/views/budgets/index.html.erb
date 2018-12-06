@@ -38,7 +38,7 @@
 
           <%= link_to t("budgets.index.section_header.all_phases"), "#all_phases" if Setting['feature.budget_page.all_phases'] %>
 
-          <% if current_budget.accepting? || current_budget.ideas_posting? %>
+          <% if current_user && current_user.budget_delegate? && (current_budget.accepting? || current_budget.ideas_posting?) %>
             <% if current_user %>
               <% if current_user.level_two_or_three_verified? %>
                 <% if current_budget.ideas_posting? %>
