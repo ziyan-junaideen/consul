@@ -15,8 +15,8 @@
       </div>
 
       <div class="small-12 large-3 column">
-        <label for="advanced_search_official_level"><%= t("shared.advanced_search.author_type") %></label>
-        <%= select_tag('advanced_search[heading]', official_level_search_options,
+        <label for="advanced_search_official_level"><%= t("shared.advanced_search.heading") %></label>
+        <%= select_tag('heading_id', options_for_select(budget_heading_select_options(@budget), params[:heading_id]),
                       include_blank: t("shared.advanced_search.heading_blank")) %>
       </div>
 
