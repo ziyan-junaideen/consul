@@ -112,6 +112,9 @@ class Budget
 
     scope :published, -> { where(published: true) }
 
+    scope :with_related_contents, -> { where(id: RelatedContent.where(parent_relationable_type: 'Budget::Investment', parent_relationable_id: ids).map(&:parent_relationable_id)) }
+    scope :with_no_related_contents, -> { where.not(id: RelatedContent.where(parent_relationable_type: 'Budget::Investment', parent_relationable_id: ids).map(&:parent_relationable_id)) }
+
     before_save :calculate_confidence_score
     after_save :recalculate_heading_winners if :incompatible_changed?
     before_validation :set_responsible_name
