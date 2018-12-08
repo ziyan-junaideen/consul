@@ -21,6 +21,10 @@ module BudgetsHelper
     ].include? budget.phase
   end
 
+  def show_links_to_budget_ideas?(budget)
+    %w[project_forming].include? budget.phase
+  end
+
   def heading_name_and_price_html(heading, budget)
     content_tag :div do
       concat(heading.name + ' ')

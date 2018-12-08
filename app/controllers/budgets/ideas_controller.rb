@@ -37,11 +37,13 @@ module Budgets
     helper_method :resource_model, :resource_name
     respond_to :html, :js
 
+    PERMITTED_SCOPES = %w[with_related_contents without_related_contents]
+
     def index
       if @budget.finished?
-        @investments = investments.idea.published.winners.page(params[:page]).per(10).for_render
+        @investments = apply_scope(investments).idea.published.winners.page(params[:page]).per(10).for_render
       else
-        @investments = investments.idea.published.page(params[:page]).per(10).for_render
+        @investments = apply_scope(investments).idea.published.page(params[:page]).per(10).for_render
       end
 
       @investment_ids = @investments.pluck(:id)
@@ -204,6 +206,11 @@ module Budgets
 
       def load_published_idea
         @investment = @budget.investments.idea.published.find(params[:id])
+      end
+
+      def apply_scope(collection)
+        return collection unless PERMITTED_SCOPES.include?(params[:scope])
+        collection.send(params[:scope])
       end
 
   end

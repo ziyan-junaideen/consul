@@ -54,6 +54,9 @@ en:
       map_ideas: Map of Ideas
       map_accepting: Map of Ideas and Projects
       investment_proyects: List of all investment projects
+      ideas: List of all ideas
+      ideas_with_related_content: List of ideas with projects
+      ideas_without_related_content: List of ideas without projects
       unfeasible_investment_proyects: List of all unfeasible investment projects
       not_selected_investment_proyects: List of all investment projects not selected for balloting
       finished_budgets: Finished participatory budgets
