@@ -43,7 +43,7 @@ module BudgetsHelper
   end
 
   def kind_sensitive_budget_investments_path(budget, options = {})
-    if budget.ideas_posting?
+    if ideas_phases?
       budget_ideas_path(budget, options)
     else
       budget_investments_path(budget, options)
