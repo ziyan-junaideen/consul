@@ -556,8 +556,8 @@ en:
       from: 'From'
       general: Search
       general_placeholder: 'Write the text'
-      heading: 'By heading'
-      heading_blank: 'Select a heading'
+      heading: By district
+      heading_blank: 'Select a district'
       search: 'Filter'
       title: 'Advanced search'
       to: 'To'
