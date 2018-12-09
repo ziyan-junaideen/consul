@@ -171,4 +171,22 @@ module BudgetsHelper
     end
   end
 
+  def ideas_page_summary_title
+    if ideas_scope
+      t("budgets.ideas.index.summary.#{ideas_scope}_title")
+    else
+      t("budgets.ideas.index.summary.all_title")
+    end
+  end
+
+  def ideas_page_summary_text
+    return unless ideas_scope
+    t("budgets.ideas.index.summary.#{ideas_scope}_text")
+  end
+
+  private
+
+  def ideas_scope
+    params[:scope]
+  end
 end

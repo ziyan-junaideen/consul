@@ -240,6 +240,14 @@ en:
           voted_info: You can %{link} at any time until the close of this phase. No need to spend all the money available.
           voted_info_link: change your vote
           zero: You have not voted any idea project in this group.
+        summary:
+          all_title: All Ideas
+          with_related_contents_title: Ideas with projects
+          with_related_contents_text: These are ideas that have been referenced by a project.
+          without_related_contents_title: Ideas without projects
+          without_related_contents_text: These are ideas that have not been referenced by a project.
+        
+        
         title: Participatory budgeting
         unfeasible: Unfeasible idea projects
         unfeasible_text: The ideas must meet a number of criteria (legality, concreteness, be the responsibility of the city, not exceed the limit of the budget) to be declared viable and reach the stage of final vote. All ideas don't meet these criteria are marked as unfeasible and published in the following list, along with its report of infeasibility.

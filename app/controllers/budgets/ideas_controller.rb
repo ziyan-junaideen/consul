@@ -209,8 +209,9 @@ module Budgets
       end
 
       def apply_scope(collection)
-        return collection unless PERMITTED_SCOPES.include?(params[:scope])
-        collection.send(params[:scope])
+        scope = params[:scope]
+        return collection unless PERMITTED_SCOPES.include?(scope)
+        collection.send(scope)
       end
 
   end

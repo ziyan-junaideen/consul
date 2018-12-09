@@ -21,21 +21,24 @@
     <%= render '/budgets/ideas/header' %>
   <% end %>
 
-  <% if params[:search].present? || params[:advanced_search].present?  %>
-    <div class="highlight no-margin-top padding margin-bottom">
-      <div class="row">
-        <div class="small-12 column">
+  <div class="highlight no-margin-top padding margin-bottom">
+    <div class="row">
+      <div class="small-12 column">
+        <% if params[:search].present? %>
           <h2><%= t("shared.search_results") %></h2>
           <p>
             <%= page_entries_info @investments, entry_name: 'idea' %>
             <%= t("budgets.ideas.index.search_results_html",
-                   count: @investments.size,
-                   search_term: params[:search]) %>
+                  count: @investments.size,
+                  search_term: params[:search]) %>
           </p>
-        </div>
+        <% else %>
+          <h2><%= ideas_page_summary_title %></h2> 
+          <p><%= ideas_page_summary_text %></p>
+        <% end %>
       </div>
     </div>
-  <% end %>
+  </div>
 
   <div class="row">
     <div id="budget-investments" class="budget-investments-list small-12 medium-9 column">
