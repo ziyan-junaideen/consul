@@ -18,8 +18,11 @@
       <div class="small-12 medium-6 column">
         <%= f.url_field :delegate_form_uri %>
       </div>
+      <div class="small-12 medium-6 column">
+        <%= f.select :guest_ideas, options_for_select([['Enabled', true], ['Disabled', false]], @budget.guest_ideas) %>
+      </div>
       <div class="small-12 medium-6 column end">
-        <%= f.select :guest_ideas, options_for_select([['Enabled', true], ['Disabled', false]], @budget.guest_ideas)  %>
+        <%= f.select :budget_delegate_only, options_for_select([['Yes', true], ['No', false]], @budget.budget_delegate_only), label: t("admin.budgets.form.budget_delegate_only") %>
       </div>
     </div>
   <% end %>
