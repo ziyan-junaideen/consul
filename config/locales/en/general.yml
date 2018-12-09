@@ -554,7 +554,7 @@ en:
       date_4: 'Last year'
       date_5: 'Customized'
       from: 'From'
-      general: 'With the text'
+      general: Search
       general_placeholder: 'Write the text'
       heading: 'By heading'
       heading_blank: 'Select a heading'
