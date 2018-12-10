@@ -27,6 +27,7 @@ App.Map =
     removeMarkerSelector     = $(element).data('marker-remove-selector')
     addMarkerInvestments     = $(element).data('marker-investments-coordinates')
     editable                 = $(element).data('marker-editable')
+    resourceType             = $(element).data('resource-type')
     marker                   = null;
 
     markerIcon               = L.divIcon(
@@ -102,7 +103,7 @@ App.Map =
     L.tileLayer(mapTilesProvider, attribution: mapAttribution).addTo map
 
     if markerLatitude && markerLongitude && !addMarkerInvestments
-      marker  = createMarker(markerLatitude, markerLongitude)
+      marker  = createMarker(markerLatitude, markerLongitude, resourceType)
 
     if editable
       $(removeMarkerSelector).on 'click', removeMarker
