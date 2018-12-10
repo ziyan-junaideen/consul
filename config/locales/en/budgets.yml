@@ -55,8 +55,8 @@ en:
       map_accepting: Map of Ideas and Projects
       investment_proyects: List of all investment projects
       ideas: List of all ideas
-      ideas_with_related_content: List of ideas with projects
-      ideas_without_related_content: List of ideas without projects
+      ideas_with_related_content: Ideas with projects
+      ideas_without_related_content: Ideas without projects
       unfeasible_investment_proyects: List of all unfeasible investment projects
       not_selected_investment_proyects: List of all investment projects not selected for balloting
       finished_budgets: Finished participatory budgets
@@ -100,7 +100,7 @@ en:
           zero: You have not voted any investment project in this group.
           verified_only: "To create a new budget investment %{verify}."
           verify_account: "verify your account"
-          create: "Create a budget investment"
+          create: "Create a Project"
           not_logged_in: "To create a new budget investment you must %{sign_in} or %{sign_up}."
           sign_in: "sign in"
           sign_up: "sign up"
@@ -158,7 +158,7 @@ en:
       available: "Available budget: "
     show:
       group: Group
-      phase: Actual phase
+      phase: Current phase
       unfeasible_title: Unfeasible investments
       unfeasible: See unfeasible investments
       unselected_title: Investments not selected for balloting phase

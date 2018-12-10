@@ -130,10 +130,12 @@
               <%= link_to budget_ideas_path(budget_id: current_budget.id) do %>
                 <small><%= t("budgets.index.ideas") %></small>
               <% end %>
+              <br/>
 
               <%= link_to budget_ideas_path(budget_id: current_budget, scope: 'with_related_contents') do %>
-                <small><%= t("budgets.index.ideas_with_related_contens") %></small>
+                <small><%= t("budgets.index.ideas_with_related_content") %></small>
               <% end %>
+              <br/>
 
               <%= link_to budget_ideas_path(budget_id: current_budget, scope: 'without_related_contents') do %>
                 <small><%= t("budgets.index.ideas_without_related_content") %></small>
