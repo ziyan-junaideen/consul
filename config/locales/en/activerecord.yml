@@ -11,8 +11,8 @@ en:
         one: "Idea"
         other: "Ideas"
       budget/investment:
-        one: "Investment"
-        other: "Investments"
+        one: "Project"
+        other: "Projects"
       budget/investment/milestone:
         one: "milestone"
         other: "milestones"
@@ -125,7 +125,7 @@ en:
         phase: "Phase"
         currency_symbol: "Currency"
       budget/investment:
-        heading_id: "Heading"
+        heading_id: "District"
         title: "Title"
         description: "Description"
         external_url: "Link to additional documentation"
