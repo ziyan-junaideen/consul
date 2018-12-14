@@ -12,6 +12,7 @@ class WelcomeController < ApplicationController
   end
 
   def welcome
+    redirect_to budgets_path
   end
 
   def verification
