@@ -1,4 +1,12 @@
 module TagsHelper
+  def kind_safe_taggables_path(taggable, tag_name)
+    if taggable.is_a? Budget::Investment
+      taggables_path("budget/investment##{taggable.kind}", tag_name)
+    else
+      taggable_type = taggable.class.name.underscore
+      taggables_path(taggable_type, tag_name)
+    end
+  end
 
   def taggables_path(taggable_type, tag_name)
     case taggable_type
@@ -6,12 +14,10 @@ module TagsHelper
       debates_path(search: tag_name)
     when 'proposal'
       proposals_path(search: tag_name)
-    when 'budget/investment'
-      if @budget.ideas_posting?
-        budget_ideas_path(@budget, search: tag_name)
-      else
-        budget_investments_path(@budget, search: tag_name)
-      end
+    when 'budget/investment#idea'
+      budget_ideas_path(@budget, search: tag_name)
+    when 'budget/investment#project'
+      budget_investments_path(@budget, search: tag_name)
     when 'legislation/proposal'
       legislation_process_proposals_path(@process, search: tag_name)
     else
