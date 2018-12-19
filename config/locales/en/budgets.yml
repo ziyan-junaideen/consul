@@ -196,7 +196,7 @@ en:
           username: Your name
           username_help: Required and will be shown next to your ideas and comments.
         description: So that people could...
-        heading_id: Select Your District
+        heading_id: Heading
         heading_id_help: Don't know your district? Click %{link} to find it.
         map_location: Map location
         map_location_instructions: Navigate the map to your idea's location. Click once on the map to place a blue marker on the location of your pointer.
