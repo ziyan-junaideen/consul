@@ -10,7 +10,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def create
     build_resource(sign_up_params)
-    if resource.valid?
+    if verify_recaptcha(modal: resource) && resource.valid?
       super
     else
       render :new
