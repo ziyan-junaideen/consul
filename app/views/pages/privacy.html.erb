@@ -1,6 +1,4 @@
-<% provide :title do %>
-  <%= t('pages.titles.privacy') %>
-<% end %>
+<% provide :title do %><%= t("pages.titles.privacy") %><% end %>
 
 <% content_for :canonical do %>
   <%= render "shared/canonical", href: page_url("privacy") %>
@@ -133,5 +131,4 @@
   <div class="small-12 medium-3 column">
     <%= render '/shared/print' %>
   </div>
-
 </div>

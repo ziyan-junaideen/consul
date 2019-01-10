@@ -13,12 +13,13 @@ class Admin::BudgetsController < Admin::BaseController
   end
 
   def show
-    @budget = Budget.includes(groups: :headings).find(params[:id])
   end
 
-  def new; end
+  def new
+  end
 
-  def edit; end
+  def edit
+  end
 
   def calculate_winners
     return unless @budget.balloting_process?

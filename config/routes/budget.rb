@@ -21,6 +21,7 @@ resources :budgets, only: [:show, :index] do
   end
 
   resource :results, only: :show, controller: "budgets/results"
+  resource :executions, only: :show, controller: 'budgets/executions'
 end
 
 scope '/participatory_budget' do
@@ -30,4 +31,6 @@ scope '/participatory_budget' do
 end
 
 get 'investments/:id/json_data', action: :json_data, controller: 'budgets/investments'
+get '/budgets/:budget_id/investments/:id/json_data', action: :json_data, controller: 'budgets/investments'
+
 get 'ideas/:id/json_data', action: :json_data, controller: 'budgets/ideas'
