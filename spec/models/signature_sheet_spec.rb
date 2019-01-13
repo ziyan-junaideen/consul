@@ -58,7 +58,7 @@ describe SignatureSheet do
       budget_investment = create(:budget_investment)
       signature_sheet.signable = budget_investment
 
-      expect(signature_sheet.name).to eq("Investment #{budget_investment.id}")
+      expect(signature_sheet.name).to eq("Project #{budget_investment.id}")
     end
   end
 
