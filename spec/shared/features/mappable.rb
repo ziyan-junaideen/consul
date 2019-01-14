@@ -260,7 +260,7 @@ end
 
 def submit_budget_investment_form
   check :budget_investment_terms_of_service
-  click_button 'Create Investment'
+  click_button 'Create Project'
 end
 
 def set_arguments(arguments, mappable, mappable_path_arguments)
