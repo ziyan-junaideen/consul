@@ -2,7 +2,8 @@ require 'rails_helper'
 
 feature 'Verify email' do
 
-  scenario 'Verify' do
+  # Verification feature hidden
+  xscenario 'Verify' do
     user = create(:user,
                   residence_verified_at: Time.current,
                   document_number:       '12345678Z',
