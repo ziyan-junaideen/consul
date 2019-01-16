@@ -1,5 +1,7 @@
 require 'rails_helper'
 
+# Note: xscanario for tests including Verification. The section has been hidden.
+
 feature 'Tracking' do
 
   context 'Custom variable' do
@@ -20,7 +22,7 @@ feature 'Tracking' do
       expect(page.html).to include "level_1_user"
     end
 
-    scenario 'Usertype level_2_user' do
+    xscenario 'Usertype level_2_user' do
       create(:geozone)
       user = create(:user)
       login_as(user)
@@ -42,7 +44,7 @@ feature 'Tracking' do
   end
 
   context 'Tracking events' do
-    scenario 'Verification: start census' do
+    xscenario 'Verification: start census' do
       user = create(:user)
       login_as(user)
 
@@ -53,7 +55,7 @@ feature 'Tracking' do
       expect(page.html).to include "data-track-event-action=start_census"
     end
 
-    scenario 'Verification: success census & start sms' do
+    xscenario 'Verification: success census & start sms' do
       create(:geozone)
       user = create(:user)
       login_as(user)
@@ -70,7 +72,7 @@ feature 'Tracking' do
       expect(page.html).to include "data-track-event-action=start_sms"
     end
 
-    scenario 'Verification: success sms' do
+    xscenario 'Verification: success sms' do
       create(:geozone)
       user = create(:user)
       login_as(user)
@@ -91,7 +93,7 @@ feature 'Tracking' do
       expect(page.html).to include "data-track-event-action=success_sms"
     end
 
-    scenario 'Verification: letter' do
+    xscenario 'Verification: letter' do
       create(:geozone)
       user = create(:user)
       login_as(user)
