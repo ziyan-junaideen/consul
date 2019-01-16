@@ -55,7 +55,7 @@ module BudgetsHelper
   end
 
   def namespaced_budget_investment_path(investment, options = {})
-    key = "#{namespace}##{investment.kind}"
+    key = "#{namespace}/budgets##{investment.kind}"
 
     case key
     when "management/budgets#project"
