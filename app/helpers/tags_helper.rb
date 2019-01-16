@@ -18,6 +18,8 @@ module TagsHelper
       budget_ideas_path(@budget, search: tag_name)
     when 'budget/investment#project'
       budget_investments_path(@budget, search: tag_name)
+    when 'budget/investment'
+      auto_detect_investment_path(@budget, tag_name)
     when 'legislation/proposal'
       legislation_process_proposals_path(@process, search: tag_name)
     else
