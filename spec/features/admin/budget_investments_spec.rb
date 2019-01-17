@@ -156,21 +156,21 @@ feature 'Admin budget investments' do
       select "Admin 1", from: "administrator_id"
       click_button 'Filter'
 
-      expect(page).to have_content('There is 1 investment')
+      expect(page).to have_content('There is 1 project')
       expect(page).not_to have_link("Destroy the city")
       expect(page).to have_link("Realocate visitors")
 
       select "All administrators", from: "administrator_id"
       click_button 'Filter'
 
-      expect(page).to have_content('There are 2 investments')
+      expect(page).to have_content('There are 2 projects')
       expect(page).to have_link("Destroy the city")
       expect(page).to have_link("Realocate visitors")
 
       select "Admin 1", from: "administrator_id"
       click_button 'Filter'
 
-      expect(page).to have_content('There is 1 investment')
+      expect(page).to have_content('There is 1 project')
       expect(page).not_to have_link("Destroy the city")
       expect(page).to have_link("Realocate visitors")
     end
@@ -191,20 +191,20 @@ feature 'Admin budget investments' do
       select "Valuator 1", from: "valuator_or_group_id"
       click_button 'Filter'
 
-      expect(page).to have_content('There is 1 investment')
+      expect(page).to have_content('There is 1 project')
       expect(page).not_to have_link("Destroy the city")
       expect(page).to have_link("Realocate visitors")
 
       select "All valuators", from: "valuator_or_group_id"
       click_button 'Filter'
 
-      expect(page).to have_content('There are 2 investments')
+      expect(page).to have_content('There are 2 projects')
       expect(page).to have_link("Destroy the city")
       expect(page).to have_link("Realocate visitors")
 
       select "Valuator 1", from: "valuator_or_group_id"
       click_button 'Filter'
-      expect(page).to have_content('There is 1 investment')
+      expect(page).to have_content('There is 1 project')
       expect(page).not_to have_link("Destroy the city")
       expect(page).to have_link("Realocate visitors")
     end
@@ -227,21 +227,21 @@ feature 'Admin budget investments' do
       select "Health", from: "valuator_or_group_id"
       click_button 'Filter'
 
-      expect(page).to have_content('There is 1 investment')
+      expect(page).to have_content('There is 1 project')
       expect(page).to have_link("Build a hospital")
       expect(page).not_to have_link("Build a theatre")
 
       select "All valuators", from: "valuator_or_group_id"
       click_button 'Filter'
 
-      expect(page).to have_content('There are 2 investments')
+      expect(page).to have_content('There are 2 projects')
       expect(page).to have_link("Build a hospital")
       expect(page).to have_link("Build a theatre")
 
       select "Culture", from: "valuator_or_group_id"
       click_button 'Filter'
 
-      expect(page).to have_content('There is 1 investment')
+      expect(page).to have_content('There is 1 project')
       expect(page).to have_link("Build a theatre")
       expect(page).not_to have_link("Build a hospital")
     end
@@ -402,7 +402,7 @@ feature 'Admin budget investments' do
       fill_in "min_total_supports", with: 180
       click_button 'Filter'
 
-      expect(page).to have_content('There are 3 investments')
+      expect(page).to have_content('There are 3 projects')
       expect(page).to have_link("Road with 199 supports")
       expect(page).to have_link("Street with 200 supports")
       expect(page).to have_link("Street with 300 supports")
@@ -1098,7 +1098,7 @@ feature 'Admin budget investments' do
       within('#advanced_filters') { check('advanced_filters_selected') }
       click_button('Filter')
 
-      expect(page).to have_content('There are 2 investments')
+      expect(page).to have_content('There are 2 projects')
 
       within("#budget_investment_#{selected_bi.id}") do
         click_link('Selected')
@@ -1106,7 +1106,7 @@ feature 'Admin budget investments' do
 
       click_button('Filter')
       expect(page).not_to have_content(selected_bi.title)
-      expect(page).to have_content('There is 1 investment')
+      expect(page).to have_content('There is 1 project')
 
       visit admin_budget_budget_investments_path(budget)
 
