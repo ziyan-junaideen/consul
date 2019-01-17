@@ -298,6 +298,8 @@ feature 'Tags' do
 
     scenario "Filter by category tags", :js do
       Budget::Phase.phase_kinds.each do |phase|
+        next if %w[ideas_posting project_forming].include? phase
+
         budget.update(phase: phase)
 
         [investment1, investment2, investment3].each do |investment|
