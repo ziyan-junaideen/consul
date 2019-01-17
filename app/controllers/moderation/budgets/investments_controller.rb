@@ -11,7 +11,7 @@ class Moderation::Budgets::InvestmentsController < Moderation::BaseController
 
   load_and_authorize_resource class: 'Budget::Investment'
 
-  before_action :filter_projects
+  before_action :filter_projects, only: [:index, :moderate]
 
   private
 

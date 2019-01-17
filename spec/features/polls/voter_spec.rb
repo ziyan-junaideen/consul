@@ -141,7 +141,8 @@ feature "Voter" do
       end
     end
 
-    scenario "Voting in poll and then verifiying account", :js do
+    # Feature commented in users section
+    xscenario "Voting in poll and then verifiying account", :js do
       user = create(:user)
 
       login_through_form_as_officer(officer.user)
