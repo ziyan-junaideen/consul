@@ -56,7 +56,7 @@ feature 'Signature sheets' do
 
       visit new_admin_signature_sheet_path
 
-      select "Investment", from: "signature_sheet_signable_type"
+      select "Project", from: "signature_sheet_signable_type"
       fill_in "signature_sheet_signable_id", with: investment.id
       fill_in "signature_sheet_document_numbers", with: "12345678Z, 99999999Z"
       click_button "Create signature sheet"
