@@ -55,14 +55,14 @@ module BudgetsHelper
   end
 
   def namespaced_budget_investment_path(investment, options = {})
-    key = "#{namespace}/budgets##{investment.kind}"
+    key = "#{namespace}:#{investment.kind}"
 
     case key
-    when "management/budgets#project"
+    when "management:project"
       management_budget_investment_path(investment.budget, investment, options)
-    when "management/budgets#idea"
+    when "management:idea"
       management_budget_idea_path(investment.budget, investment, options)
-    when "budgets#idea"
+    when "budgets:idea"
       budget_idea_path(investment.budget, investment, options)
     else
       budget_investment_path(investment.budget, investment, options)
