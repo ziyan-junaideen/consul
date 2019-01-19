@@ -70,9 +70,9 @@ en:
         section_header:
           icon_alt: Legislation processes icon
           title: Decide
-          help: Help about decide
+          help: Help about Decide
         section_footer:
-          title: Help about decide
+          title: Help about Decide
           description: Participate in the debates and processes prior to the approval of a ordinance or a municipal action. Your opinion will be considered by the City Council.
       phase_not_open:
         not_open: This phase is not open yet
