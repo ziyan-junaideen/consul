@@ -2,8 +2,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   prepend_before_action :authenticate_scope!, only: [:edit, :update, :destroy, :finish_signup, :do_finish_signup]
   before_filter :configure_permitted_parameters
 
-  invisible_captcha only: [:create], honeypot: :address, scope: :user
-
   def new
     super do |user|
       user.use_redeemable_code = true if params[:use_redeemable_code].present?
@@ -12,7 +10,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   def create
     build_resource(sign_up_params)
-    if resource.valid?
+    if verify_recaptcha(modal: resource) && resource.valid?
       super
     else
       render :new

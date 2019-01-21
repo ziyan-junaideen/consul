@@ -12,7 +12,8 @@
                         data-marker-longitude="<%= Setting["map_longitude"] %>"
                         data-latitude-input-selector="#latitude"
                         data-longitude-input-selector="#longitude"
-                        data-zoom-input-selector="#zoom">
+                        data-zoom-input-selector="#zoom"
+                        style="<%= map_styles %>">
     </div>
 
     <%= form_tag admin_update_map_path, method: :put, id: 'map-form' do |f| %>

@@ -39,6 +39,8 @@ en:
       balloting: Voting projects
       reviewing_ballots: Reviewing voting
       finished: Finished budget
+      ideas_posting: Ideas collection
+      project_forming: Project development
     index:
       title: Participatory budgets
       empty_budgets: There are no budgets.
@@ -49,7 +51,12 @@ en:
         all_phases: See all phases
       all_phases: Budget investment's phases
       map: Budget investments' proposals located geographically
+      map_ideas: Map of Ideas
+      map_accepting: Map of Ideas and Projects
       investment_proyects: List of all investment projects
+      ideas: List of all ideas
+      ideas_with_related_content: Ideas with projects
+      ideas_without_related_content: Ideas without projects
       unfeasible_investment_proyects: List of all unfeasible investment projects
       not_selected_investment_proyects: List of all investment projects not selected for balloting
       finished_budgets: Finished participatory budgets
@@ -94,7 +101,7 @@ en:
           zero: You have not voted any investment project in this group.
           verified_only: "To create a new budget investment %{verify}."
           verify_account: "verify your account"
-          create: "Create a budget investment"
+          create: "Create a Project"
           not_logged_in: "To create a new budget investment you must %{sign_in} or %{sign_up}."
           sign_in: "sign in"
           sign_up: "sign up"
@@ -153,12 +160,13 @@ en:
       available: "Available budget: "
     show:
       group: Group
-      phase: Actual phase
+      phase: Current phase
       unfeasible_title: Unfeasible investments
       unfeasible: See unfeasible investments
       unselected_title: Investments not selected for balloting phase
       unselected: See investments not selected for balloting phase
       see_results: See results
+      phase_ideas: Current phase
     results:
       link: Results
       page_title: "%{budget} - Results"
@@ -190,3 +198,89 @@ en:
         dates_range_invalid: "Start date can't be equal or later than End date"
         prev_phase_dates_invalid: "Start date must be later than the start date of the previous enabled phase (%{phase_name})"
         next_phase_dates_invalid: "End date must be earlier than the end date of the next enabled phase (%{phase_name})"
+    ideas:
+      form:
+        author:
+          email: Your email
+          email_help: Required and will not be shown on the site.
+          setup_as_volunteer: I would like to volunteer
+          username: Your name
+          username_help: Required and will be shown next to your ideas and comments.
+        description: So that people could...
+        heading_id: Select Your District
+        heading_id_help: Don't know your district? Click %{link} to find it.
+        map_location: Map location
+        map_location_instructions: Navigate the map to your idea's location. Click once on the map to place a blue marker on the location of your pointer.
+        map_remove_marker: Remove map marker
+        map_skip_checkbox: This idea doesn’t have a specific location or I’m not aware of it.
+        submit: Submit My Idea
+        tag_category_label: Categories
+        tags_instructions: Tag this idea with up to 6 categories. You can choose from proposed categories or add your own
+        tags_placeholder: Enter the tags you would like to use, separated by commas (',')
+        title: My project idea is...
+      header:
+        change_ballot: If your change your mind you can remove your votes in %{check_ballot} and start again.
+        check_ballot: Check my ballot
+        check_ballot_link: check my ballot
+        different_heading_assigned_html: 'You have active votes in another heading: %{heading_link}'
+        price: This district has a budget of
+      index:
+        by_heading: 'Idea projects with scope: %{heading}'
+        orders:
+          confidence_score: recently added
+          price: by price
+          random: random
+        search_form:
+          button: Search
+          placeholder: Search idea projects...
+          title: Search
+        search_results_html:
+          one: " containing the term <strong>'%{search_term}'</strong>"
+          other: " containing the term <strong>'%{search_term}'</strong>"
+        sidebar:
+          change_ballot: If your change your mind you can remove your votes in %{check_ballot} and start again.
+          check_ballot_link: check my ballot
+          create: Post an idea
+          different_heading_assigned_html: 'You have active votes in another heading: %{heading_link}'
+          my_ballot: My ballot
+          verified_only: To create a new budget idea %{verify}.
+          verify_account: verify your account
+          voted_html:
+            one: "<strong>You voted one proposal with a cost of %{amount_spent}</strong>"
+            other: "<strong>You voted %{count} proposals with a cost of %{amount_spent}</strong>"
+          voted_info: You can %{link} at any time until the close of this phase. No need to spend all the money available.
+          voted_info_link: change your vote
+          zero: You have not voted any idea project in this group.
+        summary:
+          all_title: All Ideas
+          with_related_contents_title: Ideas with projects
+          with_related_contents_text: These are ideas that have been referenced by a project.
+          without_related_contents_title: Ideas without projects
+          without_related_contents_text: These are ideas that have not been referenced by a project.
+        
+        
+        title: Participatory budgeting
+        unfeasible: Unfeasible idea projects
+        unfeasible_text: The ideas must meet a number of criteria (legality, concreteness, be the responsibility of the city, not exceed the limit of the budget) to be declared viable and reach the stage of final vote. All ideas don't meet these criteria are marked as unfeasible and published in the following list, along with its report of infeasibility.
+      investment:
+        already_supported: You have already supported this idea project. Share it!
+        give_support: Support
+        support_title: Support this project
+        supports:
+          one: 1 support
+          other: "%{count} supports"
+          zero: No supports
+      new:
+        title: Post an idea
+      show:
+        author: Author
+        author_deleted: User deleted
+        comments_tab: Comments
+        no_milestones: Don't have defined milestones
+        organization_name_html: 'Proposed on behalf of: <strong>%{name}</strong>'
+        price: Price
+        price_explanation: Price explanation
+        share: Share
+        title: idea
+        unfeasibility_explanation: Unfeasibility explanation
+        votes: Votes

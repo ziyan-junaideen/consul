@@ -64,7 +64,8 @@ feature 'Homepage' do
       expect(page).to have_css(".debate", count: 2)
     end
 
-    scenario "Processes", :js do
+    # Removed from home page
+    xscenario "Processes", :js do
       5.times { create(:legislation_process) }
 
       visit admin_homepage_path
@@ -83,7 +84,8 @@ feature 'Homepage' do
 
   end
 
-  scenario "Cards" do
+  # Removed from home page
+  xscenario "Cards" do
     card1 = create(:widget_card, label: "Card1 label",
                                  title: "Card1 text",
                                  description: "Card1 description",

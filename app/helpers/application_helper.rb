@@ -60,4 +60,8 @@ module ApplicationHelper
   def kaminari_path(url)
     "#{root_url.chomp("\/")}#{url}"
   end
+
+  def map_styles
+    "height: #{Setting['map_height']}px"
+  end
 end

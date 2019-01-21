@@ -191,6 +191,30 @@ ignore_unused:
   - 'legislation.processes.index.*'
   - 'votes.budget_investments.different_heading_assigned*'
   - '*.form.map_skip_checkbox'
+  - pages.accessibility.*
+  - welcome.welcome.* # PBNYC customizations
+  - layouts.footer.accessibility
+  - layouts.footer.conditions
+  - layouts.footer.consul
+  - layouts.footer.consul_url
+  - layouts.footer.contact_us
+  - layouts.footer.description
+  - layouts.footer.open_source
+  - layouts.footer.open_source_url
+  - layouts.footer.participation_text
+  - layouts.footer.participation_title
+  - layouts.header.open
+  - layouts.header.open_gov
+  - pages.conditions.title
+  - pages.conditions.subtitle
+  - pages.conditions.description
+  - pages.privacy.title
+  - pages.privacy.subtitle
+  - pages.privacy.info_items
+  - devise_views.users.registrations.new.organization_signup
+  - devise_views.users.registrations.new.organization_signup_link
+  - budgets.index.map
+
 # - '{devise,kaminari,will_paginate}.*'
 # - 'simple_form.{yes,no}'
 # - 'simple_form.{placeholders,hints,labels}.*'

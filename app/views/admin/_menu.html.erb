@@ -218,9 +218,18 @@
           <%= link_to t("admin.menu.managers"), admin_managers_path %>
         </li>
 
+        <li <%= "class=is-active" if controller_name == "volunteers" %>>
+          <%= link_to t("admin.menu.volunteers"), admin_volunteers_path %>
+        </li>
+
+        <li <%= "class=is-active" if controller_name == "budget_delegates" %>>
+          <%= link_to t("admin.menu.budget_delegates"), admin_budget_delegates_path %>
+        </li>
+
         <li <%= "class=is-active" if controller_name == "users" %>>
           <%= link_to t("admin.menu.users"), admin_users_path %>
         </li>
+
       </ul>
     </li>
 

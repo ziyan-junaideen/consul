@@ -72,9 +72,11 @@ module Abilities
         can :vote_featured, Legislation::Proposal
         can :create, Legislation::Answer
 
-        can :create, Budget::Investment,               budget: { phase: "accepting" }
-        can :suggest, Budget::Investment,              budget: { phase: "accepting" }
-        can :destroy, Budget::Investment,              budget: { phase: ["accepting", "reviewing"] }, author_id: user.id
+        can :create, Budget::Investment,               kind: Budget::Investment.kinds[:project], budget: { phase: ["accepting"], budget_delegate_only: false }
+        can :create, Budget::Investment,               kind: Budget::Investment.kinds[:project], budget: { phase: ["accepting"], budget_delegate_only: true } if user.budget_delegate?
+        can :create, Budget::Investment,               kind: Budget::Investment.kinds[:idea], budget: { phase: ['ideas_posting'] }
+        can :suggest, Budget::Investment,              budget: { phase: ["accepting", "ideas_posting"] }
+        can :destroy, Budget::Investment,              budget: { phase: ["accepting", "ideas_posting", "reviewing"] }, author_id: user.id
         can :vote, Budget::Investment,                 budget: { phase: "selecting" }
 
         can [:show, :create], Budget::Ballot,          budget: { phase: "balloting" }

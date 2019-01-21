@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
 
   layout :set_layout
   respond_to :html
-  helper_method :current_budget
+  helper_method :current_budget, :current_budget_phase
 
   private
 
@@ -125,5 +125,9 @@ class ApplicationController < ActionController::Base
 
     def current_budget
       Budget.current
+    end
+
+    def current_budget_phase
+      current_budget.phases.send current_budget.phase
     end
 end

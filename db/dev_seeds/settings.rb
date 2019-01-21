@@ -27,6 +27,7 @@ section "Creating Settings" do
   Setting.create(key: 'url', value: 'http://localhost:3000')
   Setting.create(key: 'org_name', value: 'CONSUL')
   Setting.create(key: 'place_name', value: 'City')
+  Setting.create(key: 'map_height', value: '350')
 
   Setting.create(key: 'feature.debates', value: "true")
   Setting.create(key: 'feature.proposals', value: "true")
@@ -50,6 +51,7 @@ section "Creating Settings" do
   Setting.create(key: 'feature.public_stats', value: "true")
   Setting.create(key: 'feature.user.skip_verification', value: "true")
   Setting.create(key: 'feature.help_page', value: "true")
+  Setting.create(key: 'feature.ideas', value: true)
 
   Setting.create(key: 'per_page_code_head', value: "")
   Setting.create(key: 'per_page_code_body', value: "")
@@ -74,4 +76,9 @@ section "Creating Settings" do
   Setting['feature.homepage.widgets.feeds.proposals'] = true
   Setting['feature.homepage.widgets.feeds.debates'] = true
   Setting['feature.homepage.widgets.feeds.processes'] = true
+
+  # /budget page configuration
+  Setting['feature.budget_page.all_phases'] = true
+  Setting['feature.budget_page.footer'] = true
+  Setting['feature.budget_page.finished_budgets'] = true
 end

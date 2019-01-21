@@ -18,7 +18,6 @@
 <main>
   <%= render "feeds" %>
 
-
   <div class="row">
     <% if @cards.any? %>
       <div class="small-12 column <%= 'large-8' if feed_processes_enabled? %>">
@@ -27,7 +26,7 @@
     <% end %>
 
     <div class="small-12 large-4 column">
-      <%= render "processes" %>
+      <% render "processes" %>
     </div>
   </div>
 

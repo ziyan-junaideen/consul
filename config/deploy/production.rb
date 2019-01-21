@@ -1,3 +1,4 @@
+set :repo_url, 'https://github.com/ziyan-junaideen/consul.git'
 set :deploy_to, deploysecret(:deploy_to)
 set :server_name, deploysecret(:server_name)
 set :db_server, deploysecret(:db_server)

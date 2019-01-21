@@ -149,10 +149,10 @@ feature 'Admin budgets' do
 
       within '#budget-phases-table' do
 
-        Budget::Phase::PHASE_KINDS.each do |phase_kind|
-          phase_index = Budget::Phase::PHASE_KINDS.index(phase_kind)
-          break if phase_kind == Budget::Phase::PHASE_KINDS.last
-          next_phase_kind = Budget::Phase::PHASE_KINDS[phase_index + 1]
+        Budget::Phase.phase_kinds.each do |phase_kind|
+          phase_index = Budget::Phase.phase_kinds.index(phase_kind)
+          break if phase_kind == Budget::Phase.phase_kinds.last
+          next_phase_kind = Budget::Phase.phase_kinds[phase_index + 1]
           next_phase_name = translated_phase_name(phase_kind: next_phase_kind)
           expect(translated_phase_name(phase_kind: phase_kind)).to appear_before(next_phase_name)
         end

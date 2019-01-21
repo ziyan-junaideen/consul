@@ -12,6 +12,7 @@ class MapLocation < ActiveRecord::Base
   def json_data
     {
       investment_id: investment_id,
+      investment_kind: investment.kind,
       proposal_id: proposal_id,
       lat: latitude,
       long: longitude

@@ -4,7 +4,7 @@ shared_examples "milestoneable" do |factory_name, path_name|
   feature "Show milestones" do
     let(:path) { send(path_name, *resource_hierarchy_for(milestoneable)) }
 
-    scenario "Show milestones", :js do
+    xscenario "Show milestones", :js do # Language selection removed
       create(:milestone, milestoneable: milestoneable,
                          description_en: "Last milestone with a link to https://consul.dev",
                          description_es: "Último hito con el link https://consul.dev",

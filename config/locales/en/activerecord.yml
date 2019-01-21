@@ -7,10 +7,13 @@ en:
       budget:
         one: "Budget"
         other: "Budgets"
+      budget/idea:
+        one: "Idea"
+        other: "Ideas"
       budget/investment:
-        one: "Investment"
-        other: "Investments"
-      milestone:
+        one: "Project"
+        other: "Projects"
+      budget/investment/milestone:
         one: "milestone"
         other: "milestones"
       milestone/status:
@@ -118,8 +121,14 @@ en:
         description_finished: "Description when the budget is finished"
         phase: "Phase"
         currency_symbol: "Currency"
+        budget_delegate_only: Only Budget Delegates can post projects
+        post_idea_uri: Post idea uri
+        commitee_list_uri: Commitee list uri
+        volunteer_form_uri: Volunteer form uri
+        delegate_form_uri: Delegate form uri
+        guest_ideas: Guest ideas
       budget/investment:
-        heading_id: "Heading"
+        heading_id: "District"
         title: "Title"
         description: "Description"
         external_url: "Link to additional documentation"

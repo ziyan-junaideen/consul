@@ -10,7 +10,7 @@ feature 'Emails' do
     sign_up
 
     email = open_last_email
-    expect(email).to have_subject('Confirmation instructions')
+    expect(email).to have_subject('Confirm your PBNYC Account')
     expect(email).to deliver_to('manuela@consul.dev')
     expect(email).to have_body_text(user_confirmation_path)
   end
@@ -86,7 +86,7 @@ feature 'Emails' do
       comment_on(investment)
 
       email = open_last_email
-      expect(email).to have_subject('Someone has commented on your investment')
+      expect(email).to have_subject('Someone has commented on your project')
       expect(email).to deliver_to(investment.author)
       expect(email).to have_body_text(budget_investment_path(investment, budget_id: investment.budget_id))
       expect(email).to have_body_text('To stop receiving these emails change your settings in')
@@ -379,13 +379,13 @@ feature 'Emails' do
       fill_in 'budget_investment_description', with: 'We have lots of people that require medical attention'
       check   'budget_investment_terms_of_service'
 
-      click_button 'Create Investment'
+      click_button 'Create Project'
       expect(page).to have_content 'Investment created successfully'
 
       email = open_last_email
       investment = Budget::Investment.last
 
-      expect(email).to have_subject("Thank you for creating an investment!")
+      expect(email).to have_subject("Thank you for creating a project!")
       expect(email).to deliver_to(investment.author.email)
       expect(email).to have_body_text(author.name)
       expect(email).to have_body_text(investment.title)

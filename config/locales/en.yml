@@ -1,0 +1,7 @@
+---
+en:
+  admin:
+    volunteers:
+      volunteer:
+        add: Add
+        delete: Delete

@@ -79,9 +79,11 @@ en:
         filters:
           open: Open
           finished: Finished
+        budget_ideas: Manage ideas
         budget_investments: Manage projects
         table_name: Name
         table_phase: Phase
+        table_ideas: Ideas
         table_investments: Investments
         table_edit_groups: Headings groups
         table_edit_budget: Edit
@@ -168,6 +170,95 @@ en:
         enabled: Phase enabled
         enabled_help_text: This phase will be public in the budget's phases timeline, as well as active for any other purpose
         save_changes: Save changes
+        title: Tilte
+        title_help_text: 'If a title is provided, budget list views will use the title instead of the default title available. (warning: no translation support)'
+    budget_ideas:
+      heading_link: New Idea
+      edit:
+        select_heading: Select heading
+        submit_button: Update
+        user_tags: User assigned tags
+      index:
+        advanced_filters: Advanced filters
+        buttons:
+          filter: Filter
+        cannot_calculate_winners: The budget has to stay on phase "Balloting projects", "Reviewing Ballots" or "Finished budget" in order to calculate winners projects
+        download_current_selection: Download current selection
+        filters:
+          all: All
+          feasible: Feasible
+          min_total_supports: Minimum supports
+          one_filter_html: 'Current applied filters: <b><em>%{filter}</em></b>'
+          selected: Selected
+          two_filters_html: 'Current applied filters: <b><em>%{filter}, %{advanced_filters}</em></b>'
+          undecided: Undecided
+          under_valuation: Under valuation
+          unfeasible: Unfeasible
+          valuation_finished: Valuation finished
+          winners: Winners
+          without_admin: Without assigned admin
+          without_valuator: Without assigned valuator
+        heading_filter_all: All headings
+        list:
+          admin: Administrator
+          author_username: Author username
+          budget_id: Process ID
+          created_at: Date
+          description: Description
+          feasibility: Feasibility
+          geozone: Scope of operation
+          heading: Heading
+          id: ID
+          published: Published
+          related: Related Projects
+          selected: Selected
+          supports: Supports
+          tags: Tags
+          title: Title
+          valuation_finished: Val. Fin.
+          valuation_group: Valuation Group
+          valuator: Valuator
+          visible_to_valuators: Show to valuators
+        map_all: Has Location
+        map_latitude: Latitude
+        map_longitude: Longitude
+        no_budget_ideas: There are no idea projects.
+        placeholder: Search projects
+        published_all: Published or Not Published
+        see_results: See results
+        sort_by:
+          placeholder: Sort by
+        tags_filter_all: All tags
+        title: Ideas
+      kaminari:
+        entry_names:
+          idea: idea
+      show:
+        by: By
+        compatibility:
+          'false': Compatible
+          title: Support
+          'true': Incompatible
+        documents: Documents
+        edit: Edit
+        group: Group
+        heading: Heading
+        image: Image
+        info: "%{budget_name} - Group: %{group_name} - Idea project %{id}"
+        no_documents: Without documents
+        no_image: Without image
+        published:
+          'false': 'No'
+          title: Published
+          'true': 'Yes'
+        see_documents: See documents (%{count})
+        see_image: See image
+        selection:
+          'false': Not selected
+          title: Projects
+          'true': Selected
+        sent: Sent
+        user_tags: User tags
     budget_investments:
       index:
         heading_filter_all: All headings
@@ -562,6 +653,7 @@ en:
       activity: Moderator activity
       admin: Admin menu
       banner: Manage banners
+      budget_delegates: Budget delegates
       poll_questions: Questions
       proposals: Proposals
       proposals_topics: Proposals topics
@@ -582,6 +674,7 @@ en:
       system_emails: System Emails
       emails_download: Emails download
       valuators: Valuators
+      volunteers: Volunteers
       poll_officers: Poll officers
       polls: Polls
       poll_booths: Booths location
@@ -634,6 +727,18 @@ en:
         restricted_removal: "Sorry, you can't remove yourself from the administrators"
       search:
         title: "Administrators: User search"
+    budget_delegates:
+      index:
+        title: Budget Delegates
+        name: Name
+        email: Email
+        no_administrators: There are no budget delegates.
+      administrator:
+        add: Add
+        delete: Delete
+        restricted_removal: "Sorry, you can't remove yourself from the budget delegates"
+      search:
+        title: "Budget Delegates: User search"
     moderators:
       index:
         title: Moderators
@@ -1341,6 +1446,17 @@ en:
         phone_not_given: Phone not given
         sms_code_not_confirmed: Has not confirmed the sms code
         title: Incomplete verifications
+    volunteers:
+      index:
+        email: Email
+        name: Name
+        no_volunteers: There are no volunteers.
+        title: Volunteers
+      search:
+        title: 'Volunteers: User search'
+      volunteer:
+        add: Add
+        delete: Delete
     site_customization:
       content_blocks:
         information: Information about content blocks

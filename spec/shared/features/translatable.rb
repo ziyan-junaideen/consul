@@ -318,7 +318,7 @@ end
 def update_button_text
   case translatable_class.name
   when "Milestone"
-    "Update milestone"
+    "Update Milestone"
   when "AdminNotification"
     "Update notification"
   when "Poll"

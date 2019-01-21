@@ -27,6 +27,8 @@ class Budget
     include Milestoneable
 
     belongs_to :author, -> { with_hidden }, class_name: 'User', foreign_key: 'author_id'
+    accepts_nested_attributes_for :author, reject_if: :all_blank
+
     belongs_to :heading
     belongs_to :group
     belongs_to :budget
@@ -51,6 +53,8 @@ class Budget
     validates :title, length: { in: 4..Budget::Investment.title_max_length }
     validates :description, length: { maximum: Budget::Investment.description_max_length }
     validates :terms_of_service, acceptance: { allow_nil: false }, on: :create
+
+    enum kind: { project: 0, idea: 1 }
 
     scope :sort_by_confidence_score, -> { reorder(confidence_score: :desc, id: :desc) }
     scope :sort_by_ballots,          -> { reorder(ballot_lines_count: :desc, id: :desc) }
@@ -90,9 +94,25 @@ class Budget
     scope :by_admin,          ->(admin_id)    { where(administrator_id: admin_id) }
     scope :by_tag,            ->(tag_name)    { tagged_with(tag_name) }
     scope :by_valuator,       ->(valuator_id) { where("budget_valuator_assignments.valuator_id = ?", valuator_id).joins(:valuator_assignments) }
+    scope :by_published,      ->(published)   { where(published: published) }
     scope :by_valuator_group, ->(valuator_group_id) { where("budget_valuator_group_assignments.valuator_group_id = ?", valuator_group_id).joins(:valuator_group_assignments) }
 
+    scope :by_has_map,        ->(has_map) do
+      has_map = has_map.to_b
+      scope = includes(:map_location)
+      if has_map
+        scope.where.not(map_locations: { id: nil })
+      else
+        scope.where(map_locations: { id: nil })
+      end
+    end
+
     scope :for_render, -> { includes(:heading) }
+
+    scope :published, -> { where(published: true) }
+
+    scope :with_related_contents, -> { where(id: RelatedContent.where(parent_relationable_type: 'Budget::Investment', parent_relationable_id: ids).map(&:parent_relationable_id)) }
+    scope :without_related_contents, -> { where.not(id: RelatedContent.where(parent_relationable_type: 'Budget::Investment', parent_relationable_id: ids).map(&:parent_relationable_id)) }
 
     before_save :calculate_confidence_score
     after_save :recalculate_heading_winners if :incompatible_changed?
@@ -104,7 +124,11 @@ class Budget
     end
 
     def url
-      budget_investment_path(budget, self)
+      if idea?
+        budget_idea_path(budget, self)
+      else
+        budget_investment_path(budget, self)
+      end
     end
 
     def self.filter_params(params)
@@ -123,6 +147,8 @@ class Budget
       results = results.by_valuator(params[:valuator_id])                  if params[:valuator_id].present?
       results = results.by_valuator_group(params[:valuator_group_id])      if params[:valuator_group_id].present?
       results = results.by_admin(params[:administrator_id])                if params[:administrator_id].present?
+      results = results.by_published(params[:published])                   if params[:published].present?
+      results = results.by_has_map(params[:has_map])                       if params[:has_map].present?
       results = advanced_filters(params, results)                          if params[:advanced_filters].present?
       results = search_by_title_or_id(params[:title_or_id].strip, results) if params[:title_or_id]
 

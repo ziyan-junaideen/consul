@@ -8,6 +8,7 @@ module Budgets
     before_action :authenticate_user!, except: [:index, :show, :json_data]
 
     load_and_authorize_resource :budget, except: :json_data
+    before_action :load_project, only: [:new, :create]
     load_and_authorize_resource :investment, through: :budget, class: "Budget::Investment",
                                 except: :json_data
 
@@ -176,6 +177,11 @@ module Budgets
           @investments.apply_filters_and_search(@budget, params, @current_filter)
                       .send("sort_by_#{@current_order}")
         end
+      end
+
+      def load_project
+        options = params[:budget_investment].present? ? investment_params : {}
+        @investment = @budget.investments.project.new(options)
       end
 
       def load_map
