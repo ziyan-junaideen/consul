@@ -122,10 +122,7 @@ en:
         phase: "Phase"
         currency_symbol: "Currency"
         budget_delegate_only: Only Budget Delegates can post projects
-        post_idea_uri: Post idea uri
-        commitee_list_uri: Commitee list uri
-        volunteer_form_uri: Volunteer form uri
-        delegate_form_uri: Delegate form uri
+        post_idea_uri: Post idea URL
         guest_ideas: Guest ideas
       budget/investment:
         heading_id: "District"
