@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181206153510) do
+ActiveRecord::Schema.define(version: 20190124131740) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -324,9 +324,6 @@ ActiveRecord::Schema.define(version: 20181206153510) do
     t.text     "description_ideas_posting"
     t.text     "description_project_forming"
     t.string   "post_idea_uri"
-    t.string   "commitee_list_uri"
-    t.string   "volunteer_form_uri"
-    t.string   "delegate_form_uri"
     t.boolean  "guest_ideas",                              default: false
     t.boolean  "budget_delegate_only",                     default: false
   end
