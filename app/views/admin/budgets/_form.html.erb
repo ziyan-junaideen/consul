@@ -5,19 +5,12 @@
   </div>
 
   <% if Setting["feature.ideas"] %>
-    <div class="margin-top">
-      <div class="small-12 medium-6 column">
+    <div class="row margin-top">
+      <div class="small-12 medium-6 columns">
         <%= f.url_field :post_idea_uri %>
       </div>
-      <div class="small-12 medium-6 column">
-        <%= f.url_field :commitee_list_uri %>
-      </div>
-      <div class="small-12 medium-6 column">
-        <%= f.url_field :volunteer_form_uri %>
-      </div>
-      <div class="small-12 medium-6 column">
-        <%= f.url_field :delegate_form_uri %>
-      </div>
+    </div>
+    <div class="row">
       <div class="small-12 medium-6 column">
         <%= f.select :guest_ideas, options_for_select([['Enabled', true], ['Disabled', false]], @budget.guest_ideas) %>
       </div>
