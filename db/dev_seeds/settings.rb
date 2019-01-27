@@ -27,7 +27,6 @@ section "Creating Settings" do
   Setting.create(key: 'url', value: 'http://localhost:3000')
   Setting.create(key: 'org_name', value: 'CONSUL')
   Setting.create(key: 'place_name', value: 'City')
-  Setting.create(key: 'map_height', value: '350')
 
   Setting.create(key: 'feature.debates', value: "true")
   Setting.create(key: 'feature.proposals', value: "true")
@@ -77,8 +76,9 @@ section "Creating Settings" do
   Setting['feature.homepage.widgets.feeds.debates'] = true
   Setting['feature.homepage.widgets.feeds.processes'] = true
 
-  # /budget page configuration
-  Setting['feature.budget_page.all_phases'] = true
-  Setting['feature.budget_page.footer'] = true
-  Setting['feature.budget_page.finished_budgets'] = true
+  # PB Settings
+  Setting['pb-toggle.budget_page.all_phases'] = true
+  Setting['pb-toggle.budget_page.footer'] = true
+  Setting['pb-toggle.budget_page.finished_budgets'] = true
+  Setting['pb-input.map_height'] = '350'
 end

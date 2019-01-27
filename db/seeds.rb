@@ -69,9 +69,6 @@ Setting["meta_title"] = nil
 Setting["meta_description"] = nil
 Setting["meta_keywords"] = nil
 
-# Map configuration
-Setting['map_height'] = '350'
-
 # Feature flags
 Setting['feature.debates'] = true
 Setting['feature.proposals'] = true
@@ -94,11 +91,6 @@ Setting['feature.allow_images'] = true
 Setting['feature.allow_attached_documents'] = true
 Setting['feature.help_page'] = true
 Setting['feature.ideas'] = true
-
-# /budget page configuration
-Setting['feature.budget_page.all_phases'] = true
-Setting['feature.budget_page.footer'] = true
-Setting['feature.budget_page.finished_budgets'] = true
 
 # Spending proposals feature flags
 Setting['feature.spending_proposal_features.voting_allowed'] = nil
@@ -147,6 +139,12 @@ Setting['feature.homepage.widgets.feeds.processes'] = true
 
 # Votes hot_score configuration
 Setting['hot_score_period_in_days'] = 31
+
+# PB Setting
+Setting['pb-toggle.budget_page.all_phases'] = true
+Setting['pb-toggle.budget_page.footer'] = true
+Setting['pb-toggle.budget_page.finished_budgets'] = true
+Setting['pb-input.map_height'] = '350'
 
 WebSection.create(name: 'homepage')
 WebSection.create(name: 'debates')
