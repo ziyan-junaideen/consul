@@ -7,15 +7,23 @@
   <% if Setting["feature.ideas"] %>
     <div class="row margin-top">
       <div class="small-12 medium-6 columns">
-        <%= f.url_field :post_idea_uri %>
+        <%= f.label :post_idea_uri, t('activerecord.attributes.budget.post_idea_uri') %>
+        <p class="help-text"><%= t('activerecord.attributes.budget.post_idea_uri_help') %></p>
+        <%= f.url_field :post_idea_uri, label: false %>
       </div>
     </div>
+
     <div class="row">
-      <div class="small-12 medium-6 column">
-        <%= f.select :guest_ideas, options_for_select([['Enabled', true], ['Disabled', false]], @budget.guest_ideas) %>
+      <div class="small-12 medium-6 columns">
+        <%= f.label :guest_ideas, t('activerecord.attributes.budget.guest_ideas') %>
+        <p class="help-text"><%= t('activerecord.attributes.budget.guest_ideas_help') %></p>
+        <%= f.select :guest_ideas, options_for_select([['Enabled', true], ['Disabled', false]], @budget.guest_ideas), label: false %>
       </div>
-      <div class="small-12 medium-6 column end">
-        <%= f.select :budget_delegate_only, options_for_select([['Yes', true], ['No', false]], @budget.budget_delegate_only), label: t("admin.budgets.form.budget_delegate_only") %>
+
+      <div class="small-12 medium-6 columns">
+        <%= f.label :guest_ideas, t('activerecord.attributes.budget.budget_delegate_only') %>
+        <p class="help-text"><%= t('activerecord.attributes.budget.budget_delegate_only_help') %></p>
+        <%= f.select :budget_delegate_only, options_for_select([['Yes', true], ['No', false]], @budget.budget_delegate_only), label: false %>
       </div>
     </div>
   <% end %>

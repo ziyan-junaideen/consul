@@ -122,8 +122,11 @@ en:
         phase: "Phase"
         currency_symbol: "Currency"
         budget_delegate_only: Only Budget Delegates can post projects
-        post_idea_uri: Post idea URL
-        guest_ideas: Guest ideas
+        budget_delegate_only_help: Normal users will not be able to post projects.
+        post_idea_uri: Post Ideas URL
+        post_idea_uri_help: By inserting a link to an external website, the ‘Post an Idea’ button will link there instead of the internal ‘Post an Idea’ form.
+        guest_ideas: Allow Unregistered Users to Post Ideas
+        guest_ideas_help: Users will only need to submit an email address to post an idea.
       budget/investment:
         heading_id: "District"
         title: "Title"
