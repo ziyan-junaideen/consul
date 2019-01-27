@@ -12,6 +12,10 @@ class Setting < ActiveRecord::Base
       'banner-style'
     elsif banner_img?
       'banner-img'
+    elsif pb_toggle?
+      'pb-toggle'
+    elsif pb_input?
+      'pb-input'
     else
       'common'
     end
@@ -31,6 +35,14 @@ class Setting < ActiveRecord::Base
 
   def banner_img?
     key.start_with?('banner-img.')
+  end
+
+  def pb_toggle?
+    key.start_with?('pb-setting.')
+  end
+
+  def pb_input?
+    key.start_with?('pb-input.')
   end
 
   class << self
