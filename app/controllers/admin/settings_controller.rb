@@ -6,6 +6,8 @@ class Admin::SettingsController < Admin::BaseController
     @feature_flags = all_settings['feature']
     @banner_styles = all_settings['banner-style']
     @banner_imgs = all_settings['banner-img']
+    @pb_toggle = all_settings['pb-toggle']
+    @pb_input = all_settings['pb-input']
   end
 
   def update

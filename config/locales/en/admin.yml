@@ -1223,6 +1223,7 @@ en:
             update: Map configuration updated succesfully.
           form:
             submit: Update
+        pb_settings: PB Settings
       setting: Feature
       setting_actions: Actions
       setting_name: Setting

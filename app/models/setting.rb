@@ -4,6 +4,7 @@ class Setting < ActiveRecord::Base
   default_scope { order(id: :asc) }
   scope :banner_style, -> { where("key ilike ?", "banner-style.%")}
   scope :banner_img, -> { where("key ilike ?", "banner-img.%")}
+  scope :pb_setting, -> { where("key ilike ?", "pb-%") }
 
   def type
     if feature_flag?
@@ -38,7 +39,7 @@ class Setting < ActiveRecord::Base
   end
 
   def pb_toggle?
-    key.start_with?('pb-setting.')
+    key.start_with?('pb-toggle.')
   end
 
   def pb_input?
