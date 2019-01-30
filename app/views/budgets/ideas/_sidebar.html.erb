@@ -1,6 +1,6 @@
 <div class="clear"></div>
 
-<% if @budget.ideas_posting? && can?(:create, Budget::Investment.new(budget: @budget)) %>
+<% if @budget.ideas_posting? && can?(:create, Budget::Investment.new(budget: @budget, kind: Budget::Investment.kinds[:idea])) %>
   <% if current_user && current_user.level_two_or_three_verified? %>
     <%= link_to t("budgets.ideas.index.sidebar.create"),
                new_budget_idea_path(budget_id: @budget.id), class: "button budget expanded" %>
