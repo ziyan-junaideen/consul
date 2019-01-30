@@ -23,7 +23,7 @@
       <div class="small-12 medium-6 columns">
         <%= f.label :guest_ideas, t('activerecord.attributes.budget.budget_delegate_only') %>
         <p class="help-text"><%= t('activerecord.attributes.budget.budget_delegate_only_help') %></p>
-        <%= f.select :budget_delegate_only, options_for_select([['Yes', true], ['No', false]], @budget.budget_delegate_only), label: false %>
+        <%= f.select :budget_delegate_only, options_for_select([['Enabled', true], ['Disabled', false]], @budget.budget_delegate_only), label: false %>
       </div>
     </div>
   <% end %>
