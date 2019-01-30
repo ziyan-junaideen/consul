@@ -558,7 +558,7 @@ en:
       general: Search
       general_placeholder: 'Write the text'
       heading: By district
-      heading_blank: 'Select a district'
+      heading_blank: 'All districts'
       search: 'Filter'
       title: 'Advanced search'
       to: 'To'
