@@ -232,7 +232,7 @@ en:
           random: random
         search_form:
           button: Search
-          placeholder: Search idea projects...
+          placeholder: Search ideas...
           title: Search
         search_results_html:
           one: " containing the term <strong>'%{search_term}'</strong>"
