@@ -166,6 +166,8 @@ module BudgetsHelper
       t("budgets.index.map_ideas")
     elsif current_budget.accepting?
       t("budgets.index.map_accepting")
+    elsif current_budget.reviewing?
+      t("budgets.index.map_reviewing")
     else
       t("budgets.index.map")
     end
