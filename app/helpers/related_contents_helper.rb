@@ -15,6 +15,14 @@ module RelatedContentsHelper
     end
   end
 
+  def related_content_help_key_for(relationable)
+    if relationable.is_a? Budget::Investment
+      'related_content.help.investments'
+    else
+      'related_content.help.general'
+    end
+  end
+
   private
 
   def budget_idea?(relationable)

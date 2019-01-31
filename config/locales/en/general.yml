@@ -843,7 +843,9 @@ en:
     add: "Add related link"
     label: "Link to related link"
     placeholder: "%{url}"
-    help: "You can add links of %{models} inside of %{org}."
+    help:
+      general: "You can add links of %{models} inside of %{org}."
+      investments: "Connect this to other ideas and projects by pasting their link in the field below."
     submit: "Add"
     error: "Link not valid. Remember to start with %{url}."
     error_idea: Link not valid. You can only relate ideas and proposals.    
