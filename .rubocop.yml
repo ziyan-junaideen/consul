@@ -1,5 +1,7 @@
 inherit_from: .rubocop_basic.yml
 
+require: rubocop-rspec
+
 Metrics/LineLength:
   Max: 100
 
