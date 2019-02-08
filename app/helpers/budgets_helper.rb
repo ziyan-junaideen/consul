@@ -22,7 +22,7 @@ module BudgetsHelper
   end
 
   def show_links_to_budget_ideas?(budget)
-    %w[accepting reviewing selecting valuating].include? budget.phase
+    %w[accepting reviewing selecting valuating publishing_prices].include? budget.phase
   end
 
   def heading_name_and_price_html(heading, budget)
