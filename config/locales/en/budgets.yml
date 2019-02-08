@@ -79,12 +79,12 @@ en:
         map_skip_checkbox: "This investment doesn't have a concrete location or I'm not aware of it."
       index:
         title: Participatory budgeting
-        unfeasible: Unfeasible investment projects
+        unfeasible: Unfeasible projects
         unfeasible_text: "The investments must meet a number of criteria (legality, concreteness, be the responsibility of the city, not exceed the limit of the budget) to be declared viable and reach the stage of final vote. All investments don't meet these criteria are marked as unfeasible and published in the following list, along with its report of infeasibility."
-        by_heading: "Investment projects with scope: %{heading}"
+        by_heading: "Projects with scope: %{heading}"
         search_form:
           button: Search
-          placeholder: Search investment projects...
+          placeholder: Search projects...
           title: Search
         search_results_html:
           one: " containing the term <strong>'%{search_term}'</strong>"
@@ -99,11 +99,11 @@ en:
           different_heading_assigned_html: "You have active votes in another heading: %{heading_link}"
           change_ballot: "If your change your mind you can remove your votes in %{check_ballot} and start again."
           check_ballot_link: "check my ballot"
-          zero: You have not voted any investment project in this group.
-          verified_only: "To create a new budget investment %{verify}."
+          zero: You have not voted any project in this group.
+          verified_only: "To create a new project %{verify}."
           verify_account: "verify your account"
           create: "Create a Project"
-          not_logged_in: "To create a new budget investment you must %{sign_in} or %{sign_up}."
+          not_logged_in: "To create a new project you must %{sign_in} or %{sign_up}."
           sign_in: "sign in"
           sign_up: "sign up"
           by_feasibility: By feasibility
@@ -114,37 +114,37 @@ en:
           confidence_score: highest rated
           price: by price
       share:
-        message: "I created the investment project %{title} in %{org}. Create an investment project you too!"
-        message_mobile: "I created the investment project %{title} in %{handle}. Create an investment project you too!"
+        message: "I created the project %{title} in %{org}. Create an project you too!"
+        message_mobile: "I created the project %{title} in %{handle}. Create an project you too!"
       show:
         author_deleted: User deleted
         price_explanation: Price explanation
         unfeasibility_explanation: Unfeasibility explanation
-        code_html: 'Investment project code: <strong>%{code}</strong>'
+        code_html: 'Project code: <strong>%{code}</strong>'
         location_html: 'Location: <strong>%{location}</strong>'
         organization_name_html: 'Proposed on behalf of: <strong>%{name}</strong>'
         share: Share
-        title: Investment project
+        title: Project
         supports: Supports
         votes: Votes
         price: Price
         comments_tab: Comments
         milestones_tab: Milestones
         author: Author
-        project_unfeasible_html: 'This investment project <strong>has been marked as not feasible</strong> and will not go to balloting phase.'
-        project_selected_html: 'This investment project <strong>has been selected</strong> for balloting phase.'
-        project_winner: 'Winning investment project'
-        project_not_selected_html: 'This investment project <strong>has not been selected</strong> for balloting phase.'
+        project_unfeasible_html: 'This project <strong>has been marked as not feasible</strong> and will not go to balloting phase.'
+        project_selected_html: 'This project <strong>has been selected</strong> for balloting phase.'
+        project_winner: 'Winning project'
+        project_not_selected_html: 'This project <strong>has not been selected</strong> for balloting phase.'
         see_price_explanation: See price explanation
       wrong_price_format: Only integer numbers
       investment:
         add: Vote
-        already_added: You have already added this investment project
-        already_supported: You have already supported this investment project. Share it!
+        already_added: You have already added this project
+        already_supported: You have already supported this project. Share it!
         support_title: Support this project
         confirm_group:
-          one: "You can only support investments in %{count} district. If you continue you cannot change the election of your district. Are you sure?"
-          other: "You can only support investments in %{count} district. If you continue you cannot change the election of your district. Are you sure?"
+          one: "You can only support projects in %{count} district. If you continue you cannot change the election of your district. Are you sure?"
+          other: "You can only support projects in %{count} district. If you continue you cannot change the election of your district. Are you sure?"
         supports:
           one: 1 support
           other: "%{count} supports"
