@@ -36,6 +36,10 @@
           </p>
           <h2><%= t("budgets.phase.#{current_budget.phase}") %></h2>
 
+          <% if current_budget.balloting? && Setting['pb-input.voting_instructions'] %>
+            <p class="voting-instructions"><%= Setting['pb-input.voting_instructions'] %></p>
+          <% end %>
+
           <%= link_to t("budgets.index.section_header.all_phases"), "#all_phases" if Setting['feature.budget_page.all_phases'] %>
 
           <% if current_budget.accepting? || current_budget.ideas_posting? %>
