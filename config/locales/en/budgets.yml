@@ -19,7 +19,7 @@ en:
         not_selected: Unselected investment projects can not be supported
         not_enough_money_html: "You have already assigned the available budget.<br><small>Remember you can %{change_ballot} at any time</small>"
         no_ballots_allowed: Selecting phase is closed
-        different_heading_assigned_html: "You have already voted a different heading: %{heading_link}"
+        different_heading_assigned_html: "You have active votes in %{heading_link}, so you cannot currently vote for projects in this district."
         change_ballot: change your votes
     groups:
       show:
@@ -220,10 +220,10 @@ en:
         tags_placeholder: Enter the tags you would like to use, separated by commas (',')
         title: My project idea is...
       header:
-        change_ballot: If your change your mind you can remove your votes in %{check_ballot} and start again.
+        change_ballot: "If you’d like to vote for projects in this district then go to %{check_ballot}, remove your votes for projects in other districts and return here to vote on projects in this district."
         check_ballot: Check my ballot
         check_ballot_link: check my ballot
-        different_heading_assigned_html: 'You have active votes in another heading: %{heading_link}'
+        different_heading_assigned_html: "You have active votes in %{heading_link}, so you cannot currently vote for projects in this district."
         price: This district has a budget of
       index:
         by_heading: 'Idea projects with scope: %{heading}'
@@ -239,10 +239,10 @@ en:
           one: " containing the term <strong>'%{search_term}'</strong>"
           other: " containing the term <strong>'%{search_term}'</strong>"
         sidebar:
-          change_ballot: If your change your mind you can remove your votes in %{check_ballot} and start again.
+          change_ballot: "If you’d like to vote for projects in this district then go to %{check_ballot}, remove your votes for projects in other districts and return here to vote on projects in this district."
           check_ballot_link: check my ballot
           create: Post an idea
-          different_heading_assigned_html: 'You have active votes in another heading: %{heading_link}'
+          different_heading_assigned_html: "You have active votes in %{heading_link}, so you cannot currently vote for projects in this district."
           my_ballot: My ballot
           verified_only: To create a new budget idea %{verify}.
           verify_account: verify your account
