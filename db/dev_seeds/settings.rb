@@ -83,5 +83,5 @@ section "Creating Settings" do
   Setting['pb-input.map_height'] = '350'
   Setting['pb-input.voting_instructions'] = 'Click on your district to see the proposed projects.'
 
-  Setting['feature.limit_related_content_to_investments'] = true
+  Setting['feature.proposal_related_content'] = false
 end

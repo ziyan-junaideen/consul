@@ -1,9 +1,9 @@
 class AddSettingLimitRelatedContentToInvestments < ActiveRecord::Migration
   def up
-    Setting['feature.limit_related_content_to_investments'] = true
+    Setting['feature.proposal_related_content'] = false
   end
 
   def down
-    Setting.where(key: 'feature.limit_related_content_to_investments').delete_all
+    Setting.where(key: 'feature.proposal_related_content').delete_all
   end
 end

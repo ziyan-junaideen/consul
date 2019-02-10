@@ -39,7 +39,7 @@
 
         <%= render "proposals/info", proposal: @proposal %>
         <%= render 'shared/geozone', geozonable: @proposal %>
-        <%= render 'relationable/related_content', relationable: @proposal unless Setting['feature.limit_related_content_to_investments'] %>
+        <%= render 'relationable/related_content', relationable: @proposal if Setting['feature.proposal_related_content'] %>
 
         <div class="js-moderator-proposal-actions margin">
           <%= render 'proposals/actions', proposal: @proposal %>
