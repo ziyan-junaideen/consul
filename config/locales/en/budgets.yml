@@ -96,8 +96,8 @@ en:
             other: "<strong>You voted %{count} proposals with a cost of %{amount_spent}</strong>"
           voted_info: You can %{link} at any time until the close of this phase. No need to spend all the money available.
           voted_info_link: change your vote
-          different_heading_assigned_html: "You have active votes in another heading: %{heading_link}"
-          change_ballot: "If your change your mind you can remove your votes in %{check_ballot} and start again."
+          different_heading_assigned_html: "You have active votes in %{heading_link}, so you cannot currently vote for projects in this district."
+          change_ballot: "If you’d like to vote for projects in this district then go to %{check_ballot}, remove your votes for projects in other districts and return here to vote on projects in this district."
           check_ballot_link: "check my ballot"
           zero: You have not voted any project in this group.
           verified_only: "To create a new project %{verify}."
