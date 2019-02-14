@@ -119,7 +119,7 @@
             <% end %>
 
             <% if show_links_to_unfesable_budget_investments(current_budget) %>
-              <%= link_to budget_path(current_budget, filter: 'unfeasible') do %>
+              <%= link_to budget_investments_path(current_budget, filter: 'unfeasible') do %>
                 <small><%= t("budgets.index.unfeasible_investment_proyects") %></small>
               <% end %><br>
             <% end %>
