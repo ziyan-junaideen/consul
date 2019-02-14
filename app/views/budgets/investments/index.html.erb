@@ -40,9 +40,10 @@
   <div class="row">
     <div id="budget-investments" class="budget-investments-list small-12 medium-9 column">
 
-      <% if @current_filter == "unfeasible" && @heading %>
+      <% if @current_filter == "unfeasible" %>
         <div class="small-12 margin-bottom">
-          <h2><%= t("budgets.investments.index.unfeasible") %>: <%= @heading.name %></h2>
+          <h2><%= t("budgets.investments.index.unfeasible") %><%= " : #{@heading.name}" if @heading %></h2>
+          <p><%= unfeasible_summary(@budget) %></p>
           <div class="callout primary margin">
               <%= t("budgets.investments.index.unfeasible_text") %>
           </div>

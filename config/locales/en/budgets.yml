@@ -81,6 +81,9 @@ en:
         title: Participatory budgeting
         unfeasible: Unfeasible projects
         unfeasible_text: "The investments must meet a number of criteria (legality, concreteness, be the responsibility of the city, not exceed the limit of the budget) to be declared viable and reach the stage of final vote. All investments don't meet these criteria are marked as unfeasible and published in the following list, along with its report of infeasibility."
+        unfeasible_summary_none: There are no projects of the status 'unfeasible'.
+        unfeasible_summary_one: There is one project of the status ‘unfeasible’.
+        unfeasible_summary_many: There are %{count} projects of the status ‘unfeasible’.
         by_heading: "Projects with scope: %{heading}"
         search_form:
           button: Search
