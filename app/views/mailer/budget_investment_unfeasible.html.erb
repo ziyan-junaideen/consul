@@ -3,19 +3,19 @@
   <p style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif;font-size: 14px;font-weight: normal;line-height: 24px;">
     <%= t("mailers.budget_investment_unfeasible.hi") %>
   </p>
+  
+  <p style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif;font-size: 14px;font-weight: normal;line-height: 24px;">
+    <%= t("mailers.budget_investment_unfeasible.new_html") %>
+  </p>
 
   <p style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif;font-size: 14px;font-weight: normal;line-height: 24px; padding-left: 12px; border-left: 2px solid #ccc;">
     <%= @investment.unfeasibility_explanation %>
   </p>
 
   <p style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif;font-size: 14px;font-weight: normal;line-height: 24px;">
-  <%= t("mailers.budget_investment_unfeasible.new_html",
-      url: link_to(t("mailers.budget_investment_unfeasible.new_href"),
-      new_budget_investment_url(@investment.budget), style: "color: #2895F1; text-decoration: underline;")) %>
-  </p>
-
-  <p style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif;font-size: 14px;font-weight: normal;line-height: 24px;">
-    <%= t("mailers.budget_investment_unfeasible.sorry") %>
+  <%= t("mailers.budget_investment_unfeasible.sorry",
+      support: link_to(t("mailers.budget_investment_unfeasible.support_href"),
+      budgets_url, style: "color: #2895F1; text-decoration: underline;")).html_safe %>
   </p>
 
   <p style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif;font-size: 14px;font-weight: normal;line-height: 24px;">
