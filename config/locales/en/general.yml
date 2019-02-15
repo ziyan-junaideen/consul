@@ -850,6 +850,7 @@ en:
     error: "Link not valid. Remember to start with %{url}."
     error_idea: Link not valid. You can only relate ideas and proposals.    
     error_itself: "Link not valid. You cannot relate a content to itself."
+    error_investments_only: Link not valid. Related content limited to ideas and projects.
     success: "You added a new related content"
     is_related: "Is it related content?"
     score_positive: "Yes"

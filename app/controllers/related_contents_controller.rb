@@ -10,6 +10,7 @@ class RelatedContentsController < ApplicationController
 
       error, code = true, 'error_itself' if relationable_object.url == related_object.url
       error, code = true, 'error_idea' if !error && unrelatable_budget_idea?
+      error, code = true, 'error_investments_only' if !error && check_limit_investments?(related_object)
 
       if error
         flash[:error] = t("related_content.#{code}")
@@ -68,5 +69,9 @@ class RelatedContentsController < ApplicationController
 
   def unrelatable_budget_idea?
     relationable_object.is_a?(Budget::Investment) && relationable_object.idea? && !related_object.is_a?(Budget::Investment)
+  end
+
+  def check_limit_investments?(related)
+    !related.is_a?(Budget::Investment) && Setting['pb-toggle.related_content.limit_investments']
   end
 end
