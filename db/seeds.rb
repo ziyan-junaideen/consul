@@ -146,8 +146,6 @@ Setting['pb-toggle.budget_page.footer'] = true
 Setting['pb-toggle.budget_page.finished_budgets'] = true
 Setting['pb-input.map_height'] = '350'
 Setting['pb-input.voting_instructions'] = 'Click on your district to see the proposed projects.'
-  
-Setting['feature.proposal_related_content'] = false
 
 WebSection.create(name: 'homepage')
 WebSection.create(name: 'debates')
