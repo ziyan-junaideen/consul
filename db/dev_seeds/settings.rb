@@ -77,6 +77,7 @@ section "Creating Settings" do
   Setting['feature.homepage.widgets.feeds.processes'] = true
 
   # PB Settings
+  Setting['pb-toggle.related_content.limit_investments'] = false
   Setting['pb-toggle.budget_page.all_phases'] = true
   Setting['pb-toggle.budget_page.footer'] = true
   Setting['pb-toggle.budget_page.finished_budgets'] = true

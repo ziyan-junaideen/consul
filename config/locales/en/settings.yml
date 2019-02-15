@@ -127,8 +127,6 @@ en:
       public_stats_description: "Display public stats in the Administration panel"
       help_page: "Help page"
       help_page_description: "Displays a Help menu that contains a page with an info section about each enabled feature"
-      proposal_related_content: Related content for Proposals
-      proposal_related_content_description: If enabled, users will be able to add related content for proposals
     pb-toggle:
       budget_page:
         all_phases: Budget Page - Show phases
@@ -137,6 +135,9 @@ en:
         footer_description: This will hide the 'Help with participatory budgets section at the bottom of the page
         finished_budgets: Budget Page - Show finished budgets
         finished_budgets_description: Show or hide the finished budgets list (after the budget phases)
+      related_content:
+        limit_investments: Limit related content to ideas and projects
+        limit_investments_description: If enabled, the realted content feature will only accept URLS belonging to budget ideas and projects.
     pb-input:
       map_height: Map height
       map_height_description: The hight of the map in pixels

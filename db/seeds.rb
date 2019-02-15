@@ -141,6 +141,7 @@ Setting['feature.homepage.widgets.feeds.processes'] = true
 Setting['hot_score_period_in_days'] = 31
 
 # PB Setting
+Setting['pb-toggle.related_content.limit_investments'] = false
 Setting['pb-toggle.budget_page.all_phases'] = true
 Setting['pb-toggle.budget_page.footer'] = true
 Setting['pb-toggle.budget_page.finished_budgets'] = true
