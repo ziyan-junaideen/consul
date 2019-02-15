@@ -27,7 +27,7 @@ class Setting < ActiveRecord::Base
   end
 
   def enabled?
-    feature_flag? && value.present?
+    (feature_flag? || pb_toggle?) && value.present?
   end
 
   def banner_style?
