@@ -40,12 +40,7 @@ module Budgets
     PERMITTED_SCOPES = %w[with_related_contents without_related_contents]
 
     def index
-      if @budget.finished?
-        @investments = apply_scope(investments).idea.published.winners.page(params[:page]).per(10).for_render
-      else
-        @investments = apply_scope(investments).idea.published.page(params[:page]).per(10).for_render
-      end
-
+      @investments = apply_scope(investments).idea.published.page(params[:page]).per(10).for_render
       @investment_ids = @investments.pluck(:id)
       load_investment_votes(@investments)
       @tag_cloud = tag_cloud
@@ -185,10 +180,10 @@ module Budgets
 
       def investments
         if @current_order == 'random'
-          @investments.apply_filters_and_search(@budget, params, @current_filter)
+          @investments.apply_filters_and_search(@budget, params)
                       .send("sort_by_#{@current_order}", params[:random_seed])
         else
-          @investments.apply_filters_and_search(@budget, params, @current_filter)
+          @investments.apply_filters_and_search(@budget, params)
                       .send("sort_by_#{@current_order}")
         end
       end
