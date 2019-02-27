@@ -74,7 +74,7 @@ en:
     budgets:
       index:
         title: Participatory budgets
-        new_link: Create a new Budget
+        new_link: Create new budget
         filter: Filter
         filters:
           open: Open
@@ -114,10 +114,6 @@ en:
         calculate: Calculate Winner Investments
         calculated: Winners being calculated, it may take a minute.
         recalculate: Recalculate Winner Investments
-      form:
-        submit:
-          create: Create a new Budget
-          update: Update Budget
     budget_groups:
       name: "Name"
       headings_name: "Headings"
