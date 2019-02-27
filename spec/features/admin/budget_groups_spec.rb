@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 feature "Admin budget groups" do
 
@@ -8,6 +8,11 @@ feature "Admin budget groups" do
     admin = create(:administrator)
     login_as(admin.user)
   end
+
+  it_behaves_like "translatable",
+                  "budget_group",
+                  "edit_admin_budget_group_path",
+                  %w[name]
 
   context "Feature flag" do
 
@@ -20,7 +25,9 @@ feature "Admin budget groups" do
     end
 
     scenario "Disabled with a feature flag" do
-      expect { visit admin_budget_groups_path(budget) }.to raise_exception(FeatureFlags::FeatureDisabled)
+      expect do
+        visit admin_budget_groups_path(budget)
+      end.to raise_exception(FeatureFlags::FeatureDisabled)
     end
 
   end
@@ -30,7 +37,7 @@ feature "Admin budget groups" do
     scenario "Displaying no groups for budget" do
       visit admin_budget_groups_path(budget)
 
-      expect(page).to have_content "No groups created yet. Each user will be able to vote in only one heading per group."
+      expect(page).to have_content "There are no groups."
     end
 
     scenario "Displaying groups" do
@@ -49,21 +56,21 @@ feature "Admin budget groups" do
         expect(page).to have_content(group1.name)
         expect(page).to have_content(group1.max_votable_headings)
         expect(page).to have_content(group1.headings.count)
-        expect(page).to have_link "Manage headings", href: admin_budget_group_headings_path(budget, group1)
+        expect(page).to have_link "Manage headings"
       end
 
       within "#budget_group_#{group2.id}" do
         expect(page).to have_content(group2.name)
         expect(page).to have_content(group2.max_votable_headings)
         expect(page).to have_content(group2.headings.count)
-        expect(page).to have_link "Manage headings", href: admin_budget_group_headings_path(budget, group2)
+        expect(page).to have_link "Manage headings"
       end
 
       within "#budget_group_#{group3.id}" do
         expect(page).to have_content(group3.name)
         expect(page).to have_content(group3.max_votable_headings)
         expect(page).to have_content(group3.headings.count)
-        expect(page).to have_link "Manage headings", href: admin_budget_group_headings_path(budget, group3)
+        expect(page).to have_link "Manage headings"
       end
     end
 
@@ -138,6 +145,30 @@ feature "Admin budget groups" do
       expect(page).to have_field "Maximum number of headings in which a user can vote", with: "2"
     end
 
+    scenario "Changing name for current locale will update the slug if budget is in draft phase", :js do
+      group = create(:budget_group, budget: budget)
+      old_slug = group.slug
+
+      visit edit_admin_budget_group_path(budget, group)
+
+      select "Español", from: "translation_locale"
+      fill_in "Group name", with: "Spanish name"
+      click_button "Save group"
+
+      expect(page).to have_content "Group updated successfully"
+      expect(group.reload.slug).to eq old_slug
+
+      visit edit_admin_budget_group_path(budget, group)
+
+      click_link "English"
+      fill_in "Group name", with: "New English Name"
+      click_button "Save group"
+
+      expect(page).to have_content "Group updated successfully"
+      expect(group.reload.slug).not_to eq old_slug
+      expect(group.slug).to eq "new-english-name"
+    end
+
   end
 
   context "Update" do
@@ -151,7 +182,7 @@ feature "Admin budget groups" do
 
       fill_in "Group name", with: "Districts"
       select "2", from: "Maximum number of headings in which a user can vote"
-      click_button "Edit group"
+      click_button "Save group"
 
       expect(page).to have_content "Group updated successfully"
 
@@ -167,11 +198,11 @@ feature "Admin budget groups" do
       expect(page).to have_field "Group name", with: "All City"
 
       fill_in "Group name", with: "Districts"
-      click_button "Edit group"
+      click_button "Save group"
 
       expect(page).not_to have_content "Group updated successfully"
       expect(page).to have_css("label.error", text: "Group name")
-      expect(page).to have_content "has already been taken"
+      expect(page).to have_css("small.error", text: "has already been taken")
     end
 
   end
