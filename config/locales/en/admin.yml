@@ -114,6 +114,8 @@ en:
         calculate: Calculate Winner Investments
         calculated: Winners being calculated, it may take a minute.
         recalculate: Recalculate Winner Investments
+      form:
+        phase_help: You can add content to the main budget page in Settings > Custom content blocks and selecting the name "Budget Summary"
     budget_groups:
       name: "Name"
       headings_name: "Headings"
