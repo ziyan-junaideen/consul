@@ -15,7 +15,7 @@
 
   <div class="margin-top">
     <div class="small-12 medium-6 column">
-      <%= f.select :phase, budget_phases_select_options %>
+      <%= f.select :phase, options_for_select(budget_phases_select_options, @budget.phase) %>
     </div>
     <div class="small-12 medium-3 column end">
       <%= f.select :currency_symbol, budget_currency_symbol_select_options %>
