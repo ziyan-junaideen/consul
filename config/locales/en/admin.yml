@@ -91,9 +91,10 @@ en:
         edit_budget: Edit budget
         no_budgets: "There are no open budgets."
       create:
-        notice: New participatory budget created successfully!
+        notice: New participatory budget created successfully!<br/>Next step create a %{link}.
+        notice_link_text: group
       update:
-        notice: Participatory budget updated successfully
+        notice: Participatory budget updated successfully.
       edit:
         title: Edit Participatory budget
         delete: Delete budget

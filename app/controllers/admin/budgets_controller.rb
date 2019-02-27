@@ -39,7 +39,8 @@ class Admin::BudgetsController < Admin::BaseController
   def create
     @budget = Budget.new(budget_params)
     if @budget.save
-      redirect_to admin_budget_path(@budget), notice: t('admin.budgets.create.notice')
+      link = view_context.link_to t('admin.budgets.create.notice_link_text'), new_admin_budget_group_path(@budget)
+      redirect_to admin_budget_path(@budget), notice: t('admin.budgets.create.notice', link: link)
     else
       render :new
     end
