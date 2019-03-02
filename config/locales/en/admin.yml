@@ -122,7 +122,7 @@ en:
       headings_edit: "Edit Headings"
       headings_manage: "Manage headings"
       max_votable_headings: "Maximum number of headings in which a user can vote"
-      no_groups: "No groups created yet. Each user will be able to vote in only one heading per group."
+      no_groups: One or more of your groups have no headings so people can’t vote on them.
       amount:
         one: "There is 1 group"
         other: "There are %{count} groups"
