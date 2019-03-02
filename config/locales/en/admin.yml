@@ -127,7 +127,7 @@ en:
         one: "There is 1 group"
         other: "There are %{count} groups"
       create:
-        notice: "Group created successfully!"
+        notice: "Group created successfully!<br/>Next Step: Define the areas in which people can vote by clicking on 'Manage Headings'"
       update:
         notice: "Group updated successfully"
       destroy:
