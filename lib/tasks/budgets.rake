@@ -31,4 +31,11 @@ namespace :budgets do
     end
   end
 
+  namespace :groups do
+    desc "Apply default voting style (knapsack) to budget groups"
+    task update_voting_style: :environment do
+      Budget::Group.update_all(voting_style: 'knapsack')
+    end
+  end
+
 end
