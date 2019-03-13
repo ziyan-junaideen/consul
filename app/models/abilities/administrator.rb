@@ -59,8 +59,6 @@ module Abilities
       can [:search, :create, :index, :destroy], ::BudgetDelegate
       can [:search, :index], ::User
 
-      can :manage, Annotation
-
       can [:read, :update, :valuate, :destroy, :summary], SpendingProposal
       can [:index, :read, :new, :create, :update, :destroy, :calculate_winners], Budget
       can [:read, :create, :update, :destroy], Budget::Group
@@ -95,6 +93,7 @@ module Abilities
       cannot :comment_as_moderator, [::Legislation::Question, Legislation::Annotation, ::Legislation::Proposal]
 
       can [:create], Document
+      can [:destroy], Document, documentable_type: "Poll::Question::Answer"
       can [:create, :destroy], DirectUpload
 
       can [:deliver], Newsletter, hidden_at: nil

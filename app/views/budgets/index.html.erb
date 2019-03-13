@@ -87,10 +87,11 @@
           <% current_budget.groups.each do |group| %>
             <h2 id="<%= group.name.parameterize %>"><%=group.name %></h2>
             <ul class="no-bullet" data-equalizer data-equalizer-on="medium">
-              <% group.headings.order_by_group_name.each do |heading| %>
+              <% group.headings.sort_by_name.each do |heading| %>
                 <li class="heading small-12 medium-4 large-2" data-equalizer-watch>
-                  <% unless current_budget.informing? %>
-                    <%= link_to kind_sensitive_budget_investments_path(current_budget, heading_id: heading.id) do %>
+                  <% unless current_budget.informing? || current_budget.finished? %>
+                    <%= link_to budget_investments_path(current_budget.id,
+                                                        heading_id: heading.id) do %>
                       <%= heading_name_and_price_html(heading, current_budget) %>
                     <% end %>
                   <% else %>
@@ -110,12 +111,14 @@
             <%= render_map(nil, "budgets", false, nil, @budgets_coordinates, map_resource_type_for(current_budget)) %>
           </div>
 
-          <p>
+          <ul class="no-bullet margin-top">
             <% show_links = show_links_to_budget_investments(current_budget) %>
             <% if show_links %>
-              <%= link_to budget_investments_path(current_budget.id) do %>
-                <small><%= t("budgets.index.investment_proyects") %></small>
-              <% end %><br>
+              <li>
+                <%= link_to budget_url(current_budget) do %>
+                  <small><%= t("budgets.index.investment_proyects") %></small>
+                <% end %>
+              </li>
             <% end %>
 
             <% if show_links_to_unfesable_budget_investments(current_budget) %>
@@ -144,8 +147,15 @@
               <%= link_to budget_ideas_path(budget_id: current_budget, scope: 'without_related_contents') do %>
                 <small><%= t("budgets.index.ideas_without_related_content") %></small>
               <% end %>
+            </li>
+            <% if show_links %>
+              <li>
+                <%= link_to budget_url(current_budget, filter: "unselected") do %>
+                  <small><%= t("budgets.index.not_selected_investment_proyects") %></small>
+                <% end %>
+              </li>
             <% end %>
-          </p>
+          </ul>
         <% end %>
 
         <% if Setting['pb-toggle.budget_page.all_phases']  %>

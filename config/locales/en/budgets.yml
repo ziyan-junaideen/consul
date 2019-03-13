@@ -117,7 +117,7 @@ en:
           confidence_score: highest rated
           price: by price
       share:
-        message: "I created the project %{title} in %{org}. Create an project you too!"
+        message: "I created the project %{title} in %{handle}. Create an project you too!"
         message_mobile: "I created the project %{title} in %{handle}. Create an project you too!"
       show:
         author_deleted: User deleted
@@ -158,7 +158,7 @@ en:
         change_ballot: "If you’d like to vote for projects in this district then go to %{check_ballot}, remove your votes for projects in other districts and return here to vote on projects in this district."
         change_ballot: "If your change your mind you can remove your votes in %{check_ballot} and start again."
         check_ballot_link: "check my ballot"
-        price: "This heading have a budget of"
+        price: "This heading has a budget of"
     progress_bar:
       assigned: "You have assigned: "
       available: "Available budget: "

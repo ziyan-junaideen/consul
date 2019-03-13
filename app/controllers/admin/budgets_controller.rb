@@ -1,4 +1,5 @@
 class Admin::BudgetsController < Admin::BaseController
+  include Translatable
   include FeatureFlags
   feature_flag :budgets
 
@@ -58,10 +59,10 @@ class Admin::BudgetsController < Admin::BaseController
   private
 
     def budget_params
-      descriptions = Budget::Phase.phase_kinds.map{|p| "description_#{p}"}.map(&:to_sym)
-      valid_attributes = [:name, :phase, :currency_symbol] + descriptions
-      valid_attributes += IDEA_ATTRIBUTES if Setting['feature.ideas']
-      params.require(:budget).permit(*valid_attributes)
+      descriptions = Budget::Phase::PHASE_KINDS.map{|p| "description_#{p}"}.map(&:to_sym)
+      valid_attributes = [:phase, :currency_symbol] + descriptions
+      valid_attributes += IDEA_ATTRIBUTES
+      params.require(:budget).permit(*valid_attributes, translation_params(Budget))
     end
 
 end

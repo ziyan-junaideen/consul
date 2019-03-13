@@ -1,8 +1,10 @@
 class Admin::BudgetPhasesController < Admin::BaseController
+  include Translatable
 
   before_action :load_phase, only: [:edit, :update]
 
-  def edit; end
+  def edit
+  end
 
   def update
     if @phase.update(budget_phase_params)
@@ -21,7 +23,7 @@ class Admin::BudgetPhasesController < Admin::BaseController
 
   def budget_phase_params
     valid_attributes = [:starts_at, :ends_at, :summary, :description, :enabled, :title]
-    params.require(:budget_phase).permit(*valid_attributes)
+    params.require(:budget_phase).permit(*valid_attributes, translation_params(Budget::Phase))
   end
 
 end

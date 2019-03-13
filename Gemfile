@@ -58,6 +58,7 @@ gem 'globalize', '~> 5.0.0'
 gem 'globalize-accessors', '~> 0.2.1'
 gem 'wannabe_bool'
 gem 'recaptcha'
+gem 'recipient_interceptor', '~> 0.2.0'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-leaflet'

@@ -1,6 +1,6 @@
 class Budget
   class Investment < ActiveRecord::Base
-    SORTING_OPTIONS = %w(id title supports).freeze
+    SORTING_OPTIONS = {id: "id", title: "title", supports: "cached_votes_up"}.freeze
 
     include Rails.application.routes.url_helpers
     include Measurable
@@ -25,6 +25,7 @@ class Budget
     include Filterable
     include Flaggable
     include Milestoneable
+    include Randomizable
 
     belongs_to :author, -> { with_hidden }, class_name: 'User', foreign_key: 'author_id'
     accepts_nested_attributes_for :author, reject_if: :all_blank
@@ -59,7 +60,6 @@ class Budget
     scope :sort_by_confidence_score, -> { reorder(confidence_score: :desc, id: :desc) }
     scope :sort_by_ballots,          -> { reorder(ballot_lines_count: :desc, id: :desc) }
     scope :sort_by_price,            -> { reorder(price: :desc, confidence_score: :desc, id: :desc) }
-    scope :sort_by_random,           ->(seed) { reorder("budget_investments.id % #{seed.to_f.nonzero? ? seed.to_f : 1}, budget_investments.id") }
 
     scope :sort_by_id, -> { order("id DESC") }
     scope :sort_by_title, -> { order("title ASC") }
@@ -67,7 +67,8 @@ class Budget
 
     scope :valuation_open,              -> { where(valuation_finished: false) }
     scope :without_admin,               -> { valuation_open.where(administrator_id: nil) }
-    scope :without_valuator,            -> { valuation_open.where(valuator_assignments_count: 0) }
+    scope :without_valuator_group,      -> { where(valuator_group_assignments_count: 0) }
+    scope :without_valuator,            -> { valuation_open.without_valuator_group.where(valuator_assignments_count: 0) }
     scope :under_valuation,             -> { valuation_open.valuating.where("administrator_id IS NOT ?", nil) }
     scope :managed,                     -> { valuation_open.where(valuator_assignments_count: 0).where("administrator_id IS NOT ?", nil) }
     scope :valuating,                   -> { valuation_open.where("valuator_assignments_count > 0 OR valuator_group_assignments_count > 0" ) }
@@ -115,7 +116,7 @@ class Budget
     scope :without_related_contents, -> { where.not(id: RelatedContent.where(parent_relationable_type: 'Budget::Investment', parent_relationable_id: ids).map(&:parent_relationable_id)) }
 
     before_save :calculate_confidence_score
-    after_save :recalculate_heading_winners if :incompatible_changed?
+    after_save :recalculate_heading_winners
     before_validation :set_responsible_name
     before_validation :set_denormalized_ids
 
@@ -165,9 +166,15 @@ class Budget
       results.where("budget_investments.id IN (?)", ids)
     end
 
-    def self.order_filter(sorting_param)
-      if sorting_param.present? && SORTING_OPTIONS.include?(sorting_param)
-        send("sort_by_#{sorting_param}")
+    def self.order_filter(params)
+      sorting_key = params[:sort_by]&.downcase&.to_sym
+      allowed_sort_option = SORTING_OPTIONS[sorting_key]
+
+      if allowed_sort_option.present?
+        direction = params[:direction] == "desc" ? "desc" : "asc"
+        order("#{allowed_sort_option} #{direction}")
+      else
+        order(cached_votes_up: :desc).order(id: :desc)
       end
     end
 
@@ -281,7 +288,7 @@ class Budget
     end
 
     def can_vote_in_another_heading?(user)
-      headings_voted_by_user(user).count < group.max_votable_headings
+      user.headings_voted_within_group(group).count < group.max_votable_headings
     end
 
     def headings_voted_by_user(user)
@@ -289,7 +296,7 @@ class Budget
     end
 
     def voted_in?(heading, user)
-      headings_voted_by_user(user).include?(heading.id)
+      user.headings_voted_within_group(group).where(id: heading.id).exists?
     end
 
     def ballotable_by?(user)
@@ -366,6 +373,14 @@ class Budget
 
     def assigned_valuation_groups
       self.valuator_groups.collect(&:name).compact.join(', ').presence
+    end
+
+    def valuation_tag_list
+      tag_list_on(:valuation)
+    end
+
+    def valuation_tag_list=(tags)
+      set_tag_list_on(:valuation, tags)
     end
 
     def self.with_milestone_status_id(status_id)
