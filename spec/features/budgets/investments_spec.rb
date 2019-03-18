@@ -755,7 +755,7 @@ feature 'Budget Investments' do
       voted_investments.each do |investment|
         if page.has_link?(investment.title)
           within("#budget_investment_#{investment.id}") do
-            expect(page).to have_content "You have already supported this investment"
+            expect(page).to have_content "You have already supported this project"
           end
         end
       end
@@ -1113,7 +1113,7 @@ feature 'Budget Investments' do
 
     expect(page).to have_content("Unfeasibility explanation")
     expect(page).to have_content("Local government is not competent in this matter")
-    expect(page).to have_content("This investment project has been marked as not feasible and will not go to balloting phase")
+    expect(page).to have_content("This project has been marked as not feasible and will not go to balloting phase")
   end
 
   scenario "Show (selected budget investment)" do
@@ -1130,7 +1130,7 @@ feature 'Budget Investments' do
 
     visit budget_investment_path(budget_id: budget.id, id: investment.id)
 
-    expect(page).to have_content("This investment project has been selected for balloting phase")
+    expect(page).to have_content("This project has been selected for balloting phase")
   end
 
   scenario "Show (winner budget investment) only if budget is finished" do
@@ -1155,7 +1155,7 @@ feature 'Budget Investments' do
 
     visit budget_investment_path(budget_id: budget.id, id: investment.id)
 
-    expect(page).to have_content("Winning investment project")
+    expect(page).to have_content("Winning project")
   end
 
   scenario "Show (not selected budget investment)" do
@@ -1172,7 +1172,7 @@ feature 'Budget Investments' do
 
     visit budget_investment_path(budget_id: budget.id, id: investment.id)
 
-    expect(page).to have_content("This investment project has not been selected for balloting phase")
+    expect(page).to have_content("This project has not been selected for balloting phase")
   end
 
   scenario "Show title (no message)" do
@@ -1189,7 +1189,7 @@ feature 'Budget Investments' do
     visit budget_investment_path(budget_id: budget.id, id: investment.id)
 
     within("aside") do
-      expect(page).to have_content("Investment project")
+      expect(page).to have_content("Project")
       expect(page).to have_css(".label-budget-investment")
     end
   end
@@ -1453,6 +1453,7 @@ feature 'Budget Investments' do
       login_as(user)
       visit root_path
 
+
       first(:link, "Participatory budgeting").click
 
       click_link "More hospitals €666,666"
@@ -1612,7 +1613,7 @@ feature 'Budget Investments' do
 
       visit budget_investments_path(budget, heading_id: heading.id)
 
-      expect(page).to have_link('Check my ballot')
+      expect(page).to have_link('Check Ballot')
       expect(page).to have_css('#progress_bar')
       within('#sidebar') do
         expect(page).to have_content('My ballot')

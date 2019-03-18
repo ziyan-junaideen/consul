@@ -115,8 +115,8 @@
             <% show_links = show_links_to_budget_investments(current_budget) %>
             <% if show_links %>
               <li>
-                <%= link_to budget_url(current_budget) do %>
-                  <small><%= t("budgets.index.investment_proyects") %></small>
+                <%= link_to budget_path(current_budget) do %>
+                  <%= t("budgets.index.investment_proyects") %>
                 <% end %>
               </li>
             <% end %>
@@ -128,29 +128,36 @@
             <% end %>
 
             <% if show_links %>
-              <%= link_to budget_investments_path(budget_id: current_budget.id, filter: 'unselected') do %>
-                <small><%= t("budgets.index.not_selected_investment_proyects") %></small>
-              <% end %><br/>
+              <li>
+                <%= link_to budget_investments_path(budget_id: current_budget.id, filter: 'unselected') do %>
+                  <small><%= t("budgets.index.not_selected_investment_proyects") %></small>
+                <% end %>
+              </li>
             <% end %>
 
             <% if show_links_to_budget_ideas?(current_budget) %>
-              <%= link_to budget_ideas_path(budget_id: current_budget.id) do %>
-                <small><%= t("budgets.index.ideas") %></small>
-              <% end %>
-              <br/>
+              <li>
+                <%= link_to budget_ideas_path(budget_id: current_budget.id) do %>
+                  <small><%= t("budgets.index.ideas") %></small>
+                <% end %>
+              </li>
 
-              <%= link_to budget_ideas_path(budget_id: current_budget, scope: 'with_related_contents') do %>
-                <small><%= t("budgets.index.ideas_with_related_content") %></small>
-              <% end %>
-              <br/>
+              <li>
+                <%= link_to budget_ideas_path(budget_id: current_budget, scope: 'with_related_contents') do %>
+                  <small><%= t("budgets.index.ideas_with_related_content") %></small>
+                <% end %>
+              </li>
 
-              <%= link_to budget_ideas_path(budget_id: current_budget, scope: 'without_related_contents') do %>
-                <small><%= t("budgets.index.ideas_without_related_content") %></small>
-              <% end %>
-            </li>
+              <li>
+                <%= link_to budget_ideas_path(budget_id: current_budget, scope: 'without_related_contents') do %>
+                  <small><%= t("budgets.index.ideas_without_related_content") %></small>
+                <% end %>
+              </li>
+            <% end %>
+
             <% if show_links %>
               <li>
-                <%= link_to budget_url(current_budget, filter: "unselected") do %>
+                <%= link_to budget_path(current_budget, filter: "unselected") do %>
                   <small><%= t("budgets.index.not_selected_investment_proyects") %></small>
                 <% end %>
               </li>
@@ -238,5 +245,5 @@
         <p><%= t("budgets.index.section_footer.description") %></p>
       </div>
     </div>
-  <% end %>
-</div>
+  </div>
+<% end %>

@@ -128,8 +128,6 @@ module BudgetsHelper
       investments = current_budget.investments.idea.published
     elsif current_budget.accepting?
       investments = current_budget.investments.idea.published.to_a + current_budget.investments.project.to_a
-    elsif current_budget.valuating_or_later?
-      investments = current_budget.investments.project.selected
     elsif current_budget.publishing_prices_or_later? && current_budget.investments.selected.any? # New
       investments = current_budget.investments.selected
     else

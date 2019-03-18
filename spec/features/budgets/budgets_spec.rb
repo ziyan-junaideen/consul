@@ -118,14 +118,14 @@ feature 'Budgets' do
         expect(page).not_to have_link "#{heading.name} €1,000,000"
         expect(page).to have_content "#{heading.name} €1,000,000"
 
-        expect(page).to have_link "List of all investment projects",
-                                   href: budget_url(budget)
+        expect(page).to have_link "List of all projects",
+                                   href: budget_path(budget)
 
-        expect(page).to have_link "List of all unfeasible investment projects",
-                                   href: budget_url(budget, filter: "unfeasible")
+        expect(page).to have_link "List of all unfeasible projects",
+                                   href: budget_investments_path(budget, filter: "unfeasible")
 
-        expect(page).to have_link "List of all investment projects not selected for balloting",
-                                   href: budget_url(budget, filter: "unselected")
+        expect(page).to have_link "List of all projects not selected for balloting",
+                                   href: budget_path(budget, filter: "unselected")
 
         expect(page).to have_css("div.map")
       end
@@ -550,13 +550,13 @@ feature 'Budgets' do
 
         visit budget_path(budget)
 
-        expect(page).to have_content "To create a new budget investment verify your account."
+        expect(page).to have_content "To create a new project verify your account"
       end
 
       scenario "user not logged in" do
         visit budget_path(budget)
 
-        expect(page).to have_content "To create a new budget investment you must sign in or sign up"
+        expect(page).to have_content "To create a new project you must sign in or sign up"
       end
 
     end

@@ -254,7 +254,7 @@ feature "Ballots" do
         click_link "Districts"
         click_link "District 2"
 
-        expect(page).to have_content("You have active votes in another heading: District 1")
+        expect(page).to have_content("You have active votes in District 1, so you cannot currently vote for projects in this district")
       end
     end
 
@@ -315,7 +315,7 @@ feature "Ballots" do
       expect(page).not_to have_css("#budget_heading_#{california.id}.is-active")
     end
 
-    scenario "View another heading" do
+    scenario "View another heading", :js do
       investment = create(:budget_investment, :selected, heading: california)
 
       ballot = create(:budget_ballot, user: user, budget: budget)
@@ -324,7 +324,7 @@ feature "Ballots" do
       visit budget_investments_path(budget, heading_id: new_york.id)
 
       expect(page).not_to have_css "#progressbar"
-      expect(page).to have_content "You have active votes in another heading: California"
+      expect(page).to have_content "You have active votes in California, so you cannot currently vote for projects in this district. If your change your mind you can remove your votes in check my ballot and start again"
       expect(page).to have_link california.name, href: budget_investments_path(budget, heading_id: california.id)
     end
 
@@ -337,7 +337,7 @@ feature "Ballots" do
       visit budget_path(budget)
       click_link group.name
       # No need to click on the heading name
-      expect(page).to have_content("Investment projects with scope: #{heading.name}")
+      expect(page).to have_content("Projects with scope: #{heading.name}")
       expect(page).to have_current_path(budget_investments_path(budget), ignore_query: true)
     end
 
@@ -454,7 +454,7 @@ feature "Ballots" do
     visit budget_investments_path(budget, heading_id: new_york.id)
     add_to_ballot(investment)
 
-    click_link "Check my ballot"
+    click_link "Check Ballot"
 
     expect(page).to have_content("You have voted one investment")
 
@@ -547,7 +547,7 @@ feature "Ballots" do
 
       within("#budget_investment_#{bi2.id}") do
         find("div.ballot").hover
-        expect(page).to have_content("already voted a different heading")
+        expect(page).to have_content("You have active votes in")
         expect(page).to have_selector(".in-favor a", visible: false)
       end
     end

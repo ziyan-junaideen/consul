@@ -37,7 +37,7 @@ feature "Admin budget groups" do
     scenario "Displaying no groups for budget" do
       visit admin_budget_groups_path(budget)
 
-      expect(page).to have_content "There are no groups."
+      expect(page).to have_content "One or more of your groups have no headings so people can’t vote on them"
     end
 
     scenario "Displaying groups" do
