@@ -48,6 +48,17 @@ App.Forms =
           $("#globalize_locales").show()
 
     $("[name='progress_bar[kind]']").change()
+    
+  toggleSelect: ->
+    $('.js-toggle-select').on('change', ->
+      dropdown = $(this)
+      target = $(dropdown.data('toggle-selector'))
+
+      if dropdown.val() in dropdown.data('hide-on').split(',')
+        target.addClass('hide')
+      else
+        target.removeClass('hide')
+    )
 
   initialize: ->
     App.Forms.disableEnter()
@@ -55,4 +66,5 @@ App.Forms =
     App.Forms.toggleLink()
     App.Forms.synchronizeInputs()
     App.Forms.hideOrShowFieldsAfterSelection()
+    App.Forms.toggleSelect()
     false

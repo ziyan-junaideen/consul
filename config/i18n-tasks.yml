@@ -215,6 +215,7 @@ ignore_unused:
   - devise_views.users.registrations.new.organization_signup_link
   - budgets.index.map
 
+  - 'budgets.ballots.show.remaining.*'
 # - '{devise,kaminari,will_paginate}.*'
 # - 'simple_form.{yes,no}'
 # - 'simple_form.{placeholders,hints,labels}.*'
