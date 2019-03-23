@@ -40,7 +40,7 @@
         <% end %>
 
         <% if Setting['feature.ideas'] %>
-          <li <%= "class=is-active" if menu_create_investments? %>>
+          <li <%= "class=is-active" if menu_create_ideas? %>>
             <%= link_to t("management.menu.create_budget_idea"), create_ideas_management_budgets_path %>
           </li>
         <% end %>
