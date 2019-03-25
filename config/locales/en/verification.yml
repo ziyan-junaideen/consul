@@ -57,6 +57,7 @@ en:
           passport: Passport
           residence_card: Residence card
           spanish_id: DNI
+          username: Username
         document_type_label: Document type
         error_not_allowed_age: You don't have the required age to participate
         error_not_allowed_postal_code: In order to be verified, you must be registered.
