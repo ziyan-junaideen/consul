@@ -9,8 +9,17 @@ class Management::DocumentVerificationsController < Management::BaseController
 
   def check
     @document_verification = Verification::Management::Document.new(document_verification_params)
+    if params[:document_verification][:document_type] == 'username'
+      user = User.find_by_username(params[:document_verification][:document_number])
 
-    if @document_verification.valid?
+      if user
+        flash[:notice] = t('management.document_verifications.managed_user_by_username')
+        redirect_to action: :index
+      else
+        flash.now[:alert] = t('management.document_verifications.managed_user_by_username_not_found')
+        render :index
+      end
+    elsif @document_verification.valid?
       if @document_verification.verified?
         render :verified
       elsif @document_verification.user?
@@ -45,6 +54,7 @@ class Management::DocumentVerificationsController < Management::BaseController
 
     def clean_document_number
       return if params[:document_verification][:document_number].blank?
+      return if params[:document_verification][:document_type] == 'username'
       params[:document_verification][:document_number] = params[:document_verification][:document_number].gsub(/[^a-z0-9]+/i, "").upcase
     end
 
