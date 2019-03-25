@@ -2,6 +2,8 @@ module UsersHelper
 
   def humanize_document_type(document_type)
     case document_type
+    when "0"
+      t "verification.residence.new.document_type.username"
     when "1"
       t "verification.residence.new.document_type.spanish_id"
     when "2"
