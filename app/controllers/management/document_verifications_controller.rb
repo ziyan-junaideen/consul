@@ -16,7 +16,7 @@ class Management::DocumentVerificationsController < Management::BaseController
         flash[:notice] = t('management.document_verifications.managed_user_by_username')
         redirect_to action: :index
       else
-        flash.now[:alert] = t('management.document_verifications.managed_user_by_username_not_found')
+        flash.now[:alert] = t('management.document_verifications.managed_user_by_username_not_found', username: params[:document_verification][:document_number])
         render :index
       end
     elsif @document_verification.valid?

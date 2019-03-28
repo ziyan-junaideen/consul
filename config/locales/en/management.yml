@@ -47,7 +47,7 @@ en:
       verify: Verify
       not_selected: Managed user not selected.<br/>Please select a user <a href="%{link}">here</a>.
       managed_user_by_username: Managed user set by username
-      managed_user_by_username_not_found: User with usename %{username} not found!
+      managed_user_by_username_not_found: User with usename "%{username}" not found!
     email_label: Email
     date_of_birth: Date of birth
     email_verifications:
