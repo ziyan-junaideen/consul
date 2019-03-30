@@ -18,6 +18,7 @@ class Budget
       before_validation :set_denormalized_ids
 
       def check_sufficient_funds
+        return true if group.try(:limit_voting_on_budget) == false
         errors.add(:money, "insufficient funds") if ballot.amount_available(investment.heading) < investment.price.to_i
       end
 
