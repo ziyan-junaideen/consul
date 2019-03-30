@@ -132,7 +132,7 @@ en:
         image: "Proposal descriptive image"
         image_title: "Image title"
       budget/group:
-        limit_voting_on_budget: Limit ability to vote on heading budget
+        limit_voting_on_budget: Voter can't exceed heading budget
       milestone:
         status_id: "Current status (optional)"
         title: "Title"
