@@ -10,13 +10,11 @@
             count: @ballot.investments.count) %>
       </h2>
       <p>
-        <small>
-          <% if @budget.groups.approval_voting.any? %>
-            <%= t("budgets.ballots.show.approval_voted_info_html") %>
-          <% else %>
-            <%= t("budgets.ballots.show.voted_info_html") %>
-          <% end %>
-        </small>
+        <% if @budget.groups.approval_voting.any? %>
+          <%= t("budgets.ballots.show.approval_voted_info_html") %>
+        <% else %>
+          <%= t("budgets.ballots.show.voted_info_html") %>
+        <% end %>
       </p>
       <p>Finished voting? <a href="https://docs.google.com/forms/d/e/1FAIpQLScP5ES7Chrh-m6PgU-ToR-_SnKW5jlOcNAbsueGZut_J1vQFw/viewform" target="_blank">Take our quick survey!</a></p>
     </div>
