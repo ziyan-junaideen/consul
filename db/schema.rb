@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190215121646) do
+ActiveRecord::Schema.define(version: 20190330055614) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -180,6 +180,7 @@ ActiveRecord::Schema.define(version: 20190215121646) do
     t.integer "max_votable_headings",                default: 1
     t.string  "voting_style",                        default: "knapsack"
     t.integer "number_votes_per_heading",            default: 1
+    t.boolean "limit_voting_on_budget",              default: true
   end
 
   add_index "budget_groups", ["budget_id"], name: "index_budget_groups_on_budget_id", using: :btree
