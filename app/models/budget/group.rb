@@ -18,6 +18,7 @@ class Budget
     validates :number_votes_per_heading, :numericality => { greater_than_or_equal_to: 1 }
 
     scope :sort_by_name, -> { includes(:translations).order(:name) }
+    scope :approval_voting, -> { where(voting_style: 'approval') }
 
     def single_heading_group?
       headings.count == 1

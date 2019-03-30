@@ -13,6 +13,7 @@ es:
         voted_html:
           one: "Has votado <span>un</span> proyecto."
           other: "Has votado <span>%{count}</span> proyectos."
+        approval_voted_info_html: Puedes cambiar tus votos en cualquier momento hasta el cierre de esta fase.
         voted_info_html: "Puedes cambiar tus votos en cualquier momento hasta el cierre de esta fase.<br> No hace falta que gastes todo el dinero disponible."
         zero: Todavía no has votado ningún proyecto de gasto.
       reasons_for_not_balloting:
