@@ -60,7 +60,7 @@ class Admin::BudgetGroupsController < Admin::BaseController
     def budget_group_params
       valid_attributes = [
         :max_votable_headings,
-        :max_votable_headings,
+        :number_votes_per_heading,
         :voting_style,
         :limit_voting_on_budget
       ]
