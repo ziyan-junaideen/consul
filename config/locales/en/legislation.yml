@@ -67,8 +67,8 @@ en:
         no_past_processes: There aren't past processes
         section_header:
           icon_alt: Collaborative legislation icon
-          title: Collaborative legislation
-          help: Help about collaborative legislation
+          title: Decide
+          help: ''
         section_footer:
           title: Help about collaborative legislation
           description: Participate in the debates and processes prior to the approval of a ordinance or a municipal action. Your opinion will be considered by the City Council.
