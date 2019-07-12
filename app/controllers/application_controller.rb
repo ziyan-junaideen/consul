@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
 
   layout :set_layout
   respond_to :html
-  helper_method :current_budget
+  helper_method :current_budget, :current_budget_phase
 
   private
 
@@ -122,5 +122,9 @@ class ApplicationController < ActionController::Base
 
     def set_fallbacks_to_all_available_locales
       Globalize.set_fallbacks_to_all_available_locales
+    end
+    
+    def current_budget_phase
+      current_budget.phases.send current_budget.phase
     end
 end

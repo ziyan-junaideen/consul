@@ -9,6 +9,8 @@ class Admin::BudgetsController < Admin::BaseController
   before_action :load_budget, except: [:index, :new, :create]
   load_and_authorize_resource
 
+  IDEA_ATTRIBUTES = %i[post_idea_uri commitee_list_uri volunteer_form_uri delgate_form_uri guest_ideas budget_delegate_only].freeze
+
   def index
     @budgets = Budget.send(@current_filter).order(created_at: :desc).page(params[:page])
   end
@@ -42,7 +44,8 @@ class Admin::BudgetsController < Admin::BaseController
   def create
     @budget = Budget.new(budget_params)
     if @budget.save
-      redirect_to admin_budget_path(@budget), notice: t("admin.budgets.create.notice")
+      link = view_context.link_to t("admin.budgets.create.notice_link_text"), new_admin_budget_group_path(@budget)
+      redirect_to admin_budget_path(@budget), notice: t("admin.budgets.create.notice", link: link)
     else
       render :new
     end
@@ -63,12 +66,14 @@ class Admin::BudgetsController < Admin::BaseController
 
     def budget_params
       descriptions = Budget::Phase::PHASE_KINDS.map{|p| "description_#{p}"}.map(&:to_sym)
-      valid_attributes = [:phase, :currency_symbol] + descriptions
+      valid_attributes = [:phase, :currency_symbol] + descriptions + IDEA_ATTRIBUTES
       params.require(:budget).permit(*valid_attributes, *report_attributes, translation_params(Budget))
     end
 
     def load_budget
       @budget = Budget.find_by_slug_or_id! params[:id]
+      valid_attributes += IDEA_ATTRIBUTES
+      params.require(:budget).permit(*valid_attributes, translation_params(Budget))
     end
 
 end

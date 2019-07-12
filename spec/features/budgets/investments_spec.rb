@@ -191,7 +191,7 @@ describe "Budget Investments" do
         fill_in "Write the text", with: "Schwifty"
         click_button "Filter"
 
-        expect(page).to have_content("There are 2 investments")
+        expect(page).to have_content("There are 2 projects")
 
         within("#budget-investments") do
 
@@ -203,7 +203,7 @@ describe "Budget Investments" do
 
       context "Search by author type" do
 
-        scenario "Public employee", :js do
+        xscenario "Public employee", :js do
           ana = create :user, official_level: 1
           john = create :user, official_level: 2
 
@@ -226,7 +226,7 @@ describe "Budget Investments" do
           end
         end
 
-        scenario "Municipal Organization", :js do
+        xscenario "Municipal Organization", :js do
           ana = create :user, official_level: 2
           john = create :user, official_level: 3
 
@@ -249,7 +249,7 @@ describe "Budget Investments" do
           end
         end
 
-        scenario "General director", :js do
+        xscenario "General director", :js do # Search by official removed
           ana = create :user, official_level: 3
           john = create :user, official_level: 4
 
@@ -263,7 +263,7 @@ describe "Budget Investments" do
           select Setting["official_level_3_name"], from: "advanced_search_official_level"
           click_button "Filter"
 
-          expect(page).to have_content("There are 2 investments")
+          expect(page).to have_content("There are 2 projects")
 
           within("#budget-investments") do
             expect(page).to have_content(bdgt_invest1.title)
@@ -272,7 +272,7 @@ describe "Budget Investments" do
           end
         end
 
-        scenario "City councillor", :js do
+        xscenario "City councillor", :js do
           ana = create :user, official_level: 4
           john = create :user, official_level: 5
 
@@ -295,7 +295,7 @@ describe "Budget Investments" do
           end
         end
 
-        scenario "Mayoress", :js do
+        xscenario "Mayoress", :js do
           ana = create :user, official_level: 5
           john = create :user, official_level: 4
 
@@ -335,7 +335,7 @@ describe "Budget Investments" do
             select "Last 24 hours", from: "js-advanced-search-date-min"
             click_button "Filter"
 
-            expect(page).to have_content("There are 2 investments")
+            expect(page).to have_content("There are 2 projects")
 
             within("#budget-investments") do
               expect(page).to have_content(bdgt_invest1.title)
@@ -355,7 +355,7 @@ describe "Budget Investments" do
             select "Last week", from: "js-advanced-search-date-min"
             click_button "Filter"
 
-            expect(page).to have_content("There are 2 investments")
+            expect(page).to have_content("There are 2 projects")
 
             within("#budget-investments") do
               expect(page).to have_content(bdgt_invest1.title)
@@ -375,7 +375,7 @@ describe "Budget Investments" do
             select "Last month", from: "js-advanced-search-date-min"
             click_button "Filter"
 
-            expect(page).to have_content("There are 2 investments")
+            expect(page).to have_content("There are 2 projects")
 
             within("#budget-investments") do
               expect(page).to have_content(bdgt_invest1.title)
@@ -395,7 +395,7 @@ describe "Budget Investments" do
             select "Last year", from: "js-advanced-search-date-min"
             click_button "Filter"
 
-            expect(page).to have_content("There are 2 investments")
+            expect(page).to have_content("There are 2 projects")
 
             within("#budget-investments") do
               expect(page).to have_content(bdgt_invest1.title)
@@ -419,7 +419,7 @@ describe "Budget Investments" do
           fill_in "advanced_search_date_max", with: 1.day.ago
           click_button "Filter"
 
-          expect(page).to have_content("There are 2 investments")
+          expect(page).to have_content("There are 2 projects")
 
           within("#budget-investments") do
             expect(page).to have_content(bdgt_invest1.title)
@@ -441,7 +441,7 @@ describe "Budget Investments" do
           fill_in "advanced_search_date_max", with: "wrong date"
           click_button "Filter"
 
-          expect(page).to have_content("There are 3 investments")
+          expect(page).to have_content("There are 3 projects")
 
           within("#budget-investments") do
             expect(page).to have_content(bdgt_invest1.title)
@@ -462,12 +462,12 @@ describe "Budget Investments" do
 
           click_link "Advanced search"
           fill_in "Write the text", with: "Schwifty"
-          select Setting["official_level_1_name"], from: "advanced_search_official_level"
+          # select Setting["official_level_1_name"], from: "advanced_search_official_level"
           select "Last 24 hours", from: "js-advanced-search-date-min"
 
           click_button "Filter"
 
-          expect(page).to have_content("There is 1 investment")
+          expect(page).to have_content("There is 1 project")
 
           within("#budget-investments") do
             expect(page).to have_content(bdgt_invest1.title)
@@ -479,16 +479,16 @@ describe "Budget Investments" do
           click_link "Advanced search"
 
           fill_in "Write the text", with: "Schwifty"
-          select Setting["official_level_1_name"], from: "advanced_search_official_level"
+          # select Setting["official_level_1_name"], from: "advanced_search_official_level"
           select "Last 24 hours", from: "js-advanced-search-date-min"
 
           click_button "Filter"
 
-          expect(page).to have_content("investments cannot be found")
+          expect(page).to have_content("projects cannot be found")
 
           within "#js-advanced-search" do
             expect(page).to have_selector("input[name='search'][value='Schwifty']")
-            expect(page).to have_select("advanced_search[official_level]", selected: Setting["official_level_1_name"])
+            # expect(page).to have_select("advanced_search[official_level]", selected: Setting["official_level_1_name"])
             expect(page).to have_select("advanced_search[date_min]", selected: "Last 24 hours")
           end
         end
@@ -502,7 +502,7 @@ describe "Budget Investments" do
           fill_in "advanced_search_date_max", with: 1.day.ago.strftime("%d/%m/%Y")
           click_button "Filter"
 
-          expect(page).to have_content("investments cannot be found")
+          expect(page).to have_content("projects cannot be found")
 
           within "#js-advanced-search" do
             expect(page).to have_select("advanced_search[date_min]", selected: "Customized")
@@ -803,7 +803,7 @@ describe "Budget Investments" do
       voted_investments.each do |investment|
         if page.has_link?(investment.title)
           within("#budget_investment_#{investment.id}") do
-            expect(page).to have_content "You have already supported this investment"
+            expect(page).to have_content "You have already supported this project"
           end
         end
       end
@@ -865,7 +865,7 @@ describe "Budget Investments" do
       fill_in "budget_investment_description", with: "This is the description"
       check   "budget_investment_terms_of_service"
 
-      click_button "Create Investment"
+      click_button "Create Project"
 
       expect(page.status_code).to eq(200)
       expect(page.html).to be_empty
@@ -883,7 +883,7 @@ describe "Budget Investments" do
       fill_in "budget_investment_description", with: "This is the description"
       check   "budget_investment_terms_of_service"
 
-      click_button "Create Investment"
+      click_button "Create Project"
 
       expect(page).to have_content "Sorry, that was too quick! Please resubmit"
       expect(page).to have_current_path(new_budget_investment_path(budget))
@@ -902,7 +902,7 @@ describe "Budget Investments" do
       fill_in "budget_investment_tag_list", with: "Towers"
       check   "budget_investment_terms_of_service"
 
-      click_button "Create Investment"
+      click_button 'Create Project'
 
       expect(page).to have_content "Investment created successfully"
       expect(page).to have_content "Build a skyscraper"
@@ -920,7 +920,7 @@ describe "Budget Investments" do
       login_as(author)
 
       visit new_budget_investment_path(budget)
-      click_button "Create Investment"
+      click_button 'Create Project'
       expect(page).to have_content error_message
     end
 
@@ -1048,7 +1048,7 @@ describe "Budget Investments" do
       end
 
       scenario "Price & explanation isn't shown when Budget is not on published prices phase" do
-        (Budget::Phase::PHASE_KINDS - Budget::Phase::PUBLISHED_PRICES_PHASES).each do |phase|
+        (Budget::Phase.phase_kinds - Budget::Phase::PUBLISHED_PRICES_PHASES).each do |phase|
           budget.update(phase: phase)
           visit budget_investment_path(budget, id: investment.id)
 
@@ -1070,7 +1070,7 @@ describe "Budget Investments" do
       end
 
       scenario "Price & explanation isn't shown for any Budget's phase" do
-        Budget::Phase::PHASE_KINDS.each do |phase|
+        Budget::Phase.phase_kinds.each do |phase|
           budget.update(phase: phase)
           visit budget_investment_path(budget, id: investment.id)
 
@@ -1177,9 +1177,8 @@ describe "Budget Investments" do
     visit budget_investment_path(budget, id: investment_2.id)
 
     expect(page).to have_content("Unfeasibility explanation")
-    expect(page).to have_content("The unfeasible explanation")
-    expect(page).to have_content("This investment project has been marked as not feasible "\
-                                 "and will not go to balloting phase")
+    expect(page).to have_content("Local government is not competent in this matter")
+    expect(page).to have_content("This project has been marked as not feasible and will not go to balloting phase")
   end
 
   scenario "Show (selected budget investment)" do
@@ -1196,7 +1195,7 @@ describe "Budget Investments" do
 
     visit budget_investment_path(budget, id: investment.id)
 
-    expect(page).to have_content("This investment project has been selected for balloting phase")
+    expect(page).to have_content("This project has been selected for balloting phase")
   end
 
   scenario "Show (winner budget investment) only if budget is finished" do
@@ -1221,7 +1220,7 @@ describe "Budget Investments" do
 
     visit budget_investment_path(budget, id: investment.id)
 
-    expect(page).to have_content("Winning investment project")
+    expect(page).to have_content("Winning project")
   end
 
   scenario "Show (not selected budget investment)" do
@@ -1238,7 +1237,7 @@ describe "Budget Investments" do
 
     visit budget_investment_path(budget, id: investment.id)
 
-    expect(page).to have_content("This investment project has not been selected for balloting phase")
+    expect(page).to have_content("This project has not been selected for balloting phase")
   end
 
   scenario "Show title (no message)" do
@@ -1255,7 +1254,7 @@ describe "Budget Investments" do
     visit budget_investment_path(budget, id: investment.id)
 
     within("aside") do
-      expect(page).to have_content("Investment project")
+      expect(page).to have_content("Project")
       expect(page).to have_css(".label-budget-investment")
     end
   end
@@ -1305,7 +1304,7 @@ describe "Budget Investments" do
                   "new_budget_investment_path",
                   { "budget_id": "budget_id" },
                   "imageable_fill_new_valid_budget_investment",
-                  "Create Investment",
+                  "Create Project",
                   "Budget Investment created successfully."
 
   it_behaves_like "documentable", "budget_investment", "budget_investment_path", { "budget_id": "budget_id", "id": "id" }
@@ -1316,7 +1315,7 @@ describe "Budget Investments" do
                   "new_budget_investment_path",
                   { "budget_id": "budget_id" },
                   "documentable_fill_new_valid_budget_investment",
-                  "Create Investment",
+                  "Create Project",
                   "Budget Investment created successfully."
 
   it_behaves_like "mappable",
@@ -1518,6 +1517,7 @@ describe "Budget Investments" do
 
       login_as(user)
       visit root_path
+
 
       first(:link, "Participatory budgeting").click
 

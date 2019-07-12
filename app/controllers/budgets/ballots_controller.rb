@@ -9,6 +9,7 @@ module Budgets
     def show
       authorize! :show, @ballot
       session[:ballot_referer] = request.referer
+      @ballot_referer ||= request.referer
       render template: "budgets/ballot/show"
     end
 

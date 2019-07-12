@@ -5,11 +5,14 @@ describe "Users" do
   describe "Show (public page)" do
 
     before do
+      Setting["feature.ideas"] = true
       @user = create(:user)
       1.times {create(:debate, author: @user)}
       2.times {create(:proposal, author: @user)}
       3.times {create(:budget_investment, author: @user)}
       4.times {create(:comment, user: @user)}
+      5.times {create(:budget_investment, :idea, author: @user)}
+      1.times {create(:budget_investment, :idea, author: @user, published: false)}
 
       visit user_path(@user)
     end
@@ -19,6 +22,7 @@ describe "Users" do
       expect(page).to have_content("2 Proposals")
       expect(page).to have_content("3 Investments")
       expect(page).to have_content("4 Comments")
+      expect(page).to have_content("5 Ideas")
     end
 
     scenario "shows only items where user has activity" do
@@ -528,7 +532,7 @@ describe "Users" do
 
         visit user_path(@user, filter: "follows")
 
-        expect(page).to have_link("Investments", href: "#investments")
+        expect(page).to have_link("Projects", href: "#projects")
       end
 
       scenario "Not display budget investment tab when user is not following any budget investment" do
@@ -543,7 +547,7 @@ describe "Users" do
         create(:follow, followable: budget_investment, user: user)
 
         visit user_path(user, filter: "follows")
-        click_link "Investments"
+        click_link "Projects"
 
         expect(page).to have_link budget_investment.title
       end

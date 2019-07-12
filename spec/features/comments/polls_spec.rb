@@ -478,7 +478,8 @@ describe "Commenting polls" do
           expect(page).to have_content "1"
         end
 
-        expect(page).to have_content "2 votes"
+        # Removed vote counts
+        # expect(page).to have_content "2 votes"
       end
     end
 
@@ -496,7 +497,8 @@ describe "Commenting polls" do
           expect(page).to have_content "0"
         end
 
-        expect(page).to have_content "1 vote"
+        # Removed vote counts
+        # expect(page).to have_content "1 vote"
       end
     end
 
@@ -520,7 +522,8 @@ describe "Commenting polls" do
           expect(page).to have_content "1"
         end
 
-        expect(page).to have_content "1 vote"
+        # Removed vote counts
+        # expect(page).to have_content "1 vote"
       end
     end
 
@@ -539,7 +542,8 @@ describe "Commenting polls" do
           expect(page).to have_content "0"
         end
 
-        expect(page).to have_content "1 vote"
+        # Removed vote counts
+        # expect(page).to have_content "1 vote"
       end
     end
   end

@@ -57,6 +57,8 @@ gem "whenever", "~> 0.10.0", require: false
 gem "recipient_interceptor", "~> 0.2.0"
 gem "wkhtmltopdf-binary", "~> 0.12.4"
 gem "wicked_pdf", "~> 1.1.0"
+gem 'wannabe_bool'
+gem "recaptcha"
 
 source "https://rails-assets.org" do
   gem "rails-assets-leaflet"
@@ -75,6 +77,7 @@ group :development, :test do
   gem "puma", "~> 3.12.1"
   gem "spring", "~> 2.0.1"
   gem "spring-commands-rspec", "~> 1.0.4"
+  gem "xray-rails"
 end
 
 group :test do

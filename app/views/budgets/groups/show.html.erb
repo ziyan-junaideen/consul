@@ -33,10 +33,17 @@
           <% slice.each do |heading| %>
             <span id="<%= dom_id(heading) %>"
                   class="<%= css_for_ballot_heading(heading) %>">
-              <%= link_to heading.name,
-                          budget_investments_path(heading_id: heading.id,
-                                                  filter: @current_filter),
-                          data: { no_turbolink: true } %><br>
+              <% if @budget.ideas_posting? %>
+                <%= link_to heading.name,
+                            budget_ideas_path(heading_id: heading.id,
+                                                    filter: @current_filter),
+                            data: { no_turbolink: true } %><br>
+              <% else %>
+                <%= link_to heading.name,
+                            budget_investments_path(heading_id: heading.id,
+                                                    filter: @current_filter),
+                            data: { no_turbolink: true } %><br>
+              <% end %>
             </span>
           <% end %>
         </div>

@@ -2,6 +2,8 @@ class Budget
   class Phase < ApplicationRecord
     PHASE_KINDS = %w(drafting informing accepting reviewing selecting valuating publishing_prices balloting
                 reviewing_ballots finished).freeze
+    IDEA_PHASE_KINDS = %w(drafting informing ideas_posting project_forming accepting reviewing selecting valuating publishing_prices balloting
+                reviewing_ballots finished).freeze
     PUBLISHED_PRICES_PHASES = %w(publishing_prices balloting reviewing_ballots finished).freeze
     SUMMARY_MAX_LENGTH = 1000
     DESCRIPTION_MAX_LENGTH = 2000
@@ -18,7 +20,8 @@ class Budget
     validates_translation :summary, length: { maximum: SUMMARY_MAX_LENGTH }
     validates_translation :description, length: { maximum: DESCRIPTION_MAX_LENGTH }
     validates :budget, presence: true
-    validates :kind, presence: true, uniqueness: { scope: :budget }, inclusion: { in: PHASE_KINDS }
+    # validates :kind, presence: true, uniqueness: { scope: :budget }, inclusion: { in: PHASE_KINDS }
+    validates :kind, presence: true, uniqueness: { scope: :budget }, inclusion: { in: ->(phase) { phase.phase_kinds } }
     validate :invalid_dates_range?
     validate :prev_phase_dates_valid?
     validate :next_phase_dates_valid?
@@ -29,7 +32,7 @@ class Budget
     scope :enabled,           -> { where(enabled: true) }
     scope :published,         -> { enabled.where.not(kind: "drafting") }
 
-    PHASE_KINDS.each do |phase|
+    IDEA_PHASE_KINDS.each do |phase|
       define_singleton_method(phase) { find_by_kind(phase) }
     end
 
@@ -49,6 +52,14 @@ class Budget
 
     def valuating_or_later?
       in_phase_or_later?("valuating")
+    end
+
+    def phase_kinds
+      self.class.phase_kinds
+    end
+
+    def self.phase_kinds
+      Setting['process.ideas'] ? IDEA_PHASE_KINDS : PHASE_KINDS
     end
 
     def publishing_prices_or_later?

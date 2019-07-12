@@ -2,13 +2,16 @@ class Setting < ApplicationRecord
   validates :key, presence: true, uniqueness: true
 
   default_scope { order(id: :asc) }
+  scope :banner_style, -> { where("key ilike ?", "banner-style.%")}
+  scope :banner_img, -> { where("key ilike ?", "banner-img.%")}
+  scope :pb_setting, -> { where("key ilike ?", "pb-%") }
 
   def prefix
     key.split(".").first
   end
 
   def type
-    if %w[feature process proposals map html homepage uploads].include? prefix
+    if %w[feature process proposals map html homepage uploads pb-toggle pb-input].include? prefix
       prefix
     else
       "configuration"
@@ -109,6 +112,7 @@ class Setting < ApplicationRecord
         "process.polls": true,
         "process.budgets": true,
         "process.legislation": true,
+        "process.ideas": true,
         "proposals.successful_proposal_id": nil,
         "proposals.poll_short_title": nil,
         "proposals.poll_description": nil,

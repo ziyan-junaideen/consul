@@ -13,9 +13,10 @@ module Budgets
     before_action :load_budget, except: :json_data
 
     load_and_authorize_resource :budget, except: :json_data
+    before_action :load_project, only: [:new, :create]
+    before_action :load_projects, only: [:index]
     load_and_authorize_resource :investment, through: :budget, class: "Budget::Investment",
                                 except: :json_data
-
     before_action -> { flash.now[:notice] = flash[:notice].html_safe if flash[:html_safe] && flash[:notice] }
     before_action :load_ballot, only: [:index, :show]
     before_action :load_heading, only: [:index, :show]
@@ -83,7 +84,7 @@ module Budgets
       @investment.register_selection(current_user)
       load_investment_votes(@investment)
       respond_to do |format|
-        format.html { redirect_to budget_investments_path(heading_id: @investment.heading.id) }
+        format.html { redirect_to budget_investment_path(@investment.budget, @investment) }
         format.js
       end
     end
@@ -171,6 +172,15 @@ module Budgets
           @budget.investments.apply_filters_and_search(@budget, params, @current_filter)
                              .send("sort_by_#{@current_order}")
         end
+      end
+
+      def load_project
+        options = params[:budget_investment].present? ? investment_params : {}
+        @investment = @budget.investments.project.new(options)
+      end
+
+      def load_projects
+        @investments = @budget.investments.project
       end
 
       def load_map

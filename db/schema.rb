@@ -148,6 +148,13 @@ ActiveRecord::Schema.define(version: 20190607160900) do
     t.index ["heading_id"], name: "index_budget_content_blocks_on_heading_id", using: :btree
   end
 
+  create_table "budget_delegates", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_budget_delegates_on_user_id", using: :btree
+  end
+
   create_table "budget_group_translations", force: :cascade do |t|
     t.integer  "budget_group_id", null: false
     t.string   "locale",          null: false
@@ -259,6 +266,8 @@ ActiveRecord::Schema.define(version: 20190607160900) do
     t.datetime "confirmed_hide_at"
     t.datetime "ignored_flag_at"
     t.integer  "flags_count",                                 default: 0
+    t.integer  "kind",                                        default: 0
+    t.boolean  "published",                                   default: true
     t.index ["administrator_id"], name: "index_budget_investments_on_administrator_id", using: :btree
     t.index ["author_id"], name: "index_budget_investments_on_author_id", using: :btree
     t.index ["community_id"], name: "index_budget_investments_on_community_id", using: :btree
@@ -286,6 +295,7 @@ ActiveRecord::Schema.define(version: 20190607160900) do
     t.datetime "starts_at"
     t.datetime "ends_at"
     t.boolean  "enabled",       default: true
+    t.string   "title"
     t.index ["ends_at"], name: "index_budget_phases_on_ends_at", using: :btree
     t.index ["kind"], name: "index_budget_phases_on_kind", using: :btree
     t.index ["next_phase_id"], name: "index_budget_phases_on_next_phase_id", using: :btree
@@ -340,6 +350,11 @@ ActiveRecord::Schema.define(version: 20190607160900) do
     t.text     "description_drafting"
     t.text     "description_publishing_prices"
     t.text     "description_informing"
+    t.text     "description_ideas_posting"
+    t.text     "description_project_forming"
+    t.string   "post_idea_uri"
+    t.boolean  "guest_ideas",                              default: false
+    t.boolean  "budget_delegate_only",                     default: false
   end
 
   create_table "campaigns", force: :cascade do |t|
@@ -1532,6 +1547,13 @@ ActiveRecord::Schema.define(version: 20190607160900) do
     t.index ["user_id"], name: "index_visits_on_user_id", using: :btree
   end
 
+  create_table "volunteers", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_volunteers_on_user_id", using: :btree
+  end
+
   create_table "votes", force: :cascade do |t|
     t.string   "votable_type"
     t.integer  "votable_id"
@@ -1589,6 +1611,7 @@ ActiveRecord::Schema.define(version: 20190607160900) do
   end
 
   add_foreign_key "administrators", "users"
+  add_foreign_key "budget_delegates", "users"
   add_foreign_key "budget_investments", "communities"
   add_foreign_key "dashboard_administrator_tasks", "users"
   add_foreign_key "dashboard_executed_actions", "dashboard_actions", column: "action_id"
@@ -1630,4 +1653,5 @@ ActiveRecord::Schema.define(version: 20190607160900) do
   add_foreign_key "related_content_scores", "users"
   add_foreign_key "users", "geozones"
   add_foreign_key "valuators", "users"
+  add_foreign_key "volunteers", "users"
 end

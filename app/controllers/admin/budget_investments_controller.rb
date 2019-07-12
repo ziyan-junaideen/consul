@@ -18,7 +18,7 @@ class Admin::BudgetInvestmentsController < Admin::BaseController
       format.html
       format.js
       format.csv do
-        send_data Budget::Investment::Exporter.new(@investments).to_csv,
+        send_data Budget::Investment::Exporters::Project.new(@investments).to_csv,
                   filename: "budget_investments.csv"
       end
     end
@@ -73,7 +73,7 @@ class Admin::BudgetInvestmentsController < Admin::BaseController
     end
 
     def load_investments
-      @investments = Budget::Investment.scoped_filter(params, @current_filter)
+      @investments = Budget::Investment.project.scoped_filter(params, @current_filter)
                                        .order_filter(params)
 
       @investments = @investments.page(params[:page]) unless request.format.csv?
@@ -91,7 +91,7 @@ class Admin::BudgetInvestmentsController < Admin::BaseController
     end
 
     def load_investment
-      @investment = @budget.investments.find(params[:id])
+      @investment = @budget.investments.project.find(params[:id])
     end
 
     def load_admins
@@ -107,7 +107,7 @@ class Admin::BudgetInvestmentsController < Admin::BaseController
     end
 
     def load_tags
-      @tags = Budget::Investment.tags_on(:valuation).order(:name).distinct
+      @tags = Budget::Investment.project.tags_on(:valuation).order(:name).distinct
     end
 
     def load_ballot

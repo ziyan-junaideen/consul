@@ -107,7 +107,7 @@ describe "System Emails" do
 
       visit admin_system_email_view_path("budget_investment_created")
 
-      expect(page).to have_content "Thank you for creating an investment!"
+      expect(page).to have_content "Thank you for creating a project!"
       expect(page).to have_content "John Doe"
       expect(page).to have_content "Cleaner city"
       expect(page).to have_content "Budget for 2019"
@@ -135,8 +135,8 @@ describe "System Emails" do
 
       visit admin_system_email_view_path("budget_investment_unfeasible")
 
-      expect(page).to have_content "Your investment project '#{investment.code}' "
-      expect(page).to have_content "has been marked as unfeasible"
+      expect(page).to have_content "Your project with ID '#{investment.code}' "
+      expect(page).to have_content "has deemed as unfeasible"
     end
 
     scenario "#budget_investment_unselected" do

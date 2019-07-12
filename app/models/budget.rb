@@ -25,7 +25,8 @@ class Budget < ApplicationRecord
   before_validation :assign_model_to_translations
 
   validates_translation :name, presence: true
-  validates :phase, inclusion: { in: Budget::Phase::PHASE_KINDS }
+  # validates :phase, inclusion: { in: Budget::Phase::PHASE_KINDS }
+  validates :phase, inclusion: { in: -> (_) { Budget::Phase.phase_kinds } }
   validates :currency_symbol, presence: true
   validates :slug, presence: true, format: /\A[a-z0-9\-_]+\z/
 
@@ -44,6 +45,8 @@ class Budget < ApplicationRecord
 
   scope :drafting, -> { where(phase: "drafting") }
   scope :informing, -> { where(phase: "informing") }
+  scope :ideas_posting, -> { where(phase: "ideas_posting") }
+  scope :project_forming, -> { where(phase: "project_forming") }
   scope :accepting, -> { where(phase: "accepting") }
   scope :reviewing, -> { where(phase: "reviewing") }
   scope :selecting, -> { where(phase: "selecting") }
@@ -89,6 +92,14 @@ class Budget < ApplicationRecord
 
   def informing?
     phase == "informing"
+  end
+
+  def ideas_posting?
+    phase == "ideas_posting"
+  end
+
+  def project_forming?
+    phase == "project_forming"
   end
 
   def accepting?
@@ -199,14 +210,14 @@ class Budget < ApplicationRecord
 
   def sanitize_descriptions
     s = WYSIWYGSanitizer.new
-    Budget::Phase::PHASE_KINDS.each do |phase|
+    Budget::Phase.phase_kinds.each do |phase|
       sanitized = s.sanitize(send("description_#{phase}"))
       send("description_#{phase}=", sanitized)
     end
   end
 
   def generate_phases
-    Budget::Phase::PHASE_KINDS.each do |phase|
+    Budget::Phase.phase_kinds.each do |phase|
       Budget::Phase.create(
         budget: self,
         kind: phase,

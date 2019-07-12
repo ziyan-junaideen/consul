@@ -45,6 +45,7 @@ en:
       title: User management
       under_age: "You don't have the required age to verify your account."
       verify: Verify
+      not_selected: Managed user not selected.<br/>Please select a user <a href="%{link}">here</a>.
     email_label: Email
     date_of_birth: Date of birth
     email_verifications:
@@ -59,6 +60,7 @@ en:
       introduce_email: "Please introduce the email used on the account:"
       send_email: Send verification email
     menu:
+      create_budget_idea: Create budget idea
       create_proposal: Create proposal
       print_proposals: Print proposals
       support_proposals: Support proposals
@@ -87,6 +89,7 @@ en:
       index:
         title: Support proposals
     budgets:
+      create_new_idea: Create budget idea
       create_new_investment: Create budget investment
       print_investments: Print budget investments
       support_investments: Support budget investments
@@ -97,7 +100,7 @@ en:
     budget_investments:
       alert:
         unverified_user: User is not verified
-      create: Create a budget investment
+      create: Create a project
       filters:
         heading: Concept
         unfeasible: Unfeasible investment
@@ -132,3 +135,5 @@ en:
       create:
         success_html: <strong>%{count} invitations</strong> have been sent.
         title: Send invitations
+    budget_ideas:
+      create: Create a budget idea

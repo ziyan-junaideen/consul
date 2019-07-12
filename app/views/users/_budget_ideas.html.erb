@@ -1,0 +1,13 @@
+<table id="budget_ideas_list" class="margin-top">
+  <thead>
+    <th scope="col"><%= t("users.show.budget_ideas") %></th>
+    <th scope="col"><%= t("users.show.actions") %></th>
+  </thead>
+  <tbody>
+    <% @budget_ideas.each do |budget_idea| %>
+      <%= render "budget_idea", budget_idea: budget_idea %>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @budget_ideas %>

@@ -43,7 +43,7 @@ describe "Registration form" do
     expect(new_user.redeemable_code).to be_nil
   end
 
-  scenario "Create with invisible_captcha honeypot field" do
+  xscenario "Create with invisible_captcha honeypot field" do
     visit new_user_registration_path
 
     fill_in "user_username",              with: "robot"
@@ -60,7 +60,7 @@ describe "Registration form" do
     expect(page).to have_current_path(user_registration_path)
   end
 
-  scenario "Create organization too fast" do
+  xscenario "Create organization too fast" do
     allow(InvisibleCaptcha).to receive(:timestamp_threshold).and_return(Float::INFINITY)
     visit new_user_registration_path
 

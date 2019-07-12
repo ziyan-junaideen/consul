@@ -381,6 +381,8 @@ GEM
     rainbow (3.0.0)
     raindrops (0.19.0)
     rake (12.3.2)
+    recaptcha (5.0.0)
+      json
     recipient_interceptor (0.2.0)
       mail
     redcarpet (3.4.0)
@@ -503,6 +505,7 @@ GEM
     uniform_notifier (1.11.0)
     user_agent_parser (2.4.1)
     uuidtools (2.1.5)
+    wannabe_bool (0.7.1)
     warden (1.2.8)
       rack (>= 2.0.6)
     wasabi (3.5.0)
@@ -521,6 +524,8 @@ GEM
     wkhtmltopdf-binary (0.12.4)
     xpath (3.0.0)
       nokogiri (~> 1.8)
+    xray-rails (0.3.2)
+      rails (>= 3.1.0)
 
 PLATFORMS
   ruby
@@ -586,6 +591,7 @@ DEPENDENCIES
   rails (= 5.0.7.2)
   rails-assets-leaflet!
   rails-assets-markdown-it (~> 8.2.1)!
+  recaptcha
   recipient_interceptor (~> 0.2.0)
   redcarpet (~> 3.4.0)
   responders (~> 2.4.0)
@@ -608,10 +614,12 @@ DEPENDENCIES
   turnout (~> 2.4.0)
   uglifier (~> 4.1.2)
   unicorn (~> 5.4.1)
+  wannabe_bool
   web-console (~> 3.3.0)
   whenever (~> 0.10.0)
   wicked_pdf (~> 1.1.0)
   wkhtmltopdf-binary (~> 0.12.4)
+  xray-rails
 
 BUNDLED WITH
    1.17.1

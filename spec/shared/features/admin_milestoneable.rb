@@ -41,7 +41,7 @@ shared_examples "admin_milestoneable" do |factory_name, path_name|
         fill_in "Description", with: "New description milestone"
         fill_in "milestone_publication_date", with: Date.current
 
-        click_button "Create milestone"
+        click_button "Create Milestone"
 
         expect(page).to have_content "New description milestone"
         expect(page).to have_content Date.current
@@ -62,7 +62,7 @@ shared_examples "admin_milestoneable" do |factory_name, path_name|
 
         fill_in "Description", with: "New description milestone"
 
-        click_button "Create milestone"
+        click_button "Create Milestone"
 
         within "#new_milestone" do
           expect(page).to have_content "can't be blank", count: 1
@@ -75,7 +75,7 @@ shared_examples "admin_milestoneable" do |factory_name, path_name|
         click_link "Create new milestone"
 
         fill_in "Date", with: Date.current
-        click_button "Create milestone"
+        click_button "Create Milestone"
 
         within "#new_milestone" do
           expect(page).to have_content "can't be blank", count: 1
@@ -84,7 +84,7 @@ shared_examples "admin_milestoneable" do |factory_name, path_name|
     end
 
     context "Edit" do
-      scenario "Change title, description and document names" do
+      scenario "Change title, description and document names", :js do
         milestone = create(:milestone, milestoneable: milestoneable)
         create(:image, imageable: milestone)
         document = create(:document, documentable: milestone)
@@ -100,7 +100,7 @@ shared_examples "admin_milestoneable" do |factory_name, path_name|
         fill_in "milestone_publication_date", with: Date.current
         fill_in "milestone_documents_attributes_0_title", with: "New document title"
 
-        click_button "Update milestone"
+        click_button "Update Milestone"
 
         expect(page).to have_content "Changed description"
         expect(page).to have_content Date.current

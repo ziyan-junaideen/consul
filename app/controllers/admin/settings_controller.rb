@@ -15,6 +15,8 @@ class Admin::SettingsController < Admin::BaseController
     @map_configuration_settings = all_settings["map"]
     @proposals_settings = all_settings["proposals"]
     @uploads_settings = all_settings["uploads"]
+    @pb_toggle = all_settings["pb-toggle"]
+    @pb_input = all_settings["pb-input"]
   end
 
   def update

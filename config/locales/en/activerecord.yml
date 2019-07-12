@@ -11,10 +11,13 @@ en:
       budget:
         one: "Budget"
         other: "Budgets"
+      budget/idea:
+        one: "Idea"
+        other: "Ideas"
       budget/investment:
-        one: "Investment"
-        other: "Investments"
-      milestone:
+        one: "Project"
+        other: "Projects"
+      budget/investment/milestone:
         one: "milestone"
         other: "milestones"
       milestone/status:
@@ -131,14 +134,20 @@ en:
         description_accepting: "Description during Accepting phase"
         description_reviewing: "Description during Reviewing phase"
         description_selecting: "Description during Selecting phase"
-        description_valuating: "Description during Valuating phase"
+        description_valuating: "Description during Valuing phase"
         description_balloting: "Description during Balloting phase"
         description_reviewing_ballots: "Description during Reviewing Ballots phase"
         description_finished: "Description when the budget is finished"
         phase: "Phase"
         currency_symbol: "Currency"
+        budget_delegate_only: Only Budget Delegates can post projects
+        budget_delegate_only_help: Normal users will not be able to post projects.
+        post_idea_uri: Post Ideas URL
+        post_idea_uri_help: By inserting a link to an external website, the ‘Post an Idea’ button will link there instead of the internal ‘Post an Idea’ form.
+        guest_ideas: Allow Unregistered Users to Post Ideas
+        guest_ideas_help: Users will only need to submit an email address to post an idea.
       budget/investment:
-        heading_id: "Heading"
+        heading_id: "District"
         title: "Title"
         description: "Description"
         external_url: "Link to additional documentation"

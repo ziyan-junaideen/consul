@@ -1,0 +1,48 @@
+<h2><%= t("admin.budget_delegates.index.title") %></h2>
+
+<%= render 'admin/shared/user_search', url: search_admin_budget_delegates_path %>
+
+<div id="budget_delegates">
+  <% if @budget_delegates.any? %>
+    <h3 class="margin"><%= page_entries_info @budget_delegates %></h3>
+
+    <table>
+      <thead>
+        <th scope="col"><%= t("admin.budget_delegates.index.name") %></th>
+        <th scope="col"><%= t("admin.budget_delegates.index.email") %></th>
+        <th scope="col" class="small-3"><%= t("admin.shared.actions") %></th>
+      </thead>
+      <% @budget_delegates.each do |budget_delegate| %>
+        <tr>
+          <td>
+            <%= budget_delegate.name %>
+          </td>
+          <td>
+            <%= budget_delegate.email %>
+          </td>
+          <td>
+            <% if budget_delegate.persisted? %>
+              <%= link_to t('admin.budget_delegates.budget_delegate.delete'),
+                          admin_budget_delegate_path(budget_delegate),
+                          method: :delete,
+                          class: "button hollow alert expanded"
+              %>
+            <% else %>
+              <%= link_to t('admin.budget_delegates.budget_delegate.add'),
+                          { controller: "admin/budget_delegates", action: :create,
+                            user_id: budget_delegate.user_id },
+                            method: :post,
+                            class: "button success expanded" %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+
+    <%= paginate @budget_delegates %>
+  <% else %>
+    <div class="callout primary margin">
+      <%= t("admin.budget_delegates.index.no_budget_delegates") %>
+    </div>
+  <% end %>
+</div>

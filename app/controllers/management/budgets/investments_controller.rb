@@ -12,6 +12,7 @@ class Management::Budgets::InvestmentsController < Management::BaseController
   end
 
   def new
+    flash.now[:alert] = t('management.document_verifications.not_selected', link: management_document_verifications_path) unless managed_user.persisted?
     load_categories
   end
 
@@ -53,8 +54,11 @@ class Management::Budgets::InvestmentsController < Management::BaseController
     end
 
     def investment_params
-      params.require(:budget_investment).permit(:title, :description, :external_url, :heading_id,
-                                                :tag_list, :organization_name, :location, :skip_map)
+      params.require(:budget_investment).permit(
+        :title, :description, :external_url, :heading_id, :tag_list, :organization_name, :location, :skip_map,
+        documents_attributes: [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy],
+        map_location_attributes: [:latitude, :longitude, :zoom],
+        image_attributes: [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy])
     end
 
     def only_verified_users

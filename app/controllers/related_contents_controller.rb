@@ -5,15 +5,20 @@ class RelatedContentsController < ApplicationController
 
   def create
     if relationable_object && related_object
+      error = false
+      code = nil
 
-      if relationable_object.url != related_object.url
+      error, code = true, 'error_itself' if relationable_object.url == related_object.url
+      error, code = true, 'error_idea' if !error && unrelatable_budget_idea?
+      error, code = true, 'error_investments_only' if !error && check_limit_investments?(related_object)
+
+      if error
+        flash[:error] = t("related_content.#{code}")
+      else
         RelatedContent.create(parent_relationable: @relationable, child_relationable: @related, author: current_user)
 
         flash[:success] = t("related_content.success")
-      else
-        flash[:error] = t("related_content.error_itself")
       end
-
     else
       flash[:error] = t("related_content.error", url: Setting["url"])
     end
@@ -51,11 +56,22 @@ class RelatedContentsController < ApplicationController
 
         related_klass = url.scan(/\/(#{RelatedContent::RELATIONABLE_MODELS.join("|")})\//)
                            .flatten.map { |i| i.to_s.singularize.camelize }.join("::")
+        # The feature 'idea' for Budget::Investment will use its own URL structure. Ex: /budgets/:budget_id/indeas/:id
+        # The current URL check will not be able to handle this scenario thus needing to override it in that case.
+        related_klass = "Budget::Investment" if related_klass == 'Budget' && url.include?('idea')
         related_id = url.match(/\/(\d+)(?!.*\/\d)/)[1]
 
         @related = related_klass.singularize.camelize.constantize.find_by(id: related_id)
       end
   rescue
       nil
+  end
+
+  def unrelatable_budget_idea?
+    relationable_object.is_a?(Budget::Investment) && relationable_object.idea? && !related_object.is_a?(Budget::Investment)
+  end
+
+  def check_limit_investments?(related)
+    !related.is_a?(Budget::Investment) && Setting['pb-toggle.related_content.limit_investments']
   end
 end

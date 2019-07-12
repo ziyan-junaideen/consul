@@ -163,3 +163,18 @@ en:
         max_size_description: "Maximum size allowed for an uploaded document (in Megabytes/MB)"
         content_types: "Accepted content types for documents"
         content_types_description: "Select all the content types allowed for uploaded documents"
+    pb-toggle:
+      budget_page:
+        all_phases: Budget Page - Show phases
+        all_phases_description: Displays all phases link and list of phases for budget under map
+        footer: Budget Page - Show footer
+        footer_description: This will hide the 'Help with participatory budgets section at the bottom of the page
+        finished_budgets: Budget Page - Show finished budgets
+        finished_budgets_description: Show or hide the finished budgets list (after the budget phases)
+      related_content:
+        limit_investments: Limit related content to ideas and projects
+        limit_investments_description: If enabled, the realted content feature will only accept URLS belonging to budget ideas and projects.
+    pb-input:
+      map_height: Map height
+      map_height_description: The hight of the map in pixels
+      voting_instruction: Voting Instructions

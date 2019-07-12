@@ -27,6 +27,12 @@ module BudgetInvestmentsHelper
     end
   end
 
+  # alias_method :budget_ideas_sorting_options, :budget_investments_sorting_options
+
+  def budget_investments_advanced_filters(params)
+    params.map { |af| t("admin.budget_investments.index.filters.#{af}") }.join(', ')
+  end
+  
   def set_direction(current_direction)
     current_direction == "desc" ? "asc" : "desc"
   end
@@ -48,5 +54,17 @@ module BudgetInvestmentsHelper
 
   def investments_secondary_view
     investments_current_view == "default" ? "minimal" : "default"
+  end
+
+  def unfeasible_summary(budget)
+    count = budget.investments.project.unfeasible.count
+    case count
+    when 0
+      t('budgets.investments.index.unfeasible_summary_none')
+    when 1
+      t('budgets.investments.index.unfeasible_summary_one')
+    else
+      t('budgets.investments.index.unfeasible_summary_many', count: count)
+    end
   end
 end

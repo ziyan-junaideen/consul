@@ -1,0 +1,15 @@
+<% if @budget.has_winning_investments? %>
+  <div class="float-right">
+    <%= link_to t("admin.budget_ideas.index.see_results"),
+                budget_results_path(@budget, heading_id: @budget.headings.first),
+                class: "button hollow medium", target: "_blank" %>
+  </div>
+<% end %>
+
+<h2 class="inline-block"><%= @budget.name %> - <%= t("admin.budget_ideas.index.title") %></h2>
+
+<%= render "search_form" %>
+
+<div id="investments">
+  <%= render "investments" %>
+</div>

@@ -103,6 +103,15 @@ class Mailer < ApplicationMailer
     end
   end
 
+  def budget_idea_created(investment)
+    @investment = investment
+    @email_to = @investment.author.email
+
+    with_user(@investment.author) do
+      mail(to: @email_to, subject: t('mailers.budget_idea_created.subject'))
+    end
+  end
+
   def budget_investment_unselected(investment)
     @investment = investment
     @author = investment.author

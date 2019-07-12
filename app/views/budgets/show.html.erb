@@ -61,11 +61,20 @@
           <tr>
             <td>
               <% if group.single_heading_group? %>
-                <%= link_to group.name,
-                            budget_investments_path(@budget,
-                              heading_id: group.headings.first.id,
-                              filter: @current_filter),
-                            data: { no_turbolink: true } %>
+                <% if @budget.ideas_posting? %>
+                  <%= link_to group.name,
+                              budget_ideas_path(@budget,
+                                heading_id: group.headings.first.id,
+                                filter: @current_filter),
+                              data: { no_turbolink: true } %>
+
+                <% else %>
+                  <%= link_to group.name,
+                              budget_investments_path(@budget,
+                                heading_id: group.headings.first.id,
+                                filter: @current_filter),
+                              data: { no_turbolink: true } %>
+                <% end %>
               <% else %>
                 <%= link_to group.name,
                             budget_group_path(@budget, group,

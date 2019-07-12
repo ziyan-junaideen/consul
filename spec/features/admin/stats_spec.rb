@@ -88,7 +88,7 @@ describe "Stats" do
       expect(page).to have_content "Total users 1"
     end
 
-    scenario "Level 2 user Graph" do
+    xscenario "Level 2 user Graph" do
       create(:geozone)
       visit account_path
       click_link "Verify my account"

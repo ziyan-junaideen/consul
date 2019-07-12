@@ -73,7 +73,7 @@ describe "Tags" do
 
     fill_in "budget_investment_tag_list", with: "#{tag_medio_ambiente.name}, #{tag_economia.name}"
 
-    click_button "Create Investment"
+    click_button 'Create Project'
 
     expect(page).to have_content "Investment created successfully."
     expect(page).to have_content tag_economia.name
@@ -91,7 +91,7 @@ describe "Tags" do
     check "budget_investment_terms_of_service"
 
     find(".js-add-tag-link", text: tag_economia.name).click
-    click_button "Create Investment"
+    click_button "Create Project"
 
     expect(page).to have_content "Investment created successfully."
 
@@ -108,7 +108,7 @@ describe "Tags" do
     health    = create(:tag, name: "Health",    kind: "category")
 
     visit budget_path(budget)
-    click_link "Create a budget investment"
+    click_link "Create a Project"
 
     select  heading.name, from: "budget_investment_heading_id"
     fill_in "budget_investment_title", with: "Build a skyscraper"
@@ -116,7 +116,7 @@ describe "Tags" do
     check "budget_investment_terms_of_service"
 
     find(".js-add-tag-link", text: "Education").click
-    click_button "Create Investment"
+    click_button "Create Project"
 
     expect(page).to have_content "Investment created successfully."
 
@@ -133,7 +133,7 @@ describe "Tags" do
     health    = create(:tag, name: "Health",    kind: "category")
 
     visit budget_investments_path(budget, heading_id: heading.id)
-    click_link "Create a budget investment"
+    click_link "Create a Project"
 
     select  heading.name, from: "budget_investment_heading_id"
     fill_in "budget_investment_title", with: "Build a skyscraper"
@@ -141,7 +141,7 @@ describe "Tags" do
     check "budget_investment_terms_of_service"
 
     find(".js-add-tag-link", text: "Education").click
-    click_button "Create Investment"
+    click_button "Create Project"
 
     expect(page).to have_content "Investment created successfully."
 
@@ -163,7 +163,7 @@ describe "Tags" do
 
     fill_in "budget_investment_tag_list", with: "Impuestos, Economía, Hacienda, Sanidad, Educación, Política, Igualdad"
 
-    click_button "Create Investment"
+    click_button "Create Project"
 
     expect(page).to have_content error_message
     expect(page).to have_content "tags must be less than or equal to 6"
@@ -181,7 +181,7 @@ describe "Tags" do
 
     fill_in "budget_investment_tag_list", with: "user_id=1, &a=3, <script>alert('hey');</script>"
 
-    click_button "Create Investment"
+    click_button "Create Project"
 
     expect(page).to have_content "Investment created successfully."
     expect(page).to have_content "user_id1"
@@ -234,7 +234,7 @@ describe "Tags" do
     let!(:investment3) { create(:budget_investment, heading: heading, tag_list: newer_tag) }
 
     scenario "Display user tags" do
-      Budget::Phase::PHASE_KINDS.each do |phase|
+      Budget::Phase.phase_kinds.each do |phase|
         budget.update(phase: phase)
 
         login_as(admin) if budget.drafting?
@@ -247,10 +247,8 @@ describe "Tags" do
       end
     end
 
-    scenario "Filter by user tags" do
-      Budget::Phase::PHASE_KINDS.each do |phase|
-        budget.update(phase: phase)
-
+    scenario "Filter by user tags", :js do
+      Budget::Phase.phase_kinds.each do |phase|
         [investment1, investment2, investment3].each do |investment|
           investment.update(selected: true, feasibility: "feasible")
         end
@@ -263,8 +261,9 @@ describe "Tags" do
 
         login_as(admin) if budget.drafting?
         visit budget_path(budget)
-        click_link group.name
 
+        click_link group.name
+        
         within "#tag-cloud" do
           click_link new_tag
         end
@@ -285,7 +284,7 @@ describe "Tags" do
     let!(:investment3) { create(:budget_investment, heading: heading, tag_list: tag_economia.name) }
 
     scenario "Display category tags" do
-      Budget::Phase::PHASE_KINDS.each do |phase|
+      Budget::Phase.phase_kinds.each do |phase|
         budget.update(phase: phase)
 
         login_as(admin) if budget.drafting?
@@ -298,8 +297,10 @@ describe "Tags" do
       end
     end
 
-    scenario "Filter by category tags" do
-      Budget::Phase::PHASE_KINDS.each do |phase|
+    scenario "Filter by category tags", :js do
+      Budget::Phase.phase_kinds.each do |phase|
+        next if %w[ideas_posting project_forming].include? phase
+
         budget.update(phase: phase)
 
         [investment1, investment2, investment3].each do |investment|

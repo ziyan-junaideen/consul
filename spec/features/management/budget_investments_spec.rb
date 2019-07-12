@@ -72,9 +72,9 @@ describe "Budget Investments" do
       fill_in "budget_investment_organization_name", with: "T.I.A."
       fill_in "budget_investment_tag_list", with: "green"
 
-      click_button "Create Investment"
+      click_button "Create Project"
 
-      expect(page).to have_content "Investment created successfully."
+      expect(page).to have_content "Project created successfully."
 
       expect(page).to have_content "Health"
       expect(page).to have_content "Build a park in my neighborhood"
@@ -166,6 +166,8 @@ describe "Budget Investments" do
       click_link "Support budget investments"
     end
 
+    sleep 0.5
+
     within(".account-info") do
       expect(page).to have_content "Identified as"
       expect(page).to have_content user.username
@@ -241,6 +243,7 @@ describe "Budget Investments" do
 
   context "Supporting" do
 
+    # stale element reference: element is not attached to the page document
     scenario "Supporting budget investments on behalf of someone in index view", :js do
       budget_investment = create(:budget_investment, budget: budget, heading: heading)
 
