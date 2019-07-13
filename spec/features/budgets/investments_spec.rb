@@ -1795,7 +1795,7 @@ describe "Budget Investments" do
 
         visit budget_ballot_path(budget)
 
-        expect(page).to have_content("You have voted 0 investment")
+        expect(page).to have_content("You have voted on 0 projects")
       end
 
     end

@@ -461,7 +461,7 @@ describe "Ballots" do
     end
 
     expect(page).to have_current_path(budget_ballot_path(budget))
-    expect(page).to have_content("You have voted 0 investments")
+    expect(page).to have_content("You have voted on 0 projects")
   end
 
   scenario "Removing investments from ballot (sidebar)", :js do
@@ -518,7 +518,7 @@ describe "Ballots" do
       find(".icon-x").click
     end
 
-    expect(page).to have_content("You have voted 0 investments")
+    expect(page).to have_content("You have voted on 0 projects")
 
     click_link "Go back"
 
