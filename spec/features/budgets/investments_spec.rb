@@ -1766,14 +1766,14 @@ describe "Budget Investments" do
         login_as(user)
         visit budget_ballot_path(budget)
 
-        expect(page).to have_content("You have voted one investment")
+        expect(page).to have_content("You have voted one project")
 
         investment.heading = heading2
         investment.save
 
         visit budget_ballot_path(budget)
 
-        expect(page).to have_content("You have voted 0 investment")
+        expect(page).to have_content("You have voted on 0 projects")
       end
 
       scenario "Due to being unfeasible" do
@@ -1787,7 +1787,7 @@ describe "Budget Investments" do
         login_as(user)
         visit budget_ballot_path(budget)
 
-        expect(page).to have_content("You have voted one investment")
+        expect(page).to have_content("You have voted one project")
 
         investment.feasibility = "unfeasible"
         investment.unfeasibility_explanation = "too expensive"

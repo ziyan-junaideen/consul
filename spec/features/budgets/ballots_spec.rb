@@ -417,7 +417,7 @@ describe "Ballots" do
       login_as(user)
       visit budget_ballot_path(budget)
 
-      expect(page).to have_content("You have voted 5 investments")
+      expect(page).to have_content("You have voted on 5 projects")
 
       within("#budget_group_#{group1.id}") do
         expect(page).to have_content "#{group1.name} - #{heading1.name}"
@@ -454,7 +454,7 @@ describe "Ballots" do
     login_as(user)
     visit budget_ballot_path(budget)
 
-    expect(page).to have_content("You have voted one investment")
+    expect(page).to have_content("You have voted one project")
 
     within("#budget_investment_#{investment.id}") do
       find(".icon-x").click
@@ -512,7 +512,7 @@ describe "Ballots" do
       click_link "Check and confirm my ballot"
     end
 
-    expect(page).to have_content("You have voted one investment")
+    expect(page).to have_content("You have voted one project")
 
     within("#budget_investment_#{investment.id}") do
       find(".icon-x").click
