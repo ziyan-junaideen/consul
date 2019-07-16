@@ -1,29 +1,86 @@
-require 'rails_helper'
+require "rails_helper"
 
-feature "Admin budget headings" do
+describe "Admin budget headings" do
 
   let(:budget) { create(:budget, phase: "drafting") }
   let(:group) { create(:budget_group, budget: budget) }
 
-  background do
+  before do
     admin = create(:administrator)
     login_as(admin.user)
   end
 
+  it_behaves_like "translatable",
+                  "budget_heading",
+                  "edit_admin_budget_group_heading_path",
+                  %w[name]
+
   context "Feature flag" do
 
-    background do
-      Setting["feature.budgets"] = nil
+    before do
+      Setting["process.budgets"] = nil
     end
 
     after do
-      Setting["feature.budgets"] = true
+      Setting["process.budgets"] = true
     end
 
     scenario "Disabled with a feature flag" do
-      expect { visit admin_budget_group_headings_path(budget, group) }.to raise_exception(FeatureFlags::FeatureDisabled)
+      expect do
+        visit admin_budget_group_headings_path(budget, group)
+      end.to raise_exception(FeatureFlags::FeatureDisabled)
     end
 
+  end
+
+  context "Load" do
+
+    let!(:budget)  { create(:budget, slug: "budget_slug") }
+    let!(:group)   { create(:budget_group, slug: "group_slug", budget: budget) }
+    let!(:heading) { create(:budget_heading, slug: "heading_slug", group: group) }
+
+    scenario "finds budget, group and heading by slug" do
+      visit edit_admin_budget_group_heading_path("budget_slug", "group_slug", "heading_slug")
+      expect(page).to have_content(budget.name)
+      expect(page).to have_content(group.name)
+      expect(page).to have_field "Heading name", with: heading.name
+    end
+
+    scenario "raises an error if budget slug is not found" do
+      expect do
+        visit edit_admin_budget_group_heading_path("wrong_budget", group, heading)
+      end.to raise_error ActiveRecord::RecordNotFound
+    end
+
+    scenario "raises an error if budget id is not found" do
+      expect do
+        visit edit_admin_budget_group_heading_path(0, group, heading)
+      end.to raise_error ActiveRecord::RecordNotFound
+    end
+
+    scenario "raises an error if group slug is not found" do
+      expect do
+        visit edit_admin_budget_group_heading_path(budget, "wrong_group", heading)
+      end.to raise_error ActiveRecord::RecordNotFound
+    end
+
+    scenario "raises an error if group id is not found" do
+      expect do
+        visit edit_admin_budget_group_heading_path(budget, 0, heading)
+      end.to raise_error ActiveRecord::RecordNotFound
+    end
+
+    scenario "raises an error if heading slug is not found" do
+      expect do
+        visit edit_admin_budget_group_heading_path(budget, group, "wrong_heading")
+      end.to raise_error ActiveRecord::RecordNotFound
+    end
+
+    scenario "raises an error if heading id is not found" do
+      expect do
+        visit edit_admin_budget_group_heading_path(budget, group, 0)
+      end.to raise_error ActiveRecord::RecordNotFound
+    end
   end
 
   context "Index" do
@@ -31,7 +88,7 @@ feature "Admin budget headings" do
     scenario "Displaying no headings for group" do
       visit admin_budget_group_headings_path(budget, group)
 
-      expect(page).to have_content "No headings created yet. Each user will be able to vote in only one heading per group."
+      expect(page).to have_content "There are no headings."
     end
 
     scenario "Displaying headings" do
@@ -47,8 +104,8 @@ feature "Admin budget headings" do
         expect(page).to have_content "€1,000"
         expect(page).not_to have_content "10000"
         expect(page).to have_content "Yes"
-        expect(page).to have_link "Edit", href: edit_admin_budget_group_heading_path(budget, group, heading1)
-        expect(page).to have_link "Delete", href: admin_budget_group_heading_path(budget, group, heading1)
+        expect(page).to have_link "Edit"
+        expect(page).to have_link "Delete"
       end
 
       within "#budget_heading_#{heading2.id}" do
@@ -56,8 +113,8 @@ feature "Admin budget headings" do
         expect(page).to have_content "€2,000"
         expect(page).to have_content "10000"
         expect(page).to have_content "No"
-        expect(page).to have_link "Edit", href: edit_admin_budget_group_heading_path(budget, group, heading2)
-        expect(page).to have_link "Delete", href: admin_budget_group_heading_path(budget, group, heading2)
+        expect(page).to have_link "Edit"
+        expect(page).to have_link "Delete"
       end
 
       within "#budget_heading_#{heading3.id}" do
@@ -65,8 +122,8 @@ feature "Admin budget headings" do
         expect(page).to have_content "€3,000"
         expect(page).to have_content "10000"
         expect(page).to have_content "No"
-        expect(page).to have_link "Edit", href: edit_admin_budget_group_heading_path(budget, group, heading3)
-        expect(page).to have_link "Delete", href: admin_budget_group_heading_path(budget, group, heading3)
+        expect(page).to have_link "Edit"
+        expect(page).to have_link "Delete"
       end
     end
 
@@ -87,7 +144,7 @@ feature "Admin budget headings" do
       visit admin_budget_group_headings_path(budget, group)
       within("#budget_heading_#{heading.id}") { click_link "Delete" }
 
-      expect(page).to have_content "You cannot destroy a Heading that has associated investments"
+      expect(page).to have_content "You cannot delete a Heading that has associated investments"
       expect(page).to have_selector "#budget_heading_#{heading.id}"
     end
 
@@ -144,9 +201,33 @@ feature "Admin budget headings" do
       expect(page).to have_field "Heading name", with: heading.name
       expect(page).to have_field "Amount", with: heading.price
       expect(page).to have_field "Population (optional)", with: heading.population
-      expect(page).to have_field "Longitude", with: heading.longitude
-      expect(page).to have_field "Latitude", with: heading.latitude
+      expect(page).to have_field "Longitude (optional)", with: heading.longitude
+      expect(page).to have_field "Latitude (optional)", with: heading.latitude
       expect(find_field("Allow content block")).not_to be_checked
+    end
+
+    scenario "Changing name for current locale will update the slug if budget is in draft phase", :js do
+      heading = create(:budget_heading, group: group)
+      old_slug = heading.slug
+
+      visit edit_admin_budget_group_heading_path(budget, group, heading)
+
+      select "Español", from: "translation_locale"
+      fill_in "Heading name", with: "Spanish name"
+      click_button "Save heading"
+
+      expect(page).to have_content "Heading updated successfully"
+      expect(heading.reload.slug).to eq old_slug
+
+      visit edit_admin_budget_group_heading_path(budget, group, heading)
+
+      click_link "English"
+      fill_in "Heading name", with: "New English Name"
+      click_button "Save heading"
+
+      expect(page).to have_content "Heading updated successfully"
+      expect(heading.reload.slug).not_to eq old_slug
+      expect(heading.slug).to eq "new-english-name"
     end
 
   end
@@ -167,17 +248,17 @@ feature "Admin budget headings" do
       expect(page).to have_field "Heading name", with: "All City"
       expect(page).to have_field "Amount", with: 1000
       expect(page).to have_field "Population (optional)", with: 10000
-      expect(page).to have_field "Longitude", with: 20.50
-      expect(page).to have_field "Latitude", with: -10.50
+      expect(page).to have_field "Longitude (optional)", with: 20.50
+      expect(page).to have_field "Latitude (optional)", with: -10.50
       expect(find_field("Allow content block")).to be_checked
 
       fill_in "Heading name", with: "Districts"
       fill_in "Amount", with: "2000"
       fill_in "Population (optional)", with: "20000"
-      fill_in "Longitude", with: "-40.47"
-      fill_in "Latitude", with: "25.25"
+      fill_in "Longitude (optional)", with: "-40.47"
+      fill_in "Latitude (optional)", with: "25.25"
       uncheck "Allow content block"
-      click_button "Edit heading"
+      click_button "Save heading"
 
       expect(page).to have_content "Heading updated successfully"
 
@@ -185,8 +266,8 @@ feature "Admin budget headings" do
       expect(page).to have_field "Heading name", with: "Districts"
       expect(page).to have_field "Amount", with: 2000
       expect(page).to have_field "Population (optional)", with: 20000
-      expect(page).to have_field "Longitude", with: -40.47
-      expect(page).to have_field "Latitude", with: 25.25
+      expect(page).to have_field "Longitude (optional)", with: -40.47
+      expect(page).to have_field "Latitude (optional)", with: 25.25
       expect(find_field("Allow content block")).not_to be_checked
     end
 
@@ -197,11 +278,11 @@ feature "Admin budget headings" do
       expect(page).to have_field "Heading name", with: "All City"
 
       fill_in "Heading name", with: "Districts"
-      click_button "Edit heading"
+      click_button "Save heading"
 
       expect(page).not_to have_content "Heading updated successfully"
       expect(page).to have_css("label.error", text: "Heading name")
-      expect(page).to have_content "has already been taken"
+      expect(page).to have_css("small.error", text: "has already been taken")
     end
 
   end

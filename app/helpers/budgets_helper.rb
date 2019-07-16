@@ -1,18 +1,19 @@
 module BudgetsHelper
 
   def show_links_to_budget_investments(budget)
-    ['balloting', 'reviewing_ballots', 'finished'].include? budget.phase
+    ["balloting", "reviewing_ballots", "finished"].include? budget.phase
   end
 
   def heading_name_and_price_html(heading, budget)
     content_tag :div do
-      concat(heading.name + ' ')
+      concat(heading.name + " ")
       concat(content_tag(:span, budget.formatted_heading_price(heading)))
     end
   end
 
   def csv_params
-    csv_params = params.clone.merge(format: :csv).symbolize_keys
+    csv_params = params.clone.merge(format: :csv)
+    csv_params = csv_params.to_unsafe_h.map { |k, v| [k.to_sym, v] }.to_h
     csv_params.delete(:page)
     csv_params
   end
@@ -43,13 +44,9 @@ module BudgetsHelper
     end
   end
 
-  def display_budget_countdown?(budget)
-    budget.balloting?
-  end
-
   def css_for_ballot_heading(heading)
-    return '' if current_ballot.blank?
-    current_ballot.has_lines_in_heading?(heading) ? 'is-active' : ''
+    return "" if current_ballot.blank? || @current_filter == "unfeasible"
+    current_ballot.has_lines_in_heading?(heading) ? "is-active" : ""
   end
 
   def current_ballot
@@ -60,13 +57,17 @@ module BudgetsHelper
     Budget::Investment.by_budget(budget).tags_on(:valuation).order(:name).select(:name).distinct
   end
 
+  def unfeasible_or_unselected_filter
+    ["unselected", "unfeasible"].include?(@current_filter)
+  end
+
   def budget_published?(budget)
     !budget.drafting? || current_user&.administrator?
   end
 
   def current_budget_map_locations
     return unless current_budget.present?
-    if current_budget.valuating_or_later?
+    if current_budget.publishing_prices_or_later? && current_budget.investments.selected.any?
       investments = current_budget.investments.selected
     else
       investments = current_budget.investments
@@ -84,6 +85,38 @@ module BudgetsHelper
       t("admin.budgets.winners.calculate")
     else
       t("admin.budgets.winners.recalculate")
+    end
+  end
+
+  def display_support_alert?(investment)
+    current_user &&
+    !current_user.voted_in_group?(investment.group) &&
+    investment.group.headings.count > 1
+  end
+
+  def link_to_create_budget_poll(budget)
+    balloting_phase = budget.phases.where(kind: "balloting").first
+
+    link_to t("admin.budgets.index.admin_ballots"),
+            admin_polls_path(poll: {
+                              name:      budget.name,
+                              budget_id: budget.id,
+                              starts_at: balloting_phase.starts_at,
+                              ends_at:   balloting_phase.ends_at }),
+            method: :post
+  end
+
+  def budget_subnav_items_for(budget)
+    {
+      results:    t("budgets.results.link"),
+      stats:      t("stats.budgets.link"),
+      executions: t("budgets.executions.link")
+    }.select { |section, _| can?(:"read_#{section}", budget) }.map do |section, text|
+      {
+        text: text,
+        url:  send("budget_#{section}_path", budget),
+        active: controller_name == section.to_s
+      }
     end
   end
 end

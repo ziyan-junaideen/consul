@@ -19,13 +19,13 @@ module Budgets
                   .group_by(&:heading)
         else
           @budget.investments.winners
-                  .joins(:milestones).includes(:milestones)
+                  .joins(milestones: :translations)
                   .distinct.group_by(&:heading)
         end
       end
 
       def load_budget
-        @budget = Budget.find_by(slug: params[:id]) || Budget.find_by(id: params[:id])
+        @budget = Budget.find_by_slug_or_id params[:budget_id]
       end
 
       def investments_by_heading_ordered_alphabetically

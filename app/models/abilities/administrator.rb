@@ -51,15 +51,14 @@ module Abilities
       can :comment_as_administrator, [Debate, Comment, Proposal, Poll::Question, Budget::Investment,
                                       Legislation::Question, Legislation::Proposal, Legislation::Annotation, Topic]
 
-      can [:search, :create, :index, :destroy], ::Administrator
+      can [:search, :create, :index, :destroy, :edit, :update], ::Administrator
       can [:search, :create, :index, :destroy], ::Moderator
       can [:search, :show, :edit, :update, :create, :index, :destroy, :summary], ::Valuator
       can [:search, :create, :index, :destroy], ::Manager
       can [:search, :index], ::User
 
-      can :manage, Annotation
+      can :manage, Dashboard::Action
 
-      can [:read, :update, :valuate, :destroy, :summary], SpendingProposal
       can [:index, :read, :new, :create, :update, :destroy, :calculate_winners], Budget
       can [:read, :create, :update, :destroy], Budget::Group
       can [:read, :create, :update, :destroy], Budget::Heading
@@ -93,9 +92,11 @@ module Abilities
       cannot :comment_as_moderator, [::Legislation::Question, Legislation::Annotation, ::Legislation::Proposal]
 
       can [:create], Document
+      can [:destroy], Document, documentable_type: "Poll::Question::Answer"
       can [:create, :destroy], DirectUpload
 
       can [:deliver], Newsletter, hidden_at: nil
+      can [:manage], Dashboard::AdministratorTask
     end
   end
 end
