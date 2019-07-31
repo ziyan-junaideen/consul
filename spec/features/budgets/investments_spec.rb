@@ -1177,7 +1177,7 @@ describe "Budget Investments" do
     visit budget_investment_path(budget, id: investment_2.id)
 
     expect(page).to have_content("Unfeasibility explanation")
-    expect(page).to have_content("Local government is not competent in this matter")
+    expect(page).to have_content("The unfeasible explanation")
     expect(page).to have_content("This project has been marked as not feasible and will not go to balloting phase")
   end
 
