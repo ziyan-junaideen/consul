@@ -108,7 +108,7 @@ class Budget
       end
 
       def in_phase_or_later?(phase)
-        PHASE_KINDS.index(kind) >= PHASE_KINDS.index(phase)
+        phase_kinds.index(kind) >= phase_kinds.index(phase)
       end
 
   end
