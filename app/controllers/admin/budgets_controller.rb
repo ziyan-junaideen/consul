@@ -72,8 +72,6 @@ class Admin::BudgetsController < Admin::BaseController
 
     def load_budget
       @budget = Budget.find_by_slug_or_id! params[:id]
-      valid_attributes += IDEA_ATTRIBUTES
-      params.require(:budget).permit(*valid_attributes, translation_params(Budget))
     end
 
 end
