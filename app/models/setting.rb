@@ -169,7 +169,13 @@ class Setting < ApplicationRecord
         "hot_score_period_in_days": 31,
         "related_content_score_threshold": -0.3,
         "featured_proposals_number": 3,
-        "dashboard.emails": nil
+        "dashboard.emails": nil,
+        "pb-toggle.related_content.limit_investments": false,
+        "pb-toggle.budget_page.all_phases": true,
+        "pb-toggle.budget_page.footer": true,
+        "pb-toggle.budget_page.finished_budgets": true,
+        "pb-input.map_height": '350',
+        "pb-input.voting_instructions": "Click on your district to see the proposed projects."
       }
     end
 
