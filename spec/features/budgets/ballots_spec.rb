@@ -21,7 +21,7 @@ describe "Ballots" do
     scenario "finds ballot using budget slug" do
       visit budget_ballot_path("budget_slug")
 
-      expect(page).to have_content("You have voted one investment")
+      expect(page).to have_content("You have voted one project")
     end
 
     scenario "raises an error if budget slug is not found" do
@@ -378,7 +378,7 @@ describe "Ballots" do
       visit budget_investments_path(budget, heading_id: new_york.id)
 
       expect(page).not_to have_css "#progressbar"
-      expect(page).to have_content "You have active votes in California, so you cannot currently vote for projects in this district. If your change your mind you can remove your votes in check my ballot and start again"
+      expect(page).to have_content "You have active votes in California, so you cannot currently vote for projects in this district. If your change your mind you can remove your votes in check and confirm my ballot and start again"
       expect(page).to have_link california.name, href: budget_investments_path(budget, heading_id: california.id)
     end
 
