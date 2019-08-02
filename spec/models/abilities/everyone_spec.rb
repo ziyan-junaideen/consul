@@ -105,10 +105,8 @@ describe Abilities::Everyone do
       it { should_not be_able_to(:read_stats, budget) }
     end
   end
-  it { should be_able_to(:read_results, finished_budget) }
-  it { should_not be_able_to(:read_results, reviewing_ballot_budget) }
 
-  describe 'Ideas related permissions' do
+  context 'Ideas related permissions' do
     before do
       Setting['feature.ideas'] = true
     end
@@ -125,5 +123,4 @@ describe Abilities::Everyone do
       should_not be_able_to(:create, ideas_posting_budget.investments.idea.new)
     end
   end
-
 end
