@@ -32,6 +32,10 @@ class Budget::Investment::Exporters::Base
 
   def price(investment)
     price_string = "admin.budget_investments.index.feasibility.#{investment.feasibility}"
-    I18n.t(price_string, price: investment.formatted_price)
+    if investment.feasible?
+      "#{I18n.t(price_string)} (#{investment.formatted_price})"
+    else
+      I18n.t(price_string)
+    end
   end
 end

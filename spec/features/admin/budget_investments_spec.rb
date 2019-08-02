@@ -304,14 +304,14 @@ describe "Admin budget investments" do
       check("Without assigned admin")
       click_button "Filter"
 
-      expect(page).to have_content("There is 1 investment")
+      expect(page).to have_content("There is 1 project")
       expect(page).to have_link("Investment without admin")
       expect(page).not_to have_link("Investment with admin")
 
       uncheck("Without assigned admin")
       click_button "Filter"
 
-      expect(page).to have_content("There are 2 investments")
+      expect(page).to have_content("There are 2 projects")
       expect(page).to have_link("Investment without admin")
       expect(page).to have_link("Investment with admin")
     end
@@ -335,14 +335,14 @@ describe "Admin budget investments" do
       check "Without assigned valuator"
       click_button "Filter"
 
-      expect(page).to have_content("There is 1 investment")
+      expect(page).to have_content("There is 1 project")
       expect(page).to have_link("Investment without valuator")
       expect(page).not_to have_link("Investment with valuator")
 
       uncheck "Without assigned valuator"
       click_button "Filter"
 
-      expect(page).to have_content("There are 2 investments")
+      expect(page).to have_content("There are 2 projects")
       expect(page).to have_link("Investment without valuator")
       expect(page).to have_link("Investment with valuator")
     end
@@ -369,14 +369,14 @@ describe "Admin budget investments" do
       check "Under valuation"
       click_button "Filter"
 
-      expect(page).to have_content("There is 1 investment")
+      expect(page).to have_content("There is 1 project")
       expect(page).to have_link("Investment without valuation")
       expect(page).not_to have_link("Investment with valuation")
 
       uncheck "Under valuation"
       click_button "Filter"
 
-      expect(page).to have_content("There are 2 investments")
+      expect(page).to have_content("There are 2 projects")
       expect(page).to have_link("Investment without valuation")
       expect(page).to have_link("Investment with valuation")
     end
@@ -398,14 +398,14 @@ describe "Admin budget investments" do
       check "Valuation finished"
       click_button "Filter"
 
-      expect(page).to have_content("There is 1 investment")
+      expect(page).to have_content("There is 1 project")
       expect(page).not_to have_link("Investment valuation open")
       expect(page).to have_link("Investment valuation finished")
 
       uncheck "Valuation finished"
       click_button "Filter"
 
-      expect(page).to have_content("There are 2 investments")
+      expect(page).to have_content("There are 2 projects")
       expect(page).to have_link("Investment valuation open")
       expect(page).to have_link("Investment valuation finished")
     end
@@ -428,14 +428,14 @@ describe "Admin budget investments" do
       check "Winners"
       click_button "Filter"
 
-      expect(page).to have_content("There is 1 investment")
+      expect(page).to have_content("There is 1 project")
       expect(page).to have_link("Investment winner")
       expect(page).not_to have_link("Investment without winner")
 
       uncheck "Winners"
       click_button "Filter"
 
-      expect(page).to have_content("There are 2 investments")
+      expect(page).to have_content("There are 2 projects")
       expect(page).to have_link("Investment winner")
       expect(page).to have_link("Investment without winner")
     end
@@ -661,7 +661,7 @@ describe "Admin budget investments" do
       fill_in "max_total_supports", with: 180
       click_button "Filter"
 
-      expect(page).to have_content("There are 3 investments")
+      expect(page).to have_content("There are 3 projects")
       expect(page).not_to have_link("Road 199 supports")
       expect(page).not_to have_link("St. 200 supports")
       expect(page).not_to have_link("St. 300 supports")
