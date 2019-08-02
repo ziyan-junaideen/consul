@@ -32,7 +32,7 @@ describe "Budgets" do
 
   context "Index" do
 
-    scenario "Show normal index with links" do
+    scenario "Show normal index with links", :js do
       group1 = create(:budget_group, budget: budget)
       group2 = create(:budget_group, budget: budget)
       heading1 = create(:budget_heading, group: group1)
@@ -45,7 +45,7 @@ describe "Budgets" do
       within("#budget_heading") do
         expect(page).to have_content(budget.name)
         expect(page).to have_content(budget.description)
-        expect(page).to have_content("Actual phase")
+        expect(page).to have_content("CURRENT PHASE")
         expect(page).to have_content("Information")
         expect(page).to have_link("Help with participatory budgets")
         expect(page).to have_link("See all phases")
