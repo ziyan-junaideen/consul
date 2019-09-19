@@ -54,6 +54,8 @@ class Budget
       inverse_of: :commentable,
       class_name: "Comment"
 
+    enum kind: { project: 0, idea: 1 }
+    
     validates_translation :title, presence: true, length: { in: 4..Budget::Investment.title_max_length }
     validates_translation :description, presence: true, length: { maximum: Budget::Investment.description_max_length }
 
