@@ -4,8 +4,10 @@ describe Budget::Phase do
   let(:budget)       { create(:budget) }
   let(:first_phase)  { budget.phases.drafting }
   let(:second_phase)  { budget.phases.informing }
-  let(:third_phase) { budget.phases.accepting }
-  let(:fourth_phase)  { budget.phases.reviewing }
+  let(:third_phase) { budget.phases.ideas_posting }
+  let(:fourth_phase) { budget.phases.project_forming }
+  let(:fifth_phase) { budget.phases.accepting }
+  let(:sixth_phase)  { budget.phases.reviewing }
   let(:final_phase) { budget.phases.finished }
 
   it_behaves_like "globalizable", :budget_phase
@@ -84,7 +86,7 @@ describe Budget::Phase do
 
     describe "#next_phase_dates_valid?" do
       let(:error) do
-        "End date must be earlier than the end date of the next enabled phase (Accepting projects)"
+        "End date must be earlier than the end date of the next enabled phase (Ideas collection)"
       end
 
       it "is invalid when end date is same as next enabled phase end date" do
